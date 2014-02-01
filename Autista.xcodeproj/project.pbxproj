@@ -7,16 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		007663FE189D86CA009FE8DE /* Instabug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007663FD189D86CA009FE8DE /* Instabug.framework */; };
 		00766404189D8880009FE8DE /* AcousticModelEnglish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 00766400189D8880009FE8DE /* AcousticModelEnglish.bundle */; };
 		00766405189D8880009FE8DE /* AcousticModelSpanish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 00766401189D8880009FE8DE /* AcousticModelSpanish.bundle */; };
 		00766406189D8880009FE8DE /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00766402189D8880009FE8DE /* OpenEars.framework */; };
 		00766407189D8880009FE8DE /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00766403189D8880009FE8DE /* Slt.framework */; };
 		2007A4691839DFCB00F7A541 /* BtnBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 2007A4681839DFCB00F7A541 /* BtnBack.png */; };
 		2007A46B183A702300F7A541 /* logos.png in Resources */ = {isa = PBXBuildFile; fileRef = 2007A46A183A702300F7A541 /* logos.png */; };
-		2022B72517FE9BA30061D6EE /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2022B71F17FE9BA30061D6EE /* libTestFlight.a */; };
-		2022B72617FE9BA30061D6EE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2022B72017FE9BA30061D6EE /* README.md */; };
-		2022B72717FE9BA30061D6EE /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 2022B72117FE9BA30061D6EE /* release_notes.md */; };
 		2022B72917FEA7090061D6EE /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2022B72817FEA7090061D6EE /* libz.dylib */; };
 		2022B72C17FF04430061D6EE /* AutistaIAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2022B72B17FF04430061D6EE /* AutistaIAPHelper.m */; };
 		2054BD0D18364B9300DFFC44 /* Bath_full_1_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2054BC8218364B9300DFFC44 /* Bath_full_1_Tanu.caf */; };
@@ -571,26 +567,19 @@
 		8DF5E0B116B96DD3005D8154 /* PlaygroundSceneMusic.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 8DF5E0A716B96B57005D8154 /* PlaygroundSceneMusic.aifc */; };
 		8DFAE2F5166322A8004A9752 /* VUMeterTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFAE2F4166322A8004A9752 /* VUMeterTable.m */; };
 		8DFAE2F816632522004A9752 /* VULevelMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFAE2F716632522004A9752 /* VULevelMeter.m */; };
-		8F99C9EE189D847100EEC1CA /* Instabug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F99C9ED189D847100EEC1CA /* Instabug.framework */; };
 		8F99C9F6189D84C900EEC1CA /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F99C9F0189D84C900EEC1CA /* libTestFlight.a */; };
 		8F99C9F7189D84C900EEC1CA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8F99C9F1189D84C900EEC1CA /* README.md */; };
 		8F99C9F8189D84C900EEC1CA /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 8F99C9F2189D84C900EEC1CA /* release_notes.md */; };
+		8FB1A923189D894C007A483F /* Instabug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB1A922189D894C007A483F /* Instabug.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		007663FD189D86CA009FE8DE /* Instabug.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Instabug.framework; sourceTree = "<group>"; };
 		00766400189D8880009FE8DE /* AcousticModelEnglish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelEnglish.bundle; sourceTree = "<group>"; };
 		00766401189D8880009FE8DE /* AcousticModelSpanish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelSpanish.bundle; sourceTree = "<group>"; };
 		00766402189D8880009FE8DE /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenEars.framework; sourceTree = "<group>"; };
 		00766403189D8880009FE8DE /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
 		2007A4681839DFCB00F7A541 /* BtnBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BtnBack.png; sourceTree = "<group>"; };
 		2007A46A183A702300F7A541 /* logos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logos.png; sourceTree = "<group>"; };
-		2022B71F17FE9BA30061D6EE /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
-		2022B72017FE9BA30061D6EE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		2022B72117FE9BA30061D6EE /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
-		2022B72217FE9BA30061D6EE /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
-		2022B72317FE9BA30061D6EE /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
-		2022B72417FE9BA30061D6EE /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 		2022B72817FEA7090061D6EE /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		2022B72A17FF04430061D6EE /* AutistaIAPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutistaIAPHelper.h; path = Autista/Classes/AutistaIAPHelper.h; sourceTree = SOURCE_ROOT; };
 		2022B72B17FF04430061D6EE /* AutistaIAPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AutistaIAPHelper.m; path = Autista/Classes/AutistaIAPHelper.m; sourceTree = SOURCE_ROOT; };
@@ -1204,13 +1193,13 @@
 		8DFAE2F4166322A8004A9752 /* VUMeterTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VUMeterTable.m; path = Autista/Audio/VUMeterTable.m; sourceTree = "<group>"; };
 		8DFAE2F616632522004A9752 /* VULevelMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VULevelMeter.h; path = Autista/Audio/VULevelMeter.h; sourceTree = "<group>"; };
 		8DFAE2F716632522004A9752 /* VULevelMeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VULevelMeter.m; path = Autista/Audio/VULevelMeter.m; sourceTree = "<group>"; };
-		8F99C9ED189D847100EEC1CA /* Instabug.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Instabug.framework; sourceTree = "<group>"; };
 		8F99C9F0189D84C900EEC1CA /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
 		8F99C9F1189D84C900EEC1CA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		8F99C9F2189D84C900EEC1CA /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
 		8F99C9F3189D84C900EEC1CA /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
 		8F99C9F4189D84C900EEC1CA /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
 		8F99C9F5189D84C900EEC1CA /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
+		8FB1A922189D894C007A483F /* Instabug.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Instabug.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1219,10 +1208,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				209C607B18333760004A2DF1 /* AdSupport.framework in Frameworks */,
-				8F99C9EE189D847100EEC1CA /* Instabug.framework in Frameworks */,
 				00766406189D8880009FE8DE /* OpenEars.framework in Frameworks */,
 				209A8974181A00FA002FAF7C /* CoreTelephony.framework in Frameworks */,
-				007663FE189D86CA009FE8DE /* Instabug.framework in Frameworks */,
 				209A8972181A00ED002FAF7C /* SystemConfiguration.framework in Frameworks */,
 				209A8970181A00D8002FAF7C /* GLKit.framework in Frameworks */,
 				8F99C9F6189D84C900EEC1CA /* libTestFlight.a in Frameworks */,
@@ -1240,9 +1227,9 @@
 				8D89400E163242F0006E6873 /* QuartzCore.framework in Frameworks */,
 				8D4FB42116096D4B005FD9AD /* CoreImage.framework in Frameworks */,
 				8DA3DD181604C6E20031950A /* UIKit.framework in Frameworks */,
-				2022B72517FE9BA30061D6EE /* libTestFlight.a in Frameworks */,
 				8DA3DD1A1604C6E20031950A /* Foundation.framework in Frameworks */,
 				8DA3DD1C1604C6E20031950A /* CoreGraphics.framework in Frameworks */,
+				8FB1A923189D894C007A483F /* Instabug.framework in Frameworks */,
 				8DA3DD1E1604C6E20031950A /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1283,19 +1270,6 @@
 			);
 			name = Syllables;
 			path = Autista/Syllables;
-			sourceTree = "<group>";
-		};
-		2022B71E17FE9BA30061D6EE /* TestFlightSDK2.0.2 */ = {
-			isa = PBXGroup;
-			children = (
-				2022B71F17FE9BA30061D6EE /* libTestFlight.a */,
-				2022B72017FE9BA30061D6EE /* README.md */,
-				2022B72117FE9BA30061D6EE /* release_notes.md */,
-				2022B72217FE9BA30061D6EE /* TestFlight+AsyncLogging.h */,
-				2022B72317FE9BA30061D6EE /* TestFlight+ManualSessions.h */,
-				2022B72417FE9BA30061D6EE /* TestFlight.h */,
-			);
-			path = TestFlightSDK2.0.2;
 			sourceTree = "<group>";
 		};
 		2054BC6F1836403200DFFC44 /* Final */ = {
@@ -2151,12 +2125,10 @@
 		8DA3DD081604C6E20031950A = {
 			isa = PBXGroup;
 			children = (
-				007663FD189D86CA009FE8DE /* Instabug.framework */,
 				8F99C9EF189D84C900EEC1CA /* TestFlightSDK2.0.2 */,
 				20E4A563186FDD1800B473C2 /* Icon 152.png */,
 				20E4A562186FDD0400B473C2 /* Icon 76.png */,
 				209A8967181A0077002FAF7C /* Instabug.bundle */,
-				2022B71E17FE9BA30061D6EE /* TestFlightSDK2.0.2 */,
 				8D9ABB341720E3E400C94E1D /* External */,
 				8D88903216BD54F8003FA187 /* Helper Classes */,
 				8DA3DD67160608DE0031950A /* Models */,
@@ -2185,8 +2157,8 @@
 		8DA3DD161604C6E20031950A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8FB1A922189D894C007A483F /* Instabug.framework */,
 				007663FF189D8880009FE8DE /* OpenEars */,
-				8F99C9ED189D847100EEC1CA /* Instabug.framework */,
 				209C607A18333760004A2DF1 /* AdSupport.framework */,
 				209A8973181A00FA002FAF7C /* CoreTelephony.framework */,
 				209A8971181A00ED002FAF7C /* SystemConfiguration.framework */,
@@ -2952,7 +2924,6 @@
 				2054BD1218364B9300DFFC44 /* Shampoo_full_2_Tanu.caf in Resources */,
 				8D4BCA6C16BA6A5E00A34EFD /* FlowerPlaceHolder.png in Resources */,
 				8D4BCA6F16BA6A5E00A34EFD /* PlaygroundScene.png in Resources */,
-				2022B72617FE9BA30061D6EE /* README.md in Resources */,
 				8D4BCA7016BA6A5E00A34EFD /* Racket.png in Resources */,
 				8D4BCA7116BA6A5E00A34EFD /* RacketPlaceHolder.png in Resources */,
 				2054BD2E18364B9300DFFC44 /* Pencil_Syll_1_c_Tanu.caf in Resources */,
@@ -3108,7 +3079,6 @@
 				8D96534C16FF42A200B9E3FB /* Balloon.caf in Resources */,
 				2054BD2B18364B9300DFFC44 /* Lollipop_Syll_2_b_Tanu.caf in Resources */,
 				8D96534D16FF42A200B9E3FB /* Banana.caf in Resources */,
-				2022B72717FE9BA30061D6EE /* release_notes.md in Resources */,
 				206BF212181964BF008E1F43 /* Button-Highlighted.png in Resources */,
 				8D96534E16FF42A200B9E3FB /* Bath.caf in Resources */,
 				8D96534F16FF42A200B9E3FB /* Book.caf in Resources */,
@@ -3296,8 +3266,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/mukeshkalra/Dropbox/Game\\ Dev/Code/Autista\\ (Apr\\ 29\\ 2013)",
-					/Users/shawnwu/Documents/Autista,
-					/Users/shawnwu/Documents/Autista/Framework,
+					/Users/guoanhong/Documents/Autista/Framework,
+					/Users/guoanhong/Documents/Autista,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Autista/Autista-Prefix.pch";
@@ -3306,7 +3276,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/mukeshkalra/Dropbox/Game\\ Dev/Code/Autista\\ (Apr\\ 29\\ 2013)/TestFlightSDK2.0.2",
-					/Users/shawnwu/Documents/Autista/TestFlightSDK2.0.2,
+					/Users/guoanhong/Documents/Autista/TestFlightSDK2.0.2,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "9AABB617-5443-457B-8199-F43D6E73EA15";
@@ -3323,8 +3293,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/mukeshkalra/Dropbox/Game\\ Dev/Code/Autista\\ (Apr\\ 29\\ 2013)",
-					/Users/shawnwu/Documents/Autista,
-					/Users/shawnwu/Documents/Autista/Framework,
+					/Users/guoanhong/Documents/Autista/Framework,
+					/Users/guoanhong/Documents/Autista,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Autista/Autista-Prefix.pch";
@@ -3333,7 +3303,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/mukeshkalra/Dropbox/Game\\ Dev/Code/Autista\\ (Apr\\ 29\\ 2013)/TestFlightSDK2.0.2",
-					/Users/shawnwu/Documents/Autista/TestFlightSDK2.0.2,
+					/Users/guoanhong/Documents/Autista/TestFlightSDK2.0.2,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "8575715F-039B-4A74-A456-D3E82164CB17";
