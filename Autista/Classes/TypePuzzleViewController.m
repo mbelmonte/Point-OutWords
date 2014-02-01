@@ -1,0 +1,644 @@
+//
+//  TypePuzzleViewController.m
+//  Autista
+//
+//  Created by Shashwat Parhi on 10/22/12.
+//  Copyright (c) 2012 Shashwat Parhi.
+//
+//  This file is part of Autista.
+//
+//  Autista is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  Autista is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  To view the GNU General Public License, visit <http://www.gnu.org/licenses/>.
+//
+
+#import <QuartzCore/QuartzCore.h>
+#import "TypePuzzleViewController.h"
+#import "AdminViewController.h"
+#import "GuidedModeViewController.h"
+#import <AudioToolbox/AudioToolbox.h>
+#import "PuzzlePieceView.h"
+#import "TypeBanner.h"
+#import "Scene.h"
+#import "PuzzleObject.h"
+#import "Piece.h"
+#import "SoundEffect.h"
+#import "EventLogger.h"
+#import "GlobalPreferences.h"
+
+@interface TypePuzzleViewController ()
+
+@end
+
+@implementation TypePuzzleViewController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+
+	[self setupSounds];
+	
+	_prefs = [GlobalPreferences sharedGlobalPreferences];
+	_launchedInGuidedMode = _prefs.guidedModeEnabled;
+    _backButtonPressed = NO;
+    _puzzleComplete = NO;
+
+	_loopDetectorCount = 0;
+	_pieces = [NSMutableArray array];
+	_keys = @[AKey, BKey, CKey, DKey, EKey, FKey, GKey, HKey, IKey, JKey, KKey, LKey, MKey, NKey, OKey, PKey, QKey, RKey, SKey, TKey, UKey, VKey, WKey, XKey, YKey, ZKey];
+	
+	_background.image = [UIImage imageWithData:_object.scene.puzzleBackgroundImage];
+	
+	_banner = [[TypeBanner alloc] initWithFrame:titleLabel.frame];
+    //	_banner.bannerFont = titleLabel.font;
+    UIFont *avenirBold = [UIFont fontWithName:@"AvenirNext-Bold" size:48.];
+    
+	if (avenirBold == nil)
+		_banner.bannerFont = [UIFont systemFontOfSize:48.];
+    else
+        _banner.bannerFont = avenirBold;
+    
+    NSLog(@"banner font : %@, title font : %@", _banner.bannerFont.fontName, titleLabel.font.fontName);
+	_banner.bannerText = _object.title;
+	
+	[self.view addSubview:_banner];
+	
+	titleLabel.hidden = YES;
+	
+	[_placeHolder removeFromSuperview];																// this got loaded via the NIB so we remove it and recreate this later
+	_placeHolder = nil;
+	
+	[self performSelector:@selector(initializePuzzleState) withObject:nil afterDelay:0.3];
+	
+	[[EventLogger sharedLogger] logEvent:LogEventCodePuzzlePresented eventInfo:@{@"Mode": @"Type"}];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+	[super viewDidAppear:animated];
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
+
+	if (_adminVC != nil && _prefs.guidedModeEnabled == NO)											// Shashwat Parhi: if returning from Admin screen
+		[self dismissViewControllerAnimated:NO completion:nil];										// dismiss self, added on April 02, 2013 as per client request
+	
+	if (_launchedInGuidedMode == NO && _prefs.guidedModeEnabled == YES)								// most likely, admin changed this setting mid-stream
+		[self dismissViewControllerAnimated:NO completion:nil];										// so bail out
+}
+
+- (void)initializePuzzleState
+{
+	_placeHolder = [[UIImageView alloc] initWithImage:[UIImage imageWithData:_object.placeholderImage]];
+	_placeHolder.center = CGPointMake(512, 384);
+
+	[self.view addSubview:_placeHolder];
+	
+	[self slideOutKeyboard];
+
+	NSString *title = [_object.title uppercaseString];
+	
+	for (int i = 0; i < title.length; i++) {
+		NSInteger asciiCode = [title characterAtIndex:i];
+		UIButton *button = [self buttonFromASCIICode:asciiCode];
+		
+		button.adjustsImageWhenHighlighted = NO;													// Shashwat Parhi: disabled key hilighting on April 02, 2013, as per client request
+		button.enabled = YES;
+	}
+	
+	for (int i = 0; i < [_keys count]; i++) {
+		UIButton *button = [_keys objectAtIndex:i];
+		
+		if (button.enabled == NO)
+			button.titleLabel.text = @"";
+	}
+	
+	_currentLetterPosition = -1;
+	[self performSelector:@selector(playObjectTitleSound) withObject:nil afterDelay:0.5];
+	[self performSelector:@selector(slideInKeyboard) withObject:nil afterDelay:1.5];				// pieces are initialized after keyboard slide in animation completes
+}
+
+#pragma mark - Sound Effects
+
+// Load sound files into SoundEffect objects, and hold on to them for later use
+- (void)setupSounds
+{
+    NSBundle *mainBundle = [NSBundle mainBundle];
+	
+	_keyClickSound = [[SoundEffect alloc] initWithContentsOfFile:[mainBundle pathForResource:@"KeyClick" ofType:@"caf"]];
+	_correctKeyPressedSound = [[SoundEffect alloc] initWithContentsOfFile:[mainBundle pathForResource:@"CorrectKeyPressed" ofType:@"caf"]];
+	_wrongKeyPressedSound = [[SoundEffect alloc] initWithContentsOfFile:[mainBundle pathForResource:@"WrongKeyPressed" ofType:@"caf"]];
+	_puzzleCompletedSuccessfullySound = [[SoundEffect alloc] initWithContentsOfFile:[mainBundle pathForResource:@"PuzzleCompletedSuccessfully02" ofType:@"caf"]];
+}
+
+- (IBAction)playKeyClickSound:(id)sender
+{
+	NSString *title = [_object.title uppercaseString];
+	UIButton *expectedButton = [self buttonFromASCIICode:[title characterAtIndex:_currentLetterPosition]];
+
+	if (sender == expectedButton)																	// Shashwat Parhi: disabled key press sound on April 15, 2013
+		[_keyClickSound play];																		// for wrong key, as per client request
+}
+
+- (IBAction)playCorrectKeyPressedSound {
+	[_correctKeyPressedSound play];
+}
+
+- (IBAction)playWrongKeyPressedSound {
+	//	[_wrongKeyPressedSound play];																// Shashwat Parhi: commented out on April 02, 2013, as per request from client
+}
+
+- (IBAction)playPuzzleCompletedSuccessfullySound {
+	[_puzzleCompletedSuccessfullySound play];
+}
+
+- (void)playObjectTitleSound
+{
+	NSString *wordSoundFile = [[NSBundle mainBundle] pathForResource:_object.title ofType:@"caf"];
+	NSURL *url = [NSURL fileURLWithPath:wordSoundFile];
+	_wordPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+	_wordPlayer.volume = 1.0;
+	[_wordPlayer play];
+}
+
+#pragma mark - Helper Functions
+
+- (UIButton *)buttonFromASCIICode:(NSInteger)asciiCode
+{
+	UIButton *button;
+	
+	asciiCode -= 65;
+	
+	switch (asciiCode) {
+		case 0:
+			button = AKey;
+			break;
+			
+		case 1:
+			button = BKey;
+			break;
+			
+		case 2:
+			button = CKey;
+			break;
+			
+		case 3:
+			button = DKey;
+			break;
+			
+		case 4:
+			button = EKey;
+			break;
+			
+		case 5:
+			button = FKey;
+			break;
+			
+		case 6:
+			button = GKey;
+			break;
+			
+		case 7:
+			button = HKey;
+			break;
+			
+		case 8:
+			button = IKey;
+			break;
+			
+		case 9:
+			button = JKey;
+			break;
+			
+		case 10:
+			button = KKey;
+			break;
+			
+		case 11:
+			button = LKey;
+			break;
+			
+		case 12:
+			button = MKey;
+			break;
+			
+		case 13:
+			button = NKey;
+			break;
+			
+		case 14:
+			button = OKey;
+			break;
+			
+		case 15:
+			button = PKey;
+			break;
+			
+		case 16:
+			button = QKey;
+			break;
+			
+		case 17:
+			button = RKey;
+			break;
+			
+		case 18:
+			button = SKey;
+			break;
+			
+		case 19:
+			button = TKey;
+			break;
+			
+		case 20:
+			button = UKey;
+			break;
+			
+		case 21:
+			button = VKey;
+			break;
+			
+		case 22:
+			button = WKey;
+			break;
+			
+		case 23:
+			button = XKey;
+			break;
+			
+		case 24:
+			button = YKey;
+			break;
+			
+		case 25:
+			button = ZKey;
+			break;
+			
+		default:
+			break;
+	}
+	
+	return button;
+}
+
+- (IBAction)handleKeyPressed:(id)sender
+{
+	NSString *title = [_object.title uppercaseString];
+	UIButton *expectedButton = [self buttonFromASCIICode:[title characterAtIndex:_currentLetterPosition]];
+	PuzzlePieceView *piece = [_pieces objectAtIndex:_currentLetterPosition];
+	CGRect frame = piece.frame;
+	
+    if (_puzzleComplete) return;
+
+	if (sender == expectedButton) {
+		frame.origin = piece.finalPoint;
+		
+		[self playCorrectKeyPressedSound];
+		
+		[[EventLogger sharedLogger] logEvent:LogEventCodeKeyReleased eventInfo:@{@"key": @"correct"}];
+	}
+	else if (_loopDetectorCount > 3) {
+		frame.origin = piece.finalPoint;
+		
+		[self playWrongKeyPressedSound];
+		_loopDetectorCount = 0;
+		_autoCompletedPieces++;
+		
+		[[EventLogger sharedLogger] logEvent:LogEventCodeKeyReleased eventInfo:@{@"key": @"autoAdvanced"}];
+	}
+	else {
+		[self playWrongKeyPressedSound];
+		_loopDetectorCount++;
+		[[EventLogger sharedLogger] logEvent:LogEventCodeKeyReleased eventInfo:@{@"key": @"wrong"}];
+		
+		return;												// without doing the animations
+	}
+	
+	self.view.userInteractionEnabled = NO;
+	
+	[UIView animateWithDuration:0.5
+						  delay:0
+						options:UIViewAnimationOptionCurveEaseInOut | UIViewAnimationOptionAllowUserInteraction
+					 animations:^{
+						 piece.frame = frame;
+					 }
+					 completion:^(BOOL finished) {
+						 piece.isCompleted = YES;
+						 
+						 [self checkPuzzleState];
+						 
+						 self.view.userInteractionEnabled = YES;
+					 }
+	 ];
+}
+
+- (void)checkPuzzleState
+{
+	BOOL isCompleted = YES;
+	
+	for (int i = 0; i < [_pieces count]; i++) {
+		if ([[_pieces objectAtIndex:i] isCompleted] == NO) {
+			isCompleted = NO;
+			break;
+		}
+	}
+	
+	if (isCompleted == NO)
+		[self advanceToNextLetterPosition];
+	else {
+        _puzzleComplete = YES;
+        [self presentPuzzleCompletionAnimation];
+    }
+}
+
+- (void)advanceToNextLetterPosition
+{
+	NSString *title = [_object.title uppercaseString];
+	UIButton *button = [self buttonFromASCIICode:[title characterAtIndex:_currentLetterPosition]];
+	[self removeGlowFromObject:button];
+	button.alpha = 0.5;
+	
+	_currentLetterPosition++;
+	button = [self buttonFromASCIICode:[title characterAtIndex:_currentLetterPosition]];
+	button.alpha = 1.0;
+	
+	if (_prefs.keyHighlightingEnabled == YES)
+		[self applyGlowToObject:button];
+	
+	[_banner highlightLabelAtPosition:_currentLetterPosition];
+	
+	NSString *alphabet = [title substringWithRange:NSMakeRange(_currentLetterPosition, 1)];
+	
+	if ([alphabet isEqualToString:@"Z"])
+		alphabet = @"Zee";
+	
+	NSString *alphabetSoundFile = [[NSBundle mainBundle] pathForResource:alphabet ofType:@"aifc"];
+	NSURL *url = [NSURL fileURLWithPath:alphabetSoundFile];
+	_alphabetPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+	_alphabetPlayer.volume = 1.0;
+	[_alphabetPlayer play];
+}
+
+- (void)presentPuzzleCompletionAnimation
+{
+	[self playPuzzleCompletedSuccessfullySound];
+	[[EventLogger sharedLogger] logEvent:LogEventCodePuzzleCompleted eventInfo:@{@"status": @"successful"}];
+	
+	//[self performSelector:@selector(delayedDismissSelf) withObject:nil afterDelay:1];
+    [self performSelector:@selector(promptAndFinish) withObject:nil afterDelay:0.5];
+}
+
+- (void) promptAndFinish
+{
+    //RD
+    //Prompt : Easy (<10) - WellDone; Medium (10-12) - Super, Yay; Difficult (>12) - GoodJob, Awesome
+    //NSLog(@"Difficulty Level of the object %@ for Say mode is : %@", _object.title, _object.difficultyType);
+    NSString * objectName = @"Super";
+    
+    if (_autoCompletedPieces > 0)
+        objectName = @"TryAgain";
+    else if ([_object.difficultyType doubleValue] < 10)
+        objectName = @"WellDone";
+    else if ([_object.difficultyType doubleValue] > 12)
+        objectName = @"Awesome";
+    
+    NSString *bundleRoot = [[NSBundle mainBundle] bundlePath];
+    NSLog(@"directory found ====== %@",bundleRoot);
+    NSFileManager *fm = [NSFileManager defaultManager];
+    NSArray *dirContents = [fm contentsOfDirectoryAtPath:bundleRoot error:nil];
+    NSPredicate *fltr;
+    fltr = [NSPredicate predicateWithFormat:@"(self ENDSWITH '.caf') AND (self CONTAINS[c] %@)", objectName];
+    NSArray *onlyWAVs = [dirContents filteredArrayUsingPredicate:fltr];
+    NSLog(@"directoryContents ====== %@",onlyWAVs);
+   
+    NSString * promptPath = [[NSBundle mainBundle] pathForResource:[onlyWAVs[0] stringByDeletingPathExtension] ofType:@"caf"];
+    NSURL *promptURL = [NSURL fileURLWithPath:promptPath];
+    _finishPrompt = [[AVAudioPlayer alloc] initWithContentsOfURL:promptURL error:nil];
+    [_finishPrompt prepareToPlay];
+    [_finishPrompt play];
+    
+	[self performSelector:@selector(delayedDismissSelf) withObject:nil afterDelay:1];
+}
+
+- (void)delayedDismissSelf
+{
+	NSString *status;
+	NSInteger state;
+	
+	if (_backButtonPressed) {
+		state = PuzzleStateAutoCompleted;
+		status = @"unsuccessful";
+    }
+    else if (_autoCompletedPieces == 0) {
+		state = PuzzleStateCompleted;
+		status = @"successful";
+	}
+	else if (_autoCompletedPieces < [_pieces count]) {
+		state = PuzzleStatePartiallyCompleted;
+		status = @"partial";
+	}
+	else {
+		state = PuzzleStateAutoCompleted;
+		status = @"unsuccessful";
+	}
+	
+	[[EventLogger sharedLogger] logAttemptForPuzzle:_object inMode:PuzzleModeType state:state];
+	[[EventLogger sharedLogger] logEvent:LogEventCodePuzzleCompleted eventInfo:@{@"status": status}];
+
+	GlobalPreferences *prefs = [GlobalPreferences sharedGlobalPreferences];
+	if (prefs.guidedModeEnabled == NO)
+		[self dismissViewControllerAnimated:YES completion:nil];
+	else [(GuidedModeViewController *)self.parentViewController presentNextPuzzle];
+}
+
+- (void)slideOutKeyboard
+{
+	CGRect frame = _keyboard.frame;
+	_keyboard.frame = CGRectOffset(frame, 0, frame.size.height);
+	_keyboard.hidden = NO;
+}
+
+- (void)slideInKeyboard
+{
+	CGRect frame = _keyboard.frame;
+	CGFloat height = frame.size.height;
+	
+	[self.view bringSubviewToFront:_keyboard];
+	
+	[UIView animateWithDuration:0.5
+						  delay:0.5
+						options:0
+					 animations:^{
+						 _keyboard.frame = CGRectOffset(frame, 0, -height);
+					 }
+					 completion:nil
+	];
+	
+	[UIView animateWithDuration:0.5
+						  delay:0.75
+						options:0
+					 animations:^{
+						 _placeHolder.frame = CGRectOffset(_placeHolder.frame, 0, -height/4);
+					 }
+					 completion:^(BOOL finished) {
+						 CGFloat offsetX = _placeHolder.frame.origin.x;
+						 CGFloat offsetY = _placeHolder.frame.origin.y;
+						 
+						 for (Piece *piece in _object.pieces) {
+							 PuzzlePieceView *pieceView = [[PuzzlePieceView alloc] initWithImage:[UIImage imageWithData:piece.pieceImage]];
+							 pieceView.initialPoint = CGPointMake(0, 0);
+							 CGPoint finalPosition = CGPointMake(offsetX + [piece.finalPositionX floatValue], offsetY + [piece.finalPositionY floatValue]);
+							 pieceView.finalPoint = finalPosition;
+							 
+							 [self.view addSubview:pieceView];
+							 [_pieces addObject:pieceView];
+						 }
+						 
+						 [self randomizeInitialPositionsOfPieces];
+						 [self advanceToNextLetterPosition];
+					 }
+	 ];
+}
+
+- (void)randomizeInitialPositionsOfPieces
+{
+	CGRect outerRect = CGRectMake(0, 0, 2048, 1536);
+	CGRect innerRect = CGRectMake(512, 384, 1024, 768);
+	
+	int i = 0;
+	
+	while (i < [_pieces count]) {
+		UIView *aPiece = [_pieces objectAtIndex:i];
+		CGRect pieceFrame = aPiece.frame;
+		CGFloat pieceWidth = pieceFrame.size.width;
+		CGFloat pieceHeight = pieceFrame.size.height;
+		
+		CGFloat offsetX = arc4random() % (int)(outerRect.size.width - pieceWidth);
+		CGFloat offsetY = arc4random() % (int)(outerRect.size.height - pieceHeight);
+		
+		CGRect pieceRect = CGRectMake(offsetX, offsetY, pieceWidth, pieceHeight);
+		
+		if (CGRectIntersectsRect(pieceRect, innerRect) == YES)
+			continue;
+		
+		int j = 0;
+		BOOL intersects = NO;
+		
+		while (j < i && intersects == NO) {													// check if we are intersection any of the earlier pieces
+			UIView *bPiece = [_pieces objectAtIndex:j];
+			
+			if (CGRectIntersectsRect(pieceRect, bPiece.frame) == YES)
+				intersects = YES;
+			else j++;
+		}
+		
+		if (intersects == YES)
+			continue;
+		
+		pieceFrame.origin = CGPointMake(offsetX, offsetY);
+		aPiece.frame = pieceFrame;
+		i++;
+	}
+	
+	for (UIView *piece in _pieces)
+		piece.frame = CGRectOffset(piece.frame, -512, -384);
+}
+
+#pragma mark - Image Manipulation Methods
+
+- (void)applyShadowToObject:(UIView *)object
+{
+	object.layer.shadowColor = [[UIColor blackColor] CGColor];
+    object.layer.shadowOffset = CGSizeMake(0, 10);
+    object.layer.shadowOpacity = 0.25;
+    object.layer.shadowRadius = 5;
+    object.clipsToBounds = NO;
+}
+
+- (void)applyGlowToObject:(UIView *)object
+{
+	object.layer.shadowColor = [[UIColor yellowColor] CGColor];
+    object.layer.shadowOffset = CGSizeMake(0, 0);
+    object.layer.shadowOpacity = 10;
+    object.layer.shadowRadius = 10;
+    object.clipsToBounds = NO;
+}
+
+- (void)removeGlowFromObject:(UIView *)object
+{
+	object.layer.shadowColor = [[UIColor clearColor] CGColor];
+    object.layer.shadowOffset = CGSizeMake(0, 0);
+    object.layer.shadowOpacity = 0;
+    object.layer.shadowRadius = 0;
+}
+
+- (IBAction)handleBackButtonPressed:(id)sender
+{
+    AudioServicesPlaySystemSound(0x450);
+	_backOverlayTimer = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(showBackOverlay) userInfo:nil repeats:NO];
+}
+
+- (IBAction)handleBackButtonReleased:(id)sender
+{
+	[_backOverlayTimer invalidate];
+}
+
+- (void)showBackOverlay
+{
+    [TestFlight passCheckpoint:@"Back button Tapped in Type mode"];
+
+	[_backOverlayTimer invalidate];
+	_backButtonPressed = YES;
+	[self performSelector:@selector(delayedDismissSelf) withObject:nil afterDelay:0];
+}
+
+- (IBAction)handleAdminButtonPressed:(id)sender
+{
+	_adminOverlayTimer = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(showAdminOverlay) userInfo:nil repeats:NO];
+}
+
+- (IBAction)handleAdminButtonReleased:(id)sender
+{
+	[_adminOverlayTimer invalidate];
+}
+
+- (void)showAdminOverlay
+{
+	[_adminOverlayTimer invalidate];
+	
+	_adminVC = [self.storyboard instantiateViewControllerWithIdentifier:@"AdminViewController"];
+	[self presentViewController:_adminVC animated:YES completion:nil];
+}
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+{
+    return UIInterfaceOrientationLandscapeLeft;
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+{
+	return toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft;
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+@end

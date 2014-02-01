@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12E55" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Attempt" representedClassName="Attempt" syncable="YES">
+        <attribute name="attemptedOn" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="mode" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="score" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="puzzleObject" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="PuzzleObject" inverseName="attempts" inverseEntity="PuzzleObject" syncable="YES"/>
+        <relationship name="user" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="attempts" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Event" representedClassName="Event" syncable="YES">
+        <attribute name="eventCode" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="logs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Log" inverseName="event" inverseEntity="Log" syncable="YES"/>
+    </entity>
+    <entity name="Log" representedClassName="Log" syncable="YES">
+        <attribute name="absoluteTime" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="appSettings" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="appState" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventInfo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeSinceLaunch" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="event" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Event" inverseName="logs" inverseEntity="Event" syncable="YES"/>
+        <relationship name="user" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="logs" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Piece" representedClassName="Piece" syncable="YES">
+        <attribute name="finalPositionX" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="finalPositionY" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="imageName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="label" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pieceImage" attributeType="Binary" storedInTruthFile="YES" syncable="YES"/>
+        <relationship name="puzzleObject" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="PuzzleObject" inverseName="pieces" inverseEntity="PuzzleObject" syncable="YES"/>
+    </entity>
+    <entity name="PuzzleObject" representedClassName="PuzzleObject" syncable="YES">
+        <attribute name="completedImage" optional="YES" attributeType="Binary" storedInTruthFile="YES" syncable="YES"/>
+        <attribute name="difficultyDrag" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="difficultySpeak" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="difficultyType" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="dragWeight" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="height" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="offsetX" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="offsetY" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="placeholderImage" optional="YES" attributeType="Binary" storedInTruthFile="YES" syncable="YES"/>
+        <attribute name="speakWeight" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="syllables" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="typeWeight" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="width" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="attempts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Attempt" inverseName="puzzleObject" inverseEntity="Attempt" syncable="YES"/>
+        <relationship name="pieces" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Piece" inverseName="puzzleObject" inverseEntity="Piece" syncable="YES"/>
+        <relationship name="scene" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Scene" inverseName="puzzleObjects" inverseEntity="Scene" syncable="YES"/>
+    </entity>
+    <entity name="Scene" representedClassName="Scene" syncable="YES">
+        <attribute name="puzzleBackgroundImage" optional="YES" attributeType="Binary" storedInTruthFile="YES" syncable="YES"/>
+        <attribute name="sceneBackgroundImage" optional="YES" attributeType="Binary" storedInTruthFile="YES" syncable="YES"/>
+        <attribute name="sceneMusicFilename" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sceneSelectorImage" optional="YES" attributeType="Binary" storedInTruthFile="YES" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="puzzleObjects" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PuzzleObject" inverseName="scene" inverseEntity="PuzzleObject" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="dob" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dragEnterEnabled" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="fullname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" minValueString="1" syncable="YES"/>
+        <attribute name="keyHitRadius" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="mugshot" optional="YES" attributeType="Binary" storedInTruthFile="YES" syncable="YES"/>
+        <attribute name="rankDrag" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="rankSpeak" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="rankType" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="snapBackEnabled" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="snappingDistance" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="attempts" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Attempt" inverseName="user" inverseEntity="Attempt" syncable="YES"/>
+        <relationship name="logs" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Log" inverseName="user" inverseEntity="Log" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Attempt" positionX="288" positionY="125" width="128" height="118"/>
+        <element name="Event" positionX="-108" positionY="144" width="146" height="88"/>
+        <element name="Log" positionX="-108" positionY="275" width="144" height="148"/>
+        <element name="Piece" positionX="268" positionY="-99" width="128" height="133"/>
+        <element name="PuzzleObject" positionX="88" positionY="-99" width="146" height="298"/>
+        <element name="Scene" positionX="-108" positionY="-18" width="146" height="133"/>
+        <element name="User" positionX="90" positionY="225" width="144" height="238"/>
+    </elements>
+</model>
