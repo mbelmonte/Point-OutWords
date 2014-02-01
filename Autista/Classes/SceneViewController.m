@@ -233,7 +233,7 @@
 
 - (void)presentTouchPuzzleView:(PuzzleObject *)object
 {
-	TouchPuzzleViewController *puzzleVC = [self.storyboard instantiateViewControllerWithIdentifier:@"TouchPuzzleViewController"];
+	TouchPuzzleViewController *puzzleVC = [self.storyboard instantiateViewControllerWithIdentifier:@"SayPuzzleViewController"];
 	puzzleVC.object = object;
 	[puzzleVC setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
 	[self presentViewController:puzzleVC animated:YES completion:nil];
@@ -241,7 +241,7 @@
 
 - (void)presentTypePuzzleView:(PuzzleObject *)object
 {
-	TypePuzzleViewController *puzzleVC = [self.storyboard instantiateViewControllerWithIdentifier:@"TypePuzzleViewController"];
+	TypePuzzleViewController *puzzleVC = [self.storyboard instantiateViewControllerWithIdentifier:@"SayPuzzleViewController"];
 	puzzleVC.object = object;
 	[puzzleVC setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
 	[self presentViewController:puzzleVC animated:YES completion:nil];

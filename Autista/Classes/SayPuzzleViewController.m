@@ -48,16 +48,18 @@
 #define UPPER_THRESHOLD 0.7
 */
 
-@interface SayPuzzleViewController () {
+@interface SayPuzzleViewController () <AVAudioPlayerDelegate>{
     UIActivityIndicatorView *activityIndicator;
 }
 @property LanguageModelGenerator *lmGenerator;
-@property PocketsphinxController*pocketsphinxController;
+@property PocketsphinxController *pocketsphinxController;
 @property OpenEarsEventsObserver *openEarsEventsObserver;
+@property NSString *globalHypothesis;
 @end
 
 @implementation SayPuzzleViewController
 @synthesize  lmGenerator,pocketsphinxController,openEarsEventsObserver;
+@synthesize globalHypothesis;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -71,36 +73,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    //initliaze the OpenEarsEventsObserver
-    [self.openEarsEventsObserver setDelegate:self];
-    lmGenerator=[[LanguageModelGenerator alloc]init];
-    NSArray *words = [NSArray arrayWithObjects:@"UP", @"DOWN", @"LEFT", @"RIGHT", nil];
-    NSString *name = @"NameIWantForMyLanguageModelFiles";
-    NSError *err = [lmGenerator generateLanguageModelFromArray:words withFilesNamed:name forAcousticModelAtPath:[AcousticModel pathToModel:@"AcousticModelEnglish"]]; // Change "AcousticModelEnglish" to "AcousticModelSpanish" to create a Spanish language model instead of an English one.
-    
-    
-    NSDictionary *languageGeneratorResults = nil;
-    
-    NSString *lmPath = nil;
-    NSString *dicPath = nil;
-    
-    if([err code] == noErr) {
-        
-        languageGeneratorResults = [err userInfo];
-        
-        lmPath = [languageGeneratorResults objectForKey:@"LMPath"];
-        dicPath = [languageGeneratorResults objectForKey:@"DictionaryPath"];
-        
-    } else {
-        NSLog(@"Error: %@",[err localizedDescription]);
-    }
-    
-    //start to listen to the dialog
-    [self.pocketsphinxController startListeningWithLanguageModelAtPath:lmPath dictionaryAtPath:dicPath acousticModelAtPath:[AcousticModel pathToModel:@"AcousticModelEnglish"] languageModelIsJSGF:NO];
-    
-
-    
     
     activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
  
@@ -155,6 +127,42 @@
 
 	[[NSNotificationCenter defaultCenter] postNotificationName:@"StartingSayTypePuzzle" object:nil];
 	[[EventLogger sharedLogger] logEvent:LogEventCodePuzzlePresented eventInfo:@{@"Mode": @"Say"}];
+    
+    //initliaze the OpenEarsEventsObserver
+    [self.openEarsEventsObserver setDelegate:self];
+    lmGenerator=[[LanguageModelGenerator alloc]init];
+    
+    NSLog(@"Syllables: %@", _syllables);
+    
+    NSMutableArray *upperCaseSyllables = [[NSMutableArray alloc] init];
+    
+    for (NSString * syll in _syllables){
+        [upperCaseSyllables addObject:[syll uppercaseString]];
+    }
+    
+    NSLog(@"Syllables: %@", upperCaseSyllables);
+    
+    NSString *name = @"NameIWantForMyLanguageModelFiles";
+    NSError *err = [lmGenerator generateLanguageModelFromArray:upperCaseSyllables withFilesNamed:name forAcousticModelAtPath:[AcousticModel pathToModel:@"AcousticModelEnglish"]];
+    
+    NSDictionary *languageGeneratorResults = nil;
+    
+    NSString *lmPath = nil;
+    NSString *dicPath = nil;
+    
+    if([err code] == noErr) {
+        
+        languageGeneratorResults = [err userInfo];
+        
+        lmPath = [languageGeneratorResults objectForKey:@"LMPath"];
+        dicPath = [languageGeneratorResults objectForKey:@"DictionaryPath"];
+        
+    } else {
+        NSLog(@"Error: %@",[err localizedDescription]);
+    }
+    
+    //start to listen to the dialog
+    [self.pocketsphinxController startListeningWithLanguageModelAtPath:lmPath dictionaryAtPath:dicPath acousticModelAtPath:[AcousticModel pathToModel:@"AcousticModelEnglish"] languageModelIsJSGF:NO];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -395,14 +403,20 @@
     //RD
     if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"6.0")) {
         if (!_soundsMissing) {
-                NSArray *queue = @[_sayItem, _firstSyllItem];
-                _qplayer = [[AVQueuePlayer alloc] initWithItems:queue];
-                _qplayer.actionAtItemEnd = AVPlayerActionAtItemEndAdvance;
-                NSLog(@"system volume in start rec : %f", [self audioVolume]);
-                /*if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0"))
-                    [_qplayer setVolume:[self audioVolumeFac]];
-                 */
-                [_qplayer play];
+//                NSArray *queue = @[_sayItem, _firstSyllItem];
+//                _qplayer = [[AVQueuePlayer alloc] initWithItems:queue];
+//                _qplayer.actionAtItemEnd = AVPlayerActionAtItemEndAdvance;
+//                NSLog(@"system volume in start rec : %f", [self audioVolume]);
+//                /*if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0"))
+//                    [_qplayer setVolume:[self audioVolumeFac]];
+//                 */
+//                [_qplayer play];
+                AVAudioPlayer * syllableSound = _syllableSounds[_currentSyllable];
+                [syllableSound prepareToPlay];
+                NSLog(@"system volume in next syll : %f", [self audioVolume]);
+                [pocketsphinxController suspendRecognition];
+                syllableSound.delegate = self;
+                [syllableSound play];
             }
     }
     sayNa.hidden = NO;
@@ -452,22 +466,33 @@
                     /*if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0"))
                      [syllableSound setVolume:[self audioVolumeFac]];
                      */
+                    [pocketsphinxController suspendRecognition];
+                    syllableSound.delegate = self;
                     [syllableSound play];
                 }
             }
         }
 	}
-	else if (lowPassResults > UPPER_THRESHOLD) {
+	else if ([[globalHypothesis lowercaseString] isEqualToString:_syllables[_currentSyllable]]) {
+        NSLog(@"advanceToNextSyllable");
 		[self advanceToNextSyllable];
     }
+}
+
+- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag{
+    NSLog(@"%d", flag);
+    [NSThread sleepForTimeInterval:0.5];
+    [pocketsphinxController resumeRecognition];
 }
 
 
 - (void)advanceToNextSyllable
 {
-	if (_currentSyllable == [_syllables count])
+    globalHypothesis = @"";
+	if (_currentSyllable == [_syllables count]){
+        [pocketsphinxController stopListening];
 		return;
-    
+    }
 	for (PuzzlePieceView *piece in _pieces) {
 		if (piece.belongsToSyllable == _currentSyllable)
 			piece.highlighted = YES;
@@ -670,7 +695,12 @@
 
 - (void) pocketsphinxDidReceiveHypothesis:(NSString *)hypothesis recognitionScore:(NSString *)recognitionScore utteranceID:(NSString *)utteranceID {
 	NSLog(@"The received hypothesis is %@ with a score of %@ and an ID of %@", hypothesis, recognitionScore, utteranceID);
-    //to do next......
+    
+    NSLog(@"%@", globalHypothesis);
+    
+    globalHypothesis = hypothesis;
+    
+    NSLog(@"%@", globalHypothesis);
 }
 
 - (void) pocketsphinxDidStartCalibration {
