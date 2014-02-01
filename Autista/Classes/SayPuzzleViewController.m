@@ -128,7 +128,7 @@
 	[[NSNotificationCenter defaultCenter] postNotificationName:@"StartingSayTypePuzzle" object:nil];
 	[[EventLogger sharedLogger] logEvent:LogEventCodePuzzlePresented eventInfo:@{@"Mode": @"Say"}];
     
-    //initliaze the OpenEarsEventsObserver
+    //Initialize the OpenEarsEventsObserver
     [self.openEarsEventsObserver setDelegate:self];
     lmGenerator=[[LanguageModelGenerator alloc]init];
     
@@ -161,7 +161,7 @@
         NSLog(@"Error: %@",[err localizedDescription]);
     }
     
-    //start to listen to the dialog
+    //Start to listen to the dialog
     [self.pocketsphinxController startListeningWithLanguageModelAtPath:lmPath dictionaryAtPath:dicPath acousticModelAtPath:[AcousticModel pathToModel:@"AcousticModelEnglish"] languageModelIsJSGF:NO];
 }
 
@@ -411,9 +411,13 @@
 //                    [_qplayer setVolume:[self audioVolumeFac]];
 //                 */
 //                [_qplayer play];
+            
+                //Change audio from AVQueuePlayer to AVAudioPlayer to enable delegate
                 AVAudioPlayer * syllableSound = _syllableSounds[_currentSyllable];
                 [syllableSound prepareToPlay];
                 NSLog(@"system volume in next syll : %f", [self audioVolume]);
+            
+                //Suspend Recognition to prevent the recognizer from system sound interruption
                 [pocketsphinxController suspendRecognition];
                 syllableSound.delegate = self;
                 [syllableSound play];
@@ -466,6 +470,8 @@
                     /*if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0"))
                      [syllableSound setVolume:[self audioVolumeFac]];
                      */
+                    
+                    //Suspend Recognition to prevent the recognizer from system sound interruption
                     [pocketsphinxController suspendRecognition];
                     syllableSound.delegate = self;
                     [syllableSound play];
@@ -474,13 +480,12 @@
         }
 	}
 	else if ([[globalHypothesis lowercaseString] isEqualToString:_syllables[_currentSyllable]]) {
-        NSLog(@"advanceToNextSyllable");
 		[self advanceToNextSyllable];
     }
 }
 
 - (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag{
-    NSLog(@"%d", flag);
+    //Resume Recognition
     [NSThread sleepForTimeInterval:0.5];
     [pocketsphinxController resumeRecognition];
 }
@@ -490,6 +495,7 @@
 {
     globalHypothesis = @"";
 	if (_currentSyllable == [_syllables count]){
+        //Stop listening when finishing puzzle
         [pocketsphinxController stopListening];
 		return;
     }
