@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		007663FE189D86CA009FE8DE /* Instabug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007663FD189D86CA009FE8DE /* Instabug.framework */; };
+		00766404189D8880009FE8DE /* AcousticModelEnglish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 00766400189D8880009FE8DE /* AcousticModelEnglish.bundle */; };
+		00766405189D8880009FE8DE /* AcousticModelSpanish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 00766401189D8880009FE8DE /* AcousticModelSpanish.bundle */; };
+		00766406189D8880009FE8DE /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00766402189D8880009FE8DE /* OpenEars.framework */; };
+		00766407189D8880009FE8DE /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00766403189D8880009FE8DE /* Slt.framework */; };
 		2007A4691839DFCB00F7A541 /* BtnBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 2007A4681839DFCB00F7A541 /* BtnBack.png */; };
 		2007A46B183A702300F7A541 /* logos.png in Resources */ = {isa = PBXBuildFile; fileRef = 2007A46A183A702300F7A541 /* logos.png */; };
 		2022B72517FE9BA30061D6EE /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2022B71F17FE9BA30061D6EE /* libTestFlight.a */; };
@@ -573,6 +578,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		007663FD189D86CA009FE8DE /* Instabug.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Instabug.framework; sourceTree = "<group>"; };
+		00766400189D8880009FE8DE /* AcousticModelEnglish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelEnglish.bundle; sourceTree = "<group>"; };
+		00766401189D8880009FE8DE /* AcousticModelSpanish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelSpanish.bundle; sourceTree = "<group>"; };
+		00766402189D8880009FE8DE /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenEars.framework; sourceTree = "<group>"; };
+		00766403189D8880009FE8DE /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
 		2007A4681839DFCB00F7A541 /* BtnBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BtnBack.png; sourceTree = "<group>"; };
 		2007A46A183A702300F7A541 /* logos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logos.png; sourceTree = "<group>"; };
 		2022B71F17FE9BA30061D6EE /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
@@ -1210,10 +1220,13 @@
 			files = (
 				209C607B18333760004A2DF1 /* AdSupport.framework in Frameworks */,
 				8F99C9EE189D847100EEC1CA /* Instabug.framework in Frameworks */,
+				00766406189D8880009FE8DE /* OpenEars.framework in Frameworks */,
 				209A8974181A00FA002FAF7C /* CoreTelephony.framework in Frameworks */,
+				007663FE189D86CA009FE8DE /* Instabug.framework in Frameworks */,
 				209A8972181A00ED002FAF7C /* SystemConfiguration.framework in Frameworks */,
 				209A8970181A00D8002FAF7C /* GLKit.framework in Frameworks */,
 				8F99C9F6189D84C900EEC1CA /* libTestFlight.a in Frameworks */,
+				00766407189D8880009FE8DE /* Slt.framework in Frameworks */,
 				209A896E181A00C7002FAF7C /* CoreFoundation.framework in Frameworks */,
 				209A896C181A00AA002FAF7C /* CoreLocation.framework in Frameworks */,
 				2022B72917FEA7090061D6EE /* libz.dylib in Frameworks */,
@@ -1237,6 +1250,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		007663FF189D8880009FE8DE /* OpenEars */ = {
+			isa = PBXGroup;
+			children = (
+				00766400189D8880009FE8DE /* AcousticModelEnglish.bundle */,
+				00766401189D8880009FE8DE /* AcousticModelSpanish.bundle */,
+				00766402189D8880009FE8DE /* OpenEars.framework */,
+				00766403189D8880009FE8DE /* Slt.framework */,
+			);
+			name = OpenEars;
+			path = Framework;
+			sourceTree = "<group>";
+		};
 		200EBE1718113AE600E6F3E0 /* Prompts */ = {
 			isa = PBXGroup;
 			children = (
@@ -2126,6 +2151,7 @@
 		8DA3DD081604C6E20031950A = {
 			isa = PBXGroup;
 			children = (
+				007663FD189D86CA009FE8DE /* Instabug.framework */,
 				8F99C9EF189D84C900EEC1CA /* TestFlightSDK2.0.2 */,
 				20E4A563186FDD1800B473C2 /* Icon 152.png */,
 				20E4A562186FDD0400B473C2 /* Icon 76.png */,
@@ -2159,6 +2185,7 @@
 		8DA3DD161604C6E20031950A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				007663FF189D8880009FE8DE /* OpenEars */,
 				8F99C9ED189D847100EEC1CA /* Instabug.framework */,
 				209C607A18333760004A2DF1 /* AdSupport.framework */,
 				209A8973181A00FA002FAF7C /* CoreTelephony.framework */,
@@ -2859,6 +2886,7 @@
 				8DF5DFCA16B907EE005D8154 /* Towel04E.png in Resources */,
 				8DF5DFCB16B907EE005D8154 /* Towel05L.png in Resources */,
 				2054BD1D18364B9300DFFC44 /* Birthday_full_3_Tanu.caf in Resources */,
+				00766405189D8880009FE8DE /* AcousticModelSpanish.bundle in Resources */,
 				8DF5DFEF16B90BD1005D8154 /* Bread01B.png in Resources */,
 				2054BD5618364B9300DFFC44 /* Bus_full_3_Tanu.caf in Resources */,
 				2054BD5F18364B9300DFFC44 /* Flower_full_4_Tanu.caf in Resources */,
@@ -3119,6 +3147,7 @@
 				8D96536916FF42A200B9E3FB /* Spoon.caf in Resources */,
 				8D96536A16FF42A200B9E3FB /* Table.caf in Resources */,
 				8D96536B16FF42A200B9E3FB /* Tap.caf in Resources */,
+				00766404189D8880009FE8DE /* AcousticModelEnglish.bundle in Resources */,
 				8D96536C16FF42A200B9E3FB /* Towel.caf in Resources */,
 				8D96536D16FF42A200B9E3FB /* Tree.caf in Resources */,
 				8D96536E16FF42A200B9E3FB /* Water.caf in Resources */,
@@ -3267,7 +3296,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/mukeshkalra/Dropbox/Game\\ Dev/Code/Autista\\ (Apr\\ 29\\ 2013)",
-					/Users/guoanhong/Documents/Autista,
+					/Users/shawnwu/Documents/Autista,
+					/Users/shawnwu/Documents/Autista/Framework,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Autista/Autista-Prefix.pch";
@@ -3276,7 +3306,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/mukeshkalra/Dropbox/Game\\ Dev/Code/Autista\\ (Apr\\ 29\\ 2013)/TestFlightSDK2.0.2",
-					/Users/guoanhong/Documents/Autista/TestFlightSDK2.0.2,
+					/Users/shawnwu/Documents/Autista/TestFlightSDK2.0.2,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "9AABB617-5443-457B-8199-F43D6E73EA15";
@@ -3293,7 +3323,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/mukeshkalra/Dropbox/Game\\ Dev/Code/Autista\\ (Apr\\ 29\\ 2013)",
-					/Users/guoanhong/Documents/Autista,
+					/Users/shawnwu/Documents/Autista,
+					/Users/shawnwu/Documents/Autista/Framework,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Autista/Autista-Prefix.pch";
@@ -3302,7 +3333,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/mukeshkalra/Dropbox/Game\\ Dev/Code/Autista\\ (Apr\\ 29\\ 2013)/TestFlightSDK2.0.2",
-					/Users/guoanhong/Documents/Autista/TestFlightSDK2.0.2,
+					/Users/shawnwu/Documents/Autista/TestFlightSDK2.0.2,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "8575715F-039B-4A74-A456-D3E82164CB17";
