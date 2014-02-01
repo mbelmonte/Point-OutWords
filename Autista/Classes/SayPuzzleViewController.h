@@ -24,6 +24,11 @@
 #import <AVFoundation/AVAudioSession.h>
 #import <CoreAudio/CoreAudioTypes.h>
 #import <UIKit/UIKit.h>
+#import <OpenEars/LanguageModelGenerator.h>
+#import <OpenEars/AcousticModel.h>
+#import <OpenEars/OpenEarsEventsObserver.h>
+#import <OpenEars/PocketsphinxController.h>
+
 
 @class VULevelMeter;
 @class PuzzleObject;
@@ -33,7 +38,7 @@
 @class GlobalPreferences;
 @class AdminViewController;
 
-@interface SayPuzzleViewController : UIViewController {
+@interface SayPuzzleViewController : UIViewController<OpenEarsEventsObserverDelegate> {
 	GlobalPreferences *_prefs;
 	BOOL _launchedInGuidedMode;
 	BOOL _backButtonPressed;
