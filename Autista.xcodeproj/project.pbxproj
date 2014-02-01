@@ -566,6 +566,10 @@
 		8DF5E0B116B96DD3005D8154 /* PlaygroundSceneMusic.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 8DF5E0A716B96B57005D8154 /* PlaygroundSceneMusic.aifc */; };
 		8DFAE2F5166322A8004A9752 /* VUMeterTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFAE2F4166322A8004A9752 /* VUMeterTable.m */; };
 		8DFAE2F816632522004A9752 /* VULevelMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFAE2F716632522004A9752 /* VULevelMeter.m */; };
+		8F99C9EE189D847100EEC1CA /* Instabug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F99C9ED189D847100EEC1CA /* Instabug.framework */; };
+		8F99C9F6189D84C900EEC1CA /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F99C9F0189D84C900EEC1CA /* libTestFlight.a */; };
+		8F99C9F7189D84C900EEC1CA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8F99C9F1189D84C900EEC1CA /* README.md */; };
+		8F99C9F8189D84C900EEC1CA /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 8F99C9F2189D84C900EEC1CA /* release_notes.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1190,6 +1194,13 @@
 		8DFAE2F4166322A8004A9752 /* VUMeterTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VUMeterTable.m; path = Autista/Audio/VUMeterTable.m; sourceTree = "<group>"; };
 		8DFAE2F616632522004A9752 /* VULevelMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VULevelMeter.h; path = Autista/Audio/VULevelMeter.h; sourceTree = "<group>"; };
 		8DFAE2F716632522004A9752 /* VULevelMeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VULevelMeter.m; path = Autista/Audio/VULevelMeter.m; sourceTree = "<group>"; };
+		8F99C9ED189D847100EEC1CA /* Instabug.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Instabug.framework; sourceTree = "<group>"; };
+		8F99C9F0189D84C900EEC1CA /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		8F99C9F1189D84C900EEC1CA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		8F99C9F2189D84C900EEC1CA /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
+		8F99C9F3189D84C900EEC1CA /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
+		8F99C9F4189D84C900EEC1CA /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
+		8F99C9F5189D84C900EEC1CA /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1198,9 +1209,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				209C607B18333760004A2DF1 /* AdSupport.framework in Frameworks */,
+				8F99C9EE189D847100EEC1CA /* Instabug.framework in Frameworks */,
 				209A8974181A00FA002FAF7C /* CoreTelephony.framework in Frameworks */,
 				209A8972181A00ED002FAF7C /* SystemConfiguration.framework in Frameworks */,
 				209A8970181A00D8002FAF7C /* GLKit.framework in Frameworks */,
+				8F99C9F6189D84C900EEC1CA /* libTestFlight.a in Frameworks */,
 				209A896E181A00C7002FAF7C /* CoreFoundation.framework in Frameworks */,
 				209A896C181A00AA002FAF7C /* CoreLocation.framework in Frameworks */,
 				2022B72917FEA7090061D6EE /* libz.dylib in Frameworks */,
@@ -2113,6 +2126,7 @@
 		8DA3DD081604C6E20031950A = {
 			isa = PBXGroup;
 			children = (
+				8F99C9EF189D84C900EEC1CA /* TestFlightSDK2.0.2 */,
 				20E4A563186FDD1800B473C2 /* Icon 152.png */,
 				20E4A562186FDD0400B473C2 /* Icon 76.png */,
 				209A8967181A0077002FAF7C /* Instabug.bundle */,
@@ -2145,6 +2159,7 @@
 		8DA3DD161604C6E20031950A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8F99C9ED189D847100EEC1CA /* Instabug.framework */,
 				209C607A18333760004A2DF1 /* AdSupport.framework */,
 				209A8973181A00FA002FAF7C /* CoreTelephony.framework */,
 				209A8971181A00ED002FAF7C /* SystemConfiguration.framework */,
@@ -2540,6 +2555,19 @@
 			name = Sounds;
 			sourceTree = "<group>";
 		};
+		8F99C9EF189D84C900EEC1CA /* TestFlightSDK2.0.2 */ = {
+			isa = PBXGroup;
+			children = (
+				8F99C9F0189D84C900EEC1CA /* libTestFlight.a */,
+				8F99C9F1189D84C900EEC1CA /* README.md */,
+				8F99C9F2189D84C900EEC1CA /* release_notes.md */,
+				8F99C9F3189D84C900EEC1CA /* TestFlight+AsyncLogging.h */,
+				8F99C9F4189D84C900EEC1CA /* TestFlight+ManualSessions.h */,
+				8F99C9F5189D84C900EEC1CA /* TestFlight.h */,
+			);
+			path = TestFlightSDK2.0.2;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2860,6 +2888,7 @@
 				8DF5DFFE16B90BD1005D8154 /* Onion04O.png in Resources */,
 				2054BD6318364B9300DFFC44 /* Happy_Syll_1_b_Tanu.caf in Resources */,
 				2054BD4618364B9300DFFC44 /* Watermelon_Syll_3_a_Tanu.caf in Resources */,
+				8F99C9F8189D84C900EEC1CA /* release_notes.md in Resources */,
 				8DF5DFFF16B90BD1005D8154 /* Onion05N.png in Resources */,
 				8DF5E00016B90BD1005D8154 /* Potato01P.png in Resources */,
 				8DF5E00116B90BD1005D8154 /* Potato02O.png in Resources */,
@@ -2903,6 +2932,7 @@
 				8D4BCA7316BA6A5E00A34EFD /* SlidePlaceHolder.png in Resources */,
 				208CCFF1183CCBC100BADB44 /* Say na.png in Resources */,
 				8D4BCA7416BA6A5E00A34EFD /* Tree.png in Resources */,
+				8F99C9F7189D84C900EEC1CA /* README.md in Resources */,
 				8D4BCA7516BA6A5E00A34EFD /* TreePlaceHolder.png in Resources */,
 				8D4BCA7716BA72D200A34EFD /* PlaygroundSceneSelector.png in Resources */,
 				8D4BCA7916BA761300A34EFD /* Happy.png in Resources */,
@@ -3237,6 +3267,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/mukeshkalra/Dropbox/Game\\ Dev/Code/Autista\\ (Apr\\ 29\\ 2013)",
+					/Users/guoanhong/Documents/Autista,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Autista/Autista-Prefix.pch";
@@ -3245,6 +3276,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/mukeshkalra/Dropbox/Game\\ Dev/Code/Autista\\ (Apr\\ 29\\ 2013)/TestFlightSDK2.0.2",
+					/Users/guoanhong/Documents/Autista/TestFlightSDK2.0.2,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "9AABB617-5443-457B-8199-F43D6E73EA15";
@@ -3261,6 +3293,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/mukeshkalra/Dropbox/Game\\ Dev/Code/Autista\\ (Apr\\ 29\\ 2013)",
+					/Users/guoanhong/Documents/Autista,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Autista/Autista-Prefix.pch";
@@ -3269,6 +3302,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/mukeshkalra/Dropbox/Game\\ Dev/Code/Autista\\ (Apr\\ 29\\ 2013)/TestFlightSDK2.0.2",
+					/Users/guoanhong/Documents/Autista/TestFlightSDK2.0.2,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "8575715F-039B-4A74-A456-D3E82164CB17";
