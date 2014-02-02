@@ -3265,9 +3265,8 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Rajat Dhariwal (GA39EQ32TE)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/mukeshkalra/Dropbox/Game\\ Dev/Code/Autista\\ (Apr\\ 29\\ 2013)",
-					/Users/guoanhong/Documents/Autista/Framework,
-					/Users/guoanhong/Documents/Autista,
+					"$(SRCROOT)/",
+					"$(SRCROOT)/Framework",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Autista/Autista-Prefix.pch";
@@ -3275,8 +3274,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/mukeshkalra/Dropbox/Game\\ Dev/Code/Autista\\ (Apr\\ 29\\ 2013)/TestFlightSDK2.0.2",
-					/Users/guoanhong/Documents/Autista/TestFlightSDK2.0.2,
+					"$(SRCROOT)/TestFlightSDK2.0.2",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "9AABB617-5443-457B-8199-F43D6E73EA15";
@@ -3292,9 +3290,8 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: MadRat Games Pvt Ltd (539NURU9T2)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/mukeshkalra/Dropbox/Game\\ Dev/Code/Autista\\ (Apr\\ 29\\ 2013)",
-					/Users/guoanhong/Documents/Autista/Framework,
-					/Users/guoanhong/Documents/Autista,
+					"$(SRCROOT)/",
+					"$(SRCROOT)/Framework",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Autista/Autista-Prefix.pch";
@@ -3302,8 +3299,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/mukeshkalra/Dropbox/Game\\ Dev/Code/Autista\\ (Apr\\ 29\\ 2013)/TestFlightSDK2.0.2",
-					/Users/guoanhong/Documents/Autista/TestFlightSDK2.0.2,
+					"$(SRCROOT)/TestFlightSDK2.0.2",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "8575715F-039B-4A74-A456-D3E82164CB17";
