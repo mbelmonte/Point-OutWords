@@ -32,6 +32,7 @@
 #import "Piece.h"
 #import "EventLogger.h"
 #import "GlobalPreferences.h"
+#import "AppDelegate.h"
 
 #import "VULevelMeter.h"
 #import "SoundEffect.h"
@@ -55,11 +56,13 @@
 @property PocketsphinxController *pocketsphinxController;
 @property OpenEarsEventsObserver *openEarsEventsObserver;
 @property NSString *globalHypothesis;
+@property NSString *lmPath;
+@property NSString *dicPath;
 @end
 
 @implementation SayPuzzleViewController
 @synthesize  lmGenerator,pocketsphinxController,openEarsEventsObserver;
-@synthesize globalHypothesis;
+@synthesize globalHypothesis, lmPath, dicPath;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -127,42 +130,6 @@
 
 	[[NSNotificationCenter defaultCenter] postNotificationName:@"StartingSayTypePuzzle" object:nil];
 	[[EventLogger sharedLogger] logEvent:LogEventCodePuzzlePresented eventInfo:@{@"Mode": @"Say"}];
-    
-    //Initialize the OpenEarsEventsObserver
-    [self.openEarsEventsObserver setDelegate:self];
-    lmGenerator=[[LanguageModelGenerator alloc]init];
-    
-    NSLog(@"Syllables: %@", _syllables);
-    
-    NSMutableArray *upperCaseSyllables = [[NSMutableArray alloc] init];
-    
-    for (NSString * syll in _syllables){
-        [upperCaseSyllables addObject:[syll uppercaseString]];
-    }
-    
-    NSLog(@"Syllables: %@", upperCaseSyllables);
-    
-    NSString *name = @"NameIWantForMyLanguageModelFiles";
-    NSError *err = [lmGenerator generateLanguageModelFromArray:upperCaseSyllables withFilesNamed:name forAcousticModelAtPath:[AcousticModel pathToModel:@"AcousticModelEnglish"]];
-    
-    NSDictionary *languageGeneratorResults = nil;
-    
-    NSString *lmPath = nil;
-    NSString *dicPath = nil;
-    
-    if([err code] == noErr) {
-        
-        languageGeneratorResults = [err userInfo];
-        
-        lmPath = [languageGeneratorResults objectForKey:@"LMPath"];
-        dicPath = [languageGeneratorResults objectForKey:@"DictionaryPath"];
-        
-    } else {
-        NSLog(@"Error: %@",[err localizedDescription]);
-    }
-    
-    //Start to listen to the dialog
-    [self.pocketsphinxController startListeningWithLanguageModelAtPath:lmPath dictionaryAtPath:dicPath acousticModelAtPath:[AcousticModel pathToModel:@"AcousticModelEnglish"] languageModelIsJSGF:NO];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -191,6 +158,91 @@
 	[self initializePuzzleState];
     [activityIndicator startAnimating];
     [self.view bringSubviewToFront:activityIndicator];
+    
+    //Initialize the OpenEarsEventsObserver
+    [self.openEarsEventsObserver setDelegate:self];
+    lmGenerator=[[LanguageModelGenerator alloc]init];
+    
+    NSLog(@"Syllables: %@", _syllables);
+    
+    //all syllables from all puzzles
+    NSMutableArray *allUpperCaseSyllables = [[NSMutableArray alloc] init];
+    
+    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+	NSManagedObjectContext *context = [appDelegate managedObjectContext];
+	
+	NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+	[fetchRequest setEntity:[NSEntityDescription entityForName:@"PuzzleObject" inManagedObjectContext:context]];
+	
+	NSArray *puzzles = [context executeFetchRequest:fetchRequest error:nil];
+    
+    for (PuzzleObject *puzzle in puzzles) {
+        NSArray *puzzleSyllables = [puzzle.syllables componentsSeparatedByString:@"-"];
+        
+        for (NSString * syll in puzzleSyllables){
+            [allUpperCaseSyllables addObject:[syll uppercaseString]];
+        }
+    }
+    
+    NSLog(@"allUpperCaseSyllables: %@", allUpperCaseSyllables);
+    
+    //syllables from only this puzzle
+    NSMutableArray *upperCaseSyllables = [[NSMutableArray alloc] init];
+    
+    for (NSString * syll in _syllables){
+        [upperCaseSyllables addObject:[syll uppercaseString]];
+    }
+    
+    NSLog(@"upperCaseSyllables: %@", upperCaseSyllables);
+    
+    NSMutableArray * changedUpperCaseSyllables = [NSMutableArray arrayWithArray:allUpperCaseSyllables];
+    
+    //use AllupperCaseSyllables, upperCaseSyllables and _syllables to change difficulty
+    
+    for (NSString * currentString in upperCaseSyllables){
+        for (int i = 0; i< [currentString length]; i++){
+            NSString * letter = [currentString substringWithRange:NSMakeRange(i, 1)];
+            for (NSString * allStrings in allUpperCaseSyllables) {
+                if ([allStrings rangeOfString:letter].location != NSNotFound) {
+                    [changedUpperCaseSyllables removeObject:allStrings];
+                }
+            }
+            
+        }
+    }
+    
+    for (NSString * allString in upperCaseSyllables){
+        [changedUpperCaseSyllables addObject:allString];
+    }
+    
+    NSLog(@"changedUpperCaseSyllables: %@", changedUpperCaseSyllables);
+    
+    //end of changing difficulty
+    
+    //NSLog(@"Syllables: %@", upperCaseSyllables);
+    
+    NSString *name = @"NameIWantForMyLanguageModelFiles";
+    
+    NSError *err = [lmGenerator generateLanguageModelFromArray:changedUpperCaseSyllables withFilesNamed:name forAcousticModelAtPath:[AcousticModel pathToModel:@"AcousticModelEnglish"]];
+    
+    NSDictionary *languageGeneratorResults = nil;
+    
+    lmPath = nil;
+    dicPath = nil;
+    
+    if([err code] == noErr) {
+        
+        languageGeneratorResults = [err userInfo];
+        
+        lmPath = [languageGeneratorResults objectForKey:@"LMPath"];
+        dicPath = [languageGeneratorResults objectForKey:@"DictionaryPath"];
+        
+    } else {
+        NSLog(@"Error: %@",[err localizedDescription]);
+    }
+    
+    //Start to listen to the dialog
+    [self.pocketsphinxController startListeningWithLanguageModelAtPath:lmPath dictionaryAtPath:dicPath acousticModelAtPath:[AcousticModel pathToModel:@"AcousticModelEnglish"] languageModelIsJSGF:NO];
 }
 
 #pragma mark - Sound Effects
@@ -403,24 +455,25 @@
     //RD
     if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"6.0")) {
         if (!_soundsMissing) {
-//                NSArray *queue = @[_sayItem, _firstSyllItem];
-//                _qplayer = [[AVQueuePlayer alloc] initWithItems:queue];
-//                _qplayer.actionAtItemEnd = AVPlayerActionAtItemEndAdvance;
-//                NSLog(@"system volume in start rec : %f", [self audioVolume]);
-//                /*if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0"))
-//                    [_qplayer setVolume:[self audioVolumeFac]];
-//                 */
-//                [_qplayer play];
+                NSArray *queue = @[_sayItem, _firstSyllItem];
+                _qplayer = [[AVQueuePlayer alloc] initWithItems:queue];
+                _qplayer.actionAtItemEnd = AVPlayerActionAtItemEndAdvance;
+                NSLog(@"system volume in start rec : %f", [self audioVolume]);
+                /*if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0"))
+                    [_qplayer setVolume:[self audioVolumeFac]];
+                 */
+                [pocketsphinxController suspendRecognition];
+                [_qplayer play];
             
                 //Change audio from AVQueuePlayer to AVAudioPlayer to enable delegate
-                AVAudioPlayer * syllableSound = _syllableSounds[_currentSyllable];
-                [syllableSound prepareToPlay];
-                NSLog(@"system volume in next syll : %f", [self audioVolume]);
-            
-                //Suspend Recognition to prevent the recognizer from system sound interruption
-                [pocketsphinxController suspendRecognition];
-                syllableSound.delegate = self;
-                [syllableSound play];
+//                AVAudioPlayer * syllableSound = _syllableSounds[_currentSyllable];
+//                [syllableSound prepareToPlay];
+//                NSLog(@"system volume in next syll : %f", [self audioVolume]);
+//            
+//                //Suspend Recognition to prevent the recognizer from system sound interruption
+//                [pocketsphinxController suspendRecognition];
+//                syllableSound.delegate = self;
+//                [syllableSound play];
             }
     }
     sayNa.hidden = NO;
@@ -486,7 +539,7 @@
 
 - (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag{
     //Resume Recognition
-    [NSThread sleepForTimeInterval:0.5];
+    [NSThread sleepForTimeInterval:1.5];
     [pocketsphinxController resumeRecognition];
 }
 
@@ -495,8 +548,6 @@
 {
     globalHypothesis = @"";
 	if (_currentSyllable == [_syllables count]){
-        //Stop listening when finishing puzzle
-        [pocketsphinxController stopListening];
 		return;
     }
 	for (PuzzlePieceView *piece in _pieces) {
@@ -582,6 +633,9 @@
     _finishPrompt = [[AVAudioPlayer alloc] initWithContentsOfURL:promptURL error:nil];
     [_finishPrompt prepareToPlay];
     [_finishPrompt play];
+    
+    //Stop listening when finishing puzzle
+    [pocketsphinxController stopListening];
 
 	[self performSelector:@selector(delayedDismissSelf) withObject:nil afterDelay:1];
 }
@@ -704,7 +758,9 @@
     
     NSLog(@"%@", globalHypothesis);
     
-    globalHypothesis = hypothesis;
+    globalHypothesis = [[hypothesis componentsSeparatedByString:@" "] objectAtIndex:0];
+    
+    //globalHypothesis = hypothesis;
     
     NSLog(@"%@", globalHypothesis);
 }
