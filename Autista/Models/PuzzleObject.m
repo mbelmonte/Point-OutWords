@@ -37,6 +37,7 @@
 @dynamic typeWeight;
 @dynamic placeholderImage;
 @dynamic syllables;
+@dynamic phonetics;
 @dynamic title;
 @dynamic offsetX;
 @dynamic offsetY;

@@ -36,6 +36,7 @@
 @property (nonatomic, retain) NSNumber * typeWeight;
 @property (nonatomic, retain) NSData * placeholderImage;
 @property (nonatomic, retain) NSString * syllables;
+@property (nonatomic, retain) NSString * phonetics;
 @property (nonatomic, retain) NSString * title;
 @property (nonatomic, retain) NSNumber * offsetX;
 @property (nonatomic, retain) NSNumber * offsetY;

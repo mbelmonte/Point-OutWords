@@ -58,11 +58,13 @@
 @property NSString *globalHypothesis;
 @property NSString *lmPath;
 @property NSString *dicPath;
+@property NSInteger alreadyPassSay;
 @end
 
 @implementation SayPuzzleViewController
 @synthesize  lmGenerator,pocketsphinxController,openEarsEventsObserver;
 @synthesize globalHypothesis, lmPath, dicPath;
+@synthesize alreadyPassSay;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -91,79 +93,16 @@
     
     _pieces = [NSMutableArray array];
 	_syllables = [_object.syllables componentsSeparatedByString:@"-"];
-
-	[self setupSounds];
-	[self initializeAudioEngine];
-	[self performSelector:@selector(startRecordingEngine) withObject:nil afterDelay:1];
-		
-	_background.image = [UIImage imageWithData:_object.scene.puzzleBackgroundImage];
-	
-	_banner = [[TypeBanner alloc] initWithFrame:titleLabel.frame];
-	_banner.highlightMode = BannerHighlightModeSyllable;
-//	_banner.bannerFont = titleLabel.font;
-    UIFont *avenirBold = [UIFont fontWithName:@"AvenirNext-Bold" size:80.];
-    
-	if (avenirBold == nil)
-		_banner.bannerFont = [UIFont systemFontOfSize:80.];
-    else
-        _banner.bannerFont = avenirBold;
-
-	_banner.bannerText = _object.syllables;
-	
-	[self.view addSubview:_banner];
-    
-    CGSize size = self.view.bounds.size;										// coordinates are flipped at this point
-	CGFloat temp = size.width;
-	size.width = size.height;
-	size.height = temp;
-    activityIndicator.frame = CGRectMake(0.0, 0.0, 80.0, 80.0);
-    activityIndicator.center = CGPointMake(size.width / 2, size.height / 2);
-    activityIndicator.layer.backgroundColor = [[UIColor colorWithWhite:0.5f alpha:0.5f] CGColor];
-    [self.view addSubview:activityIndicator];
-
-    //NSLog(@"Added activity monitor to scrollview and now starting animation at coordinates : %f, %f", size.width / 2, size.height / 2);
-
-	titleLabel.hidden = YES;
-	
-	[_placeHolder removeFromSuperview];																// this got loaded via the NIB so we remove it and recreate this later
-	_placeHolder = nil;
-
-	[[NSNotificationCenter defaultCenter] postNotificationName:@"StartingSayTypePuzzle" object:nil];
-	[[EventLogger sharedLogger] logEvent:LogEventCodePuzzlePresented eventInfo:@{@"Mode": @"Say"}];
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-	[super viewDidAppear:animated];
-	
-	if (_adminVC != nil && _prefs.guidedModeEnabled == NO)		{
-        [recorder stop];
-        [levelTimer invalidate];
- 
-        // Shashwat Parhi: if returning from Admin screen
-		[self dismissViewControllerAnimated:NO completion:nil];										// dismiss self, added on April 02, 2013 as per client request
-        if (!SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"6.0"))
-            [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
-    }
-	
-	if (_launchedInGuidedMode == NO && _prefs.guidedModeEnabled == YES)	{							// most likely, admin changed this setting mid-stream
-        [recorder stop];
-        [levelTimer invalidate];
-        
-		[self dismissViewControllerAnimated:NO completion:nil];										// so bail out
-        if (!SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"6.0"))
-            [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
-    }
-	
-	[self initializePuzzleState];
-    [activityIndicator startAnimating];
-    [self.view bringSubviewToFront:activityIndicator];
+    _phonetics = [_object.phonetics componentsSeparatedByString:@"-"];
     
     //Initialize the OpenEarsEventsObserver
     [self.openEarsEventsObserver setDelegate:self];
     lmGenerator=[[LanguageModelGenerator alloc]init];
     
     NSLog(@"Syllables: %@", _syllables);
+    NSLog(@"Phonetics: %@", _phonetics);
+    
+    //change syllables to phonetics
     
     //all syllables from all puzzles
     NSMutableArray *allUpperCaseSyllables = [[NSMutableArray alloc] init];
@@ -177,6 +116,14 @@
 	NSArray *puzzles = [context executeFetchRequest:fetchRequest error:nil];
     
     for (PuzzleObject *puzzle in puzzles) {
+        NSArray *puzzleSyllables = [puzzle.phonetics componentsSeparatedByString:@"-"];
+        
+        for (NSString * syll in puzzleSyllables){
+            [allUpperCaseSyllables addObject:[syll uppercaseString]];
+        }
+    }
+    
+    for (PuzzleObject *puzzle in puzzles) {
         NSArray *puzzleSyllables = [puzzle.syllables componentsSeparatedByString:@"-"];
         
         for (NSString * syll in puzzleSyllables){
@@ -188,6 +135,10 @@
     
     //syllables from only this puzzle
     NSMutableArray *upperCaseSyllables = [[NSMutableArray alloc] init];
+    
+    for (NSString * syll in _phonetics){
+        [upperCaseSyllables addObject:[syll uppercaseString]];
+    }
     
     for (NSString * syll in _syllables){
         [upperCaseSyllables addObject:[syll uppercaseString]];
@@ -240,9 +191,75 @@
     } else {
         NSLog(@"Error: %@",[err localizedDescription]);
     }
+
+	[self setupSounds];
+	[self initializeAudioEngine];
+	[self performSelector:@selector(startRecordingEngine) withObject:nil afterDelay:1];
+		
+	_background.image = [UIImage imageWithData:_object.scene.puzzleBackgroundImage];
+	
+	_banner = [[TypeBanner alloc] initWithFrame:titleLabel.frame];
+	_banner.highlightMode = BannerHighlightModeSyllable;
+//	_banner.bannerFont = titleLabel.font;
+    UIFont *avenirBold = [UIFont fontWithName:@"AvenirNext-Bold" size:80.];
     
-    //Start to listen to the dialog
-    [self.pocketsphinxController startListeningWithLanguageModelAtPath:lmPath dictionaryAtPath:dicPath acousticModelAtPath:[AcousticModel pathToModel:@"AcousticModelEnglish"] languageModelIsJSGF:NO];
+	if (avenirBold == nil)
+		_banner.bannerFont = [UIFont systemFontOfSize:80.];
+    else
+        _banner.bannerFont = avenirBold;
+
+	_banner.bannerText = _object.syllables;
+	
+	[self.view addSubview:_banner];
+    
+    CGSize size = self.view.bounds.size;										// coordinates are flipped at this point
+	CGFloat temp = size.width;
+	size.width = size.height;
+	size.height = temp;
+    activityIndicator.frame = CGRectMake(0.0, 0.0, 80.0, 80.0);
+    activityIndicator.center = CGPointMake(size.width / 2, size.height / 2);
+    activityIndicator.layer.backgroundColor = [[UIColor colorWithWhite:0.5f alpha:0.5f] CGColor];
+    [self.view addSubview:activityIndicator];
+
+    //NSLog(@"Added activity monitor to scrollview and now starting animation at coordinates : %f, %f", size.width / 2, size.height / 2);
+
+	titleLabel.hidden = YES;
+	
+	[_placeHolder removeFromSuperview];																// this got loaded via the NIB so we remove it and recreate this later
+	_placeHolder = nil;
+
+	[[NSNotificationCenter defaultCenter] postNotificationName:@"StartingSayTypePuzzle" object:nil];
+	[[EventLogger sharedLogger] logEvent:LogEventCodePuzzlePresented eventInfo:@{@"Mode": @"Say"}];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+	[super viewDidAppear:animated];
+    
+    alreadyPassSay = 1;
+	
+	if (_adminVC != nil && _prefs.guidedModeEnabled == NO)		{
+        [recorder stop];
+        [levelTimer invalidate];
+ 
+        // Shashwat Parhi: if returning from Admin screen
+		[self dismissViewControllerAnimated:NO completion:nil];										// dismiss self, added on April 02, 2013 as per client request
+        if (!SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"6.0"))
+            [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
+    }
+	
+	if (_launchedInGuidedMode == NO && _prefs.guidedModeEnabled == YES)	{							// most likely, admin changed this setting mid-stream
+        [recorder stop];
+        [levelTimer invalidate];
+        
+		[self dismissViewControllerAnimated:NO completion:nil];										// so bail out
+        if (!SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"6.0"))
+            [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
+    }
+	
+	[self initializePuzzleState];
+    [activityIndicator startAnimating];
+    [self.view bringSubviewToFront:activityIndicator];
 }
 
 #pragma mark - Sound Effects
@@ -462,18 +479,11 @@
                 /*if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0"))
                     [_qplayer setVolume:[self audioVolumeFac]];
                  */
-                [pocketsphinxController suspendRecognition];
                 [_qplayer play];
             
-                //Change audio from AVQueuePlayer to AVAudioPlayer to enable delegate
-//                AVAudioPlayer * syllableSound = _syllableSounds[_currentSyllable];
-//                [syllableSound prepareToPlay];
-//                NSLog(@"system volume in next syll : %f", [self audioVolume]);
-//            
-//                //Suspend Recognition to prevent the recognizer from system sound interruption
-//                [pocketsphinxController suspendRecognition];
-//                syllableSound.delegate = self;
-//                [syllableSound play];
+                [NSThread sleepForTimeInterval:2];
+                //Start to listen to the dialog
+                [self.pocketsphinxController startListeningWithLanguageModelAtPath:lmPath dictionaryAtPath:dicPath acousticModelAtPath:[AcousticModel pathToModel:@"AcousticModelEnglish"] languageModelIsJSGF:NO];
             }
     }
     sayNa.hidden = NO;
@@ -532,14 +542,15 @@
             }
         }
 	}
-	else if ([[globalHypothesis lowercaseString] isEqualToString:_syllables[_currentSyllable]]) {
+    //change syllables to phonetics
+    else if (([[globalHypothesis lowercaseString] isEqualToString:_phonetics[_currentSyllable]]||[[globalHypothesis lowercaseString] isEqualToString:_syllables[_currentSyllable]])) {
 		[self advanceToNextSyllable];
     }
 }
 
 - (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag{
     //Resume Recognition
-    [NSThread sleepForTimeInterval:1.5];
+    [NSThread sleepForTimeInterval:0.5];
     [pocketsphinxController resumeRecognition];
 }
 

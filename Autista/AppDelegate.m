@@ -228,7 +228,7 @@
 
 - (void)primeCoreDataStoreWithData
 {
-	NSString* plistPath = [[NSBundle mainBundle] pathForResource:@"PuzzleData" ofType:@"plist"];
+	NSString* plistPath = [[NSBundle mainBundle] pathForResource:@"PuzzleDataWithPhonetics" ofType:@"plist"];
 	NSArray *scenes = [NSArray arrayWithContentsOfFile:plistPath];
 	
 	[self createUser];
@@ -249,6 +249,7 @@
 			
 			object.title = [objectDict valueForKey:@"title"];
 			object.syllables = [objectDict valueForKey:@"syllables"];
+            object.phonetics = [objectDict valueForKey:@"phonetics"];
 			object.completedImage = UIImagePNGRepresentation([UIImage imageNamed:[objectDict valueForKey:@"completedImage"]]);
 			object.placeholderImage = UIImagePNGRepresentation([UIImage imageNamed:[objectDict valueForKey:@"placeholderImage"]]);
 			object.difficultyDrag = [NSNumber numberWithFloat:[[objectDict valueForKey:@"difficultyDrag"] floatValue]];

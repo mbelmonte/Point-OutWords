@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12E55" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13B42" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Attempt" representedClassName="Attempt" syncable="YES">
         <attribute name="attemptedOn" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="mode" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
@@ -38,6 +38,7 @@
         <attribute name="height" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="offsetX" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="offsetY" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="phonetics" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="placeholderImage" optional="YES" attributeType="Binary" storedInTruthFile="YES" syncable="YES"/>
         <attribute name="speakWeight" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="syllables" optional="YES" attributeType="String" syncable="YES"/>
@@ -72,12 +73,12 @@
         <relationship name="logs" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Log" inverseName="user" inverseEntity="Log" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Attempt" positionX="288" positionY="125" width="128" height="118"/>
-        <element name="Event" positionX="-108" positionY="144" width="146" height="88"/>
-        <element name="Log" positionX="-108" positionY="275" width="144" height="148"/>
-        <element name="Piece" positionX="268" positionY="-99" width="128" height="133"/>
-        <element name="PuzzleObject" positionX="88" positionY="-99" width="146" height="298"/>
-        <element name="Scene" positionX="-108" positionY="-18" width="146" height="133"/>
-        <element name="User" positionX="90" positionY="225" width="144" height="238"/>
+        <element name="Attempt" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Event" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Log" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Piece" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="PuzzleObject" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Scene" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="User" positionX="0" positionY="0" width="0" height="0"/>
     </elements>
 </model>

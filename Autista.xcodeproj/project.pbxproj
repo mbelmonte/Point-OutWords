@@ -567,6 +567,7 @@
 		8DF5E0B116B96DD3005D8154 /* PlaygroundSceneMusic.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 8DF5E0A716B96B57005D8154 /* PlaygroundSceneMusic.aifc */; };
 		8DFAE2F5166322A8004A9752 /* VUMeterTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFAE2F4166322A8004A9752 /* VUMeterTable.m */; };
 		8DFAE2F816632522004A9752 /* VULevelMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFAE2F716632522004A9752 /* VULevelMeter.m */; };
+		8F741CF9189F3F5D0048329A /* PuzzleDataWithPhonetics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F741CF8189F3F5D0048329A /* PuzzleDataWithPhonetics.plist */; };
 		8F99C9F6189D84C900EEC1CA /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F99C9F0189D84C900EEC1CA /* libTestFlight.a */; };
 		8F99C9F7189D84C900EEC1CA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8F99C9F1189D84C900EEC1CA /* README.md */; };
 		8F99C9F8189D84C900EEC1CA /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 8F99C9F2189D84C900EEC1CA /* release_notes.md */; };
@@ -1193,6 +1194,7 @@
 		8DFAE2F4166322A8004A9752 /* VUMeterTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VUMeterTable.m; path = Autista/Audio/VUMeterTable.m; sourceTree = "<group>"; };
 		8DFAE2F616632522004A9752 /* VULevelMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VULevelMeter.h; path = Autista/Audio/VULevelMeter.h; sourceTree = "<group>"; };
 		8DFAE2F716632522004A9752 /* VULevelMeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VULevelMeter.m; path = Autista/Audio/VULevelMeter.m; sourceTree = "<group>"; };
+		8F741CF8189F3F5D0048329A /* PuzzleDataWithPhonetics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PuzzleDataWithPhonetics.plist; sourceTree = "<group>"; };
 		8F99C9F0189D84C900EEC1CA /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
 		8F99C9F1189D84C900EEC1CA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		8F99C9F2189D84C900EEC1CA /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
@@ -2249,6 +2251,7 @@
 				8DA3DD581604C96C0031950A /* Autista.storyboard */,
 				8DA3DD311604C6E20031950A /* Autista.xcdatamodeld */,
 				8DDE5C2A16B0506800713427 /* PuzzleData.plist */,
+				8F741CF8189F3F5D0048329A /* PuzzleDataWithPhonetics.plist */,
 				8D8890E516BD8EAD003FA187 /* EventList.plist */,
 				8DA69A7C16B541B300CB7A79 /* FirstLaunchInfoText.plist */,
 				8DEA561816B5A22600FC88B9 /* Settings.bundle */,
@@ -3078,6 +3081,7 @@
 				8D96534B16FF42A200B9E3FB /* Ball.caf in Resources */,
 				8D96534C16FF42A200B9E3FB /* Balloon.caf in Resources */,
 				2054BD2B18364B9300DFFC44 /* Lollipop_Syll_2_b_Tanu.caf in Resources */,
+				8F741CF9189F3F5D0048329A /* PuzzleDataWithPhonetics.plist in Resources */,
 				8D96534D16FF42A200B9E3FB /* Banana.caf in Resources */,
 				206BF212181964BF008E1F43 /* Button-Highlighted.png in Resources */,
 				8D96534E16FF42A200B9E3FB /* Bath.caf in Resources */,

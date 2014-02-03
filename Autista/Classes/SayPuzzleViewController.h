@@ -78,6 +78,7 @@
 @property (nonatomic, retain) PuzzleObject *object;
 @property (nonatomic, retain) NSMutableArray *pieces;
 @property (nonatomic, retain) NSArray *syllables;
+@property (nonatomic, retain) NSArray *phonetics;
 @property (nonatomic, retain) AVQueuePlayer *qplayer;
 @property (nonatomic, retain) AVAudioPlayer *finishPrompt;
 @property (nonatomic, retain) AVPlayerItem * sayItem;
