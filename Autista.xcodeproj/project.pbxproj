@@ -2600,7 +2600,7 @@
 				ORGANIZATIONNAME = "Shashwat Parhi";
 				TargetAttributes = {
 					8DA3DD121604C6E20031950A = {
-						DevelopmentTeam = 539NURU9T2;
+						DevelopmentTeam = JA3ZAY3HBN;
 					};
 				};
 			};
@@ -3265,8 +3265,8 @@
 		8DA3DD4D1604C6E30031950A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Rajat Dhariwal (GA39EQ32TE)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Rajat Dhariwal (GA39EQ32TE)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/",
@@ -3281,8 +3281,8 @@
 					"$(SRCROOT)/TestFlightSDK2.0.2",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9AABB617-5443-457B-8199-F43D6E73EA15";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9AABB617-5443-457B-8199-F43D6E73EA15";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "ED563DA4-A363-4934-8E98-57A15865847C";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -3290,8 +3290,8 @@
 		8DA3DD4E1604C6E30031950A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: MadRat Games Pvt Ltd (539NURU9T2)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/",
@@ -3306,8 +3306,8 @@
 					"$(SRCROOT)/TestFlightSDK2.0.2",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "8575715F-039B-4A74-A456-D3E82164CB17";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8575715F-039B-4A74-A456-D3E82164CB17";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "ED563DA4-A363-4934-8E98-57A15865847C";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
