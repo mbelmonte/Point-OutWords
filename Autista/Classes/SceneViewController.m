@@ -231,9 +231,11 @@
 	 ];
 }
 
+
+// the function that really in charge of navigating views................
 - (void)presentTouchPuzzleView:(PuzzleObject *)object
 {
-	TouchPuzzleViewController *puzzleVC = [self.storyboard instantiateViewControllerWithIdentifier:@"SayPuzzleViewController"];
+	TouchPuzzleViewController *puzzleVC = [self.storyboard instantiateViewControllerWithIdentifier:@"TypePuzzleViewController"];
 	puzzleVC.object = object;
 	[puzzleVC setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
 	[self presentViewController:puzzleVC animated:YES completion:nil];
@@ -241,7 +243,7 @@
 
 - (void)presentTypePuzzleView:(PuzzleObject *)object
 {
-	TypePuzzleViewController *puzzleVC = [self.storyboard instantiateViewControllerWithIdentifier:@"SayPuzzleViewController"];
+	TypePuzzleViewController *puzzleVC = [self.storyboard instantiateViewControllerWithIdentifier:@"TypePuzzleViewController"];
 	puzzleVC.object = object;
 	[puzzleVC setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
 	[self presentViewController:puzzleVC animated:YES completion:nil];
@@ -249,7 +251,7 @@
 
 - (void)presentSayPuzzleView:(PuzzleObject *)object
 {
-	SayPuzzleViewController *puzzleVC = [self.storyboard instantiateViewControllerWithIdentifier:@"SayPuzzleViewController"];
+	SayPuzzleViewController *puzzleVC = [self.storyboard instantiateViewControllerWithIdentifier:@"TypePuzzleViewController"];
 	puzzleVC.object = object;
 	[puzzleVC setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
 	[self presentViewController:puzzleVC animated:YES completion:nil];

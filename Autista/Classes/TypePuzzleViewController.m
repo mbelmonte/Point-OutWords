@@ -88,6 +88,9 @@
 	[self performSelector:@selector(initializePuzzleState) withObject:nil afterDelay:0.3];
 	
 	[[EventLogger sharedLogger] logEvent:LogEventCodePuzzlePresented eventInfo:@{@"Mode": @"Type"}];
+    
+    // a place to load all the images with letter into an NSArray
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -100,6 +103,8 @@
 	
 	if (_launchedInGuidedMode == NO && _prefs.guidedModeEnabled == YES)								// most likely, admin changed this setting mid-stream
 		[self dismissViewControllerAnimated:NO completion:nil];										// so bail out
+    //a place to show all the images on screen
+    
 }
 
 - (void)initializePuzzleState
@@ -517,8 +522,8 @@
 
 - (void)randomizeInitialPositionsOfPieces
 {
-	CGRect outerRect = CGRectMake(0, 0, 2048, 1536);
-	CGRect innerRect = CGRectMake(512, 384, 1024, 768);
+	CGRect outerRect = CGRectMake(0, 0, 2048, 1536);//include the outside of the screen
+	CGRect innerRect = CGRectMake(512, 384, 1024, 768);//the main ipad screensize, but offsetted by(512,384)..
 	
 	int i = 0;
 	
@@ -532,10 +537,15 @@
 		CGFloat offsetY = arc4random() % (int)(outerRect.size.height - pieceHeight);
 		
 		CGRect pieceRect = CGRectMake(offsetX, offsetY, pieceWidth, pieceHeight);
-		
-		if (CGRectIntersectsRect(pieceRect, innerRect) == YES)
-			continue;
-		
+       
+        NSLog(@"the originX of the keyboard=%f",_keyboard.frame.origin.x);
+        NSLog(@"the originY of the keyboard=%f",_keyboard.frame.origin.y);
+
+        CGRect newFrame=CGRectMake(512+_keyboard.frame.origin.x, 384+_keyboard.frame.origin.y, _keyboard.frame.size.width,_keyboard.frame.size.height);//offset the keyboard to the current screen position..
+        
+		if (CGRectContainsRect (innerRect, pieceRect) == NO|| CGRectIntersectsRect(newFrame, pieceRect)==YES)// detect whether the pieces are on the screen......
+			continue;//if the pieceRect is on the main screen, then re create one......
+					
 		int j = 0;
 		BOOL intersects = NO;
 		
@@ -554,9 +564,30 @@
 		aPiece.frame = pieceFrame;
 		i++;
 	}
-	
+// if all the pieces are outside the screen and do not intersct with each other...........
 	for (UIView *piece in _pieces)
-		piece.frame = CGRectOffset(piece.frame, -512, -384);
+    {
+		piece.frame = CGRectOffset(piece.frame, -512, -384);//move all the pieces to origin(0,0)
+    //add gesture to all the pieces..
+        UITapGestureRecognizer *singleFingerTap =
+        [[UITapGestureRecognizer alloc] initWithTarget:self
+                                                action:@selector(handleSingleTap:)];
+        [piece addGestureRecognizer:singleFingerTap];
+        piece.userInteractionEnabled=YES;
+    }
+
+}
+
+#pragma mark - pieces Gesture method
+- (void)handleSingleTap:(UITapGestureRecognizer *)recognizer {
+    
+    CAKeyframeAnimation * anim = [ CAKeyframeAnimation animationWithKeyPath:@"transform" ] ;
+    anim.values = @[ [ NSValue valueWithCATransform3D:CATransform3DMakeTranslation(-5.0f, 0.0f, 0.0f) ], [ NSValue valueWithCATransform3D:CATransform3DMakeTranslation(5.0f, 0.0f, 0.0f) ] ] ;
+    anim.autoreverses = YES ;
+    anim.repeatCount = 2.0f ;
+    anim.duration = 0.07f ;
+    
+    [ self.view.layer addAnimation:anim forKey:nil ] ;
 }
 
 #pragma mark - Image Manipulation Methods
