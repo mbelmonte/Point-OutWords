@@ -88,9 +88,6 @@
 	[self performSelector:@selector(initializePuzzleState) withObject:nil afterDelay:0.3];
 	
 	[[EventLogger sharedLogger] logEvent:LogEventCodePuzzlePresented eventInfo:@{@"Mode": @"Type"}];
-    
-    // a place to load all the images with letter into an NSArray
-    
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -103,8 +100,6 @@
 	
 	if (_launchedInGuidedMode == NO && _prefs.guidedModeEnabled == YES)								// most likely, admin changed this setting mid-stream
 		[self dismissViewControllerAnimated:NO completion:nil];										// so bail out
-    //a place to show all the images on screen
-    
 }
 
 - (void)initializePuzzleState
@@ -521,6 +516,7 @@
 	 ];
 }
 
+//Make TYPE mode closer to POINT mode to ensure smoother transition from POINT to TYPE
 - (void)randomizeInitialPositionsOfPieces
 {
 	//CGRect outerRect = CGRectMake(0, 0, 2048, 1536);//include the outside of the screen
@@ -590,38 +586,46 @@
 
 }
 
+-(void)addCharacterOnPuzzlePiece
+{
+    for (int i = 0; i < [_pieces count]; i++) {
+        //get current character
+        NSString *lableTitle=[[_object.title uppercaseString] substringWithRange:NSMakeRange(i, 1)];
+        
+        //set up background image, location and contentmode
+        UIImageView *charBackground = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"KeyboardButton.png"] ];
+        charBackground.contentMode = UIViewContentModeScaleAspectFill;
+        charBackground.frame = CGRectMake(((UIView *)[_pieces objectAtIndex:i]).frame.size.width/2-20, ((UIView*)[_pieces objectAtIndex:i]).frame.size.height/2-20, 40, 40);
+
+        
+        //set up the text, location, color and font
+        UILabel *fontLable = [[UILabel alloc] init];
+        fontLable.frame = CGRectMake(((UIView *)[_pieces objectAtIndex:i]).frame.size.width/2-20, ((UIView*)[_pieces objectAtIndex:i]).frame.size.height/2-20, 40, 40);
+        fontLable.textAlignment = UITextAlignmentCenter;
+        fontLable.text = lableTitle;
+        fontLable.textColor = [UIColor colorWithRed:(255.0/255.0) green:(255.0/255) blue:(255.0/255) alpha:1.0];
+        UIFont *avenirBold = [UIFont fontWithName:@"AvenirNext-Medium" size:24.];
+        fontLable.font = avenirBold;
+        
+        //add subviews
+        [[_pieces objectAtIndex:i] addSubview: charBackground];
+        [[_pieces objectAtIndex:i] addSubview: fontLable];
+    }
+}
+
 #pragma mark - pieces Gesture method
 - (void)remindAnimation:(UITapGestureRecognizer *)recognizer {
-    
+    //set up animation
     CAKeyframeAnimation * anim = [ CAKeyframeAnimation animationWithKeyPath:@"transform" ] ;
     anim.values = @[ [ NSValue valueWithCATransform3D:CATransform3DMakeTranslation(-5.0f, 0.0f, 0.0f) ], [ NSValue valueWithCATransform3D:CATransform3DMakeTranslation(5.0f, 0.0f, 0.0f) ] ] ;
     anim.autoreverses = YES ;
     anim.repeatCount = 5.0f ;
     anim.duration = 0.07f ;
     
+    //animate the corresponding key on the keyboard
     [[self buttonFromASCIICode:[[_object.title uppercaseString] characterAtIndex:_currentLetterPosition]].layer addAnimation:anim forKey:nil];
-    //[self.view.layer addAnimation:anim forKey:nil] ;
 }
 
--(void)addCharacterOnPuzzlePiece
-{
-    for (int i = 0; i < [_pieces count]; i++) {
-        NSString *lableTitle=[[_object.title uppercaseString] substringWithRange:NSMakeRange(i, 1)];
-        
-        UILabel *fontLable = [[UILabel alloc] init];
-        fontLable.frame = CGRectMake(((UIView *)[_pieces objectAtIndex:i]).frame.size.width/2-20, ((UIView*)[_pieces objectAtIndex:i]).frame.size.height/2-20, 40, 40);
-        
-        UIImageView *charBackground = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"KeyboardButton.png"] ];
-        charBackground.contentMode = UIViewContentModeScaleAspectFill;
-        charBackground.frame = CGRectMake(((UIView *)[_pieces objectAtIndex:i]).frame.size.width/2-20, ((UIView*)[_pieces objectAtIndex:i]).frame.size.height/2-20, 40, 40);
-        [[_pieces objectAtIndex:i] addSubview: charBackground];
-        
-        fontLable.textAlignment = UITextAlignmentCenter;
-        fontLable.text = lableTitle;
-        fontLable.textColor = [UIColor colorWithRed:(255.0/255.0) green:(255.0/255) blue:(255.0/255) alpha:1.0];
-        [[_pieces objectAtIndex:i] addSubview: fontLable];
-    }
-}
 
 #pragma mark - Image Manipulation Methods
 
