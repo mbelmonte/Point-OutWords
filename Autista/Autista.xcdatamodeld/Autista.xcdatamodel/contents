@@ -64,6 +64,7 @@
         <attribute name="gender" optional="YES" attributeType="String" minValueString="1" syncable="YES"/>
         <attribute name="keyHitRadius" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="mugshot" optional="YES" attributeType="Binary" storedInTruthFile="YES" syncable="YES"/>
+        <attribute name="praisePromptEnabled" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="rankDrag" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="rankSpeak" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="rankType" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>

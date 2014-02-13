@@ -84,6 +84,8 @@
 	_guidedModeSwitch.on = _prefs.guidedModeEnabled;
 	_snapbackSwitch.on = _prefs.snapBackEnabled;
 	_highlightKeySwitch.on = _prefs.keyHighlightingEnabled;
+    
+    _praisePromptSwitch.on = _prefs.praisePromptEnabled;
 
     _ampThresh.value = _prefs.ampThresh;
     _snapDistance.value = _prefs.snapDistance;
@@ -207,6 +209,8 @@
         [TestFlight passCheckpoint:@"Admin Setting changed : Amplitude Threshold"];
     if (_prefs.snapBackEnabled != _snapbackSwitch.on)
         [TestFlight passCheckpoint:@"Admin Setting changed : Snap Back switch"];
+    if (_prefs.praisePromptEnabled != _praisePromptSwitch.on)
+        [TestFlight passCheckpoint:@"Admin Setting changed : Praise Prompt switch"];
     if (_prefs.snapDistance != _snapDistance.value)
         [TestFlight passCheckpoint:@"Admin Setting changed : Snapping Distance"];
     if ((_prefs.dragPuzzleFrequency != _adjustDragFrequency.value) || (_prefs.typePuzzleFrequency != _adjustTypeFrequency.value) || (_prefs.speakPuzzleFrequency != _adjustSpeakFrequency.value)) {
@@ -227,6 +231,8 @@
 	_prefs.guidedModeEnabled = _guidedModeSwitch.on;
 	_prefs.snapBackEnabled = _snapbackSwitch.on;
 	_prefs.keyHighlightingEnabled = _highlightKeySwitch.on;
+    
+    _prefs.praisePromptEnabled = _praisePromptSwitch.on;
 
 	_prefs.dragPuzzleFrequency = _adjustDragFrequency.value;
 	_prefs.speakPuzzleFrequency = _adjustSpeakFrequency.value;

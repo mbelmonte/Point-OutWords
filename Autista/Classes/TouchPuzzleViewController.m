@@ -478,33 +478,39 @@
 {
     //RD
     //Prompt : Easy (<10) - WellDone; Medium (10-12) - Super, Yay; Difficult (>12) - GoodJob, Awesome
-    NSLog(@"Difficulty Level of the object %@ for Touch mode is : %@", _object.title, _object.difficultySpeak);
-    NSString * objectName = @"Super";
     
-    if (_autoCompletedPieces > 0)
-        objectName = @"TryAgain";
-    else if ([_object.difficultySpeak doubleValue] < 10)
-        objectName = @"WellDone";
-    else if ([_object.difficultySpeak doubleValue] > 12)
-        objectName = @"Awesome";
- 
-    
-    NSString *bundleRoot = [[NSBundle mainBundle] bundlePath];
-    NSLog(@"directory found ====== %@",bundleRoot);
-    NSFileManager *fm = [NSFileManager defaultManager];
-    NSArray *dirContents = [fm contentsOfDirectoryAtPath:bundleRoot error:nil];
-    NSPredicate *fltr;
-    fltr = [NSPredicate predicateWithFormat:@"(self ENDSWITH '.caf') AND (self CONTAINS[c] %@)", objectName];
-    NSArray *onlyWAVs = [dirContents filteredArrayUsingPredicate:fltr];
-    NSLog(@"directoryContents ====== %@",onlyWAVs);
-    
-    NSString * promptPath = [[NSBundle mainBundle] pathForResource:[onlyWAVs[0] stringByDeletingPathExtension] ofType:@"caf"];
-    NSURL *promptURL = [NSURL fileURLWithPath:promptPath];
-    _finishPrompt = [[AVAudioPlayer alloc] initWithContentsOfURL:promptURL error:nil];
-    [_finishPrompt prepareToPlay];
-    [_finishPrompt play];
-    
-	[self performSelector:@selector(delayedDismissSelf) withObject:nil afterDelay:1];
+    if (_prefs.praisePromptEnabled == YES){
+        NSLog(@"Difficulty Level of the object %@ for Touch mode is : %@", _object.title, _object.difficultySpeak);
+        NSString * objectName = @"Super";
+        
+        if (_autoCompletedPieces > 0)
+            objectName = @"TryAgain";
+        else if ([_object.difficultySpeak doubleValue] < 10)
+            objectName = @"WellDone";
+        else if ([_object.difficultySpeak doubleValue] > 12)
+            objectName = @"Awesome";
+        
+        
+        NSString *bundleRoot = [[NSBundle mainBundle] bundlePath];
+        NSLog(@"directory found ====== %@",bundleRoot);
+        NSFileManager *fm = [NSFileManager defaultManager];
+        NSArray *dirContents = [fm contentsOfDirectoryAtPath:bundleRoot error:nil];
+        NSPredicate *fltr;
+        fltr = [NSPredicate predicateWithFormat:@"(self ENDSWITH '.caf') AND (self CONTAINS[c] %@)", objectName];
+        NSArray *onlyWAVs = [dirContents filteredArrayUsingPredicate:fltr];
+        NSLog(@"directoryContents ====== %@",onlyWAVs);
+        
+        NSString * promptPath = [[NSBundle mainBundle] pathForResource:[onlyWAVs[0] stringByDeletingPathExtension] ofType:@"caf"];
+        NSURL *promptURL = [NSURL fileURLWithPath:promptPath];
+        _finishPrompt = [[AVAudioPlayer alloc] initWithContentsOfURL:promptURL error:nil];
+        [_finishPrompt prepareToPlay];
+        [_finishPrompt play];
+        
+        [self performSelector:@selector(delayedDismissSelf) withObject:nil afterDelay:1];
+    }
+    else {
+        [self performSelector:@selector(delayedDismissSelf) withObject:nil afterDelay:0.5];
+    }
 }
 
 - (void)playObjectTitleSound
@@ -566,7 +572,6 @@
 - (IBAction)handleBackButtonReleased:(id)sender
 {
 	[_backOverlayTimer invalidate];
-    [self dismissViewControllerAnimated:YES completion:Nil];
 }
 
 - (void)showBackOverlay

@@ -51,6 +51,8 @@
 @property (nonatomic, strong) IBOutlet UILabel *slidersInfoLabel;
 @property (nonatomic, strong) IBOutlet UILabel *logSizeLabel;
 
+@property (nonatomic, strong) IBOutlet UISwitch *praisePromptSwitch;
+
 @property (nonatomic, retain) Scene *scene;
 
 - (IBAction)restoreTapped:(id)sender;

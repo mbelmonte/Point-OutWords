@@ -302,6 +302,9 @@
 	_currentUser = [self newManagedObjectWithEntity:@"User"];
 	
 	_currentUser.snapBackEnabled = [NSNumber numberWithBool:NO];				// in drag mode, whether pieces snap back to original position if uncsuccessfully placed
+    
+    _currentUser.praisePromptEnabled = [NSNumber numberWithBool:NO];
+    
 	_currentUser.snappingDistance = [NSNumber numberWithFloat:210];				// snapping distance to destination
 	_currentUser.dragEnterEnabled = [NSNumber numberWithBool:NO];				// whether a touch outside and drag into a piece should be considered valid or not
 	_currentUser.keyHitRadius = [NSNumber numberWithFloat:27];					// in type mode, how big to make the hit area for a key press to be registered

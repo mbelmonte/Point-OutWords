@@ -35,6 +35,7 @@
 @property (nonatomic, retain) NSNumber * rankSpeak;
 @property (nonatomic, retain) NSNumber * rankType;
 @property (nonatomic, retain) NSNumber * snapBackEnabled;
+@property (nonatomic, retain) NSNumber * praisePromptEnabled;
 @property (nonatomic, retain) NSNumber * snappingDistance;
 @property (nonatomic, retain) NSNumber * keyHitRadius;
 @property (nonatomic, retain) NSNumber * dragEnterEnabled;

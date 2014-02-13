@@ -30,6 +30,7 @@
 @property (nonatomic, assign) BOOL backgroundMusicEnabled;
 @property (nonatomic, assign) BOOL guidedModeEnabled;
 @property (nonatomic, assign) BOOL snapBackEnabled;
+@property (nonatomic, assign) BOOL praisePromptEnabled;
 @property (nonatomic, assign) BOOL keyHighlightingEnabled;
 @property (nonatomic, assign) BOOL audioLevelsVisible;
 @property (nonatomic, assign) BOOL sceneCompletionStatusVisible;

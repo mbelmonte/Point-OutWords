@@ -57,6 +57,7 @@
 	[userDefaults setObject:[NSNumber numberWithBool:_backgroundMusicEnabled] forKey:@"backgroundMusicEnabled"];
 	[userDefaults setObject:[NSNumber numberWithBool:_guidedModeEnabled] forKey:@"guidedModeEnabled"];
 	[userDefaults setObject:[NSNumber numberWithBool:_snapBackEnabled] forKey:@"snapBackEnabled"];
+	[userDefaults setObject:[NSNumber numberWithBool:_praisePromptEnabled] forKey:@"praisePromptEnabled"];
 	[userDefaults setObject:[NSNumber numberWithBool:_keyHighlightingEnabled] forKey:@"keyHighlightingEnabled"];
 	[userDefaults setObject:[NSNumber numberWithBool:_audioLevelsVisible] forKey:@"audioLevelsVisible"];
 	[userDefaults setObject:[NSNumber numberWithBool:_sceneCompletionStatusVisible] forKey:@"sceneCompletionStatusVisible"];
@@ -81,6 +82,7 @@
 	[userDefaults removeObjectForKey:@"backgroundMusicEnabled"];
 	[userDefaults removeObjectForKey:@"guidedModeEnabled"];
 	[userDefaults removeObjectForKey:@"snapBackEnabled"];
+	[userDefaults removeObjectForKey:@"praisePromptEnabled"];
 	[userDefaults removeObjectForKey:@"keyHighlightingEnabled"];
 	[userDefaults removeObjectForKey:@"audioLevelsVisible"];
 	[userDefaults removeObjectForKey:@"sceneCompletionStatusVisible"];
@@ -118,6 +120,9 @@
 
 	if ([userDefaults objectForKey:@"snapBackEnabled"] != nil)
 		_snapBackEnabled = [[userDefaults objectForKey:@"snapBackEnabled"] boolValue];
+    
+    if ([userDefaults objectForKey:@"praisePromptEnabled"] != nil)
+		_praisePromptEnabled = [[userDefaults objectForKey:@"praisePromptEnabled"] boolValue];
 	
 	if ([userDefaults objectForKey:@"keyHighlightingEnabled"] != nil)
 		_keyHighlightingEnabled = [[userDefaults objectForKey:@"keyHighlightingEnabled"] boolValue];
@@ -153,6 +158,7 @@
 	_backgroundMusicEnabled = YES;
 	_guidedModeEnabled = NO;
 	_snapBackEnabled = YES;
+	_praisePromptEnabled = YES;
 	_keyHighlightingEnabled = YES;
 	_audioLevelsVisible = YES;
 	_sceneCompletionStatusVisible = NO;
@@ -172,6 +178,7 @@
 	[settingsDict setObject:[NSNumber numberWithBool:_backgroundMusicEnabled] forKey:@"backgroundMusicEnabled"];
 	[settingsDict setObject:[NSNumber numberWithBool:_guidedModeEnabled] forKey:@"guidedModeEnabled"];
 	[settingsDict setObject:[NSNumber numberWithBool:_snapBackEnabled] forKey:@"snapBackEnabled"];
+	[settingsDict setObject:[NSNumber numberWithBool:_praisePromptEnabled] forKey:@"praisePromptEnabled"];
 	[settingsDict setObject:[NSNumber numberWithBool:_keyHighlightingEnabled] forKey:@"keyHighlightingEnabled"];
 	[settingsDict setObject:[NSNumber numberWithBool:_audioLevelsVisible] forKey:@"audioLevelsVisible"];
 	[settingsDict setObject:[NSNumber numberWithBool:_sceneCompletionStatusVisible] forKey:@"sceneCompletionStatusVisible"];

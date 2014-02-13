@@ -35,6 +35,7 @@
 @dynamic rankSpeak;
 @dynamic rankType;
 @dynamic snapBackEnabled;
+@dynamic praisePromptEnabled;
 @dynamic snappingDistance;
 @dynamic keyHitRadius;
 @dynamic dragEnterEnabled;
