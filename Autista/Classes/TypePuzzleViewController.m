@@ -664,6 +664,7 @@
 - (IBAction)handleBackButtonReleased:(id)sender
 {
 	[_backOverlayTimer invalidate];
+    [self dismissViewControllerAnimated:YES completion:Nil];
 }
 
 - (void)showBackOverlay

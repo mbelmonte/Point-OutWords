@@ -692,11 +692,13 @@
 {
     AudioServicesPlaySystemSound(0x450);
 	_backOverlayTimer = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(showBackOverlay) userInfo:nil repeats:NO];
+    
 }
 
 - (IBAction)handleBackButtonReleased:(id)sender
 {
 	[_backOverlayTimer invalidate];
+    [self dismissViewControllerAnimated:YES completion:Nil];
 }
 
 - (void)showBackOverlay
