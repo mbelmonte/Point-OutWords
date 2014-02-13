@@ -584,6 +584,9 @@
         [piece addGestureRecognizer:pan];
         piece.userInteractionEnabled=YES;
     }
+    
+    //add text to pieces...
+    [self addCharacterOnPuzzlePiece];
 
 }
 
@@ -598,6 +601,26 @@
     
     [[self buttonFromASCIICode:[[_object.title uppercaseString] characterAtIndex:_currentLetterPosition]].layer addAnimation:anim forKey:nil];
     //[self.view.layer addAnimation:anim forKey:nil] ;
+}
+
+-(void)addCharacterOnPuzzlePiece
+{
+    for (int i = 0; i < [_pieces count]; i++) {
+        NSString *lableTitle=[[_object.title uppercaseString] substringWithRange:NSMakeRange(i, 1)];
+        
+        UILabel *fontLable = [[UILabel alloc] init];
+        fontLable.frame = CGRectMake(((UIView *)[_pieces objectAtIndex:i]).frame.size.width/2-20, ((UIView*)[_pieces objectAtIndex:i]).frame.size.height/2-20, 40, 40);
+        
+        UIImageView *charBackground = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"KeyboardButton.png"] ];
+        charBackground.contentMode = UIViewContentModeScaleAspectFill;
+        charBackground.frame = CGRectMake(((UIView *)[_pieces objectAtIndex:i]).frame.size.width/2-20, ((UIView*)[_pieces objectAtIndex:i]).frame.size.height/2-20, 40, 40);
+        [[_pieces objectAtIndex:i] addSubview: charBackground];
+        
+        fontLable.textAlignment = UITextAlignmentCenter;
+        fontLable.text = lableTitle;
+        fontLable.textColor = [UIColor colorWithRed:(255.0/255.0) green:(255.0/255) blue:(255.0/255) alpha:1.0];
+        [[_pieces objectAtIndex:i] addSubview: fontLable];
+    }
 }
 
 #pragma mark - Image Manipulation Methods
