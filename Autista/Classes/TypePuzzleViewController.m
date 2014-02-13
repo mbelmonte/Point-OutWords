@@ -549,19 +549,19 @@
 		if (CGRectContainsRect (innerRect, pieceRect) == NO || CGRectIntersectsRect(_keyboard.frame, pieceRect) == YES )// detect whether the pieces are on the screen......
 			continue;//if the pieceRect is on the main screen, then re create one......
 					
-		int j = 0;
-		BOOL intersects = NO;
-		
-		while (j < i && intersects == NO) {													// check if we are intersection any of the earlier pieces
-			UIView *bPiece = [_pieces objectAtIndex:j];
-			
-			if (CGRectIntersectsRect(pieceRect, bPiece.frame) == YES)
-				intersects = YES;
-			else j++;
-		}
-		
-		if (intersects == YES)
-			continue;
+//		int j = 0;
+//		BOOL intersects = NO;
+//		
+//		while (j < i && intersects == NO) {													// check if we are intersection any of the earlier pieces
+//			UIView *bPiece = [_pieces objectAtIndex:j];
+//			
+//			if (CGRectIntersectsRect(pieceRect, bPiece.frame) == YES)
+//				intersects = YES;
+//			else j++;
+//		}
+//		
+//		if (intersects == YES)
+//			continue;
 		
 		pieceFrame.origin = CGPointMake(offsetX, offsetY);
 		aPiece.frame = pieceFrame;
@@ -596,7 +596,7 @@
     CAKeyframeAnimation * anim = [ CAKeyframeAnimation animationWithKeyPath:@"transform" ] ;
     anim.values = @[ [ NSValue valueWithCATransform3D:CATransform3DMakeTranslation(-5.0f, 0.0f, 0.0f) ], [ NSValue valueWithCATransform3D:CATransform3DMakeTranslation(5.0f, 0.0f, 0.0f) ] ] ;
     anim.autoreverses = YES ;
-    anim.repeatCount = 2.0f ;
+    anim.repeatCount = 5.0f ;
     anim.duration = 0.07f ;
     
     [[self buttonFromASCIICode:[[_object.title uppercaseString] characterAtIndex:_currentLetterPosition]].layer addAnimation:anim forKey:nil];
