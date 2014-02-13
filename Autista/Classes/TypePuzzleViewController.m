@@ -305,6 +305,7 @@
 {
 	NSString *title = [_object.title uppercaseString];
 	UIButton *expectedButton = [self buttonFromASCIICode:[title characterAtIndex:_currentLetterPosition]];
+
 	PuzzlePieceView *piece = [_pieces objectAtIndex:_currentLetterPosition];
 	CGRect frame = piece.frame;
 	
@@ -522,8 +523,8 @@
 
 - (void)randomizeInitialPositionsOfPieces
 {
-	CGRect outerRect = CGRectMake(0, 0, 2048, 1536);//include the outside of the screen
-	CGRect innerRect = CGRectMake(512, 384, 1024, 768);//the main ipad screensize, but offsetted by(512,384)..
+	//CGRect outerRect = CGRectMake(0, 0, 2048, 1536);//include the outside of the screen
+	CGRect innerRect = CGRectMake(0, 0, 1024, 768);//the main ipad screensize, but offsetted by(512,384)..
 	
 	int i = 0;
 	
@@ -533,17 +534,19 @@
 		CGFloat pieceWidth = pieceFrame.size.width;
 		CGFloat pieceHeight = pieceFrame.size.height;
 		
-		CGFloat offsetX = arc4random() % (int)(outerRect.size.width - pieceWidth);
-		CGFloat offsetY = arc4random() % (int)(outerRect.size.height - pieceHeight);
+		CGFloat offsetX = arc4random() % (int)(innerRect.size.width);
+		CGFloat offsetY = arc4random() % (int)(innerRect.size.height);
 		
 		CGRect pieceRect = CGRectMake(offsetX, offsetY, pieceWidth, pieceHeight);
        
         NSLog(@"the originX of the keyboard=%f",_keyboard.frame.origin.x);
         NSLog(@"the originY of the keyboard=%f",_keyboard.frame.origin.y);
 
-        CGRect newFrame=CGRectMake(512+_keyboard.frame.origin.x, 384+_keyboard.frame.origin.y, _keyboard.frame.size.width,_keyboard.frame.size.height);//offset the keyboard to the current screen position..
+        //CGRect newFrame=CGRectMake(512+_keyboard.frame.origin.x, 384+_keyboard.frame.origin.y, _keyboard.frame.size.width,_keyboard.frame.size.height);//offset the keyboard to the current screen position..
         
-		if (CGRectContainsRect (innerRect, pieceRect) == NO|| CGRectIntersectsRect(newFrame, pieceRect)==YES)// detect whether the pieces are on the screen......
+        //|| CGRectIntersectsRect(_placeHolder.frame, pieceRect) == YES
+        
+		if (CGRectContainsRect (innerRect, pieceRect) == NO || CGRectIntersectsRect(_keyboard.frame, pieceRect) == YES )// detect whether the pieces are on the screen......
 			continue;//if the pieceRect is on the main screen, then re create one......
 					
 		int j = 0;
@@ -567,19 +570,25 @@
 // if all the pieces are outside the screen and do not intersct with each other...........
 	for (UIView *piece in _pieces)
     {
-		piece.frame = CGRectOffset(piece.frame, -512, -384);//move all the pieces to origin(0,0)
+		//piece.frame = CGRectOffset(piece.frame, -512, -384);//move all the pieces to origin(0,0)
     //add gesture to all the pieces..
-        UITapGestureRecognizer *singleFingerTap =
+        UITapGestureRecognizer *tap =
         [[UITapGestureRecognizer alloc] initWithTarget:self
-                                                action:@selector(handleSingleTap:)];
-        [piece addGestureRecognizer:singleFingerTap];
+                                                action:@selector(remindAnimation:)];
+        
+        UIPanGestureRecognizer *pan =
+        [[UIPanGestureRecognizer alloc] initWithTarget:self
+                                                action:@selector(remindAnimation:)];
+        
+        [piece addGestureRecognizer:tap];
+        [piece addGestureRecognizer:pan];
         piece.userInteractionEnabled=YES;
     }
 
 }
 
 #pragma mark - pieces Gesture method
-- (void)handleSingleTap:(UITapGestureRecognizer *)recognizer {
+- (void)remindAnimation:(UITapGestureRecognizer *)recognizer {
     
     CAKeyframeAnimation * anim = [ CAKeyframeAnimation animationWithKeyPath:@"transform" ] ;
     anim.values = @[ [ NSValue valueWithCATransform3D:CATransform3DMakeTranslation(-5.0f, 0.0f, 0.0f) ], [ NSValue valueWithCATransform3D:CATransform3DMakeTranslation(5.0f, 0.0f, 0.0f) ] ] ;
@@ -587,7 +596,8 @@
     anim.repeatCount = 2.0f ;
     anim.duration = 0.07f ;
     
-    [ self.view.layer addAnimation:anim forKey:nil ] ;
+    [[self buttonFromASCIICode:[[_object.title uppercaseString] characterAtIndex:_currentLetterPosition]].layer addAnimation:anim forKey:nil];
+    //[self.view.layer addAnimation:anim forKey:nil] ;
 }
 
 #pragma mark - Image Manipulation Methods
