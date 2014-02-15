@@ -287,11 +287,19 @@
 
 #pragma mark -Gesture Handling
 
+//add code to handle interest area
 - (void)handleTapGesture:(UITapGestureRecognizer *)gesture
 {
 	CGPoint initialTouchPoint = [gesture locationInView:self.view];
 	PuzzlePieceView *touchedPiece = [self hitTest:initialTouchPoint];
-	
+    
+	CGRect currentRect=touchedPiece.frame;
+    currentRect.origin.x = initialTouchPoint.x - touchedPiece.frame.size.width/2;
+    currentRect.origin.y = initialTouchPoint.y - touchedPiece.frame.size.height/2;
+    [UIView animateWithDuration:0.1 animations:^(void) { touchedPiece.frame = currentRect; }];
+    
+    [self snapPieceToFinalPosition:touchedPiece];
+    
 	if (touchedPiece != nil && touchedPiece != _pieceTrackedByLoopDetector) {
 		[self.view bringSubviewToFront:touchedPiece];
 		_loopDetectorCount = 0;
@@ -315,6 +323,11 @@
 			return;
 		
 		[self.view bringSubviewToFront:_draggedPiece];												// bring piece to front so it doesn't get stuck underneath other pieces
+        
+        CGRect currentRect=_draggedPiece.frame;
+        currentRect.origin.x = initialTouchPoint.x - _draggedPiece.frame.size.width/2;
+        currentRect.origin.y = initialTouchPoint.y - _draggedPiece.frame.size.height/2;
+        [UIView animateWithDuration:0.1 animations:^(void) { _draggedPiece.frame = currentRect; }];
 		
 		_pieceTouchedAtPoint = initialTouchPoint;
 		_lastLoggedPoint = initialTouchPoint;
@@ -552,14 +565,40 @@
 	else [(GuidedModeViewController *)self.parentViewController presentNextPuzzle];
 }
 
+//add code to handle interest area
 - (PuzzlePieceView *)hitTest:(CGPoint)touchPoint
 {
-	for (PuzzlePieceView *piece in _pieces) {
+    CGFloat distance = 1024;
+    CGFloat newDistance = 1024;
+    PuzzlePieceView *nearestPiece = nil;
+    
+    //go through all pieces, if one is clicked, return that one.
+    for (PuzzlePieceView *piece in _pieces) {
 		CGPoint point = [self.view convertPoint:touchPoint toView:piece];
 		if (piece.isCompleted == NO && [piece pointInside:point withEvent:nil] == YES)
 			return piece;
-	}
-	
+    }
+    
+    //go through all pieces, if no one is clicked, if is not completed, get nearest distance and piece.
+	for (PuzzlePieceView *piece in _pieces) {
+        CGPoint point = [self.view convertPoint:touchPoint toView:piece];
+        
+        if (piece.isCompleted == YES)
+            continue;
+
+        newDistance = sqrtf(pow(point.x, 2)+pow(point.y, 2));
+        if (newDistance < distance){
+            distance = newDistance;
+            nearestPiece = piece;
+        }
+    }
+    
+    //check if this piece fits the selecting distance criteria
+    CGPoint nearestPoint = [self.view convertPoint:touchPoint toView:nearestPiece];
+    if ((abs(nearestPoint.x) - nearestPiece.frame.size.width) < _prefs.selectDistance && (abs(nearestPoint.y) - nearestPiece.frame.size.height) < _prefs.selectDistance){
+        return nearestPiece;
+    }
+    
 	return nil;
 }
 

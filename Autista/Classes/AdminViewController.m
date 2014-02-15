@@ -89,6 +89,7 @@
 
     _ampThresh.value = _prefs.ampThresh;
     _snapDistance.value = _prefs.snapDistance;
+    _selectDistance.value = _prefs.selectDistance;
 	_adjustDragFrequency.value = _prefs.dragPuzzleFrequency;
 	_adjustSpeakFrequency.value = _prefs.speakPuzzleFrequency;
 	_adjustTypeFrequency.value = _prefs.typePuzzleFrequency;
@@ -213,6 +214,8 @@
         [TestFlight passCheckpoint:@"Admin Setting changed : Praise Prompt switch"];
     if (_prefs.snapDistance != _snapDistance.value)
         [TestFlight passCheckpoint:@"Admin Setting changed : Snapping Distance"];
+    if (_prefs.selectDistance != _selectDistance.value)
+        [TestFlight passCheckpoint:@"Admin Setting changed : Selecting Distance"];
     if ((_prefs.dragPuzzleFrequency != _adjustDragFrequency.value) || (_prefs.typePuzzleFrequency != _adjustTypeFrequency.value) || (_prefs.speakPuzzleFrequency != _adjustSpeakFrequency.value)) {
         [TestFlight passCheckpoint:@"Admin Setting changed : Point / Type / Say frequency"];
         NSString * str = [NSString stringWithFormat:@"Admin Setting changed : Point from %f to %f, Type from %f to %f, Say from %f to %f", _prefs.dragPuzzleFrequency, _adjustDragFrequency.value, _prefs.typePuzzleFrequency, _adjustTypeFrequency.value, _prefs.speakPuzzleFrequency, _adjustSpeakFrequency.value];
@@ -238,6 +241,7 @@
 	_prefs.speakPuzzleFrequency = _adjustSpeakFrequency.value;
 	_prefs.typePuzzleFrequency = _adjustTypeFrequency.value;
     _prefs.snapDistance = _snapDistance.value;
+    _prefs.selectDistance = _selectDistance.value;
     _prefs.ampThresh = _ampThresh.value;
 	
 	[[EventLogger sharedLogger] logEvent:LogEventCodeAdminModeExited eventInfo:nil];
@@ -320,6 +324,7 @@
     AudioServicesPlaySystemSound(0x450);
 	[_ampThresh setValue:4 animated:YES];
 	[_snapDistance setValue:100 animated:YES];
+	[_selectDistance setValue:50 animated:YES];
 	[_adjustDragFrequency setValue:60 animated:YES];
 	[_adjustTypeFrequency setValue:20 animated:YES];
 	[_adjustSpeakFrequency setValue:20 animated:YES];

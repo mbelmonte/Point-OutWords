@@ -40,6 +40,7 @@
 @property (nonatomic, strong) IBOutlet UIButton *resetSlidersButton;
 @property (nonatomic, strong) IBOutlet UIButton *sendLogsButton;
 @property (nonatomic, strong) IBOutlet UISlider *snapDistance;
+@property (nonatomic, strong) IBOutlet UISlider *selectDistance;
 @property (nonatomic, strong) IBOutlet UISlider *ampThresh;
 @property (nonatomic, strong) IBOutlet UISlider *adjustDragFrequency;
 @property (nonatomic, strong) IBOutlet UISlider *adjustTypeFrequency;

@@ -37,6 +37,7 @@
 @property (nonatomic, assign) BOOL sendAnonymousData;
 
 @property (nonatomic, assign) CGFloat snapDistance;
+@property (nonatomic, assign) CGFloat selectDistance;
 @property (nonatomic, assign) CGFloat ampThresh;
 @property (nonatomic, assign) CGFloat dragPuzzleFrequency;
 @property (nonatomic, assign) CGFloat typePuzzleFrequency;

@@ -65,6 +65,7 @@
 
     [userDefaults setObject:[NSNumber numberWithFloat:_ampThresh] forKey:@"ampThresh"];
     [userDefaults setObject:[NSNumber numberWithFloat:_snapDistance] forKey:@"snapDistance"];
+    [userDefaults setObject:[NSNumber numberWithFloat:_selectDistance] forKey:@"selectDistance"];
 	[userDefaults setObject:[NSNumber numberWithFloat:_dragPuzzleFrequency] forKey:@"dragPuzzleFrequency"];
 	[userDefaults setObject:[NSNumber numberWithFloat:_typePuzzleFrequency] forKey:@"typePuzzleFrequency"];
 	[userDefaults setObject:[NSNumber numberWithFloat:_speakPuzzleFrequency] forKey:@"speakPuzzleFrequency"];
@@ -90,6 +91,7 @@
 
     [userDefaults removeObjectForKey:@"ampThresh"];
     [userDefaults removeObjectForKey:@"snapDistance"];
+    [userDefaults removeObjectForKey:@"selectDistance"];
 	[userDefaults removeObjectForKey:@"dragPuzzleFrequency"];
 	[userDefaults removeObjectForKey:@"typePuzzleFrequency"];
 	[userDefaults removeObjectForKey:@"speakPuzzleFrequency"];
@@ -141,6 +143,9 @@
 
     if ([userDefaults objectForKey:@"snapDistance"] != nil)
 		_snapDistance = [[userDefaults objectForKey:@"snapDistance"] floatValue];
+    
+    if ([userDefaults objectForKey:@"selectDistance"] != nil)
+		_selectDistance = [[userDefaults objectForKey:@"selectDistance"] floatValue];
 
 	if ([userDefaults objectForKey:@"dragPuzzleFrequency"] != nil)
 		_dragPuzzleFrequency = [[userDefaults objectForKey:@"dragPuzzleFrequency"] floatValue];
@@ -165,6 +170,7 @@
 	_sendAnonymousData = YES;
     _ampThresh = 4; //log10 (4) ~ .6 - currentd efault for high threshold
     _snapDistance = 100;
+    _selectDistance = 50;
 	_dragPuzzleFrequency = 60;
 	_typePuzzleFrequency = 20;
 	_speakPuzzleFrequency = 20;
@@ -186,6 +192,7 @@
 
     [settingsDict setObject:[NSNumber numberWithFloat:_ampThresh] forKey:@"ampThresh"];
 	[settingsDict setObject:[NSNumber numberWithFloat:_snapDistance] forKey:@"snapDistance"];
+	[settingsDict setObject:[NSNumber numberWithFloat:_selectDistance] forKey:@"selectDistance"];
 	[settingsDict setObject:[NSNumber numberWithFloat:_dragPuzzleFrequency] forKey:@"dragPuzzleFrequency"];
 	[settingsDict setObject:[NSNumber numberWithFloat:_typePuzzleFrequency] forKey:@"typePuzzleFrequency"];
 	[settingsDict setObject:[NSNumber numberWithFloat:_speakPuzzleFrequency] forKey:@"speakPuzzleFrequency"];
