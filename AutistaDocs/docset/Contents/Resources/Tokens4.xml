@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AutistaIAPHelper.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AutistaIAPHelper</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AutistaIAPHelper.h</DeclaredIn>
+            
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AutistaIAPHelper/sharedInstance</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AutistaIAPHelper.h</DeclaredIn>
+			
+			<Declaration>+ (AutistaIAPHelper *)sharedInstance</Declaration>
+			
+			
+			<Anchor>//api/name/sharedInstance</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

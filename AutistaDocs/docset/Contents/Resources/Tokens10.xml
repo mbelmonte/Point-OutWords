@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/GuidedModeViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/GuidedModeViewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GuidedModeViewController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GuidedModeViewController/presentNextPuzzle</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GuidedModeViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)presentNextPuzzle</Declaration>
+			
+			
+			<Anchor>//api/name/presentNextPuzzle</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GuidedModeViewController/initWithNibName:bundle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GuidedModeViewController.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil</Declaration>
+			
+			
+			<Anchor>//api/name/initWithNibName:bundle:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GuidedModeViewController/viewDidAppear:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GuidedModeViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewDidAppear:(BOOL)animated</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidAppear:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GuidedModeViewController/pageViewController:viewControllerBeforeViewController:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GuidedModeViewController.m</DeclaredIn>
+			
+			<Declaration>- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController</Declaration>
+			
+			
+			<Anchor>//api/name/pageViewController:viewControllerBeforeViewController:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GuidedModeViewController/pageViewController:viewControllerAfterViewController:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GuidedModeViewController.m</DeclaredIn>
+			
+			<Declaration>- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController</Declaration>
+			
+			
+			<Anchor>//api/name/pageViewController:viewControllerAfterViewController:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GuidedModeViewController/presentTouchPuzzleView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GuidedModeViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)presentTouchPuzzleView:(PuzzleObject *)object</Declaration>
+			
+			
+			<Anchor>//api/name/presentTouchPuzzleView:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GuidedModeViewController/presentTypePuzzleView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GuidedModeViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)presentTypePuzzleView:(PuzzleObject *)object</Declaration>
+			
+			
+			<Anchor>//api/name/presentTypePuzzleView:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GuidedModeViewController/presentSayPuzzleView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GuidedModeViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)presentSayPuzzleView:(PuzzleObject *)object</Declaration>
+			
+			
+			<Anchor>//api/name/presentSayPuzzleView:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GuidedModeViewController/didReceiveMemoryWarning</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GuidedModeViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)didReceiveMemoryWarning</Declaration>
+			
+			
+			<Anchor>//api/name/didReceiveMemoryWarning</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

@@ -24,6 +24,8 @@
 #import "GlobalPreferences.h"
 #import "AppDelegate.h"
 
+
+
 @interface RootViewController ()
 
 @end
@@ -47,11 +49,15 @@
 	BOOL guidedModeEnabled = [[GlobalPreferences sharedGlobalPreferences] guidedModeEnabled];
 	
 	AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    
+    //Lead user to FirstLaunchView if first run
 	if (appDelegate.runState == AppRunStateFirstRun) {
 		appDelegate.runState = AppRunStateNormal;
 		
 		initialViewControllerIdentifier = @"FirstLaunchViewController";
 	}
+    
+    //Lead user to GuidedModeView if guidedModeEnabled is true
 	else if (guidedModeEnabled == YES)
 		initialViewControllerIdentifier = @"GuidedModeViewController";
 	else initialViewControllerIdentifier = @"SceneSelectorViewController";

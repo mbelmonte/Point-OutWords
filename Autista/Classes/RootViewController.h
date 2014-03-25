@@ -21,7 +21,25 @@
 //
 
 #import <UIKit/UIKit.h>
-
+/**
+*    RootViewController is the entering point of the app. It leads a user to the next ViewController based on conditions:
+*
+*    - FirstLaunchViewController if it's the first time of app launch
+*    - GuidedModeViewController if guidedModeEnabled is true
+*    - SceneSelectorViewController otherwise
+*
+*/
 @interface RootViewController : UIViewController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil;
+
+/**
+ *  Lead a user to next view based on conditions
+ *
+ *  @param animated true if animation is enabled
+ */
+- (void)viewDidAppear:(BOOL)animated;
+
+- (void)didReceiveMemoryWarning;
 
 @end

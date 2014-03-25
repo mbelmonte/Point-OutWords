@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/IAPHelper.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/IAPHelper</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>IAPHelper.h</DeclaredIn>
+            
+			
+			<NodeRef refid="11"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/IAPHelper/initWithProductIdentifiers:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>IAPHelper.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithProductIdentifiers:(NSSet *)productIdentifiers</Declaration>
+			
+			
+			<Anchor>//api/name/initWithProductIdentifiers:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/IAPHelper/requestProductsWithCompletionHandler:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>IAPHelper.h</DeclaredIn>
+			
+			<Declaration>- (void)requestProductsWithCompletionHandler:(RequestProductsCompletionHandler)completionHandler</Declaration>
+			
+			
+			<Anchor>//api/name/requestProductsWithCompletionHandler:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/IAPHelper/buyProduct:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>IAPHelper.h</DeclaredIn>
+			
+			<Declaration>- (void)buyProduct:(SKProduct *)product</Declaration>
+			
+			
+			<Anchor>//api/name/buyProduct:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/IAPHelper/productPurchased:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>IAPHelper.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)productPurchased:(NSString *)productIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/productPurchased:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/IAPHelper/restoreCompletedTransactions</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>IAPHelper.h</DeclaredIn>
+			
+			<Declaration>- (void)restoreCompletedTransactions</Declaration>
+			
+			
+			<Anchor>//api/name/restoreCompletedTransactions</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/IAPHelper/paymentQueue:updatedTransactions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>IAPHelper.m</DeclaredIn>
+			
+			<Declaration>- (void)paymentQueue:(SKPaymentQueue *)queue updatedTransactions:(NSArray *)transactions</Declaration>
+			
+			
+			<Anchor>//api/name/paymentQueue:updatedTransactions:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/IAPHelper/completeTransaction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>IAPHelper.m</DeclaredIn>
+			
+			<Declaration>- (void)completeTransaction:(SKPaymentTransaction *)transaction</Declaration>
+			
+			
+			<Anchor>//api/name/completeTransaction:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/IAPHelper/restoreTransaction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>IAPHelper.m</DeclaredIn>
+			
+			<Declaration>- (void)restoreTransaction:(SKPaymentTransaction *)transaction</Declaration>
+			
+			
+			<Anchor>//api/name/restoreTransaction:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/IAPHelper/failedTransaction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>IAPHelper.m</DeclaredIn>
+			
+			<Declaration>- (void)failedTransaction:(SKPaymentTransaction *)transaction</Declaration>
+			
+			
+			<Anchor>//api/name/failedTransaction:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/IAPHelper/provideContentForProductIdentifier:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>IAPHelper.m</DeclaredIn>
+			
+			<Declaration>- (void)provideContentForProductIdentifier:(NSString *)productIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/provideContentForProductIdentifier:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/IAPHelper/productsRequest:didReceiveResponse:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>IAPHelper.m</DeclaredIn>
+			
+			<Declaration>- (void)productsRequest:(SKProductsRequest *)request didReceiveResponse:(SKProductsResponse *)response</Declaration>
+			
+			
+			<Anchor>//api/name/productsRequest:didReceiveResponse:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/IAPHelper/request:didFailWithError:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>IAPHelper.m</DeclaredIn>
+			
+			<Declaration>- (void)request:(SKRequest *)request didFailWithError:(NSError *)error</Declaration>
+			
+			
+			<Anchor>//api/name/request:didFailWithError:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TypePuzzleViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TypePuzzleViewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="57"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/setObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) PuzzleObject *object</Declaration>
+			
+			
+			<Anchor>//api/name/object</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/object</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) PuzzleObject *object</Declaration>
+			
+			
+			<Anchor>//api/name/object</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TypePuzzleViewController/object</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) PuzzleObject *object</Declaration>
+			
+			
+			<Anchor>//api/name/object</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/setPieces:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSMutableArray *pieces</Declaration>
+			
+			
+			<Anchor>//api/name/pieces</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/pieces</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSMutableArray *pieces</Declaration>
+			
+			
+			<Anchor>//api/name/pieces</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TypePuzzleViewController/pieces</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSMutableArray *pieces</Declaration>
+			
+			
+			<Anchor>//api/name/pieces</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/setFinishPrompt:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) AVAudioPlayer *finishPrompt</Declaration>
+			
+			
+			<Anchor>//api/name/finishPrompt</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/finishPrompt</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) AVAudioPlayer *finishPrompt</Declaration>
+			
+			
+			<Anchor>//api/name/finishPrompt</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TypePuzzleViewController/finishPrompt</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) AVAudioPlayer *finishPrompt</Declaration>
+			
+			
+			<Anchor>//api/name/finishPrompt</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/setBackground:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIImageView *background</Declaration>
+			
+			
+			<Anchor>//api/name/background</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/background</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIImageView *background</Declaration>
+			
+			
+			<Anchor>//api/name/background</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TypePuzzleViewController/background</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIImageView *background</Declaration>
+			
+			
+			<Anchor>//api/name/background</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/setPlaceHolder:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIImageView *placeHolder</Declaration>
+			
+			
+			<Anchor>//api/name/placeHolder</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/placeHolder</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIImageView *placeHolder</Declaration>
+			
+			
+			<Anchor>//api/name/placeHolder</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TypePuzzleViewController/placeHolder</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIImageView *placeHolder</Declaration>
+			
+			
+			<Anchor>//api/name/placeHolder</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/setKeyboard:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIView *keyboard</Declaration>
+			
+			
+			<Anchor>//api/name/keyboard</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/keyboard</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIView *keyboard</Declaration>
+			
+			
+			<Anchor>//api/name/keyboard</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TypePuzzleViewController/keyboard</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIView *keyboard</Declaration>
+			
+			
+			<Anchor>//api/name/keyboard</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/playKeyClickSound:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)playKeyClickSound:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/playKeyClickSound:</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/handleKeyPressed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)handleKeyPressed:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/handleKeyPressed:</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/handleAdminButtonPressed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)handleAdminButtonPressed:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/handleAdminButtonPressed:</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/handleAdminButtonReleased:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)handleAdminButtonReleased:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/handleAdminButtonReleased:</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/handleBackButtonPressed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)handleBackButtonPressed:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/handleBackButtonPressed:</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/handleBackButtonReleased:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)handleBackButtonReleased:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/handleBackButtonReleased:</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/initWithNibName:bundle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil</Declaration>
+			
+			
+			<Anchor>//api/name/initWithNibName:bundle:</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/viewDidLoad</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewDidLoad</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidLoad</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/viewDidAppear:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewDidAppear:(BOOL)animated</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidAppear:</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/initializePuzzleState</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)initializePuzzleState</Declaration>
+			
+			
+			<Anchor>//api/name/initializePuzzleState</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/setupSounds</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)setupSounds</Declaration>
+			
+			
+			<Anchor>//api/name/setupSounds</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/playCorrectKeyPressedSound</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (IBAction)playCorrectKeyPressedSound</Declaration>
+			
+			
+			<Anchor>//api/name/playCorrectKeyPressedSound</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/playWrongKeyPressedSound</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (IBAction)playWrongKeyPressedSound</Declaration>
+			
+			
+			<Anchor>//api/name/playWrongKeyPressedSound</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/playPuzzleCompletedSuccessfullySound</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (IBAction)playPuzzleCompletedSuccessfullySound</Declaration>
+			
+			
+			<Anchor>//api/name/playPuzzleCompletedSuccessfullySound</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/playObjectTitleSound</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)playObjectTitleSound</Declaration>
+			
+			
+			<Anchor>//api/name/playObjectTitleSound</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/buttonFromASCIICode:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (UIButton *)buttonFromASCIICode:(NSInteger)asciiCode</Declaration>
+			
+			
+			<Anchor>//api/name/buttonFromASCIICode:</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/checkPuzzleState</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)checkPuzzleState</Declaration>
+			
+			
+			<Anchor>//api/name/checkPuzzleState</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/advanceToNextLetterPosition</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)advanceToNextLetterPosition</Declaration>
+			
+			
+			<Anchor>//api/name/advanceToNextLetterPosition</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/presentPuzzleCompletionAnimation</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)presentPuzzleCompletionAnimation</Declaration>
+			
+			
+			<Anchor>//api/name/presentPuzzleCompletionAnimation</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/promptAndFinish</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)promptAndFinish</Declaration>
+			
+			
+			<Anchor>//api/name/promptAndFinish</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/delayedDismissSelf</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)delayedDismissSelf</Declaration>
+			
+			
+			<Anchor>//api/name/delayedDismissSelf</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/slideOutKeyboard</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)slideOutKeyboard</Declaration>
+			
+			
+			<Anchor>//api/name/slideOutKeyboard</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/slideInKeyboard</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)slideInKeyboard</Declaration>
+			
+			
+			<Anchor>//api/name/slideInKeyboard</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/randomizeInitialPositionsOfPieces</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)randomizeInitialPositionsOfPieces</Declaration>
+			
+			
+			<Anchor>//api/name/randomizeInitialPositionsOfPieces</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/addCharacterOnPuzzlePiece</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)addCharacterOnPuzzlePiece</Declaration>
+			
+			
+			<Anchor>//api/name/addCharacterOnPuzzlePiece</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/remindAnimation:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)remindAnimation:(UITapGestureRecognizer *)recognizer</Declaration>
+			
+			
+			<Anchor>//api/name/remindAnimation:</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/applyShadowToObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)applyShadowToObject:(UIView *)object</Declaration>
+			
+			
+			<Anchor>//api/name/applyShadowToObject:</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/applyGlowToObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)applyGlowToObject:(UIView *)object</Declaration>
+			
+			
+			<Anchor>//api/name/applyGlowToObject:</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/removeGlowFromObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)removeGlowFromObject:(UIView *)object</Declaration>
+			
+			
+			<Anchor>//api/name/removeGlowFromObject:</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/showBackOverlay</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)showBackOverlay</Declaration>
+			
+			
+			<Anchor>//api/name/showBackOverlay</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/showAdminOverlay</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)showAdminOverlay</Declaration>
+			
+			
+			<Anchor>//api/name/showAdminOverlay</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/preferredInterfaceOrientationForPresentation</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation</Declaration>
+			
+			
+			<Anchor>//api/name/preferredInterfaceOrientationForPresentation</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/shouldAutorotateToInterfaceOrientation:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation</Declaration>
+			
+			
+			<Anchor>//api/name/shouldAutorotateToInterfaceOrientation:</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/didReceiveMemoryWarning</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)didReceiveMemoryWarning</Declaration>
+			
+			
+			<Anchor>//api/name/didReceiveMemoryWarning</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>
