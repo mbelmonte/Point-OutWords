@@ -29,7 +29,6 @@
 #import "AdminViewController.h"
 #import "Scene.h"
 #import "Attempt.h"
-#import "PuzzleObject.h"
 #import "AppDelegate.h"
 #import "EventLogger.h"
 #import "GlobalPreferences.h"

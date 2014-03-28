@@ -21,7 +21,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+/**
+ *  This view is deprecated.
+ */
 @interface GuidedModeViewController : UIPageViewController <UIPageViewControllerDelegate, UIPageViewControllerDataSource>
 
 - (void)presentNextPuzzle;

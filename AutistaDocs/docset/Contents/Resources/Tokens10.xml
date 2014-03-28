@@ -4,7 +4,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/GuidedModeViewController</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">This view is deprecated.</Abstract>
 			<DeclaredIn>GuidedModeViewController.h</DeclaredIn>
             
 			
