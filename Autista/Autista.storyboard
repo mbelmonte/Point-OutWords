@@ -976,21 +976,21 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Record/select a sound file to encourage the child once he has finish a medium puzzle." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YBK-Aa-zb0">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="placeholder" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YBK-Aa-zb0">
                                         <rect key="frame" x="31" y="101" width="362" height="51"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
                                         <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Record/select a sound file to encourage the child once he has finish a hard puzzle." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Qsi-Lx-UDe">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="placeholder" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Qsi-Lx-UDe">
                                         <rect key="frame" x="31" y="31" width="362" height="51"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
                                         <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Record/select a sound file to encourage the child once he has finish a easy puzzle." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ef6-PE-Jf0">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="placeholder" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ef6-PE-Jf0">
                                         <rect key="frame" x="31" y="165" width="362" height="51"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
@@ -1011,7 +1011,7 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Record/select a sound file to encourage the child once he failed to finish a task." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eZY-a9-2jo">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="placeholder" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eZY-a9-2jo">
                                         <rect key="frame" x="31" y="232" width="362" height="51"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
@@ -1452,6 +1452,7 @@
                         <outlet property="ampThresh" destination="X5p-Bq-aaK" id="3qf-Fp-W4N"/>
                         <outlet property="awesome_Btn_Play" destination="qZq-CB-Ghd" id="VRX-rT-LYC"/>
                         <outlet property="awesome_Btn_Record" destination="uCF-lT-OPf" id="3Uy-DB-29d"/>
+                        <outlet property="awesome_descLabel" destination="Qsi-Lx-UDe" id="q1M-gy-ih4"/>
                         <outlet property="awesome_fileLabel" destination="DW5-TD-y0U" id="nOI-sv-fmw"/>
                         <outlet property="awesome_itunes_Btn_Play" destination="eAW-xy-MUe" id="ghL-j8-2Ik"/>
                         <outlet property="backgroundMusicSwitch" destination="QeG-xb-JkY" id="Q5k-Ru-xul"/>
@@ -1480,14 +1481,17 @@
                         <outlet property="snapbackSwitch" destination="JoH-6w-5v0" id="RX4-bi-Zij"/>
                         <outlet property="super_Btn_Play" destination="m03-tk-PSK" id="HXe-LX-mLV"/>
                         <outlet property="super_Btn_Record" destination="d9D-NR-f7G" id="2j3-LS-b7W"/>
+                        <outlet property="super_descLabel" destination="YBK-Aa-zb0" id="lst-IW-p5J"/>
                         <outlet property="super_fileLabel" destination="G8V-Yy-Ymn" id="qUH-FT-S9d"/>
                         <outlet property="super_itunes_Btn_Play" destination="XEK-XJ-ap0" id="w0C-ov-Gws"/>
                         <outlet property="try_Btn_Play" destination="knq-o8-acH" id="uzP-pE-G44"/>
                         <outlet property="try_Btn_Record" destination="oYp-gL-EeS" id="vlt-fL-o2W"/>
                         <outlet property="try_fileLabel" destination="q6M-J6-UR1" id="Tma-b5-O8Z"/>
                         <outlet property="try_itunes_Btn_Play" destination="7h8-J7-g4O" id="OzR-jt-YTb"/>
+                        <outlet property="tryagain_descLabel" destination="eZY-a9-2jo" id="GEF-NQ-kBk"/>
                         <outlet property="welldone_Btn_Play" destination="Ulg-a0-bAF" id="ZEu-yZ-tFS"/>
                         <outlet property="welldone_Btn_Record" destination="tnP-iW-c79" id="0KC-D4-lay"/>
+                        <outlet property="welldone_descLabel" destination="ef6-PE-Jf0" id="5BS-yW-wqf"/>
                         <outlet property="welldone_fileLabel" destination="LsE-4i-3d0" id="3De-EX-eip"/>
                         <outlet property="welldone_itunes_Btn_Play" destination="4HX-Jy-NfB" id="7zC-zL-iiK"/>
                     </connections>

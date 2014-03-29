@@ -100,6 +100,15 @@
 @property (weak, nonatomic) IBOutlet UIView *recordView;
 @property (weak, nonatomic) IBOutlet UIView *itunesView;
 
+@property (weak, nonatomic) IBOutlet UILabel *super_descLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *awesome_descLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *welldone_descLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *tryagain_descLabel;
+
+
 //@property (weak, nonatomic) IBOutlet UIPickerView *promptPickerView;
 
 - (IBAction)restoreTapped:(id)sender;

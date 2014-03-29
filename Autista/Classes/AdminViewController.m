@@ -48,6 +48,7 @@
 @property NSMutableArray *praiseFileLabelArrayForPlist;
 @property NSMutableArray *iTunesPlayList;
 
+//for default
 @property NSMutableArray *defaultPromptArray;
 @property NSMutableArray *allPromptArray;
 
@@ -197,10 +198,27 @@
 {
     switch (controlIndex) {
         case 0:
+            self.awesome_descLabel.text = @"A praise prompt to encourage the child once a hard puzzle is completed.";
+            self.super_descLabel.text = @"A praise prompt to encourage the child once a medium puzzle is completed.";
+            self.welldone_descLabel.text = @"A praise prompt to encourage the child once a easy puzzle is completed.";
+            self.tryagain_descLabel.text = @"A praise prompt to encourage the child once a puzzle is not completed.";
+            
+            self.recordView.hidden = YES;
+            self.itunesView.hidden = YES;
+            for (int i = 0; i < [praiseFileLabelArray count]; i++) {
+                ((UILabel *)[self.praiseFileLabelArray objectAtIndex:i]).text = [[self.defaultPromptArray objectAtIndex:i] stringByAppendingString:@".caf"];
+            }
+            
+            
             
             break;
             
         case 1:
+            self.awesome_descLabel.text = @"Record a praise prompt to encourage the child once a hard puzzle is completed.";
+            self.super_descLabel.text = @"Record a praise prompt to encourage the child once a medium puzzle is completed.";
+            self.welldone_descLabel.text = @"Record a praise prompt to encourage the child once a easy puzzle is completed.";
+            self.tryagain_descLabel.text = @"Record a praise prompt to encourage the child once a puzzle is not completed.";
+            
             self.recordView.hidden = NO;
             self.itunesView.hidden = YES;
             
@@ -218,6 +236,11 @@
             break;
             
         case 2:
+            self.awesome_descLabel.text = @"Select a praise prompt to encourage the child once a hard puzzle is completed.";
+            self.super_descLabel.text = @"Select a praise prompt to encourage the child once a medium puzzle is completed.";
+            self.welldone_descLabel.text = @"Select a praise prompt to encourage the child once a easy puzzle is completed.";
+            self.tryagain_descLabel.text = @"Select a praise prompt to encourage the child once a puzzle is not completed.";
+            
             self.recordView.hidden = YES;
             self.itunesView.hidden = NO;
             
@@ -360,6 +383,7 @@
     [currentDict setValue:recordFilePathArray forKey:@"RecordedPraise"];
     [currentDict setValue:praiseFileLabelArrayForPlist forKey:@"FileName"];
     [currentDict setValue:iTunesPlayList forKey:@"iTunesPraiseURL"];
+    [currentDict setValue:defaultPromptArray forKey:@"DefaultPrompt"];
     NSNumber* segmentIndex = [NSNumber numberWithInteger:[self.promptSourceSegment selectedSegmentIndex]];
     [currentDict setValue: segmentIndex forKey:@"PromptPrefs"];
     [self savePraiseIntoPlist:currentDict];
