@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SoundEffect.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SoundEffect</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SoundEffect.h</DeclaredIn>
+            
+			
+			<NodeRef refid="54"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SoundEffect/soundEffectWithContentsOfFile:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SoundEffect.h</DeclaredIn>
+			
+			<Declaration>+ (id)soundEffectWithContentsOfFile:(NSString *)aPath</Declaration>
+			
+			
+			<Anchor>//api/name/soundEffectWithContentsOfFile:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundEffect/initWithContentsOfFile:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SoundEffect.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithContentsOfFile:(NSString *)path</Declaration>
+			
+			
+			<Anchor>//api/name/initWithContentsOfFile:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundEffect/play</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SoundEffect.h</DeclaredIn>
+			
+			<Declaration>- (void)play</Declaration>
+			
+			
+			<Anchor>//api/name/play</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundEffect/playWithVibration</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SoundEffect.h</DeclaredIn>
+			
+			<Declaration>- (void)playWithVibration</Declaration>
+			
+			
+			<Anchor>//api/name/playWithVibration</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

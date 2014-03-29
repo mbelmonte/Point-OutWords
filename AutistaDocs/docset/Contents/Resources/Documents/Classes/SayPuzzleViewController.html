@@ -1,0 +1,1507 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>SayPuzzleViewController Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Autista </a></h1>
+				<a id="developerHome" href="../index.html">Company Name</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">SayPuzzleViewController Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/alreadyPassSay">&nbsp;&nbsp;&nbsp;&nbsp;alreadyPassSay</option>
+	
+	<option value="//api/name/background">&nbsp;&nbsp;&nbsp;&nbsp;background</option>
+	
+	<option value="//api/name/dicPath">&nbsp;&nbsp;&nbsp;&nbsp;dicPath</option>
+	
+	<option value="//api/name/finishPrompt">&nbsp;&nbsp;&nbsp;&nbsp;finishPrompt</option>
+	
+	<option value="//api/name/firstSyllItem">&nbsp;&nbsp;&nbsp;&nbsp;firstSyllItem</option>
+	
+	<option value="//api/name/globalHypothesis">&nbsp;&nbsp;&nbsp;&nbsp;globalHypothesis</option>
+	
+	<option value="//api/name/lmGenerator">&nbsp;&nbsp;&nbsp;&nbsp;lmGenerator</option>
+	
+	<option value="//api/name/lmPath">&nbsp;&nbsp;&nbsp;&nbsp;lmPath</option>
+	
+	<option value="//api/name/object">&nbsp;&nbsp;&nbsp;&nbsp;object</option>
+	
+	<option value="//api/name/openEarsEventsObserver">&nbsp;&nbsp;&nbsp;&nbsp;openEarsEventsObserver</option>
+	
+	<option value="//api/name/phonetics">&nbsp;&nbsp;&nbsp;&nbsp;phonetics</option>
+	
+	<option value="//api/name/pieces">&nbsp;&nbsp;&nbsp;&nbsp;pieces</option>
+	
+	<option value="//api/name/placeHolder">&nbsp;&nbsp;&nbsp;&nbsp;placeHolder</option>
+	
+	<option value="//api/name/pocketsphinxController">&nbsp;&nbsp;&nbsp;&nbsp;pocketsphinxController</option>
+	
+	<option value="//api/name/qplayer">&nbsp;&nbsp;&nbsp;&nbsp;qplayer</option>
+	
+	<option value="//api/name/sayItem">&nbsp;&nbsp;&nbsp;&nbsp;sayItem</option>
+	
+	<option value="//api/name/syllables">&nbsp;&nbsp;&nbsp;&nbsp;syllables</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/advanceToNextSyllable">&nbsp;&nbsp;&nbsp;&nbsp;- advanceToNextSyllable</option>
+	
+	<option value="//api/name/audioPlayerDidFinishPlaying:successfully:">&nbsp;&nbsp;&nbsp;&nbsp;- audioPlayerDidFinishPlaying:successfully:</option>
+	
+	<option value="//api/name/audioVolume">&nbsp;&nbsp;&nbsp;&nbsp;- audioVolume</option>
+	
+	<option value="//api/name/audioVolumeFac">&nbsp;&nbsp;&nbsp;&nbsp;- audioVolumeFac</option>
+	
+	<option value="//api/name/delayedDismissSelf">&nbsp;&nbsp;&nbsp;&nbsp;- delayedDismissSelf</option>
+	
+	<option value="//api/name/desaturateImage:saturation:">&nbsp;&nbsp;&nbsp;&nbsp;- desaturateImage:saturation:</option>
+	
+	<option value="//api/name/didReceiveMemoryWarning">&nbsp;&nbsp;&nbsp;&nbsp;- didReceiveMemoryWarning</option>
+	
+	<option value="//api/name/handleAdminButtonPressed:">&nbsp;&nbsp;&nbsp;&nbsp;- handleAdminButtonPressed:</option>
+	
+	<option value="//api/name/handleAdminButtonReleased:">&nbsp;&nbsp;&nbsp;&nbsp;- handleAdminButtonReleased:</option>
+	
+	<option value="//api/name/handleBackButtonPressed:">&nbsp;&nbsp;&nbsp;&nbsp;- handleBackButtonPressed:</option>
+	
+	<option value="//api/name/handleBackButtonReleased:">&nbsp;&nbsp;&nbsp;&nbsp;- handleBackButtonReleased:</option>
+	
+	<option value="//api/name/initWithNibName:bundle:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithNibName:bundle:</option>
+	
+	<option value="//api/name/initializeAudioEngine">&nbsp;&nbsp;&nbsp;&nbsp;- initializeAudioEngine</option>
+	
+	<option value="//api/name/initializePuzzleState">&nbsp;&nbsp;&nbsp;&nbsp;- initializePuzzleState</option>
+	
+	<option value="//api/name/levelTimerCallback:">&nbsp;&nbsp;&nbsp;&nbsp;- levelTimerCallback:</option>
+	
+	<option value="//api/name/openEarsEventsObserver">&nbsp;&nbsp;&nbsp;&nbsp;- openEarsEventsObserver</option>
+	
+	<option value="//api/name/playPuzzleCompletedSuccessfullySound">&nbsp;&nbsp;&nbsp;&nbsp;- playPuzzleCompletedSuccessfullySound</option>
+	
+	<option value="//api/name/pocketSphinxContinuousSetupDidFail">&nbsp;&nbsp;&nbsp;&nbsp;- pocketSphinxContinuousSetupDidFail</option>
+	
+	<option value="//api/name/pocketsphinxController">&nbsp;&nbsp;&nbsp;&nbsp;- pocketsphinxController</option>
+	
+	<option value="//api/name/pocketsphinxDidChangeLanguageModelToFile:andDictionary:">&nbsp;&nbsp;&nbsp;&nbsp;- pocketsphinxDidChangeLanguageModelToFile:andDictionary:</option>
+	
+	<option value="//api/name/pocketsphinxDidCompleteCalibration">&nbsp;&nbsp;&nbsp;&nbsp;- pocketsphinxDidCompleteCalibration</option>
+	
+	<option value="//api/name/pocketsphinxDidDetectFinishedSpeech">&nbsp;&nbsp;&nbsp;&nbsp;- pocketsphinxDidDetectFinishedSpeech</option>
+	
+	<option value="//api/name/pocketsphinxDidDetectSpeech">&nbsp;&nbsp;&nbsp;&nbsp;- pocketsphinxDidDetectSpeech</option>
+	
+	<option value="//api/name/pocketsphinxDidReceiveHypothesis:recognitionScore:utteranceID:">&nbsp;&nbsp;&nbsp;&nbsp;- pocketsphinxDidReceiveHypothesis:recognitionScore:utteranceID:</option>
+	
+	<option value="//api/name/pocketsphinxDidResumeRecognition">&nbsp;&nbsp;&nbsp;&nbsp;- pocketsphinxDidResumeRecognition</option>
+	
+	<option value="//api/name/pocketsphinxDidStartCalibration">&nbsp;&nbsp;&nbsp;&nbsp;- pocketsphinxDidStartCalibration</option>
+	
+	<option value="//api/name/pocketsphinxDidStartListening">&nbsp;&nbsp;&nbsp;&nbsp;- pocketsphinxDidStartListening</option>
+	
+	<option value="//api/name/pocketsphinxDidStopListening">&nbsp;&nbsp;&nbsp;&nbsp;- pocketsphinxDidStopListening</option>
+	
+	<option value="//api/name/pocketsphinxDidSuspendRecognition">&nbsp;&nbsp;&nbsp;&nbsp;- pocketsphinxDidSuspendRecognition</option>
+	
+	<option value="//api/name/preferredInterfaceOrientationForPresentation">&nbsp;&nbsp;&nbsp;&nbsp;- preferredInterfaceOrientationForPresentation</option>
+	
+	<option value="//api/name/presentPuzzleCompletionAnimation">&nbsp;&nbsp;&nbsp;&nbsp;- presentPuzzleCompletionAnimation</option>
+	
+	<option value="//api/name/promptAndFinish">&nbsp;&nbsp;&nbsp;&nbsp;- promptAndFinish</option>
+	
+	<option value="//api/name/setupSounds">&nbsp;&nbsp;&nbsp;&nbsp;- setupSounds</option>
+	
+	<option value="//api/name/shouldAutorotateToInterfaceOrientation:">&nbsp;&nbsp;&nbsp;&nbsp;- shouldAutorotateToInterfaceOrientation:</option>
+	
+	<option value="//api/name/showAdminOverlay">&nbsp;&nbsp;&nbsp;&nbsp;- showAdminOverlay</option>
+	
+	<option value="//api/name/showBackOverlay">&nbsp;&nbsp;&nbsp;&nbsp;- showBackOverlay</option>
+	
+	<option value="//api/name/startRecordingEngine">&nbsp;&nbsp;&nbsp;&nbsp;- startRecordingEngine</option>
+	
+	<option value="//api/name/testRecognitionCompleted">&nbsp;&nbsp;&nbsp;&nbsp;- testRecognitionCompleted</option>
+	
+	<option value="//api/name/timeoutTimerCallback:">&nbsp;&nbsp;&nbsp;&nbsp;- timeoutTimerCallback:</option>
+	
+	<option value="//api/name/viewDidAppear:">&nbsp;&nbsp;&nbsp;&nbsp;- viewDidAppear:</option>
+	
+	<option value="//api/name/viewDidLoad">&nbsp;&nbsp;&nbsp;&nbsp;- viewDidLoad</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Extension Methods">Extension Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/alreadyPassSay">alreadyPassSay</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/background">background</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dicPath">dicPath</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/finishPrompt">finishPrompt</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/firstSyllItem">firstSyllItem</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/globalHypothesis">globalHypothesis</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lmGenerator">lmGenerator</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lmPath">lmPath</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/object">object</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/openEarsEventsObserver">openEarsEventsObserver</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/phonetics">phonetics</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pieces">pieces</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/placeHolder">placeHolder</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pocketsphinxController">pocketsphinxController</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/qplayer">qplayer</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sayItem">sayItem</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/syllables">syllables</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/advanceToNextSyllable">advanceToNextSyllable</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/audioPlayerDidFinishPlaying:successfully:">audioPlayerDidFinishPlaying:successfully:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/audioVolume">audioVolume</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/audioVolumeFac">audioVolumeFac</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delayedDismissSelf">delayedDismissSelf</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/desaturateImage:saturation:">desaturateImage:saturation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didReceiveMemoryWarning">didReceiveMemoryWarning</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleAdminButtonPressed:">handleAdminButtonPressed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleAdminButtonReleased:">handleAdminButtonReleased:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleBackButtonPressed:">handleBackButtonPressed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleBackButtonReleased:">handleBackButtonReleased:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithNibName:bundle:">initWithNibName:bundle:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initializeAudioEngine">initializeAudioEngine</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initializePuzzleState">initializePuzzleState</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/levelTimerCallback:">levelTimerCallback:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/openEarsEventsObserver">openEarsEventsObserver</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playPuzzleCompletedSuccessfullySound">playPuzzleCompletedSuccessfullySound</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pocketSphinxContinuousSetupDidFail">pocketSphinxContinuousSetupDidFail</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pocketsphinxController">pocketsphinxController</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pocketsphinxDidChangeLanguageModelToFile:andDictionary:">pocketsphinxDidChangeLanguageModelToFile:andDictionary:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pocketsphinxDidCompleteCalibration">pocketsphinxDidCompleteCalibration</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pocketsphinxDidDetectFinishedSpeech">pocketsphinxDidDetectFinishedSpeech</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pocketsphinxDidDetectSpeech">pocketsphinxDidDetectSpeech</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pocketsphinxDidReceiveHypothesis:recognitionScore:utteranceID:">pocketsphinxDidReceiveHypothesis:recognitionScore:utteranceID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pocketsphinxDidResumeRecognition">pocketsphinxDidResumeRecognition</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pocketsphinxDidStartCalibration">pocketsphinxDidStartCalibration</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pocketsphinxDidStartListening">pocketsphinxDidStartListening</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pocketsphinxDidStopListening">pocketsphinxDidStopListening</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pocketsphinxDidSuspendRecognition">pocketsphinxDidSuspendRecognition</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/preferredInterfaceOrientationForPresentation">preferredInterfaceOrientationForPresentation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/presentPuzzleCompletionAnimation">presentPuzzleCompletionAnimation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/promptAndFinish">promptAndFinish</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setupSounds">setupSounds</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldAutorotateToInterfaceOrientation:">shouldAutorotateToInterfaceOrientation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showAdminOverlay">showAdminOverlay</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showBackOverlay">showBackOverlay</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startRecordingEngine">startRecordingEngine</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testRecognitionCompleted">testRecognitionCompleted</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/timeoutTimerCallback:">timeoutTimerCallback:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewDidAppear:">viewDidAppear:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewDidLoad">viewDidLoad</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="SayPuzzleViewController Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">SayPuzzleViewController Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">UIViewController</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">OpenEarsEventsObserverDelegate</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">SayPuzzleViewController (MadRat Games&apos;s conflicted copy 2013-10-22).m<br />SayPuzzleViewController.h<br />SayPuzzleViewController.m</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithNibName:bundle:">&ndash;&nbsp;initWithNibName:bundle:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewDidLoad">&ndash;&nbsp;viewDidLoad</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewDidAppear:">&ndash;&nbsp;viewDidAppear:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setupSounds">&ndash;&nbsp;setupSounds</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playPuzzleCompletedSuccessfullySound">&ndash;&nbsp;playPuzzleCompletedSuccessfullySound</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initializePuzzleState">&ndash;&nbsp;initializePuzzleState</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initializeAudioEngine">&ndash;&nbsp;initializeAudioEngine</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startRecordingEngine">&ndash;&nbsp;startRecordingEngine</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/levelTimerCallback:">&ndash;&nbsp;levelTimerCallback:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/advanceToNextSyllable">&ndash;&nbsp;advanceToNextSyllable</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/timeoutTimerCallback:">&ndash;&nbsp;timeoutTimerCallback:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/desaturateImage:saturation:">&ndash;&nbsp;desaturateImage:saturation:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/presentPuzzleCompletionAnimation">&ndash;&nbsp;presentPuzzleCompletionAnimation</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delayedDismissSelf">&ndash;&nbsp;delayedDismissSelf</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/handleAdminButtonPressed:">&ndash;&nbsp;handleAdminButtonPressed:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/handleAdminButtonReleased:">&ndash;&nbsp;handleAdminButtonReleased:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/showAdminOverlay">&ndash;&nbsp;showAdminOverlay</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/preferredInterfaceOrientationForPresentation">&ndash;&nbsp;preferredInterfaceOrientationForPresentation</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shouldAutorotateToInterfaceOrientation:">&ndash;&nbsp;shouldAutorotateToInterfaceOrientation:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didReceiveMemoryWarning">&ndash;&nbsp;didReceiveMemoryWarning</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/object">&nbsp;&nbsp;object</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pieces">&nbsp;&nbsp;pieces</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/syllables">&nbsp;&nbsp;syllables</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/phonetics">&nbsp;&nbsp;phonetics</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/qplayer">&nbsp;&nbsp;qplayer</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/finishPrompt">&nbsp;&nbsp;finishPrompt</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sayItem">&nbsp;&nbsp;sayItem</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/firstSyllItem">&nbsp;&nbsp;firstSyllItem</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/background">&nbsp;&nbsp;background</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/placeHolder">&nbsp;&nbsp;placeHolder</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/audioVolume">&ndash;&nbsp;audioVolume</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/handleBackButtonPressed:">&ndash;&nbsp;handleBackButtonPressed:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/handleBackButtonReleased:">&ndash;&nbsp;handleBackButtonReleased:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/audioVolumeFac">&ndash;&nbsp;audioVolumeFac</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/audioPlayerDidFinishPlaying:successfully:">&ndash;&nbsp;audioPlayerDidFinishPlaying:successfully:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/promptAndFinish">&ndash;&nbsp;promptAndFinish</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/showBackOverlay">&ndash;&nbsp;showBackOverlay</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/openEarsEventsObserver">&ndash;&nbsp;openEarsEventsObserver</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pocketsphinxController">&ndash;&nbsp;pocketsphinxController</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pocketsphinxDidReceiveHypothesis:recognitionScore:utteranceID:">&ndash;&nbsp;pocketsphinxDidReceiveHypothesis:recognitionScore:utteranceID:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pocketsphinxDidStartCalibration">&ndash;&nbsp;pocketsphinxDidStartCalibration</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pocketsphinxDidCompleteCalibration">&ndash;&nbsp;pocketsphinxDidCompleteCalibration</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pocketsphinxDidStartListening">&ndash;&nbsp;pocketsphinxDidStartListening</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pocketsphinxDidDetectSpeech">&ndash;&nbsp;pocketsphinxDidDetectSpeech</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pocketsphinxDidDetectFinishedSpeech">&ndash;&nbsp;pocketsphinxDidDetectFinishedSpeech</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pocketsphinxDidStopListening">&ndash;&nbsp;pocketsphinxDidStopListening</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pocketsphinxDidSuspendRecognition">&ndash;&nbsp;pocketsphinxDidSuspendRecognition</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pocketsphinxDidResumeRecognition">&ndash;&nbsp;pocketsphinxDidResumeRecognition</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pocketsphinxDidChangeLanguageModelToFile:andDictionary:">&ndash;&nbsp;pocketsphinxDidChangeLanguageModelToFile:andDictionary:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pocketSphinxContinuousSetupDidFail">&ndash;&nbsp;pocketSphinxContinuousSetupDidFail</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testRecognitionCompleted">&ndash;&nbsp;testRecognitionCompleted</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h3 class="subsubtitle task-title">Extension Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/lmGenerator">&nbsp;&nbsp;lmGenerator</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pocketsphinxController">&nbsp;&nbsp;pocketsphinxController</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/openEarsEventsObserver">&nbsp;&nbsp;openEarsEventsObserver</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/globalHypothesis">&nbsp;&nbsp;globalHypothesis</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/lmPath">&nbsp;&nbsp;lmPath</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dicPath">&nbsp;&nbsp;dicPath</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/alreadyPassSay">&nbsp;&nbsp;alreadyPassSay</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/alreadyPassSay" title="alreadyPassSay"></a>
+	<h3 class="subsubtitle method-title">alreadyPassSay</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property NSInteger alreadyPassSay</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/background" title="background"></a>
+	<h3 class="subsubtitle method-title">background</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) IBOutlet UIImageView *background</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dicPath" title="dicPath"></a>
+	<h3 class="subsubtitle method-title">dicPath</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property NSString *dicPath</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/finishPrompt" title="finishPrompt"></a>
+	<h3 class="subsubtitle method-title">finishPrompt</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) AVAudioPlayer *finishPrompt</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/firstSyllItem" title="firstSyllItem"></a>
+	<h3 class="subsubtitle method-title">firstSyllItem</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) AVPlayerItem *firstSyllItem</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/globalHypothesis" title="globalHypothesis"></a>
+	<h3 class="subsubtitle method-title">globalHypothesis</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property NSString *globalHypothesis</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/lmGenerator" title="lmGenerator"></a>
+	<h3 class="subsubtitle method-title">lmGenerator</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property LanguageModelGenerator *lmGenerator</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/lmPath" title="lmPath"></a>
+	<h3 class="subsubtitle method-title">lmPath</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property NSString *lmPath</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/object" title="object"></a>
+	<h3 class="subsubtitle method-title">object</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) PuzzleObject *object</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/openEarsEventsObserver" title="openEarsEventsObserver"></a>
+	<h3 class="subsubtitle method-title">openEarsEventsObserver</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property OpenEarsEventsObserver *openEarsEventsObserver</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/phonetics" title="phonetics"></a>
+	<h3 class="subsubtitle method-title">phonetics</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSArray *phonetics</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pieces" title="pieces"></a>
+	<h3 class="subsubtitle method-title">pieces</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSMutableArray *pieces</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/placeHolder" title="placeHolder"></a>
+	<h3 class="subsubtitle method-title">placeHolder</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) IBOutlet UIImageView *placeHolder</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pocketsphinxController" title="pocketsphinxController"></a>
+	<h3 class="subsubtitle method-title">pocketsphinxController</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property PocketsphinxController *pocketsphinxController</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/qplayer" title="qplayer"></a>
+	<h3 class="subsubtitle method-title">qplayer</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) AVQueuePlayer *qplayer</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sayItem" title="sayItem"></a>
+	<h3 class="subsubtitle method-title">sayItem</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) AVPlayerItem *sayItem</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/syllables" title="syllables"></a>
+	<h3 class="subsubtitle method-title">syllables</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSArray *syllables</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/advanceToNextSyllable" title="advanceToNextSyllable"></a>
+	<h3 class="subsubtitle method-title">advanceToNextSyllable</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)advanceToNextSyllable</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/audioPlayerDidFinishPlaying:successfully:" title="audioPlayerDidFinishPlaying:successfully:"></a>
+	<h3 class="subsubtitle method-title">audioPlayerDidFinishPlaying:successfully:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)<em>player</em> successfully:(BOOL)<em>flag</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/audioVolume" title="audioVolume"></a>
+	<h3 class="subsubtitle method-title">audioVolume</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (Float32)audioVolume</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/audioVolumeFac" title="audioVolumeFac"></a>
+	<h3 class="subsubtitle method-title">audioVolumeFac</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (Float32)audioVolumeFac</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delayedDismissSelf" title="delayedDismissSelf"></a>
+	<h3 class="subsubtitle method-title">delayedDismissSelf</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)delayedDismissSelf</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/desaturateImage:saturation:" title="desaturateImage:saturation:"></a>
+	<h3 class="subsubtitle method-title">desaturateImage:saturation:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (UIImage *)desaturateImage:(UIImage *)<em>image</em> saturation:(CGFloat)<em>saturation</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didReceiveMemoryWarning" title="didReceiveMemoryWarning"></a>
+	<h3 class="subsubtitle method-title">didReceiveMemoryWarning</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)didReceiveMemoryWarning</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handleAdminButtonPressed:" title="handleAdminButtonPressed:"></a>
+	<h3 class="subsubtitle method-title">handleAdminButtonPressed:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)handleAdminButtonPressed:(id)<em>sender</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handleAdminButtonReleased:" title="handleAdminButtonReleased:"></a>
+	<h3 class="subsubtitle method-title">handleAdminButtonReleased:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)handleAdminButtonReleased:(id)<em>sender</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handleBackButtonPressed:" title="handleBackButtonPressed:"></a>
+	<h3 class="subsubtitle method-title">handleBackButtonPressed:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)handleBackButtonPressed:(id)<em>sender</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handleBackButtonReleased:" title="handleBackButtonReleased:"></a>
+	<h3 class="subsubtitle method-title">handleBackButtonReleased:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)handleBackButtonReleased:(id)<em>sender</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithNibName:bundle:" title="initWithNibName:bundle:"></a>
+	<h3 class="subsubtitle method-title">initWithNibName:bundle:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithNibName:(NSString *)<em>nibNameOrNil</em> bundle:(NSBundle *)<em>nibBundleOrNil</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initializeAudioEngine" title="initializeAudioEngine"></a>
+	<h3 class="subsubtitle method-title">initializeAudioEngine</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)initializeAudioEngine</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initializePuzzleState" title="initializePuzzleState"></a>
+	<h3 class="subsubtitle method-title">initializePuzzleState</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)initializePuzzleState</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/levelTimerCallback:" title="levelTimerCallback:"></a>
+	<h3 class="subsubtitle method-title">levelTimerCallback:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)levelTimerCallback:(NSTimer *)<em>timer</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/openEarsEventsObserver" title="openEarsEventsObserver"></a>
+	<h3 class="subsubtitle method-title">openEarsEventsObserver</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (OpenEarsEventsObserver *)openEarsEventsObserver</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playPuzzleCompletedSuccessfullySound" title="playPuzzleCompletedSuccessfullySound"></a>
+	<h3 class="subsubtitle method-title">playPuzzleCompletedSuccessfullySound</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)playPuzzleCompletedSuccessfullySound</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pocketSphinxContinuousSetupDidFail" title="pocketSphinxContinuousSetupDidFail"></a>
+	<h3 class="subsubtitle method-title">pocketSphinxContinuousSetupDidFail</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)pocketSphinxContinuousSetupDidFail</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pocketsphinxController" title="pocketsphinxController"></a>
+	<h3 class="subsubtitle method-title">pocketsphinxController</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (PocketsphinxController *)pocketsphinxController</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pocketsphinxDidChangeLanguageModelToFile:andDictionary:" title="pocketsphinxDidChangeLanguageModelToFile:andDictionary:"></a>
+	<h3 class="subsubtitle method-title">pocketsphinxDidChangeLanguageModelToFile:andDictionary:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)pocketsphinxDidChangeLanguageModelToFile:(NSString *)<em>newLanguageModelPathAsString</em> andDictionary:(NSString *)<em>newDictionaryPathAsString</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pocketsphinxDidCompleteCalibration" title="pocketsphinxDidCompleteCalibration"></a>
+	<h3 class="subsubtitle method-title">pocketsphinxDidCompleteCalibration</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)pocketsphinxDidCompleteCalibration</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pocketsphinxDidDetectFinishedSpeech" title="pocketsphinxDidDetectFinishedSpeech"></a>
+	<h3 class="subsubtitle method-title">pocketsphinxDidDetectFinishedSpeech</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)pocketsphinxDidDetectFinishedSpeech</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pocketsphinxDidDetectSpeech" title="pocketsphinxDidDetectSpeech"></a>
+	<h3 class="subsubtitle method-title">pocketsphinxDidDetectSpeech</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)pocketsphinxDidDetectSpeech</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pocketsphinxDidReceiveHypothesis:recognitionScore:utteranceID:" title="pocketsphinxDidReceiveHypothesis:recognitionScore:utteranceID:"></a>
+	<h3 class="subsubtitle method-title">pocketsphinxDidReceiveHypothesis:recognitionScore:utteranceID:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)pocketsphinxDidReceiveHypothesis:(NSString *)<em>hypothesis</em> recognitionScore:(NSString *)<em>recognitionScore</em> utteranceID:(NSString *)<em>utteranceID</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pocketsphinxDidResumeRecognition" title="pocketsphinxDidResumeRecognition"></a>
+	<h3 class="subsubtitle method-title">pocketsphinxDidResumeRecognition</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)pocketsphinxDidResumeRecognition</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pocketsphinxDidStartCalibration" title="pocketsphinxDidStartCalibration"></a>
+	<h3 class="subsubtitle method-title">pocketsphinxDidStartCalibration</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)pocketsphinxDidStartCalibration</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pocketsphinxDidStartListening" title="pocketsphinxDidStartListening"></a>
+	<h3 class="subsubtitle method-title">pocketsphinxDidStartListening</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)pocketsphinxDidStartListening</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pocketsphinxDidStopListening" title="pocketsphinxDidStopListening"></a>
+	<h3 class="subsubtitle method-title">pocketsphinxDidStopListening</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)pocketsphinxDidStopListening</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pocketsphinxDidSuspendRecognition" title="pocketsphinxDidSuspendRecognition"></a>
+	<h3 class="subsubtitle method-title">pocketsphinxDidSuspendRecognition</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)pocketsphinxDidSuspendRecognition</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/preferredInterfaceOrientationForPresentation" title="preferredInterfaceOrientationForPresentation"></a>
+	<h3 class="subsubtitle method-title">preferredInterfaceOrientationForPresentation</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/presentPuzzleCompletionAnimation" title="presentPuzzleCompletionAnimation"></a>
+	<h3 class="subsubtitle method-title">presentPuzzleCompletionAnimation</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)presentPuzzleCompletionAnimation</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/promptAndFinish" title="promptAndFinish"></a>
+	<h3 class="subsubtitle method-title">promptAndFinish</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)promptAndFinish</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setupSounds" title="setupSounds"></a>
+	<h3 class="subsubtitle method-title">setupSounds</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)setupSounds</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/shouldAutorotateToInterfaceOrientation:" title="shouldAutorotateToInterfaceOrientation:"></a>
+	<h3 class="subsubtitle method-title">shouldAutorotateToInterfaceOrientation:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)<em>toInterfaceOrientation</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/showAdminOverlay" title="showAdminOverlay"></a>
+	<h3 class="subsubtitle method-title">showAdminOverlay</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)showAdminOverlay</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/showBackOverlay" title="showBackOverlay"></a>
+	<h3 class="subsubtitle method-title">showBackOverlay</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)showBackOverlay</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startRecordingEngine" title="startRecordingEngine"></a>
+	<h3 class="subsubtitle method-title">startRecordingEngine</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)startRecordingEngine</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testRecognitionCompleted" title="testRecognitionCompleted"></a>
+	<h3 class="subsubtitle method-title">testRecognitionCompleted</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)testRecognitionCompleted</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/timeoutTimerCallback:" title="timeoutTimerCallback:"></a>
+	<h3 class="subsubtitle method-title">timeoutTimerCallback:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)timeoutTimerCallback:(NSTimer *)<em>timer</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/viewDidAppear:" title="viewDidAppear:"></a>
+	<h3 class="subsubtitle method-title">viewDidAppear:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)viewDidAppear:(BOOL)<em>animated</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/viewDidLoad" title="viewDidLoad"></a>
+	<h3 class="subsubtitle method-title">viewDidLoad</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)viewDidLoad</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 Company Name. All rights reserved. (Last updated: 2014-03-28)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

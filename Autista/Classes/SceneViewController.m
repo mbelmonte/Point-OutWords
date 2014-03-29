@@ -29,7 +29,6 @@
 #import "AdminViewController.h"
 #import "Scene.h"
 #import "Attempt.h"
-#import "PuzzleObject.h"
 #import "AppDelegate.h"
 #import "EventLogger.h"
 #import "GlobalPreferences.h"
@@ -197,17 +196,18 @@
 		
 		case PuzzleModeSay:
             if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"6.0")) {
-                if (vol > .5) {
-                    _sayIndex = index;
-                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Speaker Volume Too High"
-                                                                    message:@"To avoid the mic from detecting the speaker's sounds, please set the Speaker Volume to less than 50% and click DONE."
-                                                                   delegate:self
-                                                          cancelButtonTitle:@"Cancel"
-                                                          otherButtonTitles:@"DONE", nil];
-                    [alert show];
-                }
-                else
-                    [self presentSayPuzzleView:object];
+                [self presentSayPuzzleView:object];
+//                if (vol > .5) {
+//                    _sayIndex = index;
+//                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Speaker Volume Too High"
+//                                                                    message:@"To avoid the mic from detecting the speaker's sounds, please set the Speaker Volume to less than 50% and click DONE."
+//                                                                   delegate:self
+//                                                          cancelButtonTitle:@"Cancel"
+//                                                          otherButtonTitles:@"DONE", nil];
+//                    [alert show];
+//                }
+//                else
+//                    [self presentSayPuzzleView:object];
             }
             else
                 [self presentSayPuzzleView:object];

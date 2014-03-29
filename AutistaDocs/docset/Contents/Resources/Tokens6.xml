@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/EventLogger.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/EventLogger</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventLogger (MadRat Games&apos;s conflicted copy 2013-10-22).m</DeclaredIn>
+            
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/EventLogger/sharedLogger</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventLogger (MadRat Games&apos;s conflicted copy 2013-10-22).m</DeclaredIn>
+			
+			<Declaration>+ (id)sharedLogger</Declaration>
+			
+			
+			<Anchor>//api/name/sharedLogger</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/EventLogger/numberOfLogs</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventLogger (MadRat Games&apos;s conflicted copy 2013-10-22).m</DeclaredIn>
+			
+			<Declaration>+ (NSInteger)numberOfLogs</Declaration>
+			
+			
+			<Anchor>//api/name/numberOfLogs</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventLogger/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventLogger (MadRat Games&apos;s conflicted copy 2013-10-22).m</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventLogger/loadEvents</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventLogger (MadRat Games&apos;s conflicted copy 2013-10-22).m</DeclaredIn>
+			
+			<Declaration>- (void)loadEvents</Declaration>
+			
+			
+			<Anchor>//api/name/loadEvents</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventLogger/archiveMonthOldLogData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventLogger (MadRat Games&apos;s conflicted copy 2013-10-22).m</DeclaredIn>
+			
+			<Declaration>- (void)archiveMonthOldLogData</Declaration>
+			
+			
+			<Anchor>//api/name/archiveMonthOldLogData</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventLogger/logEvent:eventInfo:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventLogger (MadRat Games&apos;s conflicted copy 2013-10-22).m</DeclaredIn>
+			
+			<Declaration>- (void)logEvent:(LogEventCode)eventCode eventInfo:(NSDictionary *)eventInfo</Declaration>
+			
+			
+			<Anchor>//api/name/logEvent:eventInfo:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventLogger/getEventIndexWithCode:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventLogger (MadRat Games&apos;s conflicted copy 2013-10-22).m</DeclaredIn>
+			
+			<Declaration>- (NSInteger)getEventIndexWithCode:(LogEventCode)eventCode</Declaration>
+			
+			
+			<Anchor>//api/name/getEventIndexWithCode:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventLogger/logAttemptForPuzzle:inMode:state:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventLogger (MadRat Games&apos;s conflicted copy 2013-10-22).m</DeclaredIn>
+			
+			<Declaration>- (void)logAttemptForPuzzle:(PuzzleObject *)puzzleObject inMode:(PuzzleMode)mode state:(PuzzleState)state</Declaration>
+			
+			
+			<Anchor>//api/name/logAttemptForPuzzle:inMode:state:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventLogger/getScoresFromAttempsForUser:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventLogger (MadRat Games&apos;s conflicted copy 2013-10-22).m</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)getScoresFromAttempsForUser:(User *)user</Declaration>
+			
+			
+			<Anchor>//api/name/getScoresFromAttempsForUser:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventLogger/suggestModeForPuzzle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventLogger (MadRat Games&apos;s conflicted copy 2013-10-22).m</DeclaredIn>
+			
+			<Declaration>- (PuzzleMode)suggestModeForPuzzle:(PuzzleObject *)object</Declaration>
+			
+			
+			<Anchor>//api/name/suggestModeForPuzzle:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventLogger/suggestPuzzle</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventLogger (MadRat Games&apos;s conflicted copy 2013-10-22).m</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)suggestPuzzle</Declaration>
+			
+			
+			<Anchor>//api/name/suggestPuzzle</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventLogger/logData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventLogger (MadRat Games&apos;s conflicted copy 2013-10-22).m</DeclaredIn>
+			
+			<Declaration>- (NSData *)logData</Declaration>
+			
+			
+			<Anchor>//api/name/logData</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventLogger/deleteLogData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventLogger (MadRat Games&apos;s conflicted copy 2013-10-22).m</DeclaredIn>
+			
+			<Declaration>- (void)deleteLogData</Declaration>
+			
+			
+			<Anchor>//api/name/deleteLogData</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventLogger/deleteAllUserData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventLogger (MadRat Games&apos;s conflicted copy 2013-10-22).m</DeclaredIn>
+			
+			<Declaration>- (void)deleteAllUserData</Declaration>
+			
+			
+			<Anchor>//api/name/deleteAllUserData</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventLogger/deleteAttempts</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventLogger.h</DeclaredIn>
+			
+			<Declaration>- (void)deleteAttempts</Declaration>
+			
+			
+			<Anchor>//api/name/deleteAttempts</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

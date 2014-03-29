@@ -1,0 +1,2151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>Autista</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+                
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
+						<NodeRef refid="6"/>
+						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
+						<NodeRef refid="12"/>
+						<NodeRef refid="13"/>
+						<NodeRef refid="14"/>
+						<NodeRef refid="15"/>
+						<NodeRef refid="16"/>
+						<NodeRef refid="17"/>
+						<NodeRef refid="18"/>
+						<NodeRef refid="19"/>
+						<NodeRef refid="20"/>
+						<NodeRef refid="21"/>
+						<NodeRef refid="22"/>
+						<NodeRef refid="23"/>
+						<NodeRef refid="24"/>
+						<NodeRef refid="25"/>
+						<NodeRef refid="26"/>
+						<NodeRef refid="27"/>
+						<NodeRef refid="28"/>
+						<NodeRef refid="29"/>
+						<NodeRef refid="30"/>
+						<NodeRef refid="31"/>
+						<NodeRef refid="32"/>
+						<NodeRef refid="33"/>
+						<NodeRef refid="34"/>
+						<NodeRef refid="35"/>
+						<NodeRef refid="36"/>
+						<NodeRef refid="37"/>
+						<NodeRef refid="38"/>
+						<NodeRef refid="39"/>
+						<NodeRef refid="40"/>
+						<NodeRef refid="41"/>
+						<NodeRef refid="42"/>
+						<NodeRef refid="43"/>
+						<NodeRef refid="44"/>
+						<NodeRef refid="45"/>
+						<NodeRef refid="46"/>
+						<NodeRef refid="47"/>
+						<NodeRef refid="48"/>
+						<NodeRef refid="49"/>
+						<NodeRef refid="50"/>
+						<NodeRef refid="51"/>
+						<NodeRef refid="52"/>
+						<NodeRef refid="53"/>
+						<NodeRef refid="54"/>
+						<NodeRef refid="55"/>
+						<NodeRef refid="56"/>
+						<NodeRef refid="57"/>
+						<NodeRef refid="58"/>
+						<NodeRef refid="59"/>
+						<NodeRef refid="60"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node>
+					<Name>Categories</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="61"/>
+						<NodeRef refid="62"/>
+						<NodeRef refid="63"/>
+						<NodeRef refid="64"/>
+						<NodeRef refid="65"/>
+						
+					</Subnodes>
+				</Node>
+				
+                
+				<Node>
+					<Name>Protocols</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="66"/>
+						<NodeRef refid="67"/>
+						<NodeRef refid="68"/>
+						
+					</Subnodes>
+				</Node>
+				
+                
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		
+		<Node id="1" type="file" documentType="reference">
+            <Name>AdminViewController</Name>
+            <Path>Classes/AdminViewController.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/AdminViewController.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/AdminViewController.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/AdminViewController.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/AdminViewController.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="2" type="file" documentType="reference">
+            <Name>AppDelegate</Name>
+            <Path>Classes/AppDelegate.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/AppDelegate.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/AppDelegate.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/AppDelegate.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/AppDelegate.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="3" type="file" documentType="reference">
+            <Name>Attempt</Name>
+            <Path>Classes/Attempt.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/Attempt.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/Attempt.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/Attempt.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="4" type="file" documentType="reference">
+            <Name>AutistaIAPHelper</Name>
+            <Path>Classes/AutistaIAPHelper.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/AutistaIAPHelper.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/AutistaIAPHelper.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/AutistaIAPHelper.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="5" type="file" documentType="reference">
+            <Name>Event</Name>
+            <Path>Classes/Event.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/Event.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/Event.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/Event.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/Event.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="6" type="file" documentType="reference">
+            <Name>EventLogger</Name>
+            <Path>Classes/EventLogger.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/EventLogger.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/EventLogger.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/EventLogger.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/EventLogger.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="7" type="file" documentType="reference">
+            <Name>FirstLaunchViewController</Name>
+            <Path>Classes/FirstLaunchViewController.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/FirstLaunchViewController.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/FirstLaunchViewController.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/FirstLaunchViewController.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/FirstLaunchViewController.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="8" type="file" documentType="reference">
+            <Name>GLLevelMeter</Name>
+            <Path>Classes/GLLevelMeter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/GLLevelMeter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/GLLevelMeter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/GLLevelMeter.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/GLLevelMeter.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="9" type="file" documentType="reference">
+            <Name>GlobalPreferences</Name>
+            <Path>Classes/GlobalPreferences.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/GlobalPreferences.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/GlobalPreferences.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/GlobalPreferences.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/GlobalPreferences.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/GlobalPreferences.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="10" type="file" documentType="reference">
+            <Name>GuidedModeViewController</Name>
+            <Path>Classes/GuidedModeViewController.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/GuidedModeViewController.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/GuidedModeViewController.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/GuidedModeViewController.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="11" type="file" documentType="reference">
+            <Name>IAPHelper</Name>
+            <Path>Classes/IAPHelper.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/IAPHelper.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/IAPHelper.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/IAPHelper.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="12" type="file" documentType="reference">
+            <Name>InfoView</Name>
+            <Path>Classes/InfoView.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/InfoView.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/InfoView.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/InfoView.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/InfoView.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="13" type="file" documentType="reference">
+            <Name>LevelMeter</Name>
+            <Path>Classes/LevelMeter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/LevelMeter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/LevelMeter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/LevelMeter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/LevelMeter.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="14" type="file" documentType="reference">
+            <Name>Log</Name>
+            <Path>Classes/Log.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/Log.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/Log.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/Log.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="15" type="file" documentType="reference">
+            <Name>Piece</Name>
+            <Path>Classes/Piece.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/Piece.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/Piece.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/Piece.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="16" type="file" documentType="reference">
+            <Name>PuzzleObject</Name>
+            <Path>Classes/PuzzleObject.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PuzzleObject.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PuzzleObject.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PuzzleObject.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/PuzzleObject.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="17" type="file" documentType="reference">
+            <Name>PuzzlePieceView</Name>
+            <Path>Classes/PuzzlePieceView.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PuzzlePieceView.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PuzzlePieceView.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PuzzlePieceView.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/PuzzlePieceView.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="18" type="file" documentType="reference">
+            <Name>PuzzleStateView</Name>
+            <Path>Classes/PuzzleStateView.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PuzzleStateView.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PuzzleStateView.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PuzzleStateView.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/PuzzleStateView.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="19" type="file" documentType="reference">
+            <Name>RootViewController</Name>
+            <Path>Classes/RootViewController.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/RootViewController.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/RootViewController.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/RootViewController.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="20" type="file" documentType="reference">
+            <Name>SBJsonParser</Name>
+            <Path>Classes/SBJsonParser.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/SBJsonParser.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/SBJsonParser.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonParser.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonParser.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="21" type="file" documentType="reference">
+            <Name>SBJsonStreamParser</Name>
+            <Path>Classes/SBJsonStreamParser.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParser.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParser.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParser.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParser.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="22" type="file" documentType="reference">
+            <Name>SBJsonStreamParserAccumulator</Name>
+            <Path>Classes/SBJsonStreamParserAccumulator.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserAccumulator.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserAccumulator.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserAccumulator.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserAccumulator.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="23" type="file" documentType="reference">
+            <Name>SBJsonStreamParserAdapter</Name>
+            <Path>Classes/SBJsonStreamParserAdapter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserAdapter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserAdapter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserAdapter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserAdapter.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="24" type="file" documentType="reference">
+            <Name>SBJsonStreamParserState</Name>
+            <Path>Classes/SBJsonStreamParserState.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserState.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserState.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserState.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserState.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="25" type="file" documentType="reference">
+            <Name>SBJsonStreamParserStateArrayGotValue</Name>
+            <Path>Classes/SBJsonStreamParserStateArrayGotValue.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserStateArrayGotValue.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserStateArrayGotValue.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserStateArrayGotValue.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="26" type="file" documentType="reference">
+            <Name>SBJsonStreamParserStateArrayNeedValue</Name>
+            <Path>Classes/SBJsonStreamParserStateArrayNeedValue.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserStateArrayNeedValue.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserStateArrayNeedValue.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserStateArrayNeedValue.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="27" type="file" documentType="reference">
+            <Name>SBJsonStreamParserStateArrayStart</Name>
+            <Path>Classes/SBJsonStreamParserStateArrayStart.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserStateArrayStart.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserStateArrayStart.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserStateArrayStart.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="28" type="file" documentType="reference">
+            <Name>SBJsonStreamParserStateComplete</Name>
+            <Path>Classes/SBJsonStreamParserStateComplete.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserStateComplete.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserStateComplete.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserStateComplete.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="29" type="file" documentType="reference">
+            <Name>SBJsonStreamParserStateError</Name>
+            <Path>Classes/SBJsonStreamParserStateError.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserStateError.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserStateError.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserStateError.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="30" type="file" documentType="reference">
+            <Name>SBJsonStreamParserStateObjectGotKey</Name>
+            <Path>Classes/SBJsonStreamParserStateObjectGotKey.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserStateObjectGotKey.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserStateObjectGotKey.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserStateObjectGotKey.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="31" type="file" documentType="reference">
+            <Name>SBJsonStreamParserStateObjectGotValue</Name>
+            <Path>Classes/SBJsonStreamParserStateObjectGotValue.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserStateObjectGotValue.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserStateObjectGotValue.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserStateObjectGotValue.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="32" type="file" documentType="reference">
+            <Name>SBJsonStreamParserStateObjectNeedKey</Name>
+            <Path>Classes/SBJsonStreamParserStateObjectNeedKey.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserStateObjectNeedKey.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserStateObjectNeedKey.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserStateObjectNeedKey.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="33" type="file" documentType="reference">
+            <Name>SBJsonStreamParserStateObjectSeparator</Name>
+            <Path>Classes/SBJsonStreamParserStateObjectSeparator.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserStateObjectSeparator.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserStateObjectSeparator.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserStateObjectSeparator.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="34" type="file" documentType="reference">
+            <Name>SBJsonStreamParserStateObjectStart</Name>
+            <Path>Classes/SBJsonStreamParserStateObjectStart.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserStateObjectStart.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserStateObjectStart.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserStateObjectStart.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="35" type="file" documentType="reference">
+            <Name>SBJsonStreamParserStateStart</Name>
+            <Path>Classes/SBJsonStreamParserStateStart.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserStateStart.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserStateStart.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamParserStateStart.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="36" type="file" documentType="reference">
+            <Name>SBJsonStreamWriter</Name>
+            <Path>Classes/SBJsonStreamWriter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamWriter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamWriter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamWriter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamWriter.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamWriter.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="37" type="file" documentType="reference">
+            <Name>SBJsonStreamWriterAccumulator</Name>
+            <Path>Classes/SBJsonStreamWriterAccumulator.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamWriterAccumulator.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamWriterAccumulator.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamWriterAccumulator.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamWriterAccumulator.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="38" type="file" documentType="reference">
+            <Name>SBJsonStreamWriterState</Name>
+            <Path>Classes/SBJsonStreamWriterState.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamWriterState.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamWriterState.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamWriterState.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamWriterState.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="39" type="file" documentType="reference">
+            <Name>SBJsonStreamWriterStateArrayStart</Name>
+            <Path>Classes/SBJsonStreamWriterStateArrayStart.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamWriterStateArrayStart.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamWriterStateArrayStart.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamWriterStateArrayStart.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="40" type="file" documentType="reference">
+            <Name>SBJsonStreamWriterStateArrayValue</Name>
+            <Path>Classes/SBJsonStreamWriterStateArrayValue.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamWriterStateArrayValue.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamWriterStateArrayValue.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamWriterStateArrayValue.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="41" type="file" documentType="reference">
+            <Name>SBJsonStreamWriterStateComplete</Name>
+            <Path>Classes/SBJsonStreamWriterStateComplete.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamWriterStateComplete.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamWriterStateComplete.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamWriterStateComplete.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="42" type="file" documentType="reference">
+            <Name>SBJsonStreamWriterStateError</Name>
+            <Path>Classes/SBJsonStreamWriterStateError.html</Path>
+            
+        </Node>
+		<Node id="43" type="file" documentType="reference">
+            <Name>SBJsonStreamWriterStateObjectKey</Name>
+            <Path>Classes/SBJsonStreamWriterStateObjectKey.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamWriterStateObjectKey.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamWriterStateObjectKey.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamWriterStateObjectKey.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="44" type="file" documentType="reference">
+            <Name>SBJsonStreamWriterStateObjectStart</Name>
+            <Path>Classes/SBJsonStreamWriterStateObjectStart.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamWriterStateObjectStart.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamWriterStateObjectStart.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamWriterStateObjectStart.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="45" type="file" documentType="reference">
+            <Name>SBJsonStreamWriterStateObjectValue</Name>
+            <Path>Classes/SBJsonStreamWriterStateObjectValue.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamWriterStateObjectValue.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamWriterStateObjectValue.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamWriterStateObjectValue.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="46" type="file" documentType="reference">
+            <Name>SBJsonStreamWriterStateStart</Name>
+            <Path>Classes/SBJsonStreamWriterStateStart.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamWriterStateStart.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamWriterStateStart.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonStreamWriterStateStart.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="47" type="file" documentType="reference">
+            <Name>SBJsonTokeniser</Name>
+            <Path>Classes/SBJsonTokeniser.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/SBJsonTokeniser.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/SBJsonTokeniser.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonTokeniser.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonTokeniser.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonTokeniser.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="48" type="file" documentType="reference">
+            <Name>SBJsonUTF8Stream</Name>
+            <Path>Classes/SBJsonUTF8Stream.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/SBJsonUTF8Stream.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/SBJsonUTF8Stream.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonUTF8Stream.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonUTF8Stream.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="49" type="file" documentType="reference">
+            <Name>SBJsonWriter</Name>
+            <Path>Classes/SBJsonWriter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/SBJsonWriter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/SBJsonWriter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonWriter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/SBJsonWriter.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="50" type="file" documentType="reference">
+            <Name>SayPuzzleViewController</Name>
+            <Path>Classes/SayPuzzleViewController.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/SayPuzzleViewController.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/SayPuzzleViewController.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/SayPuzzleViewController.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/SayPuzzleViewController.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="51" type="file" documentType="reference">
+            <Name>Scene</Name>
+            <Path>Classes/Scene.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/Scene.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/Scene.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/Scene.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/Scene.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="52" type="file" documentType="reference">
+            <Name>SceneSelectorViewController</Name>
+            <Path>Classes/SceneSelectorViewController.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/SceneSelectorViewController.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/SceneSelectorViewController.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/SceneSelectorViewController.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/SceneSelectorViewController.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="53" type="file" documentType="reference">
+            <Name>SceneViewController</Name>
+            <Path>Classes/SceneViewController.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/SceneViewController.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/SceneViewController.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/SceneViewController.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/SceneViewController.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="54" type="file" documentType="reference">
+            <Name>SoundEffect</Name>
+            <Path>Classes/SoundEffect.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/SoundEffect.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/SoundEffect.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/SoundEffect.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/SoundEffect.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="55" type="file" documentType="reference">
+            <Name>TouchPuzzleViewController</Name>
+            <Path>Classes/TouchPuzzleViewController.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/TouchPuzzleViewController.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/TouchPuzzleViewController.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/TouchPuzzleViewController.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/TouchPuzzleViewController.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="56" type="file" documentType="reference">
+            <Name>TypeBanner</Name>
+            <Path>Classes/TypeBanner.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/TypeBanner.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/TypeBanner.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/TypeBanner.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/TypeBanner.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="57" type="file" documentType="reference">
+            <Name>TypePuzzleViewController</Name>
+            <Path>Classes/TypePuzzleViewController.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/TypePuzzleViewController.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/TypePuzzleViewController.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/TypePuzzleViewController.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/TypePuzzleViewController.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="58" type="file" documentType="reference">
+            <Name>User</Name>
+            <Path>Classes/User.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/User.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/User.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/User.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/User.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="59" type="file" documentType="reference">
+            <Name>VULevelMeter</Name>
+            <Path>Classes/VULevelMeter.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/VULevelMeter.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/VULevelMeter.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/VULevelMeter.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/VULevelMeter.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="60" type="file" documentType="reference">
+            <Name>VUMeterTable</Name>
+            <Path>Classes/VUMeterTable.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/VUMeterTable.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/VUMeterTable.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/VUMeterTable.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		
+		<Node id="61" type="file" documentType="reference">
+            <Name>AVAudioPlayer(Fade)</Name>
+            <Path>Categories/AVAudioPlayer+Fade.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Categories/AVAudioPlayer+Fade.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Categories/AVAudioPlayer+Fade.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Categories/AVAudioPlayer+Fade.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Categories/AVAudioPlayer+Fade.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="62" type="file" documentType="reference">
+            <Name>NSData(NSData_SBJsonParsing)</Name>
+            <Path>Categories/NSData+NSData_SBJsonParsing.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Categories/NSData+NSData_SBJsonParsing.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Categories/NSData+NSData_SBJsonParsing.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Categories/NSData+NSData_SBJsonParsing.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="63" type="file" documentType="reference">
+            <Name>NSObject(NSObject_SBJsonWriting)</Name>
+            <Path>Categories/NSObject+NSObject_SBJsonWriting.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Categories/NSObject+NSObject_SBJsonWriting.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Categories/NSObject+NSObject_SBJsonWriting.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Categories/NSObject+NSObject_SBJsonWriting.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="64" type="file" documentType="reference">
+            <Name>NSObject(SBProxyForJson)</Name>
+            <Path>Categories/NSObject+SBProxyForJson.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Categories/NSObject+SBProxyForJson.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Categories/NSObject+SBProxyForJson.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Categories/NSObject+SBProxyForJson.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="65" type="file" documentType="reference">
+            <Name>NSString(NSString_SBJsonParsing)</Name>
+            <Path>Categories/NSString+NSString_SBJsonParsing.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Categories/NSString+NSString_SBJsonParsing.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Categories/NSString+NSString_SBJsonParsing.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Categories/NSString+NSString_SBJsonParsing.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		
+        <Node id="66" type="file" documentType="reference">
+            <Name>SBJsonStreamParserAdapterDelegate</Name>
+            <Path>Protocols/SBJsonStreamParserAdapterDelegate.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/SBJsonStreamParserAdapterDelegate.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/SBJsonStreamParserAdapterDelegate.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/SBJsonStreamParserAdapterDelegate.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="67" type="file" documentType="reference">
+            <Name>SBJsonStreamParserDelegate</Name>
+            <Path>Protocols/SBJsonStreamParserDelegate.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/SBJsonStreamParserDelegate.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/SBJsonStreamParserDelegate.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/SBJsonStreamParserDelegate.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="68" type="file" documentType="reference">
+            <Name>SBJsonStreamWriterDelegate</Name>
+            <Path>Protocols/SBJsonStreamWriterDelegate.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/SBJsonStreamWriterDelegate.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/SBJsonStreamWriterDelegate.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/SBJsonStreamWriterDelegate.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		
+        
+	</Library>
+</DocSetNodes>

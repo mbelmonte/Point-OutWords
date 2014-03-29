@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/InfoView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/InfoView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoView.h</DeclaredIn>
+            
+			
+			<NodeRef refid="12"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoView/setTitleLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *titleLabel</Declaration>
+			
+			
+			<Anchor>//api/name/titleLabel</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoView/titleLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *titleLabel</Declaration>
+			
+			
+			<Anchor>//api/name/titleLabel</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/InfoView/titleLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *titleLabel</Declaration>
+			
+			
+			<Anchor>//api/name/titleLabel</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoView/setTextLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *textLabel</Declaration>
+			
+			
+			<Anchor>//api/name/textLabel</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoView/textLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *textLabel</Declaration>
+			
+			
+			<Anchor>//api/name/textLabel</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/InfoView/textLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *textLabel</Declaration>
+			
+			
+			<Anchor>//api/name/textLabel</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoView/setImageView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIImageView *imageView</Declaration>
+			
+			
+			<Anchor>//api/name/imageView</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoView/imageView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIImageView *imageView</Declaration>
+			
+			
+			<Anchor>//api/name/imageView</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/InfoView/imageView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIImageView *imageView</Declaration>
+			
+			
+			<Anchor>//api/name/imageView</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoView/setDismissButton:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) UIButton *dismissButton</Declaration>
+			
+			
+			<Anchor>//api/name/dismissButton</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoView/dismissButton</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) UIButton *dismissButton</Declaration>
+			
+			
+			<Anchor>//api/name/dismissButton</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/InfoView/dismissButton</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) UIButton *dismissButton</Declaration>
+			
+			
+			<Anchor>//api/name/dismissButton</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoView/initWithFrame:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoView.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithFrame:(CGRect)frame</Declaration>
+			
+			
+			<Anchor>//api/name/initWithFrame:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoView/layoutSubviews</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoView.m</DeclaredIn>
+			
+			<Declaration>- (void)layoutSubviews</Declaration>
+			
+			
+			<Anchor>//api/name/layoutSubviews</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

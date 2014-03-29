@@ -2580,6 +2580,7 @@
 				8DA3DD111604C6E20031950A /* Resources */,
 				8DA3DD0F1604C6E20031950A /* Sources */,
 				8DA3DD101604C6E20031950A /* Frameworks */,
+				4918252018E13B8200509BE5 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -3131,6 +3132,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4918252018E13B8200509BE5 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#if [ ${CONFIGURATION} == \"Release\" ]; then\nAPPLEDOC_PATH=`which appledoc`\nif [ $APPLEDOC_PATH ]; then\n$APPLEDOC_PATH \\\n--project-name ${PRODUCT_NAME} \\\n--project-company \"Company Name\" \\\n--company-id \"com.yourcompany\" \\\n--output ${PRODUCT_NAME}Docs \\\n--keep-undocumented-objects \\\n--keep-undocumented-members \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--exit-threshold 2 \\\n${PROJECT_DIR}/${PRODUCT_NAME}\nfi;\n#fi;";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8DA3DD0F1604C6E20031950A /* Sources */ = {

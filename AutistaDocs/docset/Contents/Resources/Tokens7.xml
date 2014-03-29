@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/FirstLaunchViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/FirstLaunchViewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FirstLaunchViewController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FirstLaunchViewController/setScrollView:</TokenIdentifier>
+			<Abstract type="html">Scrollable startup guide</Abstract>
+			<DeclaredIn>FirstLaunchViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UIScrollView *scrollView</Declaration>
+			
+			
+			<Anchor>//api/name/scrollView</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FirstLaunchViewController/scrollView</TokenIdentifier>
+			<Abstract type="html">Scrollable startup guide</Abstract>
+			<DeclaredIn>FirstLaunchViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UIScrollView *scrollView</Declaration>
+			
+			
+			<Anchor>//api/name/scrollView</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FirstLaunchViewController/scrollView</TokenIdentifier>
+			<Abstract type="html">Scrollable startup guide</Abstract>
+			<DeclaredIn>FirstLaunchViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UIScrollView *scrollView</Declaration>
+			
+			
+			<Anchor>//api/name/scrollView</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FirstLaunchViewController/setPageControl:</TokenIdentifier>
+			<Abstract type="html">Indicator of which page is being scrolled to</Abstract>
+			<DeclaredIn>FirstLaunchViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UIPageControl *pageControl</Declaration>
+			
+			
+			<Anchor>//api/name/pageControl</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FirstLaunchViewController/pageControl</TokenIdentifier>
+			<Abstract type="html">Indicator of which page is being scrolled to</Abstract>
+			<DeclaredIn>FirstLaunchViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UIPageControl *pageControl</Declaration>
+			
+			
+			<Anchor>//api/name/pageControl</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FirstLaunchViewController/pageControl</TokenIdentifier>
+			<Abstract type="html">Indicator of which page is being scrolled to</Abstract>
+			<DeclaredIn>FirstLaunchViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UIPageControl *pageControl</Declaration>
+			
+			
+			<Anchor>//api/name/pageControl</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FirstLaunchViewController/initWithNibName:bundle:</TokenIdentifier>
+			<Abstract type="html">Initialize the viewController</Abstract>
+			<DeclaredIn>FirstLaunchViewController.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil</Declaration>
+			
+			
+			<Anchor>//api/name/initWithNibName:bundle:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FirstLaunchViewController/viewDidLoad</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FirstLaunchViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)viewDidLoad</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidLoad</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FirstLaunchViewController/viewDidAppear:</TokenIdentifier>
+			<Abstract type="html">Setting up UI elements for the viewController</Abstract>
+			<DeclaredIn>FirstLaunchViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)viewDidAppear:(BOOL)animated</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidAppear:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FirstLaunchViewController/didReceiveMemoryWarning</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FirstLaunchViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)didReceiveMemoryWarning</Declaration>
+			
+			
+			<Anchor>//api/name/didReceiveMemoryWarning</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FirstLaunchViewController/scrollToPage:</TokenIdentifier>
+			<Abstract type="html">Description</Abstract>
+			<DeclaredIn>FirstLaunchViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)scrollToPage:(int)page</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>page</Name>
+					<Abstract type="html">id in scrollView being scrolled to</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/scrollToPage:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FirstLaunchViewController/scrollViewDidScroll:</TokenIdentifier>
+			<Abstract type="html">Handling scrollViewDidScroll event.
+We don&apos;t want a &quot;feedback loop&quot; between the UIPageControl and the scroll delegate in
+which a scroll event generated from the user hitting the page control triggers updates from
+the delegate method. We use a boolean to disable the delegate logic when the page control is used.</Abstract>
+			<DeclaredIn>FirstLaunchViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)scrollViewDidScroll:(UIScrollView *)scrollView</Declaration>
+			
+			
+			<Anchor>//api/name/scrollViewDidScroll:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FirstLaunchViewController/scrollViewDidEndDecelerating:</TokenIdentifier>
+			<Abstract type="html">At the end of scroll animation, reset the boolean used when scrolls originate from the UIPageControl</Abstract>
+			<DeclaredIn>FirstLaunchViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView</Declaration>
+			
+			
+			<Anchor>//api/name/scrollViewDidEndDecelerating:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FirstLaunchViewController/changePage:</TokenIdentifier>
+			<Abstract type="html">Update the scroll view to the appropriate page</Abstract>
+			<DeclaredIn>FirstLaunchViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)changePage:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/changePage:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FirstLaunchViewController/supportedInterfaceOrientations</TokenIdentifier>
+			<Abstract type="html">Set supported orientation</Abstract>
+			<DeclaredIn>FirstLaunchViewController.h</DeclaredIn>
+			
+			<Declaration>- (NSUInteger)supportedInterfaceOrientations</Declaration>
+			
+			
+			<Anchor>//api/name/supportedInterfaceOrientations</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FirstLaunchViewController/shouldAutorotateToInterfaceOrientation:</TokenIdentifier>
+			<Abstract type="html">Auto rotate to UIInterfaceOrientationLandscapeLeft</Abstract>
+			<DeclaredIn>FirstLaunchViewController.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation</Declaration>
+			
+			
+			<Anchor>//api/name/shouldAutorotateToInterfaceOrientation:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FirstLaunchViewController/handleDismissButtonPressed</TokenIdentifier>
+			<Abstract type="html">Method to dismiss the view when dismiss button is clicked</Abstract>
+			<DeclaredIn>FirstLaunchViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)handleDismissButtonPressed</Declaration>
+			
+			
+			<Anchor>//api/name/handleDismissButtonPressed</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/haozheli/Library/Developer/Shared/Documentation/DocSets/com.yourcompany.Autista.docset
+Time: 2014-03-28 05:54:56 +0000

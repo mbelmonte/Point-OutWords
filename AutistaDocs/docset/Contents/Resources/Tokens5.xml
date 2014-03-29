@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/Event.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/Event</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Event.h</DeclaredIn>
+            
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Event/setEventCode:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Event.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *eventCode</Declaration>
+			
+			
+			<Anchor>//api/name/eventCode</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Event/eventCode</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Event.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *eventCode</Declaration>
+			
+			
+			<Anchor>//api/name/eventCode</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Event/eventCode</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Event.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *eventCode</Declaration>
+			
+			
+			<Anchor>//api/name/eventCode</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Event/setTitle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Event.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Event/title</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Event.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Event/title</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Event.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Event/setLogs:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Event.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSSet *logs</Declaration>
+			
+			
+			<Anchor>//api/name/logs</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Event/logs</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Event.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSSet *logs</Declaration>
+			
+			
+			<Anchor>//api/name/logs</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Event/logs</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Event.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSSet *logs</Declaration>
+			
+			
+			<Anchor>//api/name/logs</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Event/addLogsObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Event.h</DeclaredIn>
+			
+			<Declaration>- (void)addLogsObject:(Log *)value</Declaration>
+			
+			
+			<Anchor>//api/name/addLogsObject:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Event/removeLogsObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Event.h</DeclaredIn>
+			
+			<Declaration>- (void)removeLogsObject:(Log *)value</Declaration>
+			
+			
+			<Anchor>//api/name/removeLogsObject:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Event/addLogs:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Event.h</DeclaredIn>
+			
+			<Declaration>- (void)addLogs:(NSSet *)values</Declaration>
+			
+			
+			<Anchor>//api/name/addLogs:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Event/removeLogs:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Event.h</DeclaredIn>
+			
+			<Declaration>- (void)removeLogs:(NSSet *)values</Declaration>
+			
+			
+			<Anchor>//api/name/removeLogs:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>
