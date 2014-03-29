@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="pYk-1W-eWE">
     <dependencies>
         <deployment version="1296" defaultVersion="1296" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
-=======
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="pYk-1W-eWE">
-    <dependencies>
-        <deployment version="1296" defaultVersion="1296" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
->>>>>>> FETCH_HEAD
     </dependencies>
     <scenes>
         <!--Root View Controller-->
@@ -1439,10 +1432,6 @@
                                 <rect key="frame" x="818" y="707" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
-                            <pickerView hidden="YES" contentMode="scaleToFill" id="tn1-Ls-YWG">
-                                <rect key="frame" x="0.0" y="552" width="1024" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </pickerView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="4ro-yG-MiN">
                                 <rect key="frame" x="559" y="294" width="344" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1482,7 +1471,6 @@
                         <outlet property="logSizeLabel" destination="7Yr-bi-Jkm" id="M7o-iN-Tsq"/>
                         <outlet property="pointModeView" destination="JW5-qO-rxc" id="fRm-ez-o2m"/>
                         <outlet property="praisePromptSwitch" destination="2Dw-ab-VvE" id="9dX-N5-KYy"/>
-                        <outlet property="promptPickerView" destination="tn1-Ls-YWG" id="1XB-gD-rd1"/>
                         <outlet property="promptSourceEdit_Btn" destination="kNF-jY-0bb" id="36J-Em-tKm"/>
                         <outlet property="promptSourceSegment" destination="4ro-yG-MiN" id="glT-BM-C69"/>
                         <outlet property="promptSourceSelectionView" destination="Qp4-7c-6hz" id="XLB-Sf-BhT"/>
@@ -1574,7 +1562,7 @@
                                     <action selector="handleBackButtonReleased:" destination="mFE-Pu-xx9" eventType="touchUpInside" id="sjV-Tc-iVL"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* Use in a quiet environment. * Right now we test only for loudness. We hope to integrate speech recognition soon." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XVw-0N-z5r">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* Use in a quiet environment. * Right now we test only for loudness. We hope to integrate speech recognition soon." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XVw-0N-z5r">
                                 <rect key="frame" x="32" y="724" width="399" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
