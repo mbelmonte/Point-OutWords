@@ -630,7 +630,7 @@
     }
     
     // start recording
-    [recorder recordForDuration:(NSTimeInterval) 5];
+    [recorder recordForDuration:(NSTimeInterval) 3];
     if ([praiseFileLabelArrayForPlist objectAtIndex:index]) {
         [praiseFileLabelArrayForPlist removeObjectAtIndex:index];
     }
@@ -678,8 +678,8 @@
    didPickMediaItems: (MPMediaItemCollection *) collection
 {
     
-    //if the user only select one item and the duration of the item is less than 5s....
-    if (collection.count == 1 && ((NSNumber *)[((MPMediaItem *)[collection.items firstObject]) valueForProperty:MPMediaItemPropertyPlaybackDuration])<=500000000) {
+    //if the user only select one item and the duration of the item is less than 3s....
+    if (collection.count == 1 && ((NSNumber *)[((MPMediaItem *)[collection.items firstObject]) valueForProperty:MPMediaItemPropertyPlaybackDuration])<=3000) {
        
         // assign a playback queue containing all media items on the device
         //[self.myPlayer setQueueWithItemCollection:self.musicPlayCollection];
@@ -697,11 +697,11 @@
         ((UIButton *)[self.itunesPlayBtnArray objectAtIndex:self.currentSelection]).hidden = NO;
         
     }
-    else if(((NSNumber *)[((MPMediaItem *)[collection.items firstObject]) valueForProperty:MPMediaItemPropertyPlaybackDuration])>500000000)
+    else if(((NSNumber *)[((MPMediaItem *)[collection.items firstObject]) valueForProperty:MPMediaItemPropertyPlaybackDuration])>3000)
     {
         
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Fail to add music"
-                                                        message:@"The music should be less than 5s"
+                                                        message:@"The music should be less than 3s"
                                                        delegate:nil
                                               cancelButtonTitle:@"OK"
                                               otherButtonTitles:nil];

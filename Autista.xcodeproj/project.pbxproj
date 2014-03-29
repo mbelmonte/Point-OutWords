@@ -2621,6 +2621,11 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Shashwat Parhi";
+				TargetAttributes = {
+					8DA3DD121604C6E20031950A = {
+						DevelopmentTeam = JA3ZAY3HBN;
+					};
+				};
 			};
 			buildConfigurationList = 8DA3DD0D1604C6E20031950A /* Build configuration list for PBXProject "Autista" */;
 			compatibilityVersion = "Xcode 3.2";
