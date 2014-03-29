@@ -1668,9 +1668,9 @@
         <image name="PicnicScene.png" width="1024" height="768"/>
         <image name="Say na.png" width="264" height="533"/>
         <image name="WatermelonPlaceHolder.png" width="600" height="332"/>
-        <image name="itunes_icon.png" width="72" height="72"/>
-        <image name="play_icon.png" width="72" height="72"/>
-        <image name="record_icon.png" width="72" height="72"/>
+        <image name="itunes_icon.png" width="128" height="128"/>
+        <image name="play_icon.png" width="128" height="128"/>
+        <image name="record_icon.png" width="128" height="128"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
