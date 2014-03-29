@@ -38,7 +38,7 @@
 
 - (id)init {
 	[self resetToFactoryDefaults];
-	
+    
 	return self;
 }
 
@@ -95,7 +95,7 @@
 	[userDefaults removeObjectForKey:@"dragPuzzleFrequency"];
 	[userDefaults removeObjectForKey:@"typePuzzleFrequency"];
 	[userDefaults removeObjectForKey:@"speakPuzzleFrequency"];
-	
+    
 	[userDefaults synchronize];
 	
 	[self resetToFactoryDefaults];
@@ -155,6 +155,7 @@
 
 	if ([userDefaults objectForKey:@"speakPuzzleFrequency"] != nil)
 		_speakPuzzleFrequency = [[userDefaults objectForKey:@"speakPuzzleFrequency"] floatValue];
+
 }
 
 - (void)resetToFactoryDefaults

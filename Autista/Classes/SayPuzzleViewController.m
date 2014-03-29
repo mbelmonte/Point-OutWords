@@ -616,46 +616,130 @@
 {
     //RD
     //Prompt : Easy (<10) - WellDone; Medium (10-12) - Super, Yay; Difficult (>12) - GoodJob, Awesome
-    //NSLog(@"Difficulty Level of the object %@ for Say mode is : %@", _object.title, _object.difficultySpeak);
     
     if (_prefs.praisePromptEnabled == YES){
-        NSString * objectName = @"Super";
-        if (!SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"6.0"))
-            [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
-        
-        /* When loop detection put in and auto_complete through loop detection enabled
-         if (_autoCompletedPieces > 0)
-         objectName = @"TryAgain";
-         */
-        if ([_object.difficultySpeak doubleValue] < 10)
-            objectName = @"WellDone";
-        else if ([_object.difficultySpeak doubleValue] > 12)
-            objectName = @"Awesome";
-        
-        NSString *bundleRoot = [[NSBundle mainBundle] bundlePath];
-        //NSLog(@"directory found ====== %@",bundleRoot);
-        NSFileManager *fm = [NSFileManager defaultManager];
-        NSArray *dirContents = [fm contentsOfDirectoryAtPath:bundleRoot error:nil];
-        NSPredicate *fltr;
-        fltr = [NSPredicate predicateWithFormat:@"(self ENDSWITH '.caf') AND (self CONTAINS[c] %@)", objectName];
-        NSArray *onlyWAVs = [dirContents filteredArrayUsingPredicate:fltr];
-        //NSLog(@"directoryContents ====== %@",onlyWAVs);
-        
-        NSString * promptPath = [[NSBundle mainBundle] pathForResource:[onlyWAVs[0] stringByDeletingPathExtension] ofType:@"caf"];
-        NSURL *promptURL = [NSURL fileURLWithPath:promptPath];
-        _finishPrompt = [[AVAudioPlayer alloc] initWithContentsOfURL:promptURL error:nil];
-        [_finishPrompt prepareToPlay];
-        [_finishPrompt play];
-        
-        //Stop listening when finishing puzzle
-        [pocketsphinxController stopListening];
-        
+        NSLog(@"Difficulty Level of the object %@ for Touch mode is : %@", _object.title, _object.difficultySpeak);
+        NSDictionary *plistDict = [self readFromPlsit];
+        int currentPromptIndex = [((NSNumber *)[plistDict objectForKey:@"PromptPrefs"]) intValue];
+        switch (currentPromptIndex) {
+            case 0:
+            {
+                
+                NSString * objectName = @"Super";
+                
+                    objectName = @"TryAgain";
+                if ([_object.difficultySpeak doubleValue] < 10)
+                    objectName = @"WellDone";
+                else if ([_object.difficultySpeak doubleValue] > 12)
+                    objectName = @"Awesome";
+                
+                
+                NSString *bundleRoot = [[NSBundle mainBundle] bundlePath];
+                NSLog(@"directory found ====== %@",bundleRoot);
+                NSFileManager *fm = [NSFileManager defaultManager];
+                NSArray *dirContents = [fm contentsOfDirectoryAtPath:bundleRoot error:nil];
+                NSPredicate *fltr;
+                fltr = [NSPredicate predicateWithFormat:@"(self ENDSWITH '.caf') AND (self CONTAINS[c] %@)", objectName];
+                NSArray *onlyWAVs = [dirContents filteredArrayUsingPredicate:fltr];
+                NSLog(@"directoryContents ====== %@",onlyWAVs);
+                
+                NSString * promptPath = [[NSBundle mainBundle] pathForResource:[onlyWAVs[0] stringByDeletingPathExtension] ofType:@"caf"];
+                NSURL *promptURL = [NSURL fileURLWithPath:promptPath];
+                _finishPrompt = [[AVAudioPlayer alloc] initWithContentsOfURL:promptURL error:nil];
+                [_finishPrompt prepareToPlay];
+                [_finishPrompt play];
+                
+                
+                break;
+            }
+            case 1:
+            {
+                
+                NSMutableArray* recordFilePathArray =  [[NSMutableArray alloc]initWithArray:[plistDict objectForKey:@"RecordedPraise"]];
+                NSString *playURL= [recordFilePathArray objectAtIndex:0];
+                    playURL = @"";
+                if ([_object.difficultySpeak doubleValue] < 10)
+                    playURL= [recordFilePathArray objectAtIndex:2];
+                else if ([_object.difficultySpeak doubleValue] > 12)
+                    playURL= [recordFilePathArray objectAtIndex:1];
+                
+                _finishPrompt = [[AVAudioPlayer alloc]initWithContentsOfURL:[NSURL fileURLWithPath: playURL ] error:nil];
+                [_finishPrompt prepareToPlay];
+                [_finishPrompt play];
+                
+                break;
+            }
+            case 2:{
+                
+                NSMutableArray* iTunesPlayList = [[NSMutableArray alloc]initWithArray:[plistDict objectForKey:@"iTunesPraiseURL"]];
+                
+                NSString *songName= [iTunesPlayList objectAtIndex:0];
+                    songName = @"";
+                if ([_object.difficultySpeak doubleValue] < 10)
+                    songName= [iTunesPlayList objectAtIndex:2];
+                else if ([_object.difficultySpeak doubleValue] > 12)
+                    songName= [iTunesPlayList objectAtIndex:1];
+                
+                _myPlayer = [MPMusicPlayerController applicationMusicPlayer];
+                MPMediaPropertyPredicate *playlistPredicate = [MPMediaPropertyPredicate predicateWithValue:songName forProperty:MPMediaItemPropertyTitle];
+                NSSet *predicateSet = [NSSet setWithObjects:playlistPredicate, nil];
+                MPMediaQuery *mediaTypeQuery = [[MPMediaQuery alloc] initWithFilterPredicates:predicateSet];
+                [_myPlayer setQueueWithQuery:mediaTypeQuery];
+                [_myPlayer play];
+                
+                [self performSelector:@selector(stopPlaying) withObject:nil afterDelay:3];
+                break;
+            }
+                
+        }
+        //
+        //
         [self performSelector:@selector(delayedDismissSelf) withObject:nil afterDelay:1];
     }
-    else{
+    else {
         [self performSelector:@selector(delayedDismissSelf) withObject:nil afterDelay:0.5];
     }
 }
+
+-(void)stopPlaying
+{
+    [_myPlayer stop];
+}
+
+
+-(NSDictionary *)readFromPlsit
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains (NSDocumentDirectory, NSUserDomainMask, YES);
+	// get documents path
+	NSString *documentsPath = [paths objectAtIndex:0];
+	// get the path to our Data/plist file
+	NSString *plistPath = [documentsPath stringByAppendingPathComponent:@"PraisePrefs.plist"];
+    // check to see if Data.plist exists in documents
+    if (![[NSFileManager defaultManager] fileExistsAtPath:plistPath])
+	{
+		// if not in documents, get property list from main bundle
+        
+        [[NSFileManager defaultManager]copyItemAtPath: [[NSBundle mainBundle] pathForResource:@"PraisePrefs" ofType:@"plist"] toPath:plistPath error: nil];
+        
+	}
+    
+    
+    
+    NSData *plistXML = [[NSFileManager defaultManager] contentsAtPath:plistPath];
+	NSString *errorDesc = nil;
+	NSPropertyListFormat format;
+	// convert static property liost into dictionary object
+	NSDictionary *temp = (NSDictionary *)[NSPropertyListSerialization propertyListFromData:plistXML mutabilityOption:NSPropertyListMutableContainersAndLeaves format:&format errorDescription:&errorDesc];
+	if (!temp)
+	{
+		NSLog(@"Error reading plist: %@, format: %d", errorDesc, format);
+	}
+    return temp;
+    
+}
+
+
+
 
 - (void)delayedDismissSelf
 {

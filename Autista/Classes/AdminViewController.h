@@ -22,14 +22,20 @@
 
 #import <UIKit/UIKit.h>
 #import <MessageUI/MessageUI.h>
+#import <MediaPlayer/MediaPlayer.h>
+
 
 @class GlobalPreferences;
 @class Scene;
 
-@interface AdminViewController : UIViewController <MFMailComposeViewControllerDelegate, UIAlertViewDelegate> {
+@interface AdminViewController : UIViewController <MFMailComposeViewControllerDelegate, UIAlertViewDelegate, MPMediaPickerControllerDelegate, UIPickerViewDataSource, UIPickerViewDelegate > {
 	GlobalPreferences *_prefs;
 	IBOutlet UIView *_sceneDashboard;
 }
+//create two views for transforming animation
+@property (weak, nonatomic) IBOutlet UIView *pointModeView;
+@property (weak, nonatomic) IBOutlet UIView *sayModeView;
+@property (weak, nonatomic) IBOutlet UIView *promptSourceSelectionView;
 
 @property (nonatomic, strong) IBOutlet UISwitch *backgroundMusicSwitch;
 @property (nonatomic, strong) IBOutlet UISwitch *guidedModeSwitch;
@@ -54,7 +60,47 @@
 
 @property (nonatomic, strong) IBOutlet UISwitch *praisePromptSwitch;
 
+@property (weak, nonatomic) IBOutlet UISegmentedControl *promptSourceSegment;
+
+@property (weak, nonatomic) IBOutlet UIButton *super_Btn_Record;
+
+@property (weak, nonatomic) IBOutlet UIButton *awesome_Btn_Record;
+
+@property (weak, nonatomic) IBOutlet UIButton *welldone_Btn_Record;
+
+@property (weak, nonatomic) IBOutlet UIButton *try_Btn_Record;
+
+@property (weak, nonatomic) IBOutlet UIButton *super_Btn_Play;
+
+@property (weak, nonatomic) IBOutlet UIButton *awesome_Btn_Play;
+
+@property (weak, nonatomic) IBOutlet UIButton *welldone_Btn_Play;
+
+@property (weak, nonatomic) IBOutlet UIButton *try_Btn_Play;
+
+@property (weak, nonatomic) IBOutlet UIButton *super_itunes_Btn_Play;
+
+@property (weak, nonatomic) IBOutlet UIButton *awesome_itunes_Btn_Play;
+
+@property (weak, nonatomic) IBOutlet UIButton *welldone_itunes_Btn_Play;
+
+@property (weak, nonatomic) IBOutlet UIButton *try_itunes_Btn_Play;
+
+@property (weak, nonatomic) IBOutlet UIButton *itunes_Btn;
+
+@property (weak, nonatomic) IBOutlet UILabel *super_fileLabel;
+@property (weak, nonatomic) IBOutlet UILabel *awesome_fileLabel;
+@property (weak, nonatomic) IBOutlet UILabel *welldone_fileLabel;
+@property (weak, nonatomic) IBOutlet UILabel *try_fileLabel;
+
+@property (weak, nonatomic) IBOutlet UIButton *promptSourceEdit_Btn;
+
 @property (nonatomic, retain) Scene *scene;
+
+@property (weak, nonatomic) IBOutlet UIView *recordView;
+@property (weak, nonatomic) IBOutlet UIView *itunesView;
+
+//@property (weak, nonatomic) IBOutlet UIPickerView *promptPickerView;
 
 - (IBAction)restoreTapped:(id)sender;
 - (IBAction)handleSendLogDataPressed:(id)sender;
@@ -64,5 +110,7 @@
 - (IBAction)handleBGMusicChanged:(id)sender;
 - (IBAction)handleResetSlidersPressed:(id)sender;
 - (IBAction)handleResetAppPressed:(id)sender;
+- (IBAction)recordPrompt:(id)sender;
+
 
 @end

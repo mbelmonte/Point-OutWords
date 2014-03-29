@@ -22,7 +22,7 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
-
+#import <MediaPlayer/MediaPlayer.h>
 @class PuzzleObject;
 @class PuzzlePieceView;
 @class TypeBanner;
@@ -92,6 +92,8 @@
 @property (nonatomic, retain) IBOutlet UIImageView *background;
 @property (nonatomic, retain) IBOutlet UIImageView *placeHolder;
 @property (nonatomic, retain) IBOutlet UIView *keyboard;
+
+@property MPMusicPlayerController *myPlayer;
 
 - (IBAction)playKeyClickSound:(id)sender;
 - (IBAction)handleKeyPressed:(id)sender;

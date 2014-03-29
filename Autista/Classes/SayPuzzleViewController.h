@@ -28,7 +28,7 @@
 #import <OpenEars/AcousticModel.h>
 #import <OpenEars/OpenEarsEventsObserver.h>
 #import <OpenEars/PocketsphinxController.h>
-
+#import <MediaPlayer/MediaPlayer.h>
 
 @class VULevelMeter;
 @class PuzzleObject;
@@ -85,6 +85,8 @@
 @property (nonatomic, retain) AVPlayerItem * firstSyllItem;
 @property (nonatomic, retain) IBOutlet UIImageView *background;
 @property (nonatomic, retain) IBOutlet UIImageView *placeHolder;
+
+@property MPMusicPlayerController *myPlayer;
 
 - (void)levelTimerCallback:(NSTimer *)timer;
 - (Float32)audioVolume;

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PromptPrefs</key>
+	<integer>0</integer>
+	<key>DefaultPrompt</key>
+	<array>
+		<string>Super</string>
+		<string>Awesome</string>
+		<string>WellDone</string>
+		<string>TryAgain</string>
+	</array>
+	<key>FileName</key>
+	<array>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<key>iTunesPraiseURL</key>
+	<array>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<key>RecordedPraise</key>
+	<array>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+</dict>
+</plist>

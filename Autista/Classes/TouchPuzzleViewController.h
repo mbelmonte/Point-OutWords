@@ -22,6 +22,7 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import <MediaPlayer/MediaPlayer.h>
 
 @class PuzzleObject;
 @class PuzzlePieceView;
@@ -65,6 +66,8 @@
 
 @property (nonatomic, retain) IBOutlet UIImageView *background;
 @property (nonatomic, retain) IBOutlet UIImageView *placeHolder;
+
+@property MPMusicPlayerController *myPlayer;
 
 - (IBAction)handleAdminButtonPressed:(id)sender;
 - (IBAction)handleAdminButtonReleased:(id)sender;
