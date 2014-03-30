@@ -628,6 +628,7 @@
 							 pieceView.finalPoint = finalPosition;
 							 
 							 [self.view addSubview:pieceView];
+                             
 							 [_pieces addObject:pieceView];
 						 }
 						 
@@ -704,9 +705,9 @@
         pan.cancelsTouchesInView = NO;
         
         [piece addGestureRecognizer:tap];
-        [piece addGestureRecognizer:pan];
+        [self.view addGestureRecognizer:pan];
         
-        piece.userInteractionEnabled=YES;
+        piece.userInteractionEnabled = NO;
     }
     
     //add text to pieces...
