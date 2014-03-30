@@ -96,7 +96,7 @@
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
 
 	if (_adminVC != nil && _prefs.guidedModeEnabled == NO)											// Shashwat Parhi: if returning from Admin screen
-		[self dismissViewControllerAnimated:NO completion:nil];										// dismiss self, added on April 02, 2013 as per client request
+	//	[self dismissViewControllerAnimated:NO completion:nil];										// dismiss self, added on April 02, 2013 as per client request
 	
 	if (_launchedInGuidedMode == NO && _prefs.guidedModeEnabled == YES)								// most likely, admin changed this setting mid-stream
 		[self dismissViewControllerAnimated:NO completion:nil];										// so bail out
@@ -708,18 +708,35 @@
 }
 
 #pragma mark - pieces Gesture method
-- (void)remindAnimation:(UITapGestureRecognizer *)recognizer {
+- (void)remindAnimation:(UIGestureRecognizer *)recognizer {
+    
+    [((UIButton *)[self buttonFromASCIICode:[[_object.title uppercaseString] characterAtIndex:_currentLetterPosition]]) setBackgroundImage: [UIImage imageNamed:@"KeyboardButton_hightlighted"] forState:UIControlStateNormal];
+    NSArray *items = [self buttonFromASCIICode:[[_object.title uppercaseString] characterAtIndex:_currentLetterPosition]].subviews;
     //set up animation
     CAKeyframeAnimation * anim = [ CAKeyframeAnimation animationWithKeyPath:@"transform" ] ;
     anim.values = @[ [ NSValue valueWithCATransform3D:CATransform3DMakeTranslation(-5.0f, 0.0f, 0.0f) ], [ NSValue valueWithCATransform3D:CATransform3DMakeTranslation(5.0f, 0.0f, 0.0f) ] ] ;
     anim.autoreverses = YES ;
-    anim.repeatCount = 5.0f ;
+    anim.repeatCount = 4.0f ;
     anim.duration = 0.07f ;
     
+    
     //animate the corresponding key on the keyboard
-    [[self buttonFromASCIICode:[[_object.title uppercaseString] characterAtIndex:_currentLetterPosition]].layer addAnimation:anim forKey:nil];
+   [[self buttonFromASCIICode:[[_object.title uppercaseString] characterAtIndex:_currentLetterPosition]].layer addAnimation:anim forKey:nil];
+    
+    CAKeyframeAnimation * anim1 = [ CAKeyframeAnimation animationWithKeyPath:@"transform" ] ;
+    anim1.values = @[ [ NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0f, 1.0f, 1.0f)], [ NSValue valueWithCATransform3D:CATransform3DMakeScale(1.5f, 1.5f, 1.0f) ]];
+    anim1.autoreverses = NO ;
+    anim1.repeatCount = 4;
+    anim1.duration = 0.07f ;
+    
+    [[self buttonFromASCIICode:[[_object.title uppercaseString] characterAtIndex:_currentLetterPosition]].layer addAnimation:anim1 forKey:nil];
+    [self performSelector:@selector(changeBGColorBack)withObject:nil afterDelay:0.56];
 }
 
+-(void)changeBGColorBack
+{
+    [((UIButton *)[self buttonFromASCIICode:[[_object.title uppercaseString] characterAtIndex:_currentLetterPosition]]) setBackgroundImage: [UIImage imageNamed:@"KeyboardButton.png"] forState:UIControlStateNormal];
+}
 
 #pragma mark - Image Manipulation Methods
 

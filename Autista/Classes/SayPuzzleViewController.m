@@ -243,7 +243,7 @@
         [levelTimer invalidate];
  
         // Shashwat Parhi: if returning from Admin screen
-		[self dismissViewControllerAnimated:NO completion:nil];										// dismiss self, added on April 02, 2013 as per client request
+		//[self dismissViewControllerAnimated:NO completion:nil];										// dismiss self, added on April 02, 2013 as per client request
         if (!SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"6.0"))
             [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
     }

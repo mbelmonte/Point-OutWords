@@ -389,8 +389,8 @@
     [currentDict setValue: segmentIndex forKey:@"PromptPrefs"];
     [self savePraiseIntoPlist:currentDict];
 	[[EventLogger sharedLogger] logEvent:LogEventCodeAdminModeExited eventInfo:nil];
-	
 	[self dismissViewControllerAnimated:YES completion:nil];
+
 }
 
 -(IBAction)handleBGMusicChanged:(id)sender
