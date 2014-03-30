@@ -749,9 +749,6 @@
     
 }
 
-
-
-
 - (void)delayedDismissSelf
 {
     //NSLog(@"In Delayed Dismiss Self in Say Mode");
@@ -800,6 +797,11 @@
 {
 	[_backOverlayTimer invalidate];
 }
+
+- (IBAction)handlePassButtonPressed:(id)sender{
+    [self advanceToNextSyllable];
+}
+
 
 - (void)showBackOverlay
 {

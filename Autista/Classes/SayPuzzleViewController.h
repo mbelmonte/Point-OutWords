@@ -98,5 +98,6 @@
 - (IBAction)handleAdminButtonReleased:(id)sender;
 - (IBAction)handleBackButtonPressed:(id)sender;
 - (IBAction)handleBackButtonReleased:(id)sender;
+- (IBAction)handlePassButtonPressed:(id)sender;
 
 @end
