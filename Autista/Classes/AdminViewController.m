@@ -506,9 +506,14 @@
     return UIInterfaceOrientationLandscapeLeft;
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+//- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+//{
+//	return toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft;
+//}
+
+-(BOOL)shouldAutorotate
 {
-	return toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft;
+    return NO;
 }
 
 - (void)didReceiveMemoryWarning
@@ -527,18 +532,12 @@
          self.promptSourceSelectionView.hidden = YES;
         [self moveSpaceForSelectionViewWith:328];
         [self.promptSourceEdit_Btn setTitle:@"Edit" forState:UIControlStateNormal];
-
-        
     }
-   
 }
-
 
 - (IBAction)chosePromptSoure:(id)sender
 {
-    
     [self updatePromptViewWith:self.promptSourceSegment.selectedSegmentIndex];
-   
 }
 
 - (IBAction)recordPrompt:(id)sender
