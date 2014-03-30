@@ -215,10 +215,10 @@
             break;
             
         case 1:
-            self.awesome_descLabel.text = @"Record a praise prompt to encourage the child once a hard puzzle is completed.";
-            self.super_descLabel.text = @"Record a praise prompt to encourage the child once a medium puzzle is completed.";
-            self.welldone_descLabel.text = @"Record a praise prompt to encourage the child once a easy puzzle is completed.";
-            self.tryagain_descLabel.text = @"Record a praise prompt to encourage the child once a puzzle is not completed.";
+            self.awesome_descLabel.text = @"Record a praise prompt to encourage the child once a hard puzzle is completed. (Less than 2 seconds)";
+            self.super_descLabel.text = @"Record a praise prompt to encourage the child once a medium puzzle is completed. (Less than 2 seconds)";
+            self.welldone_descLabel.text = @"Record a praise prompt to encourage the child once a easy puzzle is completed (Less than 2 seconds).";
+            self.tryagain_descLabel.text = @"Record a praise prompt to encourage the child once a puzzle is not completed (Less than 2 seconds).";
             
             self.recordView.hidden = NO;
             self.itunesView.hidden = YES;
@@ -237,10 +237,10 @@
             break;
             
         case 2:
-            self.awesome_descLabel.text = @"Select a praise prompt to encourage the child once a hard puzzle is completed.";
-            self.super_descLabel.text = @"Select a praise prompt to encourage the child once a medium puzzle is completed.";
-            self.welldone_descLabel.text = @"Select a praise prompt to encourage the child once a easy puzzle is completed.";
-            self.tryagain_descLabel.text = @"Select a praise prompt to encourage the child once a puzzle is not completed.";
+            self.awesome_descLabel.text = @"Select a praise prompt to encourage the child once a hard puzzle is completed. (Less than 2 seconds)";
+            self.super_descLabel.text = @"Select a praise prompt to encourage the child once a medium puzzle is completed. (Less than 2 seconds)";
+            self.welldone_descLabel.text = @"Select a praise prompt to encourage the child once a easy puzzle is completed. (Less than 2 seconds)";
+            self.tryagain_descLabel.text = @"Select a praise prompt to encourage the child once a puzzle is not completed. (Less than 2 seconds)";
             
             self.recordView.hidden = YES;
             self.itunesView.hidden = NO;
