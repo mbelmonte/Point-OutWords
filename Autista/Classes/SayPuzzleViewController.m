@@ -162,6 +162,10 @@
         }
     }
     
+    while ([changedUpperCaseSyllables count] > _prefs.sayModeDifficulty) {
+        [changedUpperCaseSyllables removeLastObject];
+    }
+    
     for (NSString * allString in upperCaseSyllables){
         [changedUpperCaseSyllables addObject:allString];
     }
@@ -260,6 +264,10 @@
 	[self initializePuzzleState];
     [activityIndicator startAnimating];
     [self.view bringSubviewToFront:activityIndicator];
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+    [pocketsphinxController stopListening];
 }
 
 #pragma mark - Sound Effects
@@ -481,9 +489,7 @@
                  */
                 [_qplayer play];
             
-                [NSThread sleepForTimeInterval:2];
-                //Start to listen to the dialog
-                [self.pocketsphinxController startListeningWithLanguageModelAtPath:lmPath dictionaryAtPath:dicPath acousticModelAtPath:[AcousticModel pathToModel:@"AcousticModelEnglish"] languageModelIsJSGF:NO];
+                [self performSelector:@selector(startListening) withObject:nil afterDelay:2];
             }
     }
     sayNa.hidden = NO;
@@ -495,11 +501,11 @@
             sayNa.alpha = 1.0f;
         } completion:^(BOOL finished) {syllLabel.hidden = NO;     [activityIndicator stopAnimating];}
     ];
+}
 
-/*    AVAudioPlayer * syllableSound = _syllableSounds[_currentSyllable];
-    [syllableSound prepareToPlay];
-    [syllableSound play];
-*/
+- (void) startListening{
+    //Start to listen to the dialog
+    [self.pocketsphinxController startListeningWithLanguageModelAtPath:lmPath dictionaryAtPath:dicPath acousticModelAtPath:[AcousticModel pathToModel:@"AcousticModelEnglish"] languageModelIsJSGF:NO];
 }
 
 
@@ -549,11 +555,14 @@
 }
 
 - (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag{
-    //Resume Recognition
-    [NSThread sleepForTimeInterval:0.5];
-    [pocketsphinxController resumeRecognition];
+    [self performSelector:@selector(resumeRecognition) withObject:nil afterDelay:0.5];
 }
 
+- (void)resumeRecognition{
+    //Resume Recognition
+    //[NSThread sleepForTimeInterval:0.5];
+    [pocketsphinxController resumeRecognition];
+}
 
 - (void)advanceToNextSyllable
 {
@@ -686,8 +695,6 @@
                 MPMediaQuery *mediaTypeQuery = [[MPMediaQuery alloc] initWithFilterPredicates:predicateSet];
                 [_myPlayer setQueueWithQuery:mediaTypeQuery];
                 [_myPlayer play];
-                
-                [self performSelector:@selector(stopPlaying) withObject:nil afterDelay:3];
                 break;
             }
                 

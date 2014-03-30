@@ -51,6 +51,7 @@
 @property (nonatomic, strong) IBOutlet UISlider *adjustDragFrequency;
 @property (nonatomic, strong) IBOutlet UISlider *adjustTypeFrequency;
 @property (nonatomic, strong) IBOutlet UISlider *adjustSpeakFrequency;
+@property (strong, nonatomic) IBOutlet UISlider *sayModeDifficulty;
 
 @property (nonatomic, strong) IBOutlet UILabel *guidedModeInfoLabel;
 @property (nonatomic, strong) IBOutlet UILabel *snapBackInfoLabel;

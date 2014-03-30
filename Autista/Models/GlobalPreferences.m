@@ -69,6 +69,7 @@
 	[userDefaults setObject:[NSNumber numberWithFloat:_dragPuzzleFrequency] forKey:@"dragPuzzleFrequency"];
 	[userDefaults setObject:[NSNumber numberWithFloat:_typePuzzleFrequency] forKey:@"typePuzzleFrequency"];
 	[userDefaults setObject:[NSNumber numberWithFloat:_speakPuzzleFrequency] forKey:@"speakPuzzleFrequency"];
+    [userDefaults setObject:[NSNumber numberWithFloat:_sayModeDifficulty] forKey:@"sayModeDifficulty"];
 	
 	[userDefaults synchronize];
 }
@@ -95,6 +96,7 @@
 	[userDefaults removeObjectForKey:@"dragPuzzleFrequency"];
 	[userDefaults removeObjectForKey:@"typePuzzleFrequency"];
 	[userDefaults removeObjectForKey:@"speakPuzzleFrequency"];
+    [userDefaults removeObjectForKey:@"sayModeDifficulty"];
     
 	[userDefaults synchronize];
 	
@@ -155,6 +157,8 @@
 
 	if ([userDefaults objectForKey:@"speakPuzzleFrequency"] != nil)
 		_speakPuzzleFrequency = [[userDefaults objectForKey:@"speakPuzzleFrequency"] floatValue];
+    if ([userDefaults objectForKey:@"sayModeDifficulty"] != nil)
+		_sayModeDifficulty = [[userDefaults objectForKey:@"sayModeDifficulty"] floatValue];
 
 }
 
@@ -175,6 +179,7 @@
 	_dragPuzzleFrequency = 60;
 	_typePuzzleFrequency = 20;
 	_speakPuzzleFrequency = 20;
+    _sayModeDifficulty = 0;
 }
 
 - (NSDictionary *)packagedSettings
@@ -197,6 +202,7 @@
 	[settingsDict setObject:[NSNumber numberWithFloat:_dragPuzzleFrequency] forKey:@"dragPuzzleFrequency"];
 	[settingsDict setObject:[NSNumber numberWithFloat:_typePuzzleFrequency] forKey:@"typePuzzleFrequency"];
 	[settingsDict setObject:[NSNumber numberWithFloat:_speakPuzzleFrequency] forKey:@"speakPuzzleFrequency"];
+	[settingsDict setObject:[NSNumber numberWithFloat:_sayModeDifficulty] forKey:@"sayModeDifficulty"];
 
 	return settingsDict;
 }

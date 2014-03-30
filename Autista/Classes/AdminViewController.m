@@ -118,6 +118,7 @@
 	_adjustDragFrequency.value = _prefs.dragPuzzleFrequency;
 	_adjustSpeakFrequency.value = _prefs.speakPuzzleFrequency;
 	_adjustTypeFrequency.value = _prefs.typePuzzleFrequency;
+    _sayModeDifficulty.value = _prefs.sayModeDifficulty;
 	
 	if (_scene != nil) {
 		UIView *dummyStateView = [_sceneDashboard viewWithTag:100];							// we placed one sample into the XIB file for good measure
@@ -357,6 +358,9 @@
         [TestFlight passCheckpoint:str];
     }
     
+    if (_prefs.sayModeDifficulty != _sayModeDifficulty.value)
+        [TestFlight passCheckpoint:@"Admin Setting changed : Say Mode Difficulty"];
+    
 	/*if (_prefs.backgroundMusicEnabled == YES && _backgroundMusicSwitch.on == NO) {
         _prefs.backgroundMusicEnabled = _backgroundMusicSwitch.on;
 		[[NSNotificationCenter defaultCenter] postNotificationName:@"AdminWantsBackgroundMusicOffNotification" object:nil];
@@ -378,6 +382,7 @@
     _prefs.snapDistance = _snapDistance.value;
     _prefs.selectDistance = _selectDistance.value;
     _prefs.ampThresh = _ampThresh.value;
+    _prefs.sayModeDifficulty = _sayModeDifficulty.value;
     
     //save the recorded sound url to the plist
     NSMutableDictionary *currentDict = [[NSMutableDictionary alloc]init];
@@ -472,6 +477,7 @@
 	[_adjustDragFrequency setValue:60 animated:YES];
 	[_adjustTypeFrequency setValue:20 animated:YES];
 	[_adjustSpeakFrequency setValue:20 animated:YES];
+	[_sayModeDifficulty setValue:0 animated:YES];
 }
 
 - (IBAction)handleResetAppPressed:(id)sender

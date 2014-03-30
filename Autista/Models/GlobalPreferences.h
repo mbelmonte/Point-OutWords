@@ -42,6 +42,7 @@
 @property (nonatomic, assign) CGFloat dragPuzzleFrequency;
 @property (nonatomic, assign) CGFloat typePuzzleFrequency;
 @property (nonatomic, assign) CGFloat speakPuzzleFrequency;
+@property (nonatomic, assign) CGFloat sayModeDifficulty;
 
 + (GlobalPreferences *)sharedGlobalPreferences;
 
