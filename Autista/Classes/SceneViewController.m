@@ -139,16 +139,17 @@
         Float32 vol;
         vol = [self audioVolume];
 
-        if (vol > .5) {
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Speaker Volume Too High"
-                                                            message:@"To avoid the mic from detecting the speaker's sounds, please set the Speaker Volume to less than 50% and click DONE."
-                                                           delegate:self
-                                                  cancelButtonTitle:@"Cancel"
-                                                  otherButtonTitles:@"DONE", nil];
-            [alert show];
-        }
+//        if (vol > .5) {
+//            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Speaker Volume Too High"
+//                                                            message:@"To avoid the mic from detecting the speaker's sounds, please set the Speaker Volume to less than 50% and click DONE."
+//                                                           delegate:self
+//                                                  cancelButtonTitle:@"Cancel"
+//                                                  otherButtonTitles:@"DONE", nil];
+//            [alert show];
+//        }
+//        (vol <= .5) &&
 
-        if ((vol <= .5) && (_sayIndex > -1)) {
+        if (_sayIndex > -1) {
             PuzzleObject *object = [[_scene.puzzleObjects allObjects] objectAtIndex:_sayIndex];
             _sayIndex = -1;
             [self presentSayPuzzleView:object];
