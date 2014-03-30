@@ -33,7 +33,7 @@
 /**
  *  View controller handling puzzles in type mode
  */
-@interface TypePuzzleViewController : UIViewController {
+@interface TypePuzzleViewController : UIViewController <UIGestureRecognizerDelegate> {
 	GlobalPreferences *_prefs;
 	BOOL _launchedInGuidedMode;
 	BOOL _backButtonPressed;

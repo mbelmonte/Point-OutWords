@@ -297,6 +297,32 @@
 	return button;
 }
 
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
+    UITouch * touch = [[event allTouches] anyObject];
+    CGPoint touchLocation = [touch locationInView:touch.view];
+    
+    CGPoint point = [self.view convertPoint:touchLocation toView:self.keyboard];
+    
+    NSString *title = [_object.title uppercaseString];
+	UIButton *expectedButton = [self buttonFromASCIICode:[title characterAtIndex:_currentLetterPosition]];
+    
+    NSLog(@"%f, %f, %f, %f", expectedButton.frame.origin.x, expectedButton.frame.origin.y, expectedButton.frame.size.height, expectedButton.frame.size.width);
+    NSLog(@"%f - %f", point.x, point.y);
+    
+    if (CGRectContainsPoint(expectedButton.frame, point)) {
+        [expectedButton sendActionsForControlEvents:UIControlEventTouchUpInside];
+    }
+}
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer{
+    return YES;
+}
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch{
+    
+    return YES;
+}
+
 - (IBAction)handleKeyPressed:(id)sender
 {
 	NSString *title = [_object.title uppercaseString];
@@ -671,8 +697,15 @@
         [[UIPanGestureRecognizer alloc] initWithTarget:self
                                                 action:@selector(remindAnimation:)];
         
+        tap.delegate = self;
+        pan.delegate = self;
+        
+        tap.cancelsTouchesInView = NO;
+        pan.cancelsTouchesInView = NO;
+        
         [piece addGestureRecognizer:tap];
         [piece addGestureRecognizer:pan];
+        
         piece.userInteractionEnabled=YES;
     }
     
@@ -712,7 +745,7 @@
 - (void)remindAnimation:(UIGestureRecognizer *)recognizer {
     
     [((UIButton *)[self buttonFromASCIICode:[[_object.title uppercaseString] characterAtIndex:_currentLetterPosition]]) setBackgroundImage: [UIImage imageNamed:@"KeyboardButton_hightlighted"] forState:UIControlStateNormal];
-    NSArray *items = [self buttonFromASCIICode:[[_object.title uppercaseString] characterAtIndex:_currentLetterPosition]].subviews;
+    
     //set up animation
     CAKeyframeAnimation * anim = [ CAKeyframeAnimation animationWithKeyPath:@"transform" ] ;
     anim.values = @[ [ NSValue valueWithCATransform3D:CATransform3DMakeTranslation(-5.0f, 0.0f, 0.0f) ], [ NSValue valueWithCATransform3D:CATransform3DMakeTranslation(5.0f, 0.0f, 0.0f) ] ] ;
