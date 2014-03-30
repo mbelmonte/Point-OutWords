@@ -352,9 +352,14 @@
     return UIInterfaceOrientationLandscapeLeft;
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+//- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+//{
+//	return toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft;
+//}
+
+-(BOOL)shouldAutorotate
 {
-	return toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft;
+    return NO;
 }
 
 - (void)didReceiveMemoryWarning
