@@ -293,12 +293,14 @@
 	CGPoint initialTouchPoint = [gesture locationInView:self.view];
 	PuzzlePieceView *touchedPiece = [self hitTest:initialTouchPoint];
     
-	CGRect currentRect=touchedPiece.frame;
-    currentRect.origin.x = initialTouchPoint.x - touchedPiece.frame.size.width/2;
-    currentRect.origin.y = initialTouchPoint.y - touchedPiece.frame.size.height/2;
-    [UIView animateWithDuration:0.1 animations:^(void) { touchedPiece.frame = currentRect; }];
-    
-    [self snapPieceToFinalPosition:touchedPiece];
+    if (_prefs.selectDistance != 0){
+        CGRect currentRect=touchedPiece.frame;
+        currentRect.origin.x = initialTouchPoint.x - touchedPiece.frame.size.width/2;
+        currentRect.origin.y = initialTouchPoint.y - touchedPiece.frame.size.height/2;
+        [UIView animateWithDuration:0.1 animations:^(void) { touchedPiece.frame = currentRect; }];
+        
+        [self snapPieceToFinalPosition:touchedPiece];
+    }
     
 	if (touchedPiece != nil && touchedPiece != _pieceTrackedByLoopDetector) {
 		[self.view bringSubviewToFront:touchedPiece];
@@ -324,10 +326,14 @@
 		
 		[self.view bringSubviewToFront:_draggedPiece];												// bring piece to front so it doesn't get stuck underneath other pieces
         
-        CGRect currentRect=_draggedPiece.frame;
-        currentRect.origin.x = initialTouchPoint.x - _draggedPiece.frame.size.width/2;
-        currentRect.origin.y = initialTouchPoint.y - _draggedPiece.frame.size.height/2;
-        [UIView animateWithDuration:0.1 animations:^(void) { _draggedPiece.frame = currentRect; }];
+        
+        if (_prefs.selectDistance != 0){
+            CGRect currentRect=_draggedPiece.frame;
+            currentRect.origin.x = initialTouchPoint.x - _draggedPiece.frame.size.width/2;
+            currentRect.origin.y = initialTouchPoint.y - _draggedPiece.frame.size.height/2;
+            [UIView animateWithDuration:0.1 animations:^(void) { _draggedPiece.frame = currentRect; }];
+        }
+        
 		
 		_pieceTouchedAtPoint = initialTouchPoint;
 		_lastLoggedPoint = initialTouchPoint;
