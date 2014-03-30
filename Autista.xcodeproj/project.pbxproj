@@ -567,6 +567,13 @@
 		8DF5E0B116B96DD3005D8154 /* PlaygroundSceneMusic.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 8DF5E0A716B96B57005D8154 /* PlaygroundSceneMusic.aifc */; };
 		8DFAE2F5166322A8004A9752 /* VUMeterTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFAE2F4166322A8004A9752 /* VUMeterTable.m */; };
 		8DFAE2F816632522004A9752 /* VULevelMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFAE2F716632522004A9752 /* VULevelMeter.m */; };
+		8F383EF318E77FB600627901 /* PraisePrefs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F383EF218E77FB600627901 /* PraisePrefs.plist */; };
+		8F383EF918E7802600627901 /* itunes_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F383EF418E7802600627901 /* itunes_icon.png */; };
+		8F383EFA18E7802600627901 /* play_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F383EF518E7802600627901 /* play_icon.png */; };
+		8F383EFB18E7802600627901 /* record_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F383EF618E7802600627901 /* record_icon.png */; };
+		8F383EFC18E7802600627901 /* record.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F383EF718E7802600627901 /* record.jpg */; };
+		8F383EFD18E7802600627901 /* record.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F383EF818E7802600627901 /* record.png */; };
+		8F57E53F18E7796F0099AD35 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F57E53E18E7796F0099AD35 /* MediaPlayer.framework */; };
 		8F741CF9189F3F5D0048329A /* PuzzleDataWithPhonetics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F741CF8189F3F5D0048329A /* PuzzleDataWithPhonetics.plist */; };
 		8FB1A923189D894C007A483F /* Instabug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB1A922189D894C007A483F /* Instabug.framework */; };
 		8FD692BE18AE7167008418E2 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD692B818AE7167008418E2 /* libTestFlight.a */; };
@@ -758,7 +765,7 @@
 		8D29073B16B83B5B00602997 /* Soap02O.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Soap02O.png; path = pieces/Soap02O.png; sourceTree = "<group>"; };
 		8D29073C16B83B5B00602997 /* Soap03A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Soap03A.png; path = pieces/Soap03A.png; sourceTree = "<group>"; };
 		8D29073D16B83B5B00602997 /* Soap04P.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Soap04P.png; path = pieces/Soap04P.png; sourceTree = "<group>"; };
-		8D35B8B2160611C50003A048 /* Scenes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Scenes.plist; sourceTree = "<group>"; };
+		8D35B8B2160611C50003A048 /* Scenes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Scenes.plist; path = ../Autista/Models/Scenes.plist; sourceTree = "<group>"; };
 		8D3A23CE167795F0005ADB1A /* BtnAutopilotOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BtnAutopilotOff.png; sourceTree = "<group>"; };
 		8D3A23CF167795F0005ADB1A /* BtnAutopilotOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BtnAutopilotOn.png; sourceTree = "<group>"; };
 		8D4BCA4216BA24C000A34EFD /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = Autista/Models/User.h; sourceTree = "<group>"; };
@@ -1194,6 +1201,13 @@
 		8DFAE2F4166322A8004A9752 /* VUMeterTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VUMeterTable.m; path = Autista/Audio/VUMeterTable.m; sourceTree = "<group>"; };
 		8DFAE2F616632522004A9752 /* VULevelMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VULevelMeter.h; path = Autista/Audio/VULevelMeter.h; sourceTree = "<group>"; };
 		8DFAE2F716632522004A9752 /* VULevelMeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VULevelMeter.m; path = Autista/Audio/VULevelMeter.m; sourceTree = "<group>"; };
+		8F383EF218E77FB600627901 /* PraisePrefs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PraisePrefs.plist; path = ../Autista/Models/PraisePrefs.plist; sourceTree = "<group>"; };
+		8F383EF418E7802600627901 /* itunes_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itunes_icon.png; sourceTree = "<group>"; };
+		8F383EF518E7802600627901 /* play_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_icon.png; sourceTree = "<group>"; };
+		8F383EF618E7802600627901 /* record_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = record_icon.png; sourceTree = "<group>"; };
+		8F383EF718E7802600627901 /* record.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = record.jpg; sourceTree = "<group>"; };
+		8F383EF818E7802600627901 /* record.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = record.png; sourceTree = "<group>"; };
+		8F57E53E18E7796F0099AD35 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		8F741CF8189F3F5D0048329A /* PuzzleDataWithPhonetics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PuzzleDataWithPhonetics.plist; path = Autista/Models/PuzzleDataWithPhonetics.plist; sourceTree = "<group>"; };
 		8FB1A922189D894C007A483F /* Instabug.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Instabug.framework; sourceTree = "<group>"; };
 		8FD692B818AE7167008418E2 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
@@ -1209,6 +1223,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F57E53F18E7796F0099AD35 /* MediaPlayer.framework in Frameworks */,
 				209C607B18333760004A2DF1 /* AdSupport.framework in Frameworks */,
 				00766406189D8880009FE8DE /* OpenEars.framework in Frameworks */,
 				209A8974181A00FA002FAF7C /* CoreTelephony.framework in Frameworks */,
@@ -1987,6 +2002,11 @@
 		8D893DF11634EDEC00E2A64A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				8F383EF418E7802600627901 /* itunes_icon.png */,
+				8F383EF518E7802600627901 /* play_icon.png */,
+				8F383EF618E7802600627901 /* record_icon.png */,
+				8F383EF718E7802600627901 /* record.jpg */,
+				8F383EF818E7802600627901 /* record.png */,
 				206BF210181964BF008E1F43 /* Button-Highlighted.png */,
 				206BF211181964BF008E1F43 /* Button-Normal.png */,
 				208CCFF0183CCBC100BADB44 /* Say na.png */,
@@ -2159,6 +2179,7 @@
 		8DA3DD161604C6E20031950A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8F57E53E18E7796F0099AD35 /* MediaPlayer.framework */,
 				8FB1A922189D894C007A483F /* Instabug.framework */,
 				007663FF189D8880009FE8DE /* OpenEars */,
 				209C607A18333760004A2DF1 /* AdSupport.framework */,
@@ -2210,6 +2231,7 @@
 		8DA3DD421604C6E20031950A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8F383EF218E77FB600627901 /* PraisePrefs.plist */,
 				8DA3DD211604C6E20031950A /* Autista-Info.plist */,
 				8DA3DD221604C6E20031950A /* InfoPlist.strings */,
 				8DA3DD251604C6E20031950A /* main.m */,
@@ -2767,6 +2789,7 @@
 				8DDE5C6A16B11DD400713427 /* Grapes.png in Resources */,
 				8DDE5C6B16B11DD400713427 /* GrapesPlaceHolder.png in Resources */,
 				8DDE5C6C16B11DD400713427 /* Mango.png in Resources */,
+				8F383EFB18E7802600627901 /* record_icon.png in Resources */,
 				2054BD731837332200DFFC44 /* BtnLockNormal.png in Resources */,
 				8DDE5C6D16B11DD400713427 /* MangoPlaceHolder.png in Resources */,
 				8DDE5C6E16B11DD400713427 /* Orange.png in Resources */,
@@ -2817,6 +2840,7 @@
 				8D54EB5D16B4C20900C52758 /* Water.png in Resources */,
 				8D54EB5E16B4C20900C52758 /* WaterPlaceHolder.png in Resources */,
 				8DB9FAA116B529D20030DC4C /* BathroomSceneSelector.png in Resources */,
+				8F383EFA18E7802600627901 /* play_icon.png in Resources */,
 				2054BD2A18364B9300DFFC44 /* Lollipop_Syll_1_a_Tanu.caf in Resources */,
 				8DB9FAA516B52A010030DC4C /* KitchenSceneSelector.png in Resources */,
 				8DB9FAA716B52A100030DC4C /* PicnicSceneSelector.png in Resources */,
@@ -2959,6 +2983,7 @@
 				8D8890AE16BD8DAB003FA187 /* ChocolatePlaceHolder.png in Resources */,
 				8D8890AF16BD8DAB003FA187 /* Gift.png in Resources */,
 				8D8890B016BD8DAB003FA187 /* GiftPlaceHolder.png in Resources */,
+				8F383EF918E7802600627901 /* itunes_icon.png in Resources */,
 				8D8890B216BD8DAB003FA187 /* Pencil.png in Resources */,
 				8D8890B316BD8DAB003FA187 /* PencilPlaceHolder.png in Resources */,
 				8D8890B416BD8DAB003FA187 /* Balloon01B.png in Resources */,
@@ -3042,6 +3067,7 @@
 				8D234A8B16C7422E0040DC14 /* Bucket05E.png in Resources */,
 				8D234A8C16C7422E0040DC14 /* Bucket06T.png in Resources */,
 				8D234A8D16C7422E0040DC14 /* Flower01F.png in Resources */,
+				8F383EFD18E7802600627901 /* record.png in Resources */,
 				8D234A8E16C7422E0040DC14 /* Flower02L.png in Resources */,
 				8D234A8F16C7422E0040DC14 /* Flower03O.png in Resources */,
 				2054BD0D18364B9300DFFC44 /* Bath_full_1_Tanu.caf in Resources */,
@@ -3054,6 +3080,7 @@
 				8D234A9616C7422E0040DC14 /* Girl04L.png in Resources */,
 				8D234A9816C7422E0040DC14 /* Happy01H.png in Resources */,
 				2054BD1118364B9300DFFC44 /* Potty_Syll_2_c_Tanu.caf in Resources */,
+				8F383EF318E77FB600627901 /* PraisePrefs.plist in Resources */,
 				8D234A9916C7422E0040DC14 /* Happy02A.png in Resources */,
 				8D234A9A16C7422E0040DC14 /* Happy03P.png in Resources */,
 				2054BD711837332200DFFC44 /* BtnFeedback.png in Resources */,
@@ -3065,6 +3092,7 @@
 				2054BD2218364B9300DFFC44 /* Cake_full_3_Tanu.caf in Resources */,
 				8D234A9F16C7422E0040DC14 /* Racket03C.png in Resources */,
 				8D234AA016C7422E0040DC14 /* Racket04K.png in Resources */,
+				8F383EFC18E7802600627901 /* record.jpg in Resources */,
 				8D234AA116C7422E0040DC14 /* Racket05E.png in Resources */,
 				8D234AA216C7422E0040DC14 /* Racket06T.png in Resources */,
 				8D234AA316C7422E0040DC14 /* Slide01S.png in Resources */,
@@ -3299,8 +3327,8 @@
 					"$(SRCROOT)/TestFlightSDK2.2.1",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "ED563DA4-A363-4934-8E98-57A15865847C";
+				PROVISIONING_PROFILE = "F28978EA-6661-4D61-893B-962B8D2C8651";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F28978EA-6661-4D61-893B-962B8D2C8651";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -3324,8 +3352,8 @@
 					"$(SRCROOT)/TestFlightSDK2.2.1",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "ED563DA4-A363-4934-8E98-57A15865847C";
+				PROVISIONING_PROFILE = "F28978EA-6661-4D61-893B-962B8D2C8651";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F28978EA-6661-4D61-893B-962B8D2C8651";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

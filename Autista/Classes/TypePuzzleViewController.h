@@ -22,7 +22,7 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
-
+#import <MediaPlayer/MediaPlayer.h>
 @class PuzzleObject;
 @class PuzzlePieceView;
 @class TypeBanner;
@@ -102,39 +102,27 @@
  *  Sounds to be played when puzzle finished
  */
 @property (nonatomic, retain) AVAudioPlayer *finishPrompt;
-
+@property MPMusicPlayerController *myPlayer;
 @property (nonatomic, retain) IBOutlet UIImageView *background;
 @property (nonatomic, retain) IBOutlet UIImageView *placeHolder;
 @property (nonatomic, retain) IBOutlet UIView *keyboard;
-
-/**-----------------------------------------------------------------------------
- * @name Properties
- * -----------------------------------------------------------------------------
- */
-/**
- *  <#Description#>
- *
- *  @param sender <#sender description#>
- */
-- (IBAction)playKeyClickSound:(id)sender;
-- (IBAction)handleKeyPressed:(id)sender;
 /**-----------------------------------------------------------------------------
  * @name Handling admin panel interations
- * -----------------------------------------------------------------------------
+ * -------------------d----------------------------------------------------------
  */
 /**
  *  <#Description#>
  *
  *  @param sender <#sender description#>
  */
-/**
- *
- */
+
 - (void)showAdminOverlay;
 - (IBAction)handleAdminButtonPressed:(id)sender;
 - (IBAction)handleAdminButtonReleased:(id)sender;
 
 - (IBAction)handleBackButtonPressed:(id)sender;
 - (IBAction)handleBackButtonReleased:(id)sender;
+- (IBAction)playKeyClickSound:(id)sender;
+- (IBAction)handleKeyPressed:(id)sender;
 
 @end

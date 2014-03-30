@@ -22,9 +22,11 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import <MediaPlayer/MediaPlayer.h>
 /**
  *  View controller handling puzzles in touch mode
  */
+
 @class PuzzleObject;
 @class PuzzlePieceView;
 @class GlobalPreferences;
@@ -79,6 +81,7 @@
 
 @property (nonatomic, retain) IBOutlet UIImageView *background;
 @property (nonatomic, retain) IBOutlet UIImageView *placeHolder;
+@property MPMusicPlayerController *myPlayer;
 
 /**-----------------------------------------------------------------------------
  * @name Handling admin panel interations
@@ -87,6 +90,8 @@
 /**
  */
 - (void)showAdminOverlay;
+
+
 - (IBAction)handleAdminButtonPressed:(id)sender;
 - (IBAction)handleAdminButtonReleased:(id)sender;
 
