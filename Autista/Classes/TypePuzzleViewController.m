@@ -52,14 +52,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
 	[self setupSounds];
 	
 	_prefs = [GlobalPreferences sharedGlobalPreferences];
 	_launchedInGuidedMode = _prefs.guidedModeEnabled;
     _backButtonPressed = NO;
     _puzzleComplete = NO;
-
+    
 	_loopDetectorCount = 0;
 	_pieces = [NSMutableArray array];
 	_keys = @[AKey, BKey, CKey, DKey, EKey, FKey, GKey, HKey, IKey, JKey, KKey, LKey, MKey, NKey, OKey, PKey, QKey, RKey, SKey, TKey, UKey, VKey, WKey, XKey, YKey, ZKey];
@@ -94,24 +94,24 @@
 {
 	[super viewDidAppear:animated];
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
-
+    
 	if (_adminVC != nil && _prefs.guidedModeEnabled == NO)											// Shashwat Parhi: if returning from Admin screen
-
-	//	[self dismissViewControllerAnimated:NO completion:nil];										// dismiss self, added on April 02, 2013 as per client request
-	
-	if (_launchedInGuidedMode == NO && _prefs.guidedModeEnabled == YES)								// most likely, admin changed this setting mid-stream
-		[self dismissViewControllerAnimated:NO completion:nil];										// so bail out
+        
+        //	[self dismissViewControllerAnimated:NO completion:nil];										// dismiss self, added on April 02, 2013 as per client request
+        
+        if (_launchedInGuidedMode == NO && _prefs.guidedModeEnabled == YES)								// most likely, admin changed this setting mid-stream
+            [self dismissViewControllerAnimated:NO completion:nil];										// so bail out
 }
 
 - (void)initializePuzzleState
 {
 	_placeHolder = [[UIImageView alloc] initWithImage:[UIImage imageWithData:_object.placeholderImage]];
 	_placeHolder.center = CGPointMake(512, 384);
-
+    
 	[self.view addSubview:_placeHolder];
 	
 	[self slideOutKeyboard];
-
+    
 	NSString *title = [_object.title uppercaseString];
 	
 	for (int i = 0; i < title.length; i++) {
@@ -151,7 +151,7 @@
 {
 	NSString *title = [_object.title uppercaseString];
 	UIButton *expectedButton = [self buttonFromASCIICode:[title characterAtIndex:_currentLetterPosition]];
-
+    
 	if (sender == expectedButton)																	// Shashwat Parhi: disabled key press sound on April 15, 2013
 		[_keyClickSound play];																		// for wrong key, as per client request
 }
@@ -327,12 +327,12 @@
 {
 	NSString *title = [_object.title uppercaseString];
 	UIButton *expectedButton = [self buttonFromASCIICode:[title characterAtIndex:_currentLetterPosition]];
-
+    
 	PuzzlePieceView *piece = [_pieces objectAtIndex:_currentLetterPosition];
 	CGRect frame = piece.frame;
 	
     if (_puzzleComplete) return;
-
+    
 	if (sender == expectedButton) {
 		frame.origin = piece.finalPoint;
 		
@@ -507,7 +507,7 @@
                 MPMediaQuery *mediaTypeQuery = [[MPMediaQuery alloc] initWithFilterPredicates:predicateSet];
                 [_myPlayer setQueueWithQuery:mediaTypeQuery];
                 [_myPlayer play];
-                 [self performSelector:@selector(stopPlaying) withObject:nil afterDelay:3];
+                [self performSelector:@selector(stopPlaying) withObject:nil afterDelay:3];
                 break;
             }
                 
@@ -581,7 +581,7 @@
 	
 	[[EventLogger sharedLogger] logAttemptForPuzzle:_object inMode:PuzzleModeType state:state];
 	[[EventLogger sharedLogger] logEvent:LogEventCodePuzzleCompleted eventInfo:@{@"status": status}];
-
+    
 	GlobalPreferences *prefs = [GlobalPreferences sharedGlobalPreferences];
 	if (prefs.guidedModeEnabled == NO)
 		[self dismissViewControllerAnimated:YES completion:nil];
@@ -609,7 +609,7 @@
 						 _keyboard.frame = CGRectOffset(frame, 0, -height);
 					 }
 					 completion:nil
-	];
+     ];
 	
 	[UIView animateWithDuration:0.5
 						  delay:0.75
@@ -656,40 +656,40 @@
 		CGFloat offsetY = arc4random() % (int)(innerRect.size.height);
 		
 		CGRect pieceRect = CGRectMake(offsetX, offsetY, pieceWidth, pieceHeight);
-       
+        
         NSLog(@"the originX of the keyboard=%f",_keyboard.frame.origin.x);
         NSLog(@"the originY of the keyboard=%f",_keyboard.frame.origin.y);
-
+        
         //CGRect newFrame=CGRectMake(512+_keyboard.frame.origin.x, 384+_keyboard.frame.origin.y, _keyboard.frame.size.width,_keyboard.frame.size.height);//offset the keyboard to the current screen position..
         
         //|| CGRectIntersectsRect(_placeHolder.frame, pieceRect) == YES
         
 		if (CGRectContainsRect (innerRect, pieceRect) == NO || CGRectIntersectsRect(_keyboard.frame, pieceRect) == YES )// detect whether the pieces are on the screen......
 			continue;//if the pieceRect is on the main screen, then re create one......
-					
-//		int j = 0;
-//		BOOL intersects = NO;
-//		
-//		while (j < i && intersects == NO) {													// check if we are intersection any of the earlier pieces
-//			UIView *bPiece = [_pieces objectAtIndex:j];
-//			
-//			if (CGRectIntersectsRect(pieceRect, bPiece.frame) == YES)
-//				intersects = YES;
-//			else j++;
-//		}
-//		
-//		if (intersects == YES)
-//			continue;
+        
+        //		int j = 0;
+        //		BOOL intersects = NO;
+        //
+        //		while (j < i && intersects == NO) {													// check if we are intersection any of the earlier pieces
+        //			UIView *bPiece = [_pieces objectAtIndex:j];
+        //
+        //			if (CGRectIntersectsRect(pieceRect, bPiece.frame) == YES)
+        //				intersects = YES;
+        //			else j++;
+        //		}
+        //
+        //		if (intersects == YES)
+        //			continue;
 		
 		pieceFrame.origin = CGPointMake(offsetX, offsetY);
 		aPiece.frame = pieceFrame;
 		i++;
 	}
-// if all the pieces are outside the screen and do not intersct with each other...........
+    // if all the pieces are outside the screen and do not intersct with each other...........
 	for (UIView *piece in _pieces)
     {
 		//piece.frame = CGRectOffset(piece.frame, -512, -384);//move all the pieces to origin(0,0)
-    //add gesture to all the pieces..
+        //add gesture to all the pieces..
         UITapGestureRecognizer *tap =
         [[UITapGestureRecognizer alloc] initWithTarget:self
                                                 action:@selector(remindAnimation:)];
@@ -712,7 +712,7 @@
     
     //add text to pieces...
     [self addCharacterOnPuzzlePiece];
-
+    
 }
 
 -(void)addCharacterOnPuzzlePiece
@@ -725,7 +725,7 @@
         UIImageView *charBackground = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"KeyboardButton.png"] ];
         charBackground.contentMode = UIViewContentModeScaleAspectFill;
         charBackground.frame = CGRectMake(((UIView *)[_pieces objectAtIndex:i]).frame.size.width/2-20, ((UIView*)[_pieces objectAtIndex:i]).frame.size.height/2-20, 40, 40);
-
+        
         
         //set up the text, location, color and font
         UILabel *fontLable = [[UILabel alloc] init];
@@ -744,28 +744,37 @@
 
 #pragma mark - pieces Gesture method
 - (void)remindAnimation:(UIGestureRecognizer *)recognizer {
-    
-    [((UIButton *)[self buttonFromASCIICode:[[_object.title uppercaseString] characterAtIndex:_currentLetterPosition]]) setBackgroundImage: [UIImage imageNamed:@"KeyboardButton_hightlighted"] forState:UIControlStateNormal];
-    
-    //set up animation
-    CAKeyframeAnimation * anim = [ CAKeyframeAnimation animationWithKeyPath:@"transform" ] ;
-    anim.values = @[ [ NSValue valueWithCATransform3D:CATransform3DMakeTranslation(-5.0f, 0.0f, 0.0f) ], [ NSValue valueWithCATransform3D:CATransform3DMakeTranslation(5.0f, 0.0f, 0.0f) ] ] ;
-    anim.autoreverses = YES ;
-    anim.repeatCount = 4.0f ;
-    anim.duration = 0.07f ;
-    
-    
-    //animate the corresponding key on the keyboard
-   [[self buttonFromASCIICode:[[_object.title uppercaseString] characterAtIndex:_currentLetterPosition]].layer addAnimation:anim forKey:nil];
-    
-    CAKeyframeAnimation * anim1 = [ CAKeyframeAnimation animationWithKeyPath:@"transform" ] ;
-    anim1.values = @[ [ NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0f, 1.0f, 1.0f)], [ NSValue valueWithCATransform3D:CATransform3DMakeScale(1.5f, 1.5f, 1.0f) ]];
-    anim1.autoreverses = NO ;
-    anim1.repeatCount = 4;
-    anim1.duration = 0.07f ;
-    
-    [[self buttonFromASCIICode:[[_object.title uppercaseString] characterAtIndex:_currentLetterPosition]].layer addAnimation:anim1 forKey:nil];
-    [self performSelector:@selector(changeBGColorBack)withObject:nil afterDelay:0.56];
+    CGPoint touchPoint = [recognizer locationInView:self.view];
+    for ( UIView *piece in _pieces) {
+        
+        if (CGRectContainsPoint(piece.frame, touchPoint)) {
+            
+            [((UIButton *)[self buttonFromASCIICode:[[_object.title uppercaseString] characterAtIndex:_currentLetterPosition]]) setBackgroundImage: [UIImage imageNamed:@"KeyboardButton_hightlighted"] forState:UIControlStateNormal];
+            
+            //set up animation
+            CAKeyframeAnimation * anim = [ CAKeyframeAnimation animationWithKeyPath:@"transform" ] ;
+            anim.values = @[ [ NSValue valueWithCATransform3D:CATransform3DMakeTranslation(-5.0f, 0.0f, 0.0f) ], [ NSValue valueWithCATransform3D:CATransform3DMakeTranslation(5.0f, 0.0f, 0.0f) ] ] ;
+            anim.autoreverses = YES ;
+            anim.repeatCount = 4.0f ;
+            anim.duration = 0.07f ;
+            
+            
+            //animate the corresponding key on the keyboard
+            [[self buttonFromASCIICode:[[_object.title uppercaseString] characterAtIndex:_currentLetterPosition]].layer addAnimation:anim forKey:nil];
+            
+            CAKeyframeAnimation * anim1 = [ CAKeyframeAnimation animationWithKeyPath:@"transform" ] ;
+            anim1.values = @[ [ NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0f, 1.0f, 1.0f)], [ NSValue valueWithCATransform3D:CATransform3DMakeScale(1.5f, 1.5f, 1.0f) ]];
+            anim1.autoreverses = NO ;
+            anim1.repeatCount = 4;
+            anim1.duration = 0.07f ;
+            
+            [[self buttonFromASCIICode:[[_object.title uppercaseString] characterAtIndex:_currentLetterPosition]].layer addAnimation:anim1 forKey:nil];
+            [self performSelector:@selector(changeBGColorBack)withObject:nil afterDelay:0.56];
+            
+            
+            break;
+        }
+    }
 }
 
 -(void)changeBGColorBack
@@ -815,7 +824,7 @@
 - (void)showBackOverlay
 {
     [TestFlight passCheckpoint:@"Back button Tapped in Type mode"];
-
+    
 	[_backOverlayTimer invalidate];
 	_backButtonPressed = YES;
 	[self performSelector:@selector(delayedDismissSelf) withObject:nil afterDelay:0];
