@@ -4,7 +4,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/TypePuzzleViewController</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">View controller handling puzzles in type mode</Abstract>
 			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
             
 			
@@ -50,7 +50,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/setPieces:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Puzzle pieces</Abstract>
 			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, retain) NSMutableArray *pieces</Declaration>
@@ -62,7 +62,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/pieces</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Puzzle pieces</Abstract>
 			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, retain) NSMutableArray *pieces</Declaration>
@@ -74,7 +74,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/TypePuzzleViewController/pieces</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Puzzle pieces</Abstract>
 			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, retain) NSMutableArray *pieces</Declaration>
@@ -86,7 +86,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/setFinishPrompt:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Sounds to be played when puzzle finished</Abstract>
 			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, retain) AVAudioPlayer *finishPrompt</Declaration>
@@ -98,7 +98,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/finishPrompt</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Sounds to be played when puzzle finished</Abstract>
 			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, retain) AVAudioPlayer *finishPrompt</Declaration>
@@ -110,7 +110,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/TypePuzzleViewController/finishPrompt</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Sounds to be played when puzzle finished</Abstract>
 			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, retain) AVAudioPlayer *finishPrompt</Declaration>
@@ -230,11 +230,16 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/playKeyClickSound:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">&lt;#Description#&gt;</Abstract>
 			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
 			
 			<Declaration>- (IBAction)playKeyClickSound:(id)sender</Declaration>
-			
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">&lt;#sender description#&gt;</Abstract>
+				</Parameter>
+			</Parameters>
 			
 			<Anchor>//api/name/playKeyClickSound:</Anchor>
             <NodeRef refid="57"/>
@@ -249,6 +254,18 @@
 			
 			
 			<Anchor>//api/name/handleKeyPressed:</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/showAdminOverlay</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)showAdminOverlay</Declaration>
+			
+			
+			<Anchor>//api/name/showAdminOverlay</Anchor>
             <NodeRef refid="57"/>
 		</Token>
 		
@@ -585,18 +602,6 @@
 			
 			
 			<Anchor>//api/name/showBackOverlay</Anchor>
-            <NodeRef refid="57"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/showAdminOverlay</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
-			
-			<Declaration>- (void)showAdminOverlay</Declaration>
-			
-			
-			<Anchor>//api/name/showAdminOverlay</Anchor>
             <NodeRef refid="57"/>
 		</Token>
 		

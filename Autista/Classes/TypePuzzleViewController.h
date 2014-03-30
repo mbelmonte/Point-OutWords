@@ -30,7 +30,9 @@
 @class SoundEffect;
 @class AdminViewController;
 
-
+/**
+ *  View controller handling puzzles in type mode
+ */
 @interface TypePuzzleViewController : UIViewController {
 	GlobalPreferences *_prefs;
 	BOOL _launchedInGuidedMode;
@@ -84,20 +86,54 @@
     NSTimer *_backOverlayTimer;
 	AdminViewController *_adminVC;
 }
-
+/**-----------------------------------------------------------------------------
+ * @name Properties
+ * -----------------------------------------------------------------------------
+ */
+/**
+ *
+ */
 @property (nonatomic, retain) PuzzleObject *object;
+/**
+ *  Puzzle pieces
+ */
 @property (nonatomic, retain) NSMutableArray *pieces;
+/**
+ *  Sounds to be played when puzzle finished
+ */
 @property (nonatomic, retain) AVAudioPlayer *finishPrompt;
 
 @property (nonatomic, retain) IBOutlet UIImageView *background;
 @property (nonatomic, retain) IBOutlet UIImageView *placeHolder;
 @property (nonatomic, retain) IBOutlet UIView *keyboard;
 
+/**-----------------------------------------------------------------------------
+ * @name Properties
+ * -----------------------------------------------------------------------------
+ */
+/**
+ *  <#Description#>
+ *
+ *  @param sender <#sender description#>
+ */
 - (IBAction)playKeyClickSound:(id)sender;
 - (IBAction)handleKeyPressed:(id)sender;
-
+/**-----------------------------------------------------------------------------
+ * @name Handling admin panel interations
+ * -----------------------------------------------------------------------------
+ */
+/**
+ *  <#Description#>
+ *
+ *  @param sender <#sender description#>
+ */
+/**
+ *
+ */
+- (void)showAdminOverlay;
 - (IBAction)handleAdminButtonPressed:(id)sender;
 - (IBAction)handleAdminButtonReleased:(id)sender;
+
 - (IBAction)handleBackButtonPressed:(id)sender;
 - (IBAction)handleBackButtonReleased:(id)sender;
 
