@@ -85,6 +85,9 @@
 @property (nonatomic, retain) AVPlayerItem * firstSyllItem;
 @property (nonatomic, retain) IBOutlet UIImageView *background;
 @property (nonatomic, retain) IBOutlet UIImageView *placeHolder;
+@property (strong, nonatomic) IBOutlet UILabel *recognizerFeedback;
+
+
 
 @property MPMusicPlayerController *myPlayer;
 

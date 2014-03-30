@@ -541,7 +541,9 @@
                      */
                     
                     //Suspend Recognition to prevent the recognizer from system sound interruption
-                    [pocketsphinxController suspendRecognition];
+                    if ([_syllables count] != 1){
+                        [pocketsphinxController suspendRecognition];
+                    }
                     syllableSound.delegate = self;
                     [syllableSound play];
                 }
@@ -561,7 +563,9 @@
 - (void)resumeRecognition{
     //Resume Recognition
     //[NSThread sleepForTimeInterval:0.5];
-    [pocketsphinxController resumeRecognition];
+    if ([_syllables count] != 1){
+        [pocketsphinxController resumeRecognition];
+    }
 }
 
 - (void)advanceToNextSyllable
@@ -881,34 +885,46 @@
 
 - (void) pocketsphinxDidStartCalibration {
 	NSLog(@"Pocketsphinx calibration has started.");
+    _recognizerFeedback.text = @"Please Wait...";
 }
 
 - (void) pocketsphinxDidCompleteCalibration {
 	NSLog(@"Pocketsphinx calibration is complete.");
+    //_recognizerFeedback.text = @"Calibration";
 }
 
 - (void) pocketsphinxDidStartListening {
 	NSLog(@"Pocketsphinx is now listening.");
+    if (_currentSyllable != [_syllables count]){
+		_recognizerFeedback.text = @"Speak Now";
+    }
 }
 
 - (void) pocketsphinxDidDetectSpeech {
 	NSLog(@"Pocketsphinx has detected speech.");
+    if (_currentSyllable != [_syllables count]){
+		_recognizerFeedback.text = @"Speech Detected";
+    }
 }
 
 - (void) pocketsphinxDidDetectFinishedSpeech {
 	NSLog(@"Pocketsphinx has detected a period of silence, concluding an utterance.");
+    //_recognizerFeedback.text = @"";
 }
 
 - (void) pocketsphinxDidStopListening {
 	NSLog(@"Pocketsphinx has stopped listening.");
+    //_recognizerFeedback.text = @"";
 }
 
 - (void) pocketsphinxDidSuspendRecognition {
 	NSLog(@"Pocketsphinx has suspended recognition.");
+    //_recognizerFeedback.text = @"Suspended";
 }
 
 - (void) pocketsphinxDidResumeRecognition {
 	NSLog(@"Pocketsphinx has resumed recognition.");
+    //_recognizerFeedback.text = @"Resumed";
 }
 
 - (void) pocketsphinxDidChangeLanguageModelToFile:(NSString *)newLanguageModelPathAsString andDictionary:(NSString *)newDictionaryPathAsString {
@@ -917,6 +933,7 @@
 
 - (void) pocketSphinxContinuousSetupDidFail { // This can let you know that something went wrong with the recognition loop startup. Turn on OPENEARSLOGGING to learn why.
 	NSLog(@"Setting up the continuous recognition loop has failed for some reason, please turn on OpenEarsLogging to learn more.");
+    _recognizerFeedback.text = @"Set up failed";
 }
 - (void) testRecognitionCompleted {
 	NSLog(@"A test file that was submitted for recognition is now complete.");

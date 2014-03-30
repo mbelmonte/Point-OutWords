@@ -1606,7 +1606,7 @@
                                     <action selector="handleBackButtonReleased:" destination="mFE-Pu-xx9" eventType="touchUpInside" id="sjV-Tc-iVL"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* Use in a quiet environment. * Right now we test only for loudness. We hope to integrate speech recognition soon." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XVw-0N-z5r">
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* Use in a quiet environment. * Right now we test only for loudness. We hope to integrate speech recognition soon." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XVw-0N-z5r">
                                 <rect key="frame" x="32" y="724" width="399" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
@@ -1624,6 +1624,13 @@
                                 <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Iwf-pX-H1z">
+                                <rect key="frame" x="768" y="435" width="236" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -1633,6 +1640,7 @@
                     <connections>
                         <outlet property="background" destination="dP2-nw-GrJ" id="leI-wm-Oui"/>
                         <outlet property="placeHolder" destination="y32-MQ-wq5" id="o4G-dt-Mgs"/>
+                        <outlet property="recognizerFeedback" destination="Iwf-pX-H1z" id="ygw-v3-6Qz"/>
                         <outlet property="sayNa" destination="ZMH-nL-PUZ" id="H3U-tj-nKN"/>
                         <outlet property="syllLabel" destination="4fu-0A-4xh" id="09x-ir-wgn"/>
                         <outlet property="titleLabel" destination="ssr-Xh-CS8" id="SLV-ZS-Sjj"/>
