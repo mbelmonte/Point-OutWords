@@ -657,7 +657,7 @@
                 
                 NSMutableArray* recordFilePathArray =  [[NSMutableArray alloc]initWithArray:[plistDict objectForKey:@"RecordedPraise"]];
                 NSString *playURL= [recordFilePathArray objectAtIndex:0];
-                    playURL = @"";
+                    playURL = [recordFilePathArray objectAtIndex:3];
                 if ([_object.difficultySpeak doubleValue] < 10)
                     playURL= [recordFilePathArray objectAtIndex:2];
                 else if ([_object.difficultySpeak doubleValue] > 12)

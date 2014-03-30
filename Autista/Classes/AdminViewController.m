@@ -58,6 +58,7 @@
 
 @property NSArray *recordPlayBtnArray;
 @property NSArray *itunesPlayBtnArray;
+@property  UIActivityIndicatorView *indicator;
 @end
 
 @implementation AdminViewController
@@ -538,7 +539,15 @@
 {
     UIButton *currentBtn = (UIButton *)sender;
     self.currentSelection = currentBtn.tag;
-    ((UIButton *)[self.recordPlayBtnArray objectAtIndex:currentBtn.tag]).hidden = YES;
+    ((UIButton *)[self.recordPlayBtnArray objectAtIndex:currentBtn.tag]).hidden = NO;
+    self.indicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
+    CGRect currentFrame =  self.indicator.frame;
+    currentFrame.origin.y= 0.5*((UIButton *)[self.recordPlayBtnArray objectAtIndex:currentBtn.tag]).frame.size.height - currentFrame.size.height*0.5 ;
+     currentFrame.origin.x= 0.5*((UIButton *)[self.recordPlayBtnArray objectAtIndex:currentBtn.tag]).frame.size.width - currentFrame.size.width*0.5 ;
+    self.indicator.frame = currentFrame;
+    [((UIButton *)[self.recordPlayBtnArray objectAtIndex:currentBtn.tag]) setImage:nil forState:UIControlStateNormal];
+    [((UIButton *)[self.recordPlayBtnArray objectAtIndex:currentBtn.tag]) addSubview:self.indicator];
+    [self.indicator startAnimating];
     
     [self startRecordingWith:currentBtn.tag];
     
@@ -654,7 +663,7 @@
     }
     
     // start recording
-    [recorder recordForDuration:(NSTimeInterval) 3];
+    [recorder recordForDuration:(NSTimeInterval) 1.5];
     if ([praiseFileLabelArrayForPlist objectAtIndex:index]) {
         [praiseFileLabelArrayForPlist removeObjectAtIndex:index];
     }
@@ -665,8 +674,9 @@
 
 - (void)audioRecorderDidFinishRecording:(AVAudioRecorder *) aRecorder successfully:(BOOL)flag
 {
-    ((UIButton *)[self.recordPlayBtnArray objectAtIndex:self.currentSelection]).hidden = NO;
-    
+    [((UIActivityIndicatorView *)[((UIButton *)[self.recordPlayBtnArray objectAtIndex:self.currentSelection]).subviews lastObject]) stopAnimating];
+    [((UIActivityIndicatorView *)[((UIButton *)[self.recordPlayBtnArray objectAtIndex:self.currentSelection]).subviews lastObject]) removeFromSuperview];
+    [((UIButton *)[self.recordPlayBtnArray objectAtIndex:self.currentSelection]) setImage:[UIImage imageNamed:@"play_icon.png"] forState:UIControlStateNormal];
 }
 
 
