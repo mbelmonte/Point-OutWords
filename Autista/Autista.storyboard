@@ -299,7 +299,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view hidden="YES" contentMode="scaleToFill" id="Zww-41-Xxo">
+                            <view hidden="YES" contentMode="scaleToFill" id="Zww-41-Xxo" userLabel="Keyboard View">
                                 <rect key="frame" x="0.0" y="548" width="1024" height="220"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>

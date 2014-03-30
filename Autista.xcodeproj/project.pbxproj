@@ -765,7 +765,7 @@
 		8D29073B16B83B5B00602997 /* Soap02O.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Soap02O.png; path = pieces/Soap02O.png; sourceTree = "<group>"; };
 		8D29073C16B83B5B00602997 /* Soap03A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Soap03A.png; path = pieces/Soap03A.png; sourceTree = "<group>"; };
 		8D29073D16B83B5B00602997 /* Soap04P.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Soap04P.png; path = pieces/Soap04P.png; sourceTree = "<group>"; };
-		8D35B8B2160611C50003A048 /* Scenes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Scenes.plist; sourceTree = "<group>"; };
+		8D35B8B2160611C50003A048 /* Scenes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Scenes.plist; path = ../Autista/Models/Scenes.plist; sourceTree = "<group>"; };
 		8D3A23CE167795F0005ADB1A /* BtnAutopilotOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BtnAutopilotOff.png; sourceTree = "<group>"; };
 		8D3A23CF167795F0005ADB1A /* BtnAutopilotOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BtnAutopilotOn.png; sourceTree = "<group>"; };
 		8D4BCA4216BA24C000A34EFD /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = Autista/Models/User.h; sourceTree = "<group>"; };
@@ -1201,7 +1201,7 @@
 		8DFAE2F4166322A8004A9752 /* VUMeterTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VUMeterTable.m; path = Autista/Audio/VUMeterTable.m; sourceTree = "<group>"; };
 		8DFAE2F616632522004A9752 /* VULevelMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VULevelMeter.h; path = Autista/Audio/VULevelMeter.h; sourceTree = "<group>"; };
 		8DFAE2F716632522004A9752 /* VULevelMeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VULevelMeter.m; path = Autista/Audio/VULevelMeter.m; sourceTree = "<group>"; };
-		8F383EF218E77FB600627901 /* PraisePrefs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PraisePrefs.plist; sourceTree = "<group>"; };
+		8F383EF218E77FB600627901 /* PraisePrefs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PraisePrefs.plist; path = ../Autista/Models/PraisePrefs.plist; sourceTree = "<group>"; };
 		8F383EF418E7802600627901 /* itunes_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itunes_icon.png; sourceTree = "<group>"; };
 		8F383EF518E7802600627901 /* play_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_icon.png; sourceTree = "<group>"; };
 		8F383EF618E7802600627901 /* record_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = record_icon.png; sourceTree = "<group>"; };
