@@ -96,6 +96,7 @@
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
 
 	if (_adminVC != nil && _prefs.guidedModeEnabled == NO)											// Shashwat Parhi: if returning from Admin screen
+
 	//	[self dismissViewControllerAnimated:NO completion:nil];										// dismiss self, added on April 02, 2013 as per client request
 	
 	if (_launchedInGuidedMode == NO && _prefs.guidedModeEnabled == YES)								// most likely, admin changed this setting mid-stream
@@ -411,7 +412,7 @@
     
     if (_prefs.praisePromptEnabled == YES){
         NSLog(@"Difficulty Level of the object %@ for Touch mode is : %@", _object.title, _object.difficultySpeak);
-        NSDictionary *plistDict = [self readFromPlsit];
+        NSDictionary *plistDict = [self readFromPlist];
         int currentPromptIndex = [((NSNumber *)[plistDict objectForKey:@"PromptPrefs"]) intValue];
         switch (currentPromptIndex) {
             case 0:
@@ -499,7 +500,7 @@
     [_myPlayer stop];
 }
 
--(NSDictionary *)readFromPlsit
+-(NSDictionary *)readFromPlist
 {
     NSArray *paths = NSSearchPathForDirectoriesInDomains (NSDocumentDirectory, NSUserDomainMask, YES);
 	// get documents path

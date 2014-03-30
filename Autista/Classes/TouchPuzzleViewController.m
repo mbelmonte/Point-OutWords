@@ -494,7 +494,7 @@
     
     if (_prefs.praisePromptEnabled == YES){
         NSLog(@"Difficulty Level of the object %@ for Touch mode is : %@", _object.title, _object.difficultySpeak);
-        NSDictionary *plistDict = [self readFromPlsit];
+        NSDictionary *plistDict = [self readFromPlist];
         int currentPromptIndex = [((NSNumber *)[plistDict objectForKey:@"PromptPrefs"]) intValue];
         switch (currentPromptIndex) {
             case 0:
@@ -582,7 +582,7 @@
     [_myPlayer stop];
 }
 
--(NSDictionary *)readFromPlsit
+-(NSDictionary *)readFromPlist
 {
     NSArray *paths = NSSearchPathForDirectoriesInDomains (NSDocumentDirectory, NSUserDomainMask, YES);
 	// get documents path

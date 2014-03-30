@@ -26,6 +26,8 @@
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
 	
 	
 	
@@ -123,10 +125,22 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
 
 
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Properties">Properties</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Handling admin panel interations">Handling admin panel interations</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Handling sound effects">Handling sound effects</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Handling gestures">Handling gestures</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Puzzle piece handling">Puzzle piece handling</a></span></li>
 	
 </ul></li>
 
@@ -248,6 +262,14 @@
                     
                     
 					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>View controller handling puzzles in touch mode</p>
+					</div>
+					
+					
+					
 					
 					
 					<div class="section section-tasks">
@@ -255,8 +277,8 @@
 						<h2 class="subtitle subtitle-tasks">Tasks</h2>
 						
 						
-						
-						<h3 class="subsubtitle task-title">Other Methods</h3>
+						<a title="Properties" name="task_Properties"></a>
+						<h3 class="subsubtitle task-title">Properties</h3>
 
 						<ul class="task-list">
 							<li>
@@ -289,6 +311,20 @@
 	</span>
 	<span class="task-item-suffix">property</span>
 	
+</li>
+						</ul>
+						
+						
+						<a title="Handling admin panel interations" name="task_Handling admin panel interations"></a>
+						<h3 class="subsubtitle task-title">Handling admin panel interations</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/showAdminOverlay">&ndash;&nbsp;showAdminOverlay</a></code>
+	</span>
+	
+	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/handleAdminButtonPressed:">&ndash;&nbsp;handleAdminButtonPressed:</a></code>
@@ -313,29 +349,9 @@
 	</span>
 	
 	
-</li>
-						</ul>
-						
-						
-						
-						<h3 class="subsubtitle task-title">Other Methods</h3>
-
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/initWithNibName:bundle:">&ndash;&nbsp;initWithNibName:bundle:</a></code>
-	</span>
-	
-	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/viewDidLoad">&ndash;&nbsp;viewDidLoad</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/viewDidAppear:">&ndash;&nbsp;viewDidAppear:</a></code>
+		<code><a href="#//api/name/showBackOverlay">&ndash;&nbsp;showBackOverlay</a></code>
 	</span>
 	
 	
@@ -351,7 +367,15 @@
 	</span>
 	
 	
-</li><li>
+</li>
+						</ul>
+						
+						
+						<a title="Handling sound effects" name="task_Handling sound effects"></a>
+						<h3 class="subsubtitle task-title">Handling sound effects</h3>
+
+						<ul class="task-list">
+							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/setupSounds">&ndash;&nbsp;setupSounds</a></code>
 	</span>
@@ -389,6 +413,20 @@
 	
 </li><li>
 	<span class="tooltip">
+		<code><a href="#//api/name/playObjectTitleSound">&ndash;&nbsp;playObjectTitleSound</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Handling gestures" name="task_Handling gestures"></a>
+						<h3 class="subsubtitle task-title">Handling gestures</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
 		<code><a href="#//api/name/handleTapGesture:">&ndash;&nbsp;handleTapGesture:</a></code>
 	</span>
 	
@@ -396,6 +434,20 @@
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/handlePanGesture:">&ndash;&nbsp;handlePanGesture:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Puzzle piece handling" name="task_Puzzle piece handling"></a>
+						<h3 class="subsubtitle task-title">Puzzle piece handling</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/presentPuzzleCompletionAnimation">&ndash;&nbsp;presentPuzzleCompletionAnimation</a></code>
 	</span>
 	
 	
@@ -419,25 +471,7 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/presentPuzzleCompletionAnimation">&ndash;&nbsp;presentPuzzleCompletionAnimation</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
 		<code><a href="#//api/name/promptAndFinish">&ndash;&nbsp;promptAndFinish</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/playObjectTitleSound">&ndash;&nbsp;playObjectTitleSound</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/delayedDismissSelf">&ndash;&nbsp;delayedDismissSelf</a></code>
 	</span>
 	
 	
@@ -449,13 +483,33 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/showBackOverlay">&ndash;&nbsp;showBackOverlay</a></code>
+		<code><a href="#//api/name/delayedDismissSelf">&ndash;&nbsp;delayedDismissSelf</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithNibName:bundle:">&ndash;&nbsp;initWithNibName:bundle:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/showAdminOverlay">&ndash;&nbsp;showAdminOverlay</a></code>
+		<code><a href="#//api/name/viewDidLoad">&ndash;&nbsp;viewDidLoad</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewDidAppear:">&ndash;&nbsp;viewDidAppear:</a></code>
 	</span>
 	
 	
@@ -506,10 +560,35 @@
 	<h3 class="subsubtitle method-title">finishPrompt</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Sound to be played when puzzle finished</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) AVAudioPlayer *finishPrompt</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TouchPuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -517,10 +596,31 @@
 	<h3 class="subsubtitle method-title">object</h3>
 	
 	
+	
+    
 
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) PuzzleObject *object</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TouchPuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -528,10 +628,35 @@
 	<h3 class="subsubtitle method-title">pieces</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Array of all puzzle pieces.</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSMutableArray *pieces</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TouchPuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -560,10 +685,35 @@
 	<h3 class="subsubtitle method-title">checkPuzzleState</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Check if a puzzle is completed</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)checkPuzzleState</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TouchPuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -615,10 +765,35 @@
 	<h3 class="subsubtitle method-title">handleBackButtonPressed:</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Handling back button</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (IBAction)handleBackButtonPressed:(id)<em>sender</em></code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TouchPuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -648,10 +823,31 @@
 	<h3 class="subsubtitle method-title">handleTapGesture:</h3>
 	
 	
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)handleTapGesture:(UITapGestureRecognizer *)<em>gesture</em></code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TouchPuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -659,10 +855,50 @@
 	<h3 class="subsubtitle method-title">hitTest:</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Hit test to determine the puzzle piece touched</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (PuzzlePieceView *)hitTest:(CGPoint)<em>touchPoint</em></code></div>
 
     
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>touchPoint</em></dt>
+			<dd><p>point touched</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>puzzle piece</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TouchPuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -769,10 +1005,35 @@
 	<h3 class="subsubtitle method-title">presentPuzzleCompletionAnimation</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Show animation when puzzle complete</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)presentPuzzleCompletionAnimation</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TouchPuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -802,10 +1063,35 @@
 	<h3 class="subsubtitle method-title">setupSounds</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Setup sound effects</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)setupSounds</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TouchPuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -824,10 +1110,31 @@
 	<h3 class="subsubtitle method-title">showAdminOverlay</h3>
 	
 	
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)showAdminOverlay</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TouchPuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -846,10 +1153,45 @@
 	<h3 class="subsubtitle method-title">snapPieceToFinalPosition:</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Snap the puzzle piece to the correct position</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)snapPieceToFinalPosition:(PuzzlePieceView *)<em>piece</em></code></div>
 
     
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>piece</em></dt>
+			<dd><p>the puzzle piece to be snapped</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TouchPuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -857,10 +1199,50 @@
 	<h3 class="subsubtitle method-title">suggestSuitableFrameForPiece:</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Suggest a frame for the puzzle piece</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (CGRect)suggestSuitableFrameForPiece:(UIView *)<em>piece</em></code></div>
 
     
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>piece</em></dt>
+			<dd><p>puzzle piece</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>a frame based on the puzzle piece&rsquo;s coodination</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TouchPuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -900,7 +1282,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 Company Name. All rights reserved. (Last updated: 2014-03-28)</span><br />
+						<p><span class="copyright">&copy; 2014 Company Name. All rights reserved. (Last updated: 2014-03-29)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						
