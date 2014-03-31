@@ -26,6 +26,8 @@
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
 	
 	
 	
@@ -83,10 +85,20 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
 
 
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Class methods">Class methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Handling events logging">Handling events logging</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Log data related methods">Log data related methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Puzzle or puzzle mode randomization methods">Puzzle or puzzle mode randomization methods</a></span></li>
 	
 </ul></li>
 
@@ -161,12 +173,20 @@
 	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">EventLogger (MadRat Games&apos;s conflicted copy 2013-10-22).m<br />EventLogger.h<br />EventLogger.m</td>
+	<td class="specification-value">EventLogger.h<br />EventLogger.m</td>
 </tr>
 						</tbody></table></div>
 					
                     
                     
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Events logging</p>
+					</div>
+					
+					
 					
 					
 					
@@ -175,8 +195,8 @@
 						<h2 class="subtitle subtitle-tasks">Tasks</h2>
 						
 						
-						
-						<h3 class="subsubtitle task-title">Other Methods</h3>
+						<a title="Class methods" name="task_Class methods"></a>
+						<h3 class="subsubtitle task-title">Class methods</h3>
 
 						<ul class="task-list">
 							<li>
@@ -191,13 +211,15 @@
 	</span>
 	
 	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
-	</span>
-	
-	
-</li><li>
+</li>
+						</ul>
+						
+						
+						<a title="Handling events logging" name="task_Handling events logging"></a>
+						<h3 class="subsubtitle task-title">Handling events logging</h3>
+
+						<ul class="task-list">
+							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/loadEvents">&ndash;&nbsp;loadEvents</a></code>
 	</span>
@@ -233,19 +255,15 @@
 	</span>
 	
 	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/suggestModeForPuzzle:">&ndash;&nbsp;suggestModeForPuzzle:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/suggestPuzzle">&ndash;&nbsp;suggestPuzzle</a></code>
-	</span>
-	
-	
-</li><li>
+</li>
+						</ul>
+						
+						
+						<a title="Log data related methods" name="task_Log data related methods"></a>
+						<h3 class="subsubtitle task-title">Log data related methods</h3>
+
+						<ul class="task-list">
+							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/logData">&ndash;&nbsp;logData</a></code>
 	</span>
@@ -263,6 +281,32 @@
 	</span>
 	
 	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteAttempts">&ndash;&nbsp;deleteAttempts</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Puzzle or puzzle mode randomization methods" name="task_Puzzle or puzzle mode randomization methods"></a>
+						<h3 class="subsubtitle task-title">Puzzle or puzzle mode randomization methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/suggestModeForPuzzle:">&ndash;&nbsp;suggestModeForPuzzle:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/suggestPuzzle">&ndash;&nbsp;suggestPuzzle</a></code>
+	</span>
+	
+	
 </li>
 						</ul>
 						
@@ -273,7 +317,7 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/deleteAttempts">&ndash;&nbsp;deleteAttempts</a></code>
+		<code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
 	</span>
 	
 	
@@ -297,10 +341,40 @@
 	<h3 class="subsubtitle method-title">numberOfLogs</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Get count of <a href="../Classes/Log.html">Log</a> entries</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>+ (NSInteger)numberOfLogs</code></div>
 
     
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>logs count</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EventLogger.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -308,10 +382,40 @@
 	<h3 class="subsubtitle method-title">sharedLogger</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Set up shared instance of Logger</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>+ (id)sharedLogger</code></div>
 
     
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>sharedObject</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EventLogger.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 					</div>
@@ -327,10 +431,35 @@
 	<h3 class="subsubtitle method-title">archiveMonthOldLogData</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Load month old log data in background</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)archiveMonthOldLogData</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EventLogger.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -371,10 +500,35 @@
 	<h3 class="subsubtitle method-title">getEventIndexWithCode:</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Fetch event index from Core Data using event code</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (NSInteger)getEventIndexWithCode:(LogEventCode)<em>eventCode</em></code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EventLogger.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -404,10 +558,35 @@
 	<h3 class="subsubtitle method-title">loadEvents</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Load events from Core Data</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)loadEvents</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EventLogger.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -415,10 +594,35 @@
 	<h3 class="subsubtitle method-title">logAttemptForPuzzle:inMode:state:</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p><a href="../Classes/Log.html">Log</a> attempt information for puzzle</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)logAttemptForPuzzle:(PuzzleObject *)<em>puzzleObject</em> inMode:(PuzzleMode)<em>mode</em> state:(PuzzleState)<em>state</em></code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EventLogger.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -426,10 +630,35 @@
 	<h3 class="subsubtitle method-title">logData</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Function to log data</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (NSData *)logData</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EventLogger.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -437,10 +666,35 @@
 	<h3 class="subsubtitle method-title">logEvent:eventInfo:</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p><a href="../Classes/Log.html">Log</a> a event to Core Data</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)logEvent:(LogEventCode)<em>eventCode</em> eventInfo:(NSDictionary *)<em>eventInfo</em></code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EventLogger.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -448,10 +702,50 @@
 	<h3 class="subsubtitle method-title">suggestModeForPuzzle:</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Randomization process for modes for a specific puzzle</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (PuzzleMode)suggestModeForPuzzle:(PuzzleObject *)<em>object</em></code></div>
 
     
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>object</em></dt>
+			<dd><p>Puzzle Object</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>suggested mode</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EventLogger.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">

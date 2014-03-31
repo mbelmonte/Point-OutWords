@@ -4,7 +4,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/InfoView</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">The InfoView hold the information displayed at the FirstLaunchViewController</Abstract>
 			<DeclaredIn>InfoView.h</DeclaredIn>
             
 			
@@ -14,7 +14,8 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/InfoView/setTitleLabel:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">@name Properties
+-----------------------------------------------------------------------------</Abstract>
 			<DeclaredIn>InfoView.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *titleLabel</Declaration>
@@ -26,7 +27,8 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/InfoView/titleLabel</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">@name Properties
+-----------------------------------------------------------------------------</Abstract>
 			<DeclaredIn>InfoView.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *titleLabel</Declaration>
@@ -38,7 +40,8 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/InfoView/titleLabel</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">@name Properties
+-----------------------------------------------------------------------------</Abstract>
 			<DeclaredIn>InfoView.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *titleLabel</Declaration>
@@ -157,6 +160,42 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoView/layoutSubviews</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoView.h</DeclaredIn>
+			
+			<Declaration>- (void)layoutSubviews</Declaration>
+			
+			
+			<Anchor>//api/name/layoutSubviews</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoView/setImageView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoView.h</DeclaredIn>
+			
+			<Declaration>- (void)setImageView:(UIImageView *)imageView</Declaration>
+			
+			
+			<Anchor>//api/name/setImageView:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoView/setDismissButton:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoView.h</DeclaredIn>
+			
+			<Declaration>- (void)setDismissButton:(UIButton *)dismissButton</Declaration>
+			
+			
+			<Anchor>//api/name/setDismissButton:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/InfoView/initWithFrame:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>InfoView.m</DeclaredIn>
@@ -165,18 +204,6 @@
 			
 			
 			<Anchor>//api/name/initWithFrame:</Anchor>
-            <NodeRef refid="12"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/InfoView/layoutSubviews</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>InfoView.m</DeclaredIn>
-			
-			<Declaration>- (void)layoutSubviews</Declaration>
-			
-			
-			<Anchor>//api/name/layoutSubviews</Anchor>
             <NodeRef refid="12"/>
 		</Token>
 		

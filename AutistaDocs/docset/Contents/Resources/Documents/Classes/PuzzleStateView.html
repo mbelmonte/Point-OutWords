@@ -26,6 +26,8 @@
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
 	
 	
 	
@@ -58,6 +60,8 @@
 	
 	<option value="//api/name/initWithFrame:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithFrame:</option>
 	
+	<option value="//api/name/setImageView:">&nbsp;&nbsp;&nbsp;&nbsp;- setImageView:</option>
+	
 	
 	
 </select>
@@ -67,10 +71,14 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
 
 
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_UI drawing methods">UI drawing methods</a></span></li>
 	
 </ul></li>
 
@@ -101,6 +109,8 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/drawRect:">drawRect:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithFrame:">initWithFrame:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setImageView:">setImageView:</a></span></li>
 	
 </ul></li>
 
@@ -135,6 +145,16 @@
 					
                     
                     
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The view controller showing the acomplishing status of all puzzles in a scene.
+The status for all three modes are displayed.
+A green dot denote completion.</p>
+					</div>
+					
+					
 					
 					
 					
@@ -175,17 +195,11 @@
 						</ul>
 						
 						
-						
-						<h3 class="subsubtitle task-title">Other Methods</h3>
+						<a title="UI drawing methods" name="task_UI drawing methods"></a>
+						<h3 class="subsubtitle task-title">UI drawing methods</h3>
 
 						<ul class="task-list">
 							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/initWithFrame:">&ndash;&nbsp;initWithFrame:</a></code>
-	</span>
-	
-	
-</li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/drawRect:">&ndash;&nbsp;drawRect:</a></code>
 	</span>
@@ -194,6 +208,26 @@
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/colorFromState:">&ndash;&nbsp;colorFromState:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setImageView:">&ndash;&nbsp;setImageView:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithFrame:">&ndash;&nbsp;initWithFrame:</a></code>
 	</span>
 	
 	
@@ -269,10 +303,50 @@
 	<h3 class="subsubtitle method-title">colorFromState:</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Choose a color for the puzzle&rsquo;s completion status in a mode</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (UIColor *)colorFromState:(PuzzleState)<em>state</em></code></div>
 
     
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>state</em></dt>
+			<dd><p>puzzle completion status</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>color</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PuzzleStateView.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -280,10 +354,35 @@
 	<h3 class="subsubtitle method-title">drawRect:</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Layout UI components</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)drawRect:(CGRect)<em>rect</em></code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PuzzleStateView.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -295,6 +394,42 @@
 	<div class="method-subsection method-declaration"><code>- (id)initWithFrame:(CGRect)<em>frame</em></code></div>
 
     
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setImageView:" title="setImageView:"></a>
+	<h3 class="subsubtitle method-title">setImageView:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Setup the image view</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setImageView:(UIImageView *)<em>imageView</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PuzzleStateView.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 					</div>

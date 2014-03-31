@@ -4,7 +4,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/GlobalPreferences</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Store global accessible seetings</Abstract>
 			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
             
 			
@@ -14,7 +14,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/setPrefsVersion:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">App version stored in prefs</Abstract>
 			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, retain) NSString *prefsVersion</Declaration>
@@ -26,7 +26,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/prefsVersion</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">App version stored in prefs</Abstract>
 			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, retain) NSString *prefsVersion</Declaration>
@@ -38,7 +38,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/GlobalPreferences/prefsVersion</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">App version stored in prefs</Abstract>
 			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, retain) NSString *prefsVersion</Declaration>
@@ -626,19 +626,19 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/GlobalPreferences/sharedGlobalPreferences</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Set up shared instance of global preferences</Abstract>
 			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
 			
 			<Declaration>+ (GlobalPreferences *)sharedGlobalPreferences</Declaration>
 			
-			
+			<ReturnValue><Abstract type="html">sharedObject</Abstract></ReturnValue>
 			<Anchor>//api/name/sharedGlobalPreferences</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/saveState</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Save current preferences state</Abstract>
 			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
 			
 			<Declaration>- (void)saveState</Declaration>
@@ -650,7 +650,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/forgetState</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Forget all preferences state</Abstract>
 			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
 			
 			<Declaration>- (void)forgetState</Declaration>
@@ -662,7 +662,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/restoreFromSavedState</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Restore preferences from saved state</Abstract>
 			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
 			
 			<Declaration>- (void)restoreFromSavedState</Declaration>
@@ -674,7 +674,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/resetToFactoryDefaults</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Reset preferences to factory defaults</Abstract>
 			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
 			
 			<Declaration>- (void)resetToFactoryDefaults</Declaration>
@@ -686,12 +686,12 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/packagedSettings</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Save all preferences to a dictionary</Abstract>
 			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
 			
 			<Declaration>- (NSDictionary *)packagedSettings</Declaration>
 			
-			
+			<ReturnValue><Abstract type="html">settingsDict</Abstract></ReturnValue>
 			<Anchor>//api/name/packagedSettings</Anchor>
             <NodeRef refid="9"/>
 		</Token>

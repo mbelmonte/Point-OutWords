@@ -20,11 +20,23 @@
 //  To view the GNU General Public License, visit <http://www.gnu.org/licenses/>.
 //
 
+/**
+ *  Store global accessible seetings
+ *
+ */
+
 #import <UIKit/UIKit.h>
 
 @interface GlobalPreferences : NSObject
+/**-----------------------------------------------------------------------------
+ * @name Properties
+ * -----------------------------------------------------------------------------
+ */
 
-@property (nonatomic, retain) NSString *prefsVersion;						// app version stored in prefs
+/**
+* App version stored in prefs
+*/
+@property (nonatomic, retain) NSString *prefsVersion;
 
 @property (nonatomic, assign) BOOL betaTesting;
 @property (nonatomic, assign) BOOL backgroundMusicEnabled;
@@ -44,6 +56,10 @@
 @property (nonatomic, assign) CGFloat speakPuzzleFrequency;
 @property (nonatomic, assign) CGFloat sayModeDifficulty;
 
+/**-----------------------------------------------------------------------------
+ * @name Data manipulation methods
+ * -----------------------------------------------------------------------------
+ */
 /**
  *  Set up shared instance of global preferences
  *

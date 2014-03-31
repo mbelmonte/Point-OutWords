@@ -26,6 +26,8 @@
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
 	
 	
 	
@@ -104,10 +106,16 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
 
 
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Properties">Properties</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Data manipulation methods">Data manipulation methods</a></span></li>
 	
 </ul></li>
 
@@ -211,6 +219,14 @@
                     
                     
 					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Store global accessible seetings</p>
+					</div>
+					
+					
+					
 					
 					
 					<div class="section section-tasks">
@@ -218,8 +234,8 @@
 						<h2 class="subtitle subtitle-tasks">Tasks</h2>
 						
 						
-						
-						<h3 class="subsubtitle task-title">Other Methods</h3>
+						<a title="Properties" name="task_Properties"></a>
+						<h3 class="subsubtitle task-title">Properties</h3>
 
 						<ul class="task-list">
 							<li>
@@ -324,7 +340,15 @@
 	</span>
 	<span class="task-item-suffix">property</span>
 	
-</li><li>
+</li>
+						</ul>
+						
+						
+						<a title="Data manipulation methods" name="task_Data manipulation methods"></a>
+						<h3 class="subsubtitle task-title">Data manipulation methods</h3>
+
+						<ul class="task-list">
+							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/sharedGlobalPreferences">+&nbsp;sharedGlobalPreferences</a></code>
 	</span>
@@ -480,10 +504,35 @@
 	<h3 class="subsubtitle method-title">prefsVersion</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>App version stored in prefs</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *prefsVersion</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GlobalPreferences.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -587,10 +636,40 @@
 	<h3 class="subsubtitle method-title">sharedGlobalPreferences</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Set up shared instance of global preferences</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>+ (GlobalPreferences *)sharedGlobalPreferences</code></div>
 
     
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>sharedObject</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GlobalPreferences.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 					</div>
@@ -606,10 +685,35 @@
 	<h3 class="subsubtitle method-title">forgetState</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Forget all preferences state</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)forgetState</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GlobalPreferences.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -628,10 +732,40 @@
 	<h3 class="subsubtitle method-title">packagedSettings</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Save all preferences to a dictionary</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (NSDictionary *)packagedSettings</code></div>
 
     
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>settingsDict</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GlobalPreferences.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -639,10 +773,35 @@
 	<h3 class="subsubtitle method-title">resetToFactoryDefaults</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Reset preferences to factory defaults</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)resetToFactoryDefaults</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GlobalPreferences.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -650,10 +809,35 @@
 	<h3 class="subsubtitle method-title">restoreFromSavedState</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Restore preferences from saved state</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)restoreFromSavedState</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GlobalPreferences.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -661,10 +845,35 @@
 	<h3 class="subsubtitle method-title">saveState</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Save current preferences state</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)saveState</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GlobalPreferences.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 					</div>

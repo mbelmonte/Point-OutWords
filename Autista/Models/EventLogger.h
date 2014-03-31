@@ -20,6 +20,9 @@
 //  To view the GNU General Public License, visit <http://www.gnu.org/licenses/>.
 //
 
+/**
+ *  Events logging
+ */
 #import <Foundation/Foundation.h>
 
 typedef enum {
@@ -78,6 +81,11 @@ typedef enum {
 	NSInteger _modeRepeatCount;
 }
 
+/**-----------------------------------------------------------------------------
+ * @name Class methods
+ * -----------------------------------------------------------------------------
+ */
+
 /**
  *  Set up shared instance of Logger
  *
@@ -92,6 +100,11 @@ typedef enum {
  */
 + (NSInteger)numberOfLogs;
 
+/**-----------------------------------------------------------------------------
+ * @name Handling events logging
+ * -----------------------------------------------------------------------------
+ */
+
 /**
  *  Load events from Core Data
  */
@@ -104,31 +117,45 @@ typedef enum {
 
 /**
  *  Log a event to Core Data
- *
- *  @param eventCode
- *  @param eventInfo
  */
 - (void)logEvent:(LogEventCode)eventCode eventInfo:(NSDictionary *)eventInfo;
 
 /**
  *  Fetch event index from Core Data using event code
- *
- *  @param eventCode
- *
- *  @return event index
  */
 - (NSInteger)getEventIndexWithCode:(LogEventCode)eventCode;
 
 /**
  *  Log attempt information for puzzle
  *
- *  @param puzzleObject
- *  @param mode         touch, speak, and type modes
- *  @param state
  */
+
 - (void)logAttemptForPuzzle:(PuzzleObject *)puzzleObject inMode:(PuzzleMode)mode state:(PuzzleState)state;
 
 - (NSDictionary *)getScoresFromAttempsForUser:(User *)user;
+
+
+
+/**-----------------------------------------------------------------------------
+ * @name Log data related methods
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ *  Function to log data
+ */
+- (NSData *)logData;
+
+- (void)deleteLogData;
+
+- (void)deleteAllUserData;
+
+- (void)deleteAttempts;
+
+/**-----------------------------------------------------------------------------
+ * @name Puzzle or puzzle mode randomization methods
+ * -----------------------------------------------------------------------------
+ */
 
 /**
  *  Randomization process for modes for a specific puzzle
@@ -140,10 +167,4 @@ typedef enum {
 - (PuzzleMode)suggestModeForPuzzle:(PuzzleObject *)object;
 
 - (NSDictionary *)suggestPuzzle;
-
-- (NSData *)logData;
-- (void)deleteLogData;
-- (void)deleteAllUserData;
-- (void)deleteAttempts;
-
 @end
