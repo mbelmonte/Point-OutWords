@@ -4,7 +4,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/PuzzlePieceView</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">The view controller for each puzzle piece.</Abstract>
 			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
             
 			
@@ -14,7 +14,8 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PuzzlePieceView/setTitle:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Title for the puzzle piece.
+Required while logging user activity on this piece</Abstract>
 			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) NSString *title</Declaration>
@@ -26,7 +27,8 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PuzzlePieceView/title</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Title for the puzzle piece.
+Required while logging user activity on this piece</Abstract>
 			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) NSString *title</Declaration>
@@ -38,7 +40,8 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/PuzzlePieceView/title</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Title for the puzzle piece.
+Required while logging user activity on this piece</Abstract>
 			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) NSString *title</Declaration>
@@ -50,7 +53,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PuzzlePieceView/setInitialPoint:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Initial point of the puzzle piece</Abstract>
 			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) CGPoint initialPoint</Declaration>
@@ -62,7 +65,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PuzzlePieceView/initialPoint</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Initial point of the puzzle piece</Abstract>
 			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) CGPoint initialPoint</Declaration>
@@ -74,7 +77,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/PuzzlePieceView/initialPoint</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Initial point of the puzzle piece</Abstract>
 			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) CGPoint initialPoint</Declaration>
@@ -86,7 +89,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PuzzlePieceView/setFinalPoint:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Final point of the puzzle piece</Abstract>
 			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) CGPoint finalPoint</Declaration>
@@ -98,7 +101,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PuzzlePieceView/finalPoint</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Final point of the puzzle piece</Abstract>
 			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) CGPoint finalPoint</Declaration>
@@ -110,7 +113,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/PuzzlePieceView/finalPoint</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Final point of the puzzle piece</Abstract>
 			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) CGPoint finalPoint</Declaration>
@@ -158,7 +161,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PuzzlePieceView/setBelongsToSyllable:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">The syllable current puzzle piece is associated with</Abstract>
 			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) NSInteger belongsToSyllable</Declaration>
@@ -170,7 +173,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PuzzlePieceView/belongsToSyllable</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">The syllable current puzzle piece is associated with</Abstract>
 			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) NSInteger belongsToSyllable</Declaration>
@@ -182,13 +185,73 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/PuzzlePieceView/belongsToSyllable</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">The syllable current puzzle piece is associated with</Abstract>
 			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) NSInteger belongsToSyllable</Declaration>
 			
 			
 			<Anchor>//api/name/belongsToSyllable</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PuzzlePieceView/setupSounds</TokenIdentifier>
+			<Abstract type="html">Setup sound effects from file</Abstract>
+			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
+			
+			<Declaration>- (void)setupSounds</Declaration>
+			
+			
+			<Anchor>//api/name/setupSounds</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PuzzlePieceView/playPieceSelectedSound</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)playPieceSelectedSound</Declaration>
+			
+			
+			<Anchor>//api/name/playPieceSelectedSound</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PuzzlePieceView/playPieceReleasedSound</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)playPieceReleasedSound</Declaration>
+			
+			
+			<Anchor>//api/name/playPieceReleasedSound</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PuzzlePieceView/touchesBegan:withEvent:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
+			
+			<Declaration>- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event</Declaration>
+			
+			
+			<Anchor>//api/name/touchesBegan:withEvent:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PuzzlePieceView/touchesEnded:withEvent:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
+			
+			<Declaration>- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event</Declaration>
+			
+			
+			<Anchor>//api/name/touchesEnded:withEvent:</Anchor>
             <NodeRef refid="17"/>
 		</Token>
 		
@@ -225,66 +288,6 @@
 			
 			
 			<Anchor>//api/name/awakeFromNib</Anchor>
-            <NodeRef refid="17"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PuzzlePieceView/setupSounds</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>PuzzlePieceView.m</DeclaredIn>
-			
-			<Declaration>- (void)setupSounds</Declaration>
-			
-			
-			<Anchor>//api/name/setupSounds</Anchor>
-            <NodeRef refid="17"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PuzzlePieceView/playPieceSelectedSound</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>PuzzlePieceView.m</DeclaredIn>
-			
-			<Declaration>- (IBAction)playPieceSelectedSound</Declaration>
-			
-			
-			<Anchor>//api/name/playPieceSelectedSound</Anchor>
-            <NodeRef refid="17"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PuzzlePieceView/playPieceReleasedSound</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>PuzzlePieceView.m</DeclaredIn>
-			
-			<Declaration>- (IBAction)playPieceReleasedSound</Declaration>
-			
-			
-			<Anchor>//api/name/playPieceReleasedSound</Anchor>
-            <NodeRef refid="17"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PuzzlePieceView/touchesBegan:withEvent:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>PuzzlePieceView.m</DeclaredIn>
-			
-			<Declaration>- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event</Declaration>
-			
-			
-			<Anchor>//api/name/touchesBegan:withEvent:</Anchor>
-            <NodeRef refid="17"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PuzzlePieceView/touchesEnded:withEvent:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>PuzzlePieceView.m</DeclaredIn>
-			
-			<Declaration>- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event</Declaration>
-			
-			
-			<Anchor>//api/name/touchesEnded:withEvent:</Anchor>
             <NodeRef refid="17"/>
 		</Token>
 		

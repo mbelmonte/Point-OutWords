@@ -422,12 +422,16 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/handleTapGesture:</TokenIdentifier>
-			<Abstract type="html">@name Handling puzzle gesture interactions
------------------------------------------------------------------------------</Abstract>
+			<Abstract type="html">Handle tap gesture. Determine whether a puzzle piece is slected after the adjustment of _prefs.selectDistance</Abstract>
 			<DeclaredIn>TouchPuzzleViewController.h</DeclaredIn>
 			
 			<Declaration>- (void)handleTapGesture:(UITapGestureRecognizer *)gesture</Declaration>
-			
+			<Parameters>
+				<Parameter>
+					<Name>gesture</Name>
+					<Abstract type="html">the gesture recognizer of tap gesture</Abstract>
+				</Parameter>
+			</Parameters>
 			
 			<Anchor>//api/name/handleTapGesture:</Anchor>
             <NodeRef refid="55"/>

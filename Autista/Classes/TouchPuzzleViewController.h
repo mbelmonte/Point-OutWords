@@ -165,15 +165,16 @@
  *  Randomize the locations for puzzle pieces.
  */
 - (void)randomizeInitialPositionsOfPieces;
-/**
- *  Handle tap gesture. Determine whether a puzzle piece is slected after the adjustment of _prefs.selectDistance
- *  @param gesture the gesture recognizer of tap gesture
- */
 
 /**-----------------------------------------------------------------------------
  * @name Handling puzzle gesture interactions
  * -----------------------------------------------------------------------------
  */
+/**
+ *  Handle tap gesture. Determine whether a puzzle piece is slected after the adjustment of _prefs.selectDistance
+ *  @param gesture the gesture recognizer of tap gesture
+ */
+
 - (void)handleTapGesture:(UITapGestureRecognizer *)gesture;
 /**
  *  Handle pan gesture - dragging puzzle piece. Determine which puzzle piece is being dragged 

@@ -26,6 +26,8 @@
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
 	
 	
 	
@@ -69,6 +71,8 @@
 	
 	<option value="//api/name/qplayer">&nbsp;&nbsp;&nbsp;&nbsp;qplayer</option>
 	
+	<option value="//api/name/recognizerFeedback">&nbsp;&nbsp;&nbsp;&nbsp;recognizerFeedback</option>
+	
 	<option value="//api/name/sayItem">&nbsp;&nbsp;&nbsp;&nbsp;sayItem</option>
 	
 	<option value="//api/name/syllables">&nbsp;&nbsp;&nbsp;&nbsp;syllables</option>
@@ -88,6 +92,8 @@
 	
 	<option value="//api/name/audioVolumeFac">&nbsp;&nbsp;&nbsp;&nbsp;- audioVolumeFac</option>
 	
+	<option value="//api/name/checkPuzzleState">&nbsp;&nbsp;&nbsp;&nbsp;- checkPuzzleState</option>
+	
 	<option value="//api/name/delayedDismissSelf">&nbsp;&nbsp;&nbsp;&nbsp;- delayedDismissSelf</option>
 	
 	<option value="//api/name/desaturateImage:saturation:">&nbsp;&nbsp;&nbsp;&nbsp;- desaturateImage:saturation:</option>
@@ -102,6 +108,10 @@
 	
 	<option value="//api/name/handleBackButtonReleased:">&nbsp;&nbsp;&nbsp;&nbsp;- handleBackButtonReleased:</option>
 	
+	<option value="//api/name/handlePassButtonPressed:">&nbsp;&nbsp;&nbsp;&nbsp;- handlePassButtonPressed:</option>
+	
+	<option value="//api/name/hitTest:">&nbsp;&nbsp;&nbsp;&nbsp;- hitTest:</option>
+	
 	<option value="//api/name/initWithNibName:bundle:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithNibName:bundle:</option>
 	
 	<option value="//api/name/initializeAudioEngine">&nbsp;&nbsp;&nbsp;&nbsp;- initializeAudioEngine</option>
@@ -111,6 +121,8 @@
 	<option value="//api/name/levelTimerCallback:">&nbsp;&nbsp;&nbsp;&nbsp;- levelTimerCallback:</option>
 	
 	<option value="//api/name/openEarsEventsObserver">&nbsp;&nbsp;&nbsp;&nbsp;- openEarsEventsObserver</option>
+	
+	<option value="//api/name/playObjectTitleSound">&nbsp;&nbsp;&nbsp;&nbsp;- playObjectTitleSound</option>
 	
 	<option value="//api/name/playPuzzleCompletedSuccessfullySound">&nbsp;&nbsp;&nbsp;&nbsp;- playPuzzleCompletedSuccessfullySound</option>
 	
@@ -181,10 +193,26 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
 
 
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Properties">Properties</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Handling admin panel interations">Handling admin panel interations</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Handling back button interations">Handling back button interations</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Handling sound effects">Handling sound effects</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Initlizing the puzzle">Initlizing the puzzle</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Handling puzzle completion">Handling puzzle completion</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_OpenEars Delegate Methods">OpenEars Delegate Methods</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Extension Methods">Extension Methods</a></span></li>
 	
@@ -228,6 +256,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/qplayer">qplayer</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/recognizerFeedback">recognizerFeedback</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sayItem">sayItem</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/syllables">syllables</a></span></li>
@@ -248,6 +278,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/audioVolumeFac">audioVolumeFac</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/checkPuzzleState">checkPuzzleState</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delayedDismissSelf">delayedDismissSelf</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/desaturateImage:saturation:">desaturateImage:saturation:</a></span></li>
@@ -262,6 +294,10 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleBackButtonReleased:">handleBackButtonReleased:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handlePassButtonPressed:">handlePassButtonPressed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hitTest:">hitTest:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithNibName:bundle:">initWithNibName:bundle:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initializeAudioEngine">initializeAudioEngine</a></span></li>
@@ -271,6 +307,8 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/levelTimerCallback:">levelTimerCallback:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/openEarsEventsObserver">openEarsEventsObserver</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playObjectTitleSound">playObjectTitleSound</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playPuzzleCompletedSuccessfullySound">playPuzzleCompletedSuccessfullySound</a></span></li>
 	
@@ -369,6 +407,14 @@
                     
                     
 					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>View controller handling puzzles in say mode</p>
+					</div>
+					
+					
+					
 					
 					
 					<div class="section section-tasks">
@@ -376,8 +422,8 @@
 						<h2 class="subtitle subtitle-tasks">Tasks</h2>
 						
 						
-						
-						<h3 class="subsubtitle task-title">Other Methods</h3>
+						<a title="Properties" name="task_Properties"></a>
+						<h3 class="subsubtitle task-title">Properties</h3>
 
 						<ul class="task-list">
 							<li>
@@ -389,6 +435,30 @@
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/pieces">&nbsp;&nbsp;pieces</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/finishPrompt">&nbsp;&nbsp;finishPrompt</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/myPlayer">&nbsp;&nbsp;myPlayer</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/background">&nbsp;&nbsp;background</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/placeHolder">&nbsp;&nbsp;placeHolder</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -412,12 +482,6 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/finishPrompt">&nbsp;&nbsp;finishPrompt</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
 		<code><a href="#//api/name/sayItem">&nbsp;&nbsp;sayItem</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
@@ -430,35 +494,19 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/background">&nbsp;&nbsp;background</a></code>
+		<code><a href="#//api/name/recognizerFeedback">&nbsp;&nbsp;recognizerFeedback</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/placeHolder">&nbsp;&nbsp;placeHolder</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/myPlayer">&nbsp;&nbsp;myPlayer</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/levelTimerCallback:">&ndash;&nbsp;levelTimerCallback:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/audioVolume">&ndash;&nbsp;audioVolume</a></code>
-	</span>
-	
-	
-</li><li>
+</li>
+						</ul>
+						
+						
+						<a title="Handling admin panel interations" name="task_Handling admin panel interations"></a>
+						<h3 class="subsubtitle task-title">Handling admin panel interations</h3>
+
+						<ul class="task-list">
+							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/handleAdminButtonPressed:">&ndash;&nbsp;handleAdminButtonPressed:</a></code>
 	</span>
@@ -472,6 +520,20 @@
 	
 </li><li>
 	<span class="tooltip">
+		<code><a href="#//api/name/showAdminOverlay">&ndash;&nbsp;showAdminOverlay</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Handling back button interations" name="task_Handling back button interations"></a>
+						<h3 class="subsubtitle task-title">Handling back button interations</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
 		<code><a href="#//api/name/handleBackButtonPressed:">&ndash;&nbsp;handleBackButtonPressed:</a></code>
 	</span>
 	
@@ -482,35 +544,23 @@
 	</span>
 	
 	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/showBackOverlay">&ndash;&nbsp;showBackOverlay</a></code>
+	</span>
+	
+	
 </li>
 						</ul>
 						
 						
-						
-						<h3 class="subsubtitle task-title">Other Methods</h3>
+						<a title="Handling sound effects" name="task_Handling sound effects"></a>
+						<h3 class="subsubtitle task-title">Handling sound effects</h3>
 
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/initWithNibName:bundle:">&ndash;&nbsp;initWithNibName:bundle:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/viewDidLoad">&ndash;&nbsp;viewDidLoad</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/viewDidAppear:">&ndash;&nbsp;viewDidAppear:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/viewWillDisappear:">&ndash;&nbsp;viewWillDisappear:</a></code>
+		<code><a href="#//api/name/playObjectTitleSound">&ndash;&nbsp;playObjectTitleSound</a></code>
 	</span>
 	
 	
@@ -522,13 +572,39 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/playPuzzleCompletedSuccessfullySound">&ndash;&nbsp;playPuzzleCompletedSuccessfullySound</a></code>
+		<code><a href="#//api/name/audioPlayerDidFinishPlaying:successfully:">&ndash;&nbsp;audioPlayerDidFinishPlaying:successfully:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
+		<code><a href="#//api/name/stopPlaying">&ndash;&nbsp;stopPlaying</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playPuzzleCompletedSuccessfullySound">&ndash;&nbsp;playPuzzleCompletedSuccessfullySound</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Initlizing the puzzle" name="task_Initlizing the puzzle"></a>
+						<h3 class="subsubtitle task-title">Initlizing the puzzle</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
 		<code><a href="#//api/name/initializePuzzleState">&ndash;&nbsp;initializePuzzleState</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/audioVolume">&ndash;&nbsp;audioVolume</a></code>
 	</span>
 	
 	
@@ -558,7 +634,7 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/audioPlayerDidFinishPlaying:successfully:">&ndash;&nbsp;audioPlayerDidFinishPlaying:successfully:</a></code>
+		<code><a href="#//api/name/levelTimerCallback:">&ndash;&nbsp;levelTimerCallback:</a></code>
 	</span>
 	
 	
@@ -574,15 +650,17 @@
 	</span>
 	
 	
-</li><li>
+</li>
+						</ul>
+						
+						
+						<a title="Handling puzzle completion" name="task_Handling puzzle completion"></a>
+						<h3 class="subsubtitle task-title">Handling puzzle completion</h3>
+
+						<ul class="task-list">
+							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/timeoutTimerCallback:">&ndash;&nbsp;timeoutTimerCallback:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/desaturateImage:saturation:">&ndash;&nbsp;desaturateImage:saturation:</a></code>
+		<code><a href="#//api/name/checkPuzzleState">&ndash;&nbsp;checkPuzzleState</a></code>
 	</span>
 	
 	
@@ -600,13 +678,7 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/stopPlaying">&ndash;&nbsp;stopPlaying</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/readFromPlist">&ndash;&nbsp;readFromPlist</a></code>
+		<code><a href="#//api/name/hitTest:">&ndash;&nbsp;hitTest:</a></code>
 	</span>
 	
 	
@@ -618,35 +690,19 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/showBackOverlay">&ndash;&nbsp;showBackOverlay</a></code>
+		<code><a href="#//api/name/handlePassButtonPressed:">&ndash;&nbsp;handlePassButtonPressed:</a></code>
 	</span>
 	
 	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/showAdminOverlay">&ndash;&nbsp;showAdminOverlay</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/preferredInterfaceOrientationForPresentation">&ndash;&nbsp;preferredInterfaceOrientationForPresentation</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/shouldAutorotate">&ndash;&nbsp;shouldAutorotate</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/didReceiveMemoryWarning">&ndash;&nbsp;didReceiveMemoryWarning</a></code>
-	</span>
-	
-	
-</li><li>
+</li>
+						</ul>
+						
+						
+						<a title="OpenEars Delegate Methods" name="task_OpenEars Delegate Methods"></a>
+						<h3 class="subsubtitle task-title">OpenEars Delegate Methods</h3>
+
+						<ul class="task-list">
+							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/openEarsEventsObserver">&ndash;&nbsp;openEarsEventsObserver</a></code>
 	</span>
@@ -734,6 +790,74 @@
 						</ul>
 						
 						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithNibName:bundle:">&ndash;&nbsp;initWithNibName:bundle:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewDidLoad">&ndash;&nbsp;viewDidLoad</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewDidAppear:">&ndash;&nbsp;viewDidAppear:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewWillDisappear:">&ndash;&nbsp;viewWillDisappear:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/timeoutTimerCallback:">&ndash;&nbsp;timeoutTimerCallback:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/desaturateImage:saturation:">&ndash;&nbsp;desaturateImage:saturation:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/readFromPlist">&ndash;&nbsp;readFromPlist</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/preferredInterfaceOrientationForPresentation">&ndash;&nbsp;preferredInterfaceOrientationForPresentation</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shouldAutorotate">&ndash;&nbsp;shouldAutorotate</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didReceiveMemoryWarning">&ndash;&nbsp;didReceiveMemoryWarning</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
 						<a title="Extension Methods" name="task_Extension Methods"></a>
 						<h3 class="subsubtitle task-title">Extension Methods</h3>
 
@@ -809,10 +933,35 @@
 	<h3 class="subsubtitle method-title">background</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Background image</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) IBOutlet UIImageView *background</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SayPuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -831,10 +980,35 @@
 	<h3 class="subsubtitle method-title">finishPrompt</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Sound to be played when puzzle finished</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) AVAudioPlayer *finishPrompt</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SayPuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -886,10 +1060,35 @@
 	<h3 class="subsubtitle method-title">myPlayer</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Music player to play recorded sound effects and music from the library</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>@property MPMusicPlayerController *myPlayer</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SayPuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -897,10 +1096,35 @@
 	<h3 class="subsubtitle method-title">object</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>The object that stores the current puzzle</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) PuzzleObject *object</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SayPuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -930,10 +1154,35 @@
 	<h3 class="subsubtitle method-title">pieces</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Array of all puzzle pieces.</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSMutableArray *pieces</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SayPuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -941,10 +1190,35 @@
 	<h3 class="subsubtitle method-title">placeHolder</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Placholder image for all puzzle frames</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) IBOutlet UIImageView *placeHolder</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SayPuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -965,6 +1239,17 @@
 	
 
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) AVQueuePlayer *qplayer</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/recognizerFeedback" title="recognizerFeedback"></a>
+	<h3 class="subsubtitle method-title">recognizerFeedback</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) IBOutlet UILabel *recognizerFeedback</code></div>
 
     
 </div>
@@ -1006,10 +1291,35 @@
 	<h3 class="subsubtitle method-title">advanceToNextSyllable</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>After a syllable is completed, proceed to next syllable in the puzzle.</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)advanceToNextSyllable</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SayPuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -1028,10 +1338,35 @@
 	<h3 class="subsubtitle method-title">audioVolume</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<h2>@name Handling speech recognition</h2>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (Float32)audioVolume</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SayPuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -1046,14 +1381,75 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/checkPuzzleState" title="checkPuzzleState"></a>
+	<h3 class="subsubtitle method-title">checkPuzzleState</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Check if a puzzle is completed</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)checkPuzzleState</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SayPuzzleViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/delayedDismissSelf" title="delayedDismissSelf"></a>
 	<h3 class="subsubtitle method-title">delayedDismissSelf</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Dismiss the current view and log down event</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)delayedDismissSelf</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SayPuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -1083,10 +1479,35 @@
 	<h3 class="subsubtitle method-title">handleAdminButtonPressed:</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>When admin button is pressed, start a timer to show the admin overlay after 2s</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (IBAction)handleAdminButtonPressed:(id)<em>sender</em></code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SayPuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -1094,10 +1515,35 @@
 	<h3 class="subsubtitle method-title">handleAdminButtonReleased:</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>When admin button is released, invalidate the timer</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (IBAction)handleAdminButtonReleased:(id)<em>sender</em></code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SayPuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -1105,10 +1551,35 @@
 	<h3 class="subsubtitle method-title">handleBackButtonPressed:</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>When back button is pressed, start a timer to show the admin overlay after 2s</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (IBAction)handleBackButtonPressed:(id)<em>sender</em></code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SayPuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -1116,10 +1587,97 @@
 	<h3 class="subsubtitle method-title">handleBackButtonReleased:</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>When back button is released, release the timer</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (IBAction)handleBackButtonReleased:(id)<em>sender</em></code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SayPuzzleViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handlePassButtonPressed:" title="handlePassButtonPressed:"></a>
+	<h3 class="subsubtitle method-title">handlePassButtonPressed:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)handlePassButtonPressed:(id)<em>sender</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hitTest:" title="hitTest:"></a>
+	<h3 class="subsubtitle method-title">hitTest:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Hit test to determine the puzzle piece touched</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (PuzzlePieceView *)hitTest:(CGPoint)<em>touchPoint</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>touchPoint</em></dt>
+			<dd><p>point touched</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>puzzle piece</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SayPuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -1138,10 +1696,35 @@
 	<h3 class="subsubtitle method-title">initializeAudioEngine</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Setup the audio instruction for a puzzle</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)initializeAudioEngine</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SayPuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -1149,10 +1732,35 @@
 	<h3 class="subsubtitle method-title">initializePuzzleState</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Initialize the puzzle and setup puzzle detail, like all pieces' positions and puzzle title</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)initializePuzzleState</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SayPuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -1160,10 +1768,35 @@
 	<h3 class="subsubtitle method-title">levelTimerCallback:</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Setup speech recognizer</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)levelTimerCallback:(NSTimer *)<em>timer</em></code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SayPuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -1171,10 +1804,67 @@
 	<h3 class="subsubtitle method-title">openEarsEventsObserver</h3>
 	
 	
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (OpenEarsEventsObserver *)openEarsEventsObserver</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SayPuzzleViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playObjectTitleSound" title="playObjectTitleSound"></a>
+	<h3 class="subsubtitle method-title">playObjectTitleSound</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Play the sound of the puzzle title, e.g. Bath. Load the sound file based on puzzle name</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)playObjectTitleSound</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SayPuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -1336,10 +2026,35 @@
 	<h3 class="subsubtitle method-title">presentPuzzleCompletionAnimation</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Show animation when puzzle complete</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)presentPuzzleCompletionAnimation</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SayPuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -1347,10 +2062,46 @@
 	<h3 class="subsubtitle method-title">promptAndFinish</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Play sound when a puzzle is completed.
+Choose correct sound based on the difficulties:</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)promptAndFinish</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<ul>
+<li>Easy (&lt;10) - WellDone;</li>
+<li>Medium (10-12) - Super, Yay;</li>
+<li>Difficult (>12) - GoodJob, Awesome;</li>
+</ul>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SayPuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -1380,10 +2131,35 @@
 	<h3 class="subsubtitle method-title">setupSounds</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Load sound files into <a href="../Classes/SoundEffect.html">SoundEffect</a> objects, and hold on to them for later use</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)setupSounds</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SayPuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -1402,10 +2178,35 @@
 	<h3 class="subsubtitle method-title">showAdminOverlay</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Show the admin overlay</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)showAdminOverlay</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SayPuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -1413,10 +2214,35 @@
 	<h3 class="subsubtitle method-title">showBackOverlay</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Call <a href="#//api/name/delayedDismissSelf">delayedDismissSelf</a> to dismiss the current view controller and log puzzle completion status</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)showBackOverlay</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SayPuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -1424,10 +2250,35 @@
 	<h3 class="subsubtitle method-title">startListening</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Start audio recognition</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)startListening</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SayPuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -1435,10 +2286,35 @@
 	<h3 class="subsubtitle method-title">startRecordingEngine</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Start audio recording</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)startRecordingEngine</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SayPuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -1446,10 +2322,35 @@
 	<h3 class="subsubtitle method-title">stopPlaying</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Stop <a href="#//api/name/myPlayer">myPlayer</a> from playing.</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)stopPlaying</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SayPuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -1522,7 +2423,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 Company Name. All rights reserved. (Last updated: 2014-03-30)</span><br />
+						<p><span class="copyright">&copy; 2014 Company Name. All rights reserved. (Last updated: 2014-03-31)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						

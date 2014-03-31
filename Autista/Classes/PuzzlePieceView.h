@@ -20,6 +20,10 @@
 //  To view the GNU General Public License, visit <http://www.gnu.org/licenses/>.
 //
 
+/**
+ *  The view controller for each puzzle piece.
+ */
+
 #import <UIKit/UIKit.h>
 
 @class SoundEffect;
@@ -28,12 +32,50 @@
 	SoundEffect *_pieceSelectedSound;
 	SoundEffect *_pieceReleasedSound;
 }
-
-@property (nonatomic, assign) NSString *title;							// required while logging user activity on this piece
-
+/**-----------------------------------------------------------------------------
+ * @name Properties
+ * -----------------------------------------------------------------------------
+ */
+/**
+ *  Title for the puzzle piece.
+ *  Required while logging user activity on this piece
+ */
+@property (nonatomic, assign) NSString *title;
+/**
+ *  Initial point of the puzzle piece
+ */
 @property (nonatomic, assign) CGPoint initialPoint;
+/**
+ *  Final point of the puzzle piece
+ */
 @property (nonatomic, assign) CGPoint finalPoint;
+
 @property (nonatomic, assign) BOOL isCompleted;
+/**
+ *  The syllable current puzzle piece is associated with
+ */
 @property (nonatomic, assign) NSInteger belongsToSyllable;
+
+/**-----------------------------------------------------------------------------
+ * @name Sound effect handling
+ * -----------------------------------------------------------------------------
+ */
+/**
+ *  Setup sound effects from file
+ */
+- (void)setupSounds;
+- (IBAction)playPieceSelectedSound;
+- (IBAction)playPieceReleasedSound;
+
+/**-----------------------------------------------------------------------------
+ * @name Touch event handling
+ * -----------------------------------------------------------------------------
+ */
+/**
+ *
+ *
+ */
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event;
 
 @end

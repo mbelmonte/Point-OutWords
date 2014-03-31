@@ -22,11 +22,29 @@
 
 #import <UIKit/UIKit.h>
 
-@interface InfoView : UIView 
+/**
+ *  The InfoView hold the information displayed at the FirstLaunchViewController
+ */
+@interface InfoView : UIView
+
+/**-----------------------------------------------------------------------------
+ * @name Properties
+ * -----------------------------------------------------------------------------
+ */
 
 @property (nonatomic, retain) IBOutlet UILabel *titleLabel;
 @property (nonatomic, retain) IBOutlet UITextView *textView;
 @property (nonatomic, retain) IBOutlet UIImageView *imageView;
 @property (nonatomic, assign) UIButton *dismissButton;
 
+/**-----------------------------------------------------------------------------
+ * @name Methods
+ * -----------------------------------------------------------------------------
+ */
+/**
+ *
+ */
+- (void)layoutSubviews;
+- (void)setImageView:(UIImageView *)imageView;
+- (void)setDismissButton:(UIButton *)dismissButton;
 @end

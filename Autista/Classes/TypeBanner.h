@@ -20,6 +20,9 @@
 //  To view the GNU General Public License, visit <http://www.gnu.org/licenses/>.
 //
 
+/**
+ *  The banner on the top part of the screen in type mode, it is used to show the progress of the puzzle
+ */
 #import <UIKit/UIKit.h>
 
 typedef enum {
@@ -27,17 +30,51 @@ typedef enum {
 } BannerHighlightMode;
 
 @interface TypeBanner : UIView {
-	NSMutableArray *_bannerLabels;											// this stores the individual letters or syllables as labels for the banner
+    //This stores the individual letters or syllables as labels for the banner
+	NSMutableArray *_bannerLabels;
 	
 	UIView *_wrapper;
 }
-
+/**-----------------------------------------------------------------------------
+ * @name Properties
+ * -----------------------------------------------------------------------------
+ */
+/**
+ *  Text on the banner
+ */
 @property (nonatomic, retain) NSString *bannerText;
 @property (nonatomic, retain) UIFont *bannerFont;
-@property (nonatomic, assign) BannerHighlightMode highlightMode;			// whether to interpret bannerText as syllables or as independent characters
+/**
+ *  Highlight the banner.
+ *  It interpret bannerText as syllables or as independent characters.
+ *
+ */
+@property (nonatomic, assign) BannerHighlightMode highlightMode;
 @property (nonatomic, retain) UIColor *highlightColor;
 @property (nonatomic, retain) UIColor *completedColor;
 
-- (void)highlightLabelAtPosition:(NSInteger)pos;							// this automatically colors labels before pos using completedColor
+/**-----------------------------------------------------------------------------
+ * @name Banner setups methods
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ *  Set the text on the banner
+ *
+ */
+- (void)setBannerText:(NSString *)bannerText;
+/**
+ *  Set banner label with characters
+ */
+- (void)initializeBannerlabelsWithCharacters;
+/**
+ *  Set banner label with syllables
+ */
+- (void)initializeBannerLabelsWithSyllables;
+- (void)setBannerFont:(UIFont *)bannerFont;
+/**
+ *  Automatically colors labels before pos using completedColor
+ */
+- (void)highlightLabelAtPosition:(NSInteger)pos;
 
 @end

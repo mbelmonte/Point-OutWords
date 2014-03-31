@@ -49,38 +49,38 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/InfoView/setTextLabel:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoView/setTextView:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>InfoView.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *textLabel</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UITextView *textView</Declaration>
 			
 			
-			<Anchor>//api/name/textLabel</Anchor>
+			<Anchor>//api/name/textView</Anchor>
             <NodeRef refid="12"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/InfoView/textLabel</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoView/textView</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>InfoView.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *textLabel</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UITextView *textView</Declaration>
 			
 			
-			<Anchor>//api/name/textLabel</Anchor>
+			<Anchor>//api/name/textView</Anchor>
             <NodeRef refid="12"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/InfoView/textLabel</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/InfoView/textView</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>InfoView.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *textLabel</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UITextView *textView</Declaration>
 			
 			
-			<Anchor>//api/name/textLabel</Anchor>
+			<Anchor>//api/name/textView</Anchor>
             <NodeRef refid="12"/>
 		</Token>
 		
