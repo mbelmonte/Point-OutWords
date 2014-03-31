@@ -37,7 +37,7 @@ External - Empty
 - SayPuzzleViewController - Puzzle in say mode
 - TouchPuzzleViewController - Puzzle in touch mode
 - TypePuzzleViewController - Puzzle in type mode
-  - TypeBanner - 
+  - TypeBanner - The top banner of word and letters in type mode
 - PuzzlePieceView - Each puzzle piece
 - AdminViewController - Manage app settings
   - PuzzleStateView - Show status of puzzles in a scene
