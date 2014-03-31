@@ -25,7 +25,7 @@
 @interface InfoView : UIView 
 
 @property (nonatomic, retain) IBOutlet UILabel *titleLabel;
-@property (nonatomic, retain) IBOutlet UILabel *textLabel;
+@property (nonatomic, retain) IBOutlet UITextView *textView;
 @property (nonatomic, retain) IBOutlet UIImageView *imageView;
 @property (nonatomic, assign) UIButton *dismissButton;
 

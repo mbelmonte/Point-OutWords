@@ -165,7 +165,7 @@
 - (void)resetToFactoryDefaults
 {
 	_betaTesting = YES;
-	_backgroundMusicEnabled = YES;
+	_backgroundMusicEnabled = NO;
 	_guidedModeEnabled = NO;
 	_snapBackEnabled = YES;
 	_praisePromptEnabled = YES;
