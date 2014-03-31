@@ -5,252 +5,12 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/SayPuzzleViewController</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>SayPuzzleViewController (MadRat Games&apos;s conflicted copy 2013-10-22).m</DeclaredIn>
+			<DeclaredIn>SayPuzzleViewController.h</DeclaredIn>
             
 			
 			<NodeRef refid="50"/>
 		</Token>
 		
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/initWithNibName:bundle:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SayPuzzleViewController (MadRat Games&apos;s conflicted copy 2013-10-22).m</DeclaredIn>
-			
-			<Declaration>- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil</Declaration>
-			
-			
-			<Anchor>//api/name/initWithNibName:bundle:</Anchor>
-            <NodeRef refid="50"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/viewDidLoad</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SayPuzzleViewController (MadRat Games&apos;s conflicted copy 2013-10-22).m</DeclaredIn>
-			
-			<Declaration>- (void)viewDidLoad</Declaration>
-			
-			
-			<Anchor>//api/name/viewDidLoad</Anchor>
-            <NodeRef refid="50"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/viewDidAppear:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SayPuzzleViewController (MadRat Games&apos;s conflicted copy 2013-10-22).m</DeclaredIn>
-			
-			<Declaration>- (void)viewDidAppear:(BOOL)animated</Declaration>
-			
-			
-			<Anchor>//api/name/viewDidAppear:</Anchor>
-            <NodeRef refid="50"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/setupSounds</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SayPuzzleViewController (MadRat Games&apos;s conflicted copy 2013-10-22).m</DeclaredIn>
-			
-			<Declaration>- (void)setupSounds</Declaration>
-			
-			
-			<Anchor>//api/name/setupSounds</Anchor>
-            <NodeRef refid="50"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/playPuzzleCompletedSuccessfullySound</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SayPuzzleViewController (MadRat Games&apos;s conflicted copy 2013-10-22).m</DeclaredIn>
-			
-			<Declaration>- (IBAction)playPuzzleCompletedSuccessfullySound</Declaration>
-			
-			
-			<Anchor>//api/name/playPuzzleCompletedSuccessfullySound</Anchor>
-            <NodeRef refid="50"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/initializePuzzleState</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SayPuzzleViewController (MadRat Games&apos;s conflicted copy 2013-10-22).m</DeclaredIn>
-			
-			<Declaration>- (void)initializePuzzleState</Declaration>
-			
-			
-			<Anchor>//api/name/initializePuzzleState</Anchor>
-            <NodeRef refid="50"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/initializeAudioEngine</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SayPuzzleViewController (MadRat Games&apos;s conflicted copy 2013-10-22).m</DeclaredIn>
-			
-			<Declaration>- (void)initializeAudioEngine</Declaration>
-			
-			
-			<Anchor>//api/name/initializeAudioEngine</Anchor>
-            <NodeRef refid="50"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/startRecordingEngine</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SayPuzzleViewController (MadRat Games&apos;s conflicted copy 2013-10-22).m</DeclaredIn>
-			
-			<Declaration>- (void)startRecordingEngine</Declaration>
-			
-			
-			<Anchor>//api/name/startRecordingEngine</Anchor>
-            <NodeRef refid="50"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/levelTimerCallback:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SayPuzzleViewController (MadRat Games&apos;s conflicted copy 2013-10-22).m</DeclaredIn>
-			
-			<Declaration>- (void)levelTimerCallback:(NSTimer *)timer</Declaration>
-			
-			
-			<Anchor>//api/name/levelTimerCallback:</Anchor>
-            <NodeRef refid="50"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/advanceToNextSyllable</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SayPuzzleViewController (MadRat Games&apos;s conflicted copy 2013-10-22).m</DeclaredIn>
-			
-			<Declaration>- (void)advanceToNextSyllable</Declaration>
-			
-			
-			<Anchor>//api/name/advanceToNextSyllable</Anchor>
-            <NodeRef refid="50"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/timeoutTimerCallback:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SayPuzzleViewController (MadRat Games&apos;s conflicted copy 2013-10-22).m</DeclaredIn>
-			
-			<Declaration>- (void)timeoutTimerCallback:(NSTimer *)timer</Declaration>
-			
-			
-			<Anchor>//api/name/timeoutTimerCallback:</Anchor>
-            <NodeRef refid="50"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/desaturateImage:saturation:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SayPuzzleViewController (MadRat Games&apos;s conflicted copy 2013-10-22).m</DeclaredIn>
-			
-			<Declaration>- (UIImage *)desaturateImage:(UIImage *)image saturation:(CGFloat)saturation</Declaration>
-			
-			
-			<Anchor>//api/name/desaturateImage:saturation:</Anchor>
-            <NodeRef refid="50"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/presentPuzzleCompletionAnimation</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SayPuzzleViewController (MadRat Games&apos;s conflicted copy 2013-10-22).m</DeclaredIn>
-			
-			<Declaration>- (void)presentPuzzleCompletionAnimation</Declaration>
-			
-			
-			<Anchor>//api/name/presentPuzzleCompletionAnimation</Anchor>
-            <NodeRef refid="50"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/delayedDismissSelf</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SayPuzzleViewController (MadRat Games&apos;s conflicted copy 2013-10-22).m</DeclaredIn>
-			
-			<Declaration>- (void)delayedDismissSelf</Declaration>
-			
-			
-			<Anchor>//api/name/delayedDismissSelf</Anchor>
-            <NodeRef refid="50"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/handleAdminButtonPressed:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SayPuzzleViewController (MadRat Games&apos;s conflicted copy 2013-10-22).m</DeclaredIn>
-			
-			<Declaration>- (IBAction)handleAdminButtonPressed:(id)sender</Declaration>
-			
-			
-			<Anchor>//api/name/handleAdminButtonPressed:</Anchor>
-            <NodeRef refid="50"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/handleAdminButtonReleased:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SayPuzzleViewController (MadRat Games&apos;s conflicted copy 2013-10-22).m</DeclaredIn>
-			
-			<Declaration>- (IBAction)handleAdminButtonReleased:(id)sender</Declaration>
-			
-			
-			<Anchor>//api/name/handleAdminButtonReleased:</Anchor>
-            <NodeRef refid="50"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/showAdminOverlay</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SayPuzzleViewController (MadRat Games&apos;s conflicted copy 2013-10-22).m</DeclaredIn>
-			
-			<Declaration>- (void)showAdminOverlay</Declaration>
-			
-			
-			<Anchor>//api/name/showAdminOverlay</Anchor>
-            <NodeRef refid="50"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/preferredInterfaceOrientationForPresentation</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SayPuzzleViewController (MadRat Games&apos;s conflicted copy 2013-10-22).m</DeclaredIn>
-			
-			<Declaration>- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation</Declaration>
-			
-			
-			<Anchor>//api/name/preferredInterfaceOrientationForPresentation</Anchor>
-            <NodeRef refid="50"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/shouldAutorotateToInterfaceOrientation:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SayPuzzleViewController (MadRat Games&apos;s conflicted copy 2013-10-22).m</DeclaredIn>
-			
-			<Declaration>- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation</Declaration>
-			
-			
-			<Anchor>//api/name/shouldAutorotateToInterfaceOrientation:</Anchor>
-            <NodeRef refid="50"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/didReceiveMemoryWarning</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SayPuzzleViewController (MadRat Games&apos;s conflicted copy 2013-10-22).m</DeclaredIn>
-			
-			<Declaration>- (void)didReceiveMemoryWarning</Declaration>
-			
-			
-			<Anchor>//api/name/didReceiveMemoryWarning</Anchor>
-            <NodeRef refid="50"/>
-		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/setObject:</TokenIdentifier>
@@ -613,6 +373,54 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/setMyPlayer:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>@property MPMusicPlayerController *myPlayer</Declaration>
+			
+			
+			<Anchor>//api/name/myPlayer</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/myPlayer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>@property MPMusicPlayerController *myPlayer</Declaration>
+			
+			
+			<Anchor>//api/name/myPlayer</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SayPuzzleViewController/myPlayer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>@property MPMusicPlayerController *myPlayer</Declaration>
+			
+			
+			<Anchor>//api/name/myPlayer</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/levelTimerCallback:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)levelTimerCallback:(NSTimer *)timer</Declaration>
+			
+			
+			<Anchor>//api/name/levelTimerCallback:</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/audioVolume</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>SayPuzzleViewController.h</DeclaredIn>
@@ -621,6 +429,30 @@
 			
 			
 			<Anchor>//api/name/audioVolume</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/handleAdminButtonPressed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)handleAdminButtonPressed:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/handleAdminButtonPressed:</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/handleAdminButtonReleased:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)handleAdminButtonReleased:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/handleAdminButtonReleased:</Anchor>
             <NodeRef refid="50"/>
 		</Token>
 		
@@ -649,6 +481,90 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/initWithNibName:bundle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil</Declaration>
+			
+			
+			<Anchor>//api/name/initWithNibName:bundle:</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/viewDidLoad</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewDidLoad</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidLoad</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/viewDidAppear:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewDidAppear:(BOOL)animated</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidAppear:</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/viewWillDisappear:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewWillDisappear:(BOOL)animated</Declaration>
+			
+			
+			<Anchor>//api/name/viewWillDisappear:</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/setupSounds</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)setupSounds</Declaration>
+			
+			
+			<Anchor>//api/name/setupSounds</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/playPuzzleCompletedSuccessfullySound</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (IBAction)playPuzzleCompletedSuccessfullySound</Declaration>
+			
+			
+			<Anchor>//api/name/playPuzzleCompletedSuccessfullySound</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/initializePuzzleState</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)initializePuzzleState</Declaration>
+			
+			
+			<Anchor>//api/name/initializePuzzleState</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/audioVolumeFac</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
@@ -657,6 +573,42 @@
 			
 			
 			<Anchor>//api/name/audioVolumeFac</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/initializeAudioEngine</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)initializeAudioEngine</Declaration>
+			
+			
+			<Anchor>//api/name/initializeAudioEngine</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/startRecordingEngine</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)startRecordingEngine</Declaration>
+			
+			
+			<Anchor>//api/name/startRecordingEngine</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/startListening</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)startListening</Declaration>
+			
+			
+			<Anchor>//api/name/startListening</Anchor>
             <NodeRef refid="50"/>
 		</Token>
 		
@@ -673,6 +625,66 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/resumeRecognition</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)resumeRecognition</Declaration>
+			
+			
+			<Anchor>//api/name/resumeRecognition</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/advanceToNextSyllable</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)advanceToNextSyllable</Declaration>
+			
+			
+			<Anchor>//api/name/advanceToNextSyllable</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/timeoutTimerCallback:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)timeoutTimerCallback:(NSTimer *)timer</Declaration>
+			
+			
+			<Anchor>//api/name/timeoutTimerCallback:</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/desaturateImage:saturation:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (UIImage *)desaturateImage:(UIImage *)image saturation:(CGFloat)saturation</Declaration>
+			
+			
+			<Anchor>//api/name/desaturateImage:saturation:</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/presentPuzzleCompletionAnimation</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)presentPuzzleCompletionAnimation</Declaration>
+			
+			
+			<Anchor>//api/name/presentPuzzleCompletionAnimation</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/promptAndFinish</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
@@ -685,6 +697,42 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/stopPlaying</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)stopPlaying</Declaration>
+			
+			
+			<Anchor>//api/name/stopPlaying</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/readFromPlist</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)readFromPlist</Declaration>
+			
+			
+			<Anchor>//api/name/readFromPlist</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/delayedDismissSelf</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)delayedDismissSelf</Declaration>
+			
+			
+			<Anchor>//api/name/delayedDismissSelf</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/showBackOverlay</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
@@ -693,6 +741,54 @@
 			
 			
 			<Anchor>//api/name/showBackOverlay</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/showAdminOverlay</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)showAdminOverlay</Declaration>
+			
+			
+			<Anchor>//api/name/showAdminOverlay</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/preferredInterfaceOrientationForPresentation</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation</Declaration>
+			
+			
+			<Anchor>//api/name/preferredInterfaceOrientationForPresentation</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/shouldAutorotate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)shouldAutorotate</Declaration>
+			
+			
+			<Anchor>//api/name/shouldAutorotate</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/didReceiveMemoryWarning</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)didReceiveMemoryWarning</Declaration>
+			
+			
+			<Anchor>//api/name/didReceiveMemoryWarning</Anchor>
             <NodeRef refid="50"/>
 		</Token>
 		

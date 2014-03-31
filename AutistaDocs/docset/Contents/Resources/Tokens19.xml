@@ -53,6 +53,18 @@
             <NodeRef refid="19"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RootViewController/shouldAutorotate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RootViewController.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)shouldAutorotate</Declaration>
+			
+			
+			<Anchor>//api/name/shouldAutorotate</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
         
 	</File>
 </Tokens>

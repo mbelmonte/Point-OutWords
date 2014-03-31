@@ -91,38 +91,196 @@
  * -----------------------------------------------------------------------------
  */
 /**
- *
+ *  The object that stores the current puzzle
  */
 @property (nonatomic, retain) PuzzleObject *object;
 /**
- *  Puzzle pieces
+ *  Array of all puzzle pieces.
  */
 @property (nonatomic, retain) NSMutableArray *pieces;
 /**
- *  Sounds to be played when puzzle finished
+ *  Sound to be played when puzzle finished
  */
 @property (nonatomic, retain) AVAudioPlayer *finishPrompt;
+/**
+ *  Music player to play recorded sound effects and music from the library
+ */
 @property MPMusicPlayerController *myPlayer;
+/**
+ *  Background image
+ */
 @property (nonatomic, retain) IBOutlet UIImageView *background;
+/**
+ *  Placholder image for all puzzle frames
+ */
 @property (nonatomic, retain) IBOutlet UIImageView *placeHolder;
+/**
+ *  Keyborad event outlet
+ */
 @property (nonatomic, retain) IBOutlet UIView *keyboard;
+
 /**-----------------------------------------------------------------------------
  * @name Handling admin panel interations
- * -------------------d----------------------------------------------------------
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ *  When admin button is pressed, start a timer to show the admin overlay after 2s
+ */
+- (IBAction)handleAdminButtonPressed:(id)sender;
+/**
+ *  When admin button is released, invalidate the timer
+ */
+- (IBAction)handleAdminButtonReleased:(id)sender;
+/**
+ *  Show the admin overlay
+ */
+- (void)showAdminOverlay;
+
+
+/**-----------------------------------------------------------------------------
+ * @name Handling sound effects
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ *  Play the sound of the puzzle title, e.g. Bath. Load the sound file based on puzzle name
+ */
+- (void)playObjectTitleSound;
+/**
+ *   Load sound files into SoundEffect objects, and hold on to them for later use
+ */
+- (void)setupSounds;
+- (IBAction)playKeyClickSound:(id)sender;
+- (IBAction)playCorrectKeyPressedSound;
+- (IBAction)playWrongKeyPressedSound;
+- (IBAction)playPuzzleCompletedSuccessfullySound;
+/**
+ *  Stop myPlayer from playing.
+ */
+- (void)stopPlaying;
+
+/**-----------------------------------------------------------------------------
+ * @name Handling back button interations
+ * -----------------------------------------------------------------------------
  */
 /**
- *  <#Description#>
- *
- *  @param sender <#sender description#>
+ * When back button is pressed, start a timer to show the admin overlay after 2s
  */
-
-- (void)showAdminOverlay;
-- (IBAction)handleAdminButtonPressed:(id)sender;
-- (IBAction)handleAdminButtonReleased:(id)sender;
-
 - (IBAction)handleBackButtonPressed:(id)sender;
+/**
+ *  When back button is released, release the timer
+ */
 - (IBAction)handleBackButtonReleased:(id)sender;
-- (IBAction)playKeyClickSound:(id)sender;
+/**
+ *  Call delayedDismissSelf to dismiss the current view controller and log puzzle completion status
+ */
+- (void)showBackOverlay;
+
+/**-----------------------------------------------------------------------------
+ * @name Initlizing the puzzle
+ * -----------------------------------------------------------------------------
+ */
+/**
+ *  Initialize the puzzle and setup puzzle detail, like all pieces' positions and puzzle title
+ */
+- (void)initializePuzzleState;
+//Make TYPE mode closer to POINT mode to ensure smoother transition from POINT to TYPE
+- (void)randomizeInitialPositionsOfPieces;
+
+-(void)addCharacterOnPuzzlePiece;
+
+
+/**-----------------------------------------------------------------------------
+ * @name Handling puzzle keyboard interactions
+ * -----------------------------------------------------------------------------
+ */
+/**
+ *  Get the keys associated with the current puzzle, handle keypressing events and give user feedbacks(animations, ).
+ */
+- (IBAction)handleKeyPressed:(id)sender;
+- (void)advanceToNextLetterPosition;
+
+- (void)slideOutKeyboard;
+- (void)slideInKeyboard;
+
+/**
+ *  Set up an animation to hightlight the character on the keyboard,
+ *  remind the user to type the keyboard instead of dragging the puzzle pieces
+ *  Call changeBGColorBack to change the background of the keys back at the end of the animation
+ *
+ *  @param recognizer gesture recognizor
+ */
+- (void)remindAnimation:(UIGestureRecognizer *)recognizer;
+/**
+ *  Change background color back
+ */
+- (void)changeBGColorBack;
+/**
+ *  Get the key corresponding to a character's ASCII code
+ *
+ *  @param asciiCode ASCII code for a character
+ *
+ *  @return Pointer the correct button
+ */
+- (UIButton *)buttonFromASCIICode:(NSInteger)asciiCode;
+
+
+/**-----------------------------------------------------------------------------
+ * @name Handling puzzle gesture interactions
+ * -----------------------------------------------------------------------------
+ */
+/**
+ *  Delegate function used to recognize key strokes from the point of departure on the touch-screen.
+ *
+ *  @param touches a set
+ *  @param event   event delegate
+ */
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event;
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer;
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch;
+
+
+/**-----------------------------------------------------------------------------
+ * @name Handling puzzle completion
+ * -----------------------------------------------------------------------------
+ */
+/**
+ *  Check if a puzzle is completed
+ */
+- (void)checkPuzzleState;
+/**
+ *  Show animation when puzzle complete
+ */
+- (void)presentPuzzleCompletionAnimation;
+/**
+ *  Play sound when a puzzle is completed.
+ *  Choose correct sound based on the difficulties:
+ *
+ *  - Easy (<10) - WellDone;
+ *  - Medium (10-12) - Super, Yay;
+ *  - Difficult (>12) - GoodJob, Awesome;
+ */
+- (void)promptAndFinish;
+
+/**
+ *  Dismiss the current view and log down event
+ */
+- (void)delayedDismissSelf;
+
+
+/**-----------------------------------------------------------------------------
+ * @name Image manipulation methods
+ * -----------------------------------------------------------------------------
+ */
+/**
+ *
+ */
+- (void)applyShadowToObject:(UIView *)object;
+- (void)applyGlowToObject:(UIView *)object;
+- (void)removeGlowFromObject:(UIView *)object;
+
 - (IBAction)handleKeyPressed:(id)sender;
 
 @end

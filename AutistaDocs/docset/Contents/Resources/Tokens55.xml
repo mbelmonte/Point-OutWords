@@ -14,7 +14,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/setObject:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">The object that stores the current puzzle</Abstract>
 			<DeclaredIn>TouchPuzzleViewController.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, retain) PuzzleObject *object</Declaration>
@@ -26,7 +26,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/object</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">The object that stores the current puzzle</Abstract>
 			<DeclaredIn>TouchPuzzleViewController.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, retain) PuzzleObject *object</Declaration>
@@ -38,7 +38,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/TouchPuzzleViewController/object</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">The object that stores the current puzzle</Abstract>
 			<DeclaredIn>TouchPuzzleViewController.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, retain) PuzzleObject *object</Declaration>
@@ -121,8 +121,44 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/setMyPlayer:</TokenIdentifier>
+			<Abstract type="html">Music player to play recorded sound effects and music from the library</Abstract>
+			<DeclaredIn>TouchPuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>@property MPMusicPlayerController *myPlayer</Declaration>
+			
+			
+			<Anchor>//api/name/myPlayer</Anchor>
+            <NodeRef refid="55"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/myPlayer</TokenIdentifier>
+			<Abstract type="html">Music player to play recorded sound effects and music from the library</Abstract>
+			<DeclaredIn>TouchPuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>@property MPMusicPlayerController *myPlayer</Declaration>
+			
+			
+			<Anchor>//api/name/myPlayer</Anchor>
+            <NodeRef refid="55"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TouchPuzzleViewController/myPlayer</TokenIdentifier>
+			<Abstract type="html">Music player to play recorded sound effects and music from the library</Abstract>
+			<DeclaredIn>TouchPuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>@property MPMusicPlayerController *myPlayer</Declaration>
+			
+			
+			<Anchor>//api/name/myPlayer</Anchor>
+            <NodeRef refid="55"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/setBackground:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Background image</Abstract>
 			<DeclaredIn>TouchPuzzleViewController.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, retain) IBOutlet UIImageView *background</Declaration>
@@ -134,7 +170,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/background</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Background image</Abstract>
 			<DeclaredIn>TouchPuzzleViewController.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, retain) IBOutlet UIImageView *background</Declaration>
@@ -146,7 +182,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/TouchPuzzleViewController/background</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Background image</Abstract>
 			<DeclaredIn>TouchPuzzleViewController.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, retain) IBOutlet UIImageView *background</Declaration>
@@ -158,7 +194,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/setPlaceHolder:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Placholder image for all puzzle frames</Abstract>
 			<DeclaredIn>TouchPuzzleViewController.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, retain) IBOutlet UIImageView *placeHolder</Declaration>
@@ -170,7 +206,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/placeHolder</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Placholder image for all puzzle frames</Abstract>
 			<DeclaredIn>TouchPuzzleViewController.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, retain) IBOutlet UIImageView *placeHolder</Declaration>
@@ -182,7 +218,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/TouchPuzzleViewController/placeHolder</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Placholder image for all puzzle frames</Abstract>
 			<DeclaredIn>TouchPuzzleViewController.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, retain) IBOutlet UIImageView *placeHolder</Declaration>
@@ -193,20 +229,8 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/showAdminOverlay</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>TouchPuzzleViewController.h</DeclaredIn>
-			
-			<Declaration>- (void)showAdminOverlay</Declaration>
-			
-			
-			<Anchor>//api/name/showAdminOverlay</Anchor>
-            <NodeRef refid="55"/>
-		</Token>
-		
-		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/handleAdminButtonPressed:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">When admin button is pressed, start a timer to show the admin overlay after 2s</Abstract>
 			<DeclaredIn>TouchPuzzleViewController.h</DeclaredIn>
 			
 			<Declaration>- (IBAction)handleAdminButtonPressed:(id)sender</Declaration>
@@ -218,7 +242,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/handleAdminButtonReleased:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">When admin button is released, invalidate the timer</Abstract>
 			<DeclaredIn>TouchPuzzleViewController.h</DeclaredIn>
 			
 			<Declaration>- (IBAction)handleAdminButtonReleased:(id)sender</Declaration>
@@ -229,8 +253,20 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/showAdminOverlay</TokenIdentifier>
+			<Abstract type="html">Show the admin overlay</Abstract>
+			<DeclaredIn>TouchPuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)showAdminOverlay</Declaration>
+			
+			
+			<Anchor>//api/name/showAdminOverlay</Anchor>
+            <NodeRef refid="55"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/handleBackButtonPressed:</TokenIdentifier>
-			<Abstract type="html">Handling back button</Abstract>
+			<Abstract type="html">When back button is pressed, start a timer to show the admin overlay after 2s</Abstract>
 			<DeclaredIn>TouchPuzzleViewController.h</DeclaredIn>
 			
 			<Declaration>- (IBAction)handleBackButtonPressed:(id)sender</Declaration>
@@ -242,7 +278,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/handleBackButtonReleased:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">When back button is released, release the timer</Abstract>
 			<DeclaredIn>TouchPuzzleViewController.h</DeclaredIn>
 			
 			<Declaration>- (IBAction)handleBackButtonReleased:(id)sender</Declaration>
@@ -254,7 +290,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/showBackOverlay</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Call delayedDismissSelf to dismiss the current view controller and log puzzle completion status</Abstract>
 			<DeclaredIn>TouchPuzzleViewController.h</DeclaredIn>
 			
 			<Declaration>- (void)showBackOverlay</Declaration>
@@ -265,32 +301,20 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/initializePuzzleState</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/playObjectTitleSound</TokenIdentifier>
+			<Abstract type="html">Play the sound of the puzzle title, e.g. Bath. Load the sound file based on puzzle name</Abstract>
 			<DeclaredIn>TouchPuzzleViewController.h</DeclaredIn>
 			
-			<Declaration>- (void)initializePuzzleState</Declaration>
+			<Declaration>- (void)playObjectTitleSound</Declaration>
 			
 			
-			<Anchor>//api/name/initializePuzzleState</Anchor>
-            <NodeRef refid="55"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/randomizeInitialPositionsOfPieces</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>TouchPuzzleViewController.h</DeclaredIn>
-			
-			<Declaration>- (void)randomizeInitialPositionsOfPieces</Declaration>
-			
-			
-			<Anchor>//api/name/randomizeInitialPositionsOfPieces</Anchor>
+			<Anchor>//api/name/playObjectTitleSound</Anchor>
             <NodeRef refid="55"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/setupSounds</TokenIdentifier>
-			<Abstract type="html">Setup sound effects</Abstract>
+			<Abstract type="html">Load sound files into SoundEffect objects, and hold on to them for later use</Abstract>
 			<DeclaredIn>TouchPuzzleViewController.h</DeclaredIn>
 			
 			<Declaration>- (void)setupSounds</Declaration>
@@ -361,20 +385,45 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/playObjectTitleSound</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/stopPlaying</TokenIdentifier>
+			<Abstract type="html">Stop myPlayer from playing.</Abstract>
 			<DeclaredIn>TouchPuzzleViewController.h</DeclaredIn>
 			
-			<Declaration>- (void)playObjectTitleSound</Declaration>
+			<Declaration>- (void)stopPlaying</Declaration>
 			
 			
-			<Anchor>//api/name/playObjectTitleSound</Anchor>
+			<Anchor>//api/name/stopPlaying</Anchor>
+            <NodeRef refid="55"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/initializePuzzleState</TokenIdentifier>
+			<Abstract type="html">Initialize the puzzle and setup puzzle detail, like all pieces&apos; positions and puzzle title</Abstract>
+			<DeclaredIn>TouchPuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)initializePuzzleState</Declaration>
+			
+			
+			<Anchor>//api/name/initializePuzzleState</Anchor>
+            <NodeRef refid="55"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/randomizeInitialPositionsOfPieces</TokenIdentifier>
+			<Abstract type="html">Randomize the locations for puzzle pieces.</Abstract>
+			<DeclaredIn>TouchPuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)randomizeInitialPositionsOfPieces</Declaration>
+			
+			
+			<Anchor>//api/name/randomizeInitialPositionsOfPieces</Anchor>
             <NodeRef refid="55"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/handleTapGesture:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">@name Handling puzzle gesture interactions
+-----------------------------------------------------------------------------</Abstract>
 			<DeclaredIn>TouchPuzzleViewController.h</DeclaredIn>
 			
 			<Declaration>- (void)handleTapGesture:(UITapGestureRecognizer *)gesture</Declaration>
@@ -386,34 +435,28 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/handlePanGesture:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Handle pan gesture - dragging puzzle piece. Determine which puzzle piece is being dragged
+and snap the piece to correct frame with method snapPieceToFinalPosition:</Abstract>
 			<DeclaredIn>TouchPuzzleViewController.h</DeclaredIn>
 			
 			<Declaration>- (void)handlePanGesture:(UIPanGestureRecognizer *)gesture</Declaration>
-			
+			<Parameters>
+				<Parameter>
+					<Name>gesture</Name>
+					<Abstract type="html">the gesture recognizer of pan gesture</Abstract>
+				</Parameter>
+			</Parameters>
 			
 			<Anchor>//api/name/handlePanGesture:</Anchor>
             <NodeRef refid="55"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/presentPuzzleCompletionAnimation</TokenIdentifier>
-			<Abstract type="html">Show animation when puzzle complete</Abstract>
+			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/suggestSuitableFrameForPiece:</TokenIdentifier>
+			<Abstract type="html">Snap the puzzle piece to the correct frame based on snapping distance.</Abstract>
 			<DeclaredIn>TouchPuzzleViewController.h</DeclaredIn>
 			
-			<Declaration>- (void)presentPuzzleCompletionAnimation</Declaration>
-			
-			
-			<Anchor>//api/name/presentPuzzleCompletionAnimation</Anchor>
-            <NodeRef refid="55"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/snapPieceToFinalPosition:</TokenIdentifier>
-			<Abstract type="html">Snap the puzzle piece to the correct position</Abstract>
-			<DeclaredIn>TouchPuzzleViewController.h</DeclaredIn>
-			
-			<Declaration>- (void)snapPieceToFinalPosition:(PuzzlePieceView *)piece</Declaration>
+			<Declaration>- (CGRect)suggestSuitableFrameForPiece:(UIView *)piece</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>piece</Name>
@@ -421,23 +464,6 @@
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/snapPieceToFinalPosition:</Anchor>
-            <NodeRef refid="55"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/suggestSuitableFrameForPiece:</TokenIdentifier>
-			<Abstract type="html">Suggest a frame for the puzzle piece</Abstract>
-			<DeclaredIn>TouchPuzzleViewController.h</DeclaredIn>
-			
-			<Declaration>- (CGRect)suggestSuitableFrameForPiece:(UIView *)piece</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>piece</Name>
-					<Abstract type="html">puzzle piece</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">a frame based on the puzzle piece&apos;s coodination</Abstract></ReturnValue>
 			<Anchor>//api/name/suggestSuitableFrameForPiece:</Anchor>
             <NodeRef refid="55"/>
 		</Token>
@@ -455,8 +481,21 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/presentPuzzleCompletionAnimation</TokenIdentifier>
+			<Abstract type="html">Show animation when puzzle complete</Abstract>
+			<DeclaredIn>TouchPuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)presentPuzzleCompletionAnimation</Declaration>
+			
+			
+			<Anchor>//api/name/presentPuzzleCompletionAnimation</Anchor>
+            <NodeRef refid="55"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/promptAndFinish</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Play sound when a puzzle is completed.
+Choose correct sound based on the difficulties:</Abstract>
 			<DeclaredIn>TouchPuzzleViewController.h</DeclaredIn>
 			
 			<Declaration>- (void)promptAndFinish</Declaration>
@@ -485,7 +524,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/delayedDismissSelf</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Dismiss the current view and log down event</Abstract>
 			<DeclaredIn>TouchPuzzleViewController.h</DeclaredIn>
 			
 			<Declaration>- (void)delayedDismissSelf</Declaration>
@@ -532,26 +571,38 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/preferredInterfaceOrientationForPresentation</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/snapPieceToFinalPosition:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>TouchPuzzleViewController.m</DeclaredIn>
 			
-			<Declaration>- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation</Declaration>
+			<Declaration>- (void)snapPieceToFinalPosition:(PuzzlePieceView *)piece</Declaration>
 			
 			
-			<Anchor>//api/name/preferredInterfaceOrientationForPresentation</Anchor>
+			<Anchor>//api/name/snapPieceToFinalPosition:</Anchor>
             <NodeRef refid="55"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/shouldAutorotateToInterfaceOrientation:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/readFromPlist</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>TouchPuzzleViewController.m</DeclaredIn>
 			
-			<Declaration>- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation</Declaration>
+			<Declaration>- (NSDictionary *)readFromPlist</Declaration>
 			
 			
-			<Anchor>//api/name/shouldAutorotateToInterfaceOrientation:</Anchor>
+			<Anchor>//api/name/readFromPlist</Anchor>
+            <NodeRef refid="55"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TouchPuzzleViewController/shouldAutorotate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TouchPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)shouldAutorotate</Declaration>
+			
+			
+			<Anchor>//api/name/shouldAutorotate</Anchor>
             <NodeRef refid="55"/>
 		</Token>
 		

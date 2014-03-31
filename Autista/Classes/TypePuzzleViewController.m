@@ -297,7 +297,8 @@
 	return button;
 }
 
-- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
     UITouch * touch = [[event allTouches] anyObject];
     CGPoint touchLocation = [touch locationInView:touch.view];
     

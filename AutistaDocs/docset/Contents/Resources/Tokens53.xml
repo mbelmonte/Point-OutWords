@@ -445,14 +445,14 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SceneViewController/shouldAutorotateToInterfaceOrientation:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneViewController/shouldAutorotate</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>SceneViewController.m</DeclaredIn>
 			
-			<Declaration>- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation</Declaration>
+			<Declaration>- (BOOL)shouldAutorotate</Declaration>
 			
 			
-			<Anchor>//api/name/shouldAutorotateToInterfaceOrientation:</Anchor>
+			<Anchor>//api/name/shouldAutorotate</Anchor>
             <NodeRef refid="53"/>
 		</Token>
 		

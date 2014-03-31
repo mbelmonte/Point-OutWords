@@ -45,6 +45,8 @@
 	
 	<option value="//api/name/keyboard">&nbsp;&nbsp;&nbsp;&nbsp;keyboard</option>
 	
+	<option value="//api/name/myPlayer">&nbsp;&nbsp;&nbsp;&nbsp;myPlayer</option>
+	
 	<option value="//api/name/object">&nbsp;&nbsp;&nbsp;&nbsp;object</option>
 	
 	<option value="//api/name/pieces">&nbsp;&nbsp;&nbsp;&nbsp;pieces</option>
@@ -68,11 +70,17 @@
 	
 	<option value="//api/name/buttonFromASCIICode:">&nbsp;&nbsp;&nbsp;&nbsp;- buttonFromASCIICode:</option>
 	
+	<option value="//api/name/changeBGColorBack">&nbsp;&nbsp;&nbsp;&nbsp;- changeBGColorBack</option>
+	
 	<option value="//api/name/checkPuzzleState">&nbsp;&nbsp;&nbsp;&nbsp;- checkPuzzleState</option>
 	
 	<option value="//api/name/delayedDismissSelf">&nbsp;&nbsp;&nbsp;&nbsp;- delayedDismissSelf</option>
 	
 	<option value="//api/name/didReceiveMemoryWarning">&nbsp;&nbsp;&nbsp;&nbsp;- didReceiveMemoryWarning</option>
+	
+	<option value="//api/name/gestureRecognizer:shouldReceiveTouch:">&nbsp;&nbsp;&nbsp;&nbsp;- gestureRecognizer:shouldReceiveTouch:</option>
+	
+	<option value="//api/name/gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:">&nbsp;&nbsp;&nbsp;&nbsp;- gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:</option>
 	
 	<option value="//api/name/handleAdminButtonPressed:">&nbsp;&nbsp;&nbsp;&nbsp;- handleAdminButtonPressed:</option>
 	
@@ -106,13 +114,15 @@
 	
 	<option value="//api/name/randomizeInitialPositionsOfPieces">&nbsp;&nbsp;&nbsp;&nbsp;- randomizeInitialPositionsOfPieces</option>
 	
+	<option value="//api/name/readFromPlist">&nbsp;&nbsp;&nbsp;&nbsp;- readFromPlist</option>
+	
 	<option value="//api/name/remindAnimation:">&nbsp;&nbsp;&nbsp;&nbsp;- remindAnimation:</option>
 	
 	<option value="//api/name/removeGlowFromObject:">&nbsp;&nbsp;&nbsp;&nbsp;- removeGlowFromObject:</option>
 	
 	<option value="//api/name/setupSounds">&nbsp;&nbsp;&nbsp;&nbsp;- setupSounds</option>
 	
-	<option value="//api/name/shouldAutorotateToInterfaceOrientation:">&nbsp;&nbsp;&nbsp;&nbsp;- shouldAutorotateToInterfaceOrientation:</option>
+	<option value="//api/name/shouldAutorotate">&nbsp;&nbsp;&nbsp;&nbsp;- shouldAutorotate</option>
 	
 	<option value="//api/name/showAdminOverlay">&nbsp;&nbsp;&nbsp;&nbsp;- showAdminOverlay</option>
 	
@@ -121,6 +131,10 @@
 	<option value="//api/name/slideInKeyboard">&nbsp;&nbsp;&nbsp;&nbsp;- slideInKeyboard</option>
 	
 	<option value="//api/name/slideOutKeyboard">&nbsp;&nbsp;&nbsp;&nbsp;- slideOutKeyboard</option>
+	
+	<option value="//api/name/stopPlaying">&nbsp;&nbsp;&nbsp;&nbsp;- stopPlaying</option>
+	
+	<option value="//api/name/touchesEnded:withEvent:">&nbsp;&nbsp;&nbsp;&nbsp;- touchesEnded:withEvent:</option>
 	
 	<option value="//api/name/viewDidAppear:">&nbsp;&nbsp;&nbsp;&nbsp;- viewDidAppear:</option>
 	
@@ -144,6 +158,22 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Properties">Properties</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Handling admin panel interations">Handling admin panel interations</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Handling sound effects">Handling sound effects</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Handling back button interations">Handling back button interations</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Initlizing the puzzle">Initlizing the puzzle</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Handling puzzle keyboard interactions">Handling puzzle keyboard interactions</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Handling puzzle gesture interactions">Handling puzzle gesture interactions</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Handling puzzle completion">Handling puzzle completion</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Image manipulation methods">Image manipulation methods</a></span></li>
+	
 </ul></li>
 
 
@@ -157,6 +187,8 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/finishPrompt">finishPrompt</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/keyboard">keyboard</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/myPlayer">myPlayer</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/object">object</a></span></li>
 	
@@ -182,11 +214,17 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/buttonFromASCIICode:">buttonFromASCIICode:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/changeBGColorBack">changeBGColorBack</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/checkPuzzleState">checkPuzzleState</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delayedDismissSelf">delayedDismissSelf</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didReceiveMemoryWarning">didReceiveMemoryWarning</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/gestureRecognizer:shouldReceiveTouch:">gestureRecognizer:shouldReceiveTouch:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:">gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleAdminButtonPressed:">handleAdminButtonPressed:</a></span></li>
 	
@@ -220,13 +258,15 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/randomizeInitialPositionsOfPieces">randomizeInitialPositionsOfPieces</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/readFromPlist">readFromPlist</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/remindAnimation:">remindAnimation:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeGlowFromObject:">removeGlowFromObject:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setupSounds">setupSounds</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldAutorotateToInterfaceOrientation:">shouldAutorotateToInterfaceOrientation:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldAutorotate">shouldAutorotate</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showAdminOverlay">showAdminOverlay</a></span></li>
 	
@@ -235,6 +275,10 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/slideInKeyboard">slideInKeyboard</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/slideOutKeyboard">slideOutKeyboard</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopPlaying">stopPlaying</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/touchesEnded:withEvent:">touchesEnded:withEvent:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewDidAppear:">viewDidAppear:</a></span></li>
 	
@@ -265,6 +309,9 @@
 						<tr>
 	<td class="specification-title">Inherits from</td>
 	<td class="specification-value">UIViewController</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">UIGestureRecognizerDelegate</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
 	<td class="specification-value">TypePuzzleViewController.h<br />TypePuzzleViewController.m</td>
@@ -313,6 +360,12 @@
 	
 </li><li>
 	<span class="tooltip">
+		<code><a href="#//api/name/myPlayer">&nbsp;&nbsp;myPlayer</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
 		<code><a href="#//api/name/background">&nbsp;&nbsp;background</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
@@ -329,25 +382,15 @@
 	</span>
 	<span class="task-item-suffix">property</span>
 	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/playKeyClickSound:">&ndash;&nbsp;playKeyClickSound:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/handleKeyPressed:">&ndash;&nbsp;handleKeyPressed:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/showAdminOverlay">&ndash;&nbsp;showAdminOverlay</a></code>
-	</span>
-	
-	
-</li><li>
+</li>
+						</ul>
+						
+						
+						<a title="Handling admin panel interations" name="task_Handling admin panel interations"></a>
+						<h3 class="subsubtitle task-title">Handling admin panel interations</h3>
+
+						<ul class="task-list">
+							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/handleAdminButtonPressed:">&ndash;&nbsp;handleAdminButtonPressed:</a></code>
 	</span>
@@ -361,6 +404,70 @@
 	
 </li><li>
 	<span class="tooltip">
+		<code><a href="#//api/name/showAdminOverlay">&ndash;&nbsp;showAdminOverlay</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Handling sound effects" name="task_Handling sound effects"></a>
+						<h3 class="subsubtitle task-title">Handling sound effects</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playObjectTitleSound">&ndash;&nbsp;playObjectTitleSound</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setupSounds">&ndash;&nbsp;setupSounds</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playKeyClickSound:">&ndash;&nbsp;playKeyClickSound:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playCorrectKeyPressedSound">&ndash;&nbsp;playCorrectKeyPressedSound</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playWrongKeyPressedSound">&ndash;&nbsp;playWrongKeyPressedSound</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playPuzzleCompletedSuccessfullySound">&ndash;&nbsp;playPuzzleCompletedSuccessfullySound</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopPlaying">&ndash;&nbsp;stopPlaying</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Handling back button interations" name="task_Handling back button interations"></a>
+						<h3 class="subsubtitle task-title">Handling back button interations</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
 		<code><a href="#//api/name/handleBackButtonPressed:">&ndash;&nbsp;handleBackButtonPressed:</a></code>
 	</span>
 	
@@ -368,6 +475,172 @@
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/handleBackButtonReleased:">&ndash;&nbsp;handleBackButtonReleased:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/showBackOverlay">&ndash;&nbsp;showBackOverlay</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Initlizing the puzzle" name="task_Initlizing the puzzle"></a>
+						<h3 class="subsubtitle task-title">Initlizing the puzzle</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initializePuzzleState">&ndash;&nbsp;initializePuzzleState</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/randomizeInitialPositionsOfPieces">&ndash;&nbsp;randomizeInitialPositionsOfPieces</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addCharacterOnPuzzlePiece">&ndash;&nbsp;addCharacterOnPuzzlePiece</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Handling puzzle keyboard interactions" name="task_Handling puzzle keyboard interactions"></a>
+						<h3 class="subsubtitle task-title">Handling puzzle keyboard interactions</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/handleKeyPressed:">&ndash;&nbsp;handleKeyPressed:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/advanceToNextLetterPosition">&ndash;&nbsp;advanceToNextLetterPosition</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/slideOutKeyboard">&ndash;&nbsp;slideOutKeyboard</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/slideInKeyboard">&ndash;&nbsp;slideInKeyboard</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/remindAnimation:">&ndash;&nbsp;remindAnimation:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/changeBGColorBack">&ndash;&nbsp;changeBGColorBack</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/buttonFromASCIICode:">&ndash;&nbsp;buttonFromASCIICode:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Handling puzzle gesture interactions" name="task_Handling puzzle gesture interactions"></a>
+						<h3 class="subsubtitle task-title">Handling puzzle gesture interactions</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/touchesEnded:withEvent:">&ndash;&nbsp;touchesEnded:withEvent:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:">&ndash;&nbsp;gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/gestureRecognizer:shouldReceiveTouch:">&ndash;&nbsp;gestureRecognizer:shouldReceiveTouch:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Handling puzzle completion" name="task_Handling puzzle completion"></a>
+						<h3 class="subsubtitle task-title">Handling puzzle completion</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/checkPuzzleState">&ndash;&nbsp;checkPuzzleState</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/presentPuzzleCompletionAnimation">&ndash;&nbsp;presentPuzzleCompletionAnimation</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/promptAndFinish">&ndash;&nbsp;promptAndFinish</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delayedDismissSelf">&ndash;&nbsp;delayedDismissSelf</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Image manipulation methods" name="task_Image manipulation methods"></a>
+						<h3 class="subsubtitle task-title">Image manipulation methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/applyShadowToObject:">&ndash;&nbsp;applyShadowToObject:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/applyGlowToObject:">&ndash;&nbsp;applyGlowToObject:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeGlowFromObject:">&ndash;&nbsp;removeGlowFromObject:</a></code>
 	</span>
 	
 	
@@ -399,127 +672,7 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/initializePuzzleState">&ndash;&nbsp;initializePuzzleState</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/setupSounds">&ndash;&nbsp;setupSounds</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/playCorrectKeyPressedSound">&ndash;&nbsp;playCorrectKeyPressedSound</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/playWrongKeyPressedSound">&ndash;&nbsp;playWrongKeyPressedSound</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/playPuzzleCompletedSuccessfullySound">&ndash;&nbsp;playPuzzleCompletedSuccessfullySound</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/playObjectTitleSound">&ndash;&nbsp;playObjectTitleSound</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/buttonFromASCIICode:">&ndash;&nbsp;buttonFromASCIICode:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/checkPuzzleState">&ndash;&nbsp;checkPuzzleState</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/advanceToNextLetterPosition">&ndash;&nbsp;advanceToNextLetterPosition</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/presentPuzzleCompletionAnimation">&ndash;&nbsp;presentPuzzleCompletionAnimation</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/promptAndFinish">&ndash;&nbsp;promptAndFinish</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/delayedDismissSelf">&ndash;&nbsp;delayedDismissSelf</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/slideOutKeyboard">&ndash;&nbsp;slideOutKeyboard</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/slideInKeyboard">&ndash;&nbsp;slideInKeyboard</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/randomizeInitialPositionsOfPieces">&ndash;&nbsp;randomizeInitialPositionsOfPieces</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/addCharacterOnPuzzlePiece">&ndash;&nbsp;addCharacterOnPuzzlePiece</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/remindAnimation:">&ndash;&nbsp;remindAnimation:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/applyShadowToObject:">&ndash;&nbsp;applyShadowToObject:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/applyGlowToObject:">&ndash;&nbsp;applyGlowToObject:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/removeGlowFromObject:">&ndash;&nbsp;removeGlowFromObject:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/showBackOverlay">&ndash;&nbsp;showBackOverlay</a></code>
+		<code><a href="#//api/name/readFromPlist">&ndash;&nbsp;readFromPlist</a></code>
 	</span>
 	
 	
@@ -531,7 +684,7 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/shouldAutorotateToInterfaceOrientation:">&ndash;&nbsp;shouldAutorotateToInterfaceOrientation:</a></code>
+		<code><a href="#//api/name/shouldAutorotate">&ndash;&nbsp;shouldAutorotate</a></code>
 	</span>
 	
 	
@@ -559,10 +712,35 @@
 	<h3 class="subsubtitle method-title">background</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Background image</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) IBOutlet UIImageView *background</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TypePuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -572,7 +750,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Sounds to be played when puzzle finished</p>
+		<p>Sound to be played when puzzle finished</p>
 	</div>		
 	
     
@@ -606,10 +784,71 @@
 	<h3 class="subsubtitle method-title">keyboard</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Keyborad event outlet</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) IBOutlet UIView *keyboard</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TypePuzzleViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/myPlayer" title="myPlayer"></a>
+	<h3 class="subsubtitle method-title">myPlayer</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Music player to play recorded sound effects and music from the library</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property MPMusicPlayerController *myPlayer</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TypePuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -617,6 +856,10 @@
 	<h3 class="subsubtitle method-title">object</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>The object that stores the current puzzle</p>
+	</div>		
 	
     
 
@@ -651,7 +894,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Puzzle pieces</p>
+		<p>Array of all puzzle pieces.</p>
 	</div>		
 	
     
@@ -685,10 +928,35 @@
 	<h3 class="subsubtitle method-title">placeHolder</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Placholder image for all puzzle frames</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) IBOutlet UIImageView *placeHolder</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TypePuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 					</div>
@@ -739,169 +1007,12 @@
 	<h3 class="subsubtitle method-title">applyShadowToObject:</h3>
 	
 	
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)applyShadowToObject:(UIView *)<em>object</em></code></div>
 
     
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/buttonFromASCIICode:" title="buttonFromASCIICode:"></a>
-	<h3 class="subsubtitle method-title">buttonFromASCIICode:</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>- (UIButton *)buttonFromASCIICode:(NSInteger)<em>asciiCode</em></code></div>
-
-    
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/checkPuzzleState" title="checkPuzzleState"></a>
-	<h3 class="subsubtitle method-title">checkPuzzleState</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>- (void)checkPuzzleState</code></div>
-
-    
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/delayedDismissSelf" title="delayedDismissSelf"></a>
-	<h3 class="subsubtitle method-title">delayedDismissSelf</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>- (void)delayedDismissSelf</code></div>
-
-    
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/didReceiveMemoryWarning" title="didReceiveMemoryWarning"></a>
-	<h3 class="subsubtitle method-title">didReceiveMemoryWarning</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>- (void)didReceiveMemoryWarning</code></div>
-
-    
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/handleAdminButtonPressed:" title="handleAdminButtonPressed:"></a>
-	<h3 class="subsubtitle method-title">handleAdminButtonPressed:</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>- (IBAction)handleAdminButtonPressed:(id)<em>sender</em></code></div>
-
-    
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/handleAdminButtonReleased:" title="handleAdminButtonReleased:"></a>
-	<h3 class="subsubtitle method-title">handleAdminButtonReleased:</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>- (IBAction)handleAdminButtonReleased:(id)<em>sender</em></code></div>
-
-    
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/handleBackButtonPressed:" title="handleBackButtonPressed:"></a>
-	<h3 class="subsubtitle method-title">handleBackButtonPressed:</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>- (IBAction)handleBackButtonPressed:(id)<em>sender</em></code></div>
-
-    
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/handleBackButtonReleased:" title="handleBackButtonReleased:"></a>
-	<h3 class="subsubtitle method-title">handleBackButtonReleased:</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>- (IBAction)handleBackButtonReleased:(id)<em>sender</em></code></div>
-
-    
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/handleKeyPressed:" title="handleKeyPressed:"></a>
-	<h3 class="subsubtitle method-title">handleKeyPressed:</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>- (IBAction)handleKeyPressed:(id)<em>sender</em></code></div>
-
-    
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/initWithNibName:bundle:" title="initWithNibName:bundle:"></a>
-	<h3 class="subsubtitle method-title">initWithNibName:bundle:</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>- (id)initWithNibName:(NSString *)<em>nibNameOrNil</em> bundle:(NSBundle *)<em>nibBundleOrNil</em></code></div>
-
-    
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/initializePuzzleState" title="initializePuzzleState"></a>
-	<h3 class="subsubtitle method-title">initializePuzzleState</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>- (void)initializePuzzleState</code></div>
-
-    
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/playCorrectKeyPressedSound" title="playCorrectKeyPressedSound"></a>
-	<h3 class="subsubtitle method-title">playCorrectKeyPressedSound</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>- (IBAction)playCorrectKeyPressedSound</code></div>
-
-    
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/playKeyClickSound:" title="playKeyClickSound:"></a>
-	<h3 class="subsubtitle method-title">playKeyClickSound:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>&lt;#Description#></p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (IBAction)playKeyClickSound:(id)<em>sender</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>sender</em></dt>
-			<dd><p>&lt;#sender description#></p></dd>
-		</dl>
-		
-	</div>
 	
 	
 	
@@ -924,14 +1035,480 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/buttonFromASCIICode:" title="buttonFromASCIICode:"></a>
+	<h3 class="subsubtitle method-title">buttonFromASCIICode:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get the key corresponding to a character&rsquo;s ASCII code</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UIButton *)buttonFromASCIICode:(NSInteger)<em>asciiCode</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>asciiCode</em></dt>
+			<dd><p>ASCII code for a character</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Pointer the correct button</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TypePuzzleViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/changeBGColorBack" title="changeBGColorBack"></a>
+	<h3 class="subsubtitle method-title">changeBGColorBack</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Change <a href="#//api/name/background">background</a> color back</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)changeBGColorBack</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TypePuzzleViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/checkPuzzleState" title="checkPuzzleState"></a>
+	<h3 class="subsubtitle method-title">checkPuzzleState</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Check if a puzzle is completed</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)checkPuzzleState</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TypePuzzleViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delayedDismissSelf" title="delayedDismissSelf"></a>
+	<h3 class="subsubtitle method-title">delayedDismissSelf</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Dismiss the current view and log down event</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)delayedDismissSelf</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TypePuzzleViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didReceiveMemoryWarning" title="didReceiveMemoryWarning"></a>
+	<h3 class="subsubtitle method-title">didReceiveMemoryWarning</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)didReceiveMemoryWarning</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/gestureRecognizer:shouldReceiveTouch:" title="gestureRecognizer:shouldReceiveTouch:"></a>
+	<h3 class="subsubtitle method-title">gestureRecognizer:shouldReceiveTouch:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)gestureRecognizer:(UIGestureRecognizer *)<em>gestureRecognizer</em> shouldReceiveTouch:(UITouch *)<em>touch</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:" title="gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:"></a>
+	<h3 class="subsubtitle method-title">gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)gestureRecognizer:(UIGestureRecognizer *)<em>gestureRecognizer</em> shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)<em>otherGestureRecognizer</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handleAdminButtonPressed:" title="handleAdminButtonPressed:"></a>
+	<h3 class="subsubtitle method-title">handleAdminButtonPressed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>When admin button is pressed, start a timer to show the admin overlay after 2s</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)handleAdminButtonPressed:(id)<em>sender</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TypePuzzleViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handleAdminButtonReleased:" title="handleAdminButtonReleased:"></a>
+	<h3 class="subsubtitle method-title">handleAdminButtonReleased:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>When admin button is released, invalidate the timer</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)handleAdminButtonReleased:(id)<em>sender</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TypePuzzleViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handleBackButtonPressed:" title="handleBackButtonPressed:"></a>
+	<h3 class="subsubtitle method-title">handleBackButtonPressed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>When back button is pressed, start a timer to show the admin overlay after 2s</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)handleBackButtonPressed:(id)<em>sender</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TypePuzzleViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handleBackButtonReleased:" title="handleBackButtonReleased:"></a>
+	<h3 class="subsubtitle method-title">handleBackButtonReleased:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>When back button is released, release the timer</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)handleBackButtonReleased:(id)<em>sender</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TypePuzzleViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handleKeyPressed:" title="handleKeyPressed:"></a>
+	<h3 class="subsubtitle method-title">handleKeyPressed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get the keys associated with the current puzzle, handle keypressing events and give user feedbacks(animations, ).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)handleKeyPressed:(id)<em>sender</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TypePuzzleViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithNibName:bundle:" title="initWithNibName:bundle:"></a>
+	<h3 class="subsubtitle method-title">initWithNibName:bundle:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithNibName:(NSString *)<em>nibNameOrNil</em> bundle:(NSBundle *)<em>nibBundleOrNil</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initializePuzzleState" title="initializePuzzleState"></a>
+	<h3 class="subsubtitle method-title">initializePuzzleState</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initialize the puzzle and setup puzzle detail, like all pieces' positions and puzzle title</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)initializePuzzleState</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TypePuzzleViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playCorrectKeyPressedSound" title="playCorrectKeyPressedSound"></a>
+	<h3 class="subsubtitle method-title">playCorrectKeyPressedSound</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)playCorrectKeyPressedSound</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playKeyClickSound:" title="playKeyClickSound:"></a>
+	<h3 class="subsubtitle method-title">playKeyClickSound:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)playKeyClickSound:(id)<em>sender</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/playObjectTitleSound" title="playObjectTitleSound"></a>
 	<h3 class="subsubtitle method-title">playObjectTitleSound</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Play the sound of the puzzle title, e.g. Bath. Load the sound file based on puzzle name</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)playObjectTitleSound</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TypePuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -972,10 +1549,35 @@
 	<h3 class="subsubtitle method-title">presentPuzzleCompletionAnimation</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Show animation when puzzle complete</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)presentPuzzleCompletionAnimation</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TypePuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -983,10 +1585,46 @@
 	<h3 class="subsubtitle method-title">promptAndFinish</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Play sound when a puzzle is completed.
+Choose correct sound based on the difficulties:</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)promptAndFinish</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<ul>
+<li>Easy (&lt;10) - WellDone;</li>
+<li>Medium (10-12) - Super, Yay;</li>
+<li>Difficult (>12) - GoodJob, Awesome;</li>
+</ul>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TypePuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -1001,14 +1639,62 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/readFromPlist" title="readFromPlist"></a>
+	<h3 class="subsubtitle method-title">readFromPlist</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)readFromPlist</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/remindAnimation:" title="remindAnimation:"></a>
 	<h3 class="subsubtitle method-title">remindAnimation:</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Set up an animation to hightlight the character on the <a href="#//api/name/keyboard">keyboard</a>,
+remind the user to type the <a href="#//api/name/keyboard">keyboard</a> instead of dragging the puzzle <a href="#//api/name/pieces">pieces</a>
+Call <a href="#//api/name/changeBGColorBack">changeBGColorBack</a> to change the <a href="#//api/name/background">background</a> of the keys back at the end of the animation</p>
+	</div>		
+	
+    
 
-	<div class="method-subsection method-declaration"><code>- (void)remindAnimation:(UITapGestureRecognizer *)<em>recognizer</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)remindAnimation:(UIGestureRecognizer *)<em>recognizer</em></code></div>
 
     
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>recognizer</em></dt>
+			<dd><p>gesture recognizor</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TypePuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -1027,19 +1713,44 @@
 	<h3 class="subsubtitle method-title">setupSounds</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Load sound files into <a href="../Classes/SoundEffect.html">SoundEffect</a> objects, and hold on to them for later use</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)setupSounds</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TypePuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/shouldAutorotateToInterfaceOrientation:" title="shouldAutorotateToInterfaceOrientation:"></a>
-	<h3 class="subsubtitle method-title">shouldAutorotateToInterfaceOrientation:</h3>
+	<a name="//api/name/shouldAutorotate" title="shouldAutorotate"></a>
+	<h3 class="subsubtitle method-title">shouldAutorotate</h3>
 	
 	
 
-	<div class="method-subsection method-declaration"><code>- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)<em>toInterfaceOrientation</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (BOOL)shouldAutorotate</code></div>
 
     
 </div>
@@ -1049,6 +1760,10 @@
 	<h3 class="subsubtitle method-title">showAdminOverlay</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Show the admin overlay</p>
+	</div>		
 	
     
 
@@ -1081,10 +1796,35 @@
 	<h3 class="subsubtitle method-title">showBackOverlay</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Call <a href="#//api/name/delayedDismissSelf">delayedDismissSelf</a> to dismiss the current view controller and log puzzle completion status</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)showBackOverlay</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TypePuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -1107,6 +1847,93 @@
 	<div class="method-subsection method-declaration"><code>- (void)slideOutKeyboard</code></div>
 
     
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopPlaying" title="stopPlaying"></a>
+	<h3 class="subsubtitle method-title">stopPlaying</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stop <a href="#//api/name/myPlayer">myPlayer</a> from playing.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)stopPlaying</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TypePuzzleViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/touchesEnded:withEvent:" title="touchesEnded:withEvent:"></a>
+	<h3 class="subsubtitle method-title">touchesEnded:withEvent:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Delegate function used to recognize key strokes from the point of departure on the touch-screen.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)touchesEnded:(NSSet *)<em>touches</em> withEvent:(UIEvent *)<em>event</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>touches</em></dt>
+			<dd><p>a set</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>event</em></dt>
+			<dd><p>event delegate</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TypePuzzleViewController.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -1146,7 +1973,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 Company Name. All rights reserved. (Last updated: 2014-03-29)</span><br />
+						<p><span class="copyright">&copy; 2014 Company Name. All rights reserved. (Last updated: 2014-03-30)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						
