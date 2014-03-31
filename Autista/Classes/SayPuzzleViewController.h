@@ -85,6 +85,9 @@
 @property (nonatomic, retain) AVPlayerItem * firstSyllItem;
 @property (nonatomic, retain) IBOutlet UIImageView *background;
 @property (nonatomic, retain) IBOutlet UIImageView *placeHolder;
+@property (strong, nonatomic) IBOutlet UILabel *recognizerFeedback;
+
+
 
 @property MPMusicPlayerController *myPlayer;
 
@@ -95,5 +98,6 @@
 - (IBAction)handleAdminButtonReleased:(id)sender;
 - (IBAction)handleBackButtonPressed:(id)sender;
 - (IBAction)handleBackButtonReleased:(id)sender;
+- (IBAction)handlePassButtonPressed:(id)sender;
 
 @end

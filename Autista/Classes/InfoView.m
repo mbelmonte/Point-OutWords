@@ -38,7 +38,7 @@
 			avenirMedium = [UIFont fontWithName:@"HelveticaNeue-Bold" size:20.];
 		}
 		
-		_titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 200, 700, 20)];
+		_titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 150, 700, 20)];
 		_titleLabel.font = avenirBold;
 		_titleLabel.textColor = [UIColor whiteColor];
 		_titleLabel.backgroundColor	= [UIColor clearColor];
@@ -46,13 +46,17 @@
 		
 		[self addSubview:_titleLabel];
 		
-		_textLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 350, 700, 20)];
-		_textLabel.font = avenirMedium;
-		_textLabel.textColor = [UIColor whiteColor];
-		_textLabel.backgroundColor	= [UIColor clearColor];
-		_textLabel.numberOfLines = 0;
+		_textView = [[UITextView alloc] initWithFrame:CGRectMake(0, 300, 700, 300)];
+        _textView.editable = NO;
+        _textView.scrollEnabled = YES;
+        _textView.userInteractionEnabled = YES;
+		_textView.font = avenirMedium;
+		_textView.textColor = [UIColor whiteColor];
+		_textView.backgroundColor	= [UIColor clearColor];
+        _textView.showsVerticalScrollIndicator = YES;
+		//_textLabel.numberOfLines = 0;
 		
-		[self addSubview:_textLabel];
+		[self addSubview:_textView];
 	}
     return self;
 }
@@ -61,7 +65,7 @@
 - (void)layoutSubviews
 {
 	[_titleLabel sizeToFit];
-	[_textLabel sizeToFit];
+	//[_textLabel sizeToFit];
 	
 	CGSize size = self.frame.size;
 	
@@ -69,9 +73,9 @@
 	frame.origin.x = size.width / 2 - frame.size.width / 2;
 	_titleLabel.frame = frame;
 	
-	frame = _textLabel.frame;
+	frame = _textView.frame;
 	frame.origin.x = size.width / 2 - frame.size.width / 2;
-	_textLabel.frame = frame;
+	_textView.frame = frame;
 	
 	if (_dismissButton != nil) {
 		frame = _dismissButton.frame;

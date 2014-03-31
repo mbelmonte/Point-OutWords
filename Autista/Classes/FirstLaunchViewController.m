@@ -49,7 +49,7 @@
 {
 	[super viewDidAppear:animated];
 	
-	NSString* plistPath = [[NSBundle mainBundle] pathForResource:@"FirstLaunchInfoText" ofType:@"plist"];
+	NSString* plistPath = [[NSBundle mainBundle] pathForResource:@"FirstLaunchInfoTextNew" ofType:@"plist"];
 	NSArray *pages = [NSArray arrayWithContentsOfFile:plistPath];
 	
 	NSInteger numPages = [pages count];
@@ -61,7 +61,7 @@
 		InfoView *infoView = [[InfoView alloc] initWithFrame:self.view.bounds];
 		infoView.frame = CGRectOffset(infoView.frame, i * size.width, 0);
 		infoView.titleLabel.text = [pageDict valueForKey:@"title"];
-		infoView.textLabel.text = [pageDict valueForKey:@"text"];
+		infoView.textView.text = [pageDict valueForKey:@"text"];
 		
 		if ([pageDict valueForKey:@"imageName"] != nil) {
 			UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[pageDict valueForKey:@"imageName"]]];

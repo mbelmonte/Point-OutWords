@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>A U T I S T A</string>
+		<key>text</key>
+		<string>Autista™  is designed to help autistic children with speech difficulties develop manual motor and oral motor skills, building an ability to communicate by pointing or speaking.  Autista bootstraps new skills by beginning from activities at which autistic children excel and that they enjoy -- assembling puzzles, for instance -- and harnessing this motivation to approach new challenges.
+
+Children begin by learning to point and to drag puzzle pieces in Point Mode.  In addition to developing these basic motor skills, they become accustomed to the idea that objects consist of sequences of parts.
+
+With Type Mode, children progress from pointing at puzzle pieces in sequence to pointing at letters of the alphabet in sequence, making the jump from communicating in pictures to communicating in words.  Each letter pressed on the keyboard causes a puzzle piece to spring into place.
+
+In Speak Mode, children practice pronouncing syllables in sequence. Each syllable pronounced causes a puzzle piece to spring into place.</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Behind the scenes</string>
+		<key>text</key>
+		<string>The more Autista is used, the more it learns and adapts to your child&apos;s specific needs. For example, the app can detect repetitive behavior and advance gameplay accordingly.
+
+The app also logs all user interactions, allowing researchers or therapists to analyze these data to help provide a better learning experience for your child.</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Special LONG PRESS Buttons!</string>
+		<key>text</key>
+		<string>You can customize the app for your child, by holding down the Admin button for about three seconds.  Similarly there is a Back button which works only on Long Press, so that children will not inadvertently change the game&apos;s settings.</string>
+		<key>imageName</key>
+		<string>InfoViewAdminAccess.png</string>
+		<key>offsetX</key>
+		<integer>-130</integer>
+		<key>offsetY</key>
+		<integer>10</integer>
+	</dict>
+</array>
+</plist>
