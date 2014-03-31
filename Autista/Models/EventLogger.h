@@ -78,15 +78,67 @@ typedef enum {
 	NSInteger _modeRepeatCount;
 }
 
+/**
+ *  Set up shared instance of Logger
+ *
+ *  @return sharedObject
+ */
 + (id)sharedLogger;
+
+/**
+ *  Get count of Log entries
+ *
+ *  @return logs count
+ */
 + (NSInteger)numberOfLogs;
 
+/**
+ *  Load events from Core Data
+ */
+- (void)loadEvents;
+
+/**
+ *  Load month old log data in background
+ */
+- (void)archiveMonthOldLogData;
+
+/**
+ *  Log a event to Core Data
+ *
+ *  @param eventCode
+ *  @param eventInfo
+ */
 - (void)logEvent:(LogEventCode)eventCode eventInfo:(NSDictionary *)eventInfo;
+
+/**
+ *  Fetch event index from Core Data using event code
+ *
+ *  @param eventCode
+ *
+ *  @return event index
+ */
+- (NSInteger)getEventIndexWithCode:(LogEventCode)eventCode;
+
+/**
+ *  Log attempt information for puzzle
+ *
+ *  @param puzzleObject
+ *  @param mode         touch, speak, and type modes
+ *  @param state
+ */
 - (void)logAttemptForPuzzle:(PuzzleObject *)puzzleObject inMode:(PuzzleMode)mode state:(PuzzleState)state;
 
 - (NSDictionary *)getScoresFromAttempsForUser:(User *)user;
 
+/**
+ *  Randomization process for modes for a specific puzzle
+ *
+ *  @param object Puzzle Object
+ *
+ *  @return suggested mode
+ */
 - (PuzzleMode)suggestModeForPuzzle:(PuzzleObject *)object;
+
 - (NSDictionary *)suggestPuzzle;
 
 - (NSData *)logData;

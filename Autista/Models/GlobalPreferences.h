@@ -44,13 +44,38 @@
 @property (nonatomic, assign) CGFloat speakPuzzleFrequency;
 @property (nonatomic, assign) CGFloat sayModeDifficulty;
 
+/**
+ *  Set up shared instance of global preferences
+ *
+ *  @return sharedObject
+ */
 + (GlobalPreferences *)sharedGlobalPreferences;
 
+/**
+ *  Save current preferences state
+ */
 - (void)saveState;
+
+/**
+ *  Forget all preferences state
+ */
 - (void)forgetState;
+
+/**
+ *  Restore preferences from saved state
+ */
 - (void)restoreFromSavedState;
+
+/**
+ *  Reset preferences to factory defaults
+ */
 - (void)resetToFactoryDefaults;
 
+/**
+ *  Save all preferences to a dictionary
+ *
+ *  @return settingsDict
+ */
 - (NSDictionary *)packagedSettings;											// return a dictionary of all the settings
 
 @end
