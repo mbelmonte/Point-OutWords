@@ -41,7 +41,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Setup TestFlight
-    [TestFlight setDeviceIdentifier:[[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString]];
+    //[TestFlight setDeviceIdentifier:[[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString]];
     [TestFlight takeOff:@"720f99b3-598b-4635-af66-c4416aae61ad"];
     // Use this option to notifiy beta users of any updates
     //[TestFlight setOptions:@{ TFOptionDisableInAppUpdates : @YES }];
