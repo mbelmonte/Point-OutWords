@@ -50,3 +50,22 @@ External - Empty
 We include a Apple-style documentation in /AustistaDocs/html/. Detailed description of the code structure, classes, properties, and methods are presented.
 
 For illustration of how different parts of the app works, please refer to the flow chart in /AutistaDocs/flowchart.png 
+
+To Support multiple languages and locales, you need to do the following things:
+- UI Changes: using iOS localization
+  - Provide localizable.strings files
+  - http://www.raywenderlich.com/2876/localization-tutorial-for-ios
+- Plist: 
+  - /Models/*.plist: localize all values in plists files. For PuzzleDataWithPhonetics.plist, puzzle words, pieces, phonetics need to be localized
+- Images: 
+  - /Images/: images with words
+  - /Scenes/: pieces according to number of letters
+- Pronunciations
+  - /Alphabets/: for single letters in Type Mode
+  - /Prompts/Final/: for praise prompts, e.g. Awesome, Super, WellDone, TryAgain
+  - /Syllables/: pronunciations for separate syllables
+  - /Words/: pronunciations for whole words
+- Keyboard layout
+  - In Storyboard - Type Puzzle View Controller Scene - View - Keyboard View
+- Background Music
+  - /Sounds/: localize background music files for different countries.
