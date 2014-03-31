@@ -577,6 +577,7 @@
 		8F741CF9189F3F5D0048329A /* PuzzleDataWithPhonetics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F741CF8189F3F5D0048329A /* PuzzleDataWithPhonetics.plist */; };
 		8FAF16FC18E8DE15003EC63D /* FirstLaunchInfoTextNew.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FAF16FB18E8DE15003EC63D /* FirstLaunchInfoTextNew.plist */; };
 		8FB1A923189D894C007A483F /* Instabug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB1A922189D894C007A483F /* Instabug.framework */; };
+		8FB6B13F18E8FCEA009CDB74 /* KeyboardButton_hightlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FB6B13E18E8FCEA009CDB74 /* KeyboardButton_hightlighted.png */; };
 		8FD692BE18AE7167008418E2 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD692B818AE7167008418E2 /* libTestFlight.a */; };
 		8FD692BF18AE7167008418E2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8FD692B918AE7167008418E2 /* README.md */; };
 		8FD692C018AE7167008418E2 /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 8FD692BA18AE7167008418E2 /* release_notes.md */; };
@@ -1212,6 +1213,7 @@
 		8F741CF8189F3F5D0048329A /* PuzzleDataWithPhonetics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PuzzleDataWithPhonetics.plist; path = Autista/Models/PuzzleDataWithPhonetics.plist; sourceTree = "<group>"; };
 		8FAF16FB18E8DE15003EC63D /* FirstLaunchInfoTextNew.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = FirstLaunchInfoTextNew.plist; path = Autista/Models/FirstLaunchInfoTextNew.plist; sourceTree = "<group>"; };
 		8FB1A922189D894C007A483F /* Instabug.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Instabug.framework; sourceTree = "<group>"; };
+		8FB6B13E18E8FCEA009CDB74 /* KeyboardButton_hightlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KeyboardButton_hightlighted.png; sourceTree = "<group>"; };
 		8FD692B818AE7167008418E2 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
 		8FD692B918AE7167008418E2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		8FD692BA18AE7167008418E2 /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
@@ -2004,6 +2006,7 @@
 		8D893DF11634EDEC00E2A64A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				8FB6B13E18E8FCEA009CDB74 /* KeyboardButton_hightlighted.png */,
 				8F383EF418E7802600627901 /* itunes_icon.png */,
 				8F383EF518E7802600627901 /* play_icon.png */,
 				8F383EF618E7802600627901 /* record_icon.png */,
@@ -3154,6 +3157,7 @@
 				8D96536916FF42A200B9E3FB /* Spoon.caf in Resources */,
 				8D96536A16FF42A200B9E3FB /* Table.caf in Resources */,
 				8D96536B16FF42A200B9E3FB /* Tap.caf in Resources */,
+				8FB6B13F18E8FCEA009CDB74 /* KeyboardButton_hightlighted.png in Resources */,
 				00766404189D8880009FE8DE /* AcousticModelEnglish.bundle in Resources */,
 				8D96536C16FF42A200B9E3FB /* Towel.caf in Resources */,
 				8D96536D16FF42A200B9E3FB /* Tree.caf in Resources */,

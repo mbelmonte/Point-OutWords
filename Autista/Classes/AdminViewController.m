@@ -216,10 +216,10 @@
             break;
             
         case 1:
-            self.awesome_descLabel.text = @"Record a praise prompt to encourage the child once a hard puzzle is completed. (Less than 1.5 seconds)";
-            self.super_descLabel.text = @"Record a praise prompt to encourage the child once a medium puzzle is completed. (Less than 1.5 seconds)";
-            self.welldone_descLabel.text = @"Record a praise prompt to encourage the child once a easy puzzle is completed (Less than 1.5 seconds).";
-            self.tryagain_descLabel.text = @"Record a praise prompt to encourage the child once a puzzle is not completed (Less than 1.5 seconds).";
+            self.awesome_descLabel.text = @"Record a praise prompt to encourage the child once a hard puzzle is completed. (Less than 2 seconds)";
+            self.super_descLabel.text = @"Record a praise prompt to encourage the child once a medium puzzle is completed. (Less than 2 seconds)";
+            self.welldone_descLabel.text = @"Record a praise prompt to encourage the child once a easy puzzle is completed (Less than 2 seconds).";
+            self.tryagain_descLabel.text = @"Record a praise prompt to encourage the child once a puzzle is not completed (Less than 2 seconds).";
             
             self.recordView.hidden = NO;
             self.itunesView.hidden = YES;
@@ -238,10 +238,10 @@
             break;
             
         case 2:
-            self.awesome_descLabel.text = @"Select a praise prompt to encourage the child once a hard puzzle is completed. (Less than 1.5 seconds)";
-            self.super_descLabel.text = @"Select a praise prompt to encourage the child once a medium puzzle is completed. (Less than 1.5 seconds)";
-            self.welldone_descLabel.text = @"Select a praise prompt to encourage the child once a easy puzzle is completed. (Less than 1.5 seconds)";
-            self.tryagain_descLabel.text = @"Select a praise prompt to encourage the child once a puzzle is not completed. (Less than 1.5 seconds)";
+            self.awesome_descLabel.text = @"Select a praise prompt to encourage the child once a hard puzzle is completed. (Less than 2 seconds)";
+            self.super_descLabel.text = @"Select a praise prompt to encourage the child once a medium puzzle is completed. (Less than 2 seconds)";
+            self.welldone_descLabel.text = @"Select a praise prompt to encourage the child once a easy puzzle is completed. (Less than 2 seconds)";
+            self.tryagain_descLabel.text = @"Select a praise prompt to encourage the child once a puzzle is not completed. (Less than 2 seconds)";
             
             self.recordView.hidden = YES;
             self.itunesView.hidden = NO;
@@ -668,7 +668,7 @@
     }
     
     // start recording
-    [recorder recordForDuration:(NSTimeInterval) 1.5];
+    [recorder recordForDuration:(NSTimeInterval) 2];
     if ([praiseFileLabelArrayForPlist objectAtIndex:index]) {
         [praiseFileLabelArrayForPlist removeObjectAtIndex:index];
     }
@@ -717,8 +717,8 @@
    didPickMediaItems: (MPMediaItemCollection *) collection
 {
     
-    //if the user only select one item and the duration of the item is less than 1.5s....
-    if (collection.count == 1 && [((NSNumber *)[((MPMediaItem *)[collection.items firstObject]) valueForProperty:MPMediaItemPropertyPlaybackDuration]) doubleValue]<=1.5) {
+    //if the user only select one item and the duration of the item is less than 2s....
+    if (collection.count == 1 && [((NSNumber *)[((MPMediaItem *)[collection.items firstObject]) valueForProperty:MPMediaItemPropertyPlaybackDuration]) doubleValue]<=2) {
        
         // assign a playback queue containing all media items on the device
         //[self.myPlayer setQueueWithItemCollection:self.musicPlayCollection];
@@ -738,13 +738,13 @@
         ((UIButton *)[self.itunesPlayBtnArray objectAtIndex:self.currentSelection]).hidden = NO;
         
     }
-    else if([((NSNumber *)[((MPMediaItem *)[collection.items firstObject]) valueForProperty:MPMediaItemPropertyPlaybackDuration]) doubleValue] > 1.5)
+    else if([((NSNumber *)[((MPMediaItem *)[collection.items firstObject]) valueForProperty:MPMediaItemPropertyPlaybackDuration]) doubleValue] > 2)
     {
         
         NSLog(@"%f", [((NSNumber *)[((MPMediaItem *)[collection.items firstObject]) valueForProperty:MPMediaItemPropertyPlaybackDuration]) doubleValue]);
         
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Fail to add music"
-                                                        message:@"The music should be less than 1.5s"
+                                                        message:@"The music should be less than 2s"
                                                        delegate:nil
                                               cancelButtonTitle:@"OK"
                                               otherButtonTitles:nil];
