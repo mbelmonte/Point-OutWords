@@ -2,7 +2,6 @@
 //  GuidedModeViewController.h
 //  Autista
 //
-//  Created by Shashwat Parhi on 3/1/13.
 //  Copyright (c) 2014 The Groden Center, Inc.
 //
 //  This program is free software: you can redistribute it and/or modify

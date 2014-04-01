@@ -2,7 +2,6 @@
 //  Attempt.m
 //  Autista
 //
-//  Created by Shashwat Parhi on 2/20/13.
 //  Copyright (c) 2014 The Groden Center, Inc.
 //
 //  This program is free software: you can redistribute it and/or modify
@@ -14,8 +13,7 @@
 //  but WITHOUT ANY WARRANTY; without even the implied warranty of
 //  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 //  GNU General Public License for more details.
-
-//  
+//
 //  To view the GNU General Public License, visit <http://www.gnu.org/licenses/>.
 //
 
