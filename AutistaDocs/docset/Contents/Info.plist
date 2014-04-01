@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.yourcompany.Autista</string>
+	<string>org.autismcollaborative.autista.Autista</string>
 	<key>CFBundleName</key>
 	<string>Autista Documentation</string>
 	<key>CFBundleShortVersionString</key>
@@ -25,10 +25,10 @@
 	<key>DashDocSetFamily</key>
 	<string>appledoc</string>
 	<key>DocSetPublisherIdentifier</key>
-	<string>com.yourcompany.documentation</string>
+	<string>org.autismcollaborative.autista.documentation</string>
 	<key>DocSetPublisherName</key>
-	<string>Company Name</string>
+	<string>The Groden Centre, Inc.</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2014 Company Name. All rights reserved.</string>
+	<string>© Permission is granted to copy</string>
 </dict>
 </plist>

@@ -1,4 +1,4 @@
 Documentation set was installed to Xcode!
 
-Path: /Users/haozheli/Library/Developer/Shared/Documentation/DocSets/com.yourcompany.Autista.docset
-Time: 2014-03-31 14:26:45 +0000
+Path: /Users/haozheli/Library/Developer/Shared/Documentation/DocSets/org.autismcollaborative.autista.Autista.docset
+Time: 2014-04-01 14:17:54 +0000
