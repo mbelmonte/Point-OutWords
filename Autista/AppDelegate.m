@@ -39,7 +39,7 @@
 {
     // Setup TestFlight
     //[TestFlight setDeviceIdentifier:[[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString]];
-    [TestFlight takeOff:@"720f99b3-598b-4635-af66-c4416aae61ad"];
+    [TestFlight takeOff:@"36f2d6b5-f4f3-4e04-be6f-48bec59b9613"];
     // Use this option to notifiy beta users of any updates
     //[TestFlight setOptions:@{ TFOptionDisableInAppUpdates : @YES }];
    
