@@ -110,7 +110,7 @@
         //RD
         //Dont recognize by _products[i] but by name of scene and of IAP or some associative array??
         //Also here all scenes are locked - one scene or first scene shud be unlocked??
-        if (i>0) {
+        if (0) {
             /*
              SKProduct * product = (SKProduct *) _products[i-1];
              NSLog(@"Found product in viewDidLoad: %@ %@ %0.2f", product.productIdentifier, product.localizedTitle, product.price.floatValue);
