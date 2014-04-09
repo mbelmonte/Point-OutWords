@@ -58,8 +58,11 @@
 	[self loadScenes];
     _prefs = [GlobalPreferences sharedGlobalPreferences];
 
-    if (!_prefs.betaTesting)
-        [self reload];
+    if (!_prefs.betaTesting){
+        //[self reload];
+        self.unlockAllButton.hidden=YES;
+        self.unlockAllButton.userInteractionEnabled=NO;
+    }
     else {
         self.unlockAllButton.hidden=YES;
         self.unlockAllButton.userInteractionEnabled=NO;
@@ -190,7 +193,7 @@
             //RD: dealloc lockbutton etc / remove their targets n selectors on removing from view too?
             NSInteger numScenes = [_scenes count];
             //RD: i=1 hardcoed again .. shud be assciative array based (as to which scene is free)
-            if ([[AutistaIAPHelper sharedInstance] productPurchased:@"com.madratgames.testautista.unlockall"]) {
+//            if ([[AutistaIAPHelper sharedInstance] productPurchased:@"com.madratgames.testautista.unlockall"]) {
                 self.unlockAllButton.hidden=YES;
                 self.unlockAllButton.userInteractionEnabled=NO;
 
@@ -199,27 +202,27 @@
                     UIView *v = [_scrollView viewWithTag:(i+numScenes)];
                     [v removeFromSuperview];
                 }
+//            }
+//            else {
+//                NSInteger unlockedScenes=0;
+//                NSInteger numScenes = [_scenes count];
+//
+//                for (int i = 1; i < numScenes; i++) {
+//                    SKProduct * product = (SKProduct *) _products[i-1];
+//                    
+//                    if ([[AutistaIAPHelper sharedInstance] productPurchased:product.productIdentifier]) {
+//                        //NSLog(@"In reload .. removing lock for scene : %d", i);
+//                        UIView *v = [_scrollView viewWithTag:(i+numScenes)];
+//                        [v removeFromSuperview];
+//                        unlockedScenes++;
+//                    }
+//                }
+//                if (unlockedScenes > numScenes-3) {
+//                    self.unlockAllButton.hidden=YES;
+//                    self.unlockAllButton.userInteractionEnabled=NO;
+//                }
             }
-            else {
-                NSInteger unlockedScenes=0;
-                NSInteger numScenes = [_scenes count];
-
-                for (int i = 1; i < numScenes; i++) {
-                    SKProduct * product = (SKProduct *) _products[i-1];
-                    
-                    if ([[AutistaIAPHelper sharedInstance] productPurchased:product.productIdentifier]) {
-                        //NSLog(@"In reload .. removing lock for scene : %d", i);
-                        UIView *v = [_scrollView viewWithTag:(i+numScenes)];
-                        [v removeFromSuperview];
-                        unlockedScenes++;
-                    }
-                }
-                if (unlockedScenes > numScenes-3) {
-                    self.unlockAllButton.hidden=YES;
-                    self.unlockAllButton.userInteractionEnabled=NO;
-                }
-            }
-        }
+//        }
     }];
 }
 
@@ -627,6 +630,11 @@
 //- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
 //{
 //	return (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft);
+//}
+
+//- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+//{
+//    return UIInterfaceOrientationLandscapeRight;
 //}
 
 -(BOOL)shouldAutorotate
