@@ -521,14 +521,16 @@
 - (IBAction)editPromptSource:(id)sender {
     self.isEdited = 1-self.isEdited;
     if (self.isEdited) {
-        [self moveSpaceForSelectionViewWith:610];
-        [self.promptSourceEdit_Btn setTitle:@"Save" forState:UIControlStateNormal];
+        [self moveSpaceForSelectionViewWith:630];
+        //[self.promptSourceEdit_Btn setTitle:@"Save" forState:UIControlStateNormal];
+        [self.promptSourceEdit_Btn setBackgroundImage:[UIImage imageNamed:@"save.png"] forState:UIControlStateNormal];
         
     }
     else{
          self.promptSourceSelectionView.hidden = YES;
         [self moveSpaceForSelectionViewWith:355];
-        [self.promptSourceEdit_Btn setTitle:@"Edit" forState:UIControlStateNormal];
+        //[self.promptSourceEdit_Btn setTitle:@"Edit" forState:UIControlStateNormal];
+         [self.promptSourceEdit_Btn setBackgroundImage:[UIImage imageNamed:@"edit.png"] forState:UIControlStateNormal];
     }
 }
 

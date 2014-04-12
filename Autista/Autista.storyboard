@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="pYk-1W-eWE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="pYk-1W-eWE">
     <dependencies>
         <deployment version="1296" defaultVersion="1296" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
@@ -807,11 +807,11 @@
                                 <rect key="frame" x="531" y="540" width="512" height="489"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kNF-jY-0bb">
-                                        <rect key="frame" x="285" y="5" width="126" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kNF-jY-0bb" userLabel="edit_btn">
+                                        <rect key="frame" x="335" y="0.0" width="35" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
-                                        <state key="normal" title="Edit">
+                                        <state key="normal" backgroundImage="edit.png">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -977,7 +977,7 @@
                                 </connections>
                             </slider>
                             <view contentMode="scaleToFill" id="Qp4-7c-6hz" userLabel="PromptSourceSelectionView">
-                                <rect key="frame" x="526" y="361" width="490" height="272"/>
+                                <rect key="frame" x="526" y="355" width="490" height="280"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Medium" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qsk-Bg-ZnF">
@@ -1740,6 +1740,7 @@
         <image name="PicnicScene.png" width="1024" height="768"/>
         <image name="Say na.png" width="264" height="533"/>
         <image name="WatermelonPlaceHolder.png" width="600" height="332"/>
+        <image name="edit.png" width="416" height="416"/>
         <image name="itunes_icon.png" width="70" height="70"/>
         <image name="play_icon.png" width="70" height="70"/>
         <image name="record_icon.png" width="70" height="70"/>
