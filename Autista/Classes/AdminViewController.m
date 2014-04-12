@@ -109,6 +109,8 @@
     
     _praisePromptSwitch.on = _prefs.praisePromptEnabled;
 
+    self.whetherAllowRecord_Switch.on = _prefs.whetherRecordVoice;
+    
     _ampThresh.value = _prefs.ampThresh;
     _snapDistance.value = _prefs.snapDistance;
     _selectDistance.value = _prefs.selectDistance;
@@ -117,6 +119,8 @@
 	_adjustTypeFrequency.value = _prefs.typePuzzleFrequency;
     _sayModeDifficulty.value = _prefs.sayModeDifficulty;
 	
+
+    
 	if (_scene != nil) {
 		UIView *dummyStateView = [_sceneDashboard viewWithTag:100];							// we placed one sample into the XIB file for good measure
 		CGRect stateRect = dummyStateView.frame;
@@ -381,6 +385,8 @@
     _prefs.ampThresh = _ampThresh.value;
     _prefs.sayModeDifficulty = _sayModeDifficulty.value;
     
+    _prefs.whetherRecordVoice = self.whetherAllowRecord_Switch.on;
+    
     //save the recorded sound url to the plist
     NSMutableDictionary *currentDict = [[NSMutableDictionary alloc]init];
     [currentDict setValue:recordFilePathArray forKey:@"RecordedPraise"];
@@ -555,6 +561,9 @@
     
     [self startRecordingWith:currentBtn.tag];
     
+}
+
+- (IBAction)handleAllowToRecord:(id)sender {
 }
 
 

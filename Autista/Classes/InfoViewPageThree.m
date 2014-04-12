@@ -20,13 +20,15 @@
 #import "InfoViewPageThree.h"
 
 @implementation InfoViewPageThree
+@synthesize prefs = _prefs;
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-		
+
+        
 		UIFont *avenirBold = [UIFont fontWithName:@"AvenirNext-Bold" size:28.];
 		UIFont *avenirMedium = [UIFont fontWithName:@"AvenirNext-Medium" size:22.];
 		
@@ -55,17 +57,35 @@
 		
 		[self addSubview:_textView];
         
+        _prefs = [GlobalPreferences sharedGlobalPreferences];
+        
         _logSwitch = [[UISwitch alloc] initWithFrame:CGRectMake(700, 296, 55, 31)];
         [_logSwitch addTarget: self action: @selector(flip:) forControlEvents:UIControlEventValueChanged];
-        _logSwitch.on = YES;
+        
+        _logSwitch.on = _prefs.whetherRecordVoice;
+        
         [self addSubview: _logSwitch];
 	}
     return self;
 }
 
 - (IBAction)flip:(id)sender {
-    if (_logSwitch.on) NSLog(@"On");
-    else  NSLog(@"Off");
+    
+    if (_logSwitch.on) {
+       
+        NSLog(@"On");
+        _prefs.whetherRecordVoice = 1;
+        
+    }
+    
+    else  {
+        
+        NSLog(@"Off");
+        _prefs.whetherRecordVoice = 0;
+
+    }
+    
+    [_prefs saveState];
 }
 
 
