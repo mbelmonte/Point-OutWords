@@ -72,7 +72,7 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
 
 - (void)buyProduct:(SKProduct *)product {
     
-    TFLog(@"Buying %@...", product.productIdentifier);
+    //TFLog(@"Buying %@...", product.productIdentifier);
     
     SKPayment * payment = [SKPayment paymentWithProduct:product];
     [[SKPaymentQueue defaultQueue] addPayment:payment];
@@ -105,7 +105,7 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
 }
 
 - (void)restoreTransaction:(SKPaymentTransaction *)transaction {
-    TFLog(@"restoreTransaction...");
+    //TFLog(@"restoreTransaction...");
     
     [self provideContentForProductIdentifier:transaction.originalTransaction.payment.productIdentifier];
     [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
@@ -145,12 +145,12 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
     _productsRequest = nil;
     
     NSArray * skProducts = response.products;
-    for (SKProduct * skProduct in skProducts) {
-        TFLog(@"Found product in IAPHelper : %@ %@ %0.2f",
-              skProduct.productIdentifier,
-              skProduct.localizedTitle,
-              skProduct.price.floatValue);
-    }
+//    for (SKProduct * skProduct in skProducts) {
+//        TFLog(@"Found product in IAPHelper : %@ %@ %0.2f",
+//              skProduct.productIdentifier,
+//              skProduct.localizedTitle,
+//              skProduct.price.floatValue);
+//    }
     
     _completionHandler(YES, skProducts);
     _completionHandler = nil;
@@ -159,7 +159,7 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
 
 - (void)request:(SKRequest *)request didFailWithError:(NSError *)error {
     
-    TFLog(@"Failed to load list of products.");
+    //TFLog(@"Failed to load list of products.");
     _productsRequest = nil;
     
     _completionHandler(NO, nil);

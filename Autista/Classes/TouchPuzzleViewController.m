@@ -705,7 +705,7 @@
 
 - (void)showBackOverlay
 {
-    [TestFlight passCheckpoint:@"Back button Tapped in Point mode"];
+    //[TestFlight passCheckpoint:@"Back button Tapped in Point mode"];
 
 	[_backOverlayTimer invalidate];
 	_backButtonPressed = YES;

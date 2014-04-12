@@ -69,7 +69,7 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
             if (error == kAudioServicesNoError) { // success
                 _soundID = aSoundID;
             } else {
-                TFLog(@"Error %ld loading sound at path: %@", error, path);
+                //TFLog(@"Error %ld loading sound at path: %@", error, path);
                 self = nil;
             }
         } else {

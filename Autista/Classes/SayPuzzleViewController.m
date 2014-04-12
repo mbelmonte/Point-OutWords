@@ -336,7 +336,7 @@
     }
     else {
         _soundsMissing = YES;
-        TFLog (@"Syllable sounds missing for this object");
+        //TFLog (@"Syllable sounds missing for this object");
     }
 }
 
@@ -399,8 +399,8 @@
     Float32 state;
     UInt32 propertySize = sizeof(CFStringRef);
     OSStatus n = AudioSessionGetProperty(kAudioSessionProperty_CurrentHardwareOutputVolume, &propertySize, &state);
-    if( n )
-        TFLog (@"audioVolume didnt work");// something didn't work...
+    //if( n )
+        //TFLog (@"audioVolume didnt work");// something didn't work...
     return state;
 }
 
@@ -448,18 +448,18 @@
         [audioSession setCategory:AVAudioSessionCategoryRecord error:&error];
     
     if(error) {
-        TFLog(@"audioSession set category: %@ %d %@", [error domain], [error code], [[error userInfo] description]);
+        //TFLog(@"audioSession set category: %@ %d %@", [error domain], [error code], [[error userInfo] description]);
         return;
     }
     [audioSession setActive:YES error:&error];
     if(error){
-        TFLog(@"audioSession set active: %@ %d %@", [error domain], [error code], [[error userInfo] description]);
+        //TFLog(@"audioSession set active: %@ %d %@", [error domain], [error code], [[error userInfo] description]);
         return;
     }
     
 	recorder = [[AVAudioRecorder alloc] initWithURL:url settings:settings error:&error];
 	if(error){
-        TFLog(@"audioSession recorder init: %@ %d %@", [error domain], [error code], [[error userInfo] description]);
+        //TFLog(@"audioSession recorder init: %@ %d %@", [error domain], [error code], [[error userInfo] description]);
         return;
     }
     
@@ -802,7 +802,7 @@
 
 - (void)showBackOverlay
 {
-    [TestFlight passCheckpoint:@"Back button Tapped in Say mode"];
+    //[TestFlight passCheckpoint:@"Back button Tapped in Say mode"];
 
     //NSLog(@"In Back Overlay");
 	[_backOverlayTimer invalidate];

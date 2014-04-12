@@ -821,7 +821,7 @@
 
 - (void)showBackOverlay
 {
-    [TestFlight passCheckpoint:@"Back button Tapped in Type mode"];
+    //[TestFlight passCheckpoint:@"Back button Tapped in Type mode"];
     
 	[_backOverlayTimer invalidate];
 	_backButtonPressed = YES;

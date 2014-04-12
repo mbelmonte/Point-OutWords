@@ -39,7 +39,7 @@
 {
     // Setup TestFlight
     //[TestFlight setDeviceIdentifier:[[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString]];
-    [TestFlight takeOff:@"36f2d6b5-f4f3-4e04-be6f-48bec59b9613"];
+    //[TestFlight takeOff:@"36f2d6b5-f4f3-4e04-be6f-48bec59b9613"];
     // Use this option to notifiy beta users of any updates
     //[TestFlight setOptions:@{ TFOptionDisableInAppUpdates : @YES }];
    
@@ -155,7 +155,7 @@
         if ([managedObjectContext hasChanges] && ![managedObjectContext save:&error]) {
              // Replace this implementation with code to handle the error appropriately.
              // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
-            TFLog(@"Unresolved error %@, %@", error, [error userInfo]);
+            //TFLog(@"Unresolved error %@, %@", error, [error userInfo]);
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Unexpected Behavior" message:[error localizedDescription] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
             //[alert addButtonWithTitle:@"Ok"];
             [alert show];
@@ -213,7 +213,7 @@
 	NSError *error = nil;
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
     if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&error]) {
-        TFLog(@"Unresolved error %@, %@", error, [error userInfo]);
+        //TFLog(@"Unresolved error %@, %@", error, [error userInfo]);
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Unexpected Behavior" message:[error localizedDescription] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         //[alert addButtonWithTitle:@"Ok"];
         [alert show];
