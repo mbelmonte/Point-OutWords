@@ -163,7 +163,7 @@
     
     
     CGRect currentFrame = self.sayModeView.frame;
-    currentFrame.origin.y = 328;
+    currentFrame.origin.y = 355;
     self.sayModeView.frame = currentFrame;
     self.promptSourceSelectionView.hidden = YES;
     self.isEdited = NO;
@@ -527,7 +527,7 @@
     }
     else{
          self.promptSourceSelectionView.hidden = YES;
-        [self moveSpaceForSelectionViewWith:328];
+        [self moveSpaceForSelectionViewWith:355];
         [self.promptSourceEdit_Btn setTitle:@"Edit" forState:UIControlStateNormal];
     }
 }
