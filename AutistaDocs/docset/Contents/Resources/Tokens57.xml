@@ -730,18 +730,6 @@ Choose correct sound based on the difficulties:</Abstract>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/preferredInterfaceOrientationForPresentation</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
-			
-			<Declaration>- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation</Declaration>
-			
-			
-			<Anchor>//api/name/preferredInterfaceOrientationForPresentation</Anchor>
-            <NodeRef refid="57"/>
-		</Token>
-		
-		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/shouldAutorotate</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>

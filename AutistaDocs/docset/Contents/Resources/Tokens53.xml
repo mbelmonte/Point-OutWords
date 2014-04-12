@@ -433,18 +433,6 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SceneViewController/preferredInterfaceOrientationForPresentation</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SceneViewController.m</DeclaredIn>
-			
-			<Declaration>- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation</Declaration>
-			
-			
-			<Anchor>//api/name/preferredInterfaceOrientationForPresentation</Anchor>
-            <NodeRef refid="53"/>
-		</Token>
-		
-		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SceneViewController/shouldAutorotate</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>SceneViewController.m</DeclaredIn>
