@@ -18,7 +18,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TestFlight.h"
 
 typedef enum {
 	AppRUnStateUndefined = 0, AppRunStateNormal, AppRunStateFirstRun, AppRunStateAppUpdated, AppRunStateAppHadCrashed

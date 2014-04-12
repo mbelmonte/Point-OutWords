@@ -40,8 +40,8 @@
 - (NSString *)JSONRepresentation {
     SBJsonWriter *writer = [[SBJsonWriter alloc] init];    
     NSString *json = [writer stringWithObject:self];
-    if (!json)
-        TFLog(@"-JSONRepresentation failed. Error is: %@", writer.error);
+    //if (!json)
+        //TFLog(@"-JSONRepresentation failed. Error is: %@", writer.error);
     return json;
 }
 
@@ -54,8 +54,8 @@
 - (id)JSONValue {
     SBJsonParser *parser = [[SBJsonParser alloc] init];
     id repr = [parser objectWithString:self];
-    if (!repr)
-        TFLog(@"-JSONValue failed. Error is: %@", parser.error);
+    //if (!repr)
+        //TFLog(@"-JSONValue failed. Error is: %@", parser.error);
     return repr;
 }
 
@@ -68,8 +68,8 @@
 - (id)JSONValue {
     SBJsonParser *parser = [[SBJsonParser alloc] init];
     id repr = [parser objectWithData:self];
-    if (!repr)
-        TFLog(@"-JSONValue failed. Error is: %@", parser.error);
+    //if (!repr)
+        //TFLog(@"-JSONValue failed. Error is: %@", parser.error);
     return repr;
 }
 

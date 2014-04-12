@@ -24,6 +24,20 @@ The app also logs all user interactions, allowing researchers or therapists to a
 	</dict>
 	<dict>
 		<key>title</key>
+		<string>You can help</string>
+		<key>text</key>
+		<string>Information logged by the app can aid autism research.  If you are using this app with an autistic child who has trouble with communicative speech, you can help by sending log files every now and then. Also, if you allow us to record audio during speak mode, please keep the switch on. Below are the partners responsible for this app.
+
+Do you allow us to record audio during speak mode?</string>
+		<key>imageName</key>
+		<string>logos2.png</string>
+		<key>offsetX</key>
+		<integer>-855</integer>
+		<key>offsetY</key>
+		<integer>-420</integer>
+	</dict>
+	<dict>
+		<key>title</key>
 		<string>Special LONG PRESS Buttons!</string>
 		<key>text</key>
 		<string>You can customize the app for your child, by holding down the Admin button for about three seconds.  Similarly there is a Back button which works only on Long Press, so that children will not inadvertently change the game&apos;s settings.</string>

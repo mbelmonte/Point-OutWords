@@ -74,7 +74,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [TestFlight passCheckpoint:@"Admin Screen opened"];
+    //[TestFlight passCheckpoint:@"Admin Screen opened"];
     _prefs = [GlobalPreferences sharedGlobalPreferences];
 
     if (_prefs.betaTesting) {
@@ -109,6 +109,8 @@
     
     _praisePromptSwitch.on = _prefs.praisePromptEnabled;
 
+    self.whetherAllowRecord_Switch.on = _prefs.whetherRecordVoice;
+    
     _ampThresh.value = _prefs.ampThresh;
     _snapDistance.value = _prefs.snapDistance;
     _selectDistance.value = _prefs.selectDistance;
@@ -117,6 +119,8 @@
 	_adjustTypeFrequency.value = _prefs.typePuzzleFrequency;
     _sayModeDifficulty.value = _prefs.sayModeDifficulty;
 	
+
+    
 	if (_scene != nil) {
 		UIView *dummyStateView = [_sceneDashboard viewWithTag:100];							// we placed one sample into the XIB file for good measure
 		CGRect stateRect = dummyStateView.frame;
@@ -339,24 +343,24 @@
     /*if (_prefs.backgroundMusicEnabled != _backgroundMusicSwitch.on)
         [TestFlight passCheckpoint:@"Admin Setting changed : Background Music switch"];
      */
-    if (_prefs.ampThresh != _ampThresh.value)
-        [TestFlight passCheckpoint:@"Admin Setting changed : Amplitude Threshold"];
-    if (_prefs.snapBackEnabled != _snapbackSwitch.on)
-        [TestFlight passCheckpoint:@"Admin Setting changed : Snap Back switch"];
-    if (_prefs.praisePromptEnabled != _praisePromptSwitch.on)
-        [TestFlight passCheckpoint:@"Admin Setting changed : Praise Prompt switch"];
-    if (_prefs.snapDistance != _snapDistance.value)
-        [TestFlight passCheckpoint:@"Admin Setting changed : Snapping Distance"];
-    if (_prefs.selectDistance != _selectDistance.value)
-        [TestFlight passCheckpoint:@"Admin Setting changed : Selecting Distance"];
-    if ((_prefs.dragPuzzleFrequency != _adjustDragFrequency.value) || (_prefs.typePuzzleFrequency != _adjustTypeFrequency.value) || (_prefs.speakPuzzleFrequency != _adjustSpeakFrequency.value)) {
-        [TestFlight passCheckpoint:@"Admin Setting changed : Point / Type / Say frequency"];
-        NSString * str = [NSString stringWithFormat:@"Admin Setting changed : Point from %f to %f, Type from %f to %f, Say from %f to %f", _prefs.dragPuzzleFrequency, _adjustDragFrequency.value, _prefs.typePuzzleFrequency, _adjustTypeFrequency.value, _prefs.speakPuzzleFrequency, _adjustSpeakFrequency.value];
-        [TestFlight passCheckpoint:str];
-    }
-    
-    if (_prefs.sayModeDifficulty != _sayModeDifficulty.value)
-        [TestFlight passCheckpoint:@"Admin Setting changed : Say Mode Difficulty"];
+//    if (_prefs.ampThresh != _ampThresh.value)
+//        [TestFlight passCheckpoint:@"Admin Setting changed : Amplitude Threshold"];
+//    if (_prefs.snapBackEnabled != _snapbackSwitch.on)
+//        [TestFlight passCheckpoint:@"Admin Setting changed : Snap Back switch"];
+//    if (_prefs.praisePromptEnabled != _praisePromptSwitch.on)
+//        [TestFlight passCheckpoint:@"Admin Setting changed : Praise Prompt switch"];
+//    if (_prefs.snapDistance != _snapDistance.value)
+//        [TestFlight passCheckpoint:@"Admin Setting changed : Snapping Distance"];
+//    if (_prefs.selectDistance != _selectDistance.value)
+//        [TestFlight passCheckpoint:@"Admin Setting changed : Selecting Distance"];
+//    if ((_prefs.dragPuzzleFrequency != _adjustDragFrequency.value) || (_prefs.typePuzzleFrequency != _adjustTypeFrequency.value) || (_prefs.speakPuzzleFrequency != _adjustSpeakFrequency.value)) {
+//        [TestFlight passCheckpoint:@"Admin Setting changed : Point / Type / Say frequency"];
+//        NSString * str = [NSString stringWithFormat:@"Admin Setting changed : Point from %f to %f, Type from %f to %f, Say from %f to %f", _prefs.dragPuzzleFrequency, _adjustDragFrequency.value, _prefs.typePuzzleFrequency, _adjustTypeFrequency.value, _prefs.speakPuzzleFrequency, _adjustSpeakFrequency.value];
+//        [TestFlight passCheckpoint:str];
+//    }
+//    
+//    if (_prefs.sayModeDifficulty != _sayModeDifficulty.value)
+//        [TestFlight passCheckpoint:@"Admin Setting changed : Say Mode Difficulty"];
     
 	/*if (_prefs.backgroundMusicEnabled == YES && _backgroundMusicSwitch.on == NO) {
         _prefs.backgroundMusicEnabled = _backgroundMusicSwitch.on;
@@ -381,6 +385,8 @@
     _prefs.ampThresh = _ampThresh.value;
     _prefs.sayModeDifficulty = _sayModeDifficulty.value;
     
+    _prefs.whetherRecordVoice = self.whetherAllowRecord_Switch.on;
+    
     //save the recorded sound url to the plist
     NSMutableDictionary *currentDict = [[NSMutableDictionary alloc]init];
     [currentDict setValue:recordFilePathArray forKey:@"RecordedPraise"];
@@ -398,7 +404,7 @@
 -(IBAction)handleBGMusicChanged:(id)sender
 {
     if (_prefs.backgroundMusicEnabled != _backgroundMusicSwitch.on)
-        [TestFlight passCheckpoint:@"Admin Setting changed : Background Music switch"];
+        //[TestFlight passCheckpoint:@"Admin Setting changed : Background Music switch"];
     
 	if (_prefs.backgroundMusicEnabled == YES && _backgroundMusicSwitch.on == NO) {
         _prefs.backgroundMusicEnabled = _backgroundMusicSwitch.on;
@@ -460,7 +466,7 @@
 
 - (IBAction)restoreTapped:(id)sender {
     //NSLog(@"Tapped Restore button");
-    [TestFlight passCheckpoint:@"Restore button Tapped"];
+    //[TestFlight passCheckpoint:@"Restore button Tapped"];
 
     [[AutistaIAPHelper sharedInstance] restoreCompletedTransactions];
 }
@@ -493,7 +499,7 @@
     NSString *title = [alertView buttonTitleAtIndex:buttonIndex];
     if([title isEqualToString:@"Reset"])
     {
-        [TestFlight passCheckpoint:@"Reset App button Tapped"];
+        //[TestFlight passCheckpoint:@"Reset App button Tapped"];
         [[EventLogger sharedLogger] deleteAttempts];
     }
 }
@@ -555,6 +561,9 @@
     
     [self startRecordingWith:currentBtn.tag];
     
+}
+
+- (IBAction)handleAllowToRecord:(id)sender {
 }
 
 

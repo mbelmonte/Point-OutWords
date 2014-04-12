@@ -12,7 +12,6 @@
 	#import <UIKit/UIKit.h>
 	#import <Foundation/Foundation.h>
 	#import <CoreData/CoreData.h>
-    #import "TestFlight.h"
 #endif
 
 #define kBufferDurationSeconds .5

@@ -144,7 +144,7 @@
 		newLog.eventInfo = [eventInfo JSONRepresentation];
 		newLog.event = [_events objectAtIndex:index];
 		
-        TFLog(@"Event : %@, Event Info : %@, App Settings : %@, User : %@, Time since Launch : %@", newLog.event.title, newLog.eventInfo, newLog.appSettings, newLog.user.fullname, newLog.timeSinceLaunch);
+        //TFLog(@"Event : %@, Event Info : %@, App Settings : %@, User : %@, Time since Launch : %@", newLog.event.title, newLog.eventInfo, newLog.appSettings, newLog.user.fullname, newLog.timeSinceLaunch);
         
 		[_appDelegate saveContext];
 	}
@@ -192,17 +192,17 @@
     }
 
     //NSString * str = [NSString stringWithFormat:
-    TFLog (@"Puzzle Attempted for Object : %@, Mode : %@, State : %@", puzzleObject.title, modeStr, stateStr);
+    //TFLog (@"Puzzle Attempted for Object : %@, Mode : %@, State : %@", puzzleObject.title, modeStr, stateStr);
     
-    [TestFlight passCheckpoint:puzzleObject.scene.title];
-    [TestFlight passCheckpoint:modeStr];
+    //[TestFlight passCheckpoint:puzzleObject.scene.title];
+    //[TestFlight passCheckpoint:modeStr];
 
-    if (state == PuzzleStateCompleted) {
-        //TFLog (@"Puzzle Completed Successfully for Object : %@, Mode : %d", puzzleObject.title, mode);
-        [TestFlight passCheckpoint:@"Puzzle Completed Successfully"];
-    }
-    else
-        [TestFlight passCheckpoint:@"Puzzle Attempted but not completed successfully"];
+//    if (state == PuzzleStateCompleted) {
+//        //TFLog (@"Puzzle Completed Successfully for Object : %@, Mode : %d", puzzleObject.title, mode);
+//        [TestFlight passCheckpoint:@"Puzzle Completed Successfully"];
+//    }
+//    else
+//        [TestFlight passCheckpoint:@"Puzzle Attempted but not completed successfully"];
 }
 
 - (NSDictionary *)getScoresFromAttempsForUser:(User *)user

@@ -68,6 +68,9 @@
 	[userDefaults setObject:[NSNumber numberWithFloat:_speakPuzzleFrequency] forKey:@"speakPuzzleFrequency"];
     [userDefaults setObject:[NSNumber numberWithFloat:_sayModeDifficulty] forKey:@"sayModeDifficulty"];
 	
+    [userDefaults setObject:[NSNumber numberWithInteger:self.whetherRecordVoice] forKey:@"whetherRecordVoice"];
+
+    
 	[userDefaults synchronize];
 }
 
@@ -94,6 +97,8 @@
 	[userDefaults removeObjectForKey:@"typePuzzleFrequency"];
 	[userDefaults removeObjectForKey:@"speakPuzzleFrequency"];
     [userDefaults removeObjectForKey:@"sayModeDifficulty"];
+    
+    [userDefaults removeObjectForKey:@"whetherRecordVoice"];
     
 	[userDefaults synchronize];
 	
@@ -156,7 +161,9 @@
 		_speakPuzzleFrequency = [[userDefaults objectForKey:@"speakPuzzleFrequency"] floatValue];
     if ([userDefaults objectForKey:@"sayModeDifficulty"] != nil)
 		_sayModeDifficulty = [[userDefaults objectForKey:@"sayModeDifficulty"] floatValue];
-
+    if ([userDefaults objectForKey:@"whetherRecordVoice"] != nil)
+		self.whetherRecordVoice = [[userDefaults objectForKey:@"whetherRecordVoice"] integerValue];
+    
 }
 
 - (void)resetToFactoryDefaults
@@ -177,6 +184,7 @@
 	_typePuzzleFrequency = 20;
 	_speakPuzzleFrequency = 20;
     _sayModeDifficulty = 0;
+    self.whetherRecordVoice = 0;
 }
 
 - (NSDictionary *)packagedSettings
@@ -201,7 +209,9 @@
 	[settingsDict setObject:[NSNumber numberWithFloat:_speakPuzzleFrequency] forKey:@"speakPuzzleFrequency"];
 	[settingsDict setObject:[NSNumber numberWithFloat:_sayModeDifficulty] forKey:@"sayModeDifficulty"];
 
-	return settingsDict;
+	[settingsDict setObject:[NSNumber numberWithInteger:self.whetherRecordVoice] forKey:@"whetherRecordVoice"];
+    
+    return settingsDict;
 }
 
 @end

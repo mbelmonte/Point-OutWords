@@ -20,6 +20,8 @@
 
 #import "FirstLaunchViewController.h"
 #import "InfoView.h"
+#import "InfoViewPageOne.h"
+#import "InfoViewPageThree.h"
 #import "GlobalPreferences.h"
 #import <AudioToolbox/AudioToolbox.h>
 
@@ -55,41 +57,78 @@
 	_scrollView.contentSize = CGSizeMake(numPages * size.width, size.height);
 	
 	for (int i = 0; i < numPages; i++) {
-		NSDictionary *pageDict = [pages objectAtIndex:i];
-		InfoView *infoView = [[InfoView alloc] initWithFrame:self.view.bounds];
-		infoView.frame = CGRectOffset(infoView.frame, i * size.width, 0);
-		infoView.titleLabel.text = [pageDict valueForKey:@"title"];
-		infoView.textView.text = [pageDict valueForKey:@"text"];
-		
-		if ([pageDict valueForKey:@"imageName"] != nil) {
-			UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[pageDict valueForKey:@"imageName"]]];
-			
-			CGFloat offsetX = [[pageDict valueForKey:@"offsetX"] floatValue];
-			CGFloat offsetY = [[pageDict valueForKey:@"offsetY"] floatValue];
-			
-			if (offsetX < 0)
-				offsetX = size.width + offsetX;
-
-			if (offsetY < 0)
-				offsetY = size.height + offsetY;
-
-			CGRect frame = CGRectMake(0,0,.75*imageView.frame.size.width, .75*imageView.frame.size.height);
-			frame.origin = CGPointMake(offsetX, offsetY);
-			
-			imageView.frame = frame;
-			infoView.imageView = imageView;
-		}
-		
-		if (i == numPages - 1) {
-			UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 200, 44)];
-			[button setImage:[UIImage imageNamed:@"BtnGetStartedOff.png"] forState:UIControlStateNormal];
-			[button setImage:[UIImage imageNamed:@"BtnGetStartedOn.png"] forState:UIControlStateHighlighted];
-			[button addTarget:self action:@selector(handleDismissButtonPressed) forControlEvents:UIControlEventTouchUpInside];
-			
-			infoView.dismissButton = button;
-		}
-		
-		[_scrollView addSubview:infoView];
+        if (i == 0) {
+            NSDictionary *pageDict = [pages objectAtIndex:i];
+            InfoViewPageOne *infoViewPageOne = [[InfoViewPageOne alloc] initWithFrame:self.view.bounds];
+            infoViewPageOne.frame = CGRectOffset(infoViewPageOne.frame, i * size.width, 0);
+            infoViewPageOne.titleLabel.text = [pageDict valueForKey:@"title"];
+            infoViewPageOne.textView.text = [pageDict valueForKey:@"text"];
+            [_scrollView addSubview:infoViewPageOne];
+        }
+        else if (i == 2){
+            NSDictionary *pageDict = [pages objectAtIndex:i];
+            InfoViewPageThree *infoViewPageThree = [[InfoViewPageThree alloc] initWithFrame:self.view.bounds];
+            infoViewPageThree.frame = CGRectOffset(infoViewPageThree.frame, i * size.width, 0);
+            infoViewPageThree.titleLabel.text = [pageDict valueForKey:@"title"];
+            infoViewPageThree.textView.text = [pageDict valueForKey:@"text"];
+            
+            if ([pageDict valueForKey:@"imageName"] != nil) {
+                UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[pageDict valueForKey:@"imageName"]]];
+                
+                CGFloat offsetX = [[pageDict valueForKey:@"offsetX"] floatValue];
+                CGFloat offsetY = [[pageDict valueForKey:@"offsetY"] floatValue];
+                
+                if (offsetX < 0)
+                    offsetX = size.width + offsetX;
+                
+                if (offsetY < 0)
+                    offsetY = size.height + offsetY;
+                
+                CGRect frame = CGRectMake(0,0,.75*imageView.frame.size.width, .75*imageView.frame.size.height);
+                frame.origin = CGPointMake(offsetX, offsetY);
+                
+                imageView.frame = frame;
+                infoViewPageThree.imageView = imageView;
+            }
+            [_scrollView addSubview:infoViewPageThree];
+        }
+        else {
+            NSDictionary *pageDict = [pages objectAtIndex:i];
+            InfoView *infoView = [[InfoView alloc] initWithFrame:self.view.bounds];
+            infoView.frame = CGRectOffset(infoView.frame, i * size.width, 0);
+            infoView.titleLabel.text = [pageDict valueForKey:@"title"];
+            infoView.textView.text = [pageDict valueForKey:@"text"];
+            
+            if ([pageDict valueForKey:@"imageName"] != nil) {
+                UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[pageDict valueForKey:@"imageName"]]];
+                
+                CGFloat offsetX = [[pageDict valueForKey:@"offsetX"] floatValue];
+                CGFloat offsetY = [[pageDict valueForKey:@"offsetY"] floatValue];
+                
+                if (offsetX < 0)
+                    offsetX = size.width + offsetX;
+                
+                if (offsetY < 0)
+                    offsetY = size.height + offsetY;
+                
+                CGRect frame = CGRectMake(0,0,.75*imageView.frame.size.width, .75*imageView.frame.size.height);
+                frame.origin = CGPointMake(offsetX, offsetY);
+                
+                imageView.frame = frame;
+                infoView.imageView = imageView;
+            }
+            
+            if (i == numPages - 1) {
+                UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 200, 44)];
+                [button setImage:[UIImage imageNamed:@"BtnGetStartedOff.png"] forState:UIControlStateNormal];
+                [button setImage:[UIImage imageNamed:@"BtnGetStartedOn.png"] forState:UIControlStateHighlighted];
+                [button addTarget:self action:@selector(handleDismissButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+                
+                infoView.dismissButton = button;
+            }
+            
+            [_scrollView addSubview:infoView];
+        }
 	}
 	
 	_pageControl.numberOfPages = numPages;
@@ -97,7 +136,7 @@
 
 - (void)handleDismissButtonPressed
 {
-    [TestFlight passCheckpoint:@"Get Started button Tapped"];
+    //[TestFlight passCheckpoint:@"Get Started button Tapped"];
     AudioServicesPlaySystemSound(0x450);
     
 	[self dismissViewControllerAnimated:YES completion:nil];

@@ -74,7 +74,7 @@ Copyright (C) 2012 Apple Inc. All Rights Reserved.
 	glGetRenderbufferParameterivOES(GL_RENDERBUFFER_OES, GL_RENDERBUFFER_HEIGHT_OES, &_backingHeight);
 	
 	if (glCheckFramebufferStatusOES(GL_FRAMEBUFFER_OES) != GL_FRAMEBUFFER_COMPLETE_OES) {
-		TFLog(@"GLLevelMetere.m : failed to make complete framebuffer object %x", glCheckFramebufferStatusOES(GL_FRAMEBUFFER_OES));
+		//TFLog(@"GLLevelMetere.m : failed to make complete framebuffer object %x", glCheckFramebufferStatusOES(GL_FRAMEBUFFER_OES));
 		return NO;
 	}
 	

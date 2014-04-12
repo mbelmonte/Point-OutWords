@@ -833,7 +833,7 @@
                                             <action selector="handleAmpThreshChanged:" destination="55P-Rz-YyG" eventType="valueChanged" id="EjV-yT-36T"/>
                                         </connections>
                                     </slider>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Speech Detection" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eIP-c5-2oL">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Speech Loudness" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eIP-c5-2oL">
                                         <rect key="frame" x="0.0" y="80" width="141" height="69"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="24"/>
@@ -863,6 +863,20 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
                                         <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="zVC-PT-309" userLabel="allowToRecord_switch">
+                                        <rect key="frame" x="285" y="250" width="51" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="handleAllowToRecord:" destination="55P-Rz-YyG" eventType="valueChanged" id="eWt-nt-aZw"/>
+                                        </connections>
+                                    </switch>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Allow To Record" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JFK-Gd-gb0" userLabel="Label - record">
+                                        <rect key="frame" x="0.0" y="232" width="141" height="69"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="24"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -1546,6 +1560,7 @@
                         <outlet property="welldone_descLabel" destination="ef6-PE-Jf0" id="5BS-yW-wqf"/>
                         <outlet property="welldone_fileLabel" destination="LsE-4i-3d0" id="3De-EX-eip"/>
                         <outlet property="welldone_itunes_Btn_Play" destination="4HX-Jy-NfB" id="7zC-zL-iiK"/>
+                        <outlet property="whetherAllowRecord_Switch" destination="zVC-PT-309" id="Opi-ak-hDo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JnR-Tp-Lwd" userLabel="First Responder" sceneMemberID="firstResponder"/>

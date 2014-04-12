@@ -106,6 +106,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *tryagain_descLabel;
 
+@property (weak, nonatomic) IBOutlet UISwitch *whetherAllowRecord_Switch;
+
 
 //@property (weak, nonatomic) IBOutlet UIPickerView *promptPickerView;
 
@@ -117,7 +119,9 @@
 - (IBAction)handleBGMusicChanged:(id)sender;
 - (IBAction)handleResetSlidersPressed:(id)sender;
 - (IBAction)handleResetAppPressed:(id)sender;
+- (IBAction)handleAllowToRecord:(id)sender;
 - (IBAction)recordPrompt:(id)sender;
+
 
 
 @end

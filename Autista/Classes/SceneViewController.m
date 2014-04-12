@@ -115,8 +115,8 @@
     Float32 state;
     UInt32 propertySize = sizeof(CFStringRef);
     OSStatus n = AudioSessionGetProperty(kAudioSessionProperty_CurrentHardwareOutputVolume, &propertySize, &state);
-    if( n )
-    TFLog (@"audioVolume didnt work");// something didn't work...
+    //if( n )
+    //TFLog (@"audioVolume didnt work");// something didn't work...
     return state;
 }
 
@@ -257,7 +257,7 @@
 
 - (IBAction)handleCloseScenePressed:(id)sender
 {
-    [TestFlight passCheckpoint:@"~Scene close Tapped"];
+    //[TestFlight passCheckpoint:@"~Scene close Tapped"];
     AudioServicesPlaySystemSound(0x450);
     
     [self dismissViewControllerAnimated:NO completion:nil];

@@ -237,7 +237,7 @@
 	musicPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
 	musicPlayer.numberOfLoops = -1;														// negative to loop indefinitely, remember to call stop
 	if (error) {
-		TFLog(@"Error in musicPlayer: %@", [error localizedDescription]);
+		//TFLog(@"Error in musicPlayer: %@", [error localizedDescription]);
 	}
 	else {
 		musicPlayer.delegate = self;
@@ -290,7 +290,7 @@
     //To test crashing in TestFlight
     //assert(! "crashing on purpose to test crash logs reporting.");
     AudioServicesPlaySystemSound(0x450);
-    [TestFlight passCheckpoint:@"Info button Tapped"];
+    //[TestFlight passCheckpoint:@"Info button Tapped"];
 
     UIViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"FirstLaunchViewController"];
     [self presentViewController:vc animated:NO completion:nil];
@@ -299,7 +299,7 @@
 - (IBAction)feedbackTapped:(id)sender {
     //NSLog(@"Tapped Feedback button");
     AudioServicesPlaySystemSound(0x450);
-    [TestFlight passCheckpoint:@"Feedback button Tapped"];
+    //[TestFlight passCheckpoint:@"Feedback button Tapped"];
 
     [Instabug ShowFeedbackFormWithScreenshot:YES];
 }
@@ -423,7 +423,7 @@
             self.unlockAllButton.userInteractionEnabled=NO;
 
             for (int i = 1; i < numScenes; i++) {
-                TFLog(@"In unlockall in productPurchased .. Removing lock for product with id : %@ and tag : %d", productIdentifier, (i+numScenes));
+                //TFLog(@"In unlockall in productPurchased .. Removing lock for product with id : %@ and tag : %d", productIdentifier, (i+numScenes));
                 UIView *v = [_scrollView viewWithTag:(i+numScenes)];
                 [v removeFromSuperview];
             }
@@ -436,7 +436,7 @@
                 SKProduct * product = (SKProduct *) _products[i-1];
 
                 if ([product.productIdentifier isEqualToString:productIdentifier]) {
-                    TFLog(@"Removing lock for product with id : %@ and tag : %d", productIdentifier, (i+numScenes));
+                    //TFLog(@"Removing lock for product with id : %@ and tag : %d", productIdentifier, (i+numScenes));
                     UIView *v = [_scrollView viewWithTag:(i+numScenes)];
                     [v removeFromSuperview];
                     unlockedScenes++;
