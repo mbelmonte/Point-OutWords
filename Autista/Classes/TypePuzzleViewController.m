@@ -751,7 +751,7 @@
             
             //set up animation
             CAKeyframeAnimation * anim = [ CAKeyframeAnimation animationWithKeyPath:@"transform" ] ;
-            anim.values = @[ [ NSValue valueWithCATransform3D:CATransform3DMakeTranslation(-5.0f, 0.0f, 0.0f) ], [ NSValue valueWithCATransform3D:CATransform3DMakeTranslation(5.0f, 0.0f, 0.0f) ] ] ;
+            anim.values = @[ [ NSValue valueWithCATransform3D:CATransform3DMakeTranslation(-_prefs.typeSignificancy, 0.0f, 0.0f) ], [ NSValue valueWithCATransform3D:CATransform3DMakeTranslation(_prefs.typeSignificancy, 0.0f, 0.0f) ] ] ;
             anim.autoreverses = YES ;
             anim.repeatCount = 4.0f ;
             anim.duration = 0.07f ;
@@ -761,7 +761,7 @@
             [[self buttonFromASCIICode:[[_object.title uppercaseString] characterAtIndex:_currentLetterPosition]].layer addAnimation:anim forKey:nil];
             
             CAKeyframeAnimation * anim1 = [ CAKeyframeAnimation animationWithKeyPath:@"transform" ] ;
-            anim1.values = @[ [ NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0f, 1.0f, 1.0f)], [ NSValue valueWithCATransform3D:CATransform3DMakeScale(1.5f, 1.5f, 1.0f) ]];
+            anim1.values = @[ [ NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0f, 1.0f, 1.0f)], [ NSValue valueWithCATransform3D:CATransform3DMakeScale(_prefs.typeSignificancy*0.3, _prefs.typeSignificancy*0.3, 1.0f) ]];
             anim1.autoreverses = NO ;
             anim1.repeatCount = 4;
             anim1.duration = 0.07f ;

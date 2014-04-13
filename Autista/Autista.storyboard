@@ -1503,6 +1503,10 @@
                                     <action selector="chosePromptSoure:" destination="55P-Rz-YyG" eventType="valueChanged" id="viv-r4-jfP"/>
                                 </connections>
                             </segmentedControl>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="6.5" minValue="3" maxValue="10" id="ZNJ-BS-KVX">
+                                <rect key="frame" x="233" y="737" width="252" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.80000000000000004" colorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -1521,6 +1525,7 @@
                         <outlet property="awesome_fileLabel" destination="DW5-TD-y0U" id="nOI-sv-fmw"/>
                         <outlet property="awesome_itunes_Btn_Play" destination="eAW-xy-MUe" id="ghL-j8-2Ik"/>
                         <outlet property="backgroundMusicSwitch" destination="QeG-xb-JkY" id="Q5k-Ru-xul"/>
+                        <outlet property="changeTypeScaleSignificancy" destination="ZNJ-BS-KVX" id="uLk-UH-bTr"/>
                         <outlet property="closeOverlayButton" destination="nMS-iX-0GV" id="9eD-6U-0WW"/>
                         <outlet property="guidedModeSwitch" destination="qps-1Z-uTB" id="JnS-9s-to7"/>
                         <outlet property="highlightKeySwitch" destination="mNT-bQ-xOU" id="kj8-Lh-nTi"/>

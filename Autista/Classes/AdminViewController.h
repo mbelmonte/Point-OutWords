@@ -108,6 +108,7 @@
 
 @property (weak, nonatomic) IBOutlet UISwitch *whetherAllowRecord_Switch;
 
+@property (weak, nonatomic) IBOutlet UISlider *changeTypeScaleSignificancy;
 
 //@property (weak, nonatomic) IBOutlet UIPickerView *promptPickerView;
 

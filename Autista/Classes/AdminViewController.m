@@ -118,7 +118,7 @@
 	_adjustSpeakFrequency.value = _prefs.speakPuzzleFrequency;
 	_adjustTypeFrequency.value = _prefs.typePuzzleFrequency;
     _sayModeDifficulty.value = _prefs.sayModeDifficulty;
-	
+	self.changeTypeScaleSignificancy.value = _prefs.typeSignificancy;
 
     
 	if (_scene != nil) {
@@ -386,7 +386,7 @@
     _prefs.sayModeDifficulty = _sayModeDifficulty.value;
     
     _prefs.whetherRecordVoice = self.whetherAllowRecord_Switch.on;
-    
+    _prefs.typeSignificancy = self.changeTypeScaleSignificancy.value;
     //save the recorded sound url to the plist
     NSMutableDictionary *currentDict = [[NSMutableDictionary alloc]init];
     [currentDict setValue:recordFilePathArray forKey:@"RecordedPraise"];
@@ -845,6 +845,8 @@
     }
 
 }
+
+
 /*
 #pragma mark picker delegate
 

@@ -53,6 +53,8 @@
 @property (nonatomic, assign) CGFloat speakPuzzleFrequency;
 @property (nonatomic, assign) CGFloat sayModeDifficulty;
 
+@property (nonatomic, assign) CGFloat typeSignificancy;
+
 @property (nonatomic, assign) NSInteger *whetherRecordVoice;
 
 /**-----------------------------------------------------------------------------

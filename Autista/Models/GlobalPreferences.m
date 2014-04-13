@@ -70,6 +70,7 @@
 	
     [userDefaults setObject:[NSNumber numberWithInteger:self.whetherRecordVoice] forKey:@"whetherRecordVoice"];
 
+    [userDefaults setObject:[NSNumber numberWithFloat:self.typeSignificancy] forKey:@"typeSignificancy"];
     
 	[userDefaults synchronize];
 }
@@ -99,6 +100,8 @@
     [userDefaults removeObjectForKey:@"sayModeDifficulty"];
     
     [userDefaults removeObjectForKey:@"whetherRecordVoice"];
+    
+    [userDefaults removeObjectForKey:@"typeSignificancy"];
     
 	[userDefaults synchronize];
 	
@@ -164,6 +167,9 @@
     if ([userDefaults objectForKey:@"whetherRecordVoice"] != nil)
 		self.whetherRecordVoice = [[userDefaults objectForKey:@"whetherRecordVoice"] integerValue];
     
+    if ([userDefaults objectForKey:@"typeSignificancy"] != nil)
+		self.typeSignificancy = [[userDefaults objectForKey:@"typeSignificancy"] floatValue];
+    
 }
 
 - (void)resetToFactoryDefaults
@@ -185,6 +191,8 @@
 	_speakPuzzleFrequency = 20;
     _sayModeDifficulty = 0;
     self.whetherRecordVoice = 0;
+    
+    self.typeSignificancy = 5.0;
 }
 
 - (NSDictionary *)packagedSettings
