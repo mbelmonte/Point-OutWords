@@ -35,27 +35,6 @@
 
 #define DOCUMENTS_FOLDER [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]
 @interface AdminViewController ()<AVAudioRecorderDelegate>
-//for record
-@property NSMutableArray *recordFilePathArray;
-@property AVAudioRecorder *recorder;
-@property AVAudioPlayer *player;
-@property NSMutableArray * praiseFileLabelArray;
-//for itunes
-@property MPMusicPlayerController *myPlayer;
-@property NSMutableArray *praiseFileLabelArrayForPlist;
-@property NSMutableArray *iTunesPlayList;
-
-//for default
-@property NSMutableArray *defaultPromptArray;
-@property NSMutableArray *allPromptArray;
-
-@property int currentSelection;
-
-@property BOOL isEdited;
-
-@property NSArray *recordPlayBtnArray;
-@property NSArray *itunesPlayBtnArray;
-@property  UIActivityIndicatorView *indicator;
 @end
 
 @implementation AdminViewController
@@ -120,6 +99,28 @@
     _sayModeDifficulty.value = _prefs.sayModeDifficulty;
 	self.changeTypeScaleSignificancy.value = _prefs.typeSignificancy;
 
+    
+    _generalLabel.text = NSLocalizedString(@"General", nil);
+    _generalPointLabel.text = NSLocalizedString(@"Point", nil);
+    _generalSpeakLabel.text = NSLocalizedString(@"Speak", nil);
+    _generalTypeLabel.text = NSLocalizedString(@"Type", nil);
+    
+    _pointModeLabel.text = NSLocalizedString(@"Point Mode", nil);
+    _pointModeSelectingDistanceLabel.text = NSLocalizedString(@"Selecting Distance", nil);
+    _pointModeSnapBackLabel.text = NSLocalizedString(@"Snap Back", nil);
+    _pointModeSnappingDistanceLabel.text = NSLocalizedString(@"Snapping Distance", nil);
+    
+    _speakModeLabel.text = NSLocalizedString(@"Speak Mode", nil);
+    _speakModeSpeechLoudnessLabel.text = NSLocalizedString(@"Speech Loudness", nil);
+    _speakModeToleranceLabel.text = NSLocalizedString(@"Difficulty", nil);
+    
+    _backgroundMusicLabel.text = NSLocalizedString(@"Background Music", nil);
+    
+    _praisePromptLabel.text = NSLocalizedString(@"Praise Prompt", nil);
+    _praisePromptHardLabel.text = NSLocalizedString(@"Hard", nil);
+    _praisePromptMediumLabel.text = NSLocalizedString(@"Medium", nil);
+    _praisePromptEasyLabel.text = NSLocalizedString(@"Easy", nil);
+    _praisePromptTryAgainLabel.text = NSLocalizedString(@"Try Again", nil);
     
 	if (_scene != nil) {
 		UIView *dummyStateView = [_sceneDashboard viewWithTag:100];							// we placed one sample into the XIB file for good measure
@@ -201,10 +202,10 @@
 {
     switch (controlIndex) {
         case 0:
-            self.awesome_descLabel.text = @"A praise prompt to encourage the child once a hard puzzle is completed.";
-            self.super_descLabel.text = @"A praise prompt to encourage the child once a medium puzzle is completed.";
-            self.welldone_descLabel.text = @"A praise prompt to encourage the child once a easy puzzle is completed.";
-            self.tryagain_descLabel.text = @"A praise prompt to encourage the child once a puzzle is not completed.";
+            self.awesome_descLabel.text = NSLocalizedString(@"A praise prompt to encourage the child once a hard puzzle is completed.", nil);
+            self.super_descLabel.text = NSLocalizedString(@"A praise prompt to encourage the child once a medium puzzle is completed.", nil);
+            self.welldone_descLabel.text = NSLocalizedString(@"A praise prompt to encourage the child once a easy puzzle is completed.", nil);
+            self.tryagain_descLabel.text = NSLocalizedString(@"A praise prompt to encourage the child once a puzzle is not completed.", nil);
             
             self.recordView.hidden = YES;
             self.itunesView.hidden = YES;
@@ -217,10 +218,10 @@
             break;
             
         case 1:
-            self.awesome_descLabel.text = @"Record a praise prompt to encourage the child once a hard puzzle is completed. (Less than 2 seconds)";
-            self.super_descLabel.text = @"Record a praise prompt to encourage the child once a medium puzzle is completed. (Less than 2 seconds)";
-            self.welldone_descLabel.text = @"Record a praise prompt to encourage the child once a easy puzzle is completed (Less than 2 seconds).";
-            self.tryagain_descLabel.text = @"Record a praise prompt to encourage the child once a puzzle is not completed (Less than 2 seconds).";
+            self.awesome_descLabel.text = NSLocalizedString(@"Record a praise prompt to encourage the child once a hard puzzle is completed. (Less than 2 seconds)", nil);
+            self.super_descLabel.text = NSLocalizedString(@"Record a praise prompt to encourage the child once a medium puzzle is completed. (Less than 2 seconds)", nil);
+            self.welldone_descLabel.text = NSLocalizedString(@"Record a praise prompt to encourage the child once a easy puzzle is completed (Less than 2 seconds).", nil);
+            self.tryagain_descLabel.text = NSLocalizedString(@"Record a praise prompt to encourage the child once a puzzle is not completed (Less than 2 seconds).", nil);
             
             self.recordView.hidden = NO;
             self.itunesView.hidden = YES;
@@ -239,10 +240,10 @@
             break;
             
         case 2:
-            self.awesome_descLabel.text = @"Select a praise prompt to encourage the child once a hard puzzle is completed. (Less than 2 seconds)";
-            self.super_descLabel.text = @"Select a praise prompt to encourage the child once a medium puzzle is completed. (Less than 2 seconds)";
-            self.welldone_descLabel.text = @"Select a praise prompt to encourage the child once a easy puzzle is completed. (Less than 2 seconds)";
-            self.tryagain_descLabel.text = @"Select a praise prompt to encourage the child once a puzzle is not completed. (Less than 2 seconds)";
+            self.awesome_descLabel.text = NSLocalizedString(@"Select a praise prompt to encourage the child once a hard puzzle is completed. (Less than 2 seconds)", nil);
+            self.super_descLabel.text = NSLocalizedString(@"Select a praise prompt to encourage the child once a medium puzzle is completed. (Less than 2 seconds)", nil);
+            self.welldone_descLabel.text = NSLocalizedString(@"Select a praise prompt to encourage the child once a easy puzzle is completed. (Less than 2 seconds)", nil);
+            self.tryagain_descLabel.text = NSLocalizedString(@"Select a praise prompt to encourage the child once a puzzle is not completed. (Less than 2 seconds)", nil);
             
             self.recordView.hidden = YES;
             self.itunesView.hidden = NO;
@@ -259,7 +260,7 @@
                 
             }
             
-            break;
+        break;
     }
 }
 

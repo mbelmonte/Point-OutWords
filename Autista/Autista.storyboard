@@ -1524,17 +1524,31 @@
                         <outlet property="awesome_descLabel" destination="Qsi-Lx-UDe" id="q1M-gy-ih4"/>
                         <outlet property="awesome_fileLabel" destination="DW5-TD-y0U" id="nOI-sv-fmw"/>
                         <outlet property="awesome_itunes_Btn_Play" destination="eAW-xy-MUe" id="ghL-j8-2Ik"/>
+                        <outlet property="backgroundMusicLabel" destination="jaH-kK-z6d" id="h8U-sf-fmf"/>
                         <outlet property="backgroundMusicSwitch" destination="QeG-xb-JkY" id="Q5k-Ru-xul"/>
                         <outlet property="changeTypeScaleSignificancy" destination="ZNJ-BS-KVX" id="uLk-UH-bTr"/>
                         <outlet property="closeOverlayButton" destination="nMS-iX-0GV" id="9eD-6U-0WW"/>
+                        <outlet property="generalLabel" destination="Xvb-un-6Ig" id="1KW-Ls-cFH"/>
+                        <outlet property="generalPointLabel" destination="On5-Eh-zng" id="rbe-aa-Odt"/>
+                        <outlet property="generalSpeakLabel" destination="heI-9n-96b" id="uAF-A0-jqA"/>
+                        <outlet property="generalTypeLabel" destination="PPN-Bu-PiT" id="aD3-0b-pCm"/>
                         <outlet property="guidedModeSwitch" destination="qps-1Z-uTB" id="JnS-9s-to7"/>
                         <outlet property="highlightKeySwitch" destination="mNT-bQ-xOU" id="kj8-Lh-nTi"/>
                         <outlet property="itunesView" destination="TtQ-je-Cce" id="pAy-4V-Ky6"/>
                         <outlet property="itunes_Btn" destination="0BS-Qa-Ihn" id="yzo-zX-K5F"/>
                         <outlet property="keyHighlightingInfoLabel" destination="sv6-wv-N3K" id="hlm-wP-q53"/>
                         <outlet property="logSizeLabel" destination="7Yr-bi-Jkm" id="M7o-iN-Tsq"/>
+                        <outlet property="pointModeLabel" destination="9z0-HC-1vL" id="xyD-Op-ejI"/>
+                        <outlet property="pointModeSelectingDistanceLabel" destination="nRf-zr-0Cy" id="HlH-df-49d"/>
+                        <outlet property="pointModeSnapBackLabel" destination="vgU-TJ-oaL" id="qQT-MY-uJU"/>
+                        <outlet property="pointModeSnappingDistanceLabel" destination="zGX-2G-JPU" id="y7G-5p-PFm"/>
                         <outlet property="pointModeView" destination="JW5-qO-rxc" id="fRm-ez-o2m"/>
+                        <outlet property="praisePromptEasyLabel" destination="RdC-Sz-SDH" id="yBK-92-aQU"/>
+                        <outlet property="praisePromptHardLabel" destination="12Z-iB-dcr" id="ROV-51-uhN"/>
+                        <outlet property="praisePromptLabel" destination="RKv-d0-JnR" id="5ry-3j-wrW"/>
+                        <outlet property="praisePromptMediumLabel" destination="qsk-Bg-ZnF" id="26W-rO-tGz"/>
                         <outlet property="praisePromptSwitch" destination="2Dw-ab-VvE" id="9dX-N5-KYy"/>
+                        <outlet property="praisePromptTryAgainLabel" destination="BzT-94-Fws" id="SaS-dH-djf"/>
                         <outlet property="promptSourceEdit_Btn" destination="kNF-jY-0bb" id="36J-Em-tKm"/>
                         <outlet property="promptSourceSegment" destination="4ro-yG-MiN" id="glT-BM-C69"/>
                         <outlet property="promptSourceSelectionView" destination="Qp4-7c-6hz" id="XLB-Sf-BhT"/>
@@ -1550,6 +1564,9 @@
                         <outlet property="snapBackInfoLabel" destination="LN9-yj-29j" id="Vmj-kZ-PiK"/>
                         <outlet property="snapDistance" destination="cav-RL-RUG" id="V52-lS-ma1"/>
                         <outlet property="snapbackSwitch" destination="JoH-6w-5v0" id="RX4-bi-Zij"/>
+                        <outlet property="speakModeLabel" destination="kUA-nm-Ac0" id="dAq-aS-Lfr"/>
+                        <outlet property="speakModeSpeechLoudnessLabel" destination="eIP-c5-2oL" id="OD2-gu-kGe"/>
+                        <outlet property="speakModeToleranceLabel" destination="hDw-r9-hpI" id="0Su-YX-RpT"/>
                         <outlet property="super_Btn_Play" destination="m03-tk-PSK" id="HXe-LX-mLV"/>
                         <outlet property="super_Btn_Record" destination="d9D-NR-f7G" id="2j3-LS-b7W"/>
                         <outlet property="super_descLabel" destination="YBK-Aa-zb0" id="lst-IW-p5J"/>

@@ -160,6 +160,8 @@
 
 @property (weak, nonatomic) IBOutlet UISwitch *whetherAllowRecord_Switch;
 
+@property (weak, nonatomic) IBOutlet UISlider *changeTypeScaleSignificancy;
+
 /**-----------------------------------------------------------------------------
  * @name Properties UI element labels
  * -----------------------------------------------------------------------------
@@ -177,14 +179,14 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *speakModeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *speakModeSpeechLoudnessLabel;
-@property (weak, nonatomic) IBOutlet UILabel *speakModeDifficultyLabel;
+@property (weak, nonatomic) IBOutlet UILabel *speakModeToleranceLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *backgroundMusicLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *praisePromptLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *praisePromptHardLabel;
-//@property (weak, nonatomic) IBOutlet UILabel *praisePromptMediumLabel;
+@property (weak, nonatomic) IBOutlet UILabel *praisePromptMediumLabel;
 @property (weak, nonatomic) IBOutlet UILabel *praisePromptEasyLabel;
 @property (weak, nonatomic) IBOutlet UILabel *praisePromptTryAgainLabel;
 
