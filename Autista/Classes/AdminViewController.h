@@ -105,7 +105,7 @@
 @property (nonatomic, strong) IBOutlet UILabel *guidedModeInfoLabel;
 @property (nonatomic, strong) IBOutlet UILabel *snapBackInfoLabel;
 @property (nonatomic, strong) IBOutlet UILabel *keyHighlightingInfoLabel;
-@property (nonatomic, strong) IBOutlet UILabel *slidersInfoLabel;
+@property (nonatomic, strong) IBOutlet UILabel *generalSlidersInfoLabel;
 @property (nonatomic, strong) IBOutlet UILabel *logSizeLabel;
 
 @property (nonatomic, strong) IBOutlet UISwitch *praisePromptSwitch;
@@ -174,16 +174,21 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *pointModeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *pointModeSelectingDistanceLabel;
+@property (weak, nonatomic) IBOutlet UILabel *pointModeSelectingDistanceSliderInfoLabel;
 @property (weak, nonatomic) IBOutlet UILabel *pointModeSnapBackLabel;
+@property (weak, nonatomic) IBOutlet UILabel *pointModeSnapBackInfoLabel;
 @property (weak, nonatomic) IBOutlet UILabel *pointModeSnappingDistanceLabel;
+@property (weak, nonatomic) IBOutlet UILabel *pointModeSnappingDistanceSliderInfoLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *speakModeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *speakModeSpeechLoudnessLabel;
 @property (weak, nonatomic) IBOutlet UILabel *speakModeToleranceLabel;
 
+
 @property (weak, nonatomic) IBOutlet UILabel *backgroundMusicLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *praisePromptLabel;
+@property (weak, nonatomic) IBOutlet UILabel *praisePromptInfoLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *praisePromptHardLabel;
 @property (weak, nonatomic) IBOutlet UILabel *praisePromptMediumLabel;

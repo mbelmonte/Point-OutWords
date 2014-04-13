@@ -1530,6 +1530,7 @@
                         <outlet property="closeOverlayButton" destination="nMS-iX-0GV" id="9eD-6U-0WW"/>
                         <outlet property="generalLabel" destination="Xvb-un-6Ig" id="1KW-Ls-cFH"/>
                         <outlet property="generalPointLabel" destination="On5-Eh-zng" id="rbe-aa-Odt"/>
+                        <outlet property="generalSlidersInfoLabel" destination="D2B-jp-edS" id="3Gw-QR-aRK"/>
                         <outlet property="generalSpeakLabel" destination="heI-9n-96b" id="uAF-A0-jqA"/>
                         <outlet property="generalTypeLabel" destination="PPN-Bu-PiT" id="aD3-0b-pCm"/>
                         <outlet property="guidedModeSwitch" destination="qps-1Z-uTB" id="JnS-9s-to7"/>
@@ -1540,11 +1541,15 @@
                         <outlet property="logSizeLabel" destination="7Yr-bi-Jkm" id="M7o-iN-Tsq"/>
                         <outlet property="pointModeLabel" destination="9z0-HC-1vL" id="xyD-Op-ejI"/>
                         <outlet property="pointModeSelectingDistanceLabel" destination="nRf-zr-0Cy" id="HlH-df-49d"/>
+                        <outlet property="pointModeSelectingDistanceSliderInfoLabel" destination="VlA-Y4-4VQ" id="V8M-0q-DjP"/>
+                        <outlet property="pointModeSnapBackInfoLabel" destination="LN9-yj-29j" id="PkG-GY-PN1"/>
                         <outlet property="pointModeSnapBackLabel" destination="vgU-TJ-oaL" id="qQT-MY-uJU"/>
                         <outlet property="pointModeSnappingDistanceLabel" destination="zGX-2G-JPU" id="y7G-5p-PFm"/>
+                        <outlet property="pointModeSnappingDistanceSliderInfoLabel" destination="V3G-eu-n3l" id="fEo-NJ-Qdp"/>
                         <outlet property="pointModeView" destination="JW5-qO-rxc" id="fRm-ez-o2m"/>
                         <outlet property="praisePromptEasyLabel" destination="RdC-Sz-SDH" id="yBK-92-aQU"/>
                         <outlet property="praisePromptHardLabel" destination="12Z-iB-dcr" id="ROV-51-uhN"/>
+                        <outlet property="praisePromptInfoLabel" destination="TNV-tk-Tp0" id="LdG-gT-feg"/>
                         <outlet property="praisePromptLabel" destination="RKv-d0-JnR" id="5ry-3j-wrW"/>
                         <outlet property="praisePromptMediumLabel" destination="qsk-Bg-ZnF" id="26W-rO-tGz"/>
                         <outlet property="praisePromptSwitch" destination="2Dw-ab-VvE" id="9dX-N5-KYy"/>
@@ -1553,6 +1558,7 @@
                         <outlet property="promptSourceSegment" destination="4ro-yG-MiN" id="glT-BM-C69"/>
                         <outlet property="promptSourceSelectionView" destination="Qp4-7c-6hz" id="XLB-Sf-BhT"/>
                         <outlet property="recordView" destination="QTb-gY-mW1" id="yIr-uA-eKL"/>
+                        <outlet property="resetAppButton" destination="fXP-5m-cMn" id="zqE-4E-ias"/>
                         <outlet property="resetSlidersButton" destination="9OM-VJ-LYU" id="4bL-qz-1D0"/>
                         <outlet property="restoreButton" destination="HLr-Ga-YE5" id="XXI-KD-jcV"/>
                         <outlet property="sayModeDifficulty" destination="1U5-6z-EwV" id="Ibi-sj-Ik7"/>
@@ -1560,7 +1566,6 @@
                         <outlet property="sceneDashboard" destination="2uN-jr-d9u" id="jHF-v6-ZOJ"/>
                         <outlet property="selectDistance" destination="FzM-f0-TDz" id="Bii-ng-09j"/>
                         <outlet property="sendLogsButton" destination="dE7-b5-bYR" id="ujg-MU-GhL"/>
-                        <outlet property="slidersInfoLabel" destination="D2B-jp-edS" id="sjQ-RX-sXI"/>
                         <outlet property="snapBackInfoLabel" destination="LN9-yj-29j" id="Vmj-kZ-PiK"/>
                         <outlet property="snapDistance" destination="cav-RL-RUG" id="V52-lS-ma1"/>
                         <outlet property="snapbackSwitch" destination="JoH-6w-5v0" id="RX4-bi-Zij"/>

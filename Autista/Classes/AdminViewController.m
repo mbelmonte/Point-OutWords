@@ -67,7 +67,7 @@
 		_guidedModeInfoLabel.font = [UIFont systemFontOfSize:12];
 		_snapBackInfoLabel.font = [UIFont systemFontOfSize:12];
 		_keyHighlightingInfoLabel.font = [UIFont systemFontOfSize:12];
-		_slidersInfoLabel.font = [UIFont systemFontOfSize:12];
+		_generalSlidersInfoLabel.font = [UIFont systemFontOfSize:12];
 	}
     
 	_resetSlidersButton.layer.cornerRadius = 13.5;
@@ -97,30 +97,42 @@
 	_adjustSpeakFrequency.value = _prefs.speakPuzzleFrequency;
 	_adjustTypeFrequency.value = _prefs.typePuzzleFrequency;
     _sayModeDifficulty.value = _prefs.sayModeDifficulty;
-	self.changeTypeScaleSignificancy.value = _prefs.typeSignificancy;
+	_changeTypeScaleSignificancy.value = _prefs.typeSignificancy;
 
-    
+    //General app setting labels
     _generalLabel.text = NSLocalizedString(@"General", nil);
     _generalPointLabel.text = NSLocalizedString(@"Point", nil);
     _generalSpeakLabel.text = NSLocalizedString(@"Speak", nil);
     _generalTypeLabel.text = NSLocalizedString(@"Type", nil);
+    _generalSlidersInfoLabel.text = NSLocalizedString(@"Change how often each type of puzzle appears.", nil);
+    _backgroundMusicLabel.text = NSLocalizedString(@"Background Music", nil);
+    _resetAppButton.titleLabel.text = NSLocalizedString(@"Reset App", nil);
+    _resetSlidersButton.titleLabel.text = NSLocalizedString(@"Reset Sliders", nil);
+    _sendLogsButton.titleLabel.text = NSLocalizedString(@"Send Log Data", nil);
     
+    //Point mode setting labels
     _pointModeLabel.text = NSLocalizedString(@"Point Mode", nil);
     _pointModeSelectingDistanceLabel.text = NSLocalizedString(@"Selecting Distance", nil);
+    _pointModeSelectingDistanceSliderInfoLabel.text = NSLocalizedString(@"In Point Mode, choose how far away from a puzzle piece a finger has to land so as to grab that piece.", nil);
     _pointModeSnapBackLabel.text = NSLocalizedString(@"Snap Back", nil);
+    _pointModeSnapBackInfoLabel.text = NSLocalizedString(@"In Point Mode, choose whether puzzle pieces return to their original position if placed incorrectly.", nil);
     _pointModeSnappingDistanceLabel.text = NSLocalizedString(@"Snapping Distance", nil);
+    _pointModeSnappingDistanceSliderInfoLabel.text = NSLocalizedString(@"In Point Mode, choose how close to its correct position a puzzle piece must be dragged in order to snap into place.", nil);
     
+    //Speak mode setting labels
     _speakModeLabel.text = NSLocalizedString(@"Speak Mode", nil);
     _speakModeSpeechLoudnessLabel.text = NSLocalizedString(@"Speech Loudness", nil);
     _speakModeToleranceLabel.text = NSLocalizedString(@"Difficulty", nil);
     
-    _backgroundMusicLabel.text = NSLocalizedString(@"Background Music", nil);
-    
+    //Praise prompt setting labels
     _praisePromptLabel.text = NSLocalizedString(@"Praise Prompt", nil);
+    _praisePromptInfoLabel.text = NSLocalizedString(@"Choose whether the app provides a verbal praise prompt, such as 'Super' or 'You are awesome', on completion of a puzzle.", nil);
     _praisePromptHardLabel.text = NSLocalizedString(@"Hard", nil);
     _praisePromptMediumLabel.text = NSLocalizedString(@"Medium", nil);
     _praisePromptEasyLabel.text = NSLocalizedString(@"Easy", nil);
     _praisePromptTryAgainLabel.text = NSLocalizedString(@"Try Again", nil);
+    
+
     
 	if (_scene != nil) {
 		UIView *dummyStateView = [_sceneDashboard viewWithTag:100];							// we placed one sample into the XIB file for good measure

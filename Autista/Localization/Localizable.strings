@@ -8,17 +8,27 @@
 
 //Admin view
 
-"General" = "General lalala";
+//General app setting labels
+"General" = "General";
 "Point" = "Point";
 "Speak" = "Speak";
 "Type" = "Type";
+"Change how often each type of puzzle appears." = "Change how often each type of puzzle appears.";
+
+//Point mode setting labels
 "Point Mode" = "Point Mode";
 "Selecting Distance" = "Selecting Distance";
 "Snap Back" = "Snap Back";
 "Snapping Distance" = "Snapping Distance";
+"In Point Mode, choose how far away from a puzzle piece a finger has to land so as to grab that piece." = "In Point Mode, choose how far away from a puzzle piece a finger has to land so as to grab that piece.";
+"In Point Mode, choose whether puzzle pieces return to their original position if placed incorrectly." = "In Point Mode, choose whether puzzle pieces return to their original position if placed incorrectly.";
+"In Point Mode, choose how close to its correct position a puzzle piece must be dragged in order to snap into place." = "In Point Mode, choose how close to its correct position a puzzle piece must be dragged in order to snap into place.";
+
+//Speak mode setting labels
 "Speak Mode" = "Speak Mode";
 "Speech Loudness" = "Speech Loudness";
-"Difficulty" = "Difficulty";
+"Tolerance" = "Tolerance";
+
 "Background Music" = "Background Music";
 "Praise Prompt" = "Praise Prompt";
 "Hard" = "Hard";
@@ -26,7 +36,15 @@
 "Easy" = "Easy";
 "Try Again" = "Try Again";
 
+//Button Labels
+
+"Reset App" = "Reset App";
+"Reset Sliders" = "Reset Sliders";
+"Send Log Data" = "Send Log Data";
+
 //Labels for Praise Prompt
+"Choose whether the app provides a verbal praise prompt, such as 'Super' or 'You are awesome', on completion of a puzzle." = "Choose whether the app provides a verbal praise prompt, such as 'Super' or 'You are awesome', on completion of a puzzle.";
+
 "A praise prompt to encourage the child once a hard puzzle is completed." = "A praise prompt to encourage the child once a hard puzzle is completed.";
 
 "A praise prompt to encourage the child once a medium puzzle is completed." = "A praise prompt to encourage the child once a medium puzzle is completed.";

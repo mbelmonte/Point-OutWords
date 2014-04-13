@@ -1309,38 +1309,38 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setSlidersInfoLabel:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setGeneralSlidersInfoLabel:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>AdminViewController.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) IBOutlet UILabel *slidersInfoLabel</Declaration>
+			<Declaration>@property (nonatomic, strong) IBOutlet UILabel *generalSlidersInfoLabel</Declaration>
 			
 			
-			<Anchor>//api/name/slidersInfoLabel</Anchor>
+			<Anchor>//api/name/generalSlidersInfoLabel</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/slidersInfoLabel</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/generalSlidersInfoLabel</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>AdminViewController.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) IBOutlet UILabel *slidersInfoLabel</Declaration>
+			<Declaration>@property (nonatomic, strong) IBOutlet UILabel *generalSlidersInfoLabel</Declaration>
 			
 			
-			<Anchor>//api/name/slidersInfoLabel</Anchor>
+			<Anchor>//api/name/generalSlidersInfoLabel</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/slidersInfoLabel</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/generalSlidersInfoLabel</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>AdminViewController.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) IBOutlet UILabel *slidersInfoLabel</Declaration>
+			<Declaration>@property (nonatomic, strong) IBOutlet UILabel *generalSlidersInfoLabel</Declaration>
 			
 			
-			<Anchor>//api/name/slidersInfoLabel</Anchor>
+			<Anchor>//api/name/generalSlidersInfoLabel</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
@@ -2644,6 +2644,42 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setPointModeSelectingDistanceSliderInfoLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *pointModeSelectingDistanceSliderInfoLabel</Declaration>
+			
+			
+			<Anchor>//api/name/pointModeSelectingDistanceSliderInfoLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/pointModeSelectingDistanceSliderInfoLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *pointModeSelectingDistanceSliderInfoLabel</Declaration>
+			
+			
+			<Anchor>//api/name/pointModeSelectingDistanceSliderInfoLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/pointModeSelectingDistanceSliderInfoLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *pointModeSelectingDistanceSliderInfoLabel</Declaration>
+			
+			
+			<Anchor>//api/name/pointModeSelectingDistanceSliderInfoLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setPointModeSnapBackLabel:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>AdminViewController.h</DeclaredIn>
@@ -2680,6 +2716,42 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setPointModeSnapBackInfoLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *pointModeSnapBackInfoLabel</Declaration>
+			
+			
+			<Anchor>//api/name/pointModeSnapBackInfoLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/pointModeSnapBackInfoLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *pointModeSnapBackInfoLabel</Declaration>
+			
+			
+			<Anchor>//api/name/pointModeSnapBackInfoLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/pointModeSnapBackInfoLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *pointModeSnapBackInfoLabel</Declaration>
+			
+			
+			<Anchor>//api/name/pointModeSnapBackInfoLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setPointModeSnappingDistanceLabel:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>AdminViewController.h</DeclaredIn>
@@ -2712,6 +2784,42 @@
 			
 			
 			<Anchor>//api/name/pointModeSnappingDistanceLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setPointModeSnappingDistanceSliderInfoLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *pointModeSnappingDistanceSliderInfoLabel</Declaration>
+			
+			
+			<Anchor>//api/name/pointModeSnappingDistanceSliderInfoLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/pointModeSnappingDistanceSliderInfoLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *pointModeSnappingDistanceSliderInfoLabel</Declaration>
+			
+			
+			<Anchor>//api/name/pointModeSnappingDistanceSliderInfoLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/pointModeSnappingDistanceSliderInfoLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *pointModeSnappingDistanceSliderInfoLabel</Declaration>
+			
+			
+			<Anchor>//api/name/pointModeSnappingDistanceSliderInfoLabel</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
@@ -2892,6 +3000,42 @@
 			
 			
 			<Anchor>//api/name/praisePromptLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setPraisePromptInfoLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *praisePromptInfoLabel</Declaration>
+			
+			
+			<Anchor>//api/name/praisePromptInfoLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/praisePromptInfoLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *praisePromptInfoLabel</Declaration>
+			
+			
+			<Anchor>//api/name/praisePromptInfoLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/praisePromptInfoLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *praisePromptInfoLabel</Declaration>
+			
+			
+			<Anchor>//api/name/praisePromptInfoLabel</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
