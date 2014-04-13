@@ -56,6 +56,9 @@
 @property NSString *lmPath;
 @property NSString *dicPath;
 @property NSInteger alreadyPassSay;
+
+@property NSInteger notFirstOne;
+
 @end
 
 @implementation SayPuzzleViewController
@@ -75,6 +78,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    _notFirstOne = 0;
     
     activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
  
@@ -231,6 +236,8 @@
 
 	[[NSNotificationCenter defaultCenter] postNotificationName:@"StartingSayTypePuzzle" object:nil];
 	[[EventLogger sharedLogger] logEvent:LogEventCodePuzzlePresented eventInfo:@{@"Mode": @"Say"}];
+    
+    [self startListening];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -309,6 +316,9 @@
         //_syllableURLs = [[NSMutableArray alloc] init];
         
         if ([_syllables count] == 1) {
+            AVAudioPlayer *saySound = [[AVAudioPlayer alloc] initWithContentsOfURL:sayURL error:nil];
+            [_syllableSounds addObject:saySound];
+            
             NSString *audioFilePath = [[NSBundle mainBundle] pathForResource:[onlyWAVs[0] stringByDeletingPathExtension] ofType:@"caf"];
             NSURL *audioFileURL = [NSURL fileURLWithPath:audioFilePath];
             AVAudioPlayer *syllableSound = [[AVAudioPlayer alloc] initWithContentsOfURL:audioFileURL error:nil];
@@ -317,6 +327,9 @@
             _firstSyllItem = [AVPlayerItem playerItemWithURL:audioFileURL];
         }
         else {
+            AVAudioPlayer *saySound = [[AVAudioPlayer alloc] initWithContentsOfURL:sayURL error:nil];
+            [_syllableSounds addObject:saySound];
+            
             for (int i = 0; i < [_syllables count]; i++) {
                 NSString *str;
                 str = [NSString stringWithFormat:@"Syll_%d",(i+1)];
@@ -477,16 +490,27 @@
     //RD
     if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"6.0")) {
         if (!_soundsMissing) {
-                NSArray *queue = @[_sayItem, _firstSyllItem];
-                _qplayer = [[AVQueuePlayer alloc] initWithItems:queue];
-                _qplayer.actionAtItemEnd = AVPlayerActionAtItemEndAdvance;
-                NSLog(@"system volume in start rec : %f", [self audioVolume]);
-                /*if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0"))
-                    [_qplayer setVolume:[self audioVolumeFac]];
-                 */
-                [_qplayer play];
+//                NSArray *queue = @[_sayItem, _firstSyllItem];
+//                _qplayer = [[AVQueuePlayer alloc] initWithItems:queue];
+//                _qplayer.actionAtItemEnd = AVPlayerActionAtItemEndAdvance;
+//                NSLog(@"system volume in start rec : %f", [self audioVolume]);
+//                /*if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0"))
+//                    [_qplayer setVolume:[self audioVolumeFac]];
+//                 */
+//                [_qplayer play];
             
-                [self performSelector:@selector(startListening) withObject:nil afterDelay:2];
+            AVAudioPlayer * saySound = _syllableSounds[0];
+            [saySound prepareToPlay];
+            NSLog(@"system volume in next syll : %f", [self audioVolume]);
+            /*if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0"))
+             [syllableSound setVolume:[self audioVolumeFac]];
+             */
+            saySound.delegate = self;
+            [saySound play];
+            NSLog(@"%@",saySound.url);
+            
+
+            //[self performSelector:@selector(startListening) withObject:nil afterDelay:0];
             }
     }
     sayNa.hidden = NO;
@@ -530,7 +554,7 @@
                 syllLabel.text = _syllables[_currentSyllable];
                 
                 if (!_soundsMissing) {
-                    AVAudioPlayer * syllableSound = _syllableSounds[_currentSyllable];
+                    AVAudioPlayer * syllableSound = _syllableSounds[_currentSyllable+1];
                     [syllableSound prepareToPlay];
                     NSLog(@"system volume in next syll : %f", [self audioVolume]);
                     /*if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0"))
@@ -554,7 +578,30 @@
 }
 
 - (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag{
-    [self performSelector:@selector(resumeRecognition) withObject:nil afterDelay:0.5];
+    NSString * sayPath = [[NSBundle mainBundle] pathForResource:@"Say" ofType:@"caf"];
+    NSURL *sayURL = [NSURL fileURLWithPath:sayPath];
+    
+    if ([player.url isEqual:sayURL]){
+        if (!_soundsMissing) {
+            player = _syllableSounds[1];
+            
+            [player prepareToPlay];
+            NSLog(@"system volume in next syll : %f", [self audioVolume]);
+            /*if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0"))
+             [syllableSound setVolume:[self audioVolumeFac]];
+             */
+            [player setDelegate:self];
+            [player play];
+        }
+    }
+//    else if ([player.url isEqual:((AVAudioPlayer *)_syllableSounds[1]).url]){
+//        [pocketsphinxController resumeRecognition];
+//    }
+    else {
+        [pocketsphinxController resumeRecognition];
+    }
+    
+    //[self performSelector:@selector(resumeRecognition) withObject:nil afterDelay:0.5];
 }
 
 - (void)resumeRecognition{
@@ -583,8 +630,11 @@
 //	[levelTimer invalidate];
 //	timeOutTimer = [NSTimer scheduledTimerWithTimeInterval: 2 target: self selector: @selector(timeoutTimerCallback:) userInfo: nil repeats: NO];
 	
-	if (_currentSyllable == [_syllables count])
+	if (_currentSyllable == [_syllables count]){
+        [pocketsphinxController stopListening];
+        _recognizerFeedback.text = @"Finished";
 		[self presentPuzzleCompletionAnimation];
+    }
 }
 
 - (void)timeoutTimerCallback:(NSTimer *)timer
@@ -890,19 +940,27 @@
 - (void) pocketsphinxDidCompleteCalibration {
 	NSLog(@"Pocketsphinx calibration is complete.");
     //_recognizerFeedback.text = @"Calibration";
+    [pocketsphinxController suspendRecognition];
 }
 
 - (void) pocketsphinxDidStartListening {
-	NSLog(@"Pocketsphinx is now listening.");
-    if (_currentSyllable != [_syllables count]){
-		_recognizerFeedback.text = @"Speak Now";
+	NSLog(@"Pocketsphinx is now listening. %d", _currentSyllable);
+    
+    if (_notFirstOne == 1) {
+        _recognizerFeedback.text = @"Speak Now";
     }
+    
+    _notFirstOne = 1;
+    
+//    if (_currentSyllable != [_syllables count]){
+//		_recognizerFeedback.text = @"Speak Now";
+//    }
 }
 
 - (void) pocketsphinxDidDetectSpeech {
 	NSLog(@"Pocketsphinx has detected speech.");
     if (_currentSyllable != [_syllables count]){
-		_recognizerFeedback.text = @"Speech Detected";
+        _recognizerFeedback.text = @"Speech Detected";
     }
 }
 
@@ -924,6 +982,7 @@
 - (void) pocketsphinxDidResumeRecognition {
 	NSLog(@"Pocketsphinx has resumed recognition.");
     //_recognizerFeedback.text = @"Resumed";
+    _recognizerFeedback.text = @"Speak Now";
 }
 
 - (void) pocketsphinxDidChangeLanguageModelToFile:(NSString *)newLanguageModelPathAsString andDictionary:(NSString *)newDictionaryPathAsString {
