@@ -189,10 +189,10 @@
 	_dragPuzzleFrequency = 60;
 	_typePuzzleFrequency = 20;
 	_speakPuzzleFrequency = 20;
-    _sayModeDifficulty = 0;
-    self.whetherRecordVoice = 0;
+    _sayModeDifficulty = 20;
+    self.whetherRecordVoice = 1;
     
-    self.typeSignificancy = 5.0;
+    self.typeSignificancy = 6.5;
 }
 
 - (NSDictionary *)packagedSettings
