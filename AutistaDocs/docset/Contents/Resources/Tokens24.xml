@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SBJsonStreamParserState.html">
+	<File path="Classes/SBJsonStreamParserAccumulator.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SBJsonStreamParserState</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/SBJsonStreamParserAccumulator</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>SBJsonStreamParserState.h</DeclaredIn>
+			<DeclaredIn>SBJsonStreamParserAccumulator.h</DeclaredIn>
             
 			
 			<NodeRef refid="24"/>
@@ -13,86 +13,62 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SBJsonStreamParserState/sharedInstance</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserAccumulator/setValue:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>SBJsonStreamParserState.h</DeclaredIn>
+			<DeclaredIn>SBJsonStreamParserAccumulator.h</DeclaredIn>
 			
-			<Declaration>+ (id)sharedInstance</Declaration>
+			<Declaration>@property (copy) id value</Declaration>
 			
 			
-			<Anchor>//api/name/sharedInstance</Anchor>
+			<Anchor>//api/name/value</Anchor>
             <NodeRef refid="24"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserState/parser:shouldAcceptToken:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserAccumulator/value</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>SBJsonStreamParserState.h</DeclaredIn>
+			<DeclaredIn>SBJsonStreamParserAccumulator.h</DeclaredIn>
 			
-			<Declaration>- (BOOL)parser:(SBJsonStreamParser *)parser shouldAcceptToken:(sbjson_token_t)token</Declaration>
+			<Declaration>@property (copy) id value</Declaration>
 			
 			
-			<Anchor>//api/name/parser:shouldAcceptToken:</Anchor>
+			<Anchor>//api/name/value</Anchor>
             <NodeRef refid="24"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserState/parserShouldReturn:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/SBJsonStreamParserAccumulator/value</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>SBJsonStreamParserState.h</DeclaredIn>
+			<DeclaredIn>SBJsonStreamParserAccumulator.h</DeclaredIn>
 			
-			<Declaration>- (SBJsonStreamParserStatus)parserShouldReturn:(SBJsonStreamParser *)parser</Declaration>
+			<Declaration>@property (copy) id value</Declaration>
 			
 			
-			<Anchor>//api/name/parserShouldReturn:</Anchor>
+			<Anchor>//api/name/value</Anchor>
             <NodeRef refid="24"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserState/parser:shouldTransitionTo:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SBJsonStreamParserState.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserAccumulator/parser:foundArray:</TokenIdentifier>
+			<Abstract type="html">Called if a JSON array is found</Abstract>
+			<DeclaredIn>SBJsonStreamParserAccumulator.m</DeclaredIn>
 			
-			<Declaration>- (void)parser:(SBJsonStreamParser *)parser shouldTransitionTo:(sbjson_token_t)tok</Declaration>
+			<Declaration>- (void)parser:(SBJsonStreamParser *)parser foundArray:(NSArray *)array</Declaration>
 			
 			
-			<Anchor>//api/name/parser:shouldTransitionTo:</Anchor>
+			<Anchor>//api/name/parser:foundArray:</Anchor>
             <NodeRef refid="24"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserState/needKey</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SBJsonStreamParserState.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserAccumulator/parser:foundObject:</TokenIdentifier>
+			<Abstract type="html">Called when a JSON object is found</Abstract>
+			<DeclaredIn>SBJsonStreamParserAccumulator.m</DeclaredIn>
 			
-			<Declaration>- (BOOL)needKey</Declaration>
-			
-			
-			<Anchor>//api/name/needKey</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserState/isError</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SBJsonStreamParserState.h</DeclaredIn>
-			
-			<Declaration>- (BOOL)isError</Declaration>
+			<Declaration>- (void)parser:(SBJsonStreamParser *)parser foundObject:(NSDictionary *)dict</Declaration>
 			
 			
-			<Anchor>//api/name/isError</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserState/name</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SBJsonStreamParserState.h</DeclaredIn>
-			
-			<Declaration>- (NSString *)name</Declaration>
-			
-			
-			<Anchor>//api/name/name</Anchor>
+			<Anchor>//api/name/parser:foundObject:</Anchor>
             <NodeRef refid="24"/>
 		</Token>
 		

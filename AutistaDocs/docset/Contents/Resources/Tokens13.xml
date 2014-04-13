@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/LevelMeter.html">
+	<File path="Classes/InfoViewPageOne.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/LevelMeter</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/InfoViewPageOne</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>LevelMeter.h</DeclaredIn>
+			<DeclaredIn>InfoViewPageOne.h</DeclaredIn>
             
 			
 			<NodeRef refid="13"/>
@@ -13,302 +13,101 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/LevelMeter/setLevel:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>LevelMeter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoViewPageOne/setTitleLabel:</TokenIdentifier>
+			<Abstract type="html">@name Properties
+-----------------------------------------------------------------------------</Abstract>
+			<DeclaredIn>InfoViewPageOne.h</DeclaredIn>
 			
-			<Declaration>@property CGFloat level</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *titleLabel</Declaration>
 			
 			
-			<Anchor>//api/name/level</Anchor>
+			<Anchor>//api/name/titleLabel</Anchor>
             <NodeRef refid="13"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/LevelMeter/level</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>LevelMeter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoViewPageOne/titleLabel</TokenIdentifier>
+			<Abstract type="html">@name Properties
+-----------------------------------------------------------------------------</Abstract>
+			<DeclaredIn>InfoViewPageOne.h</DeclaredIn>
 			
-			<Declaration>@property CGFloat level</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *titleLabel</Declaration>
 			
 			
-			<Anchor>//api/name/level</Anchor>
+			<Anchor>//api/name/titleLabel</Anchor>
             <NodeRef refid="13"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/LevelMeter/level</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>LevelMeter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/InfoViewPageOne/titleLabel</TokenIdentifier>
+			<Abstract type="html">@name Properties
+-----------------------------------------------------------------------------</Abstract>
+			<DeclaredIn>InfoViewPageOne.h</DeclaredIn>
 			
-			<Declaration>@property CGFloat level</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *titleLabel</Declaration>
 			
 			
-			<Anchor>//api/name/level</Anchor>
+			<Anchor>//api/name/titleLabel</Anchor>
             <NodeRef refid="13"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/LevelMeter/setPeakLevel:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoViewPageOne/setTextView:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>LevelMeter.h</DeclaredIn>
+			<DeclaredIn>InfoViewPageOne.h</DeclaredIn>
 			
-			<Declaration>@property CGFloat peakLevel</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UITextView *textView</Declaration>
 			
 			
-			<Anchor>//api/name/peakLevel</Anchor>
+			<Anchor>//api/name/textView</Anchor>
             <NodeRef refid="13"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/LevelMeter/peakLevel</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoViewPageOne/textView</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>LevelMeter.h</DeclaredIn>
+			<DeclaredIn>InfoViewPageOne.h</DeclaredIn>
 			
-			<Declaration>@property CGFloat peakLevel</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UITextView *textView</Declaration>
 			
 			
-			<Anchor>//api/name/peakLevel</Anchor>
+			<Anchor>//api/name/textView</Anchor>
             <NodeRef refid="13"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/LevelMeter/peakLevel</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/InfoViewPageOne/textView</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>LevelMeter.h</DeclaredIn>
+			<DeclaredIn>InfoViewPageOne.h</DeclaredIn>
 			
-			<Declaration>@property CGFloat peakLevel</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UITextView *textView</Declaration>
 			
 			
-			<Anchor>//api/name/peakLevel</Anchor>
+			<Anchor>//api/name/textView</Anchor>
             <NodeRef refid="13"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/LevelMeter/setNumLights:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoViewPageOne/layoutSubviews</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>LevelMeter.h</DeclaredIn>
+			<DeclaredIn>InfoViewPageOne.h</DeclaredIn>
 			
-			<Declaration>@property NSUInteger numLights</Declaration>
+			<Declaration>- (void)layoutSubviews</Declaration>
 			
 			
-			<Anchor>//api/name/numLights</Anchor>
+			<Anchor>//api/name/layoutSubviews</Anchor>
             <NodeRef refid="13"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/LevelMeter/numLights</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoViewPageOne/initWithFrame:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>LevelMeter.h</DeclaredIn>
-			
-			<Declaration>@property NSUInteger numLights</Declaration>
-			
-			
-			<Anchor>//api/name/numLights</Anchor>
-            <NodeRef refid="13"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/LevelMeter/numLights</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>LevelMeter.h</DeclaredIn>
-			
-			<Declaration>@property NSUInteger numLights</Declaration>
-			
-			
-			<Anchor>//api/name/numLights</Anchor>
-            <NodeRef refid="13"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/LevelMeter/setVertical:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>LevelMeter.h</DeclaredIn>
-			
-			<Declaration>@property (getter=isVertical) BOOL vertical</Declaration>
-			
-			
-			<Anchor>//api/name/vertical</Anchor>
-            <NodeRef refid="13"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/LevelMeter/isVertical</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>LevelMeter.h</DeclaredIn>
-			
-			<Declaration>@property (getter=isVertical) BOOL vertical</Declaration>
-			
-			
-			<Anchor>//api/name/vertical</Anchor>
-            <NodeRef refid="13"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/LevelMeter/vertical</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>LevelMeter.h</DeclaredIn>
-			
-			<Declaration>@property (getter=isVertical) BOOL vertical</Declaration>
-			
-			
-			<Anchor>//api/name/vertical</Anchor>
-            <NodeRef refid="13"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/LevelMeter/setVariableLightIntensity:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>LevelMeter.h</DeclaredIn>
-			
-			<Declaration>@property BOOL variableLightIntensity</Declaration>
-			
-			
-			<Anchor>//api/name/variableLightIntensity</Anchor>
-            <NodeRef refid="13"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/LevelMeter/variableLightIntensity</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>LevelMeter.h</DeclaredIn>
-			
-			<Declaration>@property BOOL variableLightIntensity</Declaration>
-			
-			
-			<Anchor>//api/name/variableLightIntensity</Anchor>
-            <NodeRef refid="13"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/LevelMeter/variableLightIntensity</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>LevelMeter.h</DeclaredIn>
-			
-			<Declaration>@property BOOL variableLightIntensity</Declaration>
-			
-			
-			<Anchor>//api/name/variableLightIntensity</Anchor>
-            <NodeRef refid="13"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/LevelMeter/setBgColor:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>LevelMeter.h</DeclaredIn>
-			
-			<Declaration>@property (retain) UIColor *bgColor</Declaration>
-			
-			
-			<Anchor>//api/name/bgColor</Anchor>
-            <NodeRef refid="13"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/LevelMeter/bgColor</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>LevelMeter.h</DeclaredIn>
-			
-			<Declaration>@property (retain) UIColor *bgColor</Declaration>
-			
-			
-			<Anchor>//api/name/bgColor</Anchor>
-            <NodeRef refid="13"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/LevelMeter/bgColor</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>LevelMeter.h</DeclaredIn>
-			
-			<Declaration>@property (retain) UIColor *bgColor</Declaration>
-			
-			
-			<Anchor>//api/name/bgColor</Anchor>
-            <NodeRef refid="13"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/LevelMeter/setBorderColor:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>LevelMeter.h</DeclaredIn>
-			
-			<Declaration>@property (retain) UIColor *borderColor</Declaration>
-			
-			
-			<Anchor>//api/name/borderColor</Anchor>
-            <NodeRef refid="13"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/LevelMeter/borderColor</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>LevelMeter.h</DeclaredIn>
-			
-			<Declaration>@property (retain) UIColor *borderColor</Declaration>
-			
-			
-			<Anchor>//api/name/borderColor</Anchor>
-            <NodeRef refid="13"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/LevelMeter/borderColor</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>LevelMeter.h</DeclaredIn>
-			
-			<Declaration>@property (retain) UIColor *borderColor</Declaration>
-			
-			
-			<Anchor>//api/name/borderColor</Anchor>
-            <NodeRef refid="13"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/LevelMeter/_performInit</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>LevelMeter.m</DeclaredIn>
-			
-			<Declaration>- (void)_performInit</Declaration>
-			
-			
-			<Anchor>//api/name/_performInit</Anchor>
-            <NodeRef refid="13"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/LevelMeter/initWithFrame:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>LevelMeter.m</DeclaredIn>
+			<DeclaredIn>InfoViewPageOne.m</DeclaredIn>
 			
 			<Declaration>- (id)initWithFrame:(CGRect)frame</Declaration>
 			
 			
 			<Anchor>//api/name/initWithFrame:</Anchor>
-            <NodeRef refid="13"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/LevelMeter/initWithCoder:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>LevelMeter.m</DeclaredIn>
-			
-			<Declaration>- (id)initWithCoder:(NSCoder *)coder</Declaration>
-			
-			
-			<Anchor>//api/name/initWithCoder:</Anchor>
-            <NodeRef refid="13"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/LevelMeter/drawRect:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>LevelMeter.m</DeclaredIn>
-			
-			<Declaration>- (void)drawRect:(CGRect)rect</Declaration>
-			
-			
-			<Anchor>//api/name/drawRect:</Anchor>
             <NodeRef refid="13"/>
 		</Token>
 		

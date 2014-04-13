@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SoundEffect.html">
+	<File path="Classes/SceneSelectorViewController.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SoundEffect</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SoundEffect.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SceneSelectorViewController</TokenIdentifier>
+			<Abstract type="html">The SceneSelectorViewController is the view that a user choose a scene.</Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
             
 			
 			<NodeRef refid="54"/>
@@ -13,50 +13,655 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SoundEffect/soundEffectWithContentsOfFile:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SoundEffect.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/setScenes:</TokenIdentifier>
+			<Abstract type="html">An array of scenes.</Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
 			
-			<Declaration>+ (id)soundEffectWithContentsOfFile:(NSString *)aPath</Declaration>
+			<Declaration>@property (nonatomic, strong) NSArray *scenes</Declaration>
 			
 			
-			<Anchor>//api/name/soundEffectWithContentsOfFile:</Anchor>
+			<Anchor>//api/name/scenes</Anchor>
             <NodeRef refid="54"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SoundEffect/initWithContentsOfFile:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SoundEffect.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/scenes</TokenIdentifier>
+			<Abstract type="html">An array of scenes.</Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
 			
-			<Declaration>- (id)initWithContentsOfFile:(NSString *)path</Declaration>
+			<Declaration>@property (nonatomic, strong) NSArray *scenes</Declaration>
 			
 			
-			<Anchor>//api/name/initWithContentsOfFile:</Anchor>
+			<Anchor>//api/name/scenes</Anchor>
             <NodeRef refid="54"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SoundEffect/play</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SoundEffect.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/SceneSelectorViewController/scenes</TokenIdentifier>
+			<Abstract type="html">An array of scenes.</Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
 			
-			<Declaration>- (void)play</Declaration>
+			<Declaration>@property (nonatomic, strong) NSArray *scenes</Declaration>
 			
 			
-			<Anchor>//api/name/play</Anchor>
+			<Anchor>//api/name/scenes</Anchor>
             <NodeRef refid="54"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SoundEffect/playWithVibration</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/setScrollView:</TokenIdentifier>
+			<Abstract type="html">The scrollable view that contain the scenes.</Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UIScrollView *scrollView</Declaration>
+			
+			
+			<Anchor>//api/name/scrollView</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/scrollView</TokenIdentifier>
+			<Abstract type="html">The scrollable view that contain the scenes.</Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UIScrollView *scrollView</Declaration>
+			
+			
+			<Anchor>//api/name/scrollView</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SceneSelectorViewController/scrollView</TokenIdentifier>
+			<Abstract type="html">The scrollable view that contain the scenes.</Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UIScrollView *scrollView</Declaration>
+			
+			
+			<Anchor>//api/name/scrollView</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/setPageControl:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>SoundEffect.h</DeclaredIn>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
 			
-			<Declaration>- (void)playWithVibration</Declaration>
+			<Declaration>@property (nonatomic, strong) IBOutlet UIPageControl *pageControl</Declaration>
 			
 			
-			<Anchor>//api/name/playWithVibration</Anchor>
+			<Anchor>//api/name/pageControl</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/pageControl</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UIPageControl *pageControl</Declaration>
+			
+			
+			<Anchor>//api/name/pageControl</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SceneSelectorViewController/pageControl</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UIPageControl *pageControl</Declaration>
+			
+			
+			<Anchor>//api/name/pageControl</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/setAdminOverlayButton:</TokenIdentifier>
+			<Abstract type="html">Admin button</Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIButton *adminOverlayButton</Declaration>
+			
+			
+			<Anchor>//api/name/adminOverlayButton</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/adminOverlayButton</TokenIdentifier>
+			<Abstract type="html">Admin button</Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIButton *adminOverlayButton</Declaration>
+			
+			
+			<Anchor>//api/name/adminOverlayButton</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SceneSelectorViewController/adminOverlayButton</TokenIdentifier>
+			<Abstract type="html">Admin button</Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIButton *adminOverlayButton</Declaration>
+			
+			
+			<Anchor>//api/name/adminOverlayButton</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/setUnlockAllButton:</TokenIdentifier>
+			<Abstract type="html">Unlock all button (unused)</Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIButton *unlockAllButton</Declaration>
+			
+			
+			<Anchor>//api/name/unlockAllButton</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/unlockAllButton</TokenIdentifier>
+			<Abstract type="html">Unlock all button (unused)</Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIButton *unlockAllButton</Declaration>
+			
+			
+			<Anchor>//api/name/unlockAllButton</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SceneSelectorViewController/unlockAllButton</TokenIdentifier>
+			<Abstract type="html">Unlock all button (unused)</Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIButton *unlockAllButton</Declaration>
+			
+			
+			<Anchor>//api/name/unlockAllButton</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/setPrevButton:</TokenIdentifier>
+			<Abstract type="html">Button to go to the previous scene.</Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIButton *prevButton</Declaration>
+			
+			
+			<Anchor>//api/name/prevButton</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/prevButton</TokenIdentifier>
+			<Abstract type="html">Button to go to the previous scene.</Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIButton *prevButton</Declaration>
+			
+			
+			<Anchor>//api/name/prevButton</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SceneSelectorViewController/prevButton</TokenIdentifier>
+			<Abstract type="html">Button to go to the previous scene.</Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIButton *prevButton</Declaration>
+			
+			
+			<Anchor>//api/name/prevButton</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/setNextButton:</TokenIdentifier>
+			<Abstract type="html">Button to go the the next scene.</Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIButton *nextButton</Declaration>
+			
+			
+			<Anchor>//api/name/nextButton</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/nextButton</TokenIdentifier>
+			<Abstract type="html">Button to go the the next scene.</Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIButton *nextButton</Declaration>
+			
+			
+			<Anchor>//api/name/nextButton</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SceneSelectorViewController/nextButton</TokenIdentifier>
+			<Abstract type="html">Button to go the the next scene.</Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIButton *nextButton</Declaration>
+			
+			
+			<Anchor>//api/name/nextButton</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/initWithNibName:bundle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil</Declaration>
+			
+			
+			<Anchor>//api/name/initWithNibName:bundle:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/viewDidLoad</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)viewDidLoad</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidLoad</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/viewDidAppear:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)viewDidAppear:(BOOL)animated</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidAppear:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/reload</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)reload</Declaration>
+			
+			
+			<Anchor>//api/name/reload</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/didReceiveMemoryWarning</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)didReceiveMemoryWarning</Declaration>
+			
+			
+			<Anchor>//api/name/didReceiveMemoryWarning</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/supportedInterfaceOrientations</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>- (NSUInteger)supportedInterfaceOrientations</Declaration>
+			
+			
+			<Anchor>//api/name/supportedInterfaceOrientations</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/viewWillAppear:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)viewWillAppear:(BOOL)animated</Declaration>
+			
+			
+			<Anchor>//api/name/viewWillAppear:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/viewWillDisappear:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)viewWillDisappear:(BOOL)animated</Declaration>
+			
+			
+			<Anchor>//api/name/viewWillDisappear:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/shouldAutorotateToInterfaceOrientation:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation</Declaration>
+			
+			
+			<Anchor>//api/name/shouldAutorotateToInterfaceOrientation:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/loadScenes</TokenIdentifier>
+			<Abstract type="html">Load the appropriate scene</Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)loadScenes</Declaration>
+			
+			
+			<Anchor>//api/name/loadScenes</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/handleSceneTapped:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)handleSceneTapped:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/handleSceneTapped:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/scrollToPage:</TokenIdentifier>
+			<Abstract type="html">Set the scrollView to the appropriate page</Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)scrollToPage:(int)page</Declaration>
+			
+			
+			<Anchor>//api/name/scrollToPage:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/checkNextPrev:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)checkNextPrev:(int)page</Declaration>
+			
+			
+			<Anchor>//api/name/checkNextPrev:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/changePage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)changePage:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/changePage:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/prevTapped:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)prevTapped:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/prevTapped:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/nextTapped:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)nextTapped:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/nextTapped:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/scrollViewDidScroll:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)scrollViewDidScroll:(UIScrollView *)scrollView</Declaration>
+			
+			
+			<Anchor>//api/name/scrollViewDidScroll:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/scrollViewDidEndDecelerating:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView</Declaration>
+			
+			
+			<Anchor>//api/name/scrollViewDidEndDecelerating:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/handleAdminButtonPressed:</TokenIdentifier>
+			<Abstract type="html">Start a timer of 2s to show the admin overlay</Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)handleAdminButtonPressed:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/handleAdminButtonPressed:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/handleAdminButtonReleased:</TokenIdentifier>
+			<Abstract type="html">Invalidate the timer when button released</Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)handleAdminButtonReleased:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/handleAdminButtonReleased:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/showAdminOverlay</TokenIdentifier>
+			<Abstract type="html">Show the admin overlay</Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)showAdminOverlay</Declaration>
+			
+			
+			<Anchor>//api/name/showAdminOverlay</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/initializeMusicPlayback:</TokenIdentifier>
+			<Abstract type="html">Description</Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)initializeMusicPlayback:(NSString *)audioFilename</Declaration>
+			
+			
+			<Anchor>//api/name/initializeMusicPlayback:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/playBackgroundMusic</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)playBackgroundMusic</Declaration>
+			
+			
+			<Anchor>//api/name/playBackgroundMusic</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/stopBackgroundMusic</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)stopBackgroundMusic</Declaration>
+			
+			
+			<Anchor>//api/name/stopBackgroundMusic</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/pauseBackgroundMusic</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)pauseBackgroundMusic</Declaration>
+			
+			
+			<Anchor>//api/name/pauseBackgroundMusic</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/resumeBackgroundMusic</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)resumeBackgroundMusic</Declaration>
+			
+			
+			<Anchor>//api/name/resumeBackgroundMusic</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/playMusicForScene:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)playMusicForScene:(Scene *)scene</Declaration>
+			
+			
+			<Anchor>//api/name/playMusicForScene:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/infoTapped:</TokenIdentifier>
+			<Abstract type="html">Show the app info screens</Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)infoTapped:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/infoTapped:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/feedbackTapped:</TokenIdentifier>
+			<Abstract type="html">Show the feedback screen</Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)feedbackTapped:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/feedbackTapped:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/productPurchased:</TokenIdentifier>
+			<Abstract type="html">Handle in app purchase (unused)</Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)productPurchased:(NSNotification *)notification</Declaration>
+			
+			
+			<Anchor>//api/name/productPurchased:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/handleUnlockAllTapped:</TokenIdentifier>
+			<Abstract type="html">Handle unlock button (unused)</Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)handleUnlockAllTapped:(id)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">&lt;#sender description#&gt;</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/handleUnlockAllTapped:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/handleLockTapped:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneSelectorViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)handleLockTapped:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/handleLockTapped:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneSelectorViewController/shouldAutorotate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneSelectorViewController.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)shouldAutorotate</Declaration>
+			
+			
+			<Anchor>//api/name/shouldAutorotate</Anchor>
             <NodeRef refid="54"/>
 		</Token>
 		

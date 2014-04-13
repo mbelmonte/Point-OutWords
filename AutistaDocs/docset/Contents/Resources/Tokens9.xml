@@ -625,6 +625,78 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/setTypeSignificancy:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat typeSignificancy</Declaration>
+			
+			
+			<Anchor>//api/name/typeSignificancy</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/typeSignificancy</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat typeSignificancy</Declaration>
+			
+			
+			<Anchor>//api/name/typeSignificancy</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GlobalPreferences/typeSignificancy</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat typeSignificancy</Declaration>
+			
+			
+			<Anchor>//api/name/typeSignificancy</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/setWhetherRecordVoice:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger *whetherRecordVoice</Declaration>
+			
+			
+			<Anchor>//api/name/whetherRecordVoice</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/whetherRecordVoice</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger *whetherRecordVoice</Declaration>
+			
+			
+			<Anchor>//api/name/whetherRecordVoice</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GlobalPreferences/whetherRecordVoice</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger *whetherRecordVoice</Declaration>
+			
+			
+			<Anchor>//api/name/whetherRecordVoice</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/GlobalPreferences/sharedGlobalPreferences</TokenIdentifier>
 			<Abstract type="html">Set up shared instance of global preferences</Abstract>
 			<DeclaredIn>GlobalPreferences.h</DeclaredIn>

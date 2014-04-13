@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/VULevelMeter.html">
+	<File path="Classes/TypePuzzleViewController.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/VULevelMeter</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/TypePuzzleViewController</TokenIdentifier>
+			<Abstract type="html">View controller handling puzzles in type mode</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
             
 			
 			<NodeRef refid="59"/>
@@ -13,290 +13,743 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/setRefreshHz:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/setObject:</TokenIdentifier>
+			<Abstract type="html">The object that stores the current puzzle</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) CGFloat refreshHz</Declaration>
+			<Declaration>@property (nonatomic, retain) PuzzleObject *object</Declaration>
 			
 			
-			<Anchor>//api/name/refreshHz</Anchor>
+			<Anchor>//api/name/object</Anchor>
             <NodeRef refid="59"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/refreshHz</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/object</TokenIdentifier>
+			<Abstract type="html">The object that stores the current puzzle</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) CGFloat refreshHz</Declaration>
+			<Declaration>@property (nonatomic, retain) PuzzleObject *object</Declaration>
 			
 			
-			<Anchor>//api/name/refreshHz</Anchor>
+			<Anchor>//api/name/object</Anchor>
             <NodeRef refid="59"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/VULevelMeter/refreshHz</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/TypePuzzleViewController/object</TokenIdentifier>
+			<Abstract type="html">The object that stores the current puzzle</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) CGFloat refreshHz</Declaration>
+			<Declaration>@property (nonatomic, retain) PuzzleObject *object</Declaration>
 			
 			
-			<Anchor>//api/name/refreshHz</Anchor>
+			<Anchor>//api/name/object</Anchor>
             <NodeRef refid="59"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/setShowsPeaks:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/setPieces:</TokenIdentifier>
+			<Abstract type="html">Array of all puzzle pieces.</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL showsPeaks</Declaration>
+			<Declaration>@property (nonatomic, retain) NSMutableArray *pieces</Declaration>
 			
 			
-			<Anchor>//api/name/showsPeaks</Anchor>
+			<Anchor>//api/name/pieces</Anchor>
             <NodeRef refid="59"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/showsPeaks</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/pieces</TokenIdentifier>
+			<Abstract type="html">Array of all puzzle pieces.</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL showsPeaks</Declaration>
+			<Declaration>@property (nonatomic, retain) NSMutableArray *pieces</Declaration>
 			
 			
-			<Anchor>//api/name/showsPeaks</Anchor>
+			<Anchor>//api/name/pieces</Anchor>
             <NodeRef refid="59"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/VULevelMeter/showsPeaks</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/TypePuzzleViewController/pieces</TokenIdentifier>
+			<Abstract type="html">Array of all puzzle pieces.</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL showsPeaks</Declaration>
+			<Declaration>@property (nonatomic, retain) NSMutableArray *pieces</Declaration>
 			
 			
-			<Anchor>//api/name/showsPeaks</Anchor>
+			<Anchor>//api/name/pieces</Anchor>
             <NodeRef refid="59"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/setVertical:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/setFinishPrompt:</TokenIdentifier>
+			<Abstract type="html">Sound to be played when puzzle finished</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL vertical</Declaration>
+			<Declaration>@property (nonatomic, retain) AVAudioPlayer *finishPrompt</Declaration>
 			
 			
-			<Anchor>//api/name/vertical</Anchor>
+			<Anchor>//api/name/finishPrompt</Anchor>
             <NodeRef refid="59"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/vertical</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/finishPrompt</TokenIdentifier>
+			<Abstract type="html">Sound to be played when puzzle finished</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL vertical</Declaration>
+			<Declaration>@property (nonatomic, retain) AVAudioPlayer *finishPrompt</Declaration>
 			
 			
-			<Anchor>//api/name/vertical</Anchor>
+			<Anchor>//api/name/finishPrompt</Anchor>
             <NodeRef refid="59"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/VULevelMeter/vertical</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/TypePuzzleViewController/finishPrompt</TokenIdentifier>
+			<Abstract type="html">Sound to be played when puzzle finished</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL vertical</Declaration>
+			<Declaration>@property (nonatomic, retain) AVAudioPlayer *finishPrompt</Declaration>
 			
 			
-			<Anchor>//api/name/vertical</Anchor>
+			<Anchor>//api/name/finishPrompt</Anchor>
             <NodeRef refid="59"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/setUseGL:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/setMyPlayer:</TokenIdentifier>
+			<Abstract type="html">Music player to play recorded sound effects and music from the library</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL useGL</Declaration>
+			<Declaration>@property MPMusicPlayerController *myPlayer</Declaration>
 			
 			
-			<Anchor>//api/name/useGL</Anchor>
+			<Anchor>//api/name/myPlayer</Anchor>
             <NodeRef refid="59"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/useGL</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/myPlayer</TokenIdentifier>
+			<Abstract type="html">Music player to play recorded sound effects and music from the library</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL useGL</Declaration>
+			<Declaration>@property MPMusicPlayerController *myPlayer</Declaration>
 			
 			
-			<Anchor>//api/name/useGL</Anchor>
+			<Anchor>//api/name/myPlayer</Anchor>
             <NodeRef refid="59"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/VULevelMeter/useGL</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/TypePuzzleViewController/myPlayer</TokenIdentifier>
+			<Abstract type="html">Music player to play recorded sound effects and music from the library</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL useGL</Declaration>
+			<Declaration>@property MPMusicPlayerController *myPlayer</Declaration>
 			
 			
-			<Anchor>//api/name/useGL</Anchor>
+			<Anchor>//api/name/myPlayer</Anchor>
             <NodeRef refid="59"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/setMuteOn:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/setBackground:</TokenIdentifier>
+			<Abstract type="html">Background image</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) BOOL muteOn</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UIImageView *background</Declaration>
 			
 			
-			<Anchor>//api/name/muteOn</Anchor>
+			<Anchor>//api/name/background</Anchor>
             <NodeRef refid="59"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/muteOn</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/background</TokenIdentifier>
+			<Abstract type="html">Background image</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) BOOL muteOn</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UIImageView *background</Declaration>
 			
 			
-			<Anchor>//api/name/muteOn</Anchor>
+			<Anchor>//api/name/background</Anchor>
             <NodeRef refid="59"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/VULevelMeter/muteOn</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/TypePuzzleViewController/background</TokenIdentifier>
+			<Abstract type="html">Background image</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) BOOL muteOn</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UIImageView *background</Declaration>
 			
 			
-			<Anchor>//api/name/muteOn</Anchor>
+			<Anchor>//api/name/background</Anchor>
             <NodeRef refid="59"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/refreshWithValue:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/setPlaceHolder:</TokenIdentifier>
+			<Abstract type="html">Placholder image for all puzzle frames</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
 			
-			<Declaration>- (void)refreshWithValue:(CGFloat)newValue</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UIImageView *placeHolder</Declaration>
 			
 			
-			<Anchor>//api/name/refreshWithValue:</Anchor>
+			<Anchor>//api/name/placeHolder</Anchor>
             <NodeRef refid="59"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/setBorderColor:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/placeHolder</TokenIdentifier>
+			<Abstract type="html">Placholder image for all puzzle frames</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
 			
-			<Declaration>- (void)setBorderColor:(UIColor *)borderColor</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UIImageView *placeHolder</Declaration>
 			
 			
-			<Anchor>//api/name/setBorderColor:</Anchor>
+			<Anchor>//api/name/placeHolder</Anchor>
             <NodeRef refid="59"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/setBackgroundColor:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/TypePuzzleViewController/placeHolder</TokenIdentifier>
+			<Abstract type="html">Placholder image for all puzzle frames</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
 			
-			<Declaration>- (void)setBackgroundColor:(UIColor *)backgroundColor</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UIImageView *placeHolder</Declaration>
 			
 			
-			<Anchor>//api/name/setBackgroundColor:</Anchor>
+			<Anchor>//api/name/placeHolder</Anchor>
             <NodeRef refid="59"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/initWithFrame:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.m</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/setKeyboard:</TokenIdentifier>
+			<Abstract type="html">Keyborad event outlet</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
 			
-			<Declaration>- (id)initWithFrame:(CGRect)frame</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UIView *keyboard</Declaration>
 			
 			
-			<Anchor>//api/name/initWithFrame:</Anchor>
+			<Anchor>//api/name/keyboard</Anchor>
             <NodeRef refid="59"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/initWithCoder:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.m</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/keyboard</TokenIdentifier>
+			<Abstract type="html">Keyborad event outlet</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
 			
-			<Declaration>- (id)initWithCoder:(NSCoder *)coder</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UIView *keyboard</Declaration>
 			
 			
-			<Anchor>//api/name/initWithCoder:</Anchor>
+			<Anchor>//api/name/keyboard</Anchor>
             <NodeRef refid="59"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/layoutSubLevelMeters</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.m</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/TypePuzzleViewController/keyboard</TokenIdentifier>
+			<Abstract type="html">Keyborad event outlet</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
 			
-			<Declaration>- (void)layoutSubLevelMeters</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UIView *keyboard</Declaration>
 			
 			
-			<Anchor>//api/name/layoutSubLevelMeters</Anchor>
+			<Anchor>//api/name/keyboard</Anchor>
             <NodeRef refid="59"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/touchesBegan:withEvent:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.m</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/handleAdminButtonPressed:</TokenIdentifier>
+			<Abstract type="html">When admin button is pressed, start a timer to show the admin overlay after 2s</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
 			
-			<Declaration>- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event</Declaration>
+			<Declaration>- (IBAction)handleAdminButtonPressed:(id)sender</Declaration>
 			
 			
-			<Anchor>//api/name/touchesBegan:withEvent:</Anchor>
+			<Anchor>//api/name/handleAdminButtonPressed:</Anchor>
             <NodeRef refid="59"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/touchesEnded:withEvent:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/handleAdminButtonReleased:</TokenIdentifier>
+			<Abstract type="html">When admin button is released, invalidate the timer</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)handleAdminButtonReleased:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/handleAdminButtonReleased:</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/showAdminOverlay</TokenIdentifier>
+			<Abstract type="html">Show the admin overlay</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)showAdminOverlay</Declaration>
+			
+			
+			<Anchor>//api/name/showAdminOverlay</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/playObjectTitleSound</TokenIdentifier>
+			<Abstract type="html">Play the sound of the puzzle title, e.g. Bath. Load the sound file based on puzzle name</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)playObjectTitleSound</Declaration>
+			
+			
+			<Anchor>//api/name/playObjectTitleSound</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/setupSounds</TokenIdentifier>
+			<Abstract type="html">Load sound files into SoundEffect objects, and hold on to them for later use</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)setupSounds</Declaration>
+			
+			
+			<Anchor>//api/name/setupSounds</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/playKeyClickSound:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.m</DeclaredIn>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)playKeyClickSound:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/playKeyClickSound:</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/playCorrectKeyPressedSound</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)playCorrectKeyPressedSound</Declaration>
+			
+			
+			<Anchor>//api/name/playCorrectKeyPressedSound</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/playWrongKeyPressedSound</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)playWrongKeyPressedSound</Declaration>
+			
+			
+			<Anchor>//api/name/playWrongKeyPressedSound</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/playPuzzleCompletedSuccessfullySound</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)playPuzzleCompletedSuccessfullySound</Declaration>
+			
+			
+			<Anchor>//api/name/playPuzzleCompletedSuccessfullySound</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/stopPlaying</TokenIdentifier>
+			<Abstract type="html">Stop myPlayer from playing.</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)stopPlaying</Declaration>
+			
+			
+			<Anchor>//api/name/stopPlaying</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/handleBackButtonPressed:</TokenIdentifier>
+			<Abstract type="html">When back button is pressed, start a timer to show the admin overlay after 2s</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)handleBackButtonPressed:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/handleBackButtonPressed:</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/handleBackButtonReleased:</TokenIdentifier>
+			<Abstract type="html">When back button is released, release the timer</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)handleBackButtonReleased:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/handleBackButtonReleased:</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/showBackOverlay</TokenIdentifier>
+			<Abstract type="html">Call delayedDismissSelf to dismiss the current view controller and log puzzle completion status</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)showBackOverlay</Declaration>
+			
+			
+			<Anchor>//api/name/showBackOverlay</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/initializePuzzleState</TokenIdentifier>
+			<Abstract type="html">Initialize the puzzle and setup puzzle detail, like all pieces&apos; positions and puzzle title</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)initializePuzzleState</Declaration>
+			
+			
+			<Anchor>//api/name/initializePuzzleState</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/randomizeInitialPositionsOfPieces</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)randomizeInitialPositionsOfPieces</Declaration>
+			
+			
+			<Anchor>//api/name/randomizeInitialPositionsOfPieces</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/addCharacterOnPuzzlePiece</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)addCharacterOnPuzzlePiece</Declaration>
+			
+			
+			<Anchor>//api/name/addCharacterOnPuzzlePiece</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/handleKeyPressed:</TokenIdentifier>
+			<Abstract type="html">Get the keys associated with the current puzzle, handle keypressing events and give user feedbacks(animations, ).</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)handleKeyPressed:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/handleKeyPressed:</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/advanceToNextLetterPosition</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)advanceToNextLetterPosition</Declaration>
+			
+			
+			<Anchor>//api/name/advanceToNextLetterPosition</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/slideOutKeyboard</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)slideOutKeyboard</Declaration>
+			
+			
+			<Anchor>//api/name/slideOutKeyboard</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/slideInKeyboard</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)slideInKeyboard</Declaration>
+			
+			
+			<Anchor>//api/name/slideInKeyboard</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/remindAnimation:</TokenIdentifier>
+			<Abstract type="html">Set up an animation to hightlight the character on the keyboard,
+remind the user to type the keyboard instead of dragging the puzzle pieces
+Call changeBGColorBack to change the background of the keys back at the end of the animation</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)remindAnimation:(UIGestureRecognizer *)recognizer</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>recognizer</Name>
+					<Abstract type="html">gesture recognizor</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/remindAnimation:</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/changeBGColorBack</TokenIdentifier>
+			<Abstract type="html">Change background color back</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)changeBGColorBack</Declaration>
+			
+			
+			<Anchor>//api/name/changeBGColorBack</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/buttonFromASCIICode:</TokenIdentifier>
+			<Abstract type="html">Get the key corresponding to a character&apos;s ASCII code</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (UIButton *)buttonFromASCIICode:(NSInteger)asciiCode</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>asciiCode</Name>
+					<Abstract type="html">ASCII code for a character</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Pointer the correct button</Abstract></ReturnValue>
+			<Anchor>//api/name/buttonFromASCIICode:</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/touchesEnded:withEvent:</TokenIdentifier>
+			<Abstract type="html">Delegate function used to recognize key strokes from the point of departure on the touch-screen.</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
 			
 			<Declaration>- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event</Declaration>
-			
+			<Parameters>
+				<Parameter>
+					<Name>touches</Name>
+					<Abstract type="html">a set</Abstract>
+				</Parameter><Parameter>
+					<Name>event</Name>
+					<Abstract type="html">event delegate</Abstract>
+				</Parameter>
+			</Parameters>
 			
 			<Anchor>//api/name/touchesEnded:withEvent:</Anchor>
             <NodeRef refid="59"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/touchesCancelled:withEvent:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.m</DeclaredIn>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
 			
-			<Declaration>- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event</Declaration>
+			<Declaration>- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer</Declaration>
 			
 			
-			<Anchor>//api/name/touchesCancelled:withEvent:</Anchor>
+			<Anchor>//api/name/gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/gestureRecognizer:shouldReceiveTouch:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch</Declaration>
+			
+			
+			<Anchor>//api/name/gestureRecognizer:shouldReceiveTouch:</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/checkPuzzleState</TokenIdentifier>
+			<Abstract type="html">Check if a puzzle is completed</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)checkPuzzleState</Declaration>
+			
+			
+			<Anchor>//api/name/checkPuzzleState</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/presentPuzzleCompletionAnimation</TokenIdentifier>
+			<Abstract type="html">Show animation when puzzle complete</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)presentPuzzleCompletionAnimation</Declaration>
+			
+			
+			<Anchor>//api/name/presentPuzzleCompletionAnimation</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/promptAndFinish</TokenIdentifier>
+			<Abstract type="html">Play sound when a puzzle is completed.
+Choose correct sound based on the difficulties:</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)promptAndFinish</Declaration>
+			
+			
+			<Anchor>//api/name/promptAndFinish</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/delayedDismissSelf</TokenIdentifier>
+			<Abstract type="html">Dismiss the current view and log down event</Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)delayedDismissSelf</Declaration>
+			
+			
+			<Anchor>//api/name/delayedDismissSelf</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/applyShadowToObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)applyShadowToObject:(UIView *)object</Declaration>
+			
+			
+			<Anchor>//api/name/applyShadowToObject:</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/applyGlowToObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)applyGlowToObject:(UIView *)object</Declaration>
+			
+			
+			<Anchor>//api/name/applyGlowToObject:</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/removeGlowFromObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)removeGlowFromObject:(UIView *)object</Declaration>
+			
+			
+			<Anchor>//api/name/removeGlowFromObject:</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/initWithNibName:bundle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil</Declaration>
+			
+			
+			<Anchor>//api/name/initWithNibName:bundle:</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/viewDidLoad</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewDidLoad</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidLoad</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/viewDidAppear:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewDidAppear:(BOOL)animated</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidAppear:</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/readFromPlist</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)readFromPlist</Declaration>
+			
+			
+			<Anchor>//api/name/readFromPlist</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/shouldAutorotate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)shouldAutorotate</Declaration>
+			
+			
+			<Anchor>//api/name/shouldAutorotate</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/didReceiveMemoryWarning</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)didReceiveMemoryWarning</Declaration>
+			
+			
+			<Anchor>//api/name/didReceiveMemoryWarning</Anchor>
             <NodeRef refid="59"/>
 		</Token>
 		

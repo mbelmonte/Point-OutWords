@@ -4,7 +4,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/AdminViewController</TokenIdentifier>
-			<Abstract type="html">View controller for admin view</Abstract>
+			<Abstract type="html"></Abstract>
 			<DeclaredIn>AdminViewController.h</DeclaredIn>
             
 			
@@ -14,7 +14,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setPointModeView:</TokenIdentifier>
-			<Abstract type="html">create two views for transforming animation</Abstract>
+			<Abstract type="html"></Abstract>
 			<DeclaredIn>AdminViewController.h</DeclaredIn>
 			
 			<Declaration>@property (weak, nonatomic) IBOutlet UIView *pointModeView</Declaration>
@@ -26,7 +26,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/pointModeView</TokenIdentifier>
-			<Abstract type="html">create two views for transforming animation</Abstract>
+			<Abstract type="html"></Abstract>
 			<DeclaredIn>AdminViewController.h</DeclaredIn>
 			
 			<Declaration>@property (weak, nonatomic) IBOutlet UIView *pointModeView</Declaration>
@@ -38,7 +38,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/pointModeView</TokenIdentifier>
-			<Abstract type="html">create two views for transforming animation</Abstract>
+			<Abstract type="html"></Abstract>
 			<DeclaredIn>AdminViewController.h</DeclaredIn>
 			
 			<Declaration>@property (weak, nonatomic) IBOutlet UIView *pointModeView</Declaration>
@@ -121,512 +121,8 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setRecordFilePathArray:</TokenIdentifier>
-			<Abstract type="html">&lt;#Description#&gt;</Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property NSMutableArray *recordFilePathArray</Declaration>
-			
-			
-			<Anchor>//api/name/recordFilePathArray</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/recordFilePathArray</TokenIdentifier>
-			<Abstract type="html">&lt;#Description#&gt;</Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property NSMutableArray *recordFilePathArray</Declaration>
-			
-			
-			<Anchor>//api/name/recordFilePathArray</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/recordFilePathArray</TokenIdentifier>
-			<Abstract type="html">&lt;#Description#&gt;</Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property NSMutableArray *recordFilePathArray</Declaration>
-			
-			
-			<Anchor>//api/name/recordFilePathArray</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setRecorder:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property AVAudioRecorder *recorder</Declaration>
-			
-			
-			<Anchor>//api/name/recorder</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/recorder</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property AVAudioRecorder *recorder</Declaration>
-			
-			
-			<Anchor>//api/name/recorder</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/recorder</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property AVAudioRecorder *recorder</Declaration>
-			
-			
-			<Anchor>//api/name/recorder</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setPlayer:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property AVAudioPlayer *player</Declaration>
-			
-			
-			<Anchor>//api/name/player</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/player</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property AVAudioPlayer *player</Declaration>
-			
-			
-			<Anchor>//api/name/player</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/player</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property AVAudioPlayer *player</Declaration>
-			
-			
-			<Anchor>//api/name/player</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setPraiseFileLabelArray:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property NSMutableArray *praiseFileLabelArray</Declaration>
-			
-			
-			<Anchor>//api/name/praiseFileLabelArray</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/praiseFileLabelArray</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property NSMutableArray *praiseFileLabelArray</Declaration>
-			
-			
-			<Anchor>//api/name/praiseFileLabelArray</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/praiseFileLabelArray</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property NSMutableArray *praiseFileLabelArray</Declaration>
-			
-			
-			<Anchor>//api/name/praiseFileLabelArray</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setMyPlayer:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property MPMusicPlayerController *myPlayer</Declaration>
-			
-			
-			<Anchor>//api/name/myPlayer</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/myPlayer</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property MPMusicPlayerController *myPlayer</Declaration>
-			
-			
-			<Anchor>//api/name/myPlayer</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/myPlayer</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property MPMusicPlayerController *myPlayer</Declaration>
-			
-			
-			<Anchor>//api/name/myPlayer</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setPraiseFileLabelArrayForPlist:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property NSMutableArray *praiseFileLabelArrayForPlist</Declaration>
-			
-			
-			<Anchor>//api/name/praiseFileLabelArrayForPlist</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/praiseFileLabelArrayForPlist</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property NSMutableArray *praiseFileLabelArrayForPlist</Declaration>
-			
-			
-			<Anchor>//api/name/praiseFileLabelArrayForPlist</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/praiseFileLabelArrayForPlist</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property NSMutableArray *praiseFileLabelArrayForPlist</Declaration>
-			
-			
-			<Anchor>//api/name/praiseFileLabelArrayForPlist</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setITunesPlayList:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property NSMutableArray *iTunesPlayList</Declaration>
-			
-			
-			<Anchor>//api/name/iTunesPlayList</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/iTunesPlayList</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property NSMutableArray *iTunesPlayList</Declaration>
-			
-			
-			<Anchor>//api/name/iTunesPlayList</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/iTunesPlayList</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property NSMutableArray *iTunesPlayList</Declaration>
-			
-			
-			<Anchor>//api/name/iTunesPlayList</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setDefaultPromptArray:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property NSMutableArray *defaultPromptArray</Declaration>
-			
-			
-			<Anchor>//api/name/defaultPromptArray</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/defaultPromptArray</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property NSMutableArray *defaultPromptArray</Declaration>
-			
-			
-			<Anchor>//api/name/defaultPromptArray</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/defaultPromptArray</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property NSMutableArray *defaultPromptArray</Declaration>
-			
-			
-			<Anchor>//api/name/defaultPromptArray</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setAllPromptArray:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property NSMutableArray *allPromptArray</Declaration>
-			
-			
-			<Anchor>//api/name/allPromptArray</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/allPromptArray</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property NSMutableArray *allPromptArray</Declaration>
-			
-			
-			<Anchor>//api/name/allPromptArray</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/allPromptArray</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property NSMutableArray *allPromptArray</Declaration>
-			
-			
-			<Anchor>//api/name/allPromptArray</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setCurrentSelection:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property int currentSelection</Declaration>
-			
-			
-			<Anchor>//api/name/currentSelection</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/currentSelection</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property int currentSelection</Declaration>
-			
-			
-			<Anchor>//api/name/currentSelection</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/currentSelection</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property int currentSelection</Declaration>
-			
-			
-			<Anchor>//api/name/currentSelection</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setIsEdited:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property BOOL isEdited</Declaration>
-			
-			
-			<Anchor>//api/name/isEdited</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/isEdited</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property BOOL isEdited</Declaration>
-			
-			
-			<Anchor>//api/name/isEdited</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/isEdited</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property BOOL isEdited</Declaration>
-			
-			
-			<Anchor>//api/name/isEdited</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setRecordPlayBtnArray:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property NSArray *recordPlayBtnArray</Declaration>
-			
-			
-			<Anchor>//api/name/recordPlayBtnArray</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/recordPlayBtnArray</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property NSArray *recordPlayBtnArray</Declaration>
-			
-			
-			<Anchor>//api/name/recordPlayBtnArray</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/recordPlayBtnArray</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property NSArray *recordPlayBtnArray</Declaration>
-			
-			
-			<Anchor>//api/name/recordPlayBtnArray</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setItunesPlayBtnArray:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property NSArray *itunesPlayBtnArray</Declaration>
-			
-			
-			<Anchor>//api/name/itunesPlayBtnArray</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/itunesPlayBtnArray</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property NSArray *itunesPlayBtnArray</Declaration>
-			
-			
-			<Anchor>//api/name/itunesPlayBtnArray</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/itunesPlayBtnArray</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property NSArray *itunesPlayBtnArray</Declaration>
-			
-			
-			<Anchor>//api/name/itunesPlayBtnArray</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setIndicator:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property UIActivityIndicatorView *indicator</Declaration>
-			
-			
-			<Anchor>//api/name/indicator</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/indicator</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property UIActivityIndicatorView *indicator</Declaration>
-			
-			
-			<Anchor>//api/name/indicator</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/indicator</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>@property UIActivityIndicatorView *indicator</Declaration>
-			
-			
-			<Anchor>//api/name/indicator</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setBackgroundMusicSwitch:</TokenIdentifier>
-			<Abstract type="html">&lt;#Description#&gt;</Abstract>
+			<Abstract type="html"></Abstract>
 			<DeclaredIn>AdminViewController.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) IBOutlet UISwitch *backgroundMusicSwitch</Declaration>
@@ -638,7 +134,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/backgroundMusicSwitch</TokenIdentifier>
-			<Abstract type="html">&lt;#Description#&gt;</Abstract>
+			<Abstract type="html"></Abstract>
 			<DeclaredIn>AdminViewController.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) IBOutlet UISwitch *backgroundMusicSwitch</Declaration>
@@ -650,7 +146,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/backgroundMusicSwitch</TokenIdentifier>
-			<Abstract type="html">&lt;#Description#&gt;</Abstract>
+			<Abstract type="html"></Abstract>
 			<DeclaredIn>AdminViewController.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) IBOutlet UISwitch *backgroundMusicSwitch</Declaration>
@@ -2317,8 +1813,80 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setWhetherAllowRecord_Switch:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UISwitch *whetherAllowRecord_Switch</Declaration>
+			
+			
+			<Anchor>//api/name/whetherAllowRecord_Switch</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/whetherAllowRecord_Switch</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UISwitch *whetherAllowRecord_Switch</Declaration>
+			
+			
+			<Anchor>//api/name/whetherAllowRecord_Switch</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/whetherAllowRecord_Switch</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UISwitch *whetherAllowRecord_Switch</Declaration>
+			
+			
+			<Anchor>//api/name/whetherAllowRecord_Switch</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setChangeTypeScaleSignificancy:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UISlider *changeTypeScaleSignificancy</Declaration>
+			
+			
+			<Anchor>//api/name/changeTypeScaleSignificancy</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/changeTypeScaleSignificancy</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UISlider *changeTypeScaleSignificancy</Declaration>
+			
+			
+			<Anchor>//api/name/changeTypeScaleSignificancy</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/changeTypeScaleSignificancy</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UISlider *changeTypeScaleSignificancy</Declaration>
+			
+			
+			<Anchor>//api/name/changeTypeScaleSignificancy</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/restoreTapped:</TokenIdentifier>
-			<Abstract type="html">Unused</Abstract>
+			<Abstract type="html"></Abstract>
 			<DeclaredIn>AdminViewController.h</DeclaredIn>
 			
 			<Declaration>- (IBAction)restoreTapped:(id)sender</Declaration>
@@ -2413,236 +1981,26 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/puzzleStatesForPuzzle:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/handleAllowToRecord:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>AdminViewController.h</DeclaredIn>
 			
-			<Declaration>- (NSDictionary *)puzzleStatesForPuzzle:(PuzzleObject *)object</Declaration>
+			<Declaration>- (IBAction)handleAllowToRecord:(id)sender</Declaration>
 			
 			
-			<Anchor>//api/name/puzzleStatesForPuzzle:</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/mailComposeController:didFinishWithResult:error:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error</Declaration>
-			
-			
-			<Anchor>//api/name/mailComposeController:didFinishWithResult:error:</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/alertView:clickedButtonAtIndex:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex</Declaration>
-			
-			
-			<Anchor>//api/name/alertView:clickedButtonAtIndex:</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/createPlistForPraisePrefs</TokenIdentifier>
-			<Abstract type="html">Load praise preferences from plist file /Supporting Files/PraisePrefs.plist, create one if none exist</Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>- (NSDictionary *)createPlistForPraisePrefs</Declaration>
-			
-			<ReturnValue><Abstract type="html">dictionary for prainse prompt preferences</Abstract></ReturnValue>
-			<Anchor>//api/name/createPlistForPraisePrefs</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/savePraiseIntoPlist:</TokenIdentifier>
-			<Abstract type="html">Save praise prompt preferences to plist file</Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>- (void)savePraiseIntoPlist:(NSDictionary *)plistDict</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>plistDict</Name>
-					<Abstract type="html">the location for praise prompt plist file</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/savePraiseIntoPlist:</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/updatePromptViewWith:</TokenIdentifier>
-			<Abstract type="html">Switch between three control segments for praise prompt control ui element</Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>- (void)updatePromptViewWith:(int)controlIndex</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>index</Name>
-					<Abstract type="html">for control segments 0 defause 1 record 2 iTunes</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/updatePromptViewWith:</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/moveSpaceForSelectionViewWith:</TokenIdentifier>
-			<Abstract type="html">Move Say Mode View group down to make space for praise prompt view</Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>- (void)moveSpaceForSelectionViewWith:(float)space</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>space</Name>
-					<Abstract type="html">&lt;#space description#&gt;</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/moveSpaceForSelectionViewWith:</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/editPromptSource:</TokenIdentifier>
-			<Abstract type="html">Edit button to display editing view</Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>- (IBAction)editPromptSource:(id)sender</Declaration>
-			
-			
-			<Anchor>//api/name/editPromptSource:</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/chosePromptSoure:</TokenIdentifier>
-			<Abstract type="html">Switch between three control segments, calls updatePromptViewWith:</Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>- (IBAction)chosePromptSoure:(id)sender</Declaration>
-			
-			
-			<Anchor>//api/name/chosePromptSoure:</Anchor>
+			<Anchor>//api/name/handleAllowToRecord:</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/recordPrompt:</TokenIdentifier>
-			<Abstract type="html">Allow user to record phases for praise prompt</Abstract>
+			<Abstract type="html"></Abstract>
 			<DeclaredIn>AdminViewController.h</DeclaredIn>
 			
 			<Declaration>- (IBAction)recordPrompt:(id)sender</Declaration>
 			
 			
 			<Anchor>//api/name/recordPrompt:</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/playRecordedPrompt:</TokenIdentifier>
-			<Abstract type="html">Playback user recorded praise prompt</Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>- (IBAction)playRecordedPrompt:(id)sender</Declaration>
-			
-			
-			<Anchor>//api/name/playRecordedPrompt:</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/startRecordingWith:</TokenIdentifier>
-			<Abstract type="html">Called by recordPrompt:</Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>- (void)startRecordingWith:(int)index</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>index</Name>
-					<Abstract type="html">index for which praise prompt user is recording</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/startRecordingWith:</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/audioRecorderDidFinishRecording:successfully:</TokenIdentifier>
-			<Abstract type="html">Voice recording callback function, display the play button after a praise prompt is recorded</Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>- (void)audioRecorderDidFinishRecording:(AVAudioRecorder *)aRecorder successfully:(BOOL)flag</Declaration>
-			
-			
-			<Anchor>//api/name/audioRecorderDidFinishRecording:successfully:</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/playItunes:</TokenIdentifier>
-			<Abstract type="html">Play a selected iTunes song</Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>- (IBAction)playItunes:(id)sender</Declaration>
-			
-			
-			<Anchor>//api/name/playItunes:</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/itunesSelection:</TokenIdentifier>
-			<Abstract type="html">Select an iTunes song, open up a MPMediaPickerController</Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>- (IBAction)itunesSelection:(id)sender</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>sender</Name>
-					<Abstract type="html">&lt;#sender description#&gt;</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/itunesSelection:</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/mediaPickerDidCancel:</TokenIdentifier>
-			<Abstract type="html">Dismiss the MPMediaPickerController</Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>- (void)mediaPickerDidCancel:(MPMediaPickerController *)mediaPicker</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>mediaPicker</Name>
-					<Abstract type="html">&lt;#mediaPicker description#&gt;</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/mediaPickerDidCancel:</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/mediaPicker:didPickMediaItems:</TokenIdentifier>
-			<Abstract type="html">Call back function after a song is selected, disabling selecting multiple songs and songs longer than 3s.</Abstract>
-			<DeclaredIn>AdminViewController.h</DeclaredIn>
-			
-			<Declaration>- (void)mediaPicker:(MPMediaPickerController *)mediaPicker didPickMediaItems:(MPMediaItemCollection *)collection</Declaration>
-			
-			
-			<Anchor>//api/name/mediaPicker:didPickMediaItems:</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
@@ -2671,6 +2029,54 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/updatePromptViewWith:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)updatePromptViewWith:(int)controlIndex</Declaration>
+			
+			
+			<Anchor>//api/name/updatePromptViewWith:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/puzzleStatesForPuzzle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)puzzleStatesForPuzzle:(PuzzleObject *)object</Declaration>
+			
+			
+			<Anchor>//api/name/puzzleStatesForPuzzle:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/mailComposeController:didFinishWithResult:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error</Declaration>
+			
+			
+			<Anchor>//api/name/mailComposeController:didFinishWithResult:error:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/alertView:clickedButtonAtIndex:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex</Declaration>
+			
+			
+			<Anchor>//api/name/alertView:clickedButtonAtIndex:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/shouldAutorotate</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>AdminViewController.m</DeclaredIn>
@@ -2691,6 +2097,654 @@
 			
 			
 			<Anchor>//api/name/didReceiveMemoryWarning</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/editPromptSource:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>- (IBAction)editPromptSource:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/editPromptSource:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/chosePromptSoure:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>- (IBAction)chosePromptSoure:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/chosePromptSoure:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/playRecordedPrompt:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>- (IBAction)playRecordedPrompt:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/playRecordedPrompt:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/moveSpaceForSelectionViewWith:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)moveSpaceForSelectionViewWith:(float)space</Declaration>
+			
+			
+			<Anchor>//api/name/moveSpaceForSelectionViewWith:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/startRecordingWith:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)startRecordingWith:(int)index</Declaration>
+			
+			
+			<Anchor>//api/name/startRecordingWith:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/audioRecorderDidFinishRecording:successfully:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)audioRecorderDidFinishRecording:(AVAudioRecorder *)aRecorder successfully:(BOOL)flag</Declaration>
+			
+			
+			<Anchor>//api/name/audioRecorderDidFinishRecording:successfully:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/itunesSelection:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>- (IBAction)itunesSelection:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/itunesSelection:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/playItunes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>- (IBAction)playItunes:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/playItunes:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/mediaPicker:didPickMediaItems:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)mediaPicker:(MPMediaPickerController *)mediaPicker didPickMediaItems:(MPMediaItemCollection *)collection</Declaration>
+			
+			
+			<Anchor>//api/name/mediaPicker:didPickMediaItems:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/mediaPickerDidCancel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)mediaPickerDidCancel:(MPMediaPickerController *)mediaPicker</Declaration>
+			
+			
+			<Anchor>//api/name/mediaPickerDidCancel:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/createPlistForPraisePrefs</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)createPlistForPraisePrefs</Declaration>
+			
+			
+			<Anchor>//api/name/createPlistForPraisePrefs</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/savePraiseIntoPlist:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)savePraiseIntoPlist:(NSDictionary *)plistDict</Declaration>
+			
+			
+			<Anchor>//api/name/savePraiseIntoPlist:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setRecordFilePathArray:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *recordFilePathArray</Declaration>
+			
+			
+			<Anchor>//api/name/recordFilePathArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/recordFilePathArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *recordFilePathArray</Declaration>
+			
+			
+			<Anchor>//api/name/recordFilePathArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/recordFilePathArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *recordFilePathArray</Declaration>
+			
+			
+			<Anchor>//api/name/recordFilePathArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setRecorder:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property AVAudioRecorder *recorder</Declaration>
+			
+			
+			<Anchor>//api/name/recorder</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/recorder</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property AVAudioRecorder *recorder</Declaration>
+			
+			
+			<Anchor>//api/name/recorder</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/recorder</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property AVAudioRecorder *recorder</Declaration>
+			
+			
+			<Anchor>//api/name/recorder</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setPlayer:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property AVAudioPlayer *player</Declaration>
+			
+			
+			<Anchor>//api/name/player</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/player</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property AVAudioPlayer *player</Declaration>
+			
+			
+			<Anchor>//api/name/player</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/player</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property AVAudioPlayer *player</Declaration>
+			
+			
+			<Anchor>//api/name/player</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setPraiseFileLabelArray:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *praiseFileLabelArray</Declaration>
+			
+			
+			<Anchor>//api/name/praiseFileLabelArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/praiseFileLabelArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *praiseFileLabelArray</Declaration>
+			
+			
+			<Anchor>//api/name/praiseFileLabelArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/praiseFileLabelArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *praiseFileLabelArray</Declaration>
+			
+			
+			<Anchor>//api/name/praiseFileLabelArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setMyPlayer:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property MPMusicPlayerController *myPlayer</Declaration>
+			
+			
+			<Anchor>//api/name/myPlayer</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/myPlayer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property MPMusicPlayerController *myPlayer</Declaration>
+			
+			
+			<Anchor>//api/name/myPlayer</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/myPlayer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property MPMusicPlayerController *myPlayer</Declaration>
+			
+			
+			<Anchor>//api/name/myPlayer</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setPraiseFileLabelArrayForPlist:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *praiseFileLabelArrayForPlist</Declaration>
+			
+			
+			<Anchor>//api/name/praiseFileLabelArrayForPlist</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/praiseFileLabelArrayForPlist</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *praiseFileLabelArrayForPlist</Declaration>
+			
+			
+			<Anchor>//api/name/praiseFileLabelArrayForPlist</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/praiseFileLabelArrayForPlist</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *praiseFileLabelArrayForPlist</Declaration>
+			
+			
+			<Anchor>//api/name/praiseFileLabelArrayForPlist</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setITunesPlayList:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *iTunesPlayList</Declaration>
+			
+			
+			<Anchor>//api/name/iTunesPlayList</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/iTunesPlayList</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *iTunesPlayList</Declaration>
+			
+			
+			<Anchor>//api/name/iTunesPlayList</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/iTunesPlayList</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *iTunesPlayList</Declaration>
+			
+			
+			<Anchor>//api/name/iTunesPlayList</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setDefaultPromptArray:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *defaultPromptArray</Declaration>
+			
+			
+			<Anchor>//api/name/defaultPromptArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/defaultPromptArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *defaultPromptArray</Declaration>
+			
+			
+			<Anchor>//api/name/defaultPromptArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/defaultPromptArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *defaultPromptArray</Declaration>
+			
+			
+			<Anchor>//api/name/defaultPromptArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setAllPromptArray:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *allPromptArray</Declaration>
+			
+			
+			<Anchor>//api/name/allPromptArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/allPromptArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *allPromptArray</Declaration>
+			
+			
+			<Anchor>//api/name/allPromptArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/allPromptArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *allPromptArray</Declaration>
+			
+			
+			<Anchor>//api/name/allPromptArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setCurrentSelection:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property int currentSelection</Declaration>
+			
+			
+			<Anchor>//api/name/currentSelection</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/currentSelection</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property int currentSelection</Declaration>
+			
+			
+			<Anchor>//api/name/currentSelection</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/currentSelection</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property int currentSelection</Declaration>
+			
+			
+			<Anchor>//api/name/currentSelection</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setIsEdited:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property BOOL isEdited</Declaration>
+			
+			
+			<Anchor>//api/name/isEdited</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/isEdited</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property BOOL isEdited</Declaration>
+			
+			
+			<Anchor>//api/name/isEdited</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/isEdited</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property BOOL isEdited</Declaration>
+			
+			
+			<Anchor>//api/name/isEdited</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setRecordPlayBtnArray:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSArray *recordPlayBtnArray</Declaration>
+			
+			
+			<Anchor>//api/name/recordPlayBtnArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/recordPlayBtnArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSArray *recordPlayBtnArray</Declaration>
+			
+			
+			<Anchor>//api/name/recordPlayBtnArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/recordPlayBtnArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSArray *recordPlayBtnArray</Declaration>
+			
+			
+			<Anchor>//api/name/recordPlayBtnArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setItunesPlayBtnArray:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSArray *itunesPlayBtnArray</Declaration>
+			
+			
+			<Anchor>//api/name/itunesPlayBtnArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/itunesPlayBtnArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSArray *itunesPlayBtnArray</Declaration>
+			
+			
+			<Anchor>//api/name/itunesPlayBtnArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/itunesPlayBtnArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSArray *itunesPlayBtnArray</Declaration>
+			
+			
+			<Anchor>//api/name/itunesPlayBtnArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setIndicator:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property UIActivityIndicatorView *indicator</Declaration>
+			
+			
+			<Anchor>//api/name/indicator</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/indicator</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property UIActivityIndicatorView *indicator</Declaration>
+			
+			
+			<Anchor>//api/name/indicator</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/indicator</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>@property UIActivityIndicatorView *indicator</Declaration>
+			
+			
+			<Anchor>//api/name/indicator</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		

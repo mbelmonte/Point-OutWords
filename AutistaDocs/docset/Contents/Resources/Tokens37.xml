@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SBJsonStreamWriterAccumulator.html">
+	<File path="Classes/SBJsonStreamParserStateStart.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SBJsonStreamWriterAccumulator</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/SBJsonStreamParserStateStart</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>SBJsonStreamWriterAccumulator.h</DeclaredIn>
+			<DeclaredIn>SBJsonStreamParserState.h</DeclaredIn>
             
 			
 			<NodeRef refid="37"/>
@@ -13,62 +13,38 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamWriterAccumulator/setData:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserStateStart/parser:shouldAcceptToken:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>SBJsonStreamWriterAccumulator.h</DeclaredIn>
+			<DeclaredIn>SBJsonStreamParserState.m</DeclaredIn>
 			
-			<Declaration>@property (readonly, copy) NSMutableData *data</Declaration>
+			<Declaration>- (BOOL)parser:(SBJsonStreamParser *)parser shouldAcceptToken:(sbjson_token_t)token</Declaration>
 			
 			
-			<Anchor>//api/name/data</Anchor>
+			<Anchor>//api/name/parser:shouldAcceptToken:</Anchor>
             <NodeRef refid="37"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamWriterAccumulator/data</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserStateStart/parser:shouldTransitionTo:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>SBJsonStreamWriterAccumulator.h</DeclaredIn>
+			<DeclaredIn>SBJsonStreamParserState.m</DeclaredIn>
 			
-			<Declaration>@property (readonly, copy) NSMutableData *data</Declaration>
+			<Declaration>- (void)parser:(SBJsonStreamParser *)parser shouldTransitionTo:(sbjson_token_t)tok</Declaration>
 			
 			
-			<Anchor>//api/name/data</Anchor>
+			<Anchor>//api/name/parser:shouldTransitionTo:</Anchor>
             <NodeRef refid="37"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SBJsonStreamWriterAccumulator/data</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserStateStart/name</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>SBJsonStreamWriterAccumulator.h</DeclaredIn>
+			<DeclaredIn>SBJsonStreamParserState.m</DeclaredIn>
 			
-			<Declaration>@property (readonly, copy) NSMutableData *data</Declaration>
-			
-			
-			<Anchor>//api/name/data</Anchor>
-            <NodeRef refid="37"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamWriterAccumulator/init</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SBJsonStreamWriterAccumulator.m</DeclaredIn>
-			
-			<Declaration>- (id)init</Declaration>
+			<Declaration>- (NSString *)name</Declaration>
 			
 			
-			<Anchor>//api/name/init</Anchor>
-            <NodeRef refid="37"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamWriterAccumulator/writer:appendBytes:length:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SBJsonStreamWriterAccumulator.m</DeclaredIn>
-			
-			<Declaration>- (void)writer:(SBJsonStreamWriter *)writer appendBytes:(const void *)bytes length:(NSUInteger)length</Declaration>
-			
-			
-			<Anchor>//api/name/writer:appendBytes:length:</Anchor>
+			<Anchor>//api/name/name</Anchor>
             <NodeRef refid="37"/>
 		</Token>
 		

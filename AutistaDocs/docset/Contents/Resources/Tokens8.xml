@@ -37,6 +37,42 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GLLevelMeter/_destroyFramebuffer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GLLevelMeter.m</DeclaredIn>
+			
+			<Declaration>- (void)_destroyFramebuffer</Declaration>
+			
+			
+			<Anchor>//api/name/_destroyFramebuffer</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GLLevelMeter/_setupView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GLLevelMeter.m</DeclaredIn>
+			
+			<Declaration>- (void)_setupView</Declaration>
+			
+			
+			<Anchor>//api/name/_setupView</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GLLevelMeter/_performInit</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GLLevelMeter.m</DeclaredIn>
+			
+			<Declaration>- (void)_performInit</Declaration>
+			
+			
+			<Anchor>//api/name/_performInit</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/GLLevelMeter/_drawView</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>GLLevelMeter.m</DeclaredIn>

@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SBJsonParser.html">
+	<File path="Classes/PuzzleStateView.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SBJsonParser</TokenIdentifier>
-			<Abstract type="html">Parse JSON Strings and NSData objects</Abstract>
-			<DeclaredIn>SBJsonParser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/PuzzleStateView</TokenIdentifier>
+			<Abstract type="html">The view controller showing the acomplishing status of all puzzles in a scene.
+The status for all three modes are displayed.
+A green dot denote completion.</Abstract>
+			<DeclaredIn>PuzzleStateView.h</DeclaredIn>
             
 			
 			<NodeRef refid="20"/>
@@ -13,135 +15,199 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonParser/setMaxDepth:</TokenIdentifier>
-			<Abstract type="html">The maximum recursing depth.</Abstract>
-			<DeclaredIn>SBJsonParser.h</DeclaredIn>
-			
-			<Declaration>@property NSUInteger maxDepth</Declaration>
-			
-			
-			<Anchor>//api/name/maxDepth</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonParser/maxDepth</TokenIdentifier>
-			<Abstract type="html">The maximum recursing depth.</Abstract>
-			<DeclaredIn>SBJsonParser.h</DeclaredIn>
-			
-			<Declaration>@property NSUInteger maxDepth</Declaration>
-			
-			
-			<Anchor>//api/name/maxDepth</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SBJsonParser/maxDepth</TokenIdentifier>
-			<Abstract type="html">The maximum recursing depth.</Abstract>
-			<DeclaredIn>SBJsonParser.h</DeclaredIn>
-			
-			<Declaration>@property NSUInteger maxDepth</Declaration>
-			
-			
-			<Anchor>//api/name/maxDepth</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonParser/setError:</TokenIdentifier>
-			<Abstract type="html">Description of parse error</Abstract>
-			<DeclaredIn>SBJsonParser.h</DeclaredIn>
-			
-			<Declaration>@property (copy) NSString *error</Declaration>
-			
-			<ReturnValue><Abstract type="html">A string describing the error encountered, or nil if no error occured.</Abstract></ReturnValue>
-			<Anchor>//api/name/error</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonParser/error</TokenIdentifier>
-			<Abstract type="html">Description of parse error</Abstract>
-			<DeclaredIn>SBJsonParser.h</DeclaredIn>
-			
-			<Declaration>@property (copy) NSString *error</Declaration>
-			
-			<ReturnValue><Abstract type="html">A string describing the error encountered, or nil if no error occured.</Abstract></ReturnValue>
-			<Anchor>//api/name/error</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SBJsonParser/error</TokenIdentifier>
-			<Abstract type="html">Description of parse error</Abstract>
-			<DeclaredIn>SBJsonParser.h</DeclaredIn>
-			
-			<Declaration>@property (copy) NSString *error</Declaration>
-			
-			<ReturnValue><Abstract type="html">A string describing the error encountered, or nil if no error occured.</Abstract></ReturnValue>
-			<Anchor>//api/name/error</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonParser/objectWithData:</TokenIdentifier>
-			<Abstract type="html">Return the object represented by the given NSData object.</Abstract>
-			<DeclaredIn>SBJsonParser.h</DeclaredIn>
-			
-			<Declaration>- (id)objectWithData:(NSData *)data</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>data</Name>
-					<Abstract type="html">An NSData containing UTF8 encoded data to parse.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The NSArray or NSDictionary represented by the object, or nil if an error occured.</Abstract></ReturnValue>
-			<Anchor>//api/name/objectWithData:</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonParser/objectWithString:</TokenIdentifier>
-			<Abstract type="html">Return the object represented by the given string</Abstract>
-			<DeclaredIn>SBJsonParser.h</DeclaredIn>
-			
-			<Declaration>- (id)objectWithString:(NSString *)repr</Declaration>
-			
-			<ReturnValue><Abstract type="html">The NSArray or NSDictionary represented by the object, or nil if an error occured.</Abstract></ReturnValue>
-			<Anchor>//api/name/objectWithString:</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonParser/objectWithString:error:</TokenIdentifier>
-			<Abstract type="html">Return the object represented by the given string</Abstract>
-			<DeclaredIn>SBJsonParser.h</DeclaredIn>
-			
-			<Declaration>- (id)objectWithString:(NSString *)jsonText error:(NSError **)error</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>jsonText</Name>
-					<Abstract type="html">the json string to parse</Abstract>
-				</Parameter><Parameter>
-					<Name>error</Name>
-					<Abstract type="html">pointer to an NSError object to populate on error</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The NSArray or NSDictionary represented by the object, or nil if an error occured.</Abstract></ReturnValue>
-			<Anchor>//api/name/objectWithString:error:</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonParser/init</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/PuzzleStateView/setImageView:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>SBJsonParser.m</DeclaredIn>
+			<DeclaredIn>PuzzleStateView.h</DeclaredIn>
 			
-			<Declaration>- (id)init</Declaration>
+			<Declaration>@property (nonatomic, strong) IBOutlet UIImageView *imageView</Declaration>
 			
 			
-			<Anchor>//api/name/init</Anchor>
+			<Anchor>//api/name/imageView</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PuzzleStateView/imageView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PuzzleStateView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UIImageView *imageView</Declaration>
+			
+			
+			<Anchor>//api/name/imageView</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PuzzleStateView/imageView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PuzzleStateView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UIImageView *imageView</Declaration>
+			
+			
+			<Anchor>//api/name/imageView</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PuzzleStateView/setDragState:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PuzzleStateView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PuzzleState *dragState</Declaration>
+			
+			
+			<Anchor>//api/name/dragState</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PuzzleStateView/dragState</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PuzzleStateView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PuzzleState *dragState</Declaration>
+			
+			
+			<Anchor>//api/name/dragState</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PuzzleStateView/dragState</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PuzzleStateView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PuzzleState *dragState</Declaration>
+			
+			
+			<Anchor>//api/name/dragState</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PuzzleStateView/setTypeState:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PuzzleStateView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PuzzleState *typeState</Declaration>
+			
+			
+			<Anchor>//api/name/typeState</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PuzzleStateView/typeState</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PuzzleStateView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PuzzleState *typeState</Declaration>
+			
+			
+			<Anchor>//api/name/typeState</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PuzzleStateView/typeState</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PuzzleStateView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PuzzleState *typeState</Declaration>
+			
+			
+			<Anchor>//api/name/typeState</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PuzzleStateView/setSayState:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PuzzleStateView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PuzzleState *sayState</Declaration>
+			
+			
+			<Anchor>//api/name/sayState</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PuzzleStateView/sayState</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PuzzleStateView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PuzzleState *sayState</Declaration>
+			
+			
+			<Anchor>//api/name/sayState</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PuzzleStateView/sayState</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PuzzleStateView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PuzzleState *sayState</Declaration>
+			
+			
+			<Anchor>//api/name/sayState</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PuzzleStateView/drawRect:</TokenIdentifier>
+			<Abstract type="html">Layout UI components</Abstract>
+			<DeclaredIn>PuzzleStateView.h</DeclaredIn>
+			
+			<Declaration>- (void)drawRect:(CGRect)rect</Declaration>
+			
+			
+			<Anchor>//api/name/drawRect:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PuzzleStateView/colorFromState:</TokenIdentifier>
+			<Abstract type="html">Choose a color for the puzzle&apos;s completion status in a mode</Abstract>
+			<DeclaredIn>PuzzleStateView.h</DeclaredIn>
+			
+			<Declaration>- (UIColor *)colorFromState:(PuzzleState)state</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>state</Name>
+					<Abstract type="html">puzzle completion status</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">color</Abstract></ReturnValue>
+			<Anchor>//api/name/colorFromState:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PuzzleStateView/setImageView:</TokenIdentifier>
+			<Abstract type="html">Setup the image view</Abstract>
+			<DeclaredIn>PuzzleStateView.h</DeclaredIn>
+			
+			<Declaration>- (void)setImageView:(UIImageView *)imageView</Declaration>
+			
+			
+			<Anchor>//api/name/setImageView:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PuzzleStateView/initWithFrame:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PuzzleStateView.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithFrame:(CGRect)frame</Declaration>
+			
+			
+			<Anchor>//api/name/initWithFrame:</Anchor>
             <NodeRef refid="20"/>
 		</Token>
 		

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/PuzzlePieceView.html">
+	<File path="Classes/Piece.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/PuzzlePieceView</TokenIdentifier>
-			<Abstract type="html">The view controller for each puzzle piece.</Abstract>
-			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/Piece</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Piece.h</DeclaredIn>
             
 			
 			<NodeRef refid="17"/>
@@ -13,281 +13,218 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PuzzlePieceView/setTitle:</TokenIdentifier>
-			<Abstract type="html">Title for the puzzle piece.
-Required while logging user activity on this piece</Abstract>
-			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) NSString *title</Declaration>
-			
-			
-			<Anchor>//api/name/title</Anchor>
-            <NodeRef refid="17"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PuzzlePieceView/title</TokenIdentifier>
-			<Abstract type="html">Title for the puzzle piece.
-Required while logging user activity on this piece</Abstract>
-			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) NSString *title</Declaration>
-			
-			
-			<Anchor>//api/name/title</Anchor>
-            <NodeRef refid="17"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PuzzlePieceView/title</TokenIdentifier>
-			<Abstract type="html">Title for the puzzle piece.
-Required while logging user activity on this piece</Abstract>
-			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) NSString *title</Declaration>
-			
-			
-			<Anchor>//api/name/title</Anchor>
-            <NodeRef refid="17"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PuzzlePieceView/setInitialPoint:</TokenIdentifier>
-			<Abstract type="html">Initial point of the puzzle piece</Abstract>
-			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) CGPoint initialPoint</Declaration>
-			
-			
-			<Anchor>//api/name/initialPoint</Anchor>
-            <NodeRef refid="17"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PuzzlePieceView/initialPoint</TokenIdentifier>
-			<Abstract type="html">Initial point of the puzzle piece</Abstract>
-			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) CGPoint initialPoint</Declaration>
-			
-			
-			<Anchor>//api/name/initialPoint</Anchor>
-            <NodeRef refid="17"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PuzzlePieceView/initialPoint</TokenIdentifier>
-			<Abstract type="html">Initial point of the puzzle piece</Abstract>
-			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) CGPoint initialPoint</Declaration>
-			
-			
-			<Anchor>//api/name/initialPoint</Anchor>
-            <NodeRef refid="17"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PuzzlePieceView/setFinalPoint:</TokenIdentifier>
-			<Abstract type="html">Final point of the puzzle piece</Abstract>
-			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) CGPoint finalPoint</Declaration>
-			
-			
-			<Anchor>//api/name/finalPoint</Anchor>
-            <NodeRef refid="17"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PuzzlePieceView/finalPoint</TokenIdentifier>
-			<Abstract type="html">Final point of the puzzle piece</Abstract>
-			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) CGPoint finalPoint</Declaration>
-			
-			
-			<Anchor>//api/name/finalPoint</Anchor>
-            <NodeRef refid="17"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PuzzlePieceView/finalPoint</TokenIdentifier>
-			<Abstract type="html">Final point of the puzzle piece</Abstract>
-			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) CGPoint finalPoint</Declaration>
-			
-			
-			<Anchor>//api/name/finalPoint</Anchor>
-            <NodeRef refid="17"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PuzzlePieceView/setIsCompleted:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/Piece/setFinalPositionX:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
+			<DeclaredIn>Piece.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL isCompleted</Declaration>
+			<Declaration>@property (nonatomic, retain) NSNumber *finalPositionX</Declaration>
 			
 			
-			<Anchor>//api/name/isCompleted</Anchor>
+			<Anchor>//api/name/finalPositionX</Anchor>
             <NodeRef refid="17"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PuzzlePieceView/isCompleted</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/Piece/finalPositionX</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
+			<DeclaredIn>Piece.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL isCompleted</Declaration>
+			<Declaration>@property (nonatomic, retain) NSNumber *finalPositionX</Declaration>
 			
 			
-			<Anchor>//api/name/isCompleted</Anchor>
+			<Anchor>//api/name/finalPositionX</Anchor>
             <NodeRef refid="17"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PuzzlePieceView/isCompleted</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/Piece/finalPositionX</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
+			<DeclaredIn>Piece.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL isCompleted</Declaration>
+			<Declaration>@property (nonatomic, retain) NSNumber *finalPositionX</Declaration>
 			
 			
-			<Anchor>//api/name/isCompleted</Anchor>
+			<Anchor>//api/name/finalPositionX</Anchor>
             <NodeRef refid="17"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PuzzlePieceView/setBelongsToSyllable:</TokenIdentifier>
-			<Abstract type="html">The syllable current puzzle piece is associated with</Abstract>
-			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) NSInteger belongsToSyllable</Declaration>
-			
-			
-			<Anchor>//api/name/belongsToSyllable</Anchor>
-            <NodeRef refid="17"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PuzzlePieceView/belongsToSyllable</TokenIdentifier>
-			<Abstract type="html">The syllable current puzzle piece is associated with</Abstract>
-			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) NSInteger belongsToSyllable</Declaration>
-			
-			
-			<Anchor>//api/name/belongsToSyllable</Anchor>
-            <NodeRef refid="17"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PuzzlePieceView/belongsToSyllable</TokenIdentifier>
-			<Abstract type="html">The syllable current puzzle piece is associated with</Abstract>
-			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) NSInteger belongsToSyllable</Declaration>
-			
-			
-			<Anchor>//api/name/belongsToSyllable</Anchor>
-            <NodeRef refid="17"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PuzzlePieceView/setupSounds</TokenIdentifier>
-			<Abstract type="html">Setup sound effects from file</Abstract>
-			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
-			
-			<Declaration>- (void)setupSounds</Declaration>
-			
-			
-			<Anchor>//api/name/setupSounds</Anchor>
-            <NodeRef refid="17"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PuzzlePieceView/playPieceSelectedSound</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/Piece/setFinalPositionY:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
+			<DeclaredIn>Piece.h</DeclaredIn>
 			
-			<Declaration>- (IBAction)playPieceSelectedSound</Declaration>
+			<Declaration>@property (nonatomic, retain) NSNumber *finalPositionY</Declaration>
 			
 			
-			<Anchor>//api/name/playPieceSelectedSound</Anchor>
+			<Anchor>//api/name/finalPositionY</Anchor>
             <NodeRef refid="17"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PuzzlePieceView/playPieceReleasedSound</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/Piece/finalPositionY</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
+			<DeclaredIn>Piece.h</DeclaredIn>
 			
-			<Declaration>- (IBAction)playPieceReleasedSound</Declaration>
+			<Declaration>@property (nonatomic, retain) NSNumber *finalPositionY</Declaration>
 			
 			
-			<Anchor>//api/name/playPieceReleasedSound</Anchor>
+			<Anchor>//api/name/finalPositionY</Anchor>
             <NodeRef refid="17"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PuzzlePieceView/touchesBegan:withEvent:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/Piece/finalPositionY</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
+			<DeclaredIn>Piece.h</DeclaredIn>
 			
-			<Declaration>- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event</Declaration>
+			<Declaration>@property (nonatomic, retain) NSNumber *finalPositionY</Declaration>
 			
 			
-			<Anchor>//api/name/touchesBegan:withEvent:</Anchor>
+			<Anchor>//api/name/finalPositionY</Anchor>
             <NodeRef refid="17"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PuzzlePieceView/touchesEnded:withEvent:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/Piece/setLabel:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>PuzzlePieceView.h</DeclaredIn>
+			<DeclaredIn>Piece.h</DeclaredIn>
 			
-			<Declaration>- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *label</Declaration>
 			
 			
-			<Anchor>//api/name/touchesEnded:withEvent:</Anchor>
+			<Anchor>//api/name/label</Anchor>
             <NodeRef refid="17"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PuzzlePieceView/initWithFrame:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/Piece/label</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>PuzzlePieceView.m</DeclaredIn>
+			<DeclaredIn>Piece.h</DeclaredIn>
 			
-			<Declaration>- (id)initWithFrame:(CGRect)frame</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *label</Declaration>
 			
 			
-			<Anchor>//api/name/initWithFrame:</Anchor>
+			<Anchor>//api/name/label</Anchor>
             <NodeRef refid="17"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PuzzlePieceView/initWithImage:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/Piece/label</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>PuzzlePieceView.m</DeclaredIn>
+			<DeclaredIn>Piece.h</DeclaredIn>
 			
-			<Declaration>- (id)initWithImage:(UIImage *)image</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *label</Declaration>
 			
 			
-			<Anchor>//api/name/initWithImage:</Anchor>
+			<Anchor>//api/name/label</Anchor>
             <NodeRef refid="17"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PuzzlePieceView/awakeFromNib</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/Piece/setImageName:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>PuzzlePieceView.m</DeclaredIn>
+			<DeclaredIn>Piece.h</DeclaredIn>
 			
-			<Declaration>- (void)awakeFromNib</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *imageName</Declaration>
 			
 			
-			<Anchor>//api/name/awakeFromNib</Anchor>
+			<Anchor>//api/name/imageName</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Piece/imageName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Piece.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *imageName</Declaration>
+			
+			
+			<Anchor>//api/name/imageName</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Piece/imageName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Piece.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *imageName</Declaration>
+			
+			
+			<Anchor>//api/name/imageName</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Piece/setPieceImage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Piece.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSData *pieceImage</Declaration>
+			
+			
+			<Anchor>//api/name/pieceImage</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Piece/pieceImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Piece.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSData *pieceImage</Declaration>
+			
+			
+			<Anchor>//api/name/pieceImage</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Piece/pieceImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Piece.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSData *pieceImage</Declaration>
+			
+			
+			<Anchor>//api/name/pieceImage</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Piece/setPuzzleObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Piece.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) PuzzleObject *puzzleObject</Declaration>
+			
+			
+			<Anchor>//api/name/puzzleObject</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Piece/puzzleObject</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Piece.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) PuzzleObject *puzzleObject</Declaration>
+			
+			
+			<Anchor>//api/name/puzzleObject</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Piece/puzzleObject</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Piece.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) PuzzleObject *puzzleObject</Declaration>
+			
+			
+			<Anchor>//api/name/puzzleObject</Anchor>
             <NodeRef refid="17"/>
 		</Token>
 		

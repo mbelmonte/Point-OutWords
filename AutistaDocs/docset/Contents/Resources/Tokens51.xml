@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/Scene.html">
+	<File path="Classes/SBJsonWriter.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/Scene</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>Scene.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SBJsonWriter</TokenIdentifier>
+			<Abstract type="html">The JSON writer class.</Abstract>
+			<DeclaredIn>SBJsonWriter.h</DeclaredIn>
             
 			
 			<NodeRef refid="51"/>
@@ -13,266 +13,248 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Scene/setPuzzleBackgroundImage:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>Scene.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonWriter/setMaxDepth:</TokenIdentifier>
+			<Abstract type="html">The maximum recursing depth.</Abstract>
+			<DeclaredIn>SBJsonWriter.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSData *puzzleBackgroundImage</Declaration>
+			<Declaration>@property NSUInteger maxDepth</Declaration>
 			
 			
-			<Anchor>//api/name/puzzleBackgroundImage</Anchor>
+			<Anchor>//api/name/maxDepth</Anchor>
             <NodeRef refid="51"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Scene/puzzleBackgroundImage</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>Scene.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonWriter/maxDepth</TokenIdentifier>
+			<Abstract type="html">The maximum recursing depth.</Abstract>
+			<DeclaredIn>SBJsonWriter.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSData *puzzleBackgroundImage</Declaration>
+			<Declaration>@property NSUInteger maxDepth</Declaration>
 			
 			
-			<Anchor>//api/name/puzzleBackgroundImage</Anchor>
+			<Anchor>//api/name/maxDepth</Anchor>
             <NodeRef refid="51"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/Scene/puzzleBackgroundImage</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>Scene.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/SBJsonWriter/maxDepth</TokenIdentifier>
+			<Abstract type="html">The maximum recursing depth.</Abstract>
+			<DeclaredIn>SBJsonWriter.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSData *puzzleBackgroundImage</Declaration>
+			<Declaration>@property NSUInteger maxDepth</Declaration>
 			
 			
-			<Anchor>//api/name/puzzleBackgroundImage</Anchor>
+			<Anchor>//api/name/maxDepth</Anchor>
             <NodeRef refid="51"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Scene/setSceneSelectorImage:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>Scene.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonWriter/setError:</TokenIdentifier>
+			<Abstract type="html">Return an error trace, or nil if there was no errors.</Abstract>
+			<DeclaredIn>SBJsonWriter.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSData *sceneSelectorImage</Declaration>
+			<Declaration>@property (readonly, copy) NSString *error</Declaration>
 			
 			
-			<Anchor>//api/name/sceneSelectorImage</Anchor>
+			<Anchor>//api/name/error</Anchor>
             <NodeRef refid="51"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Scene/sceneSelectorImage</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>Scene.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonWriter/error</TokenIdentifier>
+			<Abstract type="html">Return an error trace, or nil if there was no errors.</Abstract>
+			<DeclaredIn>SBJsonWriter.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSData *sceneSelectorImage</Declaration>
+			<Declaration>@property (readonly, copy) NSString *error</Declaration>
 			
 			
-			<Anchor>//api/name/sceneSelectorImage</Anchor>
+			<Anchor>//api/name/error</Anchor>
             <NodeRef refid="51"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/Scene/sceneSelectorImage</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>Scene.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/SBJsonWriter/error</TokenIdentifier>
+			<Abstract type="html">Return an error trace, or nil if there was no errors.</Abstract>
+			<DeclaredIn>SBJsonWriter.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSData *sceneSelectorImage</Declaration>
+			<Declaration>@property (readonly, copy) NSString *error</Declaration>
 			
 			
-			<Anchor>//api/name/sceneSelectorImage</Anchor>
+			<Anchor>//api/name/error</Anchor>
             <NodeRef refid="51"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Scene/setSceneBackgroundImage:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>Scene.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonWriter/setHumanReadable:</TokenIdentifier>
+			<Abstract type="html">Whether we are generating human-readable (multiline) JSON.</Abstract>
+			<DeclaredIn>SBJsonWriter.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSData *sceneBackgroundImage</Declaration>
+			<Declaration>@property BOOL humanReadable</Declaration>
 			
 			
-			<Anchor>//api/name/sceneBackgroundImage</Anchor>
+			<Anchor>//api/name/humanReadable</Anchor>
             <NodeRef refid="51"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Scene/sceneBackgroundImage</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>Scene.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonWriter/humanReadable</TokenIdentifier>
+			<Abstract type="html">Whether we are generating human-readable (multiline) JSON.</Abstract>
+			<DeclaredIn>SBJsonWriter.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSData *sceneBackgroundImage</Declaration>
+			<Declaration>@property BOOL humanReadable</Declaration>
 			
 			
-			<Anchor>//api/name/sceneBackgroundImage</Anchor>
+			<Anchor>//api/name/humanReadable</Anchor>
             <NodeRef refid="51"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/Scene/sceneBackgroundImage</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>Scene.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/SBJsonWriter/humanReadable</TokenIdentifier>
+			<Abstract type="html">Whether we are generating human-readable (multiline) JSON.</Abstract>
+			<DeclaredIn>SBJsonWriter.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSData *sceneBackgroundImage</Declaration>
+			<Declaration>@property BOOL humanReadable</Declaration>
 			
 			
-			<Anchor>//api/name/sceneBackgroundImage</Anchor>
+			<Anchor>//api/name/humanReadable</Anchor>
             <NodeRef refid="51"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Scene/setSceneMusicFilename:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>Scene.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonWriter/setSortKeys:</TokenIdentifier>
+			<Abstract type="html">Whether or not to sort the dictionary keys in the output.</Abstract>
+			<DeclaredIn>SBJsonWriter.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSString *sceneMusicFilename</Declaration>
+			<Declaration>@property BOOL sortKeys</Declaration>
 			
 			
-			<Anchor>//api/name/sceneMusicFilename</Anchor>
+			<Anchor>//api/name/sortKeys</Anchor>
             <NodeRef refid="51"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Scene/sceneMusicFilename</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>Scene.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonWriter/sortKeys</TokenIdentifier>
+			<Abstract type="html">Whether or not to sort the dictionary keys in the output.</Abstract>
+			<DeclaredIn>SBJsonWriter.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSString *sceneMusicFilename</Declaration>
+			<Declaration>@property BOOL sortKeys</Declaration>
 			
 			
-			<Anchor>//api/name/sceneMusicFilename</Anchor>
+			<Anchor>//api/name/sortKeys</Anchor>
             <NodeRef refid="51"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/Scene/sceneMusicFilename</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>Scene.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/SBJsonWriter/sortKeys</TokenIdentifier>
+			<Abstract type="html">Whether or not to sort the dictionary keys in the output.</Abstract>
+			<DeclaredIn>SBJsonWriter.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSString *sceneMusicFilename</Declaration>
+			<Declaration>@property BOOL sortKeys</Declaration>
 			
 			
-			<Anchor>//api/name/sceneMusicFilename</Anchor>
+			<Anchor>//api/name/sortKeys</Anchor>
             <NodeRef refid="51"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Scene/setTitle:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>Scene.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonWriter/setSortKeysComparator:</TokenIdentifier>
+			<Abstract type="html">An optional comparator to be used if sortKeys is YES.</Abstract>
+			<DeclaredIn>SBJsonWriter.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSString *title</Declaration>
+			<Declaration>@property (copy) NSComparator sortKeysComparator</Declaration>
 			
 			
-			<Anchor>//api/name/title</Anchor>
+			<Anchor>//api/name/sortKeysComparator</Anchor>
             <NodeRef refid="51"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Scene/title</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>Scene.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonWriter/sortKeysComparator</TokenIdentifier>
+			<Abstract type="html">An optional comparator to be used if sortKeys is YES.</Abstract>
+			<DeclaredIn>SBJsonWriter.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSString *title</Declaration>
+			<Declaration>@property (copy) NSComparator sortKeysComparator</Declaration>
 			
 			
-			<Anchor>//api/name/title</Anchor>
+			<Anchor>//api/name/sortKeysComparator</Anchor>
             <NodeRef refid="51"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/Scene/title</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>Scene.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/SBJsonWriter/sortKeysComparator</TokenIdentifier>
+			<Abstract type="html">An optional comparator to be used if sortKeys is YES.</Abstract>
+			<DeclaredIn>SBJsonWriter.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSString *title</Declaration>
+			<Declaration>@property (copy) NSComparator sortKeysComparator</Declaration>
 			
 			
-			<Anchor>//api/name/title</Anchor>
+			<Anchor>//api/name/sortKeysComparator</Anchor>
             <NodeRef refid="51"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Scene/setPuzzleObjects:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>Scene.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonWriter/stringWithObject:</TokenIdentifier>
+			<Abstract type="html">Return JSON representation for the given object.</Abstract>
+			<DeclaredIn>SBJsonWriter.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSSet *puzzleObjects</Declaration>
+			<Declaration>- (NSString *)stringWithObject:(id)value</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>value</Name>
+					<Abstract type="html">any instance that can be represented as JSON text.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/puzzleObjects</Anchor>
+			<Anchor>//api/name/stringWithObject:</Anchor>
             <NodeRef refid="51"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Scene/puzzleObjects</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>Scene.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonWriter/dataWithObject:</TokenIdentifier>
+			<Abstract type="html">Return JSON representation for the given object.</Abstract>
+			<DeclaredIn>SBJsonWriter.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSSet *puzzleObjects</Declaration>
+			<Declaration>- (NSData *)dataWithObject:(id)value</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>value</Name>
+					<Abstract type="html">any instance that can be represented as JSON text.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/puzzleObjects</Anchor>
+			<Anchor>//api/name/dataWithObject:</Anchor>
             <NodeRef refid="51"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/Scene/puzzleObjects</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>Scene.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonWriter/stringWithObject:error:</TokenIdentifier>
+			<Abstract type="html">Return JSON representation (or fragment) for the given object.</Abstract>
+			<DeclaredIn>SBJsonWriter.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSSet *puzzleObjects</Declaration>
+			<Declaration>- (NSString *)stringWithObject:(id)value error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>value</Name>
+					<Abstract type="html">any instance that can be represented as a JSON fragment</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">pointer to object to be populated with NSError on failure</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/puzzleObjects</Anchor>
+			<Anchor>//api/name/stringWithObject:error:</Anchor>
             <NodeRef refid="51"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Scene/addPuzzleObjectsObject:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonWriter/init</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Scene.h</DeclaredIn>
+			<DeclaredIn>SBJsonWriter.m</DeclaredIn>
 			
-			<Declaration>- (void)addPuzzleObjectsObject:(PuzzleObject *)value</Declaration>
-			
-			
-			<Anchor>//api/name/addPuzzleObjectsObject:</Anchor>
-            <NodeRef refid="51"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Scene/removePuzzleObjectsObject:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>Scene.h</DeclaredIn>
-			
-			<Declaration>- (void)removePuzzleObjectsObject:(PuzzleObject *)value</Declaration>
+			<Declaration>- (id)init</Declaration>
 			
 			
-			<Anchor>//api/name/removePuzzleObjectsObject:</Anchor>
-            <NodeRef refid="51"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Scene/addPuzzleObjects:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>Scene.h</DeclaredIn>
-			
-			<Declaration>- (void)addPuzzleObjects:(NSSet *)values</Declaration>
-			
-			
-			<Anchor>//api/name/addPuzzleObjects:</Anchor>
-            <NodeRef refid="51"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Scene/removePuzzleObjects:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>Scene.h</DeclaredIn>
-			
-			<Declaration>- (void)removePuzzleObjects:(NSSet *)values</Declaration>
-			
-			
-			<Anchor>//api/name/removePuzzleObjects:</Anchor>
+			<Anchor>//api/name/init</Anchor>
             <NodeRef refid="51"/>
 		</Token>
 		

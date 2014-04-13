@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SBJsonStreamParserAdapter.html">
+	<File path="Classes/SBJsonStreamParser.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SBJsonStreamParserAdapter</TokenIdentifier>
-			<Abstract type="html">SBJsonStreamParserDelegate protocol adapter</Abstract>
-			<DeclaredIn>SBJsonStreamParserAdapter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SBJsonStreamParser</TokenIdentifier>
+			<Abstract type="html">Parse a stream of JSON data.</Abstract>
+			<DeclaredIn>SBJsonStreamParser.h</DeclaredIn>
             
 			
 			<NodeRef refid="23"/>
@@ -13,84 +13,247 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserAdapter/setLevelsToSkip:</TokenIdentifier>
-			<Abstract type="html">How many levels to skip</Abstract>
-			<DeclaredIn>SBJsonStreamParserAdapter.h</DeclaredIn>
-			
-			<Declaration>@property NSUInteger levelsToSkip</Declaration>
-			
-			
-			<Anchor>//api/name/levelsToSkip</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserAdapter/levelsToSkip</TokenIdentifier>
-			<Abstract type="html">How many levels to skip</Abstract>
-			<DeclaredIn>SBJsonStreamParserAdapter.h</DeclaredIn>
-			
-			<Declaration>@property NSUInteger levelsToSkip</Declaration>
-			
-			
-			<Anchor>//api/name/levelsToSkip</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SBJsonStreamParserAdapter/levelsToSkip</TokenIdentifier>
-			<Abstract type="html">How many levels to skip</Abstract>
-			<DeclaredIn>SBJsonStreamParserAdapter.h</DeclaredIn>
-			
-			<Declaration>@property NSUInteger levelsToSkip</Declaration>
-			
-			
-			<Anchor>//api/name/levelsToSkip</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserAdapter/setDelegate:</TokenIdentifier>
-			<Abstract type="html">Your delegate object
-Set this to the object you want to receive the SBJsonStreamParserAdapterDelegate messages.</Abstract>
-			<DeclaredIn>SBJsonStreamParserAdapter.h</DeclaredIn>
-			
-			<Declaration>@property (unsafe_unretained) id&lt;SBJsonStreamParserAdapterDelegate&gt; delegate</Declaration>
-			
-			
-			<Anchor>//api/name/delegate</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserAdapter/delegate</TokenIdentifier>
-			<Abstract type="html">Your delegate object
-Set this to the object you want to receive the SBJsonStreamParserAdapterDelegate messages.</Abstract>
-			<DeclaredIn>SBJsonStreamParserAdapter.h</DeclaredIn>
-			
-			<Declaration>@property (unsafe_unretained) id&lt;SBJsonStreamParserAdapterDelegate&gt; delegate</Declaration>
-			
-			
-			<Anchor>//api/name/delegate</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SBJsonStreamParserAdapter/delegate</TokenIdentifier>
-			<Abstract type="html">Your delegate object
-Set this to the object you want to receive the SBJsonStreamParserAdapterDelegate messages.</Abstract>
-			<DeclaredIn>SBJsonStreamParserAdapter.h</DeclaredIn>
-			
-			<Declaration>@property (unsafe_unretained) id&lt;SBJsonStreamParserAdapterDelegate&gt; delegate</Declaration>
-			
-			
-			<Anchor>//api/name/delegate</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserAdapter/init</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParser/setState:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>SBJsonStreamParserAdapter.m</DeclaredIn>
+			<DeclaredIn>SBJsonStreamParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, unsafe_unretained) SBJsonStreamParserState *state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParser/state</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SBJsonStreamParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, unsafe_unretained) SBJsonStreamParserState *state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SBJsonStreamParser/state</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SBJsonStreamParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, unsafe_unretained) SBJsonStreamParserState *state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParser/setStateStack:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SBJsonStreamParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, strong) NSMutableArray *stateStack</Declaration>
+			
+			
+			<Anchor>//api/name/stateStack</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParser/stateStack</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SBJsonStreamParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, strong) NSMutableArray *stateStack</Declaration>
+			
+			
+			<Anchor>//api/name/stateStack</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SBJsonStreamParser/stateStack</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SBJsonStreamParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, strong) NSMutableArray *stateStack</Declaration>
+			
+			
+			<Anchor>//api/name/stateStack</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParser/setSupportMultipleDocuments:</TokenIdentifier>
+			<Abstract type="html">Expect multiple documents separated by whitespace</Abstract>
+			<DeclaredIn>SBJsonStreamParser.h</DeclaredIn>
+			
+			<Declaration>@property BOOL supportMultipleDocuments</Declaration>
+			
+			
+			<Anchor>//api/name/supportMultipleDocuments</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParser/supportMultipleDocuments</TokenIdentifier>
+			<Abstract type="html">Expect multiple documents separated by whitespace</Abstract>
+			<DeclaredIn>SBJsonStreamParser.h</DeclaredIn>
+			
+			<Declaration>@property BOOL supportMultipleDocuments</Declaration>
+			
+			
+			<Anchor>//api/name/supportMultipleDocuments</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SBJsonStreamParser/supportMultipleDocuments</TokenIdentifier>
+			<Abstract type="html">Expect multiple documents separated by whitespace</Abstract>
+			<DeclaredIn>SBJsonStreamParser.h</DeclaredIn>
+			
+			<Declaration>@property BOOL supportMultipleDocuments</Declaration>
+			
+			
+			<Anchor>//api/name/supportMultipleDocuments</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParser/setDelegate:</TokenIdentifier>
+			<Abstract type="html">Delegate to receive messages</Abstract>
+			<DeclaredIn>SBJsonStreamParser.h</DeclaredIn>
+			
+			<Declaration>@property (unsafe_unretained) id&lt;SBJsonStreamParserDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParser/delegate</TokenIdentifier>
+			<Abstract type="html">Delegate to receive messages</Abstract>
+			<DeclaredIn>SBJsonStreamParser.h</DeclaredIn>
+			
+			<Declaration>@property (unsafe_unretained) id&lt;SBJsonStreamParserDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SBJsonStreamParser/delegate</TokenIdentifier>
+			<Abstract type="html">Delegate to receive messages</Abstract>
+			<DeclaredIn>SBJsonStreamParser.h</DeclaredIn>
+			
+			<Declaration>@property (unsafe_unretained) id&lt;SBJsonStreamParserDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParser/setMaxDepth:</TokenIdentifier>
+			<Abstract type="html">The max parse depth</Abstract>
+			<DeclaredIn>SBJsonStreamParser.h</DeclaredIn>
+			
+			<Declaration>@property NSUInteger maxDepth</Declaration>
+			
+			
+			<Anchor>//api/name/maxDepth</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParser/maxDepth</TokenIdentifier>
+			<Abstract type="html">The max parse depth</Abstract>
+			<DeclaredIn>SBJsonStreamParser.h</DeclaredIn>
+			
+			<Declaration>@property NSUInteger maxDepth</Declaration>
+			
+			
+			<Anchor>//api/name/maxDepth</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SBJsonStreamParser/maxDepth</TokenIdentifier>
+			<Abstract type="html">The max parse depth</Abstract>
+			<DeclaredIn>SBJsonStreamParser.h</DeclaredIn>
+			
+			<Declaration>@property NSUInteger maxDepth</Declaration>
+			
+			
+			<Anchor>//api/name/maxDepth</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParser/setError:</TokenIdentifier>
+			<Abstract type="html">Holds the error after SBJsonStreamParserError was returned</Abstract>
+			<DeclaredIn>SBJsonStreamParser.h</DeclaredIn>
+			
+			<Declaration>@property (copy) NSString *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParser/error</TokenIdentifier>
+			<Abstract type="html">Holds the error after SBJsonStreamParserError was returned</Abstract>
+			<DeclaredIn>SBJsonStreamParser.h</DeclaredIn>
+			
+			<Declaration>@property (copy) NSString *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SBJsonStreamParser/error</TokenIdentifier>
+			<Abstract type="html">Holds the error after SBJsonStreamParserError was returned</Abstract>
+			<DeclaredIn>SBJsonStreamParser.h</DeclaredIn>
+			
+			<Declaration>@property (copy) NSString *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParser/parse:</TokenIdentifier>
+			<Abstract type="html">Parse some JSON</Abstract>
+			<DeclaredIn>SBJsonStreamParser.h</DeclaredIn>
+			
+			<Declaration>- (SBJsonStreamParserStatus)parse:(NSData *)data</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">An NSData object containing the next chunk of JSON
+
+@return
+- SBJsonStreamParserComplete if a full document was found
+- SBJsonStreamParserWaitingForData if a partial document was found and more data is required to complete it
+- SBJsonStreamParserError if an error occured. (See the error property for details in this case.)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/parse:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParser/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SBJsonStreamParser.m</DeclaredIn>
 			
 			<Declaration>- (id)init</Declaration>
 			
@@ -100,134 +263,86 @@ Set this to the object you want to receive the SBJsonStreamParserAdapterDelegate
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserAdapter/pop</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParser/tokenName:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>SBJsonStreamParserAdapter.m</DeclaredIn>
+			<DeclaredIn>SBJsonStreamParser.m</DeclaredIn>
 			
-			<Declaration>- (void)pop</Declaration>
+			<Declaration>- (NSString *)tokenName:(sbjson_token_t)token</Declaration>
 			
 			
-			<Anchor>//api/name/pop</Anchor>
+			<Anchor>//api/name/tokenName:</Anchor>
             <NodeRef refid="23"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserAdapter/parser:found:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParser/maxDepthError</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>SBJsonStreamParserAdapter.m</DeclaredIn>
+			<DeclaredIn>SBJsonStreamParser.m</DeclaredIn>
 			
-			<Declaration>- (void)parser:(SBJsonStreamParser *)parser found:(id)obj</Declaration>
+			<Declaration>- (void)maxDepthError</Declaration>
 			
 			
-			<Anchor>//api/name/parser:found:</Anchor>
+			<Anchor>//api/name/maxDepthError</Anchor>
             <NodeRef refid="23"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserAdapter/parserFoundObjectStart:</TokenIdentifier>
-			<Abstract type="html">Called when object start is found</Abstract>
-			<DeclaredIn>SBJsonStreamParserAdapter.m</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParser/handleObjectStart</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SBJsonStreamParser.m</DeclaredIn>
 			
-			<Declaration>- (void)parserFoundObjectStart:(SBJsonStreamParser *)parser</Declaration>
+			<Declaration>- (void)handleObjectStart</Declaration>
 			
 			
-			<Anchor>//api/name/parserFoundObjectStart:</Anchor>
+			<Anchor>//api/name/handleObjectStart</Anchor>
             <NodeRef refid="23"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserAdapter/parser:foundObjectKey:</TokenIdentifier>
-			<Abstract type="html">Called when object key is found</Abstract>
-			<DeclaredIn>SBJsonStreamParserAdapter.m</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParser/handleObjectEnd:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SBJsonStreamParser.m</DeclaredIn>
 			
-			<Declaration>- (void)parser:(SBJsonStreamParser *)parser foundObjectKey:(NSString *)key_</Declaration>
+			<Declaration>- (void)handleObjectEnd:(sbjson_token_t)tok</Declaration>
 			
 			
-			<Anchor>//api/name/parser:foundObjectKey:</Anchor>
+			<Anchor>//api/name/handleObjectEnd:</Anchor>
             <NodeRef refid="23"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserAdapter/parserFoundObjectEnd:</TokenIdentifier>
-			<Abstract type="html">Called when object end is found</Abstract>
-			<DeclaredIn>SBJsonStreamParserAdapter.m</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParser/handleArrayStart</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SBJsonStreamParser.m</DeclaredIn>
 			
-			<Declaration>- (void)parserFoundObjectEnd:(SBJsonStreamParser *)parser</Declaration>
+			<Declaration>- (void)handleArrayStart</Declaration>
 			
 			
-			<Anchor>//api/name/parserFoundObjectEnd:</Anchor>
+			<Anchor>//api/name/handleArrayStart</Anchor>
             <NodeRef refid="23"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserAdapter/parserFoundArrayStart:</TokenIdentifier>
-			<Abstract type="html">Called when array start is found</Abstract>
-			<DeclaredIn>SBJsonStreamParserAdapter.m</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParser/handleArrayEnd:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SBJsonStreamParser.m</DeclaredIn>
 			
-			<Declaration>- (void)parserFoundArrayStart:(SBJsonStreamParser *)parser</Declaration>
+			<Declaration>- (void)handleArrayEnd:(sbjson_token_t)tok</Declaration>
 			
 			
-			<Anchor>//api/name/parserFoundArrayStart:</Anchor>
+			<Anchor>//api/name/handleArrayEnd:</Anchor>
             <NodeRef refid="23"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserAdapter/parserFoundArrayEnd:</TokenIdentifier>
-			<Abstract type="html">Called when array end is found</Abstract>
-			<DeclaredIn>SBJsonStreamParserAdapter.m</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParser/handleTokenNotExpectedHere:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SBJsonStreamParser.m</DeclaredIn>
 			
-			<Declaration>- (void)parserFoundArrayEnd:(SBJsonStreamParser *)parser</Declaration>
-			
-			
-			<Anchor>//api/name/parserFoundArrayEnd:</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserAdapter/parser:foundBoolean:</TokenIdentifier>
-			<Abstract type="html">Called when a boolean value is found</Abstract>
-			<DeclaredIn>SBJsonStreamParserAdapter.m</DeclaredIn>
-			
-			<Declaration>- (void)parser:(SBJsonStreamParser *)parser foundBoolean:(BOOL)x</Declaration>
+			<Declaration>- (void)handleTokenNotExpectedHere:(sbjson_token_t)tok</Declaration>
 			
 			
-			<Anchor>//api/name/parser:foundBoolean:</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserAdapter/parserFoundNull:</TokenIdentifier>
-			<Abstract type="html">Called when a null value is found</Abstract>
-			<DeclaredIn>SBJsonStreamParserAdapter.m</DeclaredIn>
-			
-			<Declaration>- (void)parserFoundNull:(SBJsonStreamParser *)parser</Declaration>
-			
-			
-			<Anchor>//api/name/parserFoundNull:</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserAdapter/parser:foundNumber:</TokenIdentifier>
-			<Abstract type="html">Called when a number is found</Abstract>
-			<DeclaredIn>SBJsonStreamParserAdapter.m</DeclaredIn>
-			
-			<Declaration>- (void)parser:(SBJsonStreamParser *)parser foundNumber:(NSNumber *)num</Declaration>
-			
-			
-			<Anchor>//api/name/parser:foundNumber:</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserAdapter/parser:foundString:</TokenIdentifier>
-			<Abstract type="html">Called when a string is found</Abstract>
-			<DeclaredIn>SBJsonStreamParserAdapter.m</DeclaredIn>
-			
-			<Declaration>- (void)parser:(SBJsonStreamParser *)parser foundString:(NSString *)string</Declaration>
-			
-			
-			<Anchor>//api/name/parser:foundString:</Anchor>
+			<Anchor>//api/name/handleTokenNotExpectedHere:</Anchor>
             <NodeRef refid="23"/>
 		</Token>
 		

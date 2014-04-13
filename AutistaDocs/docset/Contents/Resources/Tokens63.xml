@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/NSObject+NSObject_SBJsonWriting.html">
+	<File path="Categories/AVAudioPlayer+Fade.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/NSObject(NSObject_SBJsonWriting)</TokenIdentifier>
-			<Abstract type="html">Adds JSON generation to NSObject</Abstract>
-			<DeclaredIn>NSObject+SBJson.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/AVAudioPlayer(Fade)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AVAudioPlayer+Fade.h</DeclaredIn>
             
 			
 			<NodeRef refid="63"/>
@@ -13,14 +13,134 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSObject/JSONRepresentation</TokenIdentifier>
-			<Abstract type="html">Encodes the receiver into a JSON string</Abstract>
-			<DeclaredIn>NSObject+SBJson.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/AVAudioPlayer/setFading:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AVAudioPlayer+Fade.h</DeclaredIn>
 			
-			<Declaration>- (NSString *)JSONRepresentation</Declaration>
+			<Declaration>@property (nonatomic, readonly) BOOL fading</Declaration>
 			
-			<ReturnValue><Abstract type="html">the receiver encoded in JSON, or nil on error.</Abstract></ReturnValue>
-			<Anchor>//api/name/JSONRepresentation</Anchor>
+			
+			<Anchor>//api/name/fading</Anchor>
+            <NodeRef refid="63"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AVAudioPlayer/fading</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AVAudioPlayer+Fade.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL fading</Declaration>
+			
+			
+			<Anchor>//api/name/fading</Anchor>
+            <NodeRef refid="63"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AVAudioPlayer/fading</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AVAudioPlayer+Fade.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL fading</Declaration>
+			
+			
+			<Anchor>//api/name/fading</Anchor>
+            <NodeRef refid="63"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AVAudioPlayer/setFadeTargetVolume:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AVAudioPlayer+Fade.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) float fadeTargetVolume</Declaration>
+			
+			
+			<Anchor>//api/name/fadeTargetVolume</Anchor>
+            <NodeRef refid="63"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AVAudioPlayer/fadeTargetVolume</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AVAudioPlayer+Fade.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) float fadeTargetVolume</Declaration>
+			
+			
+			<Anchor>//api/name/fadeTargetVolume</Anchor>
+            <NodeRef refid="63"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AVAudioPlayer/fadeTargetVolume</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AVAudioPlayer+Fade.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) float fadeTargetVolume</Declaration>
+			
+			
+			<Anchor>//api/name/fadeTargetVolume</Anchor>
+            <NodeRef refid="63"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AVAudioPlayer/fadeToVolume:duration:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AVAudioPlayer+Fade.h</DeclaredIn>
+			
+			<Declaration>- (void)fadeToVolume:(float)volume duration:(NSTimeInterval)duration</Declaration>
+			
+			
+			<Anchor>//api/name/fadeToVolume:duration:</Anchor>
+            <NodeRef refid="63"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AVAudioPlayer/fadeToVolume:duration:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AVAudioPlayer+Fade.h</DeclaredIn>
+			
+			<Declaration>- (void)fadeToVolume:(float)volume duration:(NSTimeInterval)duration completion:(AVAudioPlayerFadeCompletionBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/fadeToVolume:duration:completion:</Anchor>
+            <NodeRef refid="63"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AVAudioPlayer/stopWithFadeDuration:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AVAudioPlayer+Fade.h</DeclaredIn>
+			
+			<Declaration>- (void)stopWithFadeDuration:(NSTimeInterval)duration</Declaration>
+			
+			
+			<Anchor>//api/name/stopWithFadeDuration:</Anchor>
+            <NodeRef refid="63"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AVAudioPlayer/playWithFadeDuration:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AVAudioPlayer+Fade.h</DeclaredIn>
+			
+			<Declaration>- (void)playWithFadeDuration:(NSTimeInterval)duration</Declaration>
+			
+			
+			<Anchor>//api/name/playWithFadeDuration:</Anchor>
+            <NodeRef refid="63"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AVAudioPlayer/fadeFunction</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AVAudioPlayer+Fade.m</DeclaredIn>
+			
+			<Declaration>- (void)fadeFunction</Declaration>
+			
+			
+			<Anchor>//api/name/fadeFunction</Anchor>
             <NodeRef refid="63"/>
 		</Token>
 		

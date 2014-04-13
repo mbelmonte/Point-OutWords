@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/Piece.html">
+	<File path="Classes/LevelMeter.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/Piece</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/LevelMeter</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Piece.h</DeclaredIn>
+			<DeclaredIn>LevelMeter.h</DeclaredIn>
             
 			
 			<NodeRef refid="15"/>
@@ -13,218 +13,302 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Piece/setFinalPositionX:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/LevelMeter/setLevel:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Piece.h</DeclaredIn>
+			<DeclaredIn>LevelMeter.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSNumber *finalPositionX</Declaration>
+			<Declaration>@property CGFloat level</Declaration>
 			
 			
-			<Anchor>//api/name/finalPositionX</Anchor>
+			<Anchor>//api/name/level</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Piece/finalPositionX</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/LevelMeter/level</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Piece.h</DeclaredIn>
+			<DeclaredIn>LevelMeter.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSNumber *finalPositionX</Declaration>
+			<Declaration>@property CGFloat level</Declaration>
 			
 			
-			<Anchor>//api/name/finalPositionX</Anchor>
+			<Anchor>//api/name/level</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/Piece/finalPositionX</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/LevelMeter/level</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Piece.h</DeclaredIn>
+			<DeclaredIn>LevelMeter.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSNumber *finalPositionX</Declaration>
+			<Declaration>@property CGFloat level</Declaration>
 			
 			
-			<Anchor>//api/name/finalPositionX</Anchor>
+			<Anchor>//api/name/level</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Piece/setFinalPositionY:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/LevelMeter/setPeakLevel:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Piece.h</DeclaredIn>
+			<DeclaredIn>LevelMeter.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSNumber *finalPositionY</Declaration>
+			<Declaration>@property CGFloat peakLevel</Declaration>
 			
 			
-			<Anchor>//api/name/finalPositionY</Anchor>
+			<Anchor>//api/name/peakLevel</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Piece/finalPositionY</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/LevelMeter/peakLevel</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Piece.h</DeclaredIn>
+			<DeclaredIn>LevelMeter.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSNumber *finalPositionY</Declaration>
+			<Declaration>@property CGFloat peakLevel</Declaration>
 			
 			
-			<Anchor>//api/name/finalPositionY</Anchor>
+			<Anchor>//api/name/peakLevel</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/Piece/finalPositionY</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/LevelMeter/peakLevel</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Piece.h</DeclaredIn>
+			<DeclaredIn>LevelMeter.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSNumber *finalPositionY</Declaration>
+			<Declaration>@property CGFloat peakLevel</Declaration>
 			
 			
-			<Anchor>//api/name/finalPositionY</Anchor>
+			<Anchor>//api/name/peakLevel</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Piece/setLabel:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/LevelMeter/setNumLights:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Piece.h</DeclaredIn>
+			<DeclaredIn>LevelMeter.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSString *label</Declaration>
+			<Declaration>@property NSUInteger numLights</Declaration>
 			
 			
-			<Anchor>//api/name/label</Anchor>
+			<Anchor>//api/name/numLights</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Piece/label</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/LevelMeter/numLights</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Piece.h</DeclaredIn>
+			<DeclaredIn>LevelMeter.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSString *label</Declaration>
+			<Declaration>@property NSUInteger numLights</Declaration>
 			
 			
-			<Anchor>//api/name/label</Anchor>
+			<Anchor>//api/name/numLights</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/Piece/label</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/LevelMeter/numLights</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Piece.h</DeclaredIn>
+			<DeclaredIn>LevelMeter.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSString *label</Declaration>
+			<Declaration>@property NSUInteger numLights</Declaration>
 			
 			
-			<Anchor>//api/name/label</Anchor>
+			<Anchor>//api/name/numLights</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Piece/setImageName:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/LevelMeter/setVertical:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Piece.h</DeclaredIn>
+			<DeclaredIn>LevelMeter.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSString *imageName</Declaration>
+			<Declaration>@property (getter=isVertical) BOOL vertical</Declaration>
 			
 			
-			<Anchor>//api/name/imageName</Anchor>
+			<Anchor>//api/name/vertical</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Piece/imageName</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/LevelMeter/isVertical</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Piece.h</DeclaredIn>
+			<DeclaredIn>LevelMeter.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSString *imageName</Declaration>
+			<Declaration>@property (getter=isVertical) BOOL vertical</Declaration>
 			
 			
-			<Anchor>//api/name/imageName</Anchor>
+			<Anchor>//api/name/vertical</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/Piece/imageName</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/LevelMeter/vertical</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Piece.h</DeclaredIn>
+			<DeclaredIn>LevelMeter.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSString *imageName</Declaration>
+			<Declaration>@property (getter=isVertical) BOOL vertical</Declaration>
 			
 			
-			<Anchor>//api/name/imageName</Anchor>
+			<Anchor>//api/name/vertical</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Piece/setPieceImage:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/LevelMeter/setVariableLightIntensity:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Piece.h</DeclaredIn>
+			<DeclaredIn>LevelMeter.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSData *pieceImage</Declaration>
+			<Declaration>@property BOOL variableLightIntensity</Declaration>
 			
 			
-			<Anchor>//api/name/pieceImage</Anchor>
+			<Anchor>//api/name/variableLightIntensity</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Piece/pieceImage</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/LevelMeter/variableLightIntensity</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Piece.h</DeclaredIn>
+			<DeclaredIn>LevelMeter.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSData *pieceImage</Declaration>
+			<Declaration>@property BOOL variableLightIntensity</Declaration>
 			
 			
-			<Anchor>//api/name/pieceImage</Anchor>
+			<Anchor>//api/name/variableLightIntensity</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/Piece/pieceImage</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/LevelMeter/variableLightIntensity</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Piece.h</DeclaredIn>
+			<DeclaredIn>LevelMeter.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSData *pieceImage</Declaration>
+			<Declaration>@property BOOL variableLightIntensity</Declaration>
 			
 			
-			<Anchor>//api/name/pieceImage</Anchor>
+			<Anchor>//api/name/variableLightIntensity</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Piece/setPuzzleObject:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/LevelMeter/setBgColor:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Piece.h</DeclaredIn>
+			<DeclaredIn>LevelMeter.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) PuzzleObject *puzzleObject</Declaration>
+			<Declaration>@property (retain) UIColor *bgColor</Declaration>
 			
 			
-			<Anchor>//api/name/puzzleObject</Anchor>
+			<Anchor>//api/name/bgColor</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Piece/puzzleObject</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/LevelMeter/bgColor</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Piece.h</DeclaredIn>
+			<DeclaredIn>LevelMeter.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) PuzzleObject *puzzleObject</Declaration>
+			<Declaration>@property (retain) UIColor *bgColor</Declaration>
 			
 			
-			<Anchor>//api/name/puzzleObject</Anchor>
+			<Anchor>//api/name/bgColor</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/Piece/puzzleObject</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/LevelMeter/bgColor</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>Piece.h</DeclaredIn>
+			<DeclaredIn>LevelMeter.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) PuzzleObject *puzzleObject</Declaration>
+			<Declaration>@property (retain) UIColor *bgColor</Declaration>
 			
 			
-			<Anchor>//api/name/puzzleObject</Anchor>
+			<Anchor>//api/name/bgColor</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LevelMeter/setBorderColor:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LevelMeter.h</DeclaredIn>
+			
+			<Declaration>@property (retain) UIColor *borderColor</Declaration>
+			
+			
+			<Anchor>//api/name/borderColor</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LevelMeter/borderColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LevelMeter.h</DeclaredIn>
+			
+			<Declaration>@property (retain) UIColor *borderColor</Declaration>
+			
+			
+			<Anchor>//api/name/borderColor</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/LevelMeter/borderColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LevelMeter.h</DeclaredIn>
+			
+			<Declaration>@property (retain) UIColor *borderColor</Declaration>
+			
+			
+			<Anchor>//api/name/borderColor</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LevelMeter/_performInit</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LevelMeter.m</DeclaredIn>
+			
+			<Declaration>- (void)_performInit</Declaration>
+			
+			
+			<Anchor>//api/name/_performInit</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LevelMeter/initWithFrame:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LevelMeter.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithFrame:(CGRect)frame</Declaration>
+			
+			
+			<Anchor>//api/name/initWithFrame:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LevelMeter/initWithCoder:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LevelMeter.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithCoder:(NSCoder *)coder</Declaration>
+			
+			
+			<Anchor>//api/name/initWithCoder:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/LevelMeter/drawRect:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>LevelMeter.m</DeclaredIn>
+			
+			<Declaration>- (void)drawRect:(CGRect)rect</Declaration>
+			
+			
+			<Anchor>//api/name/drawRect:</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		

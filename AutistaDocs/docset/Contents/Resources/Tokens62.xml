@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/NSData+NSData_SBJsonParsing.html">
+	<File path="Classes/VUMeterTable.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/NSData(NSData_SBJsonParsing)</TokenIdentifier>
-			<Abstract type="html">Adds JSON parsing methods to NSData</Abstract>
-			<DeclaredIn>NSObject+SBJson.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/VUMeterTable</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VUMeterTable.h</DeclaredIn>
             
 			
 			<NodeRef refid="62"/>
@@ -13,14 +13,26 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSData/JSONValue</TokenIdentifier>
-			<Abstract type="html">Decodes the receiver&apos;s JSON data</Abstract>
-			<DeclaredIn>NSObject+SBJson.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/VUMeterTable/initWithMinDecibels:tableSize:responseCurve:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VUMeterTable.h</DeclaredIn>
 			
-			<Declaration>- (id)JSONValue</Declaration>
+			<Declaration>- (id)initWithMinDecibels:(CGFloat)minDecibels tableSize:(NSInteger)size responseCurve:(CGFloat)root</Declaration>
 			
-			<ReturnValue><Abstract type="html">the NSDictionary or NSArray represented by the receiver, or nil on error.</Abstract></ReturnValue>
-			<Anchor>//api/name/JSONValue</Anchor>
+			
+			<Anchor>//api/name/initWithMinDecibels:tableSize:responseCurve:</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VUMeterTable/valueAt:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VUMeterTable.h</DeclaredIn>
+			
+			<Declaration>- (CGFloat)valueAt:(CGFloat)decibels</Declaration>
+			
+			
+			<Anchor>//api/name/valueAt:</Anchor>
             <NodeRef refid="62"/>
 		</Token>
 		

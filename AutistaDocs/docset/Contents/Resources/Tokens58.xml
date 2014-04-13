@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/User.html">
+	<File path="Classes/TypeBanner.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/User</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/TypeBanner</TokenIdentifier>
+			<Abstract type="html">The banner on the top part of the screen in type mode, it is used to show the progress of the puzzle</Abstract>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
             
 			
 			<NodeRef refid="58"/>
@@ -13,602 +13,269 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/setDob:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/TypeBanner/setBannerText:</TokenIdentifier>
+			<Abstract type="html">Text on the banner</Abstract>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSDate *dob</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *bannerText</Declaration>
 			
 			
-			<Anchor>//api/name/dob</Anchor>
+			<Anchor>//api/name/bannerText</Anchor>
             <NodeRef refid="58"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/dob</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/TypeBanner/bannerText</TokenIdentifier>
+			<Abstract type="html">Text on the banner</Abstract>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSDate *dob</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *bannerText</Declaration>
 			
 			
-			<Anchor>//api/name/dob</Anchor>
+			<Anchor>//api/name/bannerText</Anchor>
             <NodeRef refid="58"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/User/dob</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/TypeBanner/bannerText</TokenIdentifier>
+			<Abstract type="html">Text on the banner</Abstract>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSDate *dob</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *bannerText</Declaration>
 			
 			
-			<Anchor>//api/name/dob</Anchor>
+			<Anchor>//api/name/bannerText</Anchor>
             <NodeRef refid="58"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/setFullname:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/TypeBanner/setBannerFont:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSString *fullname</Declaration>
+			<Declaration>@property (nonatomic, retain) UIFont *bannerFont</Declaration>
 			
 			
-			<Anchor>//api/name/fullname</Anchor>
+			<Anchor>//api/name/bannerFont</Anchor>
             <NodeRef refid="58"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/fullname</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/TypeBanner/bannerFont</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSString *fullname</Declaration>
+			<Declaration>@property (nonatomic, retain) UIFont *bannerFont</Declaration>
 			
 			
-			<Anchor>//api/name/fullname</Anchor>
+			<Anchor>//api/name/bannerFont</Anchor>
             <NodeRef refid="58"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/User/fullname</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/TypeBanner/bannerFont</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSString *fullname</Declaration>
+			<Declaration>@property (nonatomic, retain) UIFont *bannerFont</Declaration>
 			
 			
-			<Anchor>//api/name/fullname</Anchor>
+			<Anchor>//api/name/bannerFont</Anchor>
             <NodeRef refid="58"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/setGender:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/TypeBanner/setHighlightMode:</TokenIdentifier>
+			<Abstract type="html">Highlight the banner.
+It interpret bannerText as syllables or as independent characters.</Abstract>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSString *gender</Declaration>
+			<Declaration>@property (nonatomic, assign) BannerHighlightMode highlightMode</Declaration>
 			
 			
-			<Anchor>//api/name/gender</Anchor>
+			<Anchor>//api/name/highlightMode</Anchor>
             <NodeRef refid="58"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/gender</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/TypeBanner/highlightMode</TokenIdentifier>
+			<Abstract type="html">Highlight the banner.
+It interpret bannerText as syllables or as independent characters.</Abstract>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSString *gender</Declaration>
+			<Declaration>@property (nonatomic, assign) BannerHighlightMode highlightMode</Declaration>
 			
 			
-			<Anchor>//api/name/gender</Anchor>
+			<Anchor>//api/name/highlightMode</Anchor>
             <NodeRef refid="58"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/User/gender</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/TypeBanner/highlightMode</TokenIdentifier>
+			<Abstract type="html">Highlight the banner.
+It interpret bannerText as syllables or as independent characters.</Abstract>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSString *gender</Declaration>
+			<Declaration>@property (nonatomic, assign) BannerHighlightMode highlightMode</Declaration>
 			
 			
-			<Anchor>//api/name/gender</Anchor>
+			<Anchor>//api/name/highlightMode</Anchor>
             <NodeRef refid="58"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/setMugshot:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/TypeBanner/setHighlightColor:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSData *mugshot</Declaration>
+			<Declaration>@property (nonatomic, retain) UIColor *highlightColor</Declaration>
 			
 			
-			<Anchor>//api/name/mugshot</Anchor>
+			<Anchor>//api/name/highlightColor</Anchor>
             <NodeRef refid="58"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/mugshot</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/TypeBanner/highlightColor</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSData *mugshot</Declaration>
+			<Declaration>@property (nonatomic, retain) UIColor *highlightColor</Declaration>
 			
 			
-			<Anchor>//api/name/mugshot</Anchor>
+			<Anchor>//api/name/highlightColor</Anchor>
             <NodeRef refid="58"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/User/mugshot</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/TypeBanner/highlightColor</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSData *mugshot</Declaration>
+			<Declaration>@property (nonatomic, retain) UIColor *highlightColor</Declaration>
 			
 			
-			<Anchor>//api/name/mugshot</Anchor>
+			<Anchor>//api/name/highlightColor</Anchor>
             <NodeRef refid="58"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/setRankDrag:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/TypeBanner/setCompletedColor:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSNumber *rankDrag</Declaration>
+			<Declaration>@property (nonatomic, retain) UIColor *completedColor</Declaration>
 			
 			
-			<Anchor>//api/name/rankDrag</Anchor>
+			<Anchor>//api/name/completedColor</Anchor>
             <NodeRef refid="58"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/rankDrag</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/TypeBanner/completedColor</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSNumber *rankDrag</Declaration>
+			<Declaration>@property (nonatomic, retain) UIColor *completedColor</Declaration>
 			
 			
-			<Anchor>//api/name/rankDrag</Anchor>
+			<Anchor>//api/name/completedColor</Anchor>
             <NodeRef refid="58"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/User/rankDrag</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/TypeBanner/completedColor</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSNumber *rankDrag</Declaration>
+			<Declaration>@property (nonatomic, retain) UIColor *completedColor</Declaration>
 			
 			
-			<Anchor>//api/name/rankDrag</Anchor>
+			<Anchor>//api/name/completedColor</Anchor>
             <NodeRef refid="58"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/setRankSpeak:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/TypeBanner/setBannerText:</TokenIdentifier>
+			<Abstract type="html">Set the text on the banner</Abstract>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSNumber *rankSpeak</Declaration>
+			<Declaration>- (void)setBannerText:(NSString *)bannerText</Declaration>
 			
 			
-			<Anchor>//api/name/rankSpeak</Anchor>
+			<Anchor>//api/name/setBannerText:</Anchor>
             <NodeRef refid="58"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/rankSpeak</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/TypeBanner/initializeBannerlabelsWithCharacters</TokenIdentifier>
+			<Abstract type="html">Set banner label with characters</Abstract>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSNumber *rankSpeak</Declaration>
+			<Declaration>- (void)initializeBannerlabelsWithCharacters</Declaration>
 			
 			
-			<Anchor>//api/name/rankSpeak</Anchor>
+			<Anchor>//api/name/initializeBannerlabelsWithCharacters</Anchor>
             <NodeRef refid="58"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/User/rankSpeak</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/TypeBanner/initializeBannerLabelsWithSyllables</TokenIdentifier>
+			<Abstract type="html">Set banner label with syllables</Abstract>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSNumber *rankSpeak</Declaration>
+			<Declaration>- (void)initializeBannerLabelsWithSyllables</Declaration>
 			
 			
-			<Anchor>//api/name/rankSpeak</Anchor>
+			<Anchor>//api/name/initializeBannerLabelsWithSyllables</Anchor>
             <NodeRef refid="58"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/setRankType:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/TypeBanner/setBannerFont:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSNumber *rankType</Declaration>
+			<Declaration>- (void)setBannerFont:(UIFont *)bannerFont</Declaration>
 			
 			
-			<Anchor>//api/name/rankType</Anchor>
+			<Anchor>//api/name/setBannerFont:</Anchor>
             <NodeRef refid="58"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/rankType</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/TypeBanner/highlightLabelAtPosition:</TokenIdentifier>
+			<Abstract type="html">Automatically colors labels before pos using completedColor</Abstract>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSNumber *rankType</Declaration>
+			<Declaration>- (void)highlightLabelAtPosition:(NSInteger)pos</Declaration>
 			
 			
-			<Anchor>//api/name/rankType</Anchor>
+			<Anchor>//api/name/highlightLabelAtPosition:</Anchor>
             <NodeRef refid="58"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/User/rankType</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/TypeBanner/initWithFrame:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
+			<DeclaredIn>TypeBanner.m</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSNumber *rankType</Declaration>
+			<Declaration>- (id)initWithFrame:(CGRect)frame</Declaration>
 			
 			
-			<Anchor>//api/name/rankType</Anchor>
+			<Anchor>//api/name/initWithFrame:</Anchor>
             <NodeRef refid="58"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/setSnapBackEnabled:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/TypeBanner/layoutSubviews</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
+			<DeclaredIn>TypeBanner.m</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) NSNumber *snapBackEnabled</Declaration>
+			<Declaration>- (void)layoutSubviews</Declaration>
 			
 			
-			<Anchor>//api/name/snapBackEnabled</Anchor>
-            <NodeRef refid="58"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/snapBackEnabled</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *snapBackEnabled</Declaration>
-			
-			
-			<Anchor>//api/name/snapBackEnabled</Anchor>
-            <NodeRef refid="58"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/User/snapBackEnabled</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *snapBackEnabled</Declaration>
-			
-			
-			<Anchor>//api/name/snapBackEnabled</Anchor>
-            <NodeRef refid="58"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/setPraisePromptEnabled:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *praisePromptEnabled</Declaration>
-			
-			
-			<Anchor>//api/name/praisePromptEnabled</Anchor>
-            <NodeRef refid="58"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/praisePromptEnabled</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *praisePromptEnabled</Declaration>
-			
-			
-			<Anchor>//api/name/praisePromptEnabled</Anchor>
-            <NodeRef refid="58"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/User/praisePromptEnabled</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *praisePromptEnabled</Declaration>
-			
-			
-			<Anchor>//api/name/praisePromptEnabled</Anchor>
-            <NodeRef refid="58"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/setSnappingDistance:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *snappingDistance</Declaration>
-			
-			
-			<Anchor>//api/name/snappingDistance</Anchor>
-            <NodeRef refid="58"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/snappingDistance</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *snappingDistance</Declaration>
-			
-			
-			<Anchor>//api/name/snappingDistance</Anchor>
-            <NodeRef refid="58"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/User/snappingDistance</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *snappingDistance</Declaration>
-			
-			
-			<Anchor>//api/name/snappingDistance</Anchor>
-            <NodeRef refid="58"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/setKeyHitRadius:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *keyHitRadius</Declaration>
-			
-			
-			<Anchor>//api/name/keyHitRadius</Anchor>
-            <NodeRef refid="58"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/keyHitRadius</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *keyHitRadius</Declaration>
-			
-			
-			<Anchor>//api/name/keyHitRadius</Anchor>
-            <NodeRef refid="58"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/User/keyHitRadius</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *keyHitRadius</Declaration>
-			
-			
-			<Anchor>//api/name/keyHitRadius</Anchor>
-            <NodeRef refid="58"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/setDragEnterEnabled:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *dragEnterEnabled</Declaration>
-			
-			
-			<Anchor>//api/name/dragEnterEnabled</Anchor>
-            <NodeRef refid="58"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/dragEnterEnabled</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *dragEnterEnabled</Declaration>
-			
-			
-			<Anchor>//api/name/dragEnterEnabled</Anchor>
-            <NodeRef refid="58"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/User/dragEnterEnabled</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSNumber *dragEnterEnabled</Declaration>
-			
-			
-			<Anchor>//api/name/dragEnterEnabled</Anchor>
-            <NodeRef refid="58"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/setAttempts:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSSet *attempts</Declaration>
-			
-			
-			<Anchor>//api/name/attempts</Anchor>
-            <NodeRef refid="58"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/attempts</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSSet *attempts</Declaration>
-			
-			
-			<Anchor>//api/name/attempts</Anchor>
-            <NodeRef refid="58"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/User/attempts</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSSet *attempts</Declaration>
-			
-			
-			<Anchor>//api/name/attempts</Anchor>
-            <NodeRef refid="58"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/setLogs:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSSet *logs</Declaration>
-			
-			
-			<Anchor>//api/name/logs</Anchor>
-            <NodeRef refid="58"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/logs</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSSet *logs</Declaration>
-			
-			
-			<Anchor>//api/name/logs</Anchor>
-            <NodeRef refid="58"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/User/logs</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, retain) NSSet *logs</Declaration>
-			
-			
-			<Anchor>//api/name/logs</Anchor>
-            <NodeRef refid="58"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/addAttemptsObject:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>- (void)addAttemptsObject:(Attempt *)value</Declaration>
-			
-			
-			<Anchor>//api/name/addAttemptsObject:</Anchor>
-            <NodeRef refid="58"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/removeAttemptsObject:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>- (void)removeAttemptsObject:(Attempt *)value</Declaration>
-			
-			
-			<Anchor>//api/name/removeAttemptsObject:</Anchor>
-            <NodeRef refid="58"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/addAttempts:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>- (void)addAttempts:(NSSet *)values</Declaration>
-			
-			
-			<Anchor>//api/name/addAttempts:</Anchor>
-            <NodeRef refid="58"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/removeAttempts:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>- (void)removeAttempts:(NSSet *)values</Declaration>
-			
-			
-			<Anchor>//api/name/removeAttempts:</Anchor>
-            <NodeRef refid="58"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/addLogsObject:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>- (void)addLogsObject:(Log *)value</Declaration>
-			
-			
-			<Anchor>//api/name/addLogsObject:</Anchor>
-            <NodeRef refid="58"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/removeLogsObject:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>- (void)removeLogsObject:(Log *)value</Declaration>
-			
-			
-			<Anchor>//api/name/removeLogsObject:</Anchor>
-            <NodeRef refid="58"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/addLogs:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>- (void)addLogs:(NSSet *)values</Declaration>
-			
-			
-			<Anchor>//api/name/addLogs:</Anchor>
-            <NodeRef refid="58"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/User/removeLogs:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>User.h</DeclaredIn>
-			
-			<Declaration>- (void)removeLogs:(NSSet *)values</Declaration>
-			
-			
-			<Anchor>//api/name/removeLogs:</Anchor>
+			<Anchor>//api/name/layoutSubviews</Anchor>
             <NodeRef refid="58"/>
 		</Token>
 		
