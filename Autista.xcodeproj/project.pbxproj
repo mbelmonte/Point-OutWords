@@ -139,6 +139,8 @@
 		20EC799F1837C22A003EB1FE /* BtnNextNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 20EC799B1837C22A003EB1FE /* BtnNextNormal.png */; };
 		20EC79A01837C22A003EB1FE /* BtnPrevHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 20EC799C1837C22A003EB1FE /* BtnPrevHighlighted.png */; };
 		20EC79A11837C22A003EB1FE /* BtnPrevNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 20EC799D1837C22A003EB1FE /* BtnPrevNormal.png */; };
+		49EFC70518FA457D0012B667 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49EFC70418FA457D0012B667 /* Localizable.strings */; };
+		49EFC70718FA58EE0012B667 /* Licenses in Resources */ = {isa = PBXBuildFile; fileRef = 49EFC70618FA58EE0012B667 /* Licenses */; };
 		8D18220216B9A93D005431FF /* AVAudioPlayer+Fade.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF5E0B316B983F1005D8154 /* AVAudioPlayer+Fade.m */; };
 		8D234A8316C7422E0040DC14 /* Ball01B.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D234A5A16C7422E0040DC14 /* Ball01B.png */; };
 		8D234A8416C7422E0040DC14 /* Ball02A.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D234A5B16C7422E0040DC14 /* Ball02A.png */; };
@@ -720,6 +722,8 @@
 		20EC799B1837C22A003EB1FE /* BtnNextNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BtnNextNormal.png; sourceTree = "<group>"; };
 		20EC799C1837C22A003EB1FE /* BtnPrevHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BtnPrevHighlighted.png; sourceTree = "<group>"; };
 		20EC799D1837C22A003EB1FE /* BtnPrevNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BtnPrevNormal.png; sourceTree = "<group>"; };
+		49EFC70418FA457D0012B667 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = Autista/Localization/Localizable.strings; sourceTree = "<group>"; };
+		49EFC70618FA58EE0012B667 /* Licenses */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Licenses; sourceTree = "<group>"; };
 		8D234A5A16C7422E0040DC14 /* Ball01B.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ball01B.png; sourceTree = "<group>"; };
 		8D234A5B16C7422E0040DC14 /* Ball02A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ball02A.png; sourceTree = "<group>"; };
 		8D234A5C16C7422E0040DC14 /* Ball03L.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ball03L.png; sourceTree = "<group>"; };
@@ -1797,6 +1801,14 @@
 			path = Tree;
 			sourceTree = "<group>";
 		};
+		49EFC70318FA45550012B667 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				49EFC70418FA457D0012B667 /* Localizable.strings */,
+			);
+			name = Localization;
+			sourceTree = "<group>";
+		};
 		8D234A5916C7422E0040DC14 /* pieces */ = {
 			isa = PBXGroup;
 			children = (
@@ -2157,6 +2169,8 @@
 		8DA3DD081604C6E20031950A = {
 			isa = PBXGroup;
 			children = (
+				49EFC70618FA58EE0012B667 /* Licenses */,
+				49EFC70318FA45550012B667 /* Localization */,
 				20E4A563186FDD1800B473C2 /* Icon 152.png */,
 				20E4A562186FDD0400B473C2 /* Icon 76.png */,
 				209A8967181A0077002FAF7C /* Instabug.bundle */,
@@ -2973,6 +2987,7 @@
 				8DA02A8716BAB4B70014D426 /* icon@2x.png in Resources */,
 				8D8890A016BD8DAB003FA187 /* Balloon.png in Resources */,
 				8D8890A116BD8DAB003FA187 /* BalloonPlaceHolder.png in Resources */,
+				49EFC70718FA58EE0012B667 /* Licenses in Resources */,
 				8D8890A316BD8DAB003FA187 /* BirthdayPartyBackground.png in Resources */,
 				8D8890A416BD8DAB003FA187 /* BirthdayPartyScene.png in Resources */,
 				8D8890A516BD8DAB003FA187 /* BirthdayPartySceneSelector.png in Resources */,
@@ -3162,6 +3177,7 @@
 				00766404189D8880009FE8DE /* AcousticModelEnglish.bundle in Resources */,
 				8D96536C16FF42A200B9E3FB /* Towel.caf in Resources */,
 				8D96536D16FF42A200B9E3FB /* Tree.caf in Resources */,
+				49EFC70518FA457D0012B667 /* Localizable.strings in Resources */,
 				8D96536E16FF42A200B9E3FB /* Water.caf in Resources */,
 				8D96536F16FF42A200B9E3FB /* Watermelon.caf in Resources */,
 				20568CB717E0A06900F5A9D9 /* icon.png in Resources */,
