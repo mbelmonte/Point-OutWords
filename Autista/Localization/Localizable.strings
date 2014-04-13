@@ -1,7 +1,52 @@
-/* 
-  Localizable.strings
-  Autista
+/*
+ Localizable.strings
+ Autista
+ 
+ Created by Haozhe Li on 4/12/14.
+ Copyright (c) 2014 Shashwat Parhi. All rights reserved.
+ */
 
-  Created by Haozhe Li on 4/13/14.
-  Copyright (c) 2014 Shashwat Parhi. All rights reserved.
-*/
+//Admin view
+
+"General" = "General lalala";
+"Point" = "Point";
+"Speak" = "Speak";
+"Type" = "Type";
+"Point Mode" = "Point Mode";
+"Selecting Distance" = "Selecting Distance";
+"Snap Back" = "Snap Back";
+"Snapping Distance" = "Snapping Distance";
+"Speak Mode" = "Speak Mode";
+"Speech Loudness" = "Speech Loudness";
+"Difficulty" = "Difficulty";
+"Background Music" = "Background Music";
+"Praise Prompt" = "Praise Prompt";
+"Hard" = "Hard";
+"Medium" = "Medium";
+"Easy" = "Easy";
+"Try Again" = "Try Again";
+
+//Labels for Praise Prompt
+"A praise prompt to encourage the child once a hard puzzle is completed." = "A praise prompt to encourage the child once a hard puzzle is completed.";
+
+"A praise prompt to encourage the child once a medium puzzle is completed." = "A praise prompt to encourage the child once a medium puzzle is completed.";
+
+"A praise prompt to encourage the child once a easy puzzle is completed." = "A praise prompt to encourage the child once a easy puzzle is completed.";
+
+"A praise prompt to encourage the child once a puzzle is not completed." = "A praise prompt to encourage the child once a puzzle is not completed.";
+
+"Record a praise prompt to encourage the child once a hard puzzle is completed. (Less than 2 seconds)" = "Record a praise prompt to encourage the child once a hard puzzle is completed. (Less than 2 seconds)";
+
+"Record a praise prompt to encourage the child once a medium puzzle is completed. (Less than 2 seconds)" = "Record a praise prompt to encourage the child once a medium puzzle is completed. (Less than 2 seconds)";
+
+"Record a praise prompt to encourage the child once a easy puzzle is completed (Less than 2 seconds)." = "Record a praise prompt to encourage the child once a easy puzzle is completed (Less than 2 seconds).";
+
+"Record a praise prompt to encourage the child once a puzzle is not completed (Less than 2 seconds)." = "Record a praise prompt to encourage the child once a puzzle is not completed (Less than 2 seconds).";
+
+"Select a praise prompt to encourage the child once a hard puzzle is completed. (Less than 2 seconds)" = "Select a praise prompt to encourage the child once a hard puzzle is completed. (Less than 2 seconds)";
+
+"Select a praise prompt to encourage the child once a medium puzzle is completed. (Less than 2 seconds)" = "Select a praise prompt to encourage the child once a medium puzzle is completed. (Less than 2 seconds)";
+
+"Select a praise prompt to encourage the child once a easy puzzle is completed (Less than 2 seconds)." = "Select a praise prompt to encourage the child once a easy puzzle is completed (Less than 2 seconds).";
+
+"Select a praise prompt to encourage the child once a puzzle is not completed (Less than 2 seconds)." = "Select a praise prompt to encourage the child once a puzzle is not completed (Less than 2 seconds).";
