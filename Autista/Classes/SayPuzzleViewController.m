@@ -845,10 +845,6 @@
 	[_backOverlayTimer invalidate];
 }
 
-- (IBAction)handlePassButtonPressed:(id)sender{
-    [self advanceToNextSyllable];
-}
-
 
 - (void)showBackOverlay
 {
@@ -882,6 +878,19 @@
 	
 	_adminVC = [self.storyboard instantiateViewControllerWithIdentifier:@"AdminViewController"];
 	[self presentViewController:_adminVC animated:YES completion:nil];
+}
+
+- (IBAction)handlePassButtonPressed:(id)sender{
+    _passTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(passPuzzlePiece) userInfo:nil repeats:NO];
+}
+
+- (IBAction)handlePassButtonReleased:(id)sender
+{
+	[_passTimer invalidate];
+}
+
+- (void)passPuzzlePiece{
+    [self advanceToNextSyllable];
 }
 
 //- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
