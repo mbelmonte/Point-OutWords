@@ -637,6 +637,8 @@
 }
 
 //Make TYPE mode closer to POINT mode to ensure smoother transition from POINT to TYPE
+
+//TODO: refer to TouchPuzzleViewController randomizeInitialPositionsOfPieces
 - (void)randomizeInitialPositionsOfPieces
 {
 	//CGRect outerRect = CGRectMake(0, 0, 2048, 1536);//include the outside of the screen
