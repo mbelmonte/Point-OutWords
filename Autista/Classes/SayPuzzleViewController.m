@@ -632,7 +632,7 @@
 	
 	if (_currentSyllable == [_syllables count]){
         [pocketsphinxController stopListening];
-        _recognizerFeedback.text = @"Finished";
+        _recognizerFeedback.text = NSLocalizedString(@"Finished", nil);
 		[self presentPuzzleCompletionAnimation];
     }
 }
@@ -934,7 +934,7 @@
 
 - (void) pocketsphinxDidStartCalibration {
 	NSLog(@"Pocketsphinx calibration has started.");
-    _recognizerFeedback.text = @"Please Wait...";
+    _recognizerFeedback.text = _recognizerFeedback.text = NSLocalizedString(@"Please Wait...", nil);
 }
 
 - (void) pocketsphinxDidCompleteCalibration {
@@ -947,7 +947,7 @@
 	NSLog(@"Pocketsphinx is now listening. %d", _currentSyllable);
     
     if (_notFirstOne == 1) {
-        _recognizerFeedback.text = @"Speak Now";
+        _recognizerFeedback.text = NSLocalizedString(@"Speak Now", nil);
     }
     
     _notFirstOne = 1;
@@ -960,7 +960,7 @@
 - (void) pocketsphinxDidDetectSpeech {
 	NSLog(@"Pocketsphinx has detected speech.");
     if (_currentSyllable != [_syllables count]){
-        _recognizerFeedback.text = @"Speech Detected";
+        _recognizerFeedback.text = _recognizerFeedback.text = NSLocalizedString(@"Speech Detected", nil);
     }
 }
 
@@ -982,7 +982,7 @@
 - (void) pocketsphinxDidResumeRecognition {
 	NSLog(@"Pocketsphinx has resumed recognition.");
     //_recognizerFeedback.text = @"Resumed";
-    _recognizerFeedback.text = @"Speak Now";
+    _recognizerFeedback.text = _recognizerFeedback.text = NSLocalizedString(@"Speak Now", nil);
 }
 
 - (void) pocketsphinxDidChangeLanguageModelToFile:(NSString *)newLanguageModelPathAsString andDictionary:(NSString *)newDictionaryPathAsString {
@@ -991,7 +991,7 @@
 
 - (void) pocketSphinxContinuousSetupDidFail { // This can let you know that something went wrong with the recognition loop startup. Turn on OPENEARSLOGGING to learn why.
 	NSLog(@"Setting up the continuous recognition loop has failed for some reason, please turn on OpenEarsLogging to learn more.");
-    _recognizerFeedback.text = @"Set up failed";
+    _recognizerFeedback.text = _recognizerFeedback.text = NSLocalizedString(@"Set up failed", nil);
 }
 - (void) testRecognitionCompleted {
 	NSLog(@"A test file that was submitted for recognition is now complete.");
