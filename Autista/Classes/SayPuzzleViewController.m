@@ -811,8 +811,10 @@
     
     [activityIndicator stopAnimating];
 
-	[recorder stop];
-	[levelTimer invalidate];
+    if (recorder) {
+        [recorder stop];
+        [levelTimer invalidate];
+    }
 
     [self playPuzzleCompletedSuccessfullySound];
     [self performSelector:@selector(promptAndFinish) withObject:nil afterDelay:0.5];
@@ -1005,8 +1007,11 @@
 	
     [activityIndicator stopAnimating];
     
-	[recorder stop];
-	[levelTimer invalidate];
+    if (recorder) {
+        [recorder stop];
+        [levelTimer invalidate];
+    }
+    
     _backButtonPressed = YES;
 
 	[self performSelector:@selector(delayedDismissSelf) withObject:nil afterDelay:0];

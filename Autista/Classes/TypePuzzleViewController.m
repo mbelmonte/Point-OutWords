@@ -36,10 +36,14 @@
 #define PADDING		  20
 #define MAX_ATTEMPTS 100
 
+@property NSMutableArray *accelerometerDataArray;
+
 @end
 
 @implementation TypePuzzleViewController
 @synthesize myPlayer = _myPlayer;
+@synthesize motionManager;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -88,6 +92,29 @@
 	[self performSelector:@selector(initializePuzzleState) withObject:nil afterDelay:0.3];
 	
 	[[EventLogger sharedLogger] logEvent:LogEventCodePuzzlePresented eventInfo:@{@"Mode": @"Type"}];
+    
+    self.accelerometerDataArray = [NSMutableArray array];
+    self.motionManager = [[CMMotionManager alloc] init];
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    if (motionManager.accelerometerAvailable) {
+        motionManager.accelerometerUpdateInterval = 1.0 / 10.0; [motionManager startAccelerometerUpdatesToQueue:queue withHandler: ^(CMAccelerometerData *accelerometerData, NSError *error){
+            NSString *labelText;
+            if (error) {
+                [motionManager stopAccelerometerUpdates]; labelText = [NSString stringWithFormat:
+                                                                       @"Accelerometer encountered error: %@", error];
+            } else {
+                labelText = [NSString stringWithFormat:
+                             @"Accelerometer\n-----------\nx: %+.2f\ny: %+.2f\nz: %+.2f", accelerometerData.acceleration.x, accelerometerData.acceleration.y, accelerometerData.acceleration.z];
+            }
+//            [accelerometerLabel performSelectorOnMainThread:@selector(setText:)
+//                                                 withObject:labelText waitUntilDone:NO];
+            [[EventLogger sharedLogger] logEvent:LogEventCodeTypeAccelerometer eventInfo:@{@"X": [NSString stringWithFormat:@"%+.2f\n", accelerometerData.acceleration.x], @"Y": [NSString stringWithFormat:@"%+.2f\n", accelerometerData.acceleration.y], @"Z": [NSString stringWithFormat:@"%+.2f\n", accelerometerData.acceleration.z]}];
+            //[self.accelerometerDataArray addObject:accelerometerData];
+            NSLog(@"%@", labelText);
+        }]; }
+    else {
+            //accelerometerLabel.text = @"This device has no accelerometer.";
+    }
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -838,6 +865,8 @@
             break;
         }
     }
+    
+    [[EventLogger sharedLogger] logEvent:LogEventCodeTypeReminder eventInfo:@{@"key": [[_object.title uppercaseString] substringWithRange:NSMakeRange(_currentLetterPosition, 1)]}];
 }
 
 -(void)changeBGColorBack

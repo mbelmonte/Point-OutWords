@@ -574,6 +574,7 @@
 		8F383EFB18E7802600627901 /* record_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F383EF618E7802600627901 /* record_icon.png */; };
 		8F383EFC18E7802600627901 /* record.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F383EF718E7802600627901 /* record.jpg */; };
 		8F383EFD18E7802600627901 /* record.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F383EF818E7802600627901 /* record.png */; };
+		8F39F4DF190B5DAC00484A2C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F39F4DE190B5DAC00484A2C /* CoreMotion.framework */; };
 		8F4F1EE918F9DA78000ECE1C /* InfoViewPageOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4F1EE818F9DA78000ECE1C /* InfoViewPageOne.m */; };
 		8F4F1EEC18F9DA91000ECE1C /* InfoViewPageThree.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4F1EEB18F9DA91000ECE1C /* InfoViewPageThree.m */; };
 		8F4F1EEE18F9DF84000ECE1C /* logos2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F4F1EED18F9DF84000ECE1C /* logos2.png */; };
@@ -1214,6 +1215,7 @@
 		8F383EF618E7802600627901 /* record_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = record_icon.png; sourceTree = "<group>"; };
 		8F383EF718E7802600627901 /* record.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = record.jpg; sourceTree = "<group>"; };
 		8F383EF818E7802600627901 /* record.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = record.png; sourceTree = "<group>"; };
+		8F39F4DE190B5DAC00484A2C /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		8F4F1EE718F9DA78000ECE1C /* InfoViewPageOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InfoViewPageOne.h; path = Autista/Classes/InfoViewPageOne.h; sourceTree = "<group>"; };
 		8F4F1EE818F9DA78000ECE1C /* InfoViewPageOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfoViewPageOne.m; path = Autista/Classes/InfoViewPageOne.m; sourceTree = "<group>"; };
 		8F4F1EEA18F9DA91000ECE1C /* InfoViewPageThree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InfoViewPageThree.h; path = Autista/Classes/InfoViewPageThree.h; sourceTree = "<group>"; };
@@ -1234,6 +1236,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F39F4DF190B5DAC00484A2C /* CoreMotion.framework in Frameworks */,
 				8F57E53F18E7796F0099AD35 /* MediaPlayer.framework in Frameworks */,
 				209C607B18333760004A2DF1 /* AdSupport.framework in Frameworks */,
 				00766406189D8880009FE8DE /* OpenEars.framework in Frameworks */,
@@ -2202,6 +2205,7 @@
 		8DA3DD161604C6E20031950A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8F39F4DE190B5DAC00484A2C /* CoreMotion.framework */,
 				8F4F1EEF18F9EF9C000ECE1C /* StoreKit.framework */,
 				8F57E53E18E7796F0099AD35 /* MediaPlayer.framework */,
 				8FB1A922189D894C007A483F /* Instabug.framework */,

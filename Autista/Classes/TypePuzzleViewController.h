@@ -20,6 +20,8 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import <MediaPlayer/MediaPlayer.h>
+#import <CoreMotion/CoreMotion.h>
+
 @class PuzzleObject;
 @class PuzzlePieceView;
 @class TypeBanner;
@@ -115,6 +117,8 @@
  *  Keyborad event outlet
  */
 @property (nonatomic, retain) IBOutlet UIView *keyboard;
+
+@property (strong, nonatomic) CMMotionManager *motionManager;
 
 /**-----------------------------------------------------------------------------
  * @name Handling admin panel interations
