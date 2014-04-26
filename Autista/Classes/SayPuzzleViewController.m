@@ -57,8 +57,13 @@
 @property NSString *dicPath;
 @property NSInteger alreadyPassSay;
 
+@property NSString *dirToCreate;
+
 @property NSInteger notFirstOne;
 
+@property AVAudioRecorder* wholeSceneVoiceRecorder;
+
+@property  AVAudioPlayer *player;
 @end
 
 @implementation SayPuzzleViewController
@@ -79,6 +84,20 @@
 {
     [super viewDidLoad];
     
+   /*Testing, and it works well.......
+    
+    NSString *voiceFolderDir = [NSString stringWithFormat:@"%@/AudioData/",[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]];
+
+    NSArray* currentpath = [[NSFileManager defaultManager]contentsOfDirectoryAtPath:voiceFolderDir error:nil ];
+    //NSLog(@"the directory path is %@", self.dirToCreate);
+    NSLog(@"there are %@ in the folder",currentpath);
+    
+    NSString *playURL = [voiceFolderDir stringByAppendingString:[currentpath lastObject]];
+    
+    self.player = [[AVAudioPlayer alloc]initWithContentsOfURL:[NSURL fileURLWithPath:playURL] error:nil];
+    [self.player play];
+  */
+
     _notFirstOne = 0;
     
     activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
@@ -247,7 +266,7 @@
     alreadyPassSay = 1;
 	
 	if (_adminVC != nil && _prefs.guidedModeEnabled == NO)		{
-        [recorder stop];
+        //[recorder stop];
         [levelTimer invalidate];
  
         // Shashwat Parhi: if returning from Admin screen
@@ -257,7 +276,7 @@
     }
 	
 	if (_launchedInGuidedMode == NO && _prefs.guidedModeEnabled == YES)	{							// most likely, admin changed this setting mid-stream
-        [recorder stop];
+        //[recorder stop];
         [levelTimer invalidate];
         
 		[self dismissViewControllerAnimated:NO completion:nil];										// so bail out
@@ -271,6 +290,7 @@
 }
 
 - (void)viewWillDisappear:(BOOL)animated{
+    
     [pocketsphinxController stopListening];
 }
 
@@ -436,7 +456,25 @@
 
 - (void)initializeAudioEngine
 {
-	NSURL *url = [NSURL fileURLWithPath:@"/dev/null"];
+    
+    NSDate *now = [NSDate dateWithTimeIntervalSinceNow:0];
+    NSString *caldate = [now description];
+    
+	//NSURL *url = [NSURL fileURLWithPath:@"/dev/null"];
+    self.dirToCreate = [NSString stringWithFormat:@"%@/AudioData",[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]];
+    
+    NSError *error = nil;
+    BOOL isDir;
+    if(![[NSFileManager defaultManager] fileExistsAtPath:self.dirToCreate isDirectory:&isDir])
+    {
+        if(![[NSFileManager defaultManager] createDirectoryAtPath:self.dirToCreate withIntermediateDirectories:YES attributes:nil error:&error])
+            NSLog(@"Error: Create folder failed");
+    }
+    
+    NSString* recorderFilePath = [NSString stringWithFormat:@"%@/%@.caf", self.dirToCreate, caldate];
+    
+    NSURL *url = [NSURL fileURLWithPath:recorderFilePath];
+
     //NSString *recorderFilePath = [NSString stringWithFormat:@"%@/%@.caf", [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"], @"cache"];
     //NSURL *url = [NSURL fileURLWithPath:recorderFilePath];
     
@@ -447,7 +485,7 @@
 							  [NSNumber numberWithInt: AVAudioQualityMax],         AVEncoderAudioQualityKey,
 							  nil];
 	
-	NSError *error = nil;
+	//NSError *error = nil;
 	
     //Below lines added for ios7. may have to put a condition for these to be only there for ios7 and not for ios5 / 6
     audioSession = [AVAudioSession sharedInstance];
@@ -485,9 +523,102 @@
     }
 }
 
+-(void)startRecordingWith
+{
+    
+    AVAudioSession *audioSession = [AVAudioSession sharedInstance];
+    NSError *err = nil;
+    [audioSession setCategory :AVAudioSessionCategoryPlayAndRecord error:&err];
+    if(err){
+        NSLog(@"audioSession: %@ %d %@", [err domain], [err code], [[err userInfo] description]);
+        return;
+    }
+    [audioSession setActive:YES error:&err];
+    err = nil;
+    if(err){
+        NSLog(@"audioSession: %@ %d %@", [err domain], [err code], [[err userInfo] description]);
+        return;
+    }
+    
+    NSMutableDictionary* recordSetting = [[NSMutableDictionary alloc] init];
+    
+    [recordSetting setValue :[NSNumber numberWithInt:kAudioFormatLinearPCM] forKey:AVFormatIDKey];
+    [recordSetting setValue:[NSNumber numberWithFloat:44100.0] forKey:AVSampleRateKey];
+    [recordSetting setValue:[NSNumber numberWithInt: 2] forKey:AVNumberOfChannelsKey];
+    
+    [recordSetting setValue :[NSNumber numberWithInt:16] forKey:AVLinearPCMBitDepthKey];
+    [recordSetting setValue :[NSNumber numberWithBool:NO] forKey:AVLinearPCMIsBigEndianKey];
+    [recordSetting setValue :[NSNumber numberWithBool:NO] forKey:AVLinearPCMIsFloatKey];
+    
+
+    // Create a new dated file
+    NSDate *now = [NSDate dateWithTimeIntervalSinceNow:0];
+    NSString *caldate = [now description];
+    NSMutableString* fileName = [[NSMutableString alloc]initWithFormat:caldate];
+    
+    //Create a folder in the app to store all the voice data if there is no exists
+   
+    self.dirToCreate = [NSString stringWithFormat:@"%@/AudioData",[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject]];
+    
+    NSError *error = nil;
+    BOOL isDir;
+    if(![[NSFileManager defaultManager] fileExistsAtPath:self.dirToCreate isDirectory:&isDir])
+    {
+        if(![[NSFileManager defaultManager] createDirectoryAtPath:self.dirToCreate withIntermediateDirectories:YES attributes:nil error:&error])
+            NSLog(@"Error: Create folder failed");
+    }
+    
+    NSString* recorderFilePath = [NSString stringWithFormat:@"%@/%@.caf", self.dirToCreate, caldate];
+    
+    NSURL *url = [NSURL fileURLWithPath:recorderFilePath];
+    err = nil;
+    
+    self.wholeSceneVoiceRecorder = [[ AVAudioRecorder alloc] initWithURL:url settings:recordSetting error:&err];
+    if(! self.wholeSceneVoiceRecorder){
+        NSLog(@"recorder: %@ %d %@", [err domain], [err code], [[err userInfo] description]);
+        UIAlertView *alert =
+        [[UIAlertView alloc] initWithTitle: @"Warning"
+                                   message: [err localizedDescription]
+                                  delegate: nil
+                         cancelButtonTitle:@"OK"
+                         otherButtonTitles:nil];
+        [alert show];
+        return;
+    }
+    
+    //prepare to record
+    [ self.wholeSceneVoiceRecorder setDelegate:self];
+    [ self.wholeSceneVoiceRecorder prepareToRecord];
+     self.wholeSceneVoiceRecorder.meteringEnabled = YES;
+    
+    BOOL audioHWAvailable = audioSession.inputIsAvailable;
+    if (! audioHWAvailable) {
+        UIAlertView *cantRecordAlert =
+        [[UIAlertView alloc] initWithTitle: @"Warning"
+                                   message: @"Audio input hardware not available"
+                                  delegate: nil
+                         cancelButtonTitle:@"OK"
+                         otherButtonTitles:nil];
+        [cantRecordAlert show];
+        
+        return;
+    }
+    
+    // start recording
+    [ self.wholeSceneVoiceRecorder recordForDuration:(NSTimeInterval) 2];
+
+    
+}
+
+
+
 - (void)startRecordingEngine
 {
-    //RD
+//start to record the whole voice
+    
+    
+    
+    
     if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"6.0")) {
         if (!_soundsMissing) {
 //                NSArray *queue = @[_sayItem, _firstSyllItem];
@@ -502,14 +633,15 @@
             AVAudioPlayer * saySound = _syllableSounds[0];
             [saySound prepareToPlay];
             NSLog(@"system volume in next syll : %f", [self audioVolume]);
+            
             /*if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0"))
              [syllableSound setVolume:[self audioVolumeFac]];
              */
+            
             saySound.delegate = self;
             [saySound play];
             NSLog(@"%@",saySound.url);
             
-
             //[self performSelector:@selector(startListening) withObject:nil afterDelay:0];
             }
     }
@@ -520,7 +652,10 @@
     // Then fades in after 1 second (the cross-fade animation will take 0.5s)
     [UIView animateWithDuration:0.5 delay:1.0 options:0 animations:^{
             sayNa.alpha = 1.0f;
-        } completion:^(BOOL finished) {syllLabel.hidden = NO;     [activityIndicator stopAnimating];}
+        } completion:^(BOOL finished) {
+            syllLabel.hidden = NO;
+            [activityIndicator stopAnimating];
+        }
     ];
 }
 
@@ -663,6 +798,7 @@
 
 - (void)presentPuzzleCompletionAnimation
 {
+    
     [activityIndicator stopAnimating];
 
 	[recorder stop];
@@ -845,10 +981,6 @@
 	[_backOverlayTimer invalidate];
 }
 
-- (IBAction)handlePassButtonPressed:(id)sender{
-    [self advanceToNextSyllable];
-}
-
 
 - (void)showBackOverlay
 {
@@ -882,6 +1014,19 @@
 	
 	_adminVC = [self.storyboard instantiateViewControllerWithIdentifier:@"AdminViewController"];
 	[self presentViewController:_adminVC animated:YES completion:nil];
+}
+
+- (IBAction)handlePassButtonPressed:(id)sender{
+    _passTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(passPuzzlePiece) userInfo:nil repeats:NO];
+}
+
+- (IBAction)handlePassButtonReleased:(id)sender
+{
+	[_passTimer invalidate];
+}
+
+- (void)passPuzzlePiece{
+    [self advanceToNextSyllable];
 }
 
 //- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation

@@ -38,7 +38,7 @@
 @class GlobalPreferences;
 @class AdminViewController;
 
-@interface SayPuzzleViewController : UIViewController<OpenEarsEventsObserverDelegate> {
+@interface SayPuzzleViewController : UIViewController<OpenEarsEventsObserverDelegate, AVAudioRecorderDelegate> {
 	GlobalPreferences *_prefs;
 	BOOL _launchedInGuidedMode;
 	BOOL _backButtonPressed;
@@ -72,6 +72,7 @@
 	
 	NSTimer *_adminOverlayTimer;
     NSTimer *_backOverlayTimer;
+    NSTimer *_passTimer;
 	AdminViewController *_adminVC;
 }
 /**-----------------------------------------------------------------------------
@@ -245,6 +246,7 @@
 
 
 - (IBAction)handlePassButtonPressed:(id)sender;
+- (IBAction)handlePassButtonReleased:(id)sender;
 
 
 /**-----------------------------------------------------------------------------
