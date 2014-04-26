@@ -947,7 +947,7 @@
     NSFileManager *filemgr = [NSFileManager defaultManager];
     NSArray *audioPaths = [filemgr contentsOfDirectoryAtPath:audioPathString error:&error];
     
-    NSString *docDirectory = [audioPaths objectAtIndex:0];
+    NSString *docDirectory = audioPathString;
     NSArray *subpaths;
     NSString *exportPath = docDirectory;
     NSFileManager *fileManager = [NSFileManager defaultManager];
@@ -960,7 +960,7 @@
     
     ZipArchive *archiver = [[ZipArchive alloc] init];
     [archiver CreateZipFile2:archivePath];
-    for(NSString *path in subpaths)
+    for(NSString *path in audioPaths)
     {
         NSString *longPath = [exportPath stringByAppendingPathComponent:path];
         if([fileManager fileExistsAtPath:longPath isDirectory:&isDir] && !isDir)
