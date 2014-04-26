@@ -6,7 +6,20 @@
  Copyright (c) 2014 Shashwat Parhi. All rights reserved.
  */
 
-//Admin view
+/**-----------------------------------------------------------------------------
+ * @name In Say Puzzle View
+ * -----------------------------------------------------------------------------
+ */
+
+"Pass" = "Pass";
+"Finish" = "Finish";
+"Please Wait..." = "Please Wait...";
+"Speak Now" = "Speak Now";
+/**-----------------------------------------------------------------------------
+ * @name In Admin View
+ * -----------------------------------------------------------------------------
+ */
+
 
 //General app setting labels
 "General" = "General";
@@ -68,3 +81,8 @@
 "Select a praise prompt to encourage the child once a easy puzzle is completed (Less than 2 seconds)." = "Select a praise prompt to encourage the child once a easy puzzle is completed (Less than 2 seconds).";
 
 "Select a praise prompt to encourage the child once a puzzle is not completed (Less than 2 seconds)." = "Select a praise prompt to encourage the child once a puzzle is not completed (Less than 2 seconds).";
+
+//Labels for log
+
+"Log size: %u entries" = "Log size: %u entries";
+"Logs emptied" = "Logs emptied";
