@@ -195,6 +195,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *praisePromptEasyLabel;
 @property (weak, nonatomic) IBOutlet UILabel *praisePromptTryAgainLabel;
 
+@property (weak, nonatomic) NSString *applicationDocumentsDirectory;
+- (IBAction)uploadZipFiles:(id)sender;
+
+
 //@property (weak, nonatomic) IBOutlet UIPickerView *promptPickerView;
 
 /**-----------------------------------------------------------------------------
