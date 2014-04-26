@@ -41,8 +41,7 @@
 # include <sys/types.h>
 # include <sys/stat.h>
 #else
-# include <direct.h>
-# include <io.h>
+
 #endif
 
 #include "zip.h"
@@ -142,7 +141,7 @@ int check_exist_file(filename)
 {
     FILE* ftestexist;
     int ret = 1;
-    ftestexist = fopen64(filename,"rb");
+    ftestexist = fopen(filename,"rb");
     if (ftestexist==NULL)
         ret = 0;
     else
@@ -173,7 +172,7 @@ int getFileCrc(const char* filenameinzip,void*buf,unsigned long size_buf,unsigne
 {
    unsigned long calculate_crc=0;
    int err=ZIP_OK;
-   FILE * fin = fopen64(filenameinzip,"rb");
+   FILE * fin = fopen(filenameinzip,"rb");
    unsigned long size_read = 0;
    unsigned long total_read = 0;
    if (fin==NULL)
@@ -211,13 +210,13 @@ int isLargeFile(const char* filename)
 {
   int largeFile = 0;
   ZPOS64_T pos = 0;
-  FILE* pFile = fopen64(filename, "rb");
+  FILE* pFile = fopen(filename, "rb");
 
   if(pFile != NULL)
   {
-    int n = fseeko64(pFile, 0, SEEK_END);
+    int n = fseeko(pFile, 0, SEEK_END);
 
-    pos = ftello64(pFile);
+    pos = ftello(pFile);
 
                 printf("File : %s is %lld bytes\n", filename, pos);
 
@@ -447,7 +446,7 @@ int main(argc,argv)
                     printf("error in opening %s in zipfile\n",filenameinzip);
                 else
                 {
-                    fin = fopen64(filenameinzip,"rb");
+                    fin = fopen(filenameinzip,"rb");
                     if (fin==NULL)
                     {
                         err=ZIP_ERRNO;

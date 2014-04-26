@@ -39,8 +39,7 @@
 # include <utime.h>
 # include <sys/stat.h>
 #else
-# include <direct.h>
-# include <io.h>
+
 #endif
 
 #include "unzip.h"
@@ -365,7 +364,7 @@ int do_extract_currentfile(uf,popt_extract_without_path,popt_overwrite,password)
         {
             char rep=0;
             FILE* ftestexist;
-            ftestexist = fopen64(write_filename,"rb");
+            ftestexist = fopen(write_filename,"rb");
             if (ftestexist!=NULL)
             {
                 fclose(ftestexist);
@@ -396,7 +395,7 @@ int do_extract_currentfile(uf,popt_extract_without_path,popt_overwrite,password)
 
         if ((skip==0) && (err==UNZ_OK))
         {
-            fout=fopen64(write_filename,"wb");
+            fout=fopen(write_filename,"wb");
 
             /* some zipfile don't contain directory alone before file */
             if ((fout==NULL) && ((*popt_extract_without_path)==0) &&
@@ -406,7 +405,7 @@ int do_extract_currentfile(uf,popt_extract_without_path,popt_overwrite,password)
                 *(filename_withoutpath-1)='\0';
                 makedir(write_filename);
                 *(filename_withoutpath-1)=c;
-                fout=fopen64(write_filename,"wb");
+                fout=fopen(write_filename,"wb");
             }
 
             if (fout==NULL)

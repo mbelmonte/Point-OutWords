@@ -61,11 +61,6 @@
     [self UnzipCloseFile];
     
     // release retained/copied properties.
-    [_password release];
-    [_delegate release];
-    [_unzippedFiles release];
-    
-	[super dealloc];
 }
 
 /**
@@ -206,7 +201,7 @@
 -(BOOL) UnzipOpenFile:(NSString*) zipFile
 {
     // create an array to receive the list of unzipped files.
-    if (_unzippedFiles) [_unzippedFiles release];
+
     _unzippedFiles = [[NSMutableArray alloc] initWithCapacity:1];
     
 	_unzFile = unzOpen( (const char*)[zipFile UTF8String] );
@@ -366,7 +361,7 @@
                         }
                         
                     }
-                    [orgDate release];
+
                     orgDate = nil;
                 }
                 
@@ -510,8 +505,6 @@
 							 initWithCalendarIdentifier:NSGregorianCalendar];
 	NSDate *date = [gregorian dateFromComponents:comps];
 	
-	[comps release];
-	[gregorian release];
 	return date;
 }
 
