@@ -91,7 +91,7 @@
 	NSManagedObjectContext *context = [_appDelegate managedObjectContext];
 	
 	NSDate *dateMonthAgo = [NSDate date];
-	NSTimeInterval monthAgoTimeStamp = [dateMonthAgo timeIntervalSince1970];
+	NSTimeInterval monthAgoTimeStamp = [dateMonthAgo timeIntervalSince1970]*1000;
 	
 	NSPredicate *predicate = [NSPredicate predicateWithFormat:@"absoluteTime < %@", @(monthAgoTimeStamp)];
 	
@@ -104,8 +104,8 @@
 - (void)logEvent:(LogEventCode)eventCode eventInfo:(NSDictionary *)eventInfo
 {
 	if (eventCode == LogEventCodePieceDragMoved) {
-		NSNumber *absoluteTime = [NSNumber numberWithDouble:[NSDate timeIntervalSinceReferenceDate]];
-		NSNumber *timeSinceLaunch = [NSNumber numberWithDouble:[[NSDate date] timeIntervalSinceDate:_appEnteredForegroundOn]];
+		NSNumber *absoluteTime = [NSNumber numberWithDouble:[[NSDate date] timeIntervalSinceReferenceDate]*1000];
+		NSNumber *timeSinceLaunch = [NSNumber numberWithDouble:[[NSDate date] timeIntervalSinceDate:_appEnteredForegroundOn]*1000];
 		
 		NSDictionary *dragDict = @{@"absoluteTime":absoluteTime, @"timeSinceLaunch":timeSinceLaunch, @"eventInfo":eventInfo};
 		[_dragMoves addObject:dragDict];
@@ -139,16 +139,35 @@
 		else if (eventCode == LogEventCodeAppLaunched || eventCode == LogEventCodeAdminModeEntered || eventCode == LogEventCodeAdminModeExited)
 			newLog.appSettings = [[prefs packagedSettings] JSONRepresentation];
 			
-		newLog.absoluteTime = [NSNumber numberWithDouble:[NSDate timeIntervalSinceReferenceDate]];
-		newLog.timeSinceLaunch = [NSNumber numberWithDouble:[[NSDate date] timeIntervalSinceDate:_appEnteredForegroundOn]];
+		newLog.absoluteTime = [NSNumber numberWithDouble:[NSDate timeIntervalSinceReferenceDate]*1000];
+		newLog.timeSinceLaunch = [NSNumber numberWithDouble:[[NSDate date] timeIntervalSinceDate:_appEnteredForegroundOn]*1000];
 		newLog.eventInfo = [eventInfo JSONRepresentation];
 		newLog.event = [_events objectAtIndex:index];
 		
         //TFLog(@"Event : %@, Event Info : %@, App Settings : %@, User : %@, Time since Launch : %@", newLog.event.title, newLog.eventInfo, newLog.appSettings, newLog.user.fullname, newLog.timeSinceLaunch);
         
-		[_appDelegate saveContext];
+		//[_appDelegate saveContext];
 	}
 }
+
+//- (void)logAccelerometer:(LogEventCode)eventCode eventInfo:(NSDictionary *)eventInfo
+//{
+//    NSInteger index = [self getEventIndexWithCode:eventCode];
+//    
+//    Log *newLog = [_appDelegate newManagedObjectWithEntity:@"Log"];
+//    newLog.user = _appDelegate.currentUser;
+//    
+//    
+//    newLog.absoluteTime = [NSNumber numberWithDouble:[NSDate timeIntervalSinceReferenceDate]];
+//    newLog.timeSinceLaunch = [NSNumber numberWithDouble:[[NSDate date] timeIntervalSinceDate:_appEnteredForegroundOn]];
+//    newLog.eventInfo = [eventInfo JSONRepresentation];
+//    newLog.event = [_events objectAtIndex:index];
+//    
+//    //TFLog(@"Event : %@, Event Info : %@, App Settings : %@, User : %@, Time since Launch : %@", newLog.event.title, newLog.eventInfo, newLog.appSettings, newLog.user.fullname, newLog.timeSinceLaunch);
+//    
+//    //[_appDelegate saveContext];
+//}
+
 
 - (NSInteger)getEventIndexWithCode:(LogEventCode)eventCode
 {
@@ -497,6 +516,7 @@
 	NSManagedObjectContext *context = [_appDelegate managedObjectContext];
 	NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
 	[fetchRequest setEntity:[NSEntityDescription entityForName:@"Log" inManagedObjectContext:context]];
+    [fetchRequest setSortDescriptors:[NSArray arrayWithObject:[[NSSortDescriptor alloc] initWithKey:@"absoluteTime" ascending:YES]]];
 	
 	NSArray *logs = [context executeFetchRequest:fetchRequest error:nil];
 	
@@ -534,6 +554,8 @@
 	[fileHandle closeFile];
 	
 	NSData *logData = [NSData dataWithContentsOfFile:logFilename];
+
+    NSLog(@"%@", [[NSString alloc] initWithData:logData encoding:NSUTF8StringEncoding]);
 		
 	return logData;
 }

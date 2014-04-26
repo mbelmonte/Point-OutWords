@@ -1,153 +1,174 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-	<array>
-		<dict>
-			<key>eventCode</key>
-			<integer>1</integer>
-			<key>description</key>
-			<string>App Launched</string>
-		</dict>
-		<dict>
-			<key>eventCode</key>
-			<integer>2</integer>
-			<key>description</key>
-			<string>App Exited</string>
-		</dict>
-		<dict>
-			<key>eventCode</key>
-			<integer>3</integer>
-			<key>description</key>
-			<string>Scene Presented</string>
-		</dict>
-		<dict>
-			
-			<key>eventCode</key>
-			<integer>4</integer>
-			<key>description</key>
-			<string>Scene Selected</string>
-		</dict>
-		<dict>
-			
-			<key>eventCode</key>
-			<integer>5</integer>
-			<key>description</key>
-			<string>Scene Exited</string>
-		</dict>
-		<dict>
-			
-			<key>eventCode</key>
-			<integer>6</integer>
-			<key>description</key>
-			<string>Scene Completed</string>
-		</dict>
-		<dict>
-			<key>eventCode</key>
-			<integer>7</integer>
-			<key>description</key>
-			<string>Object Selected</string>
-		</dict>
-		<dict>
-			<key>eventCode</key>
-			<integer>8</integer>
-			<key>description</key>
-			<string>Puzzle Presented</string>
-		</dict>
-		<dict>
-			<key>eventCode</key>
-			<integer>9</integer>
-			<key>description</key>
-			<string>Piece Tapped</string>
-		</dict>
-		<dict>
-			<key>eventCode</key>
-			<integer>10</integer>
-			<key>description</key>
-			<string>Piece Drag Began</string>
-		</dict>
-		<dict>
-			<key>eventCode</key>
-			<integer>11</integer>
-			<key>description</key>
-			<string>Piece Drag Moved</string>
-		</dict>
-		<dict>
-			<key>eventCode</key>
-			<integer>12</integer>
-			<key>description</key>
-			<string>Piece Released</string>
-		</dict>
-		<dict>
-			<key>eventCode</key>
-			<integer>13</integer>
-			<key>description</key>
-			<string>Piece Auto Advanced</string>
-		</dict>
-		<dict>
-			<key>eventCode</key>
-			<integer>14</integer>
-			<key>description</key>
-			<string>Puzzle Completed</string>
-		</dict>
-		<dict>
-			<key>eventCode</key>
-			<integer>15</integer>
-			<key>description</key>
-			<string>Admin Mode Entered</string>
-		</dict>
-		<dict>
-			<key>eventCode</key>
-			<integer>16</integer>
-			<key>description</key>
-			<string>Admin Mode Exited</string>
-		</dict>
-		<dict>
-			<key>eventCode</key>
-			<integer>17</integer>
-			<key>description</key>
-			<string>Touch Began</string>
-		</dict>
-		<dict>
-			<key>eventCode</key>
-			<integer>18</integer>
-			<key>description</key>
-			<string>Touch Moved</string>
-		</dict>
-		<dict>
-			<key>eventCode</key>
-			<integer>19</integer>
-			<key>description</key>
-			<string>Touch Ended</string>
-		</dict>
-		<dict>
-			<key>eventCode</key>
-			<integer>20</integer>
-			<key>description</key>
-			<string>Key Pressed</string>
-		</dict>
-		<dict>
-			<key>eventCode</key>
-			<integer>21</integer>
-			<key>description</key>
-			<string>Key Released</string>
-		</dict>
-		<dict>
-			<key>eventCode</key>
-			<integer>22</integer>
-			<key>description</key>
-			<string>Sound Detected</string>
-		</dict>
-		<dict>
-			<key>eventCode</key>
-			<integer>23</integer>
-			<key>description</key>
-			<string>Syllable Not Recognized</string>
-		</dict>
-		<dict>
-			<key>eventCode</key>
-			<integer>24</integer>
-			<key>description</key>
-			<string>Syllable Recognized</string>
-		</dict>
-	</array>
+<array>
+	<dict>
+		<key>eventCode</key>
+		<integer>1</integer>
+		<key>description</key>
+		<string>App Launched</string>
+	</dict>
+	<dict>
+		<key>eventCode</key>
+		<integer>2</integer>
+		<key>description</key>
+		<string>App Exited</string>
+	</dict>
+	<dict>
+		<key>eventCode</key>
+		<integer>3</integer>
+		<key>description</key>
+		<string>Scene Presented</string>
+	</dict>
+	<dict>
+		<key>eventCode</key>
+		<integer>4</integer>
+		<key>description</key>
+		<string>Scene Selected</string>
+	</dict>
+	<dict>
+		<key>eventCode</key>
+		<integer>5</integer>
+		<key>description</key>
+		<string>Scene Exited</string>
+	</dict>
+	<dict>
+		<key>eventCode</key>
+		<integer>6</integer>
+		<key>description</key>
+		<string>Scene Completed</string>
+	</dict>
+	<dict>
+		<key>eventCode</key>
+		<integer>7</integer>
+		<key>description</key>
+		<string>Object Selected</string>
+	</dict>
+	<dict>
+		<key>eventCode</key>
+		<integer>8</integer>
+		<key>description</key>
+		<string>Puzzle Presented</string>
+	</dict>
+	<dict>
+		<key>eventCode</key>
+		<integer>9</integer>
+		<key>description</key>
+		<string>Piece Tapped</string>
+	</dict>
+	<dict>
+		<key>eventCode</key>
+		<integer>10</integer>
+		<key>description</key>
+		<string>Piece Drag Began</string>
+	</dict>
+	<dict>
+		<key>eventCode</key>
+		<integer>11</integer>
+		<key>description</key>
+		<string>Piece Drag Moved</string>
+	</dict>
+	<dict>
+		<key>eventCode</key>
+		<integer>12</integer>
+		<key>description</key>
+		<string>Piece Released</string>
+	</dict>
+	<dict>
+		<key>eventCode</key>
+		<integer>13</integer>
+		<key>description</key>
+		<string>Piece Auto Advanced</string>
+	</dict>
+	<dict>
+		<key>eventCode</key>
+		<integer>14</integer>
+		<key>description</key>
+		<string>Puzzle Completed</string>
+	</dict>
+	<dict>
+		<key>eventCode</key>
+		<integer>15</integer>
+		<key>description</key>
+		<string>Admin Mode Entered</string>
+	</dict>
+	<dict>
+		<key>eventCode</key>
+		<integer>16</integer>
+		<key>description</key>
+		<string>Admin Mode Exited</string>
+	</dict>
+	<dict>
+		<key>eventCode</key>
+		<integer>17</integer>
+		<key>description</key>
+		<string>Touch Began</string>
+	</dict>
+	<dict>
+		<key>eventCode</key>
+		<integer>18</integer>
+		<key>description</key>
+		<string>Touch Moved</string>
+	</dict>
+	<dict>
+		<key>eventCode</key>
+		<integer>19</integer>
+		<key>description</key>
+		<string>Touch Ended</string>
+	</dict>
+	<dict>
+		<key>eventCode</key>
+		<integer>20</integer>
+		<key>description</key>
+		<string>Key Pressed</string>
+	</dict>
+	<dict>
+		<key>eventCode</key>
+		<integer>21</integer>
+		<key>description</key>
+		<string>Key Released</string>
+	</dict>
+    <dict>
+		<key>eventCode</key>
+		<integer>22</integer>
+		<key>description</key>
+		<string>Type Reminder</string>
+	</dict>
+    <dict>
+		<key>eventCode</key>
+		<integer>23</integer>
+		<key>description</key>
+		<string>Type Accelerometer</string>
+	</dict>
+	<dict>
+		<key>eventCode</key>
+		<integer>24</integer>
+		<key>description</key>
+		<string>Sound Detected</string>
+	</dict>
+	<dict>
+		<key>eventCode</key>
+		<integer>25</integer>
+		<key>description</key>
+		<string>Syllable Not Recognized</string>
+	</dict>
+	<dict>
+		<key>eventCode</key>
+		<integer>26</integer>
+		<key>description</key>
+		<string>Syllable Recognized</string>
+	</dict>
+    <dict>
+		<key>eventCode</key>
+		<integer>27</integer>
+		<key>description</key>
+		<string>Sound Recorded</string>
+	</dict>
+    <dict>
+		<key>eventCode</key>
+		<integer>28</integer>
+		<key>description</key>
+		<string>Piece Skipped</string>
+	</dict>
+</array>
 </plist>

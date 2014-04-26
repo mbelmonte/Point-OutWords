@@ -512,10 +512,7 @@
         return;
     }
     
-    if (_prefs.whetherRecordVoice == 1) {
-        recorder = [[AVAudioRecorder alloc] initWithURL:url settings:settings error:&error];
-    }
-    
+    recorder = [[AVAudioRecorder alloc] initWithURL:url settings:settings error:&error];
 	
 	if(error){
         //TFLog(@"audioSession recorder init: %@ %d %@", [error domain], [error code], [[error userInfo] description]);
@@ -526,7 +523,9 @@
 		[recorder prepareToRecord];
         recorder.meteringEnabled = YES;
         
-        [recorder record];
+        if ((int)_prefs.whetherRecordVoice == 1) {
+            [recorder record];
+        }
         
         lowPassResults = DBOFFSET;
         levelTimer = [NSTimer scheduledTimerWithTimeInterval: 0.03 target: self selector: @selector(levelTimerCallback:) userInfo: nil repeats: YES];
@@ -810,11 +809,14 @@
 {
     
     [activityIndicator stopAnimating];
-
-    if (recorder) {
+    
+    if ((int)_prefs.whetherRecordVoice == 1) {
         [recorder stop];
-        [levelTimer invalidate];
     }
+    
+    NSLog(@"_prefs.whetherRecordVoice: %d",(int)_prefs.whetherRecordVoice);
+    
+    [levelTimer invalidate];
 
     [self playPuzzleCompletedSuccessfullySound];
     [self performSelector:@selector(promptAndFinish) withObject:nil afterDelay:0.5];
@@ -907,11 +909,10 @@
     }
 }
 
--(void)stopPlaying
-{
-    [_myPlayer stop];
-}
-
+//-(void)stopPlaying
+//{
+//    [_myPlayer stop];
+//}
 
 -(NSDictionary *)readFromPlist
 {
@@ -975,7 +976,7 @@
 	[[EventLogger sharedLogger] logAttemptForPuzzle:_object inMode:PuzzleModeSay state:state];
 	[[EventLogger sharedLogger] logEvent:LogEventCodePuzzleCompleted eventInfo:@{@"status": status}];
     
-    if (_prefs.whetherRecordVoice == 1) {
+    if ((int)_prefs.whetherRecordVoice == 1) {
         [[EventLogger sharedLogger] logEvent:LogEventCodeSoundRecorded eventInfo:@{@"soundFileName": self.recordedFileName}];
     }
     
@@ -1007,10 +1008,11 @@
 	
     [activityIndicator stopAnimating];
     
-    if (recorder) {
+    if ((int)_prefs.whetherRecordVoice == 1) {
         [recorder stop];
-        [levelTimer invalidate];
     }
+    
+    [levelTimer invalidate];
     
     _backButtonPressed = YES;
 
@@ -1046,7 +1048,7 @@
 
 - (void)passPuzzlePiece{
     [self advanceToNextSyllable];
-    [[EventLogger sharedLogger] logEvent:LogEventCodePieceSkipped eventInfo:@{@"skippedPiece": _currentPiece.title}];
+    [[EventLogger sharedLogger] logEvent:LogEventCodePieceSkipped eventInfo:@{@"skippedPiece": @""}];
 }
 
 //- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation

@@ -326,36 +326,42 @@
 - (IBAction)handleSendLogDataPressed:(id)sender
 {
     AudioServicesPlaySystemSound(0x450);
-	NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-	[dateFormatter setDateStyle:NSDateFormatterMediumStyle];
-	[dateFormatter setTimeStyle:NSDateFormatterNoStyle];
-	[dateFormatter setTimeZone:[NSTimeZone localTimeZone]];
-	
-	NSString *timeZone = [dateFormatter.timeZone abbreviationForDate:[NSDate date]];	
-	NSString *logFilename = [NSString stringWithFormat:@"Autista Logs %@ %@.txt", [dateFormatter stringFromDate:[NSDate date]], timeZone];
-
-	MFMailComposeViewController *picker = [[MFMailComposeViewController alloc]init];
-	picker.mailComposeDelegate = self;
-	[picker setSubject:@"Autista Log data from my iPad"];
-	
 	NSData *logData = [[EventLogger sharedLogger] logData];
-	[picker addAttachmentData:logData mimeType:@"text/text" fileName:logFilename];
-	[picker setMessageBody:@"I am sending Autista log data via email..." isHTML:YES];
-	[picker setToRecipients:@[@"play@madratgames.com"]];
-	
-	[self presentModalViewController:picker animated:YES];
 }
 
-- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
-{
-	[controller dismissViewControllerAnimated:YES completion:nil];
-	
-	if (result == MFMailComposeResultSaved || result == MFMailComposeResultSent) {
-		[[EventLogger sharedLogger] deleteLogData];
-	
-        _logSizeLabel.text = NSLocalizedString(@"Logs emptied", nil);
-	}
-}
+//- (IBAction)handleSendLogDataPressed:(id)sender
+//{
+//    AudioServicesPlaySystemSound(0x450);
+//	NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+//	[dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+//	[dateFormatter setTimeStyle:NSDateFormatterNoStyle];
+//	[dateFormatter setTimeZone:[NSTimeZone localTimeZone]];
+//	
+//	NSString *timeZone = [dateFormatter.timeZone abbreviationForDate:[NSDate date]];	
+//	NSString *logFilename = [NSString stringWithFormat:@"Autista Logs %@ %@.txt", [dateFormatter stringFromDate:[NSDate date]], timeZone];
+//
+//	MFMailComposeViewController *picker = [[MFMailComposeViewController alloc]init];
+//	picker.mailComposeDelegate = self;
+//	[picker setSubject:@"Autista Log data from my iPad"];
+//	
+//	NSData *logData = [[EventLogger sharedLogger] logData];
+//	[picker addAttachmentData:logData mimeType:@"text/text" fileName:logFilename];
+//	[picker setMessageBody:@"I am sending Autista log data via email..." isHTML:YES];
+//	[picker setToRecipients:@[@"play@madratgames.com"]];
+//	
+//	[self presentModalViewController:picker animated:YES];
+//}
+
+//- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+//{
+//	[controller dismissViewControllerAnimated:YES completion:nil];
+//	
+//	if (result == MFMailComposeResultSaved || result == MFMailComposeResultSent) {
+//		[[EventLogger sharedLogger] deleteLogData];
+//	
+//        _logSizeLabel.text = NSLocalizedString(@"Logs emptied", nil);
+//	}
+//}
 
 - (IBAction)handleCloseOverlayPressed:(id)sender
 {

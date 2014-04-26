@@ -64,7 +64,6 @@ typedef enum {
 	LogEventCodeSyllableRecognized,
     LogEventCodeSoundRecorded,
     LogEventCodePieceSkipped
-
 } LogEventCode;
 
 @interface EventLogger : NSObject {
@@ -120,6 +119,7 @@ typedef enum {
  *  Log a event to Core Data
  */
 - (void)logEvent:(LogEventCode)eventCode eventInfo:(NSDictionary *)eventInfo;
+- (void)logAccelerometer:(LogEventCode)eventCode eventInfo:(NSDictionary *)eventInfo;
 
 /**
  *  Fetch event index from Core Data using event code

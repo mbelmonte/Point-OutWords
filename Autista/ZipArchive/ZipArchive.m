@@ -109,7 +109,7 @@
 		NSDate* fileDate = (NSDate*)[attr objectForKey:NSFileModificationDate];
 		if( fileDate )
 		{
-			zipInfo.dosDate = [fileDate timeIntervalSinceDate:[self Date1980] ];
+			zipInfo.dosDate = [fileDate timeIntervalSinceDate:[self Date1980]];
 		}
 	}
 	

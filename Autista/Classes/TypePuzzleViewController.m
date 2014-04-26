@@ -863,12 +863,11 @@
             [[self buttonFromASCIICode:[[_object.title uppercaseString] characterAtIndex:_currentLetterPosition]].layer addAnimation:anim1 forKey:nil];
             [self performSelector:@selector(changeBGColorBack)withObject:nil afterDelay:0.56];
             
+            [[EventLogger sharedLogger] logEvent:LogEventCodeTypeReminder eventInfo:@{@"key": [[_object.title uppercaseString] substringWithRange:NSMakeRange(_currentLetterPosition, 1)]}];
             
             break;
         }
     }
-    
-    [[EventLogger sharedLogger] logEvent:LogEventCodeTypeReminder eventInfo:@{@"key": [[_object.title uppercaseString] substringWithRange:NSMakeRange(_currentLetterPosition, 1)]}];
 }
 
 -(void)changeBGColorBack
