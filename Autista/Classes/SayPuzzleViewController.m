@@ -59,6 +59,8 @@
 
 @property NSString *dirToCreate;
 
+@property NSString *recordedFileName;
+
 @property NSInteger notFirstOne;
 
 @property AVAudioRecorder* wholeSceneVoiceRecorder;
@@ -68,7 +70,7 @@
 
 @implementation SayPuzzleViewController
 @synthesize  lmGenerator,pocketsphinxController,openEarsEventsObserver;
-@synthesize globalHypothesis, lmPath, dicPath;
+@synthesize globalHypothesis, lmPath, dicPath, recordedFileName;
 @synthesize alreadyPassSay;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -473,6 +475,8 @@
     
     NSString* recorderFilePath = [NSString stringWithFormat:@"%@/%@.caf", self.dirToCreate, caldate];
     
+    self.recordedFileName = [NSString stringWithFormat:@"%@.caf", caldate];
+    
     NSURL *url = [NSURL fileURLWithPath:recorderFilePath];
 
     //NSString *recorderFilePath = [NSString stringWithFormat:@"%@/%@.caf", [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"], @"cache"];
@@ -508,7 +512,11 @@
         return;
     }
     
-	recorder = [[AVAudioRecorder alloc] initWithURL:url settings:settings error:&error];
+    if (_prefs.whetherRecordVoice == 1) {
+        recorder = [[AVAudioRecorder alloc] initWithURL:url settings:settings error:&error];
+    }
+    
+	
 	if(error){
         //TFLog(@"audioSession recorder init: %@ %d %@", [error domain], [error code], [[error userInfo] description]);
         return;
@@ -517,7 +525,9 @@
 	if (recorder) {
 		[recorder prepareToRecord];
         recorder.meteringEnabled = YES;
+        
         [recorder record];
+        
         lowPassResults = DBOFFSET;
         levelTimer = [NSTimer scheduledTimerWithTimeInterval: 0.03 target: self selector: @selector(levelTimerCallback:) userInfo: nil repeats: YES];
     }
@@ -801,8 +811,10 @@
     
     [activityIndicator stopAnimating];
 
-	[recorder stop];
-	[levelTimer invalidate];
+    if (recorder) {
+        [recorder stop];
+        [levelTimer invalidate];
+    }
 
     [self playPuzzleCompletedSuccessfullySound];
     [self performSelector:@selector(promptAndFinish) withObject:nil afterDelay:0.5];
@@ -963,6 +975,10 @@
 	[[EventLogger sharedLogger] logAttemptForPuzzle:_object inMode:PuzzleModeSay state:state];
 	[[EventLogger sharedLogger] logEvent:LogEventCodePuzzleCompleted eventInfo:@{@"status": status}];
     
+    if (_prefs.whetherRecordVoice == 1) {
+        [[EventLogger sharedLogger] logEvent:LogEventCodeSoundRecorded eventInfo:@{@"soundFileName": self.recordedFileName}];
+    }
+    
 	GlobalPreferences *prefs = [GlobalPreferences sharedGlobalPreferences];
 	if (prefs.guidedModeEnabled == NO)
 		[self dismissViewControllerAnimated:YES completion:nil];
@@ -991,8 +1007,11 @@
 	
     [activityIndicator stopAnimating];
     
-	[recorder stop];
-	[levelTimer invalidate];
+    if (recorder) {
+        [recorder stop];
+        [levelTimer invalidate];
+    }
+    
     _backButtonPressed = YES;
 
 	[self performSelector:@selector(delayedDismissSelf) withObject:nil afterDelay:0];
@@ -1027,6 +1046,7 @@
 
 - (void)passPuzzlePiece{
     [self advanceToNextSyllable];
+    [[EventLogger sharedLogger] logEvent:LogEventCodePieceSkipped eventInfo:@{@"skippedPiece": _currentPiece.title}];
 }
 
 //- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation

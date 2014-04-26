@@ -74,6 +74,7 @@
     
 	_resetSlidersButton.layer.cornerRadius = 13.5;
 	
+<<<<<<< HEAD
 	if ([MFMailComposeViewController canSendMail] == NO) {
 		_sendLogsButton.hidden = YES;
 		_logSizeLabel.hidden = YES;
@@ -83,6 +84,19 @@
         _logSizeLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Log size: %u entries", nil), [EventLogger numberOfLogs]];
 
 	}
+=======
+//	if ([MFMailComposeViewController canSendMail] == NO) {
+//		_sendLogsButton.hidden = YES;
+//		_logSizeLabel.hidden = YES;
+//	}
+//	else {
+//		_sendLogsButton.layer.cornerRadius = 13.5;
+//		_logSizeLabel.text = [NSString stringWithFormat:@"Log size: %u entries", [EventLogger numberOfLogs]];
+//	}
+    
+    _sendLogsButton.layer.cornerRadius = 13.5;
+    _logSizeLabel.text = [NSString stringWithFormat:@"Log size: %u entries", [EventLogger numberOfLogs]];
+>>>>>>> 9610440c97a476d176f817cd795469931635485c
 	
 	_backgroundMusicSwitch.on = _prefs.backgroundMusicEnabled;
 	_guidedModeSwitch.on = _prefs.guidedModeEnabled;

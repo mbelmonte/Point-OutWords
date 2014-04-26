@@ -57,9 +57,13 @@ typedef enum {
 	LogEventCodeTouchEnded,
 	LogEventCodeKeyPressed,
 	LogEventCodeKeyReleased,
+    LogEventCodeTypeReminder,
+    LogEventCodeTypeAccelerometer,
 	LogEventCodeSoundDetected,
 	LogEventCodeSyllableNotRecognized,
-	LogEventCodeSyllableRecognized
+	LogEventCodeSyllableRecognized,
+    LogEventCodeSoundRecorded,
+    LogEventCodePieceSkipped
 
 } LogEventCode;
 
