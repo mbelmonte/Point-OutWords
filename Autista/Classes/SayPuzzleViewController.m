@@ -463,7 +463,7 @@
     NSString *caldate = [now description];
     
 	//NSURL *url = [NSURL fileURLWithPath:@"/dev/null"];
-    self.dirToCreate = [NSString stringWithFormat:@"%@/AudioData",[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]];
+    self.dirToCreate = [NSString stringWithFormat:@"%@/LogData",[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]];
     
     NSError *error = nil;
     BOOL isDir;
@@ -567,7 +567,7 @@
     
     //Create a folder in the app to store all the voice data if there is no exists
    
-    self.dirToCreate = [NSString stringWithFormat:@"%@/AudioData",[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject]];
+    self.dirToCreate = [NSString stringWithFormat:@"%@/LogData",[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject]];
     
     NSError *error = nil;
     BOOL isDir;
@@ -810,12 +810,6 @@
     
     [activityIndicator stopAnimating];
     
-    if ((int)_prefs.whetherRecordVoice == 1) {
-        [recorder stop];
-    }
-    
-    NSLog(@"_prefs.whetherRecordVoice: %d",(int)_prefs.whetherRecordVoice);
-    
     [levelTimer invalidate];
 
     [self playPuzzleCompletedSuccessfullySound];
@@ -824,6 +818,13 @@
 
 - (void) promptAndFinish
 {
+    
+    if ((int)_prefs.whetherRecordVoice == 1) {
+        [recorder stop];
+    }
+    
+    NSLog(@"_prefs.whetherRecordVoice: %d",(int)_prefs.whetherRecordVoice);
+    
     //RD
     //Prompt : Easy (<10) - WellDone; Medium (10-12) - Super, Yay; Difficult (>12) - GoodJob, Awesome
     

@@ -924,7 +924,7 @@
     NSDate *now = [NSDate dateWithTimeIntervalSinceNow:0];
     NSString *caldate = [now description];
     
-    NSString *dirToCreate = [NSString stringWithFormat:@"%@/Log",[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]];
+    NSString *dirToCreate = [NSString stringWithFormat:@"%@/LogData",[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]];
     
     NSError *error = nil;
     BOOL isDir = NO;
@@ -943,7 +943,7 @@
     //Get path from Document
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     //Get path from Document/AudioData
-    NSString *audioPathString = [NSString stringWithFormat:@"%@/AudioData",[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]];
+    NSString *audioPathString = [NSString stringWithFormat:@"%@/LogData",[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]];
     NSFileManager *filemgr = [NSFileManager defaultManager];
     NSArray *audioPaths = [filemgr contentsOfDirectoryAtPath:audioPathString error:&error];
     
@@ -974,7 +974,7 @@
     else
         NSLog(@"Fail");
     
-    NSLog(archivePath);
+    NSLog(@"%@", archivePath);
 
     
     //Post data to server
@@ -984,7 +984,7 @@
     NSString *sourcePath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Uploads"];
     NSString *destPath = [basePath stringByAppendingPathComponent:@"Uploads"];
     
-    NSLog(destPath);
+    NSLog(@"%@", destPath);
     NSData *uploadData;
     NSArray* resContents = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:sourcePath error:NULL];
     
@@ -1028,6 +1028,35 @@
     NSString *returnString = [[NSString alloc] initWithData:returnData encoding:NSUTF8StringEncoding];
     NSLog(@"%@", returnString);
     
-    
+    //delete LogData folder, clear Log table
+    if ([returnString isEqualToString:@"1"]) {
+        [self removeLogFolder:audioPathString];
+        [[EventLogger sharedLogger] deleteLogData];
+        _logSizeLabel.text = [NSString stringWithFormat:@"Log size: %u entries", [EventLogger numberOfLogs]];
+    }
 }
+
+- (void)removeLogFolder:(NSString *)documentsDirectory
+{
+    NSFileManager *fileMgr = [[NSFileManager alloc] init];
+    NSError *error = nil;
+    NSArray *directoryContents = [fileMgr contentsOfDirectoryAtPath:documentsDirectory error:&error];
+    if (error == nil) {
+        for (NSString *path in directoryContents) {
+            NSString *fullPath = [documentsDirectory stringByAppendingPathComponent:path];
+            BOOL removeSuccess = [fileMgr removeItemAtPath:fullPath error:&error];
+            if (!removeSuccess) {
+                // Error handling
+                NSLog(@"Failed to remove: %@", fullPath);
+            }
+            else{
+                NSLog(@"Removed file %@", fullPath);
+            }
+        }
+    } else {
+        // Error handling
+        NSLog(@"Could not delete file -:%@ ",[error localizedDescription]);
+    }
+}
+
 @end

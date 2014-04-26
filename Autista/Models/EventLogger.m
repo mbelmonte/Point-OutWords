@@ -519,10 +519,18 @@
     [fetchRequest setSortDescriptors:[NSArray arrayWithObject:[[NSSortDescriptor alloc] initWithKey:@"absoluteTime" ascending:YES]]];
 	
 	NSArray *logs = [context executeFetchRequest:fetchRequest error:nil];
-	
-	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-	NSString *documentsDirectory = [paths objectAtIndex:0];
-	NSString *logFilename = [documentsDirectory stringByAppendingPathComponent:@"Logs.txt"];
+    
+    NSString *logDataFolder = [NSString stringWithFormat:@"%@/LogData",[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject]];
+    
+    NSError *error = nil;
+    BOOL isDir;
+    if(![[NSFileManager defaultManager] fileExistsAtPath:logDataFolder isDirectory:&isDir])
+    {
+        if(![[NSFileManager defaultManager] createDirectoryAtPath:logDataFolder withIntermediateDirectories:YES attributes:nil error:&error])
+            NSLog(@"Error: Create folder failed");
+    }
+    
+	NSString *logFilename = [logDataFolder stringByAppendingPathComponent:@"Logs.txt"];
 	
 	[[NSFileManager defaultManager] createFileAtPath:logFilename contents:nil attributes:nil];
 	
@@ -578,7 +586,7 @@
 - (void)deleteAllUserData {
 	NSManagedObjectContext *context = [_appDelegate managedObjectContext];
 	NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-	[fetchRequest setEntity:[NSEntityDescription entityForName:@"Log" inManagedObjectContext:context]];
+	[fetchRequest setEntity:[NSEntityDescription entityForName:@"User" inManagedObjectContext:context]];
 	
 	NSArray *logs = [context executeFetchRequest:fetchRequest error:nil];
 	
