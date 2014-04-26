@@ -614,6 +614,8 @@
 	if (prefs.guidedModeEnabled == NO)
 		[self dismissViewControllerAnimated:YES completion:nil];
 	else [(GuidedModeViewController *)self.parentViewController presentNextPuzzle];
+    
+    self.motionManager = nil;
 }
 
 - (void)slideOutKeyboard
