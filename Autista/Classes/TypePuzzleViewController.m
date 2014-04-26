@@ -33,6 +33,9 @@
 
 @interface TypePuzzleViewController ()
 
+#define PADDING		  20
+#define MAX_ATTEMPTS 100
+
 @end
 
 @implementation TypePuzzleViewController
@@ -597,9 +600,7 @@
 {
 	CGRect frame = _keyboard.frame;
 	CGFloat height = frame.size.height;
-	
-	[self.view bringSubviewToFront:_keyboard];
-	
+    
 	[UIView animateWithDuration:0.5
 						  delay:0.5
 						options:0
@@ -632,6 +633,7 @@
 						 
 						 [self randomizeInitialPositionsOfPieces];
 						 [self advanceToNextLetterPosition];
+                         [self.view bringSubviewToFront:_keyboard];
 					 }
 	 ];
 }
@@ -642,45 +644,105 @@
 - (void)randomizeInitialPositionsOfPieces
 {
 	//CGRect outerRect = CGRectMake(0, 0, 2048, 1536);//include the outside of the screen
-	CGRect innerRect = CGRectMake(0, 0, 1024, 768);//the main ipad screensize, but offsetted by(512,384)..
+	CGRect screenRect = CGRectMake(0, 0, 1024, 768);//the main ipad screensize, but offsetted by(512,384)..
+	screenRect = CGRectInset(screenRect, PADDING, PADDING);
 	
-	int i = 0;
-	
+    int i = 0;
+	int numAttempts = 0;
+    
+    [_pieces sortUsingComparator:^NSComparisonResult(id obj1, id obj2) {							// first sort pieces by size: large pieces first
+		UIView *view1 = (UIView *)obj1;
+		UIView *view2 = (UIView *)obj2;
+		CGFloat area1 = view1.frame.size.width * view1.frame.size.height;
+		CGFloat area2 = view2.frame.size.width * view2.frame.size.height;
+		
+		if (area1 > area2)
+			return NSOrderedAscending;
+		else return NSOrderedDescending;
+	}];
+    
+    NSArray * fixedPiecesX;
+    NSArray * fixedPiecesY;
+    
+    BOOL _useFixedArrays = YES;
+    
+    if ([_object.title isEqualToString:@"Bath"]) {
+        fixedPiecesX = @[@0, @0, @600, @800];
+        fixedPiecesY = @[@0, @500, @0, @500];
+    }
+    else if ([_object.title isEqualToString:@"Watermelon"]) {
+        fixedPiecesX = @[@0, @0, @0, @0, @400, @400, @800, @800, @800, @800];
+        fixedPiecesY = @[@0, @200, @400, @600, @0, @600, @0, @200, @400, @600];
+    }
+    else {
+        _useFixedArrays = NO;
+    }
+
+    
 	while (i < [_pieces count]) {
 		UIView *aPiece = [_pieces objectAtIndex:i];
 		CGRect pieceFrame = aPiece.frame;
-		CGFloat pieceWidth = pieceFrame.size.width;
-		CGFloat pieceHeight = pieceFrame.size.height;
-		
-		CGFloat offsetX = arc4random() % (int)(innerRect.size.width);
-		CGFloat offsetY = arc4random() % (int)(innerRect.size.height);
+		CGFloat pieceWidth = pieceFrame.size.width + 2 * PADDING;
+		CGFloat pieceHeight = pieceFrame.size.height + 2 * PADDING;
+        
+		CGFloat offsetX;
+        CGFloat offsetY;
+        
+		if (_useFixedArrays) {
+            offsetX = [fixedPiecesX[i] floatValue];
+            offsetY = [fixedPiecesY[i] floatValue];
+        }
+        else {
+            offsetX = arc4random() % (int)(screenRect.size.width - pieceWidth);					// randomly pick X,Y coordinates
+            offsetY = arc4random() % (int)(screenRect.size.height - pieceHeight);
+        }
 		
 		CGRect pieceRect = CGRectMake(offsetX, offsetY, pieceWidth, pieceHeight);
         
-        NSLog(@"the originX of the keyboard=%f",_keyboard.frame.origin.x);
-        NSLog(@"the originY of the keyboard=%f",_keyboard.frame.origin.y);
+        int j = 0;
+		BOOL intersects = NO;
+       
+        //detect the conflict between the piece and the placeholder
+        while (j < [_pieces count] && intersects == NO && numAttempts < MAX_ATTEMPTS) {				// make sure piece does not intersect with any of the
+			PuzzlePieceView *piece = [_pieces objectAtIndex:j];										// other pieces in their final positions
+			CGRect finalRect = piece.frame;
+			finalRect.origin = piece.finalPoint;
+			
+			if ((CGRectIntersectsRect(pieceRect, finalRect) == YES)) {								// this gives a better fit than simply avoiding placeHolder's rect
+				intersects = YES;
+				numAttempts++;
+				break;
+			}
+			else j++;
+		}
         
-        //CGRect newFrame=CGRectMake(512+_keyboard.frame.origin.x, 384+_keyboard.frame.origin.y, _keyboard.frame.size.width,_keyboard.frame.size.height);//offset the keyboard to the current screen position..
+        if (intersects == YES)
+        {
+            //NSLog(@"Object 1st time : %@", _object.title);
+            //fprintf (stdout, "Num Attempts = %d\n", numAttempts);
+            // too bad, this doesn't make for a good fit...
+			continue;
+        }
+        j = 0;
         
-        //|| CGRectIntersectsRect(_placeHolder.frame, pieceRect) == YES
+		while (j < i && intersects == NO && numAttempts < MAX_ATTEMPTS) {							// now that this piece does not overaly any final positions
+			UIView *bPiece = [_pieces objectAtIndex:j];
+			
+			if (CGRectIntersectsRect(pieceRect, bPiece.frame) == YES) {								// make sure it does not intersect any of the pieces
+				intersects = YES;																	// we have already covered until now
+				numAttempts++;
+				break;
+			}
+			else j++;
+		}
         
-		if (CGRectContainsRect (innerRect, pieceRect) == NO || CGRectIntersectsRect(_keyboard.frame, pieceRect) == YES )// detect whether the pieces are on the screen......
-			continue;//if the pieceRect is on the main screen, then re create one......
-        
-        //		int j = 0;
-        //		BOOL intersects = NO;
-        //
-        //		while (j < i && intersects == NO) {													// check if we are intersection any of the earlier pieces
-        //			UIView *bPiece = [_pieces objectAtIndex:j];
-        //
-        //			if (CGRectIntersectsRect(pieceRect, bPiece.frame) == YES)
-        //				intersects = YES;
-        //			else j++;
-        //		}
-        //
-        //		if (intersects == YES)
-        //			continue;
+        if (intersects == YES && numAttempts < MAX_ATTEMPTS)        {
+            //NSLog(@"Object 2nd time : %@", _object.title);
+            //fprintf (stdout, "Num Attempts = %d\n", numAttempts);
+            continue;
+		}
 		
+
 		pieceFrame.origin = CGPointMake(offsetX, offsetY);
 		aPiece.frame = pieceFrame;
 		i++;
@@ -709,6 +771,7 @@
         
         piece.userInteractionEnabled = NO;
     }
+    
     
     //add text to pieces...
     [self addCharacterOnPuzzlePiece];
