@@ -147,6 +147,8 @@ typedef enum {
  */
 - (NSData *)logData;
 
+- (void)removeLogFolder:(NSString *)documentsDirectory;
+
 - (void)deleteLogData;
 
 - (void)deleteAllUserData;

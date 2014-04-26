@@ -530,32 +530,45 @@
             NSLog(@"Error: Create folder failed");
     }
     
-	NSString *logFilename = [logDataFolder stringByAppendingPathComponent:@"Logs.txt"];
+	NSString *logFilename = [logDataFolder stringByAppendingPathComponent:@"Logs.csv"];
 	
 	[[NSFileManager defaultManager] createFileAtPath:logFilename contents:nil attributes:nil];
 	
 	NSFileHandle *fileHandle = [NSFileHandle fileHandleForWritingAtPath:logFilename];
-	NSData *separator = [@"\t" dataUsingEncoding:NSUTF8StringEncoding];
+    NSData *wrapper = [@"\"" dataUsingEncoding:NSUTF8StringEncoding];
+	NSData *separator = [@"," dataUsingEncoding:NSUTF8StringEncoding];
 	NSData *newLine = [@"\r\n" dataUsingEncoding:NSUTF8StringEncoding];
 	
 	NSString *userInfo = [@"User Info\r\n" stringByAppendingFormat:@"Gender: %@\r\nDate of Birth: %@\r\n\r\n", _currentUser.gender, _currentUser.dob];
-	NSString *legends = @"Absolute Time\tTime Since Lauch\tApp Settings\tApp State\tEvent Title\tEvent Info\r\n";
+	NSString *legends = @"Absolute Time,Time Since Lauch,App Settings,App State,Event Title,Event Info\r\n";
 	
 	[fileHandle writeData:[userInfo dataUsingEncoding:NSUTF8StringEncoding]];
 	[fileHandle writeData:[legends dataUsingEncoding:NSUTF8StringEncoding]];
 	
 	for (Log *log in logs) {
+        [fileHandle writeData:wrapper];
 		[fileHandle writeData:[[log.absoluteTime stringValue] dataUsingEncoding:NSUTF8StringEncoding]];
+        [fileHandle writeData:wrapper];
 		[fileHandle writeData:separator];
+        [fileHandle writeData:wrapper];
 		[fileHandle writeData:[[log.timeSinceLaunch stringValue] dataUsingEncoding:NSUTF8StringEncoding]];
+        [fileHandle writeData:wrapper];
 		[fileHandle writeData:separator];
+        [fileHandle writeData:wrapper];
 		[fileHandle writeData:[log.appSettings dataUsingEncoding:NSUTF8StringEncoding]];
+        [fileHandle writeData:wrapper];
 		[fileHandle writeData:separator];
+        [fileHandle writeData:wrapper];
 		[fileHandle writeData:[log.appState dataUsingEncoding:NSUTF8StringEncoding]];
+        [fileHandle writeData:wrapper];
 		[fileHandle writeData:separator];
+        [fileHandle writeData:wrapper];
 		[fileHandle writeData:[log.event.title dataUsingEncoding:NSUTF8StringEncoding]];
+        [fileHandle writeData:wrapper];
 		[fileHandle writeData:separator];
+        [fileHandle writeData:wrapper];
 		[fileHandle writeData:[log.eventInfo dataUsingEncoding:NSUTF8StringEncoding]];
+        [fileHandle writeData:wrapper];
 		[fileHandle writeData:newLine];
 	}
 
@@ -566,6 +579,29 @@
     NSLog(@"%@", [[NSString alloc] initWithData:logData encoding:NSUTF8StringEncoding]);
 		
 	return logData;
+}
+
+- (void)removeLogFolder:(NSString *)documentsDirectory
+{
+    NSFileManager *fileMgr = [[NSFileManager alloc] init];
+    NSError *error = nil;
+    NSArray *directoryContents = [fileMgr contentsOfDirectoryAtPath:documentsDirectory error:&error];
+    if (error == nil) {
+        for (NSString *path in directoryContents) {
+            NSString *fullPath = [documentsDirectory stringByAppendingPathComponent:path];
+            BOOL removeSuccess = [fileMgr removeItemAtPath:fullPath error:&error];
+            if (!removeSuccess) {
+                // Error handling
+                NSLog(@"Failed to remove: %@", fullPath);
+            }
+            else{
+                NSLog(@"Removed file %@", fullPath);
+            }
+        }
+    } else {
+        // Error handling
+        NSLog(@"Could not delete file -:%@ ",[error localizedDescription]);
+    }
 }
 
 - (void)deleteLogData

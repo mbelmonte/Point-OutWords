@@ -326,7 +326,121 @@
 - (IBAction)handleSendLogDataPressed:(id)sender
 {
     AudioServicesPlaySystemSound(0x450);
-	NSData *logData = [[EventLogger sharedLogger] logData];
+	[[EventLogger sharedLogger] logData];
+    
+    NSDate *now = [NSDate dateWithTimeIntervalSinceNow:0];
+    NSString *caldate = [now description];
+    
+    NSString *dirToCreate = [NSString stringWithFormat:@"%@/LogData",[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]];
+    
+    NSError *error = nil;
+    BOOL isDir = NO;
+    if(![[NSFileManager defaultManager] fileExistsAtPath:dirToCreate isDirectory:&isDir])
+    {
+        if(![[NSFileManager defaultManager] createDirectoryAtPath:dirToCreate withIntermediateDirectories:YES attributes:nil error:&error])
+            NSLog(@"Error: Create folder failed");
+    }
+    
+    NSString *uniqueIDHash = [[UIDevice currentDevice] uniqueGlobalDeviceIdentifier];
+    NSLog(uniqueIDHash);
+    
+    //Create a zip file containing audio recordings and log files into timeStamp.zip
+    
+    
+    //Get path from Document
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    //Get path from Document/AudioData
+    NSString *audioPathString = [NSString stringWithFormat:@"%@/LogData",[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]];
+    NSFileManager *filemgr = [NSFileManager defaultManager];
+    NSArray *audioPaths = [filemgr contentsOfDirectoryAtPath:audioPathString error:&error];
+    
+    NSString *docDirectory = audioPathString;
+    NSArray *subpaths;
+    NSString *exportPath = docDirectory;
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    if ([fileManager fileExistsAtPath:exportPath isDirectory:&isDir] && isDir){
+        subpaths = [fileManager subpathsAtPath:exportPath];
+    }
+    
+    NSString *archivePath = [audioPathString stringByAppendingString:@".zip"];
+    
+    ZipArchive *archiver = [[ZipArchive alloc] init];
+    [archiver CreateZipFile2:archivePath];
+    for(NSString *path in audioPaths)
+    {
+        NSString *longPath = [exportPath stringByAppendingPathComponent:path];
+        if([fileManager fileExistsAtPath:longPath isDirectory:&isDir] && !isDir)
+        {
+            [archiver addFileToZip:longPath newname:path];
+        }
+    }
+    BOOL successCompressing = [archiver CloseZipFile2];
+    if(successCompressing)
+        NSLog(@"Success");
+    else
+        NSLog(@"Fail");
+    
+    NSLog(@"%@", archivePath);
+    
+    
+    //Post data to server
+    //    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *basePath = ([audioPaths count] > 0) ? [audioPaths objectAtIndex:0] : nil;
+    
+    NSString *sourcePath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Uploads"];
+    NSString *destPath = [basePath stringByAppendingPathComponent:@"Uploads"];
+    
+    NSLog(@"%@", destPath);
+    NSData *uploadData;
+    NSArray* resContents = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:sourcePath error:NULL];
+    
+    NSLog(@"%@", resContents);
+    
+    //    for (NSString* obj in resContents){
+    //        NSError* error;
+    //        if (![[NSFileManager defaultManager] copyItemAtPath:[sourcePath stringByAppendingPathComponent:obj] toPath:[destPath stringByAppendingPathComponent:obj]
+    //                                                      error:&error])
+    //            NSLog(@"Error: %@", error);;
+    //    }
+    
+    NSArray* destContents = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:destPath error:NULL];
+    NSLog(@"%@", destContents);
+    
+    NSError *dataError = nil;
+    //    NSLog([sourcePath stringByAppendingPathComponent:@"test.zip"]);
+    
+    //    uploadData = [[NSData alloc] initWithContentsOfFile:[sourcePath stringByAppendingPathComponent:@"test.zip"] options:nil error: &dataError];
+    //Try uploading AudioData.zip
+    uploadData = [[NSData alloc] initWithContentsOfFile:archivePath options:nil error:&dataError];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc]
+                                    initWithURL:[NSURL
+                                                 URLWithString:@"http://www.guoanhong.com/projects/autista/zipUpload.php"]];
+    
+    NSString *filename = [uniqueIDHash stringByAppendingString:caldate];
+    
+    [request setHTTPMethod:@"POST"];
+    NSString *boundary = @"---------------------------14737809831466499882746641449";
+    NSString *contentType = [NSString stringWithFormat:@"multipart/form-data; boundary=%@",boundary];
+    [request addValue:contentType forHTTPHeaderField: @"Content-Type"];
+    NSMutableData *postbody = [NSMutableData data];
+    [postbody appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+    [postbody appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"zip_file\"; filename=\"%@.zip\"\r\n", filename] dataUsingEncoding:NSUTF8StringEncoding]];
+    [postbody appendData:[[NSString stringWithString:@"Content-Type: application/octet-stream\r\n\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
+    [postbody appendData:[NSData dataWithData:uploadData]];
+    [postbody appendData:[[NSString stringWithFormat:@"\r\n--%@--\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+    [request setHTTPBody:postbody];
+    
+    NSData *returnData = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+    NSString *returnString = [[NSString alloc] initWithData:returnData encoding:NSUTF8StringEncoding];
+    NSLog(@"%@", returnString);
+    
+    //delete LogData folder, clear Log table
+    if ([returnString isEqualToString:@"1"]) {
+        [[EventLogger sharedLogger] removeLogFolder:audioPathString];
+        [[EventLogger sharedLogger] deleteLogData];
+        _logSizeLabel.text = [NSString stringWithFormat:@"Log size: %u entries", [EventLogger numberOfLogs]];
+    }
 }
 
 //- (IBAction)handleSendLogDataPressed:(id)sender
@@ -920,143 +1034,5 @@
 }
 
 */
-- (IBAction)uploadZipFiles:(id)sender {
-    NSDate *now = [NSDate dateWithTimeIntervalSinceNow:0];
-    NSString *caldate = [now description];
-    
-    NSString *dirToCreate = [NSString stringWithFormat:@"%@/LogData",[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]];
-    
-    NSError *error = nil;
-    BOOL isDir = NO;
-    if(![[NSFileManager defaultManager] fileExistsAtPath:dirToCreate isDirectory:&isDir])
-    {
-        if(![[NSFileManager defaultManager] createDirectoryAtPath:dirToCreate withIntermediateDirectories:YES attributes:nil error:&error])
-            NSLog(@"Error: Create folder failed");
-    }
-    
-    NSString *uniqueIDHash = [[UIDevice currentDevice] uniqueGlobalDeviceIdentifier];
-    NSLog(uniqueIDHash);
-    
-    //Create a zip file containing audio recordings and log files into timeStamp.zip
-    
-    
-    //Get path from Document
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    //Get path from Document/AudioData
-    NSString *audioPathString = [NSString stringWithFormat:@"%@/LogData",[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]];
-    NSFileManager *filemgr = [NSFileManager defaultManager];
-    NSArray *audioPaths = [filemgr contentsOfDirectoryAtPath:audioPathString error:&error];
-    
-    NSString *docDirectory = audioPathString;
-    NSArray *subpaths;
-    NSString *exportPath = docDirectory;
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    
-    if ([fileManager fileExistsAtPath:exportPath isDirectory:&isDir] && isDir){
-        subpaths = [fileManager subpathsAtPath:exportPath];
-    }
-    
-    NSString *archivePath = [audioPathString stringByAppendingString:@".zip"];
-    
-    ZipArchive *archiver = [[ZipArchive alloc] init];
-    [archiver CreateZipFile2:archivePath];
-    for(NSString *path in audioPaths)
-    {
-        NSString *longPath = [exportPath stringByAppendingPathComponent:path];
-        if([fileManager fileExistsAtPath:longPath isDirectory:&isDir] && !isDir)
-        {
-            [archiver addFileToZip:longPath newname:path];
-        }
-    }
-    BOOL successCompressing = [archiver CloseZipFile2];
-    if(successCompressing)
-        NSLog(@"Success");
-    else
-        NSLog(@"Fail");
-    
-    NSLog(@"%@", archivePath);
-
-    
-    //Post data to server
-//    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *basePath = ([audioPaths count] > 0) ? [audioPaths objectAtIndex:0] : nil;
-    
-    NSString *sourcePath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Uploads"];
-    NSString *destPath = [basePath stringByAppendingPathComponent:@"Uploads"];
-    
-    NSLog(@"%@", destPath);
-    NSData *uploadData;
-    NSArray* resContents = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:sourcePath error:NULL];
-    
-    NSLog(@"%@", resContents);
-    
-//    for (NSString* obj in resContents){
-//        NSError* error;
-//        if (![[NSFileManager defaultManager] copyItemAtPath:[sourcePath stringByAppendingPathComponent:obj] toPath:[destPath stringByAppendingPathComponent:obj]
-//                                                      error:&error])
-//            NSLog(@"Error: %@", error);;
-//    }
-
-    NSArray* destContents = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:destPath error:NULL];
-    NSLog(@"%@", destContents);
-    
-    NSError *dataError = nil;
-//    NSLog([sourcePath stringByAppendingPathComponent:@"test.zip"]);
-    
-//    uploadData = [[NSData alloc] initWithContentsOfFile:[sourcePath stringByAppendingPathComponent:@"test.zip"] options:nil error: &dataError];
-    //Try uploading AudioData.zip
-    uploadData = [[NSData alloc] initWithContentsOfFile:archivePath options:nil error:&dataError];
-    NSMutableURLRequest *request = [[NSMutableURLRequest alloc]
-                                    initWithURL:[NSURL
-                                                 URLWithString:@"http://www.guoanhong.com/projects/autista/zipUpload.php"]];
-    
-    NSString *filename = [uniqueIDHash stringByAppendingString:caldate];
-    
-    [request setHTTPMethod:@"POST"];
-    NSString *boundary = @"---------------------------14737809831466499882746641449";
-    NSString *contentType = [NSString stringWithFormat:@"multipart/form-data; boundary=%@",boundary];
-    [request addValue:contentType forHTTPHeaderField: @"Content-Type"];
-    NSMutableData *postbody = [NSMutableData data];
-    [postbody appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
-    [postbody appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"zip_file\"; filename=\"%@.zip\"\r\n", filename] dataUsingEncoding:NSUTF8StringEncoding]];
-    [postbody appendData:[[NSString stringWithString:@"Content-Type: application/octet-stream\r\n\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
-    [postbody appendData:[NSData dataWithData:uploadData]];
-    [postbody appendData:[[NSString stringWithFormat:@"\r\n--%@--\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
-    [request setHTTPBody:postbody];
-    
-    NSData *returnData = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
-    NSString *returnString = [[NSString alloc] initWithData:returnData encoding:NSUTF8StringEncoding];
-    NSLog(@"%@", returnString);
-    
-    //delete LogData folder, clear Log table
-    if ([returnString isEqualToString:@"1"]) {
-        [self removeLogFolder:audioPathString];
-        [[EventLogger sharedLogger] deleteLogData];
-        _logSizeLabel.text = [NSString stringWithFormat:@"Log size: %u entries", [EventLogger numberOfLogs]];
-    }
-}
-
-- (void)removeLogFolder:(NSString *)documentsDirectory
-{
-    NSFileManager *fileMgr = [[NSFileManager alloc] init];
-    NSError *error = nil;
-    NSArray *directoryContents = [fileMgr contentsOfDirectoryAtPath:documentsDirectory error:&error];
-    if (error == nil) {
-        for (NSString *path in directoryContents) {
-            NSString *fullPath = [documentsDirectory stringByAppendingPathComponent:path];
-            BOOL removeSuccess = [fileMgr removeItemAtPath:fullPath error:&error];
-            if (!removeSuccess) {
-                // Error handling
-                NSLog(@"Failed to remove: %@", fullPath);
-            }
-            else{
-                NSLog(@"Removed file %@", fullPath);
-            }
-        }
-    } else {
-        // Error handling
-        NSLog(@"Could not delete file -:%@ ",[error localizedDescription]);
-    }
-}
 
 @end
