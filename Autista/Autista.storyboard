@@ -803,6 +803,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" id="JjH-Vk-2l9" userLabel="GeneralView">
+                                <rect key="frame" x="256" y="192" width="512" height="384"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="fry-JL-WOu" userLabel="TouchModeView">
+                                <rect key="frame" x="256" y="192" width="512" height="384"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
                             <view contentMode="scaleToFill" id="RwH-R7-hGO" userLabel="SayModeView">
                                 <rect key="frame" x="531" y="540" width="512" height="489"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -880,6 +890,11 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" id="CxU-q9-qR6" userLabel="TypeModeView">
+                                <rect key="frame" x="256" y="192" width="512" height="384"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="33.329999999999998" minValue="0.0" maxValue="100" id="n2u-Ht-HSS">
                                 <rect key="frame" x="164" y="159" width="348" height="29"/>
