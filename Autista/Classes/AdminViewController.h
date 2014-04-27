@@ -34,9 +34,7 @@
 	GlobalPreferences *_prefs;
 	IBOutlet UIView *_sceneDashboard;
 }
-@property NSURLConnection *conn;
-@property NSString *logFolderPath;
-@property NSMutableData *responseData;
+
 
 /**-----------------------------------------------------------------------------
  * @name Properties for three view groups of different modes
@@ -85,7 +83,7 @@
  * -----------------------------------------------------------------------------
  */
 /**
- *  <#Description#>
+ *
  */
 
 @property (nonatomic, strong) IBOutlet UISwitch *backgroundMusicSwitch;
@@ -164,6 +162,7 @@
 @property (weak, nonatomic) IBOutlet UISwitch *whetherAllowRecord_Switch;
 
 @property (weak, nonatomic) IBOutlet UISlider *changeTypeScaleSignificancy;
+@property NSMutableArray* sideBarViewArray;
 
 /**-----------------------------------------------------------------------------
  * @name Properties UI element labels
@@ -203,16 +202,23 @@
 @property (weak, nonatomic) IBOutlet UIView *generalView;
 @property (weak, nonatomic) IBOutlet UIView *typeModeView;
 
-@property NSMutableArray* sideBarViewArray;
-
-@property (strong, nonatomic) IBOutlet UIProgressView *uploadProgressBar;
-@property (strong, nonatomic) IBOutlet UIButton *uploadCancelBtn;
-
-
-- (IBAction)uploadCancel:(id)sender;
-
 
 //@property (weak, nonatomic) IBOutlet UIPickerView *promptPickerView;
+
+
+/**-----------------------------------------------------------------------------
+ * @name Methods handling master-detail like view interaction
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ *  Switch detail view
+ *
+ */
+-(void)detailViewSwitch:(int)index;
+
+- (IBAction)handleSideBarPressed:(id)sender;
+
 
 /**-----------------------------------------------------------------------------
  * @name Methods handling changes in user preferences
@@ -339,5 +345,56 @@
  */
 - (void) mediaPicker: (MPMediaPickerController *) mediaPicker didPickMediaItems: (MPMediaItemCollection *) collection;
 
+- (IBAction)handleAllowToRecord:(id)sender;
+
+/**-----------------------------------------------------------------------------
+ * @name UI Elements, properties and methods for Log uploading
+ * -----------------------------------------------------------------------------
+ */
+/**
+ *  
+ */
+@property (strong, nonatomic) IBOutlet UIProgressView *uploadProgressBar;
+
+@property (strong, nonatomic) IBOutlet UIButton *uploadCancelBtn;
+
+/**
+ *  Property to store the connection status
+ */
+@property NSURLConnection *conn;
+/**
+ *  Folder path for log data
+ */
+@property NSString *logFolderPath;
+/**
+ *  Property to store response from server
+ */
+@property NSMutableData *responseData;
+
+/**
+ *  Cancel log uploading
+ *
+ */
+- (IBAction)uploadCancel:(id)sender;
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response;
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data;
+- (NSCachedURLResponse *)connection:(NSURLConnection *)connection
+                  willCacheResponse:(NSCachedURLResponse*)cachedResponse;
+/**
+ *  Delegate method to hide upload button when log upload succeeded
+ *
+ */
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection;
+/**
+ *  Delegate method to alert error message when log upload failed
+ *
+ */
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error;
+/**
+ *  Delegate method to calculate progress of file upload, and to update the progress bar accordingly
+ *
+ */
+- (void)connection:(NSURLConnection *)connection didSendBodyData:(NSInteger)bytesWritten
+ totalBytesWritten:(NSInteger)totalBytesWritten totalBytesExpectedToWrite:(NSInteger)totalBytesExpectedToWrite;
 
 @end

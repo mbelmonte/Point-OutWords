@@ -1121,8 +1121,6 @@
 - (void)connection:(NSURLConnection *)connection didSendBodyData:(NSInteger)bytesWritten
  totalBytesWritten:(NSInteger)totalBytesWritten totalBytesExpectedToWrite:(NSInteger)totalBytesExpectedToWrite
 {
-//	NSLog(@"%d bytesWritten, %d totalBytesWritten, %d totalBytesExpectedToWrite",
-//		  bytesWritten, totalBytesWritten, totalBytesExpectedToWrite );
     
     float progress = (float)totalBytesWritten / (float)totalBytesExpectedToWrite;
     NSLog(@"%f", progress);
