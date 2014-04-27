@@ -334,6 +334,12 @@
 
 - (IBAction)handleSendLogDataPressed:(id)sender
 {
+    //Hide send log button, show progress bar and cancel button
+    _sendLogsButton.hidden = YES;
+    _uploadProgressBar.hidden = YES;
+    _uploadCancelBtn.hidden = YES;
+    
+    
     AudioServicesPlaySystemSound(0x450);
 	[[EventLogger sharedLogger] logData];
 
@@ -1065,6 +1071,9 @@
 
 - (IBAction)uploadCancel:(id)sender {
     [_conn cancel];
-    
+    //Show send log button, hide progress bar and cancel button
+    _sendLogsButton.hidden = YES;
+    _uploadProgressBar.hidden = NO;
+    _uploadCancelBtn.hidden = NO;
 }
 @end
