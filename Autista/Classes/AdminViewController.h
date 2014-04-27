@@ -34,6 +34,7 @@
 	GlobalPreferences *_prefs;
 	IBOutlet UIView *_sceneDashboard;
 }
+@property NSURLConnection *conn;
 @property NSString *logFolderPath;
 @property NSMutableData *responseData;
 

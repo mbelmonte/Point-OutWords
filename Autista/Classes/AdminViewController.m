@@ -400,7 +400,7 @@
 
     
     // Create url connection and fire request
-    NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    _conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
     
     //add NSURLConnection Delegate methods
     //when uploading, activity indicator
@@ -1054,10 +1054,17 @@
 - (void)connection:(NSURLConnection *)connection didSendBodyData:(NSInteger)bytesWritten
  totalBytesWritten:(NSInteger)totalBytesWritten totalBytesExpectedToWrite:(NSInteger)totalBytesExpectedToWrite
 {
-	NSLog(@"%d bytesWritten, %d totalBytesWritten, %d totalBytesExpectedToWrite",
-		  bytesWritten, totalBytesWritten, totalBytesExpectedToWrite );
+//	NSLog(@"%d bytesWritten, %d totalBytesWritten, %d totalBytesExpectedToWrite",
+//		  bytesWritten, totalBytesWritten, totalBytesExpectedToWrite );
+    
+    float progress = totalBytesWritten / totalBytesExpectedToWrite;
+    NSLog(@"%f", progress);
+    [_uploadProgressBar setProgress:progress];
+    
 }
 
 - (IBAction)uploadCancel:(id)sender {
+    [_conn cancel];
+    
 }
 @end
