@@ -200,8 +200,15 @@
 
 @property (weak, nonatomic) NSString *applicationDocumentsDirectory;
 
+@property (weak, nonatomic) IBOutlet UIView *generalView;
+@property (weak, nonatomic) IBOutlet UIView *typeModeView;
+
+@property NSMutableArray* sideBarViewArray;
+
 @property (strong, nonatomic) IBOutlet UIProgressView *uploadProgressBar;
 @property (strong, nonatomic) IBOutlet UIButton *uploadCancelBtn;
+
+
 - (IBAction)uploadCancel:(id)sender;
 
 

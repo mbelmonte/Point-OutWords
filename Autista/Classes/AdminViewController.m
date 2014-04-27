@@ -223,6 +223,22 @@
 //    self.promptPickerView.backgroundColor = [UIColor colorWithWhite:1 alpha:0.8];
 //    
 //    [self getPromptFilesFromDirectory];
+    
+    self.sideBarViewArray = [NSMutableArray arrayWithObjects:self.generalView, self.pointModeView, self.sayModeView, self.typeModeView, nil];
+    
+    for (int i = 0; i < [self.sideBarViewArray count]; i++) {
+       
+        if (i == 0) {
+            ((UIView *)[self.sideBarViewArray objectAtIndex:0]).hidden = NO;
+        }
+        else{
+            ((UIView *)[self.sideBarViewArray objectAtIndex:i]).hidden = YES;
+        }
+        CGRect currentFrame = ((UIView *)[self.sideBarViewArray objectAtIndex:i]).frame;
+        currentFrame.origin.x = 150;
+        currentFrame.origin.y = 112;
+        ((UIView *)[self.sideBarViewArray objectAtIndex:i]).frame = currentFrame;
+    }
 
 }
 
@@ -654,6 +670,27 @@
 - (IBAction)chosePromptSoure:(id)sender
 {
     [self updatePromptViewWith:self.promptSourceSegment.selectedSegmentIndex];
+}
+
+- (IBAction)handleSideBarPressed:(id)sender {
+    
+    UIButton *currentButton = (UIButton *)sender;
+    [self detailViewSwitch:currentButton.tag];
+}
+
+-(void)detailViewSwitch:(int)index
+{
+    for (int i = 0; i < [self.sideBarViewArray count]; i++) {
+        if (i == index) {
+            ((UIView *)[self.sideBarViewArray objectAtIndex:i]).hidden = NO;
+
+        }
+        else{
+            ((UIView *)[self.sideBarViewArray objectAtIndex:i]).hidden = YES;
+        }
+    }
+    
+    
 }
 
 - (IBAction)recordPrompt:(id)sender
