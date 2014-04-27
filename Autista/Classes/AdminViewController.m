@@ -86,6 +86,13 @@
     
     _sendLogsButton.layer.cornerRadius = 13.5;
     _logSizeLabel.text = [NSString stringWithFormat:@"Log size: %u entries", [EventLogger numberOfLogs]];
+    
+    if ((int)[EventLogger numberOfLogs] == 0) {
+        _sendLogsButton.userInteractionEnabled = NO;
+    }
+    else{
+        _sendLogsButton.userInteractionEnabled = YES;
+    }
 
 	
 	_backgroundMusicSwitch.on = _prefs.backgroundMusicEnabled;
@@ -396,6 +403,12 @@
         [[EventLogger sharedLogger] removeLogFolder:exportPath];
         [[EventLogger sharedLogger] deleteLogData];
         _logSizeLabel.text = [NSString stringWithFormat:@"Log size: %u entries", [EventLogger numberOfLogs]];
+        if ((int)[EventLogger numberOfLogs] == 0) {
+            _sendLogsButton.userInteractionEnabled = NO;
+        }
+        else{
+            _sendLogsButton.userInteractionEnabled = YES;
+        }
     }
 }
 
