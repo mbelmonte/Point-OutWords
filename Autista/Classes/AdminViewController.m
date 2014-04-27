@@ -88,10 +88,12 @@
     _logSizeLabel.text = [NSString stringWithFormat:@"Log size: %u entries", [EventLogger numberOfLogs]];
     
     if ((int)[EventLogger numberOfLogs] == 0) {
-        _sendLogsButton.userInteractionEnabled = NO;
+        _sendLogsButton.hidden = YES;
+        _logSizeLabel.hidden = YES;
     }
     else{
-        _sendLogsButton.userInteractionEnabled = YES;
+        _sendLogsButton.hidden = NO;
+        _logSizeLabel.hidden = NO;
     }
 
 	
@@ -403,13 +405,21 @@
         [[EventLogger sharedLogger] removeLogFolder:exportPath];
         [[EventLogger sharedLogger] deleteLogData];
         _logSizeLabel.text = [NSString stringWithFormat:@"Log size: %u entries", [EventLogger numberOfLogs]];
+        
         if ((int)[EventLogger numberOfLogs] == 0) {
-            _sendLogsButton.userInteractionEnabled = NO;
+            _sendLogsButton.hidden = YES;
+            _logSizeLabel.hidden = YES;
         }
         else{
-            _sendLogsButton.userInteractionEnabled = YES;
+            _sendLogsButton.hidden = NO;
+            _logSizeLabel.hidden = NO;
         }
     }
+
+    //add NSURLConnection Delegate methods
+    //when uploading, activity indicator
+    //if no response, show alert - retry/cancel
+    //if response, show alert - successful
 }
 
 //- (IBAction)handleSendLogDataPressed:(id)sender
