@@ -1058,4 +1058,6 @@
 		  bytesWritten, totalBytesWritten, totalBytesExpectedToWrite );
 }
 
+- (IBAction)uploadCancel:(id)sender {
+}
 @end
