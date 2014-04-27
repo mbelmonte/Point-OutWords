@@ -34,6 +34,8 @@
 	GlobalPreferences *_prefs;
 	IBOutlet UIView *_sceneDashboard;
 }
+@property NSString *logFolderPath;
+@property NSMutableData *responseData;
 
 /**-----------------------------------------------------------------------------
  * @name Properties for three view groups of different modes

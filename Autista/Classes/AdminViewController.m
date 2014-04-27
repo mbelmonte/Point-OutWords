@@ -36,7 +36,7 @@
 #define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
 
 #define DOCUMENTS_FOLDER [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]
-@interface AdminViewController ()<AVAudioRecorderDelegate>
+@interface AdminViewController ()<AVAudioRecorderDelegate, NSURLConnectionDelegate>
 @end
 
 @implementation AdminViewController
@@ -348,22 +348,22 @@
 
     NSFileManager *fileManager = [NSFileManager defaultManager];
     //Get path from Document/LogData
-    NSString *exportPath = [NSString stringWithFormat:@"%@/LogData",[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]];
+    _logFolderPath = [NSString stringWithFormat:@"%@/LogData",[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]];
     
-    NSArray *audioPaths = [fileManager contentsOfDirectoryAtPath:exportPath error:&error];
+    NSArray *audioPaths = [fileManager contentsOfDirectoryAtPath:_logFolderPath error:&error];
     NSArray *subpaths;
     
-    if ([fileManager fileExistsAtPath:exportPath isDirectory:&isDir] && isDir){
-        subpaths = [fileManager subpathsAtPath:exportPath];
+    if ([fileManager fileExistsAtPath:_logFolderPath isDirectory:&isDir] && isDir){
+        subpaths = [fileManager subpathsAtPath:_logFolderPath];
     }
     
-    NSString *archivePath = [exportPath stringByAppendingString:@".zip"];
+    NSString *archivePath = [_logFolderPath stringByAppendingString:@".zip"];
     
     ZipArchive *archiver = [[ZipArchive alloc] init];
     [archiver CreateZipFile2:archivePath];
     for(NSString *path in audioPaths)
     {
-        NSString *longPath = [exportPath stringByAppendingPathComponent:path];
+        NSString *longPath = [_logFolderPath stringByAppendingPathComponent:path];
         if([fileManager fileExistsAtPath:longPath isDirectory:&isDir] && !isDir)
         {
             [archiver addFileToZip:longPath newname:path];
@@ -379,6 +379,7 @@
 
     //Try uploading [User's UDID].zip, the server will put the log under a folder named current timestamp
     NSData *uploadData = [[NSData alloc] initWithContentsOfFile:archivePath options:nil error:&error];
+    // Create the request.
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc]
                                     initWithURL:[NSURL
                                                  URLWithString:@"http://www.guoanhong.com/projects/autista/zipUpload.php"]];
@@ -396,26 +397,11 @@
     [postbody appendData:[[NSString stringWithFormat:@"\r\n--%@--\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
     [request setHTTPBody:postbody];
     
-    NSData *returnData = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
-    NSString *returnString = [[NSString alloc] initWithData:returnData encoding:NSUTF8StringEncoding];
-    NSLog(@"%@", returnString);
-    
-    //delete LogData folder, clear Log table
-    if ([returnString isEqualToString:@"1"]) {
-        [[EventLogger sharedLogger] removeLogFolder:exportPath];
-        [[EventLogger sharedLogger] deleteLogData];
-        _logSizeLabel.text = [NSString stringWithFormat:@"Log size: %u entries", [EventLogger numberOfLogs]];
-        
-        if ((int)[EventLogger numberOfLogs] == 0) {
-            _sendLogsButton.hidden = YES;
-            _logSizeLabel.hidden = YES;
-        }
-        else{
-            _sendLogsButton.hidden = NO;
-            _logSizeLabel.hidden = NO;
-        }
-    }
 
+    
+    // Create url connection and fire request
+    NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    
     //add NSURLConnection Delegate methods
     //when uploading, activity indicator
     //if no response, show alert - retry/cancel
@@ -1013,5 +999,56 @@
 }
 
 */
+
+#pragma mark NSURLConnection Delegate Methods
+
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
+    // A response has been received, this is where we initialize the instance var you created
+    // so that we can append data to it in the didReceiveData method
+    // Furthermore, this method is called each time there is a redirect so reinitializing it
+    // also serves to clear it
+    _responseData = [[NSMutableData alloc] init];
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+    // Append the new data to the instance variable you declared
+    [_responseData appendData:data];
+}
+
+- (NSCachedURLResponse *)connection:(NSURLConnection *)connection
+                  willCacheResponse:(NSCachedURLResponse*)cachedResponse {
+    // Return nil to indicate not necessary to store a cached response for this connection
+    return nil;
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
+    // The request is complete and data has been received
+    // You can parse the stuff in your instance variable now
+//    NSData *returnData = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+    NSString *returnString = [[NSString alloc] initWithData:_responseData encoding:NSUTF8StringEncoding];
+    NSLog(@"%@", returnString);
+    
+    //delete LogData folder, clear Log table
+    if ([returnString isEqualToString:@"1"]) {
+        [[EventLogger sharedLogger] removeLogFolder:_logFolderPath];
+        [[EventLogger sharedLogger] deleteLogData];
+        _logSizeLabel.text = [NSString stringWithFormat:@"Log size: %u entries", [EventLogger numberOfLogs]];
+        
+        if ((int)[EventLogger numberOfLogs] == 0) {
+            _sendLogsButton.hidden = YES;
+            _logSizeLabel.hidden = YES;
+        }
+        else{
+            _sendLogsButton.hidden = NO;
+            _logSizeLabel.hidden = NO;
+        }
+    }
+
+}
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
+    // The request has failed for some reason!
+    // Check the error var
+}
 
 @end
