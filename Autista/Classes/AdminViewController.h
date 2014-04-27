@@ -199,6 +199,11 @@
 
 @property (weak, nonatomic) NSString *applicationDocumentsDirectory;
 
+@property (strong, nonatomic) IBOutlet UIProgressView *uploadProgressBar;
+@property (strong, nonatomic) IBOutlet UIButton *uploadCancelBtn;
+- (IBAction)uploadCancel:(id)sender;
+
+
 //@property (weak, nonatomic) IBOutlet UIPickerView *promptPickerView;
 
 /**-----------------------------------------------------------------------------

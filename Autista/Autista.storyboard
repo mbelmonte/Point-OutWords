@@ -1252,11 +1252,25 @@
                                         <rect key="frame" x="228" y="533" width="51" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </switch>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" id="MSz-J1-l5D">
+                                        <rect key="frame" x="545" y="488" width="221" height="2"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </progressView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YR5-xq-K31">
+                                        <rect key="frame" x="719" y="499" width="48" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="uploadCancel:" destination="55P-Rz-YyG" eventType="touchUpInside" id="jGg-rf-SX5"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" id="RwH-R7-hGO" userLabel="SayModeView">
-                                <rect key="frame" x="531" y="1540" width="512" height="489"/>
+                                <rect key="frame" x="150" y="1112" width="854" height="584"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kNF-jY-0bb" userLabel="edit_btn">
@@ -1586,6 +1600,8 @@
                         <outlet property="try_fileLabel" destination="q6M-J6-UR1" id="Tma-b5-O8Z"/>
                         <outlet property="try_itunes_Btn_Play" destination="7h8-J7-g4O" id="OzR-jt-YTb"/>
                         <outlet property="tryagain_descLabel" destination="eZY-a9-2jo" id="GEF-NQ-kBk"/>
+                        <outlet property="uploadCancelBtn" destination="YR5-xq-K31" id="f4W-wO-kg6"/>
+                        <outlet property="uploadProgressBar" destination="MSz-J1-l5D" id="xyr-gp-XU8"/>
                         <outlet property="welldone_Btn_Play" destination="Ulg-a0-bAF" id="ZEu-yZ-tFS"/>
                         <outlet property="welldone_Btn_Record" destination="tnP-iW-c79" id="0KC-D4-lay"/>
                         <outlet property="welldone_descLabel" destination="ef6-PE-Jf0" id="5BS-yW-wqf"/>
