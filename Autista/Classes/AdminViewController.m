@@ -352,8 +352,8 @@
 {
     //Hide send log button, show progress bar and cancel button
     _sendLogsButton.hidden = YES;
-    _uploadProgressBar.hidden = YES;
-    _uploadCancelBtn.hidden = YES;
+    _uploadProgressBar.hidden = NO;
+    _uploadCancelBtn.hidden = NO;
     
     
     AudioServicesPlaySystemSound(0x450);
@@ -618,16 +618,22 @@
                                                      delegate:self
                                             cancelButtonTitle:@"Cancel"
                                             otherButtonTitles:@"Reset", nil];
+    [alert setTag:1];
     [alert show];
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    NSString *title = [alertView buttonTitleAtIndex:buttonIndex];
-    if([title isEqualToString:@"Reset"])
-    {
-        //[TestFlight passCheckpoint:@"Reset App button Tapped"];
-        [[EventLogger sharedLogger] deleteAttempts];
+    if (alertView.tag == 1) {
+        NSString *title = [alertView buttonTitleAtIndex:buttonIndex];
+        if([title isEqualToString:@"Reset"])
+        {
+            //[TestFlight passCheckpoint:@"Reset App button Tapped"];
+            [[EventLogger sharedLogger] deleteAttempts];
+        }
+    }
+    else if (alertView.tag == 2){
+        [self.uploadCancelBtn sendActionsForControlEvents:UIControlEventTouchUpInside];
     }
 }
 
@@ -1071,6 +1077,10 @@
     NSString *returnString = [[NSString alloc] initWithData:_responseData encoding:NSUTF8StringEncoding];
     NSLog(@"%@", returnString);
     
+    _sendLogsButton.hidden = NO;
+    _uploadProgressBar.hidden = YES;
+    _uploadCancelBtn.hidden = YES;
+    
     //delete LogData folder, clear Log table
     if ([returnString isEqualToString:@"1"]) {
         [[EventLogger sharedLogger] removeLogFolder:_logFolderPath];
@@ -1086,12 +1096,26 @@
             _logSizeLabel.hidden = NO;
         }
     }
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Upload Successful"
+                                                    message:@"Thanks for your contribution! Enjoy!"
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
 
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
     // The request has failed for some reason!
     // Check the error var
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No network connection"
+                                                    message:@"You must be connected to the internet to upload the logs."
+                                                   delegate:self
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert setTag:2];
+    [alert show];
 }
 
 - (void)connection:(NSURLConnection *)connection didSendBodyData:(NSInteger)bytesWritten
@@ -1100,7 +1124,7 @@
 //	NSLog(@"%d bytesWritten, %d totalBytesWritten, %d totalBytesExpectedToWrite",
 //		  bytesWritten, totalBytesWritten, totalBytesExpectedToWrite );
     
-    float progress = totalBytesWritten / totalBytesExpectedToWrite;
+    float progress = (float)totalBytesWritten / (float)totalBytesExpectedToWrite;
     NSLog(@"%f", progress);
     [_uploadProgressBar setProgress:progress];
     
@@ -1109,8 +1133,8 @@
 - (IBAction)uploadCancel:(id)sender {
     [_conn cancel];
     //Show send log button, hide progress bar and cancel button
-    _sendLogsButton.hidden = YES;
-    _uploadProgressBar.hidden = NO;
-    _uploadCancelBtn.hidden = NO;
+    _sendLogsButton.hidden = NO;
+    _uploadProgressBar.hidden = YES;
+    _uploadCancelBtn.hidden = YES;
 }
 @end
