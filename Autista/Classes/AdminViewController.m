@@ -1051,4 +1051,11 @@
     // Check the error var
 }
 
+- (void)connection:(NSURLConnection *)connection didSendBodyData:(NSInteger)bytesWritten
+ totalBytesWritten:(NSInteger)totalBytesWritten totalBytesExpectedToWrite:(NSInteger)totalBytesExpectedToWrite
+{
+	NSLog(@"%d bytesWritten, %d totalBytesWritten, %d totalBytesExpectedToWrite",
+		  bytesWritten, totalBytesWritten, totalBytesExpectedToWrite );
+}
+
 @end
