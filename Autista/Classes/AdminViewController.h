@@ -77,8 +77,12 @@
 
 @property NSArray *recordPlayBtnArray;
 @property NSArray *itunesPlayBtnArray;
+
+@property NSArray *recordBtnArray;
+
 @property  UIActivityIndicatorView *indicator;
 
+@property long previousTime;
 
 /**-----------------------------------------------------------------------------
  * @name Properties UI elements

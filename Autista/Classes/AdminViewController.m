@@ -209,6 +209,8 @@
     
     self.recordPlayBtnArray = [NSArray arrayWithObjects:self.super_Btn_Play,self.awesome_Btn_Play, self.welldone_Btn_Play,self.try_Btn_Play, nil];
     
+    self.recordBtnArray = [NSArray arrayWithObjects:self.super_Btn_Record, self.awesome_Btn_Record,self.welldone_Btn_Record,self.try_Btn_Record, nil];
+    
     self.itunesPlayBtnArray = [NSArray arrayWithObjects:self.super_itunes_Btn_Play, self.awesome_itunes_Btn_Play, self.welldone_itunes_Btn_Play,self.try_itunes_Btn_Play, nil];
     for (int i =0; i < [praiseFileLabelArray count]; i++) {
         ((UILabel *)[praiseFileLabelArray objectAtIndex:i]).text = [praiseFileLabelArrayForPlist objectAtIndex:i];
@@ -707,17 +709,21 @@
 {
     UIButton *currentBtn = (UIButton *)sender;
     self.currentSelection = currentBtn.tag;
-    ((UIButton *)[self.recordPlayBtnArray objectAtIndex:currentBtn.tag]).hidden = NO;
-    self.indicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
-    CGRect currentFrame =  self.indicator.frame;
-    currentFrame.origin.y= 0.5*((UIButton *)[self.recordPlayBtnArray objectAtIndex:currentBtn.tag]).frame.size.height - currentFrame.size.height*0.5 ;
-     currentFrame.origin.x= 0.5*((UIButton *)[self.recordPlayBtnArray objectAtIndex:currentBtn.tag]).frame.size.width - currentFrame.size.width*0.5 ;
-    self.indicator.frame = currentFrame;
-    [((UIButton *)[self.recordPlayBtnArray objectAtIndex:currentBtn.tag]) setImage:nil forState:UIControlStateNormal];
-    [((UIButton *)[self.recordPlayBtnArray objectAtIndex:currentBtn.tag]) addSubview:self.indicator];
-    [self.indicator startAnimating];
+    ((UIButton *)[self.recordPlayBtnArray objectAtIndex:currentBtn.tag]).hidden = YES;
+//    self.indicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
+//    CGRect currentFrame =  self.indicator.frame;
+//    currentFrame.origin.y= 0.5*((UIButton *)[self.recordPlayBtnArray objectAtIndex:currentBtn.tag]).frame.size.height - currentFrame.size.height*0.5 ;
+//     currentFrame.origin.x= 0.5*((UIButton *)[self.recordPlayBtnArray objectAtIndex:currentBtn.tag]).frame.size.width - currentFrame.size.width*0.5 ;
+//    self.indicator.frame = currentFrame;
+//    [((UIButton *)[self.recordPlayBtnArray objectAtIndex:currentBtn.tag]) setImage:nil forState:UIControlStateNormal];
+//    [((UIButton *)[self.recordPlayBtnArray objectAtIndex:currentBtn.tag]) addSubview:self.indicator];
+//    [self.indicator startAnimating];
     
     [self startRecordingWith:currentBtn.tag];
+    
+    self.previousTime = CFAbsoluteTimeGetCurrent();
+    
+    [self updatePlayPorgressCircleWith:currentBtn.tag With:self.recordBtnArray];
     
 }
 
@@ -755,14 +761,22 @@
         else if(self.myPlayer.nowPlayingItem){
              self.progressCircleView.currentProgress = (self.myPlayer.currentPlaybackTime/[[self.myPlayer.nowPlayingItem valueForProperty:MPMediaItemPropertyPlaybackDuration]doubleValue]);
         }
+        else if(self.recorder.isRecording){
+           
+            self.progressCircleView.currentProgress = (CFAbsoluteTimeGetCurrent() - self.previousTime)*0.4;
+            
+            NSLog(@"%f",self.progressCircleView.currentProgress);
+            
+        }
         
         [self.progressCircleView setNeedsDisplay];
 
-        if (!player.isPlaying && !self.myPlayer.nowPlayingItem) {
+        if (!player.isPlaying && !self.myPlayer.nowPlayingItem && !self.recorder.isRecording) {
 
             [self.progressCircleView removeFromSuperview];
             self.progressCircleView = nil;
             [self.timer invalidate];
+            self.previousTime = 0;
         }
     
     }
@@ -879,9 +893,11 @@
 
 - (void)audioRecorderDidFinishRecording:(AVAudioRecorder *) aRecorder successfully:(BOOL)flag
 {
-    [((UIActivityIndicatorView *)[((UIButton *)[self.recordPlayBtnArray objectAtIndex:self.currentSelection]).subviews lastObject]) stopAnimating];
-    [((UIActivityIndicatorView *)[((UIButton *)[self.recordPlayBtnArray objectAtIndex:self.currentSelection]).subviews lastObject]) removeFromSuperview];
+//    [((UIActivityIndicatorView *)[((UIButton *)[self.recordPlayBtnArray objectAtIndex:self.currentSelection]).subviews lastObject]) stopAnimating];
+//    [((UIActivityIndicatorView *)[((UIButton *)[self.recordPlayBtnArray objectAtIndex:self.currentSelection]).subviews lastObject]) removeFromSuperview];
+
     [((UIButton *)[self.recordPlayBtnArray objectAtIndex:self.currentSelection]) setImage:[UIImage imageNamed:@"play_icon.png"] forState:UIControlStateNormal];
+    ((UIButton *)[self.recordPlayBtnArray objectAtIndex:self.currentSelection]).hidden = NO;
 }
 
 
