@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ZipArchiveDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ZipArchiveDelegate</TokenIdentifier>
+			<Abstract type="html">    @protocol</Abstract>
+			<DeclaredIn>ZipArchive.h</DeclaredIn>
+            
+			
+			<NodeRef refid="77"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ZipArchiveDelegate/ErrorMessage:</TokenIdentifier>
+			<Abstract type="html">Delegate method to be notified of errors
+    
+    ZipArchive calls this selector on the delegate when errors are encountered.
+    </Abstract>
+			<DeclaredIn>ZipArchive.h</DeclaredIn>
+			
+			<Declaration>- (void)ErrorMessage:(NSString *)msg</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>msg</Name>
+					<Abstract type="html">a string describing the error.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">void</Abstract></ReturnValue>
+			<Anchor>//api/name/ErrorMessage:</Anchor>
+            <NodeRef refid="77"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ZipArchiveDelegate/OverWriteOperation:</TokenIdentifier>
+			<Abstract type="html">Delegate method to determine if a file should be replaced
+    
+    When an zip file is being expanded and a file is about to be replaced, this selector
+    is called on the delegate to notify that file is about to be replaced. The delegate method
+    should return YES to overwrite the file, or NO to skip it.</Abstract>
+			<DeclaredIn>ZipArchive.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)OverWriteOperation:(NSString *)file</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>file</Name>
+					<Abstract type="html">- path to the file to be overwritten.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a BOOL - YES to replace, NO to skip</Abstract></ReturnValue>
+			<Anchor>//api/name/OverWriteOperation:</Anchor>
+            <NodeRef refid="77"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

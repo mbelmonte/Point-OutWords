@@ -73,6 +73,18 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventLogger/logAccelerometer:eventInfo:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventLogger.h</DeclaredIn>
+			
+			<Declaration>- (void)logAccelerometer:(LogEventCode)eventCode eventInfo:(NSDictionary *)eventInfo</Declaration>
+			
+			
+			<Anchor>//api/name/logAccelerometer:eventInfo:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/EventLogger/getEventIndexWithCode:</TokenIdentifier>
 			<Abstract type="html">Fetch event index from Core Data using event code</Abstract>
 			<DeclaredIn>EventLogger.h</DeclaredIn>
@@ -117,6 +129,18 @@
 			
 			
 			<Anchor>//api/name/logData</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventLogger/removeLogFolder:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventLogger.h</DeclaredIn>
+			
+			<Declaration>- (void)removeLogFolder:(NSString *)documentsDirectory</Declaration>
+			
+			
+			<Anchor>//api/name/removeLogFolder:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		

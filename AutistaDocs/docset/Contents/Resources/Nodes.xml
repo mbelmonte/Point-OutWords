@@ -73,6 +73,8 @@
 						<NodeRef refid="60"/>
 						<NodeRef refid="61"/>
 						<NodeRef refid="62"/>
+						<NodeRef refid="63"/>
+						<NodeRef refid="64"/>
 						
 					</Subnodes>
 				</Node>
@@ -82,11 +84,15 @@
 					<Name>Categories</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="63"/>
-						<NodeRef refid="64"/>
 						<NodeRef refid="65"/>
 						<NodeRef refid="66"/>
 						<NodeRef refid="67"/>
+						<NodeRef refid="68"/>
+						<NodeRef refid="69"/>
+						<NodeRef refid="70"/>
+						<NodeRef refid="71"/>
+						<NodeRef refid="72"/>
+						<NodeRef refid="73"/>
 						
 					</Subnodes>
 				</Node>
@@ -96,9 +102,10 @@
 					<Name>Protocols</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="68"/>
-						<NodeRef refid="69"/>
-						<NodeRef refid="70"/>
+						<NodeRef refid="74"/>
+						<NodeRef refid="75"/>
+						<NodeRef refid="76"/>
+						<NodeRef refid="77"/>
 						
 					</Subnodes>
 				</Node>
@@ -1989,8 +1996,68 @@
             </Subnodes>
             
         </Node>
-		
 		<Node id="63" type="file" documentType="reference">
+            <Name>ZipArchive</Name>
+            <Path>Classes/ZipArchive.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/ZipArchive.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/ZipArchive.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/ZipArchive.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/ZipArchive.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="64" type="file" documentType="reference">
+            <Name>tests</Name>
+            <Path>Classes/tests.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/tests.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/tests.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/tests.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		
+		<Node id="65" type="file" documentType="reference">
             <Name>AVAudioPlayer(Fade)</Name>
             <Path>Categories/AVAudioPlayer+Fade.html</Path>
             
@@ -2023,7 +2090,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="64" type="file" documentType="reference">
+		<Node id="66" type="file" documentType="reference">
             <Name>NSData(NSData_SBJsonParsing)</Name>
             <Path>Categories/NSData+NSData_SBJsonParsing.html</Path>
             
@@ -2050,7 +2117,34 @@
             </Subnodes>
             
         </Node>
-		<Node id="65" type="file" documentType="reference">
+		<Node id="67" type="file" documentType="reference">
+            <Name>NSFileManager(ZipArchive)</Name>
+            <Path>Categories/NSFileManager+ZipArchive.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Categories/NSFileManager+ZipArchive.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Categories/NSFileManager+ZipArchive.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Categories/NSFileManager+ZipArchive.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="68" type="file" documentType="reference">
             <Name>NSObject(NSObject_SBJsonWriting)</Name>
             <Path>Categories/NSObject+NSObject_SBJsonWriting.html</Path>
             
@@ -2077,7 +2171,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="66" type="file" documentType="reference">
+		<Node id="69" type="file" documentType="reference">
             <Name>NSObject(SBProxyForJson)</Name>
             <Path>Categories/NSObject+SBProxyForJson.html</Path>
             
@@ -2104,7 +2198,34 @@
             </Subnodes>
             
         </Node>
-		<Node id="67" type="file" documentType="reference">
+		<Node id="70" type="file" documentType="reference">
+            <Name>NSString(MD5Addition)</Name>
+            <Path>Categories/NSString+MD5Addition.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Categories/NSString+MD5Addition.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Categories/NSString+MD5Addition.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Categories/NSString+MD5Addition.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="71" type="file" documentType="reference">
             <Name>NSString(NSString_SBJsonParsing)</Name>
             <Path>Categories/NSString+NSString_SBJsonParsing.html</Path>
             
@@ -2131,8 +2252,62 @@
             </Subnodes>
             
         </Node>
+		<Node id="72" type="file" documentType="reference">
+            <Name>UIDevice(IdentifierAddition)</Name>
+            <Path>Categories/UIDevice+IdentifierAddition.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Categories/UIDevice+IdentifierAddition.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Categories/UIDevice+IdentifierAddition.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Categories/UIDevice+IdentifierAddition.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="73" type="file" documentType="reference">
+            <Name>UIDevice(Private)</Name>
+            <Path>Categories/UIDevice+Private.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Categories/UIDevice+Private.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Categories/UIDevice+Private.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Categories/UIDevice+Private.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
 		
-        <Node id="68" type="file" documentType="reference">
+        <Node id="74" type="file" documentType="reference">
             <Name>SBJsonStreamParserAdapterDelegate</Name>
             <Path>Protocols/SBJsonStreamParserAdapterDelegate.html</Path>
             
@@ -2159,7 +2334,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="69" type="file" documentType="reference">
+		<Node id="75" type="file" documentType="reference">
             <Name>SBJsonStreamParserDelegate</Name>
             <Path>Protocols/SBJsonStreamParserDelegate.html</Path>
             
@@ -2186,7 +2361,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="70" type="file" documentType="reference">
+		<Node id="76" type="file" documentType="reference">
             <Name>SBJsonStreamWriterDelegate</Name>
             <Path>Protocols/SBJsonStreamWriterDelegate.html</Path>
             
@@ -2206,6 +2381,33 @@
                 
                 <Node type="section">
                     <Path>Protocols/SBJsonStreamWriterDelegate.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="77" type="file" documentType="reference">
+            <Name>ZipArchiveDelegate</Name>
+            <Path>Protocols/ZipArchiveDelegate.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/ZipArchiveDelegate.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/ZipArchiveDelegate.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/ZipArchiveDelegate.html</Path>
                     <Name>Instance Methods</Name>
                     <Anchor>instance_methods</Anchor>
                 </Node>

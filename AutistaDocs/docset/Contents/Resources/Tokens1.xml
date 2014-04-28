@@ -626,7 +626,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setBackgroundMusicSwitch:</TokenIdentifier>
-			<Abstract type="html">&lt;#Description#&gt;</Abstract>
+			<Abstract type="html"></Abstract>
 			<DeclaredIn>AdminViewController.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) IBOutlet UISwitch *backgroundMusicSwitch</Declaration>
@@ -638,7 +638,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/backgroundMusicSwitch</TokenIdentifier>
-			<Abstract type="html">&lt;#Description#&gt;</Abstract>
+			<Abstract type="html"></Abstract>
 			<DeclaredIn>AdminViewController.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) IBOutlet UISwitch *backgroundMusicSwitch</Declaration>
@@ -650,7 +650,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/backgroundMusicSwitch</TokenIdentifier>
-			<Abstract type="html">&lt;#Description#&gt;</Abstract>
+			<Abstract type="html"></Abstract>
 			<DeclaredIn>AdminViewController.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) IBOutlet UISwitch *backgroundMusicSwitch</Declaration>
@@ -2425,6 +2425,42 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setSideBarViewArray:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *sideBarViewArray</Declaration>
+			
+			
+			<Anchor>//api/name/sideBarViewArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/sideBarViewArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *sideBarViewArray</Declaration>
+			
+			
+			<Anchor>//api/name/sideBarViewArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/sideBarViewArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *sideBarViewArray</Declaration>
+			
+			
+			<Anchor>//api/name/sideBarViewArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setGeneralLabel:</TokenIdentifier>
 			<Abstract type="html">@name Properties UI element labels
 -----------------------------------------------------------------------------</Abstract>
@@ -3184,6 +3220,138 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setApplicationDocumentsDirectory:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) NSString *applicationDocumentsDirectory</Declaration>
+			
+			
+			<Anchor>//api/name/applicationDocumentsDirectory</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/applicationDocumentsDirectory</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) NSString *applicationDocumentsDirectory</Declaration>
+			
+			
+			<Anchor>//api/name/applicationDocumentsDirectory</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/applicationDocumentsDirectory</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) NSString *applicationDocumentsDirectory</Declaration>
+			
+			
+			<Anchor>//api/name/applicationDocumentsDirectory</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setGeneralView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *generalView</Declaration>
+			
+			
+			<Anchor>//api/name/generalView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/generalView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *generalView</Declaration>
+			
+			
+			<Anchor>//api/name/generalView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/generalView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *generalView</Declaration>
+			
+			
+			<Anchor>//api/name/generalView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setTypeModeView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *typeModeView</Declaration>
+			
+			
+			<Anchor>//api/name/typeModeView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/typeModeView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *typeModeView</Declaration>
+			
+			
+			<Anchor>//api/name/typeModeView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/typeModeView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *typeModeView</Declaration>
+			
+			
+			<Anchor>//api/name/typeModeView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/detailViewSwitch:</TokenIdentifier>
+			<Abstract type="html">Switch detail view</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)detailViewSwitch:(int)index</Declaration>
+			
+			
+			<Anchor>//api/name/detailViewSwitch:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/handleSideBarPressed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)handleSideBarPressed:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/handleSideBarPressed:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/restoreTapped:</TokenIdentifier>
 			<Abstract type="html">Unused</Abstract>
 			<DeclaredIn>AdminViewController.h</DeclaredIn>
@@ -3514,6 +3682,282 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/handleAllowToRecord:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)handleAllowToRecord:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/handleAllowToRecord:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setUploadProgressBar:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIProgressView *uploadProgressBar</Declaration>
+			
+			
+			<Anchor>//api/name/uploadProgressBar</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/uploadProgressBar</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIProgressView *uploadProgressBar</Declaration>
+			
+			
+			<Anchor>//api/name/uploadProgressBar</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/uploadProgressBar</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIProgressView *uploadProgressBar</Declaration>
+			
+			
+			<Anchor>//api/name/uploadProgressBar</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setUploadCancelBtn:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *uploadCancelBtn</Declaration>
+			
+			
+			<Anchor>//api/name/uploadCancelBtn</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/uploadCancelBtn</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *uploadCancelBtn</Declaration>
+			
+			
+			<Anchor>//api/name/uploadCancelBtn</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/uploadCancelBtn</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *uploadCancelBtn</Declaration>
+			
+			
+			<Anchor>//api/name/uploadCancelBtn</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setConn:</TokenIdentifier>
+			<Abstract type="html">Property to store the connection status</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSURLConnection *conn</Declaration>
+			
+			
+			<Anchor>//api/name/conn</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/conn</TokenIdentifier>
+			<Abstract type="html">Property to store the connection status</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSURLConnection *conn</Declaration>
+			
+			
+			<Anchor>//api/name/conn</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/conn</TokenIdentifier>
+			<Abstract type="html">Property to store the connection status</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSURLConnection *conn</Declaration>
+			
+			
+			<Anchor>//api/name/conn</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setLogFolderPath:</TokenIdentifier>
+			<Abstract type="html">Folder path for log data</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSString *logFolderPath</Declaration>
+			
+			
+			<Anchor>//api/name/logFolderPath</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/logFolderPath</TokenIdentifier>
+			<Abstract type="html">Folder path for log data</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSString *logFolderPath</Declaration>
+			
+			
+			<Anchor>//api/name/logFolderPath</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/logFolderPath</TokenIdentifier>
+			<Abstract type="html">Folder path for log data</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSString *logFolderPath</Declaration>
+			
+			
+			<Anchor>//api/name/logFolderPath</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setResponseData:</TokenIdentifier>
+			<Abstract type="html">Property to store response from server</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableData *responseData</Declaration>
+			
+			
+			<Anchor>//api/name/responseData</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/responseData</TokenIdentifier>
+			<Abstract type="html">Property to store response from server</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableData *responseData</Declaration>
+			
+			
+			<Anchor>//api/name/responseData</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/responseData</TokenIdentifier>
+			<Abstract type="html">Property to store response from server</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableData *responseData</Declaration>
+			
+			
+			<Anchor>//api/name/responseData</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/uploadCancel:</TokenIdentifier>
+			<Abstract type="html">Cancel log uploading</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)uploadCancel:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/uploadCancel:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/connection:didReceiveResponse:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response</Declaration>
+			
+			
+			<Anchor>//api/name/connection:didReceiveResponse:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/connection:didReceiveData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data</Declaration>
+			
+			
+			<Anchor>//api/name/connection:didReceiveData:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/connection:willCacheResponse:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (NSCachedURLResponse *)connection:(NSURLConnection *)connection willCacheResponse:(NSCachedURLResponse *)cachedResponse</Declaration>
+			
+			
+			<Anchor>//api/name/connection:willCacheResponse:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/connectionDidFinishLoading:</TokenIdentifier>
+			<Abstract type="html">Delegate method to hide upload button when log upload succeeded</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)connectionDidFinishLoading:(NSURLConnection *)connection</Declaration>
+			
+			
+			<Anchor>//api/name/connectionDidFinishLoading:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/connection:didFailWithError:</TokenIdentifier>
+			<Abstract type="html">Delegate method to alert error message when log upload failed</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error</Declaration>
+			
+			
+			<Anchor>//api/name/connection:didFailWithError:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/connection:didSendBodyData:totalBytesWritten:totalBytesExpectedToWrite:</TokenIdentifier>
+			<Abstract type="html">Delegate method to calculate progress of file upload, and to update the progress bar accordingly</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)connection:(NSURLConnection *)connection didSendBodyData:(NSInteger)bytesWritten totalBytesWritten:(NSInteger)totalBytesWritten totalBytesExpectedToWrite:(NSInteger)totalBytesExpectedToWrite</Declaration>
+			
+			
+			<Anchor>//api/name/connection:didSendBodyData:totalBytesWritten:totalBytesExpectedToWrite:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/initWithNibName:bundle:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>AdminViewController.m</DeclaredIn>
@@ -3558,18 +4002,6 @@
 			
 			
 			<Anchor>//api/name/didReceiveMemoryWarning</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/handleAllowToRecord:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AdminViewController.m</DeclaredIn>
-			
-			<Declaration>- (IBAction)handleAllowToRecord:(id)sender</Declaration>
-			
-			
-			<Anchor>//api/name/handleAllowToRecord:</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		

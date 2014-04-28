@@ -764,6 +764,18 @@ Choose correct sound based on the difficulties:</Abstract>
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/handlePassButtonReleased:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)handlePassButtonReleased:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/handlePassButtonReleased:</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/openEarsEventsObserver</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>SayPuzzleViewController.h</DeclaredIn>
@@ -980,6 +992,18 @@ Choose correct sound based on the difficulties:</Abstract>
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/startRecordingWith</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)startRecordingWith</Declaration>
+			
+			
+			<Anchor>//api/name/startRecordingWith</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/timeoutTimerCallback:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
@@ -1000,42 +1024,6 @@ Choose correct sound based on the difficulties:</Abstract>
 			
 			
 			<Anchor>//api/name/desaturateImage:saturation:</Anchor>
-            <NodeRef refid="52"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/readFromPlist</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
-			
-			<Declaration>- (NSDictionary *)readFromPlist</Declaration>
-			
-			
-			<Anchor>//api/name/readFromPlist</Anchor>
-            <NodeRef refid="52"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/shouldAutorotate</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
-			
-			<Declaration>- (BOOL)shouldAutorotate</Declaration>
-			
-			
-			<Anchor>//api/name/shouldAutorotate</Anchor>
-            <NodeRef refid="52"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/didReceiveMemoryWarning</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
-			
-			<Declaration>- (void)didReceiveMemoryWarning</Declaration>
-			
-			
-			<Anchor>//api/name/didReceiveMemoryWarning</Anchor>
             <NodeRef refid="52"/>
 		</Token>
 		
@@ -1288,6 +1276,186 @@ Choose correct sound based on the difficulties:</Abstract>
 			
 			
 			<Anchor>//api/name/alreadyPassSay</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/setDirToCreate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSString *dirToCreate</Declaration>
+			
+			
+			<Anchor>//api/name/dirToCreate</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/dirToCreate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSString *dirToCreate</Declaration>
+			
+			
+			<Anchor>//api/name/dirToCreate</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SayPuzzleViewController/dirToCreate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSString *dirToCreate</Declaration>
+			
+			
+			<Anchor>//api/name/dirToCreate</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/setRecordedFileName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSString *recordedFileName</Declaration>
+			
+			
+			<Anchor>//api/name/recordedFileName</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/recordedFileName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSString *recordedFileName</Declaration>
+			
+			
+			<Anchor>//api/name/recordedFileName</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SayPuzzleViewController/recordedFileName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSString *recordedFileName</Declaration>
+			
+			
+			<Anchor>//api/name/recordedFileName</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/setNotFirstOne:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSInteger notFirstOne</Declaration>
+			
+			
+			<Anchor>//api/name/notFirstOne</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/notFirstOne</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSInteger notFirstOne</Declaration>
+			
+			
+			<Anchor>//api/name/notFirstOne</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SayPuzzleViewController/notFirstOne</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSInteger notFirstOne</Declaration>
+			
+			
+			<Anchor>//api/name/notFirstOne</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/setWholeSceneVoiceRecorder:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>@property AVAudioRecorder *wholeSceneVoiceRecorder</Declaration>
+			
+			
+			<Anchor>//api/name/wholeSceneVoiceRecorder</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/wholeSceneVoiceRecorder</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>@property AVAudioRecorder *wholeSceneVoiceRecorder</Declaration>
+			
+			
+			<Anchor>//api/name/wholeSceneVoiceRecorder</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SayPuzzleViewController/wholeSceneVoiceRecorder</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>@property AVAudioRecorder *wholeSceneVoiceRecorder</Declaration>
+			
+			
+			<Anchor>//api/name/wholeSceneVoiceRecorder</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/setPlayer:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>@property AVAudioPlayer *player</Declaration>
+			
+			
+			<Anchor>//api/name/player</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SayPuzzleViewController/player</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>@property AVAudioPlayer *player</Declaration>
+			
+			
+			<Anchor>//api/name/player</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SayPuzzleViewController/player</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SayPuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>@property AVAudioPlayer *player</Declaration>
+			
+			
+			<Anchor>//api/name/player</Anchor>
             <NodeRef refid="52"/>
 		</Token>
 		

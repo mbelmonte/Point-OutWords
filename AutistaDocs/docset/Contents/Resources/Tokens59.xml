@@ -265,6 +265,42 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/setMotionManager:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) CMMotionManager *motionManager</Declaration>
+			
+			
+			<Anchor>//api/name/motionManager</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/motionManager</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) CMMotionManager *motionManager</Declaration>
+			
+			
+			<Anchor>//api/name/motionManager</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TypePuzzleViewController/motionManager</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) CMMotionManager *motionManager</Declaration>
+			
+			
+			<Anchor>//api/name/motionManager</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/handleAdminButtonPressed:</TokenIdentifier>
 			<Abstract type="html">When admin button is pressed, start a timer to show the admin overlay after 2s</Abstract>
 			<DeclaredIn>TypePuzzleViewController.h</DeclaredIn>
@@ -750,6 +786,42 @@ Choose correct sound based on the difficulties:</Abstract>
 			
 			
 			<Anchor>//api/name/didReceiveMemoryWarning</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/setAccelerometerDataArray:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *accelerometerDataArray</Declaration>
+			
+			
+			<Anchor>//api/name/accelerometerDataArray</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypePuzzleViewController/accelerometerDataArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *accelerometerDataArray</Declaration>
+			
+			
+			<Anchor>//api/name/accelerometerDataArray</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TypePuzzleViewController/accelerometerDataArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypePuzzleViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *accelerometerDataArray</Declaration>
+			
+			
+			<Anchor>//api/name/accelerometerDataArray</Anchor>
             <NodeRef refid="59"/>
 		</Token>
 		

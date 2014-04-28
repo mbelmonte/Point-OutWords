@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/UIDevice+Private.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/UIDevice(Private)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIDevice+IdentifierAddition.m</DeclaredIn>
+            
+			
+			<NodeRef refid="73"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIDevice/macaddress</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIDevice+IdentifierAddition.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)macaddress</Declaration>
+			
+			
+			<Anchor>//api/name/macaddress</Anchor>
+            <NodeRef refid="73"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>
