@@ -75,6 +75,7 @@
 @property int currentSelection;
 @property BOOL isEdited;
 
+@property NSArray *defaultPlayBtnArray;
 @property NSArray *recordPlayBtnArray;
 @property NSArray *itunesPlayBtnArray;
 
@@ -119,6 +120,14 @@
 
 @property (weak, nonatomic) IBOutlet UISegmentedControl *promptSourceSegment;
 
+@property (strong, nonatomic) IBOutlet UIButton *awesome_Btn_Default;
+
+@property (strong, nonatomic) IBOutlet UIButton *super_Btn_Default;
+
+@property (strong, nonatomic) IBOutlet UIButton *welldone_Btn_Default;
+
+@property (strong, nonatomic) IBOutlet UIButton *try_Btn_Default;
+
 @property (weak, nonatomic) IBOutlet UIButton *super_Btn_Record;
 
 @property (weak, nonatomic) IBOutlet UIButton *awesome_Btn_Record;
@@ -154,6 +163,7 @@
 
 @property (nonatomic, retain) Scene *scene;
 
+@property (strong, nonatomic) IBOutlet UIView *defaultView;
 @property (weak, nonatomic) IBOutlet UIView *recordView;
 @property (weak, nonatomic) IBOutlet UIView *itunesView;
 
@@ -301,6 +311,12 @@
  *
  */
 - (IBAction)chosePromptSoure:(id)sender;
+
+/**
+ *  Playback user default praise prompt
+ *
+ */
+- (IBAction)playDefaultPrompt:(id)sender;
 
 /**
  *  Allow user to record phases for praise prompt

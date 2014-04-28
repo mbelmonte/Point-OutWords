@@ -1161,6 +1161,52 @@
                                                     </button>
                                                 </subviews>
                                             </view>
+                                            <view contentMode="scaleToFill" id="oYo-Wd-sGW" userLabel="defaultView">
+                                                <rect key="frame" x="263" y="5" width="114" height="238"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yEB-pY-xlW">
+                                                        <rect key="frame" x="77" y="69" width="35" height="35"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" image="play_icon.png">
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="playDefaultPrompt:" destination="55P-Rz-YyG" eventType="touchUpInside" id="vtz-gB-u8C"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uZM-Es-VQn">
+                                                        <rect key="frame" x="77" y="0.0" width="35" height="35"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" image="play_icon.png">
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="playDefaultPrompt:" destination="55P-Rz-YyG" eventType="touchUpInside" id="nBZ-Qf-mJ0"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Eyg-kf-UUv">
+                                                        <rect key="frame" x="77" y="135" width="35" height="35"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" image="play_icon.png">
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="playDefaultPrompt:" destination="55P-Rz-YyG" eventType="touchUpInside" id="qWg-6T-PU9"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mNX-Oa-lHK">
+                                                        <rect key="frame" x="77" y="200" width="35" height="35"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" image="play_icon.png">
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="playDefaultPrompt:" destination="55P-Rz-YyG" eventType="touchUpInside" id="LBb-Bl-nb6"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </view>
                                             <view contentMode="scaleToFill" id="TtQ-je-Cce" userLabel="itunesView">
                                                 <rect key="frame" x="263" y="5" width="114" height="238"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1346,7 +1392,7 @@
                                             <action selector="restoreTapped:" destination="55P-Rz-YyG" eventType="touchUpInside" id="kef-J0-eLb"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kNF-jY-0bb" userLabel="edit_btn">
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kNF-jY-0bb" userLabel="edit_btn">
                                         <rect key="frame" x="767" y="465" width="35" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
@@ -1649,6 +1695,7 @@
                         <outlet property="adjustSpeakFrequency" destination="liT-NL-fQP" id="Ea6-8v-zHd"/>
                         <outlet property="adjustTypeFrequency" destination="MkS-8x-Ion" id="1cI-sg-TxW"/>
                         <outlet property="ampThresh" destination="X5p-Bq-aaK" id="3qf-Fp-W4N"/>
+                        <outlet property="awesome_Btn_Default" destination="uZM-Es-VQn" id="272-Jf-34e"/>
                         <outlet property="awesome_Btn_Play" destination="qZq-CB-Ghd" id="VRX-rT-LYC"/>
                         <outlet property="awesome_Btn_Record" destination="uCF-lT-OPf" id="3Uy-DB-29d"/>
                         <outlet property="awesome_descLabel" destination="Qsi-Lx-UDe" id="q1M-gy-ih4"/>
@@ -1658,6 +1705,7 @@
                         <outlet property="backgroundMusicSwitch" destination="QeG-xb-JkY" id="Q5k-Ru-xul"/>
                         <outlet property="changeTypeScaleSignificancy" destination="ZNJ-BS-KVX" id="uLk-UH-bTr"/>
                         <outlet property="closeOverlayButton" destination="nMS-iX-0GV" id="9eD-6U-0WW"/>
+                        <outlet property="defaultView" destination="oYo-Wd-sGW" id="PI7-so-5Va"/>
                         <outlet property="generalPointLabel" destination="On5-Eh-zng" id="rbe-aa-Odt"/>
                         <outlet property="generalSlidersInfoLabel" destination="D2B-jp-edS" id="3Gw-QR-aRK"/>
                         <outlet property="generalSpeakLabel" destination="heI-9n-96b" id="uAF-A0-jqA"/>
@@ -1700,11 +1748,13 @@
                         <outlet property="snapbackSwitch" destination="JoH-6w-5v0" id="RX4-bi-Zij"/>
                         <outlet property="speakModeSpeechLoudnessLabel" destination="eIP-c5-2oL" id="OD2-gu-kGe"/>
                         <outlet property="speakModeToleranceLabel" destination="hDw-r9-hpI" id="0Su-YX-RpT"/>
+                        <outlet property="super_Btn_Default" destination="yEB-pY-xlW" id="Qvn-of-PC1"/>
                         <outlet property="super_Btn_Play" destination="m03-tk-PSK" id="HXe-LX-mLV"/>
                         <outlet property="super_Btn_Record" destination="d9D-NR-f7G" id="2j3-LS-b7W"/>
                         <outlet property="super_descLabel" destination="YBK-Aa-zb0" id="lst-IW-p5J"/>
                         <outlet property="super_fileLabel" destination="G8V-Yy-Ymn" id="qUH-FT-S9d"/>
                         <outlet property="super_itunes_Btn_Play" destination="XEK-XJ-ap0" id="w0C-ov-Gws"/>
+                        <outlet property="try_Btn_Default" destination="mNX-Oa-lHK" id="JkK-8V-VAC"/>
                         <outlet property="try_Btn_Play" destination="knq-o8-acH" id="uzP-pE-G44"/>
                         <outlet property="try_Btn_Record" destination="oYp-gL-EeS" id="vlt-fL-o2W"/>
                         <outlet property="try_fileLabel" destination="q6M-J6-UR1" id="Tma-b5-O8Z"/>
@@ -1713,6 +1763,7 @@
                         <outlet property="typeModeView" destination="CxU-q9-qR6" id="jco-0n-c8A"/>
                         <outlet property="uploadCancelBtn" destination="YR5-xq-K31" id="f4W-wO-kg6"/>
                         <outlet property="uploadProgressBar" destination="MSz-J1-l5D" id="xyr-gp-XU8"/>
+                        <outlet property="welldone_Btn_Default" destination="Eyg-kf-UUv" id="8Nb-2n-g6R"/>
                         <outlet property="welldone_Btn_Play" destination="Ulg-a0-bAF" id="ZEu-yZ-tFS"/>
                         <outlet property="welldone_Btn_Record" destination="tnP-iW-c79" id="0KC-D4-lay"/>
                         <outlet property="welldone_descLabel" destination="ef6-PE-Jf0" id="5BS-yW-wqf"/>

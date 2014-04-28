@@ -198,7 +198,7 @@
     CGRect currentFrame = self.sayModeView.frame;
     currentFrame.origin.y = 355;
     self.sayModeView.frame = currentFrame;
-    self.promptSourceSelectionView.hidden = YES;
+    self.promptSourceSelectionView.hidden = NO;
     self.isEdited = NO;
     
     praiseFileLabelArray = [NSMutableArray array];
@@ -206,6 +206,8 @@
     [praiseFileLabelArray addObject:self.awesome_fileLabel];
     [praiseFileLabelArray addObject:self.welldone_fileLabel];
     [praiseFileLabelArray addObject:self.try_fileLabel];
+
+    self.defaultPlayBtnArray = [NSArray arrayWithObjects:self.super_Btn_Default,self.awesome_Btn_Default, self.welldone_Btn_Default,self.try_Btn_Default, nil];
     
     self.recordPlayBtnArray = [NSArray arrayWithObjects:self.super_Btn_Play,self.awesome_Btn_Play, self.welldone_Btn_Play,self.try_Btn_Play, nil];
     
@@ -252,6 +254,7 @@
             self.welldone_descLabel.text = NSLocalizedString(@"A praise prompt to encourage the student when a easy puzzle is completed.", nil);
             self.tryagain_descLabel.text = NSLocalizedString(@"A praise prompt to encourage the student when a puzzle is not completed.", nil);
             
+            self.defaultView.hidden = NO;
             self.recordView.hidden = YES;
             self.itunesView.hidden = YES;
             for (int i = 0; i < [praiseFileLabelArray count]; i++) {
@@ -268,6 +271,7 @@
             self.welldone_descLabel.text = NSLocalizedString(@"Record a praise prompt to encourage the student when a easy puzzle is completed (Less than 2 seconds).", nil);
             self.tryagain_descLabel.text = NSLocalizedString(@"Record a praise prompt to encourage the student when a puzzle is not completed (Less than 2 seconds).", nil);
             
+            self.defaultView.hidden = YES;
             self.recordView.hidden = NO;
             self.itunesView.hidden = YES;
             
@@ -290,6 +294,7 @@
             self.welldone_descLabel.text = NSLocalizedString(@"Select a praise prompt to encourage the student when a easy puzzle is completed. (Less than 2 seconds)", nil);
             self.tryagain_descLabel.text = NSLocalizedString(@"Select a praise prompt to encourage the student when a puzzle is not completed. (Less than 2 seconds)", nil);
             
+            self.defaultView.hidden = YES;
             self.recordView.hidden = YES;
             self.itunesView.hidden = NO;
             
@@ -731,15 +736,35 @@
 }
 
 
+- (IBAction)playDefaultPrompt:(id)sender {
+    UIButton *currentBtn = (UIButton *)sender;
+    
+    NSString *bundleRoot = [[NSBundle mainBundle] bundlePath];
+    NSLog(@"directory found ====== %@",bundleRoot);
+    NSFileManager *fm = [NSFileManager defaultManager];
+    NSArray *dirContents = [fm contentsOfDirectoryAtPath:bundleRoot error:nil];
+    NSPredicate *fltr;
+    fltr = [NSPredicate predicateWithFormat:@"(self ENDSWITH '.caf') AND (self CONTAINS[c] %@)", [defaultPromptArray objectAtIndex:currentBtn.tag ]];
+    NSArray *onlyWAVs = [dirContents filteredArrayUsingPredicate:fltr];
+    NSLog(@"directoryContents ====== %@",onlyWAVs);
+    
+    NSString * promptPath = [[NSBundle mainBundle] pathForResource:[onlyWAVs[0] stringByDeletingPathExtension] ofType:@"caf"];
+    
+    player = [[AVAudioPlayer alloc]initWithContentsOfURL:[NSURL fileURLWithPath: promptPath] error:nil];
+    [player play];
+    
+    [self updatePlayPorgressCircleWith:currentBtn.tag With:self.defaultPlayBtnArray];
+}
+
+
 - (IBAction)playRecordedPrompt:(id)sender
 {
     UIButton *currentBtn = (UIButton *)sender;
     
     player = [[AVAudioPlayer alloc]initWithContentsOfURL:[NSURL fileURLWithPath: [recordFilePathArray objectAtIndex:currentBtn.tag ] ] error:nil];
     [player play];
-   
-    [self updatePlayPorgressCircleWith:currentBtn.tag With:self.recordPlayBtnArray];
     
+    [self updatePlayPorgressCircleWith:currentBtn.tag With:self.recordPlayBtnArray];
 }
 
 -(void)updatePlayPorgressCircleWith:(int)index With:(NSArray *)currentPlayButtonArray{
