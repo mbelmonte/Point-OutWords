@@ -239,8 +239,6 @@
         currentFrame.origin.y = 112;
         ((UIView *)[self.sideBarViewArray objectAtIndex:i]).frame = currentFrame;
     }
-
-    self.timer = [[NSTimer alloc]init];
 }
 
 -(void)updatePromptViewWith:(int)controlIndex
@@ -746,7 +744,7 @@
     self.progressCircleView = [[ProgressView alloc]initWithFrame:CGRectMake(0, 0, 35, 35)];
     [((UIView *)[currentPlayButtonArray objectAtIndex:index]) addSubview:self.progressCircleView];
     //[((UIView *)[currentPlayButtonArray objectAtIndex:index]) sendSubviewToBack:self.progressCircleView];
-    [NSTimer scheduledTimerWithTimeInterval:1.0/60.0 target:self selector:@selector(updateTime:) userInfo:nil repeats:YES];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0/60.0 target:self selector:@selector(updateTime:) userInfo:nil repeats:YES];
 
 }
 
