@@ -679,15 +679,23 @@
 }
 
 - (IBAction)handleSideBarPressed:(id)sender {
-    
     UIButton *currentButton = (UIButton *)sender;
     [self detailViewSwitch:currentButton.tag];
+    //currentButton.backgroundColor = [UIColor blackColor];
+    for (int i = 10; i < 14; i++) {
+        if (i != currentButton.tag) {
+            [self.view viewWithTag:i].backgroundColor = [UIColor grayColor];
+        }
+        else{
+            [self.view viewWithTag:i].backgroundColor = [UIColor viewFlipsideBackgroundColor];
+        }
+    }
 }
 
 -(void)detailViewSwitch:(int)index
 {
     for (int i = 0; i < [self.sideBarViewArray count]; i++) {
-        if (i == index) {
+        if (i == index-10) {
             ((UIView *)[self.sideBarViewArray objectAtIndex:i]).hidden = NO;
 
         }
