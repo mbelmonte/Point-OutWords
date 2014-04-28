@@ -11,6 +11,7 @@
 		00766405189D8880009FE8DE /* AcousticModelSpanish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 00766401189D8880009FE8DE /* AcousticModelSpanish.bundle */; };
 		00766406189D8880009FE8DE /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00766402189D8880009FE8DE /* OpenEars.framework */; };
 		00766407189D8880009FE8DE /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00766403189D8880009FE8DE /* Slt.framework */; };
+		00D20154190DE89100305EF9 /* ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D20153190DE89100305EF9 /* ProgressView.m */; };
 		2007A4691839DFCB00F7A541 /* BtnBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 2007A4681839DFCB00F7A541 /* BtnBack.png */; };
 		2007A46B183A702300F7A541 /* logos.png in Resources */ = {isa = PBXBuildFile; fileRef = 2007A46A183A702300F7A541 /* logos.png */; };
 		2022B72917FEA7090061D6EE /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2022B72817FEA7090061D6EE /* libz.dylib */; };
@@ -602,6 +603,8 @@
 		00766401189D8880009FE8DE /* AcousticModelSpanish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelSpanish.bundle; sourceTree = "<group>"; };
 		00766402189D8880009FE8DE /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenEars.framework; sourceTree = "<group>"; };
 		00766403189D8880009FE8DE /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
+		00D20152190DE89100305EF9 /* ProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProgressView.h; path = Autista/Models/ProgressView.h; sourceTree = "<group>"; };
+		00D20153190DE89100305EF9 /* ProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProgressView.m; path = Autista/Models/ProgressView.m; sourceTree = "<group>"; };
 		2007A4681839DFCB00F7A541 /* BtnBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BtnBack.png; sourceTree = "<group>"; };
 		2007A46A183A702300F7A541 /* logos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logos.png; sourceTree = "<group>"; };
 		2022B72817FEA7090061D6EE /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -2371,6 +2374,8 @@
 		8DA3DD67160608DE0031950A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				00D20152190DE89100305EF9 /* ProgressView.h */,
+				00D20153190DE89100305EF9 /* ProgressView.m */,
 				8D54EB7416B4EB1E00C52758 /* GlobalPreferences.h */,
 				8D54EB7516B4EB1E00C52758 /* GlobalPreferences.m */,
 				8D88902E16BD0BED003FA187 /* EventLogger.h */,
@@ -3295,6 +3300,7 @@
 				8DEB60691662D004000E8290 /* SayPuzzleViewController.m in Sources */,
 				8DFAE2F5166322A8004A9752 /* VUMeterTable.m in Sources */,
 				8DFAE2F816632522004A9752 /* VULevelMeter.m in Sources */,
+				00D20154190DE89100305EF9 /* ProgressView.m in Sources */,
 				2022B72C17FF04430061D6EE /* AutistaIAPHelper.m in Sources */,
 				8DA69A7816B539EB00CB7A79 /* FirstLaunchViewController.m in Sources */,
 				8DA69A7B16B53E6300CB7A79 /* InfoView.m in Sources */,
