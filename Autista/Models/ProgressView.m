@@ -57,7 +57,7 @@
     CGContextBeginPath(context);
     CGContextSetLineWidth(context, 2);
     [[UIColor whiteColor] set];
-    CGContextAddArc(context, 17.5, 17.5, 16.1, -0.5*M_PI, 2*M_PI*_currentProgress, NO); // 360 degree (0 to 2pi) arc
+    CGContextAddArc(context, 17.5, 17.5, 16.1, -0.5*M_PI, 2*M_PI*_currentProgress-0.5*M_PI, NO); // 360 degree (0 to 2pi) arc
     CGContextStrokePath(context);
     UIGraphicsPopContext();
     
