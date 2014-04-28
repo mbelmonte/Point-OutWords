@@ -679,7 +679,7 @@
 
 - (IBAction)handleSideBarPressed:(id)sender {
     UIButton *currentButton = (UIButton *)sender;
-    [self detailViewSwitch:currentButton.tag];
+    [self detailViewSwitch:currentButton.tag-10];
     //currentButton.backgroundColor = [UIColor blackColor];
     for (int i = 10; i < 14; i++) {
         if (i != currentButton.tag) {
@@ -694,16 +694,13 @@
 -(void)detailViewSwitch:(int)index
 {
     for (int i = 0; i < [self.sideBarViewArray count]; i++) {
-        if (i == index-10) {
+        if (i == index) {
             ((UIView *)[self.sideBarViewArray objectAtIndex:i]).hidden = NO;
-
         }
         else{
             ((UIView *)[self.sideBarViewArray objectAtIndex:i]).hidden = YES;
         }
     }
-    
-    
 }
 
 - (IBAction)recordPrompt:(id)sender
