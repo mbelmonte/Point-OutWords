@@ -747,11 +747,18 @@
 
 - (void)updateTime:(NSTimer *)timer{
     if (self.progressCircleView) {
+        if (player.isPlaying) {
+            
+            self.progressCircleView.currentProgress = (player.currentTime/player.duration);
+            
+        }
+        else if(self.myPlayer.nowPlayingItem){
+             self.progressCircleView.currentProgress = (self.myPlayer.currentPlaybackTime/[[self.myPlayer.nowPlayingItem valueForProperty:MPMediaItemPropertyPlaybackDuration]doubleValue]);
+        }
         
-        self.progressCircleView.currentProgress = (player.currentTime/player.duration);
         [self.progressCircleView setNeedsDisplay];
-        
-        if (!player.isPlaying) {
+
+        if (!player.isPlaying && !self.myPlayer.nowPlayingItem) {
 
             [self.progressCircleView removeFromSuperview];
             self.progressCircleView = nil;
@@ -901,9 +908,8 @@
     MPMediaQuery *mediaTypeQuery = [[MPMediaQuery alloc] initWithFilterPredicates:predicateSet];
     [self.myPlayer setQueueWithQuery:mediaTypeQuery];
     [self.myPlayer play];
-    
+    [self updatePlayPorgressCircleWith:self.currentSelection With:self.itunesPlayBtnArray];
 }
-
 
 
 
