@@ -143,8 +143,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "967"
             endingLineNumber = "967"
-            landmarkName = "-uploadZipFiles:"
-            landmarkType = "5">
+            landmarkName = "@implementation AdminViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -159,7 +159,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "986"
             endingLineNumber = "986"
-            landmarkName = "-uploadZipFiles:"
+            landmarkName = "-savePraiseIntoPlist:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

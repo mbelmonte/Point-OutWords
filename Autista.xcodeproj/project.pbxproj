@@ -149,8 +149,16 @@
 		49C2C6E6190C303E0019600C /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 49C2C6DD190C303D0019600C /* mztools.c */; };
 		49C2C6E7190C303E0019600C /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 49C2C6DF190C303D0019600C /* unzip.c */; };
 		49C2C6E8190C303E0019600C /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 49C2C6E1190C303D0019600C /* zip.c */; };
+		49C2C70F190DEA550019600C /* CC BY-SA 3.0 Unported License in Resources */ = {isa = PBXBuildFile; fileRef = 49C2C706190DEA550019600C /* CC BY-SA 3.0 Unported License */; };
+		49C2C710190DEA550019600C /* fdl-1.3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 49C2C707190DEA550019600C /* fdl-1.3.txt */; };
+		49C2C711190DEA550019600C /* gpl.txt in Resources */ = {isa = PBXBuildFile; fileRef = 49C2C708190DEA550019600C /* gpl.txt */; };
+		49C2C712190DEA550019600C /* minizip License in Resources */ = {isa = PBXBuildFile; fileRef = 49C2C709190DEA550019600C /* minizip License */; };
+		49C2C713190DEA550019600C /* minizip license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 49C2C70A190DEA550019600C /* minizip license.txt */; };
+		49C2C714190DEA550019600C /* OpenEARS License in Resources */ = {isa = PBXBuildFile; fileRef = 49C2C70B190DEA550019600C /* OpenEARS License */; };
+		49C2C715190DEA550019600C /* SBJSON License in Resources */ = {isa = PBXBuildFile; fileRef = 49C2C70C190DEA550019600C /* SBJSON License */; };
+		49C2C716190DEA550019600C /* UIDevice-with-UniqueIdentifier-for-iOS-5 License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 49C2C70D190DEA550019600C /* UIDevice-with-UniqueIdentifier-for-iOS-5 License.txt */; };
+		49C2C717190DEA550019600C /* ZipArchive License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 49C2C70E190DEA550019600C /* ZipArchive License.txt */; };
 		49EFC70518FA457D0012B667 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49EFC70418FA457D0012B667 /* Localizable.strings */; };
-		49EFC70718FA58EE0012B667 /* Licenses in Resources */ = {isa = PBXBuildFile; fileRef = 49EFC70618FA58EE0012B667 /* Licenses */; };
 		8D18220216B9A93D005431FF /* AVAudioPlayer+Fade.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF5E0B316B983F1005D8154 /* AVAudioPlayer+Fade.m */; };
 		8D234A8316C7422E0040DC14 /* Ball01B.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D234A5A16C7422E0040DC14 /* Ball01B.png */; };
 		8D234A8416C7422E0040DC14 /* Ball02A.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D234A5B16C7422E0040DC14 /* Ball02A.png */; };
@@ -752,8 +760,16 @@
 		49C2C6E0190C303D0019600C /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = Autista/ZipArchive/minizip/unzip.h; sourceTree = "<group>"; };
 		49C2C6E1190C303D0019600C /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = zip.c; path = Autista/ZipArchive/minizip/zip.c; sourceTree = "<group>"; };
 		49C2C6E2190C303E0019600C /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zip.h; path = Autista/ZipArchive/minizip/zip.h; sourceTree = "<group>"; };
+		49C2C706190DEA550019600C /* CC BY-SA 3.0 Unported License */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "CC BY-SA 3.0 Unported License"; path = "Licenses/CC BY-SA 3.0 Unported License"; sourceTree = "<group>"; };
+		49C2C707190DEA550019600C /* fdl-1.3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "fdl-1.3.txt"; path = "Licenses/fdl-1.3.txt"; sourceTree = "<group>"; };
+		49C2C708190DEA550019600C /* gpl.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = gpl.txt; path = Licenses/gpl.txt; sourceTree = "<group>"; };
+		49C2C709190DEA550019600C /* minizip License */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "minizip License"; path = "Licenses/minizip License"; sourceTree = "<group>"; };
+		49C2C70A190DEA550019600C /* minizip license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "minizip license.txt"; path = "Licenses/minizip license.txt"; sourceTree = "<group>"; };
+		49C2C70B190DEA550019600C /* OpenEARS License */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "OpenEARS License"; path = "Licenses/OpenEARS License"; sourceTree = "<group>"; };
+		49C2C70C190DEA550019600C /* SBJSON License */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "SBJSON License"; path = "Licenses/SBJSON License"; sourceTree = "<group>"; };
+		49C2C70D190DEA550019600C /* UIDevice-with-UniqueIdentifier-for-iOS-5 License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "UIDevice-with-UniqueIdentifier-for-iOS-5 License.txt"; path = "Licenses/UIDevice-with-UniqueIdentifier-for-iOS-5 License.txt"; sourceTree = "<group>"; };
+		49C2C70E190DEA550019600C /* ZipArchive License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "ZipArchive License.txt"; path = "Licenses/ZipArchive License.txt"; sourceTree = "<group>"; };
 		49EFC70418FA457D0012B667 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = Autista/Localization/Localizable.strings; sourceTree = "<group>"; };
-		49EFC70618FA58EE0012B667 /* Licenses */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Licenses; sourceTree = "<group>"; };
 		8D234A5A16C7422E0040DC14 /* Ball01B.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ball01B.png; sourceTree = "<group>"; };
 		8D234A5B16C7422E0040DC14 /* Ball02A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ball02A.png; sourceTree = "<group>"; };
 		8D234A5C16C7422E0040DC14 /* Ball03L.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ball03L.png; sourceTree = "<group>"; };
@@ -1861,6 +1877,33 @@
 			name = minizip;
 			sourceTree = "<group>";
 		};
+		49C2C705190DEA470019600C /* Licenses */ = {
+			isa = PBXGroup;
+			children = (
+				49C2C706190DEA550019600C /* CC BY-SA 3.0 Unported License */,
+				49C2C707190DEA550019600C /* fdl-1.3.txt */,
+				49C2C708190DEA550019600C /* gpl.txt */,
+				49C2C709190DEA550019600C /* minizip License */,
+				49C2C70A190DEA550019600C /* minizip license.txt */,
+				49C2C70B190DEA550019600C /* OpenEARS License */,
+				49C2C70C190DEA550019600C /* SBJSON License */,
+				49C2C70D190DEA550019600C /* UIDevice-with-UniqueIdentifier-for-iOS-5 License.txt */,
+				49C2C70E190DEA550019600C /* ZipArchive License.txt */,
+			);
+			name = Licenses;
+			sourceTree = "<group>";
+		};
+		49C2C718190DEA5F0019600C /* UIDevice-with-UniqueIdentifier-for-iOS-5 */ = {
+			isa = PBXGroup;
+			children = (
+				49C2C6CD190C301C0019600C /* NSString+MD5Addition.h */,
+				49C2C6CE190C301C0019600C /* NSString+MD5Addition.m */,
+				49C2C6CF190C301C0019600C /* UIDevice+IdentifierAddition.h */,
+				49C2C6D0190C301C0019600C /* UIDevice+IdentifierAddition.m */,
+			);
+			name = "UIDevice-with-UniqueIdentifier-for-iOS-5";
+			sourceTree = "<group>";
+		};
 		49EFC70318FA45550012B667 /* Localization */ = {
 			isa = PBXGroup;
 			children = (
@@ -2222,11 +2265,8 @@
 		8D9ABB341720E3E400C94E1D /* External */ = {
 			isa = PBXGroup;
 			children = (
+				49C2C718190DEA5F0019600C /* UIDevice-with-UniqueIdentifier-for-iOS-5 */,
 				49C2C6D3190C301F0019600C /* ZipArchive */,
-				49C2C6CD190C301C0019600C /* NSString+MD5Addition.h */,
-				49C2C6CE190C301C0019600C /* NSString+MD5Addition.m */,
-				49C2C6CF190C301C0019600C /* UIDevice+IdentifierAddition.h */,
-				49C2C6D0190C301C0019600C /* UIDevice+IdentifierAddition.m */,
 			);
 			name = External;
 			sourceTree = "<group>";
@@ -2234,7 +2274,7 @@
 		8DA3DD081604C6E20031950A = {
 			isa = PBXGroup;
 			children = (
-				49EFC70618FA58EE0012B667 /* Licenses */,
+				49C2C705190DEA470019600C /* Licenses */,
 				49EFC70318FA45550012B667 /* Localization */,
 				20E4A563186FDD1800B473C2 /* Icon 152.png */,
 				20E4A562186FDD0400B473C2 /* Icon 76.png */,
@@ -2767,6 +2807,7 @@
 				8D54C72C16FC4DDA0049AB68 /* N.aifc in Resources */,
 				8D54C72D16FC4DDA0049AB68 /* O.aifc in Resources */,
 				8D54C72E16FC4DDA0049AB68 /* P.aifc in Resources */,
+				49C2C714190DEA550019600C /* OpenEARS License in Resources */,
 				8D54C72F16FC4DDA0049AB68 /* Q.aifc in Resources */,
 				2054BD6218364B9300DFFC44 /* Happy_full_3_Tanu.caf in Resources */,
 				8D54C73016FC4DDA0049AB68 /* R.aifc in Resources */,
@@ -2785,6 +2826,7 @@
 				8D54C73716FC4DDA0049AB68 /* Y.aifc in Resources */,
 				8D54C73816FC4DDA0049AB68 /* Zed.aifc in Resources */,
 				8D54C73916FC4DDA0049AB68 /* Zee.aifc in Resources */,
+				49C2C716190DEA550019600C /* UIDevice-with-UniqueIdentifier-for-iOS-5 License.txt in Resources */,
 				8DA1743716C4E48B008FBCC9 /* Girl.png in Resources */,
 				8DA1743816C4E48F008FBCC9 /* GirlPlaceHolder.png in Resources */,
 				8D4BCA8416BA8F1000A34EFD /* KeyClick.caf in Resources */,
@@ -2807,6 +2849,7 @@
 				8DF5E08416B95DDB005D8154 /* Banana03N.png in Resources */,
 				2054BD1B18364B9300DFFC44 /* Balloon_Syll_1_a_Tanu.caf in Resources */,
 				8DF5E08516B95DDB005D8154 /* Banana04A.png in Resources */,
+				49C2C70F190DEA550019600C /* CC BY-SA 3.0 Unported License in Resources */,
 				8DF5E08616B95DDB005D8154 /* Banana05N.png in Resources */,
 				8DF5E08716B95DDB005D8154 /* Banana06A.png in Resources */,
 				8DF5E08816B95DDB005D8154 /* Grapes01G.png in Resources */,
@@ -2909,10 +2952,12 @@
 				8D54EB1A16B4C1A400C52758 /* TowelPlaceHolder.png in Resources */,
 				8D54EB4F16B4C20900C52758 /* Bread.png in Resources */,
 				8D54EB5016B4C20900C52758 /* BreadPlaceHolder.png in Resources */,
+				49C2C711190DEA550019600C /* gpl.txt in Resources */,
 				8D54EB5116B4C20900C52758 /* Cup.png in Resources */,
 				8D54EB5216B4C20900C52758 /* CupPlaceHolder.png in Resources */,
 				2054BD3418364B9300DFFC44 /* Apple_Syll_1_b_Tanu.caf in Resources */,
 				8D54EB5316B4C20900C52758 /* KitchenBackground.png in Resources */,
+				49C2C715190DEA550019600C /* SBJSON License in Resources */,
 				8D54EB5416B4C20900C52758 /* KitchenScene.png in Resources */,
 				8D54EB5516B4C20900C52758 /* Milk.png in Resources */,
 				8D54EB5616B4C20900C52758 /* MilkPlaceHolder.png in Resources */,
@@ -3023,6 +3068,7 @@
 				8DF5E00816B90BD1005D8154 /* Spoon03O.png in Resources */,
 				2054BD2818364B9300DFFC44 /* Knife_full_1_Tanu.caf in Resources */,
 				8DF5E00916B90BD1005D8154 /* Spoon04O.png in Resources */,
+				49C2C717190DEA550019600C /* ZipArchive License.txt in Resources */,
 				8DF5E00A16B90BD1005D8154 /* Spoon05N.png in Resources */,
 				8DF5E00B16B90BD1005D8154 /* Water01W.png in Resources */,
 				2054BD3018364B9300DFFC44 /* Table_full_1_Tanu.caf in Resources */,
@@ -3055,7 +3101,6 @@
 				8DA02A8716BAB4B70014D426 /* icon@2x.png in Resources */,
 				8D8890A016BD8DAB003FA187 /* Balloon.png in Resources */,
 				8D8890A116BD8DAB003FA187 /* BalloonPlaceHolder.png in Resources */,
-				49EFC70718FA58EE0012B667 /* Licenses in Resources */,
 				8D8890A316BD8DAB003FA187 /* BirthdayPartyBackground.png in Resources */,
 				8D8890A416BD8DAB003FA187 /* BirthdayPartyScene.png in Resources */,
 				8D8890A516BD8DAB003FA187 /* BirthdayPartySceneSelector.png in Resources */,
@@ -3134,9 +3179,11 @@
 				8D8890DC16BD8DAB003FA187 /* Pencil05I.png in Resources */,
 				8D8890DD16BD8DAB003FA187 /* Pencil06L.png in Resources */,
 				8D8890DE16BD8DAB003FA187 /* Table01T.png in Resources */,
+				49C2C712190DEA550019600C /* minizip License in Resources */,
 				2054BD2F18364B9300DFFC44 /* Pencil_Syll_2_b_Tanu.caf in Resources */,
 				8D8890DF16BD8DAB003FA187 /* Table02A.png in Resources */,
 				8D8890E016BD8DAB003FA187 /* Table03B.png in Resources */,
+				49C2C710190DEA550019600C /* fdl-1.3.txt in Resources */,
 				8D8890E116BD8DAB003FA187 /* Table04L.png in Resources */,
 				8D8890E216BD8DAB003FA187 /* Table05E.png in Resources */,
 				2054BD4D18364B9300DFFC44 /* Onion_Syll_2_b_Tanu.caf in Resources */,
@@ -3186,6 +3233,7 @@
 				8F383EFC18E7802600627901 /* record.jpg in Resources */,
 				8D234AA116C7422E0040DC14 /* Racket05E.png in Resources */,
 				8D234AA216C7422E0040DC14 /* Racket06T.png in Resources */,
+				49C2C713190DEA550019600C /* minizip license.txt in Resources */,
 				8D234AA316C7422E0040DC14 /* Slide01S.png in Resources */,
 				8D234AA416C7422E0040DC14 /* Slide02L.png in Resources */,
 				8D234AA516C7422E0040DC14 /* Slide03I.png in Resources */,
