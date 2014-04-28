@@ -240,6 +240,7 @@
         ((UIView *)[self.sideBarViewArray objectAtIndex:i]).frame = currentFrame;
     }
 
+    self.timer = [[NSTimer alloc]init];
 }
 
 -(void)updatePromptViewWith:(int)controlIndex
@@ -735,7 +736,37 @@
     
     player = [[AVAudioPlayer alloc]initWithContentsOfURL:[NSURL fileURLWithPath: [recordFilePathArray objectAtIndex:currentBtn.tag ] ] error:nil];
     [player play];
+   
+    [self updatePlayPorgressCircleWith:currentBtn.tag With:self.recordPlayBtnArray];
     
+}
+
+-(void)updatePlayPorgressCircleWith:(int)index With:(NSArray *)currentPlayButtonArray{
+    
+    self.progressCircleView = [[ProgressView alloc]initWithFrame:CGRectMake(0, 0, 35, 35)];
+    [((UIView *)[currentPlayButtonArray objectAtIndex:index]) addSubview:self.progressCircleView];
+    //[((UIView *)[currentPlayButtonArray objectAtIndex:index]) sendSubviewToBack:self.progressCircleView];
+    [NSTimer scheduledTimerWithTimeInterval:1.0/60.0 target:self selector:@selector(updateTime:) userInfo:nil repeats:YES];
+
+}
+
+- (void)updateTime:(NSTimer *)timer{
+    if (self.progressCircleView) {
+        
+        self.progressCircleView.currentProgress = (player.currentTime/player.duration);
+        [self.progressCircleView setNeedsDisplay];
+        
+        if (self.progressCircleView.currentProgress < 1) {
+           
+        }
+        
+        else{
+            [self.progressCircleView removeFromSuperview];
+            self.progressCircleView = nil;
+            [self.timer invalidate];
+        }
+    
+    }
     
 }
 

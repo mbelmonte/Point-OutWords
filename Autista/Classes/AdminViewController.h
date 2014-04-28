@@ -23,6 +23,8 @@
 #import <AVFoundation/AVFoundation.h>
 #import <AudioToolbox/AudioToolbox.h>
 #import "PuzzleObject.h"
+#import "ProgressView.h"
+
 /**
  *  View controller for admin view
  */
@@ -202,7 +204,9 @@
 @property (weak, nonatomic) IBOutlet UIView *generalView;
 @property (weak, nonatomic) IBOutlet UIView *typeModeView;
 
+@property ProgressView *progressCircleView;
 
+@property NSTimer *timer;
 //@property (weak, nonatomic) IBOutlet UIPickerView *promptPickerView;
 
 
