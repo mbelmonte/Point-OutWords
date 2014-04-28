@@ -754,11 +754,8 @@
         self.progressCircleView.currentProgress = (player.currentTime/player.duration);
         [self.progressCircleView setNeedsDisplay];
         
-        if (self.progressCircleView.currentProgress < 1) {
-           
-        }
-        
-        else{
+        if (!player.isPlaying) {
+
             [self.progressCircleView removeFromSuperview];
             self.progressCircleView = nil;
             [self.timer invalidate];
@@ -907,7 +904,10 @@
     MPMediaQuery *mediaTypeQuery = [[MPMediaQuery alloc] initWithFilterPredicates:predicateSet];
     [self.myPlayer setQueueWithQuery:mediaTypeQuery];
     [self.myPlayer play];
+    
 }
+
+
 
 
 #pragma marks audio picker delegate method
