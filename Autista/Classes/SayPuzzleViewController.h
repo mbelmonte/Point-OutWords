@@ -166,7 +166,7 @@
 /**
  *  Stop myPlayer from playing.
  */
-- (void)stopPlaying;
+
 - (IBAction)playPuzzleCompletedSuccessfullySound;
 
 /**-----------------------------------------------------------------------------
@@ -179,11 +179,34 @@
  */
 - (void)initializePuzzleState;
 
+/**
+ *  Desaturate pieceView images to be used in normal state
+ *
+ */
+- (UIImage *)desaturateImage:(UIImage *)image saturation:(CGFloat)saturation;
 
 /**-----------------------------------------------------------------------------
- * @name Handling speech recognition
+ * @name Speak mode main logic, play prompts and recognize speech
  * -----------------------------------------------------------------------------
  */
+
+/**
+ *  Language mode path, used by OpenEARS
+ */
+@property NSString *lmPath;
+
+/**
+ *  Language mode generator, used by OpenEARS
+ */
+@property LanguageModelGenerator *lmGenerator;
+@property PocketsphinxController *pocketsphinxController;
+@property OpenEarsEventsObserver *openEarsEventsObserver;
+@property NSString *globalHypothesis;
+
+/**
+ * Flag to determin whether it's the first prompt
+ */
+@property NSInteger notFirstOne;
 
 -(Float32)audioVolume;
 -(Float32)audioVolumeFac;
@@ -253,6 +276,7 @@
  * @name OpenEars Delegate Methods
  * -----------------------------------------------------------------------------
  */
+
 /**
  */
 - (OpenEarsEventsObserver *)openEarsEventsObserver;
@@ -270,4 +294,28 @@
 - (void) pocketsphinxDidChangeLanguageModelToFile:(NSString *)newLanguageModelPathAsString andDictionary:(NSString *)newDictionaryPathAsString;
 - (void) pocketSphinxContinuousSetupDidFail;
 - (void) testRecognitionCompleted;
+
+
+/**-----------------------------------------------------------------------------
+ * @name Properties and methods to record for logging purpose
+ * -----------------------------------------------------------------------------
+ */
+/**
+ *
+ */
+
+@property NSString *dicPath;
+
+@property NSString *dirToCreate;
+
+@property NSString *recordedFileName;
+
+
+@property AVAudioRecorder* wholeSceneVoiceRecorder;
+
+@property  AVAudioPlayer *player;
+
+- (void)timeoutTimerCallback:(NSTimer *)timer;
+
+-(void)startRecordingWith;
 @end

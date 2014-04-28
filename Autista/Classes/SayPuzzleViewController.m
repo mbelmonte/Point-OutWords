@@ -49,29 +49,11 @@
 @interface SayPuzzleViewController () <AVAudioPlayerDelegate>{
     UIActivityIndicatorView *activityIndicator;
 }
-@property LanguageModelGenerator *lmGenerator;
-@property PocketsphinxController *pocketsphinxController;
-@property OpenEarsEventsObserver *openEarsEventsObserver;
-@property NSString *globalHypothesis;
-@property NSString *lmPath;
-@property NSString *dicPath;
-@property NSInteger alreadyPassSay;
-
-@property NSString *dirToCreate;
-
-@property NSString *recordedFileName;
-
-@property NSInteger notFirstOne;
-
-@property AVAudioRecorder* wholeSceneVoiceRecorder;
-
-@property  AVAudioPlayer *player;
 @end
 
 @implementation SayPuzzleViewController
 @synthesize  lmGenerator,pocketsphinxController,openEarsEventsObserver;
 @synthesize globalHypothesis, lmPath, dicPath, recordedFileName;
-@synthesize alreadyPassSay;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -264,8 +246,7 @@
 - (void)viewDidAppear:(BOOL)animated
 {
 	[super viewDidAppear:animated];
-    
-    alreadyPassSay = 1;
+
 	
 	if (_adminVC != nil && _prefs.guidedModeEnabled == NO)		{
         //[recorder stop];
