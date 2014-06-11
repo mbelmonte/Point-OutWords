@@ -91,7 +91,6 @@
  */
 @property (nonatomic, retain) IBOutlet UIImageView *placeHolder;
 
-@property CAShapeLayer *pathLayer;
 /**-----------------------------------------------------------------------------
  * @name Handling admin panel interations
  * -----------------------------------------------------------------------------

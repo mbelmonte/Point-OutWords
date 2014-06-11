@@ -84,6 +84,7 @@
 	NSTimer *_adminOverlayTimer;
     NSTimer *_backOverlayTimer;
 	AdminViewController *_adminVC;
+    
 }
 /**-----------------------------------------------------------------------------
  * @name Properties
@@ -93,6 +94,9 @@
  *  The object that stores the current puzzle
  */
 @property (nonatomic, retain) PuzzleObject *object;
+
+@property CAShapeLayer *pathLayer;
+
 /**
  *  Array of all puzzle pieces.
  */

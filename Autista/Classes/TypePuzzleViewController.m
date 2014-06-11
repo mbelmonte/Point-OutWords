@@ -42,7 +42,7 @@
 
 @implementation TypePuzzleViewController
 @synthesize myPlayer = _myPlayer;
-@synthesize motionManager;
+@synthesize motionManager, pathLayer;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -781,27 +781,29 @@
     {
 		//piece.frame = CGRectOffset(piece.frame, -512, -384);//move all the pieces to origin(0,0)
         //add gesture to all the pieces..
-        UITapGestureRecognizer *tap =
-        [[UITapGestureRecognizer alloc] initWithTarget:self
-                                                action:@selector(remindAnimation:)];
         
         UIPanGestureRecognizer *pan =
         [[UIPanGestureRecognizer alloc] initWithTarget:self
                                                 action:@selector(remindAnimation:)];
         
-        tap.delegate = self;
         pan.delegate = self;
         
-        tap.cancelsTouchesInView = NO;
         pan.cancelsTouchesInView = NO;
-        
-        [piece addGestureRecognizer:tap];
+       
         [self.view addGestureRecognizer:pan];
         
         piece.userInteractionEnabled = NO;
     }
     
     
+    UITapGestureRecognizer *tap =
+    [[UITapGestureRecognizer alloc] initWithTarget:self
+                                            action:@selector(remindAnimation:)];
+    
+    [self.view addGestureRecognizer:tap];
+     tap.delegate = self;
+     tap.cancelsTouchesInView = NO;
+
     //add text to pieces...
     [self addCharacterOnPuzzlePiece];
     
@@ -837,6 +839,54 @@
 #pragma mark - pieces Gesture method
 - (void)remindAnimation:(UIGestureRecognizer *)recognizer {
     CGPoint touchPoint = [recognizer locationInView:self.view];
+    
+        
+    if (pathLayer) {
+        
+        [pathLayer removeAllAnimations];
+        [pathLayer removeFromSuperlayer];
+        
+    }
+    
+    CGPoint finalPoint = [self buttonFromASCIICode:[[_object.title uppercaseString] characterAtIndex:_currentLetterPosition]].layer.position;
+    finalPoint = [self.view convertPoint:finalPoint fromView:self.keyboard];
+    UIBezierPath *path = [UIBezierPath bezierPath];
+//    CGPoint finalPoint = CGPointMake(touchedPiece.finalPoint.x + touchedPiece.frame.size.width/2, touchedPiece.finalPoint.y + touchedPiece.frame.size.height/2);
+    [path moveToPoint:touchPoint];
+    [path addLineToPoint:finalPoint];
+    
+    pathLayer = [CAShapeLayer layer];
+    pathLayer.hidden = NO;
+    pathLayer.frame = self.view.layer.bounds;
+    pathLayer.geometryFlipped = NO;
+    pathLayer.path = path.CGPath;
+    pathLayer.strokeColor = [[UIColor colorWithWhite:1 alpha:0.6] CGColor];
+    pathLayer.fillColor = nil;
+    pathLayer.lineWidth = 9.0f;
+    
+    [self.view.layer addSublayer:pathLayer];
+    
+    CALayer *focusLayer = [CALayer layer];
+    UIImage *foucsImage = [UIImage imageNamed:@"focus.png"];
+    focusLayer.contents = (id)foucsImage.CGImage;
+    focusLayer.frame = CGRectMake(touchPoint.x, touchPoint.y, 25, 25);
+    focusLayer.position = CGPointZero;
+    [pathLayer addSublayer:focusLayer];
+    
+    CABasicAnimation *pathAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+    pathAnimation.duration = 0.8;
+    pathAnimation.delegate = self;
+    pathAnimation.fromValue = [NSNumber numberWithFloat:0.0f];
+    pathAnimation.toValue = [NSNumber numberWithFloat: 1.0f];
+    [pathLayer addAnimation:pathAnimation forKey:@"strokeEnd"];
+    
+    CAKeyframeAnimation *keyFrameAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
+    keyFrameAnimation.path = path.CGPath;
+    keyFrameAnimation.delegate = self;
+    keyFrameAnimation.duration = 0.8;
+    [focusLayer addAnimation:keyFrameAnimation forKey:@"position"];
+    
+    
     for ( UIView *piece in _pieces) {
         
         if (CGRectContainsPoint(piece.frame, touchPoint)) {
@@ -960,6 +1010,15 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark animation delegate method
+- (void)animationDidStop:(CAAnimation *)theAnimation finished:(BOOL)flag{
+    
+    [pathLayer removeAllAnimations];
+    pathLayer.hidden = YES;
+    [pathLayer removeFromSuperlayer];
+    
 }
 
 @end
