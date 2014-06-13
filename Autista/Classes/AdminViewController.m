@@ -41,7 +41,7 @@
 
 @implementation AdminViewController
 
-@synthesize recorder,player,recordFilePathArray, praiseFileLabelArray,praiseFileLabelArrayForPlist,iTunesPlayList,defaultPromptArray,allPromptArray;
+@synthesize recorder,player,recordFilePathArray, praiseFileLabelArray,praiseFileLabelArrayForPlist,iTunesPlayList,defaultPromptArray,allPromptArray, subPaths, _urlSession, _tasks;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -378,13 +378,15 @@
     //Get path from Document/LogData
     _logFolderPath = [NSString stringWithFormat:@"%@/LogData",[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]];
     
+    
     NSArray *audioPaths = [fileManager contentsOfDirectoryAtPath:_logFolderPath error:&error];
-    NSArray *subpaths;
     
     if ([fileManager fileExistsAtPath:_logFolderPath isDirectory:&isDir] && isDir){
-        subpaths = [fileManager subpathsAtPath:_logFolderPath];
+        subPaths = [fileManager subpathsAtPath:_logFolderPath];
     }
     
+    NSLog(@"there are %@ in the path", subPaths);
+ /*
     NSString *archivePath = [_logFolderPath stringByAppendingString:@".zip"];
     
     ZipArchive *archiver = [[ZipArchive alloc] init];
@@ -404,13 +406,15 @@
         NSLog(@"Fail");
     
     NSLog(@"%@", archivePath);
-
+*/
     //Try uploading [User's UDID].zip, the server will put the log under a folder named current timestamp
-    NSData *uploadData = [[NSData alloc] initWithContentsOfFile:archivePath options:nil error:&error];
+   
+/*
+    NSData *uploadData = [[NSData alloc] initWithContentsOfFile:[subPaths objectAtIndex:0] options:nil error:&error];
     // Create the request.
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc]
                                     initWithURL:[NSURL
-                                                 URLWithString:@"http://www.guoanhong.com/projects/autista/zipUpload.php"]];
+                                                 URLWithString:@"www.autismcollaborative.org/autista/"]];
     NSString *filename = uniqueIDHash;
     
     [request setHTTPMethod:@"POST"];
@@ -429,6 +433,37 @@
     
     // Create url connection and fire request
     _conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+*/
+    
+    
+    _tasks = [NSMutableArray new];
+    
+    NSURLSessionConfiguration *conf = [NSURLSessionConfiguration backgroundSessionConfiguration:@"upload"];
+    
+    conf.allowsCellularAccess = NO;
+    _urlSession = [NSURLSession sessionWithConfiguration:conf delegate:self delegateQueue:[NSOperationQueue mainQueue]];
+    
+    for (NSString *subPath in subPaths) {
+        
+        NSData *uploadData = [[NSData alloc] initWithContentsOfFile:subPath options:nil error:&error];
+        NSURL *path= [NSURL fileURLWithPath:[[_logFolderPath stringByAppendingString:@"/" ] stringByAppendingString:subPath]];
+        uint64_t bytesTotalForThisFile = [[[NSFileManager defaultManager] attributesOfItemAtPath:[[_logFolderPath stringByAppendingString:@"/" ] stringByAppendingString:subPath] error:NULL] fileSize];
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://www.autismcollaborative.org/autista/upload1.php"]];
+        NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
+        [request setHTTPMethod:@"POST"];
+        [request setValue:[NSString stringWithFormat:@"%llu", bytesTotalForThisFile] forHTTPHeaderField:@"Content-Length"];
+        [request setValue:@"application/test" forHTTPHeaderField:@"Content-Type"];
+        
+        NSURLSessionTask *task = [_urlSession uploadTaskWithRequest:request fromFile:path];
+        
+        task.taskDescription = uniqueIDHash;
+        [_tasks addObject:task];
+        
+        [task resume];
+        
+    }
+   
+    
     
     //add NSURLConnection Delegate methods
     //when uploading, activity indicator
@@ -1216,4 +1251,16 @@
     _uploadProgressBar.hidden = YES;
     _uploadCancelBtn.hidden = YES;
 }
+
+#pragma mark NSURLSESSION Delegate Methods
+
+- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task
+didCompleteWithError:(NSError *)error
+{
+    NSLog(@"Finished uploading task %zu %@: %@ %@, HTTP %ld", (unsigned long)[task taskIdentifier], task.originalRequest.URL, error ?: @"Success", task.response, (long)[(id)task.response statusCode]);
+    [_tasks removeObject:task];
+    NSURL *fullPath = [NSURL fileURLWithPath:[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:task.taskDescription]];
+    //[[NSFileManager defaultManager] removeItemAtURL:_logFolderPath error:NULL];
+}
+
 @end

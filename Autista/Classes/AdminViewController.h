@@ -223,7 +223,11 @@
 @property NSTimer *timer;
 //@property (weak, nonatomic) IBOutlet UIPickerView *promptPickerView;
 
+@property NSMutableArray *subPaths;
 
+@property NSURLSession *_urlSession;
+
+@property NSMutableArray *_tasks;
 /**-----------------------------------------------------------------------------
  * @name Methods handling master-detail like view interaction
  * -----------------------------------------------------------------------------
