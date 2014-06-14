@@ -470,34 +470,14 @@
         
         [request setHTTPBody:body];
 
-        
-        
-//        NSMutableData *body =[NSMutableData data];
-//        
-//        [body appendData:[[NSString stringWithFormat:@"rn--%@rn",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
-//        [body appendData:[contentDisposition dataUsingEncoding:NSUTF8StringEncoding]];
-//        [body appendData:[@"Content-Type:multipart/form-data" dataUsingEncoding:NSUTF8StringEncoding]];
-//        [body appendData:[NSData dataWithData:uploadData]];
-//        [body appendData:[[NSString stringWithFormat:@"rn--%@--rn",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
-        
-//        [request setHTTPBody:body];
-        
-        
-        
-
         NSURLSessionTask *task = [_urlSession uploadTaskWithRequest:request fromData:body];
-        
-//      task.taskDescription = uniqueIDHash;
+
         [_tasks addObject:task];
         
         [task resume];
         
     }
 
-    //add NSURLConnection Delegate methods
-    //when uploading, activity indicator
-    //if no response, show alert - retry/cancel
-    //if response, show alert - successful
 }
 
 //- (IBAction)handleSendLogDataPressed:(id)sender
@@ -1288,9 +1268,58 @@ didCompleteWithError:(NSError *)error
 {
     //NSLog(@"Finished uploading task %zu %@: %@ %@, HTTP %ld", (unsigned long)[task taskIdentifier], task.originalRequest.URL, error ?: @"Success", task.response, (long)[(id)task.response statusCode]);
     NSLog(@"the response is %@", task.response);
-    [_tasks removeObject:task];
-    NSURL *fullPath = [NSURL fileURLWithPath:[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:task.taskDescription]];
+    
     //[[NSFileManager defaultManager] removeItemAtURL:_logFolderPath error:NULL];
+    if (!error) {
+        
+        [_tasks removeObject:task];
+        
+        NSString *returnString = [[NSString alloc] initWithData:_responseData encoding:NSUTF8StringEncoding];
+        NSLog(@"%@", returnString);
+        
+        
+        //delete LogData folder, clear Log table
+        if ([returnString isEqualToString:@"1"]) {
+            [[EventLogger sharedLogger] removeLogFolder:_logFolderPath];
+            [[EventLogger sharedLogger] deleteLogData];
+            _logSizeLabel.text = [NSString stringWithFormat:@"Log size: %u entries", [EventLogger numberOfLogs]];
+            
+            if ((int)[EventLogger numberOfLogs] == 0) {
+                _sendLogsButton.hidden = YES;
+                _logSizeLabel.hidden = YES;
+            }
+            else{
+                _sendLogsButton.hidden = NO;
+                _logSizeLabel.hidden = NO;
+            }
+        }
+        
+        if ([_tasks count] == 0) {
+            
+            _sendLogsButton.hidden = NO;
+            _uploadProgressBar.hidden = YES;
+            _uploadCancelBtn.hidden = YES;
+            
+//needs to delete the files......
+            for (NSString *path in subPaths) {
+                
+                NSString *fullPath = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingString:[NSString stringWithFormat:@"/logData/%@",path]];
+                [[NSFileManager defaultManager] removeItemAtPath:fullPath error:NULL];
+                
+                NSLog(@"there are %@ in the directory",[[NSFileManager defaultManager] contentsAtPath:[[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingString:[NSString stringWithFormat:@"/logData"]]]);
+                
+            }
+
+        
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Upload Successful"
+                                                        message:@"Thanks for your contribution! Enjoy!"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+            [alert show];
+            
+        }
+    }
 }
 
 - (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask
@@ -1299,5 +1328,10 @@ didCompleteWithError:(NSError *)error
     NSLog(@"Response:: %@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
 }
 
+-(void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didSendBodyData:(int64_t)bytesSent totalBytesSent:(int64_t)totalBytesSent totalBytesExpectedToSend:(int64_t)totalBytesExpectedToSend{
+    float progress = (float)totalBytesSent / (float)totalBytesExpectedToSend;
+    NSLog(@"%f", progress);
+    [_uploadProgressBar setProgress:progress];
+}
 
 @end
