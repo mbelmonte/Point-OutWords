@@ -438,7 +438,7 @@
     
     _tasks = [NSMutableArray new];
     
-    NSURLSessionConfiguration *conf = [NSURLSessionConfiguration backgroundSessionConfiguration:@"upload"];
+    NSURLSessionConfiguration *conf = [NSURLSessionConfiguration defaultSessionConfiguration];
     
     conf.allowsCellularAccess = NO;
     
@@ -446,20 +446,31 @@
     
     for (NSString *subPath in subPaths) {
         
-        NSData *uploadData = [[NSData alloc] initWithContentsOfFile:[[_logFolderPath stringByAppendingString:@"/" ] stringByAppendingString:subPath] options:nil error:&error];
+        NSMutableData *uploadData = [[NSMutableData alloc] initWithContentsOfFile:[[_logFolderPath stringByAppendingString:@"/" ] stringByAppendingString:subPath] options:nil error:&error];
+        
         NSURL *path= [NSURL fileURLWithPath:[[_logFolderPath stringByAppendingString:@"/" ] stringByAppendingString:subPath]];
         uint64_t bytesTotalForThisFile = [[[NSFileManager defaultManager] attributesOfItemAtPath:[[_logFolderPath stringByAppendingString:@"/" ] stringByAppendingString:subPath] error:NULL] fileSize];
         NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://www.autismcollaborative.org/autista/upload1.php"]];
         NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
         NSString *boundary = @"---------------------------14737809831466499882746641449";
-        NSString *contentType = [NSString stringWithFormat:@"multipart/form-data; boundary=\r\n--%@--\r\n",boundary];
-        NSString *contentDisposition = [NSString stringWithFormat:@"Content-Disposition: form-data; name=\"fileUpload\"; filename=\"test\""];
+        NSString *contentType = [NSString stringWithFormat:@"multipart/form-data; boundary=%@",boundary];
+        NSString *contentDisposition = [NSString stringWithFormat:@"Content-Disposition: form-data; name=\"fileUpload\"; filename=\"%@\"\r\n",subPath];
         
         [request setHTTPMethod:@"POST"];
         
-        [request setValue:contentType forHTTPHeaderField:@"Content-Type"];
-        [request setValue:contentDisposition forHTTPHeaderField:@"Content-Disposition"];
-        [request setValue:[NSString stringWithFormat:@"%llu", bytesTotalForThisFile] forHTTPHeaderField:@"Content-Length"];
+        [request addValue:contentType forHTTPHeaderField:@"Content-Type"];
+        [request addValue:[NSString stringWithFormat:@"%llu", bytesTotalForThisFile] forHTTPHeaderField:@"Content-Length"];
+        
+        NSMutableData *body =[NSMutableData data];
+        [body appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+        [body appendData:[contentDisposition dataUsingEncoding:NSUTF8StringEncoding]];
+        [body appendData:[@"Content-Type:multipart/form-data\r\n\r\n" dataUsingEncoding:NSUTF8StringEncoding]];
+        [body appendData:[NSData dataWithData:uploadData]];
+        [body appendData:[[NSString stringWithFormat:@"\r\n--%@--\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+        
+        [request setHTTPBody:body];
+
+        
         
 //        NSMutableData *body =[NSMutableData data];
 //        
@@ -471,8 +482,10 @@
         
 //        [request setHTTPBody:body];
         
+        
+        
 
-        NSURLSessionTask *task = [_urlSession uploadTaskWithRequest:request fromFile:path];
+        NSURLSessionTask *task = [_urlSession uploadTaskWithRequest:request fromData:body];
         
 //      task.taskDescription = uniqueIDHash;
         [_tasks addObject:task];
@@ -1273,10 +1286,18 @@
 - (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task
 didCompleteWithError:(NSError *)error
 {
-    NSLog(@"Finished uploading task %zu %@: %@ %@, HTTP %ld", (unsigned long)[task taskIdentifier], task.originalRequest.URL, error ?: @"Success", task.response, (long)[(id)task.response statusCode]);
+    //NSLog(@"Finished uploading task %zu %@: %@ %@, HTTP %ld", (unsigned long)[task taskIdentifier], task.originalRequest.URL, error ?: @"Success", task.response, (long)[(id)task.response statusCode]);
+    NSLog(@"the response is %@", task.response);
     [_tasks removeObject:task];
     NSURL *fullPath = [NSURL fileURLWithPath:[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:task.taskDescription]];
     //[[NSFileManager defaultManager] removeItemAtURL:_logFolderPath error:NULL];
 }
+
+- (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask
+    didReceiveData:(NSData *)data
+{
+    NSLog(@"Response:: %@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+}
+
 
 @end
