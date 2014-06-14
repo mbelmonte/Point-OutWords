@@ -1279,20 +1279,20 @@ didCompleteWithError:(NSError *)error
         
         
         //delete LogData folder, clear Log table
-        if ([returnString isEqualToString:@"1"]) {
-            [[EventLogger sharedLogger] removeLogFolder:_logFolderPath];
-            [[EventLogger sharedLogger] deleteLogData];
-            _logSizeLabel.text = [NSString stringWithFormat:@"Log size: %u entries", [EventLogger numberOfLogs]];
-            
-            if ((int)[EventLogger numberOfLogs] == 0) {
-                _sendLogsButton.hidden = YES;
-                _logSizeLabel.hidden = YES;
-            }
-            else{
-                _sendLogsButton.hidden = NO;
-                _logSizeLabel.hidden = NO;
-            }
-        }
+//        if ([returnString isEqualToString:@"1"]) {
+//            [[EventLogger sharedLogger] removeLogFolder:_logFolderPath];
+//            [[EventLogger sharedLogger] deleteLogData];
+//            _logSizeLabel.text = [NSString stringWithFormat:@"Log size: %u entries", [EventLogger numberOfLogs]];
+//            
+//            if ((int)[EventLogger numberOfLogs] == 0) {
+//                _sendLogsButton.hidden = YES;
+//                _logSizeLabel.hidden = YES;
+//            }
+//            else{
+//                _sendLogsButton.hidden = NO;
+//                _logSizeLabel.hidden = NO;
+//            }
+//        }
         
         if ([_tasks count] == 0) {
             
@@ -1303,10 +1303,13 @@ didCompleteWithError:(NSError *)error
 //needs to delete the files......
             for (NSString *path in subPaths) {
                 
-                NSString *fullPath = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingString:[NSString stringWithFormat:@"/logData/%@",path]];
+                NSString *fullPath = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingString:[NSString stringWithFormat:@"/LogData/%@",path]];
+                
+                NSLog(@"previously, there are %@ in the directory",[[NSFileManager defaultManager] contentsOfDirectoryAtPath:[[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingString:@"/LogData"] error:nil]);
+                
                 [[NSFileManager defaultManager] removeItemAtPath:fullPath error:NULL];
                 
-                NSLog(@"there are %@ in the directory",[[NSFileManager defaultManager] contentsAtPath:[[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingString:[NSString stringWithFormat:@"/logData"]]]);
+               NSLog(@"after, there are %@ in the directory",[[NSFileManager defaultManager] contentsOfDirectoryAtPath:[[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]stringByAppendingString:@"/LogData"] error:nil]);
                 
             }
 
