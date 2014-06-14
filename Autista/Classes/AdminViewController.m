@@ -441,30 +441,46 @@
     NSURLSessionConfiguration *conf = [NSURLSessionConfiguration backgroundSessionConfiguration:@"upload"];
     
     conf.allowsCellularAccess = NO;
+    
     _urlSession = [NSURLSession sessionWithConfiguration:conf delegate:self delegateQueue:[NSOperationQueue mainQueue]];
     
     for (NSString *subPath in subPaths) {
         
-        NSData *uploadData = [[NSData alloc] initWithContentsOfFile:subPath options:nil error:&error];
+        NSData *uploadData = [[NSData alloc] initWithContentsOfFile:[[_logFolderPath stringByAppendingString:@"/" ] stringByAppendingString:subPath] options:nil error:&error];
         NSURL *path= [NSURL fileURLWithPath:[[_logFolderPath stringByAppendingString:@"/" ] stringByAppendingString:subPath]];
         uint64_t bytesTotalForThisFile = [[[NSFileManager defaultManager] attributesOfItemAtPath:[[_logFolderPath stringByAppendingString:@"/" ] stringByAppendingString:subPath] error:NULL] fileSize];
         NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://www.autismcollaborative.org/autista/upload1.php"]];
         NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
-        [request setHTTPMethod:@"POST"];
-        [request setValue:[NSString stringWithFormat:@"%llu", bytesTotalForThisFile] forHTTPHeaderField:@"Content-Length"];
-        [request setValue:@"application/test" forHTTPHeaderField:@"Content-Type"];
+        NSString *boundary = @"---------------------------14737809831466499882746641449";
+        NSString *contentType = [NSString stringWithFormat:@"multipart/form-data; boundary=\r\n--%@--\r\n",boundary];
+        NSString *contentDisposition = [NSString stringWithFormat:@"Content-Disposition: form-data; name=\"fileUpload\"; filename=\"test\""];
         
+        [request setHTTPMethod:@"POST"];
+        
+        [request setValue:contentType forHTTPHeaderField:@"Content-Type"];
+        [request setValue:contentDisposition forHTTPHeaderField:@"Content-Disposition"];
+        [request setValue:[NSString stringWithFormat:@"%llu", bytesTotalForThisFile] forHTTPHeaderField:@"Content-Length"];
+        
+//        NSMutableData *body =[NSMutableData data];
+//        
+//        [body appendData:[[NSString stringWithFormat:@"rn--%@rn",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+//        [body appendData:[contentDisposition dataUsingEncoding:NSUTF8StringEncoding]];
+//        [body appendData:[@"Content-Type:multipart/form-data" dataUsingEncoding:NSUTF8StringEncoding]];
+//        [body appendData:[NSData dataWithData:uploadData]];
+//        [body appendData:[[NSString stringWithFormat:@"rn--%@--rn",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+        
+//        [request setHTTPBody:body];
+        
+
         NSURLSessionTask *task = [_urlSession uploadTaskWithRequest:request fromFile:path];
         
-        task.taskDescription = uniqueIDHash;
+//      task.taskDescription = uniqueIDHash;
         [_tasks addObject:task];
         
         [task resume];
         
     }
-   
-    
-    
+
     //add NSURLConnection Delegate methods
     //when uploading, activity indicator
     //if no response, show alert - retry/cancel
