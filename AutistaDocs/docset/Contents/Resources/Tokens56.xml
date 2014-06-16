@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SoundEffect.html">
+	<File path="Classes/SceneViewController.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SoundEffect</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SoundEffect.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SceneViewController</TokenIdentifier>
+			<Abstract type="html">Display puzzles under a certain scene, lead user to the puzzle he selected and choose the mode of the puzzle.</Abstract>
+			<DeclaredIn>SceneViewController.h</DeclaredIn>
             
 			
 			<NodeRef refid="56"/>
@@ -13,50 +13,446 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SoundEffect/soundEffectWithContentsOfFile:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SoundEffect.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneViewController/setScene:</TokenIdentifier>
+			<Abstract type="html">Current scene.</Abstract>
+			<DeclaredIn>SceneViewController.h</DeclaredIn>
 			
-			<Declaration>+ (id)soundEffectWithContentsOfFile:(NSString *)aPath</Declaration>
+			<Declaration>@property (nonatomic, retain) Scene *scene</Declaration>
 			
 			
-			<Anchor>//api/name/soundEffectWithContentsOfFile:</Anchor>
+			<Anchor>//api/name/scene</Anchor>
             <NodeRef refid="56"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SoundEffect/initWithContentsOfFile:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SoundEffect.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneViewController/scene</TokenIdentifier>
+			<Abstract type="html">Current scene.</Abstract>
+			<DeclaredIn>SceneViewController.h</DeclaredIn>
 			
-			<Declaration>- (id)initWithContentsOfFile:(NSString *)path</Declaration>
+			<Declaration>@property (nonatomic, retain) Scene *scene</Declaration>
 			
 			
-			<Anchor>//api/name/initWithContentsOfFile:</Anchor>
+			<Anchor>//api/name/scene</Anchor>
             <NodeRef refid="56"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SoundEffect/play</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SoundEffect.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/SceneViewController/scene</TokenIdentifier>
+			<Abstract type="html">Current scene.</Abstract>
+			<DeclaredIn>SceneViewController.h</DeclaredIn>
 			
-			<Declaration>- (void)play</Declaration>
+			<Declaration>@property (nonatomic, retain) Scene *scene</Declaration>
 			
 			
-			<Anchor>//api/name/play</Anchor>
+			<Anchor>//api/name/scene</Anchor>
             <NodeRef refid="56"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SoundEffect/playWithVibration</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneViewController/setObjects:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>SoundEffect.h</DeclaredIn>
+			<DeclaredIn>SceneViewController.h</DeclaredIn>
 			
-			<Declaration>- (void)playWithVibration</Declaration>
+			<Declaration>@property (nonatomic, retain) NSMutableArray *objects</Declaration>
 			
 			
-			<Anchor>//api/name/playWithVibration</Anchor>
+			<Anchor>//api/name/objects</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneViewController/objects</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSMutableArray *objects</Declaration>
+			
+			
+			<Anchor>//api/name/objects</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SceneViewController/objects</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSMutableArray *objects</Declaration>
+			
+			
+			<Anchor>//api/name/objects</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneViewController/setBackground:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIImageView *background</Declaration>
+			
+			
+			<Anchor>//api/name/background</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneViewController/background</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIImageView *background</Declaration>
+			
+			
+			<Anchor>//api/name/background</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SceneViewController/background</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIImageView *background</Declaration>
+			
+			
+			<Anchor>//api/name/background</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneViewController/setCloseButton:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIButton *closeButton</Declaration>
+			
+			
+			<Anchor>//api/name/closeButton</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneViewController/closeButton</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIButton *closeButton</Declaration>
+			
+			
+			<Anchor>//api/name/closeButton</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SceneViewController/closeButton</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIButton *closeButton</Declaration>
+			
+			
+			<Anchor>//api/name/closeButton</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneViewController/setAdminOverlayButton:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIButton *adminOverlayButton</Declaration>
+			
+			
+			<Anchor>//api/name/adminOverlayButton</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneViewController/adminOverlayButton</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIButton *adminOverlayButton</Declaration>
+			
+			
+			<Anchor>//api/name/adminOverlayButton</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SceneViewController/adminOverlayButton</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIButton *adminOverlayButton</Declaration>
+			
+			
+			<Anchor>//api/name/adminOverlayButton</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneViewController/initWithNibName:bundle:</TokenIdentifier>
+			<Abstract type="html">Init method for the view</Abstract>
+			<DeclaredIn>SceneViewController.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil</Declaration>
+			
+			
+			<Anchor>//api/name/initWithNibName:bundle:</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneViewController/viewDidLoad</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)viewDidLoad</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidLoad</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneViewController/viewDidAppear:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)viewDidAppear:(BOOL)animated</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidAppear:</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneViewController/handleObjectPressed:</TokenIdentifier>
+			<Abstract type="html">Animate the puzzle object when pressed</Abstract>
+			<DeclaredIn>SceneViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)handleObjectPressed:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/handleObjectPressed:</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneViewController/handleObjectReleased:</TokenIdentifier>
+			<Abstract type="html">Lead the user to the puzzle he selected</Abstract>
+			<DeclaredIn>SceneViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)handleObjectReleased:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/handleObjectReleased:</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneViewController/cancelObjectPressed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)cancelObjectPressed:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/cancelObjectPressed:</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneViewController/handleAdminButtonPressed:</TokenIdentifier>
+			<Abstract type="html">Start a timer of 2s to show the admin overlay</Abstract>
+			<DeclaredIn>SceneViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)handleAdminButtonPressed:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/handleAdminButtonPressed:</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneViewController/handleAdminButtonReleased:</TokenIdentifier>
+			<Abstract type="html">Invalidate the timer when button released</Abstract>
+			<DeclaredIn>SceneViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)handleAdminButtonReleased:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/handleAdminButtonReleased:</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneViewController/showAdminOverlay</TokenIdentifier>
+			<Abstract type="html">Show the admin overlay</Abstract>
+			<DeclaredIn>SceneViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)showAdminOverlay</Declaration>
+			
+			
+			<Anchor>//api/name/showAdminOverlay</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneViewController/presentTouchPuzzleView:</TokenIdentifier>
+			<Abstract type="html">Go to touch mode</Abstract>
+			<DeclaredIn>SceneViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)presentTouchPuzzleView:(PuzzleObject *)object</Declaration>
+			
+			
+			<Anchor>//api/name/presentTouchPuzzleView:</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneViewController/presentTypePuzzleView:</TokenIdentifier>
+			<Abstract type="html">Go to type mode</Abstract>
+			<DeclaredIn>SceneViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)presentTypePuzzleView:(PuzzleObject *)object</Declaration>
+			
+			
+			<Anchor>//api/name/presentTypePuzzleView:</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneViewController/presentSayPuzzleView:</TokenIdentifier>
+			<Abstract type="html">Go to say mode</Abstract>
+			<DeclaredIn>SceneViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)presentSayPuzzleView:(PuzzleObject *)object</Declaration>
+			
+			
+			<Anchor>//api/name/presentSayPuzzleView:</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneViewController/applyShadowToObject:</TokenIdentifier>
+			<Abstract type="html">Apply shadow effect</Abstract>
+			<DeclaredIn>SceneViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)applyShadowToObject:(UIView *)object</Declaration>
+			
+			
+			<Anchor>//api/name/applyShadowToObject:</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneViewController/applyGlowToObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)applyGlowToObject:(UIView *)object</Declaration>
+			
+			
+			<Anchor>//api/name/applyGlowToObject:</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneViewController/desaturateImageWithURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneViewController.h</DeclaredIn>
+			
+			<Declaration>- (UIImage *)desaturateImageWithURL:(NSURL *)url</Declaration>
+			
+			
+			<Anchor>//api/name/desaturateImageWithURL:</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneViewController/desaturateImage:saturation:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneViewController.h</DeclaredIn>
+			
+			<Declaration>- (UIImage *)desaturateImage:(UIImage *)image saturation:(CGFloat)saturation</Declaration>
+			
+			
+			<Anchor>//api/name/desaturateImage:saturation:</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneViewController/animateBackgroundSaturation</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)animateBackgroundSaturation</Declaration>
+			
+			
+			<Anchor>//api/name/animateBackgroundSaturation</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneViewController/handleCloseScenePressed:</TokenIdentifier>
+			<Abstract type="html">Close the scene</Abstract>
+			<DeclaredIn>SceneViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)handleCloseScenePressed:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/handleCloseScenePressed:</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneViewController/audioVolume</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneViewController.h</DeclaredIn>
+			
+			<Declaration>- (Float32)audioVolume</Declaration>
+			
+			
+			<Anchor>//api/name/audioVolume</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneViewController/alertView:clickedButtonAtIndex:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex</Declaration>
+			
+			
+			<Anchor>//api/name/alertView:clickedButtonAtIndex:</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneViewController/shouldAutorotate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneViewController.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)shouldAutorotate</Declaration>
+			
+			
+			<Anchor>//api/name/shouldAutorotate</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SceneViewController/didReceiveMemoryWarning</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SceneViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)didReceiveMemoryWarning</Declaration>
+			
+			
+			<Anchor>//api/name/didReceiveMemoryWarning</Anchor>
             <NodeRef refid="56"/>
 		</Token>
 		

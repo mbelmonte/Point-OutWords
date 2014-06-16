@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/VULevelMeter.html">
+	<File path="Classes/User.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/VULevelMeter</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/User</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<DeclaredIn>User.h</DeclaredIn>
             
 			
 			<NodeRef refid="61"/>
@@ -13,290 +13,602 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/setRefreshHz:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/User/setDob:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<DeclaredIn>User.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) CGFloat refreshHz</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDate *dob</Declaration>
 			
 			
-			<Anchor>//api/name/refreshHz</Anchor>
+			<Anchor>//api/name/dob</Anchor>
             <NodeRef refid="61"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/refreshHz</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/User/dob</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<DeclaredIn>User.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) CGFloat refreshHz</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDate *dob</Declaration>
 			
 			
-			<Anchor>//api/name/refreshHz</Anchor>
+			<Anchor>//api/name/dob</Anchor>
             <NodeRef refid="61"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/VULevelMeter/refreshHz</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/User/dob</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<DeclaredIn>User.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) CGFloat refreshHz</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDate *dob</Declaration>
 			
 			
-			<Anchor>//api/name/refreshHz</Anchor>
+			<Anchor>//api/name/dob</Anchor>
             <NodeRef refid="61"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/setShowsPeaks:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/User/setFullname:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<DeclaredIn>User.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL showsPeaks</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *fullname</Declaration>
 			
 			
-			<Anchor>//api/name/showsPeaks</Anchor>
+			<Anchor>//api/name/fullname</Anchor>
             <NodeRef refid="61"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/showsPeaks</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/User/fullname</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<DeclaredIn>User.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL showsPeaks</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *fullname</Declaration>
 			
 			
-			<Anchor>//api/name/showsPeaks</Anchor>
+			<Anchor>//api/name/fullname</Anchor>
             <NodeRef refid="61"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/VULevelMeter/showsPeaks</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/User/fullname</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<DeclaredIn>User.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL showsPeaks</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *fullname</Declaration>
 			
 			
-			<Anchor>//api/name/showsPeaks</Anchor>
+			<Anchor>//api/name/fullname</Anchor>
             <NodeRef refid="61"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/setVertical:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/User/setGender:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<DeclaredIn>User.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL vertical</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *gender</Declaration>
 			
 			
-			<Anchor>//api/name/vertical</Anchor>
+			<Anchor>//api/name/gender</Anchor>
             <NodeRef refid="61"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/vertical</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/User/gender</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<DeclaredIn>User.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL vertical</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *gender</Declaration>
 			
 			
-			<Anchor>//api/name/vertical</Anchor>
+			<Anchor>//api/name/gender</Anchor>
             <NodeRef refid="61"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/VULevelMeter/vertical</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/User/gender</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<DeclaredIn>User.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL vertical</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *gender</Declaration>
 			
 			
-			<Anchor>//api/name/vertical</Anchor>
+			<Anchor>//api/name/gender</Anchor>
             <NodeRef refid="61"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/setUseGL:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/User/setMugshot:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<DeclaredIn>User.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL useGL</Declaration>
+			<Declaration>@property (nonatomic, retain) NSData *mugshot</Declaration>
 			
 			
-			<Anchor>//api/name/useGL</Anchor>
+			<Anchor>//api/name/mugshot</Anchor>
             <NodeRef refid="61"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/useGL</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/User/mugshot</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<DeclaredIn>User.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL useGL</Declaration>
+			<Declaration>@property (nonatomic, retain) NSData *mugshot</Declaration>
 			
 			
-			<Anchor>//api/name/useGL</Anchor>
+			<Anchor>//api/name/mugshot</Anchor>
             <NodeRef refid="61"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/VULevelMeter/useGL</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/User/mugshot</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<DeclaredIn>User.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL useGL</Declaration>
+			<Declaration>@property (nonatomic, retain) NSData *mugshot</Declaration>
 			
 			
-			<Anchor>//api/name/useGL</Anchor>
+			<Anchor>//api/name/mugshot</Anchor>
             <NodeRef refid="61"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/setMuteOn:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/User/setRankDrag:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<DeclaredIn>User.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) BOOL muteOn</Declaration>
+			<Declaration>@property (nonatomic, retain) NSNumber *rankDrag</Declaration>
 			
 			
-			<Anchor>//api/name/muteOn</Anchor>
+			<Anchor>//api/name/rankDrag</Anchor>
             <NodeRef refid="61"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/muteOn</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/User/rankDrag</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<DeclaredIn>User.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) BOOL muteOn</Declaration>
+			<Declaration>@property (nonatomic, retain) NSNumber *rankDrag</Declaration>
 			
 			
-			<Anchor>//api/name/muteOn</Anchor>
+			<Anchor>//api/name/rankDrag</Anchor>
             <NodeRef refid="61"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/VULevelMeter/muteOn</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/User/rankDrag</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<DeclaredIn>User.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) BOOL muteOn</Declaration>
+			<Declaration>@property (nonatomic, retain) NSNumber *rankDrag</Declaration>
 			
 			
-			<Anchor>//api/name/muteOn</Anchor>
+			<Anchor>//api/name/rankDrag</Anchor>
             <NodeRef refid="61"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/refreshWithValue:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/User/setRankSpeak:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<DeclaredIn>User.h</DeclaredIn>
 			
-			<Declaration>- (void)refreshWithValue:(CGFloat)newValue</Declaration>
+			<Declaration>@property (nonatomic, retain) NSNumber *rankSpeak</Declaration>
 			
 			
-			<Anchor>//api/name/refreshWithValue:</Anchor>
+			<Anchor>//api/name/rankSpeak</Anchor>
             <NodeRef refid="61"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/setBorderColor:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/User/rankSpeak</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<DeclaredIn>User.h</DeclaredIn>
 			
-			<Declaration>- (void)setBorderColor:(UIColor *)borderColor</Declaration>
+			<Declaration>@property (nonatomic, retain) NSNumber *rankSpeak</Declaration>
 			
 			
-			<Anchor>//api/name/setBorderColor:</Anchor>
+			<Anchor>//api/name/rankSpeak</Anchor>
             <NodeRef refid="61"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/setBackgroundColor:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/User/rankSpeak</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			<DeclaredIn>User.h</DeclaredIn>
 			
-			<Declaration>- (void)setBackgroundColor:(UIColor *)backgroundColor</Declaration>
+			<Declaration>@property (nonatomic, retain) NSNumber *rankSpeak</Declaration>
 			
 			
-			<Anchor>//api/name/setBackgroundColor:</Anchor>
+			<Anchor>//api/name/rankSpeak</Anchor>
             <NodeRef refid="61"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/initWithFrame:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/User/setRankType:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.m</DeclaredIn>
+			<DeclaredIn>User.h</DeclaredIn>
 			
-			<Declaration>- (id)initWithFrame:(CGRect)frame</Declaration>
+			<Declaration>@property (nonatomic, retain) NSNumber *rankType</Declaration>
 			
 			
-			<Anchor>//api/name/initWithFrame:</Anchor>
+			<Anchor>//api/name/rankType</Anchor>
             <NodeRef refid="61"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/initWithCoder:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/User/rankType</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.m</DeclaredIn>
+			<DeclaredIn>User.h</DeclaredIn>
 			
-			<Declaration>- (id)initWithCoder:(NSCoder *)coder</Declaration>
+			<Declaration>@property (nonatomic, retain) NSNumber *rankType</Declaration>
 			
 			
-			<Anchor>//api/name/initWithCoder:</Anchor>
+			<Anchor>//api/name/rankType</Anchor>
             <NodeRef refid="61"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/layoutSubLevelMeters</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/User/rankType</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.m</DeclaredIn>
+			<DeclaredIn>User.h</DeclaredIn>
 			
-			<Declaration>- (void)layoutSubLevelMeters</Declaration>
+			<Declaration>@property (nonatomic, retain) NSNumber *rankType</Declaration>
 			
 			
-			<Anchor>//api/name/layoutSubLevelMeters</Anchor>
+			<Anchor>//api/name/rankType</Anchor>
             <NodeRef refid="61"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/touchesBegan:withEvent:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/User/setSnapBackEnabled:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.m</DeclaredIn>
+			<DeclaredIn>User.h</DeclaredIn>
 			
-			<Declaration>- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event</Declaration>
+			<Declaration>@property (nonatomic, retain) NSNumber *snapBackEnabled</Declaration>
 			
 			
-			<Anchor>//api/name/touchesBegan:withEvent:</Anchor>
+			<Anchor>//api/name/snapBackEnabled</Anchor>
             <NodeRef refid="61"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/touchesEnded:withEvent:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/User/snapBackEnabled</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.m</DeclaredIn>
+			<DeclaredIn>User.h</DeclaredIn>
 			
-			<Declaration>- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event</Declaration>
+			<Declaration>@property (nonatomic, retain) NSNumber *snapBackEnabled</Declaration>
 			
 			
-			<Anchor>//api/name/touchesEnded:withEvent:</Anchor>
+			<Anchor>//api/name/snapBackEnabled</Anchor>
             <NodeRef refid="61"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/touchesCancelled:withEvent:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/User/snapBackEnabled</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VULevelMeter.m</DeclaredIn>
+			<DeclaredIn>User.h</DeclaredIn>
 			
-			<Declaration>- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event</Declaration>
+			<Declaration>@property (nonatomic, retain) NSNumber *snapBackEnabled</Declaration>
 			
 			
-			<Anchor>//api/name/touchesCancelled:withEvent:</Anchor>
+			<Anchor>//api/name/snapBackEnabled</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/User/setPraisePromptEnabled:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>User.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *praisePromptEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/praisePromptEnabled</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/User/praisePromptEnabled</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>User.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *praisePromptEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/praisePromptEnabled</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/User/praisePromptEnabled</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>User.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *praisePromptEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/praisePromptEnabled</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/User/setSnappingDistance:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>User.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *snappingDistance</Declaration>
+			
+			
+			<Anchor>//api/name/snappingDistance</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/User/snappingDistance</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>User.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *snappingDistance</Declaration>
+			
+			
+			<Anchor>//api/name/snappingDistance</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/User/snappingDistance</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>User.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *snappingDistance</Declaration>
+			
+			
+			<Anchor>//api/name/snappingDistance</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/User/setKeyHitRadius:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>User.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *keyHitRadius</Declaration>
+			
+			
+			<Anchor>//api/name/keyHitRadius</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/User/keyHitRadius</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>User.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *keyHitRadius</Declaration>
+			
+			
+			<Anchor>//api/name/keyHitRadius</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/User/keyHitRadius</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>User.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *keyHitRadius</Declaration>
+			
+			
+			<Anchor>//api/name/keyHitRadius</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/User/setDragEnterEnabled:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>User.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *dragEnterEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/dragEnterEnabled</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/User/dragEnterEnabled</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>User.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *dragEnterEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/dragEnterEnabled</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/User/dragEnterEnabled</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>User.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *dragEnterEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/dragEnterEnabled</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/User/setAttempts:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>User.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSSet *attempts</Declaration>
+			
+			
+			<Anchor>//api/name/attempts</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/User/attempts</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>User.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSSet *attempts</Declaration>
+			
+			
+			<Anchor>//api/name/attempts</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/User/attempts</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>User.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSSet *attempts</Declaration>
+			
+			
+			<Anchor>//api/name/attempts</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/User/setLogs:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>User.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSSet *logs</Declaration>
+			
+			
+			<Anchor>//api/name/logs</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/User/logs</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>User.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSSet *logs</Declaration>
+			
+			
+			<Anchor>//api/name/logs</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/User/logs</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>User.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSSet *logs</Declaration>
+			
+			
+			<Anchor>//api/name/logs</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/User/addAttemptsObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>User.h</DeclaredIn>
+			
+			<Declaration>- (void)addAttemptsObject:(Attempt *)value</Declaration>
+			
+			
+			<Anchor>//api/name/addAttemptsObject:</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/User/removeAttemptsObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>User.h</DeclaredIn>
+			
+			<Declaration>- (void)removeAttemptsObject:(Attempt *)value</Declaration>
+			
+			
+			<Anchor>//api/name/removeAttemptsObject:</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/User/addAttempts:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>User.h</DeclaredIn>
+			
+			<Declaration>- (void)addAttempts:(NSSet *)values</Declaration>
+			
+			
+			<Anchor>//api/name/addAttempts:</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/User/removeAttempts:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>User.h</DeclaredIn>
+			
+			<Declaration>- (void)removeAttempts:(NSSet *)values</Declaration>
+			
+			
+			<Anchor>//api/name/removeAttempts:</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/User/addLogsObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>User.h</DeclaredIn>
+			
+			<Declaration>- (void)addLogsObject:(Log *)value</Declaration>
+			
+			
+			<Anchor>//api/name/addLogsObject:</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/User/removeLogsObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>User.h</DeclaredIn>
+			
+			<Declaration>- (void)removeLogsObject:(Log *)value</Declaration>
+			
+			
+			<Anchor>//api/name/removeLogsObject:</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/User/addLogs:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>User.h</DeclaredIn>
+			
+			<Declaration>- (void)addLogs:(NSSet *)values</Declaration>
+			
+			
+			<Anchor>//api/name/addLogs:</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/User/removeLogs:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>User.h</DeclaredIn>
+			
+			<Declaration>- (void)removeLogs:(NSSet *)values</Declaration>
+			
+			
+			<Anchor>//api/name/removeLogs:</Anchor>
             <NodeRef refid="61"/>
 		</Token>
 		

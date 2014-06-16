@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SBJsonStreamParserStateStart.html">
+	<File path="Classes/SBJsonStreamParserStateObjectStart.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SBJsonStreamParserStateStart</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/SBJsonStreamParserStateObjectStart</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>SBJsonStreamParserState.h</DeclaredIn>
             
@@ -13,7 +13,19 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserStateStart/parser:shouldAcceptToken:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserStateObjectStart/name</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SBJsonStreamParserState.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserStateObjectStart/parser:shouldAcceptToken:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>SBJsonStreamParserState.m</DeclaredIn>
 			
@@ -25,7 +37,7 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserStateStart/parser:shouldTransitionTo:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserStateObjectStart/parser:shouldTransitionTo:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>SBJsonStreamParserState.m</DeclaredIn>
 			
@@ -37,14 +49,14 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserStateStart/name</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserStateObjectStart/needKey</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>SBJsonStreamParserState.m</DeclaredIn>
 			
-			<Declaration>- (NSString *)name</Declaration>
+			<Declaration>- (BOOL)needKey</Declaration>
 			
 			
-			<Anchor>//api/name/name</Anchor>
+			<Anchor>//api/name/needKey</Anchor>
             <NodeRef refid="37"/>
 		</Token>
 		

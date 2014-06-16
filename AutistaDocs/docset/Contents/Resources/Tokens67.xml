@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/NSFileManager+ZipArchive.html">
+	<File path="Categories/NSData+NSData_SBJsonParsing.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/NSFileManager(ZipArchive)</TokenIdentifier>
-			<Abstract type="html">//  ZipArchive.m
-//
-//
-//  Created by aish on 08-9-11.
-//  acsolu@gmail.com
-//  Copyright 2008  Inc. All rights reserved.
-//</Abstract>
-			<DeclaredIn>ZipArchive.m</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/NSData(NSData_SBJsonParsing)</TokenIdentifier>
+			<Abstract type="html">Adds JSON parsing methods to NSData</Abstract>
+			<DeclaredIn>NSObject+SBJson.h</DeclaredIn>
             
 			
 			<NodeRef refid="67"/>
@@ -19,14 +13,14 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSFileManager/_attributesOfItemAtPath:followingSymLinks:error:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>ZipArchive.m</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/JSONValue</TokenIdentifier>
+			<Abstract type="html">Decodes the receiver&apos;s JSON data</Abstract>
+			<DeclaredIn>NSObject+SBJson.h</DeclaredIn>
 			
-			<Declaration>- (NSDictionary *)_attributesOfItemAtPath:(NSString *)path followingSymLinks:(BOOL)followingSymLinks error:(NSError **)error</Declaration>
+			<Declaration>- (id)JSONValue</Declaration>
 			
-			
-			<Anchor>//api/name/_attributesOfItemAtPath:followingSymLinks:error:</Anchor>
+			<ReturnValue><Abstract type="html">the NSDictionary or NSArray represented by the receiver, or nil on error.</Abstract></ReturnValue>
+			<Anchor>//api/name/JSONValue</Anchor>
             <NodeRef refid="67"/>
 		</Token>
 		

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SBJsonStreamParserStateError.html">
+	<File path="Classes/SBJsonStreamParserStateComplete.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SBJsonStreamParserStateError</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/SBJsonStreamParserStateComplete</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>SBJsonStreamParserState.h</DeclaredIn>
             
@@ -13,7 +13,7 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserStateError/name</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserStateComplete/name</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>SBJsonStreamParserState.m</DeclaredIn>
 			
@@ -25,7 +25,7 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserStateError/parserShouldReturn:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserStateComplete/parserShouldReturn:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>SBJsonStreamParserState.m</DeclaredIn>
 			
@@ -33,18 +33,6 @@
 			
 			
 			<Anchor>//api/name/parserShouldReturn:</Anchor>
-            <NodeRef refid="31"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserStateError/isError</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SBJsonStreamParserState.m</DeclaredIn>
-			
-			<Declaration>- (BOOL)isError</Declaration>
-			
-			
-			<Anchor>//api/name/isError</Anchor>
             <NodeRef refid="31"/>
 		</Token>
 		

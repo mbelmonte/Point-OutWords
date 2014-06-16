@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/NSString+MD5Addition.html">
+	<File path="Categories/NSObject+SBProxyForJson.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/NSString(MD5Addition)</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSString+MD5Addition.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/NSObject(SBProxyForJson)</TokenIdentifier>
+			<Abstract type="html">Enable JSON writing for non-native objects</Abstract>
+			<DeclaredIn>SBJsonStreamWriter.h</DeclaredIn>
             
 			
 			<NodeRef refid="70"/>
@@ -13,14 +13,14 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSString/stringFromMD5</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSString+MD5Addition.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/NSObject/proxyForJson</TokenIdentifier>
+			<Abstract type="html">Allows generation of JSON for otherwise unsupported classes.</Abstract>
+			<DeclaredIn>SBJsonStreamWriter.h</DeclaredIn>
 			
-			<Declaration>- (NSString *)stringFromMD5</Declaration>
+			<Declaration>- (id)proxyForJson</Declaration>
 			
 			
-			<Anchor>//api/name/stringFromMD5</Anchor>
+			<Anchor>//api/name/proxyForJson</Anchor>
             <NodeRef refid="70"/>
 		</Token>
 		

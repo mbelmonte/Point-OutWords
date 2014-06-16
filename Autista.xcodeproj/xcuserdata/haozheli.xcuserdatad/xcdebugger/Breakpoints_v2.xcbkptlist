@@ -138,13 +138,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Autista/Classes/AdminViewController.m"
-            timestampString = "420229209.053919"
+            timestampString = "424589943.26156"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "967"
-            endingLineNumber = "967"
-            landmarkName = "@implementation AdminViewController"
-            landmarkType = "3">
+            startingLineNumber = "970"
+            endingLineNumber = "970"
+            landmarkName = "-audioRecorderDidFinishRecording:successfully:"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -154,12 +154,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Autista/Classes/AdminViewController.m"
-            timestampString = "420229209.053919"
+            timestampString = "424589943.26156"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "986"
-            endingLineNumber = "986"
-            landmarkName = "-savePraiseIntoPlist:"
+            startingLineNumber = "989"
+            endingLineNumber = "989"
+            landmarkName = "-itunesSelection:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

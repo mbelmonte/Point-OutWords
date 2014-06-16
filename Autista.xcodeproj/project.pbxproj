@@ -602,7 +602,6 @@
 		8F6B7F7E18F9D102006554E3 /* edit.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F6B7F7D18F9D102006554E3 /* edit.png */; };
 		8F741CF9189F3F5D0048329A /* PuzzleDataWithPhonetics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F741CF8189F3F5D0048329A /* PuzzleDataWithPhonetics.plist */; };
 		8FAF16FC18E8DE15003EC63D /* FirstLaunchInfoTextNew.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FAF16FB18E8DE15003EC63D /* FirstLaunchInfoTextNew.plist */; };
-		8FB1A923189D894C007A483F /* Instabug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB1A922189D894C007A483F /* Instabug.framework */; };
 		8FB6B13F18E8FCEA009CDB74 /* KeyboardButton_hightlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FB6B13E18E8FCEA009CDB74 /* KeyboardButton_hightlighted.png */; };
 /* End PBXBuildFile section */
 
@@ -1304,7 +1303,6 @@
 				8DA3DD181604C6E20031950A /* UIKit.framework in Frameworks */,
 				8DA3DD1A1604C6E20031950A /* Foundation.framework in Frameworks */,
 				8DA3DD1C1604C6E20031950A /* CoreGraphics.framework in Frameworks */,
-				8FB1A923189D894C007A483F /* Instabug.framework in Frameworks */,
 				8DA3DD1E1604C6E20031950A /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2742,7 +2740,7 @@
 		8DA3DD0A1604C6E20031950A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Shashwat Parhi";
 				TargetAttributes = {
 					8DA3DD121604C6E20031950A = {

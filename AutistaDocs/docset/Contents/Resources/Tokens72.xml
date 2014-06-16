@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/UIDevice+IdentifierAddition.html">
+	<File path="Categories/NSString+NSString_SBJsonParsing.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/UIDevice(IdentifierAddition)</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UIDevice+IdentifierAddition.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/NSString(NSString_SBJsonParsing)</TokenIdentifier>
+			<Abstract type="html">Adds JSON parsing methods to NSString</Abstract>
+			<DeclaredIn>NSObject+SBJson.h</DeclaredIn>
             
 			
 			<NodeRef refid="72"/>
@@ -13,38 +13,14 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UIDevice/uniqueDeviceIdentifier</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UIDevice+IdentifierAddition.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/NSString/JSONValue</TokenIdentifier>
+			<Abstract type="html">Decodes the receiver&apos;s JSON text</Abstract>
+			<DeclaredIn>NSObject+SBJson.h</DeclaredIn>
 			
-			<Declaration>- (NSString *)uniqueDeviceIdentifier</Declaration>
+			<Declaration>- (id)JSONValue</Declaration>
 			
-			
-			<Anchor>//api/name/uniqueDeviceIdentifier</Anchor>
-            <NodeRef refid="72"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UIDevice/uniqueGlobalDeviceIdentifier</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UIDevice+IdentifierAddition.h</DeclaredIn>
-			
-			<Declaration>- (NSString *)uniqueGlobalDeviceIdentifier</Declaration>
-			
-			
-			<Anchor>//api/name/uniqueGlobalDeviceIdentifier</Anchor>
-            <NodeRef refid="72"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UIDevice/macaddress</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UIDevice+IdentifierAddition.m</DeclaredIn>
-			
-			<Declaration>- (NSString *)macaddress</Declaration>
-			
-			
-			<Anchor>//api/name/macaddress</Anchor>
+			<ReturnValue><Abstract type="html">the NSDictionary or NSArray represented by the receiver, or nil on error.</Abstract></ReturnValue>
+			<Anchor>//api/name/JSONValue</Anchor>
             <NodeRef refid="72"/>
 		</Token>
 		

@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/NSObject+NSObject_SBJsonWriting.html">
+	<File path="Categories/NSFileManager+ZipArchive.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/NSObject(NSObject_SBJsonWriting)</TokenIdentifier>
-			<Abstract type="html">Adds JSON generation to NSObject</Abstract>
-			<DeclaredIn>NSObject+SBJson.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/NSFileManager(ZipArchive)</TokenIdentifier>
+			<Abstract type="html">//  ZipArchive.m
+//
+//
+//  Created by aish on 08-9-11.
+//  acsolu@gmail.com
+//  Copyright 2008  Inc. All rights reserved.
+//</Abstract>
+			<DeclaredIn>ZipArchive.m</DeclaredIn>
             
 			
 			<NodeRef refid="68"/>
@@ -13,14 +19,14 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSObject/JSONRepresentation</TokenIdentifier>
-			<Abstract type="html">Encodes the receiver into a JSON string</Abstract>
-			<DeclaredIn>NSObject+SBJson.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/NSFileManager/_attributesOfItemAtPath:followingSymLinks:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ZipArchive.m</DeclaredIn>
 			
-			<Declaration>- (NSString *)JSONRepresentation</Declaration>
+			<Declaration>- (NSDictionary *)_attributesOfItemAtPath:(NSString *)path followingSymLinks:(BOOL)followingSymLinks error:(NSError **)error</Declaration>
 			
-			<ReturnValue><Abstract type="html">the receiver encoded in JSON, or nil on error.</Abstract></ReturnValue>
-			<Anchor>//api/name/JSONRepresentation</Anchor>
+			
+			<Anchor>//api/name/_attributesOfItemAtPath:followingSymLinks:error:</Anchor>
             <NodeRef refid="68"/>
 		</Token>
 		

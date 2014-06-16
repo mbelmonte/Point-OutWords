@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SBJsonStreamWriterStateObjectStart.html">
+	<File path="Classes/SBJsonStreamWriterStateObjectKey.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SBJsonStreamWriterStateObjectStart</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/SBJsonStreamWriterStateObjectKey</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>SBJsonStreamWriterState.h</DeclaredIn>
             
@@ -13,26 +13,14 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamWriterStateObjectStart/transitionState:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamWriterStateObjectKey/appendSeparator:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>SBJsonStreamWriterState.m</DeclaredIn>
 			
-			<Declaration>- (void)transitionState:(SBJsonStreamWriter *)writer</Declaration>
+			<Declaration>- (void)appendSeparator:(SBJsonStreamWriter *)writer</Declaration>
 			
 			
-			<Anchor>//api/name/transitionState:</Anchor>
-            <NodeRef refid="46"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamWriterStateObjectStart/expectingKey:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SBJsonStreamWriterState.m</DeclaredIn>
-			
-			<Declaration>- (BOOL)expectingKey:(SBJsonStreamWriter *)writer</Declaration>
-			
-			
-			<Anchor>//api/name/expectingKey:</Anchor>
+			<Anchor>//api/name/appendSeparator:</Anchor>
             <NodeRef refid="46"/>
 		</Token>
 		

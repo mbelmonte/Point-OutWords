@@ -517,6 +517,42 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setDefaultPlayBtnArray:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSArray *defaultPlayBtnArray</Declaration>
+			
+			
+			<Anchor>//api/name/defaultPlayBtnArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/defaultPlayBtnArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSArray *defaultPlayBtnArray</Declaration>
+			
+			
+			<Anchor>//api/name/defaultPlayBtnArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/defaultPlayBtnArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSArray *defaultPlayBtnArray</Declaration>
+			
+			
+			<Anchor>//api/name/defaultPlayBtnArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setRecordPlayBtnArray:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>AdminViewController.h</DeclaredIn>
@@ -589,6 +625,42 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setRecordBtnArray:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSArray *recordBtnArray</Declaration>
+			
+			
+			<Anchor>//api/name/recordBtnArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/recordBtnArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSArray *recordBtnArray</Declaration>
+			
+			
+			<Anchor>//api/name/recordBtnArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/recordBtnArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSArray *recordBtnArray</Declaration>
+			
+			
+			<Anchor>//api/name/recordBtnArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setIndicator:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>AdminViewController.h</DeclaredIn>
@@ -621,6 +693,42 @@
 			
 			
 			<Anchor>//api/name/indicator</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setPreviousTime:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property long previousTime</Declaration>
+			
+			
+			<Anchor>//api/name/previousTime</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/previousTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property long previousTime</Declaration>
+			
+			
+			<Anchor>//api/name/previousTime</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/previousTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property long previousTime</Declaration>
+			
+			
+			<Anchor>//api/name/previousTime</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
@@ -1453,6 +1561,150 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setAwesome_Btn_Default:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *awesome_Btn_Default</Declaration>
+			
+			
+			<Anchor>//api/name/awesome_Btn_Default</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/awesome_Btn_Default</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *awesome_Btn_Default</Declaration>
+			
+			
+			<Anchor>//api/name/awesome_Btn_Default</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/awesome_Btn_Default</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *awesome_Btn_Default</Declaration>
+			
+			
+			<Anchor>//api/name/awesome_Btn_Default</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setSuper_Btn_Default:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *super_Btn_Default</Declaration>
+			
+			
+			<Anchor>//api/name/super_Btn_Default</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/super_Btn_Default</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *super_Btn_Default</Declaration>
+			
+			
+			<Anchor>//api/name/super_Btn_Default</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/super_Btn_Default</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *super_Btn_Default</Declaration>
+			
+			
+			<Anchor>//api/name/super_Btn_Default</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setWelldone_Btn_Default:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *welldone_Btn_Default</Declaration>
+			
+			
+			<Anchor>//api/name/welldone_Btn_Default</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/welldone_Btn_Default</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *welldone_Btn_Default</Declaration>
+			
+			
+			<Anchor>//api/name/welldone_Btn_Default</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/welldone_Btn_Default</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *welldone_Btn_Default</Declaration>
+			
+			
+			<Anchor>//api/name/welldone_Btn_Default</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setTry_Btn_Default:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *try_Btn_Default</Declaration>
+			
+			
+			<Anchor>//api/name/try_Btn_Default</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/try_Btn_Default</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *try_Btn_Default</Declaration>
+			
+			
+			<Anchor>//api/name/try_Btn_Default</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/try_Btn_Default</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *try_Btn_Default</Declaration>
+			
+			
+			<Anchor>//api/name/try_Btn_Default</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setSuper_Btn_Record:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>AdminViewController.h</DeclaredIn>
@@ -2133,6 +2385,42 @@
 			
 			
 			<Anchor>//api/name/scene</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setDefaultView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIView *defaultView</Declaration>
+			
+			
+			<Anchor>//api/name/defaultView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/defaultView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIView *defaultView</Declaration>
+			
+			
+			<Anchor>//api/name/defaultView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/defaultView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIView *defaultView</Declaration>
+			
+			
+			<Anchor>//api/name/defaultView</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
@@ -3328,6 +3616,186 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setProgressCircleView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property ProgressView *progressCircleView</Declaration>
+			
+			
+			<Anchor>//api/name/progressCircleView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/progressCircleView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property ProgressView *progressCircleView</Declaration>
+			
+			
+			<Anchor>//api/name/progressCircleView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/progressCircleView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property ProgressView *progressCircleView</Declaration>
+			
+			
+			<Anchor>//api/name/progressCircleView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setTimer:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSTimer *timer</Declaration>
+			
+			
+			<Anchor>//api/name/timer</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/timer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSTimer *timer</Declaration>
+			
+			
+			<Anchor>//api/name/timer</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/timer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSTimer *timer</Declaration>
+			
+			
+			<Anchor>//api/name/timer</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setSubPaths:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *subPaths</Declaration>
+			
+			
+			<Anchor>//api/name/subPaths</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/subPaths</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *subPaths</Declaration>
+			
+			
+			<Anchor>//api/name/subPaths</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/subPaths</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *subPaths</Declaration>
+			
+			
+			<Anchor>//api/name/subPaths</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/set_urlSession:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSURLSession *_urlSession</Declaration>
+			
+			
+			<Anchor>//api/name/_urlSession</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/_urlSession</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSURLSession *_urlSession</Declaration>
+			
+			
+			<Anchor>//api/name/_urlSession</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/_urlSession</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSURLSession *_urlSession</Declaration>
+			
+			
+			<Anchor>//api/name/_urlSession</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/set_tasks:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *_tasks</Declaration>
+			
+			
+			<Anchor>//api/name/_tasks</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/_tasks</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *_tasks</Declaration>
+			
+			
+			<Anchor>//api/name/_tasks</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/_tasks</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *_tasks</Declaration>
+			
+			
+			<Anchor>//api/name/_tasks</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/detailViewSwitch:</TokenIdentifier>
 			<Abstract type="html">Switch detail view</Abstract>
 			<DeclaredIn>AdminViewController.h</DeclaredIn>
@@ -3567,6 +4035,18 @@
 			
 			
 			<Anchor>//api/name/chosePromptSoure:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/playDefaultPrompt:</TokenIdentifier>
+			<Abstract type="html">Playback user default praise prompt</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)playDefaultPrompt:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/playDefaultPrompt:</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
@@ -4002,6 +4482,66 @@
 			
 			
 			<Anchor>//api/name/didReceiveMemoryWarning</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/updatePlayPorgressCircleWith:With:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)updatePlayPorgressCircleWith:(int)index With:(NSArray *)currentPlayButtonArray</Declaration>
+			
+			
+			<Anchor>//api/name/updatePlayPorgressCircleWith:With:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/updateTime:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)updateTime:(NSTimer *)timer</Declaration>
+			
+			
+			<Anchor>//api/name/updateTime:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/URLSession:task:didCompleteWithError:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(NSError *)error</Declaration>
+			
+			
+			<Anchor>//api/name/URLSession:task:didCompleteWithError:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/URLSession:dataTask:didReceiveData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveData:(NSData *)data</Declaration>
+			
+			
+			<Anchor>//api/name/URLSession:dataTask:didReceiveData:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didSendBodyData:(int64_t)bytesSent totalBytesSent:(int64_t)totalBytesSent totalBytesExpectedToSend:(int64_t)totalBytesExpectedToSend</Declaration>
+			
+			
+			<Anchor>//api/name/URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		

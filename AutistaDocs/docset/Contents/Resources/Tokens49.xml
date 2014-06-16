@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SBJsonTokeniser.html">
+	<File path="Classes/SBJsonStreamWriterStateStart.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SBJsonTokeniser</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/SBJsonStreamWriterStateStart</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>SBJsonTokeniser.h</DeclaredIn>
+			<DeclaredIn>SBJsonStreamWriterState.h</DeclaredIn>
             
 			
 			<NodeRef refid="49"/>
@@ -13,146 +13,26 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonTokeniser/setStream:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamWriterStateStart/transitionState:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>SBJsonTokeniser.h</DeclaredIn>
+			<DeclaredIn>SBJsonStreamWriterState.m</DeclaredIn>
 			
-			<Declaration>@property (strong) SBJsonUTF8Stream *stream</Declaration>
+			<Declaration>- (void)transitionState:(SBJsonStreamWriter *)writer</Declaration>
 			
 			
-			<Anchor>//api/name/stream</Anchor>
+			<Anchor>//api/name/transitionState:</Anchor>
             <NodeRef refid="49"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonTokeniser/stream</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamWriterStateStart/appendSeparator:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>SBJsonTokeniser.h</DeclaredIn>
+			<DeclaredIn>SBJsonStreamWriterState.m</DeclaredIn>
 			
-			<Declaration>@property (strong) SBJsonUTF8Stream *stream</Declaration>
-			
-			
-			<Anchor>//api/name/stream</Anchor>
-            <NodeRef refid="49"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SBJsonTokeniser/stream</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SBJsonTokeniser.h</DeclaredIn>
-			
-			<Declaration>@property (strong) SBJsonUTF8Stream *stream</Declaration>
+			<Declaration>- (void)appendSeparator:(SBJsonStreamWriter *)writer</Declaration>
 			
 			
-			<Anchor>//api/name/stream</Anchor>
-            <NodeRef refid="49"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonTokeniser/setError:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SBJsonTokeniser.h</DeclaredIn>
-			
-			<Declaration>@property (copy) NSString *error</Declaration>
-			
-			
-			<Anchor>//api/name/error</Anchor>
-            <NodeRef refid="49"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonTokeniser/error</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SBJsonTokeniser.h</DeclaredIn>
-			
-			<Declaration>@property (copy) NSString *error</Declaration>
-			
-			
-			<Anchor>//api/name/error</Anchor>
-            <NodeRef refid="49"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SBJsonTokeniser/error</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SBJsonTokeniser.h</DeclaredIn>
-			
-			<Declaration>@property (copy) NSString *error</Declaration>
-			
-			
-			<Anchor>//api/name/error</Anchor>
-            <NodeRef refid="49"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonTokeniser/appendData:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SBJsonTokeniser.h</DeclaredIn>
-			
-			<Declaration>- (void)appendData:(NSData *)data_</Declaration>
-			
-			
-			<Anchor>//api/name/appendData:</Anchor>
-            <NodeRef refid="49"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonTokeniser/getToken:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SBJsonTokeniser.h</DeclaredIn>
-			
-			<Declaration>- (sbjson_token_t)getToken:(NSObject **)token</Declaration>
-			
-			
-			<Anchor>//api/name/getToken:</Anchor>
-            <NodeRef refid="49"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SBJsonTokeniser/initialize</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SBJsonTokeniser.m</DeclaredIn>
-			
-			<Declaration>+ (void)initialize</Declaration>
-			
-			
-			<Anchor>//api/name/initialize</Anchor>
-            <NodeRef refid="49"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonTokeniser/init</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SBJsonTokeniser.m</DeclaredIn>
-			
-			<Declaration>- (id)init</Declaration>
-			
-			
-			<Anchor>//api/name/init</Anchor>
-            <NodeRef refid="49"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonTokeniser/match:length:retval:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SBJsonTokeniser.m</DeclaredIn>
-			
-			<Declaration>- (sbjson_token_t)match:(const char *)pattern length:(NSUInteger)len retval:(sbjson_token_t)token</Declaration>
-			
-			
-			<Anchor>//api/name/match:length:retval:</Anchor>
-            <NodeRef refid="49"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SBJsonTokeniser/decodeEscape:into:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SBJsonTokeniser.m</DeclaredIn>
-			
-			<Declaration>- (BOOL)decodeEscape:(unichar)ch into:(unichar *)decoded</Declaration>
-			
-			
-			<Anchor>//api/name/decodeEscape:into:</Anchor>
+			<Anchor>//api/name/appendSeparator:</Anchor>
             <NodeRef refid="49"/>
 		</Token>
 		

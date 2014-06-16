@@ -75,6 +75,7 @@
 						<NodeRef refid="62"/>
 						<NodeRef refid="63"/>
 						<NodeRef refid="64"/>
+						<NodeRef refid="65"/>
 						
 					</Subnodes>
 				</Node>
@@ -84,7 +85,6 @@
 					<Name>Categories</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="65"/>
 						<NodeRef refid="66"/>
 						<NodeRef refid="67"/>
 						<NodeRef refid="68"/>
@@ -93,6 +93,7 @@
 						<NodeRef refid="71"/>
 						<NodeRef refid="72"/>
 						<NodeRef refid="73"/>
+						<NodeRef refid="74"/>
 						
 					</Subnodes>
 				</Node>
@@ -102,10 +103,10 @@
 					<Name>Protocols</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="74"/>
 						<NodeRef refid="75"/>
 						<NodeRef refid="76"/>
 						<NodeRef refid="77"/>
+						<NodeRef refid="78"/>
 						
 					</Subnodes>
 				</Node>
@@ -648,6 +649,39 @@
             
         </Node>
 		<Node id="18" type="file" documentType="reference">
+            <Name>ProgressView</Name>
+            <Path>Classes/ProgressView.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/ProgressView.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/ProgressView.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/ProgressView.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/ProgressView.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="19" type="file" documentType="reference">
             <Name>PuzzleObject</Name>
             <Path>Classes/PuzzleObject.html</Path>
             
@@ -680,7 +714,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="19" type="file" documentType="reference">
+		<Node id="20" type="file" documentType="reference">
             <Name>PuzzlePieceView</Name>
             <Path>Classes/PuzzlePieceView.html</Path>
             
@@ -713,7 +747,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="20" type="file" documentType="reference">
+		<Node id="21" type="file" documentType="reference">
             <Name>PuzzleStateView</Name>
             <Path>Classes/PuzzleStateView.html</Path>
             
@@ -746,7 +780,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="21" type="file" documentType="reference">
+		<Node id="22" type="file" documentType="reference">
             <Name>RootViewController</Name>
             <Path>Classes/RootViewController.html</Path>
             
@@ -773,7 +807,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="22" type="file" documentType="reference">
+		<Node id="23" type="file" documentType="reference">
             <Name>SBJsonParser</Name>
             <Path>Classes/SBJsonParser.html</Path>
             
@@ -806,7 +840,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="23" type="file" documentType="reference">
+		<Node id="24" type="file" documentType="reference">
             <Name>SBJsonStreamParser</Name>
             <Path>Classes/SBJsonStreamParser.html</Path>
             
@@ -839,7 +873,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="24" type="file" documentType="reference">
+		<Node id="25" type="file" documentType="reference">
             <Name>SBJsonStreamParserAccumulator</Name>
             <Path>Classes/SBJsonStreamParserAccumulator.html</Path>
             
@@ -872,7 +906,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="25" type="file" documentType="reference">
+		<Node id="26" type="file" documentType="reference">
             <Name>SBJsonStreamParserAdapter</Name>
             <Path>Classes/SBJsonStreamParserAdapter.html</Path>
             
@@ -905,7 +939,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="26" type="file" documentType="reference">
+		<Node id="27" type="file" documentType="reference">
             <Name>SBJsonStreamParserState</Name>
             <Path>Classes/SBJsonStreamParserState.html</Path>
             
@@ -938,7 +972,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="27" type="file" documentType="reference">
+		<Node id="28" type="file" documentType="reference">
             <Name>SBJsonStreamParserStateArrayGotValue</Name>
             <Path>Classes/SBJsonStreamParserStateArrayGotValue.html</Path>
             
@@ -965,7 +999,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="28" type="file" documentType="reference">
+		<Node id="29" type="file" documentType="reference">
             <Name>SBJsonStreamParserStateArrayNeedValue</Name>
             <Path>Classes/SBJsonStreamParserStateArrayNeedValue.html</Path>
             
@@ -992,7 +1026,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="29" type="file" documentType="reference">
+		<Node id="30" type="file" documentType="reference">
             <Name>SBJsonStreamParserStateArrayStart</Name>
             <Path>Classes/SBJsonStreamParserStateArrayStart.html</Path>
             
@@ -1019,7 +1053,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="30" type="file" documentType="reference">
+		<Node id="31" type="file" documentType="reference">
             <Name>SBJsonStreamParserStateComplete</Name>
             <Path>Classes/SBJsonStreamParserStateComplete.html</Path>
             
@@ -1046,7 +1080,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="31" type="file" documentType="reference">
+		<Node id="32" type="file" documentType="reference">
             <Name>SBJsonStreamParserStateError</Name>
             <Path>Classes/SBJsonStreamParserStateError.html</Path>
             
@@ -1073,7 +1107,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="32" type="file" documentType="reference">
+		<Node id="33" type="file" documentType="reference">
             <Name>SBJsonStreamParserStateObjectGotKey</Name>
             <Path>Classes/SBJsonStreamParserStateObjectGotKey.html</Path>
             
@@ -1100,7 +1134,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="33" type="file" documentType="reference">
+		<Node id="34" type="file" documentType="reference">
             <Name>SBJsonStreamParserStateObjectGotValue</Name>
             <Path>Classes/SBJsonStreamParserStateObjectGotValue.html</Path>
             
@@ -1127,7 +1161,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="34" type="file" documentType="reference">
+		<Node id="35" type="file" documentType="reference">
             <Name>SBJsonStreamParserStateObjectNeedKey</Name>
             <Path>Classes/SBJsonStreamParserStateObjectNeedKey.html</Path>
             
@@ -1154,7 +1188,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="35" type="file" documentType="reference">
+		<Node id="36" type="file" documentType="reference">
             <Name>SBJsonStreamParserStateObjectSeparator</Name>
             <Path>Classes/SBJsonStreamParserStateObjectSeparator.html</Path>
             
@@ -1181,7 +1215,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="36" type="file" documentType="reference">
+		<Node id="37" type="file" documentType="reference">
             <Name>SBJsonStreamParserStateObjectStart</Name>
             <Path>Classes/SBJsonStreamParserStateObjectStart.html</Path>
             
@@ -1208,7 +1242,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="37" type="file" documentType="reference">
+		<Node id="38" type="file" documentType="reference">
             <Name>SBJsonStreamParserStateStart</Name>
             <Path>Classes/SBJsonStreamParserStateStart.html</Path>
             
@@ -1235,7 +1269,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="38" type="file" documentType="reference">
+		<Node id="39" type="file" documentType="reference">
             <Name>SBJsonStreamWriter</Name>
             <Path>Classes/SBJsonStreamWriter.html</Path>
             
@@ -1274,7 +1308,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="39" type="file" documentType="reference">
+		<Node id="40" type="file" documentType="reference">
             <Name>SBJsonStreamWriterAccumulator</Name>
             <Path>Classes/SBJsonStreamWriterAccumulator.html</Path>
             
@@ -1307,7 +1341,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="40" type="file" documentType="reference">
+		<Node id="41" type="file" documentType="reference">
             <Name>SBJsonStreamWriterState</Name>
             <Path>Classes/SBJsonStreamWriterState.html</Path>
             
@@ -1340,7 +1374,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="41" type="file" documentType="reference">
+		<Node id="42" type="file" documentType="reference">
             <Name>SBJsonStreamWriterStateArrayStart</Name>
             <Path>Classes/SBJsonStreamWriterStateArrayStart.html</Path>
             
@@ -1367,7 +1401,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="42" type="file" documentType="reference">
+		<Node id="43" type="file" documentType="reference">
             <Name>SBJsonStreamWriterStateArrayValue</Name>
             <Path>Classes/SBJsonStreamWriterStateArrayValue.html</Path>
             
@@ -1394,7 +1428,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="43" type="file" documentType="reference">
+		<Node id="44" type="file" documentType="reference">
             <Name>SBJsonStreamWriterStateComplete</Name>
             <Path>Classes/SBJsonStreamWriterStateComplete.html</Path>
             
@@ -1421,12 +1455,12 @@
             </Subnodes>
             
         </Node>
-		<Node id="44" type="file" documentType="reference">
+		<Node id="45" type="file" documentType="reference">
             <Name>SBJsonStreamWriterStateError</Name>
             <Path>Classes/SBJsonStreamWriterStateError.html</Path>
             
         </Node>
-		<Node id="45" type="file" documentType="reference">
+		<Node id="46" type="file" documentType="reference">
             <Name>SBJsonStreamWriterStateObjectKey</Name>
             <Path>Classes/SBJsonStreamWriterStateObjectKey.html</Path>
             
@@ -1453,7 +1487,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="46" type="file" documentType="reference">
+		<Node id="47" type="file" documentType="reference">
             <Name>SBJsonStreamWriterStateObjectStart</Name>
             <Path>Classes/SBJsonStreamWriterStateObjectStart.html</Path>
             
@@ -1480,7 +1514,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="47" type="file" documentType="reference">
+		<Node id="48" type="file" documentType="reference">
             <Name>SBJsonStreamWriterStateObjectValue</Name>
             <Path>Classes/SBJsonStreamWriterStateObjectValue.html</Path>
             
@@ -1507,7 +1541,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="48" type="file" documentType="reference">
+		<Node id="49" type="file" documentType="reference">
             <Name>SBJsonStreamWriterStateStart</Name>
             <Path>Classes/SBJsonStreamWriterStateStart.html</Path>
             
@@ -1534,7 +1568,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="49" type="file" documentType="reference">
+		<Node id="50" type="file" documentType="reference">
             <Name>SBJsonTokeniser</Name>
             <Path>Classes/SBJsonTokeniser.html</Path>
             
@@ -1573,7 +1607,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="50" type="file" documentType="reference">
+		<Node id="51" type="file" documentType="reference">
             <Name>SBJsonUTF8Stream</Name>
             <Path>Classes/SBJsonUTF8Stream.html</Path>
             
@@ -1606,7 +1640,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="51" type="file" documentType="reference">
+		<Node id="52" type="file" documentType="reference">
             <Name>SBJsonWriter</Name>
             <Path>Classes/SBJsonWriter.html</Path>
             
@@ -1639,7 +1673,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="52" type="file" documentType="reference">
+		<Node id="53" type="file" documentType="reference">
             <Name>SayPuzzleViewController</Name>
             <Path>Classes/SayPuzzleViewController.html</Path>
             
@@ -1672,7 +1706,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="53" type="file" documentType="reference">
+		<Node id="54" type="file" documentType="reference">
             <Name>Scene</Name>
             <Path>Classes/Scene.html</Path>
             
@@ -1705,7 +1739,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="54" type="file" documentType="reference">
+		<Node id="55" type="file" documentType="reference">
             <Name>SceneSelectorViewController</Name>
             <Path>Classes/SceneSelectorViewController.html</Path>
             
@@ -1738,7 +1772,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="55" type="file" documentType="reference">
+		<Node id="56" type="file" documentType="reference">
             <Name>SceneViewController</Name>
             <Path>Classes/SceneViewController.html</Path>
             
@@ -1771,7 +1805,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="56" type="file" documentType="reference">
+		<Node id="57" type="file" documentType="reference">
             <Name>SoundEffect</Name>
             <Path>Classes/SoundEffect.html</Path>
             
@@ -1804,7 +1838,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="57" type="file" documentType="reference">
+		<Node id="58" type="file" documentType="reference">
             <Name>TouchPuzzleViewController</Name>
             <Path>Classes/TouchPuzzleViewController.html</Path>
             
@@ -1837,7 +1871,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="58" type="file" documentType="reference">
+		<Node id="59" type="file" documentType="reference">
             <Name>TypeBanner</Name>
             <Path>Classes/TypeBanner.html</Path>
             
@@ -1870,7 +1904,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="59" type="file" documentType="reference">
+		<Node id="60" type="file" documentType="reference">
             <Name>TypePuzzleViewController</Name>
             <Path>Classes/TypePuzzleViewController.html</Path>
             
@@ -1903,7 +1937,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="60" type="file" documentType="reference">
+		<Node id="61" type="file" documentType="reference">
             <Name>User</Name>
             <Path>Classes/User.html</Path>
             
@@ -1936,7 +1970,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="61" type="file" documentType="reference">
+		<Node id="62" type="file" documentType="reference">
             <Name>VULevelMeter</Name>
             <Path>Classes/VULevelMeter.html</Path>
             
@@ -1969,7 +2003,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="62" type="file" documentType="reference">
+		<Node id="63" type="file" documentType="reference">
             <Name>VUMeterTable</Name>
             <Path>Classes/VUMeterTable.html</Path>
             
@@ -1996,7 +2030,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="63" type="file" documentType="reference">
+		<Node id="64" type="file" documentType="reference">
             <Name>ZipArchive</Name>
             <Path>Classes/ZipArchive.html</Path>
             
@@ -2029,7 +2063,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="64" type="file" documentType="reference">
+		<Node id="65" type="file" documentType="reference">
             <Name>tests</Name>
             <Path>Classes/tests.html</Path>
             
@@ -2057,7 +2091,7 @@
             
         </Node>
 		
-		<Node id="65" type="file" documentType="reference">
+		<Node id="66" type="file" documentType="reference">
             <Name>AVAudioPlayer(Fade)</Name>
             <Path>Categories/AVAudioPlayer+Fade.html</Path>
             
@@ -2090,7 +2124,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="66" type="file" documentType="reference">
+		<Node id="67" type="file" documentType="reference">
             <Name>NSData(NSData_SBJsonParsing)</Name>
             <Path>Categories/NSData+NSData_SBJsonParsing.html</Path>
             
@@ -2117,7 +2151,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="67" type="file" documentType="reference">
+		<Node id="68" type="file" documentType="reference">
             <Name>NSFileManager(ZipArchive)</Name>
             <Path>Categories/NSFileManager+ZipArchive.html</Path>
             
@@ -2144,7 +2178,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="68" type="file" documentType="reference">
+		<Node id="69" type="file" documentType="reference">
             <Name>NSObject(NSObject_SBJsonWriting)</Name>
             <Path>Categories/NSObject+NSObject_SBJsonWriting.html</Path>
             
@@ -2171,7 +2205,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="69" type="file" documentType="reference">
+		<Node id="70" type="file" documentType="reference">
             <Name>NSObject(SBProxyForJson)</Name>
             <Path>Categories/NSObject+SBProxyForJson.html</Path>
             
@@ -2198,7 +2232,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="70" type="file" documentType="reference">
+		<Node id="71" type="file" documentType="reference">
             <Name>NSString(MD5Addition)</Name>
             <Path>Categories/NSString+MD5Addition.html</Path>
             
@@ -2225,7 +2259,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="71" type="file" documentType="reference">
+		<Node id="72" type="file" documentType="reference">
             <Name>NSString(NSString_SBJsonParsing)</Name>
             <Path>Categories/NSString+NSString_SBJsonParsing.html</Path>
             
@@ -2252,7 +2286,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="72" type="file" documentType="reference">
+		<Node id="73" type="file" documentType="reference">
             <Name>UIDevice(IdentifierAddition)</Name>
             <Path>Categories/UIDevice+IdentifierAddition.html</Path>
             
@@ -2279,7 +2313,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="73" type="file" documentType="reference">
+		<Node id="74" type="file" documentType="reference">
             <Name>UIDevice(Private)</Name>
             <Path>Categories/UIDevice+Private.html</Path>
             
@@ -2307,7 +2341,7 @@
             
         </Node>
 		
-        <Node id="74" type="file" documentType="reference">
+        <Node id="75" type="file" documentType="reference">
             <Name>SBJsonStreamParserAdapterDelegate</Name>
             <Path>Protocols/SBJsonStreamParserAdapterDelegate.html</Path>
             
@@ -2334,7 +2368,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="75" type="file" documentType="reference">
+		<Node id="76" type="file" documentType="reference">
             <Name>SBJsonStreamParserDelegate</Name>
             <Path>Protocols/SBJsonStreamParserDelegate.html</Path>
             
@@ -2361,7 +2395,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="76" type="file" documentType="reference">
+		<Node id="77" type="file" documentType="reference">
             <Name>SBJsonStreamWriterDelegate</Name>
             <Path>Protocols/SBJsonStreamWriterDelegate.html</Path>
             
@@ -2388,7 +2422,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="77" type="file" documentType="reference">
+		<Node id="78" type="file" documentType="reference">
             <Name>ZipArchiveDelegate</Name>
             <Path>Protocols/ZipArchiveDelegate.html</Path>
             
