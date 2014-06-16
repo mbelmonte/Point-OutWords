@@ -95,7 +95,13 @@
         _sendLogsButton.hidden = NO;
         _logSizeLabel.hidden = NO;
     }
-
+    
+    if ((int)_prefs.whetherRecordActivity == 0) {
+        _sendLogsButton.hidden = YES;
+        _uploadProgressBar.hidden = YES;
+        _logSizeLabel.hidden = YES;
+        _uploadCancelBtn.hidden = YES;
+    }
 	
 	_backgroundMusicSwitch.on = _prefs.backgroundMusicEnabled;
 	_guidedModeSwitch.on = _prefs.guidedModeEnabled;

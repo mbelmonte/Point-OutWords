@@ -56,6 +56,7 @@
 @property (nonatomic, assign) CGFloat typeSignificancy;
 
 @property (nonatomic, assign) NSInteger *whetherRecordVoice;
+@property (nonatomic, assign) NSInteger *whetherRecordActivity;
 
 /**-----------------------------------------------------------------------------
  * @name Data manipulation methods

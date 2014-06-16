@@ -29,7 +29,8 @@
 
 @property (nonatomic, retain) IBOutlet UILabel *titleLabel;
 @property (nonatomic, retain) IBOutlet UITextView *textView;
-@property (nonatomic, retain) IBOutlet UISwitch *logSwitch;
+@property (nonatomic, retain) IBOutlet UISwitch *activitylogSwitch;
+@property (nonatomic, retain) IBOutlet UISwitch *audiologSwitch;
 @property GlobalPreferences *prefs;
 @property (nonatomic, retain) IBOutlet UIImageView *imageView;
 

@@ -45,7 +45,7 @@
 		
 		[self addSubview:_titleLabel];
 		
-		_textView = [[UITextView alloc] initWithFrame:CGRectMake(0, 110, 780, 500)];
+		_textView = [[UITextView alloc] initWithFrame:CGRectMake(0, 110, 780, 640)];
         _textView.editable = NO;
         _textView.scrollEnabled = YES;
         _textView.userInteractionEnabled = YES;
@@ -59,30 +59,51 @@
         
         _prefs = [GlobalPreferences sharedGlobalPreferences];
         
-        _logSwitch = [[UISwitch alloc] initWithFrame:CGRectMake(700, 296, 55, 31)];
-        [_logSwitch addTarget: self action: @selector(flip:) forControlEvents:UIControlEventValueChanged];
+        _audiologSwitch = [[UISwitch alloc] initWithFrame:CGRectMake(700, 690, 55, 31)];
+        [_audiologSwitch addTarget: self action: @selector(flip:) forControlEvents:UIControlEventValueChanged];
         
-        _logSwitch.on = _prefs.whetherRecordVoice;
+        _audiologSwitch.on = _prefs.whetherRecordVoice;
         
-        [self addSubview: _logSwitch];
+        [self addSubview: _audiologSwitch];
+        
+        _activitylogSwitch = [[UISwitch alloc] initWithFrame:CGRectMake(700, 630, 55, 31)];
+        [_activitylogSwitch addTarget: self action: @selector(flip:) forControlEvents:UIControlEventValueChanged];
+        
+        _activitylogSwitch.on = _prefs.whetherRecordActivity;
+        
+        [self addSubview: _activitylogSwitch];
 	}
     return self;
 }
 
 - (IBAction)flip:(id)sender {
     
-    if (_logSwitch.on) {
+    if (_audiologSwitch.on) {
        
-        NSLog(@"On");
+        NSLog(@"Audio Log Switch On");
         _prefs.whetherRecordVoice = 1;
         
     }
     
     else  {
         
-        NSLog(@"Off");
+        NSLog(@"Audio Log Switch Off");
         _prefs.whetherRecordVoice = 0;
 
+    }
+    
+    if (_activitylogSwitch.on) {
+        
+        NSLog(@"Activity Log Switch On");
+        _prefs.whetherRecordActivity = 1;
+        
+    }
+    
+    else  {
+        
+        NSLog(@"Activity Log Switch Off");
+        _prefs.whetherRecordActivity = 0;
+        
     }
     
     [_prefs saveState];

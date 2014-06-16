@@ -26,15 +26,23 @@ The app also logs all user interactions, allowing researchers or therapists to a
 		<key>title</key>
 		<string>You can help</string>
 		<key>text</key>
-		<string>Information logged by the app can aid autism research.  If you are using this app with an autistic child who has trouble with communicative speech, you can help by sending log files every now and then. Also, if you allow us to record audio during speak mode, please keep the switch on. Below are the partners responsible for this app.
+		<string>If you or your child (of whom you are the parent or legal guardian) are autistic and have trouble with communicative speech, you can help by enabling the app to send logs of your activities in the app and, if you are happy to do so, audio recordings during Speak Mode.  Activity logs would be sent anonymously, in a way that will not allow you or your child to be identified from them.  Voice recordings would not be linked to your or your child&apos;s name, although there is a small chance that a voice could be recognised by someone who knows it.  Activity logs and voice recordings would be used for scientific research to improve communication therapies, and may be reported in publications and in presentations at scientific meetings. Your decision as to whether to allow your activity log and/or voice recording to be used for this research is completely voluntary and will not affect your ability to use this app.  If you ever change your mind as to whether to send logs and/or voice recordings, just press the (i) symbol to return to this page and change these settings, or change them in the Speak Mode settings screen.
 
-Do you allow us to record audio during speak mode?</string>
+Do you want to send activity logs?
+
+Do you want to send audio recordings?</string>
+	</dict>
+    <dict>
+		<key>title</key>
+		<string>Partners</string>
+		<key>text</key>
+		<string></string>
 		<key>imageName</key>
 		<string>logos2.png</string>
 		<key>offsetX</key>
 		<integer>-855</integer>
 		<key>offsetY</key>
-		<integer>-420</integer>
+		<integer>-520</integer>
 	</dict>
 	<dict>
 		<key>title</key>
