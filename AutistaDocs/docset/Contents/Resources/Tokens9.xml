@@ -697,6 +697,42 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/setWhetherRecordActivity:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger *whetherRecordActivity</Declaration>
+			
+			
+			<Anchor>//api/name/whetherRecordActivity</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/whetherRecordActivity</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger *whetherRecordActivity</Declaration>
+			
+			
+			<Anchor>//api/name/whetherRecordActivity</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GlobalPreferences/whetherRecordActivity</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger *whetherRecordActivity</Declaration>
+			
+			
+			<Anchor>//api/name/whetherRecordActivity</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/GlobalPreferences/sharedGlobalPreferences</TokenIdentifier>
 			<Abstract type="html">Set up shared instance of global preferences</Abstract>
 			<DeclaredIn>GlobalPreferences.h</DeclaredIn>

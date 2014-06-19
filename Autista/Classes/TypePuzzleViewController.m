@@ -827,6 +827,8 @@
         fontLable.textAlignment = UITextAlignmentCenter;
         fontLable.text = lableTitle;
         fontLable.textColor = [UIColor colorWithRed:(255.0/255.0) green:(255.0/255) blue:(255.0/255) alpha:1.0];
+        [fontLable setBackgroundColor:[UIColor clearColor]];
+        
         UIFont *avenirBold = [UIFont fontWithName:@"AvenirNext-Medium" size:24.];
         if (avenirBold == nil) {
             fontLable.font = [UIFont systemFontOfSize:24];
@@ -834,7 +836,6 @@
         else {
             fontLable.font = avenirBold;
         }
-        
         
         //add subviews
         [[_pieces objectAtIndex:i] addSubview: charBackground];

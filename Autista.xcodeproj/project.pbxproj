@@ -158,6 +158,7 @@
 		49C2C715190DEA550019600C /* SBJSON License in Resources */ = {isa = PBXBuildFile; fileRef = 49C2C70C190DEA550019600C /* SBJSON License */; };
 		49C2C716190DEA550019600C /* UIDevice-with-UniqueIdentifier-for-iOS-5 License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 49C2C70D190DEA550019600C /* UIDevice-with-UniqueIdentifier-for-iOS-5 License.txt */; };
 		49C2C717190DEA550019600C /* ZipArchive License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 49C2C70E190DEA550019600C /* ZipArchive License.txt */; };
+		49E6A8F319533B8A00CB368E /* Autista gpl.txt in Resources */ = {isa = PBXBuildFile; fileRef = 49E6A8F219533B8A00CB368E /* Autista gpl.txt */; };
 		49EFC70518FA457D0012B667 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49EFC70418FA457D0012B667 /* Localizable.strings */; };
 		8D18220216B9A93D005431FF /* AVAudioPlayer+Fade.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF5E0B316B983F1005D8154 /* AVAudioPlayer+Fade.m */; };
 		8D234A8316C7422E0040DC14 /* Ball01B.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D234A5A16C7422E0040DC14 /* Ball01B.png */; };
@@ -768,6 +769,7 @@
 		49C2C70C190DEA550019600C /* SBJSON License */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "SBJSON License"; path = "Licenses/SBJSON License"; sourceTree = "<group>"; };
 		49C2C70D190DEA550019600C /* UIDevice-with-UniqueIdentifier-for-iOS-5 License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "UIDevice-with-UniqueIdentifier-for-iOS-5 License.txt"; path = "Licenses/UIDevice-with-UniqueIdentifier-for-iOS-5 License.txt"; sourceTree = "<group>"; };
 		49C2C70E190DEA550019600C /* ZipArchive License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "ZipArchive License.txt"; path = "Licenses/ZipArchive License.txt"; sourceTree = "<group>"; };
+		49E6A8F219533B8A00CB368E /* Autista gpl.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "Autista gpl.txt"; path = "Licenses/Autista gpl.txt"; sourceTree = "<group>"; };
 		49EFC70418FA457D0012B667 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = Autista/Localization/Localizable.strings; sourceTree = "<group>"; };
 		8D234A5A16C7422E0040DC14 /* Ball01B.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ball01B.png; sourceTree = "<group>"; };
 		8D234A5B16C7422E0040DC14 /* Ball02A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ball02A.png; sourceTree = "<group>"; };
@@ -1887,6 +1889,7 @@
 				49C2C70C190DEA550019600C /* SBJSON License */,
 				49C2C70D190DEA550019600C /* UIDevice-with-UniqueIdentifier-for-iOS-5 License.txt */,
 				49C2C70E190DEA550019600C /* ZipArchive License.txt */,
+				49E6A8F219533B8A00CB368E /* Autista gpl.txt */,
 			);
 			name = Licenses;
 			sourceTree = "<group>";
@@ -3268,6 +3271,7 @@
 				8D96535A16FF42A200B9E3FB /* Grapes.caf in Resources */,
 				8D96535B16FF42A200B9E3FB /* Happy.caf in Resources */,
 				2054BD1718364B9300DFFC44 /* Towel_full_2_Tanu.caf in Resources */,
+				49E6A8F319533B8A00CB368E /* Autista gpl.txt in Resources */,
 				8D96535C16FF42A200B9E3FB /* Mango.caf in Resources */,
 				8D96535D16FF42A200B9E3FB /* Milk.caf in Resources */,
 				8D96535E16FF42A200B9E3FB /* Mug.caf in Resources */,
