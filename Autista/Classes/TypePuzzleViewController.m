@@ -92,7 +92,9 @@
 	[self performSelector:@selector(initializePuzzleState) withObject:nil afterDelay:0.3];
 	
 	[[EventLogger sharedLogger] logEvent:LogEventCodePuzzlePresented eventInfo:@{@"Mode": @"Type"}];
-    
+}
+
+- (void)viewWillAppear:(BOOL)animated{
     self.accelerometerDataArray = [NSMutableArray array];
     self.motionManager = [[CMMotionManager alloc] init];
     NSOperationQueue *queue = [[NSOperationQueue alloc] init];
@@ -106,14 +108,14 @@
                 labelText = [NSString stringWithFormat:
                              @"Accelerometer\n-----------\nx: %+.2f\ny: %+.2f\nz: %+.2f", accelerometerData.acceleration.x, accelerometerData.acceleration.y, accelerometerData.acceleration.z];
             }
-//            [accelerometerLabel performSelectorOnMainThread:@selector(setText:)
-//                                                 withObject:labelText waitUntilDone:NO];
+            //            [accelerometerLabel performSelectorOnMainThread:@selector(setText:)
+            //                                                 withObject:labelText waitUntilDone:NO];
             [[EventLogger sharedLogger] logEvent:LogEventCodeTypeAccelerometer eventInfo:@{@"X": [NSString stringWithFormat:@"%+.2f\n", accelerometerData.acceleration.x], @"Y": [NSString stringWithFormat:@"%+.2f\n", accelerometerData.acceleration.y], @"Z": [NSString stringWithFormat:@"%+.2f\n", accelerometerData.acceleration.z]}];
             //[self.accelerometerDataArray addObject:accelerometerData];
             NSLog(@"%@", labelText);
         }]; }
     else {
-            //accelerometerLabel.text = @"This device has no accelerometer.";
+        //accelerometerLabel.text = @"This device has no accelerometer.";
     }
 }
 
@@ -128,6 +130,10 @@
         
         if (_launchedInGuidedMode == NO && _prefs.guidedModeEnabled == YES)								// most likely, admin changed this setting mid-stream
             [self dismissViewControllerAnimated:NO completion:nil];										// so bail out
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+    self.motionManager = nil;
 }
 
 - (void)initializePuzzleState
@@ -671,7 +677,6 @@
 
 //Make TYPE mode closer to POINT mode to ensure smoother transition from POINT to TYPE
 
-//TODO: refer to TouchPuzzleViewController randomizeInitialPositionsOfPieces
 - (void)randomizeInitialPositionsOfPieces
 {
 	//CGRect outerRect = CGRectMake(0, 0, 2048, 1536);//include the outside of the screen

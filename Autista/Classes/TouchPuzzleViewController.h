@@ -20,6 +20,7 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import <MediaPlayer/MediaPlayer.h>
+#import <CoreMotion/CoreMotion.h>
 /**
  *  View controller handling puzzles in touch mode
  */
@@ -90,6 +91,8 @@
  *  Placholder image for all puzzle frames
  */
 @property (nonatomic, retain) IBOutlet UIImageView *placeHolder;
+
+@property (strong, nonatomic) CMMotionManager *motionManager;
 
 /**-----------------------------------------------------------------------------
  * @name Handling admin panel interations

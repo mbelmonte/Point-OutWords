@@ -1882,9 +1882,9 @@
 				<key>title</key>
 				<string>Towel</string>
 				<key>syllables</key>
-				<string>tow-el</string>
+				<string>tow-el-towel</string>
 				<key>phonetics</key>
-				<string>taw-ahl</string>
+				<string>taw-ahl-tawahl</string>
 				<key>difficultyDrag</key>
 				<integer>15</integer>
 				<key>difficultySpeak</key>

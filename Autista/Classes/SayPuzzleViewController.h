@@ -29,6 +29,7 @@
 #import <OpenEars/OpenEarsEventsObserver.h>
 #import <OpenEars/PocketsphinxController.h>
 #import <MediaPlayer/MediaPlayer.h>
+#import <CoreMotion/CoreMotion.h>
 
 @class VULevelMeter;
 @class PuzzleObject;
@@ -114,6 +115,9 @@
 @property (nonatomic, retain) AVPlayerItem * firstSyllItem;
 
 @property (strong, nonatomic) IBOutlet UILabel *recognizerFeedback;
+
+@property (strong, nonatomic) CMMotionManager *motionManager;
+
 /**-----------------------------------------------------------------------------
  * @name Handling admin panel interations
  * -----------------------------------------------------------------------------
