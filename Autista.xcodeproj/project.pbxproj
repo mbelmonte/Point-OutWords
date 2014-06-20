@@ -586,6 +586,25 @@
 		8DF5E0B116B96DD3005D8154 /* PlaygroundSceneMusic.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 8DF5E0A716B96B57005D8154 /* PlaygroundSceneMusic.aifc */; };
 		8DFAE2F5166322A8004A9752 /* VUMeterTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFAE2F4166322A8004A9752 /* VUMeterTable.m */; };
 		8DFAE2F816632522004A9752 /* VULevelMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFAE2F716632522004A9752 /* VULevelMeter.m */; };
+		8F13961D195406C500539895 /* Shampoo_Syll_3_a_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F13961C195406C500539895 /* Shampoo_Syll_3_a_Tanu.caf */; };
+		8F13961F195407D800539895 /* Potty_Syll_3_c_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F13961E195407D800539895 /* Potty_Syll_3_c_Tanu.caf */; };
+		8F1396211954081000539895 /* Towel_Syll_3_c_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F1396201954081000539895 /* Towel_Syll_3_c_Tanu.caf */; };
+		8F1396231954089B00539895 /* Balloon_Syll_3_b_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F1396221954089B00539895 /* Balloon_Syll_3_b_Tanu.caf */; };
+		8F139625195408B200539895 /* Birthday_Syll_4_a_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F139624195408B200539895 /* Birthday_Syll_4_a_Tanu.caf */; };
+		8F139627195408FD00539895 /* Chocolate_Syll_4_d_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F139626195408FD00539895 /* Chocolate_Syll_4_d_Tanu.caf */; };
+		8F13962919540ABB00539895 /* Table_Syll_3_c_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F13962819540ABB00539895 /* Table_Syll_3_c_Tanu.caf */; };
+		8F13962B19540ADC00539895 /* Pencil_Syll_3_b_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F13962A19540ADC00539895 /* Pencil_Syll_3_b_Tanu.caf */; };
+		8F13962D19540BAA00539895 /* Lollipop_Syll_4_b_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F13962C19540BAA00539895 /* Lollipop_Syll_4_b_Tanu.caf */; };
+		8F13962F19540CA300539895 /* Apple_Syll_3_c_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F13962E19540CA300539895 /* Apple_Syll_3_c_Tanu.caf */; };
+		8F13963119540CB900539895 /* Banana_Syll_4_b_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F13963019540CB900539895 /* Banana_Syll_4_b_Tanu.caf */; };
+		8F13963319540CD300539895 /* Mango_Syll_3_b_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F13963219540CD300539895 /* Mango_Syll_3_b_Tanu.caf */; };
+		8F13963519540CF200539895 /* Orange_Syll_3_a_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F13963419540CF200539895 /* Orange_Syll_3_a_Tanu.caf */; };
+		8F13963719540D2600539895 /* Watermelon_Syll_5_c_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F13963619540D2600539895 /* Watermelon_Syll_5_c_Tanu.caf */; };
+		8F13963919540D9000539895 /* Onion_Syll_4_b_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F13963819540D9000539895 /* Onion_Syll_4_b_Tanu.caf */; };
+		8F13963B19540DB300539895 /* Potato_Syll_4_a_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F13963A19540DB300539895 /* Potato_Syll_4_a_Tanu.caf */; };
+		8F13963D19540E7600539895 /* Bucket_Syll_3_a_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F13963C19540E7600539895 /* Bucket_Syll_3_a_Tanu.caf */; };
+		8F13963F19540EA700539895 /* Flower_Syll_3_a_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F13963E19540EA700539895 /* Flower_Syll_3_a_Tanu.caf */; };
+		8F13964119540EB800539895 /* Happy_Syll_3_d_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F13964019540EB800539895 /* Happy_Syll_3_d_Tanu.caf */; };
 		8F383EF318E77FB600627901 /* PraisePrefs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F383EF218E77FB600627901 /* PraisePrefs.plist */; };
 		8F383EF918E7802600627901 /* itunes_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F383EF418E7802600627901 /* itunes_icon.png */; };
 		8F383EFA18E7802600627901 /* play_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F383EF518E7802600627901 /* play_icon.png */; };
@@ -1253,6 +1272,25 @@
 		8DFAE2F4166322A8004A9752 /* VUMeterTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VUMeterTable.m; path = Autista/Audio/VUMeterTable.m; sourceTree = "<group>"; };
 		8DFAE2F616632522004A9752 /* VULevelMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VULevelMeter.h; path = Autista/Audio/VULevelMeter.h; sourceTree = "<group>"; };
 		8DFAE2F716632522004A9752 /* VULevelMeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VULevelMeter.m; path = Autista/Audio/VULevelMeter.m; sourceTree = "<group>"; };
+		8F13961C195406C500539895 /* Shampoo_Syll_3_a_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Shampoo_Syll_3_a_Tanu.caf; sourceTree = "<group>"; };
+		8F13961E195407D800539895 /* Potty_Syll_3_c_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Potty_Syll_3_c_Tanu.caf; sourceTree = "<group>"; };
+		8F1396201954081000539895 /* Towel_Syll_3_c_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Towel_Syll_3_c_Tanu.caf; sourceTree = "<group>"; };
+		8F1396221954089B00539895 /* Balloon_Syll_3_b_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Balloon_Syll_3_b_Tanu.caf; sourceTree = "<group>"; };
+		8F139624195408B200539895 /* Birthday_Syll_4_a_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Birthday_Syll_4_a_Tanu.caf; sourceTree = "<group>"; };
+		8F139626195408FD00539895 /* Chocolate_Syll_4_d_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Chocolate_Syll_4_d_Tanu.caf; sourceTree = "<group>"; };
+		8F13962819540ABB00539895 /* Table_Syll_3_c_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Table_Syll_3_c_Tanu.caf; sourceTree = "<group>"; };
+		8F13962A19540ADC00539895 /* Pencil_Syll_3_b_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pencil_Syll_3_b_Tanu.caf; sourceTree = "<group>"; };
+		8F13962C19540BAA00539895 /* Lollipop_Syll_4_b_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lollipop_Syll_4_b_Tanu.caf; sourceTree = "<group>"; };
+		8F13962E19540CA300539895 /* Apple_Syll_3_c_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Apple_Syll_3_c_Tanu.caf; sourceTree = "<group>"; };
+		8F13963019540CB900539895 /* Banana_Syll_4_b_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Banana_Syll_4_b_Tanu.caf; sourceTree = "<group>"; };
+		8F13963219540CD300539895 /* Mango_Syll_3_b_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mango_Syll_3_b_Tanu.caf; sourceTree = "<group>"; };
+		8F13963419540CF200539895 /* Orange_Syll_3_a_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Orange_Syll_3_a_Tanu.caf; sourceTree = "<group>"; };
+		8F13963619540D2600539895 /* Watermelon_Syll_5_c_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Watermelon_Syll_5_c_Tanu.caf; sourceTree = "<group>"; };
+		8F13963819540D9000539895 /* Onion_Syll_4_b_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Onion_Syll_4_b_Tanu.caf; sourceTree = "<group>"; };
+		8F13963A19540DB300539895 /* Potato_Syll_4_a_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Potato_Syll_4_a_Tanu.caf; sourceTree = "<group>"; };
+		8F13963C19540E7600539895 /* Bucket_Syll_3_a_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bucket_Syll_3_a_Tanu.caf; sourceTree = "<group>"; };
+		8F13963E19540EA700539895 /* Flower_Syll_3_a_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Flower_Syll_3_a_Tanu.caf; sourceTree = "<group>"; };
+		8F13964019540EB800539895 /* Happy_Syll_3_d_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Happy_Syll_3_d_Tanu.caf; sourceTree = "<group>"; };
 		8F383EF218E77FB600627901 /* PraisePrefs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PraisePrefs.plist; path = ../Autista/Models/PraisePrefs.plist; sourceTree = "<group>"; };
 		8F383EF418E7802600627901 /* itunes_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itunes_icon.png; sourceTree = "<group>"; };
 		8F383EF518E7802600627901 /* play_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_icon.png; sourceTree = "<group>"; };
@@ -1398,6 +1436,7 @@
 				2054BC8618364B9300DFFC44 /* Potty_full_2_Tanu.caf */,
 				2054BC8718364B9300DFFC44 /* Potty_Syll_1_c_Tanu.caf */,
 				2054BC8818364B9300DFFC44 /* Potty_Syll_2_c_Tanu.caf */,
+				8F13961E195407D800539895 /* Potty_Syll_3_c_Tanu.caf */,
 			);
 			path = Potty;
 			sourceTree = "<group>";
@@ -1408,6 +1447,7 @@
 				2054BC8A18364B9300DFFC44 /* Shampoo_full_2_Tanu.caf */,
 				2054BC8B18364B9300DFFC44 /* Shampoo_Syll_1_b_Tanu.caf */,
 				2054BC8C18364B9300DFFC44 /* Shampoo_Syll_2_a_Tanu.caf */,
+				8F13961C195406C500539895 /* Shampoo_Syll_3_a_Tanu.caf */,
 			);
 			path = Shampoo;
 			sourceTree = "<group>";
@@ -1434,6 +1474,7 @@
 				2054BC9218364B9300DFFC44 /* Towel_full_2_Tanu.caf */,
 				2054BC9318364B9300DFFC44 /* Towel_Syll_1_c_Tanu.caf */,
 				2054BC9418364B9300DFFC44 /* Towel_Syll_2_c_Tanu.caf */,
+				8F1396201954081000539895 /* Towel_Syll_3_c_Tanu.caf */,
 			);
 			path = Towel;
 			sourceTree = "<group>";
@@ -1461,6 +1502,7 @@
 				2054BC9718364B9300DFFC44 /* Balloon_full_3_Tanu.caf */,
 				2054BC9818364B9300DFFC44 /* Balloon_Syll_1_a_Tanu.caf */,
 				2054BC9918364B9300DFFC44 /* Balloon_Syll_2_b_Tanu.caf */,
+				8F1396221954089B00539895 /* Balloon_Syll_3_b_Tanu.caf */,
 			);
 			path = Balloon;
 			sourceTree = "<group>";
@@ -1472,6 +1514,7 @@
 				2054BC9C18364B9300DFFC44 /* Birthday_Syll_1_a_Tanu.caf */,
 				2054BC9D18364B9300DFFC44 /* Birthday_Syll_2_c_Tanu.caf */,
 				2054BC9E18364B9300DFFC44 /* Birthday_Syll_3_a_Tanu.caf */,
+				8F139624195408B200539895 /* Birthday_Syll_4_a_Tanu.caf */,
 			);
 			path = "Birthday Boy";
 			sourceTree = "<group>";
@@ -1499,6 +1542,7 @@
 				2054BCA518364B9300DFFC44 /* Chocolate_Syll_1_a_Tanu.caf */,
 				2054BCA618364B9300DFFC44 /* Chocolate_Syll_2_b_Tanu.caf */,
 				2054BCA718364B9300DFFC44 /* Chocolate_Syll_3_c_Tanu.caf */,
+				8F139626195408FD00539895 /* Chocolate_Syll_4_d_Tanu.caf */,
 			);
 			path = Chocolate;
 			sourceTree = "<group>";
@@ -1526,6 +1570,7 @@
 				2054BCAE18364B9300DFFC44 /* Lollipop_Syll_1_a_Tanu.caf */,
 				2054BCAF18364B9300DFFC44 /* Lollipop_Syll_2_b_Tanu.caf */,
 				2054BCB018364B9300DFFC44 /* Lollipop_Syll_3_a_Tanu.caf */,
+				8F13962C19540BAA00539895 /* Lollipop_Syll_4_b_Tanu.caf */,
 			);
 			path = Lollipop;
 			sourceTree = "<group>";
@@ -1536,6 +1581,7 @@
 				2054BCB218364B9300DFFC44 /* Pencil_full_2_Tanu.caf */,
 				2054BCB318364B9300DFFC44 /* Pencil_Syll_1_c_Tanu.caf */,
 				2054BCB418364B9300DFFC44 /* Pencil_Syll_2_b_Tanu.caf */,
+				8F13962A19540ADC00539895 /* Pencil_Syll_3_b_Tanu.caf */,
 			);
 			path = Pencil;
 			sourceTree = "<group>";
@@ -1546,6 +1592,7 @@
 				2054BCB618364B9300DFFC44 /* Table_full_1_Tanu.caf */,
 				2054BCB718364B9300DFFC44 /* Table_Syll_1_a_Tanu.caf */,
 				2054BCB818364B9300DFFC44 /* Table_Syll_2_c_Tanu.caf */,
+				8F13962819540ABB00539895 /* Table_Syll_3_c_Tanu.caf */,
 			);
 			path = Table;
 			sourceTree = "<group>";
@@ -1571,6 +1618,7 @@
 				2054BCBB18364B9300DFFC44 /* Apple_full_1_Tanu.caf */,
 				2054BCBC18364B9300DFFC44 /* Apple_Syll_1_b_Tanu.caf */,
 				2054BCBD18364B9300DFFC44 /* Apple_Syll_2_c_Tanu.caf */,
+				8F13962E19540CA300539895 /* Apple_Syll_3_c_Tanu.caf */,
 			);
 			path = Apple;
 			sourceTree = "<group>";
@@ -1582,6 +1630,7 @@
 				2054BCC018364B9300DFFC44 /* Banana_Syll_1_a_Tanu.caf */,
 				2054BCC118364B9300DFFC44 /* Banana_Syll_2_b_Tanu.caf */,
 				2054BCC218364B9300DFFC44 /* Banana_Syll_3_b_Tanu.caf */,
+				8F13963019540CB900539895 /* Banana_Syll_4_b_Tanu.caf */,
 			);
 			path = Banana;
 			sourceTree = "<group>";
@@ -1600,6 +1649,7 @@
 				2054BCC618364B9300DFFC44 /* Mango_full_3_Tanu.caf */,
 				2054BCC718364B9300DFFC44 /* Mango_Syll_1_c_Tanu.caf */,
 				2054BCC818364B9300DFFC44 /* Mango_Syll_2_b_Tanu.caf */,
+				8F13963219540CD300539895 /* Mango_Syll_3_b_Tanu.caf */,
 			);
 			path = Mango;
 			sourceTree = "<group>";
@@ -1618,6 +1668,7 @@
 				2054BCCC18364B9300DFFC44 /* Orange_full_3_Tanu.caf */,
 				2054BCCD18364B9300DFFC44 /* Orange_Syll_1_b_Tanu.caf */,
 				2054BCCE18364B9300DFFC44 /* Orange_Syll_2_a_Tanu.caf */,
+				8F13963419540CF200539895 /* Orange_Syll_3_a_Tanu.caf */,
 			);
 			path = Orange;
 			sourceTree = "<group>";
@@ -1638,6 +1689,7 @@
 				2054BCD418364B9300DFFC44 /* Watermelon_Syll_2_c_Tanu.caf */,
 				2054BCD518364B9300DFFC44 /* Watermelon_Syll_3_a_Tanu.caf */,
 				2054BCD618364B9300DFFC44 /* Watermelon_Syll_4_c_Tanu.caf */,
+				8F13963619540D2600539895 /* Watermelon_Syll_5_c_Tanu.caf */,
 			);
 			path = Watermelon;
 			sourceTree = "<group>";
@@ -1688,6 +1740,7 @@
 				2054BCE118364B9300DFFC44 /* Onion_Syll_2_b_Tanu.caf */,
 				2054BCE218364B9300DFFC44 /* Onion_Syll_2_c_Tanu.caf */,
 				2054BCE318364B9300DFFC44 /* Onion_Syll_3_b_Tanu.caf */,
+				8F13963819540D9000539895 /* Onion_Syll_4_b_Tanu.caf */,
 			);
 			path = Onion;
 			sourceTree = "<group>";
@@ -1707,6 +1760,7 @@
 				2054BCE818364B9300DFFC44 /* Potato_Syll_1_b_Tanu.caf */,
 				2054BCE918364B9300DFFC44 /* Potato_Syll_2_b_Tanu.caf */,
 				2054BCEA18364B9300DFFC44 /* Potato_Syll_3_a_Tanu.caf */,
+				8F13963A19540DB300539895 /* Potato_Syll_4_a_Tanu.caf */,
 			);
 			path = Potato;
 			sourceTree = "<group>";
@@ -1799,6 +1853,7 @@
 				2054BCFC18364B9300DFFC44 /* Bucket_full_1_Tanu.caf */,
 				2054BCFD18364B9300DFFC44 /* Bucket_Syll_1_c_Tanu.caf */,
 				2054BCFE18364B9300DFFC44 /* Bucket_Syll_2_a_Tanu.caf */,
+				8F13963C19540E7600539895 /* Bucket_Syll_3_a_Tanu.caf */,
 			);
 			path = Bucket;
 			sourceTree = "<group>";
@@ -1809,6 +1864,7 @@
 				2054BD0018364B9300DFFC44 /* Flower_full_4_Tanu.caf */,
 				2054BD0118364B9300DFFC44 /* Flower_Syll_1_b_Tanu.caf */,
 				2054BD0218364B9300DFFC44 /* Flower_Syll_2_a_Tanu.caf */,
+				8F13963E19540EA700539895 /* Flower_Syll_3_a_Tanu.caf */,
 			);
 			path = Flower;
 			sourceTree = "<group>";
@@ -1819,6 +1875,7 @@
 				2054BD0418364B9300DFFC44 /* Happy_full_3_Tanu.caf */,
 				2054BD0518364B9300DFFC44 /* Happy_Syll_1_b_Tanu.caf */,
 				2054BD0618364B9300DFFC44 /* Happy_Syll_2_d_Tanu.caf */,
+				8F13964019540EB800539895 /* Happy_Syll_3_d_Tanu.caf */,
 			);
 			path = Happy;
 			sourceTree = "<group>";
@@ -2800,6 +2857,7 @@
 				8D54C72816FC4DDA0049AB68 /* J.aifc in Resources */,
 				8D54C72916FC4DDA0049AB68 /* K.aifc in Resources */,
 				8D54C72A16FC4DDA0049AB68 /* L.aifc in Resources */,
+				8F13963119540CB900539895 /* Banana_Syll_4_b_Tanu.caf in Resources */,
 				8D54C72B16FC4DDA0049AB68 /* M.aifc in Resources */,
 				2054BD6618364B9300DFFC44 /* Slide_full_2_Tanu.caf in Resources */,
 				8D54C72C16FC4DDA0049AB68 /* N.aifc in Resources */,
@@ -2807,6 +2865,7 @@
 				8D54C72E16FC4DDA0049AB68 /* P.aifc in Resources */,
 				49C2C714190DEA550019600C /* OpenEARS License in Resources */,
 				8D54C72F16FC4DDA0049AB68 /* Q.aifc in Resources */,
+				8F13963919540D9000539895 /* Onion_Syll_4_b_Tanu.caf in Resources */,
 				2054BD6218364B9300DFFC44 /* Happy_full_3_Tanu.caf in Resources */,
 				8D54C73016FC4DDA0049AB68 /* R.aifc in Resources */,
 				8D54C73116FC4DDA0049AB68 /* S.aifc in Resources */,
@@ -2820,6 +2879,7 @@
 				2054BD5218364B9300DFFC44 /* Potato_Syll_1_b_Tanu.caf in Resources */,
 				2054BD4918364B9300DFFC44 /* Cup_full_7_Tanu.caf in Resources */,
 				8D54C73616FC4DDA0049AB68 /* X.aifc in Resources */,
+				8F13962919540ABB00539895 /* Table_Syll_3_c_Tanu.caf in Resources */,
 				2054BD2C18364B9300DFFC44 /* Lollipop_Syll_3_a_Tanu.caf in Resources */,
 				8D54C73716FC4DDA0049AB68 /* Y.aifc in Resources */,
 				8D54C73816FC4DDA0049AB68 /* Zed.aifc in Resources */,
@@ -2907,6 +2967,7 @@
 				8DEB605A1662B0E8000E8290 /* BtnAudioLevelOff.png in Resources */,
 				8DEB605C1662B25C000E8290 /* BtnCloseAdminOverlay.png in Resources */,
 				2054BD3218364B9300DFFC44 /* Table_Syll_2_c_Tanu.caf in Resources */,
+				8F13963319540CD300539895 /* Mango_Syll_3_b_Tanu.caf in Resources */,
 				8D3A23D0167795F0005ADB1A /* BtnAutopilotOff.png in Resources */,
 				8D3A23D1167795F0005ADB1A /* BtnAutopilotOn.png in Resources */,
 				8DDE5C2B16B0506800713427 /* PuzzleData.plist in Resources */,
@@ -2971,6 +3032,7 @@
 				8D54EB5D16B4C20900C52758 /* Water.png in Resources */,
 				8D54EB5E16B4C20900C52758 /* WaterPlaceHolder.png in Resources */,
 				8DB9FAA116B529D20030DC4C /* BathroomSceneSelector.png in Resources */,
+				8F1396211954081000539895 /* Towel_Syll_3_c_Tanu.caf in Resources */,
 				8F383EFA18E7802600627901 /* play_icon.png in Resources */,
 				2054BD2A18364B9300DFFC44 /* Lollipop_Syll_1_a_Tanu.caf in Resources */,
 				8DB9FAA516B52A010030DC4C /* KitchenSceneSelector.png in Resources */,
@@ -2978,6 +3040,7 @@
 				8DA69A7D16B541B300CB7A79 /* FirstLaunchInfoText.plist in Resources */,
 				8DEAC43416B5713C000C0AB5 /* InfoViewAdminAccess.png in Resources */,
 				8DEA561516B59C6E00FC88B9 /* BtnGetStartedOff.png in Resources */,
+				8F13961D195406C500539895 /* Shampoo_Syll_3_a_Tanu.caf in Resources */,
 				8DEA561616B59C6E00FC88B9 /* BtnGetStartedOn.png in Resources */,
 				8DEA561916B5A22600FC88B9 /* Settings.bundle in Resources */,
 				8DEA562D16B5B21E00FC88B9 /* Mug01M.png in Resources */,
@@ -3044,12 +3107,14 @@
 				2054BD4418364B9300DFFC44 /* Watermelon_Syll_1_a_Tanu.caf in Resources */,
 				8DF5DFFC16B90BD1005D8154 /* Onion02N.png in Resources */,
 				2054BD4018364B9300DFFC44 /* Orange_Syll_1_b_Tanu.caf in Resources */,
+				8F13963719540D2600539895 /* Watermelon_Syll_5_c_Tanu.caf in Resources */,
 				8DF5DFFD16B90BD1005D8154 /* Onion03I.png in Resources */,
 				20EC79A11837C22A003EB1FE /* BtnPrevNormal.png in Resources */,
 				8DF5DFFE16B90BD1005D8154 /* Onion04O.png in Resources */,
 				2054BD6318364B9300DFFC44 /* Happy_Syll_1_b_Tanu.caf in Resources */,
 				2054BD4618364B9300DFFC44 /* Watermelon_Syll_3_a_Tanu.caf in Resources */,
 				8FAF16FC18E8DE15003EC63D /* FirstLaunchInfoTextNew.plist in Resources */,
+				8F139627195408FD00539895 /* Chocolate_Syll_4_d_Tanu.caf in Resources */,
 				8DF5DFFF16B90BD1005D8154 /* Onion05N.png in Resources */,
 				8DF5E00016B90BD1005D8154 /* Potato01P.png in Resources */,
 				8DF5E00116B90BD1005D8154 /* Potato02O.png in Resources */,
@@ -3064,6 +3129,7 @@
 				8DF5E00716B90BD1005D8154 /* Spoon02P.png in Resources */,
 				2054BD1018364B9300DFFC44 /* Potty_Syll_1_c_Tanu.caf in Resources */,
 				8DF5E00816B90BD1005D8154 /* Spoon03O.png in Resources */,
+				8F139625195408B200539895 /* Birthday_Syll_4_a_Tanu.caf in Resources */,
 				2054BD2818364B9300DFFC44 /* Knife_full_1_Tanu.caf in Resources */,
 				8DF5E00916B90BD1005D8154 /* Spoon04O.png in Resources */,
 				49C2C717190DEA550019600C /* ZipArchive License.txt in Resources */,
@@ -3088,7 +3154,9 @@
 				8D4BCA6F16BA6A5E00A34EFD /* PlaygroundScene.png in Resources */,
 				8D4BCA7016BA6A5E00A34EFD /* Racket.png in Resources */,
 				8D4BCA7116BA6A5E00A34EFD /* RacketPlaceHolder.png in Resources */,
+				8F1396231954089B00539895 /* Balloon_Syll_3_b_Tanu.caf in Resources */,
 				2054BD2E18364B9300DFFC44 /* Pencil_Syll_1_c_Tanu.caf in Resources */,
+				8F13963B19540DB300539895 /* Potato_Syll_4_a_Tanu.caf in Resources */,
 				8D4BCA7216BA6A5E00A34EFD /* Slide.png in Resources */,
 				8D4BCA7316BA6A5E00A34EFD /* SlidePlaceHolder.png in Resources */,
 				208CCFF1183CCBC100BADB44 /* Say na.png in Resources */,
@@ -3103,6 +3171,8 @@
 				8D8890A416BD8DAB003FA187 /* BirthdayPartyScene.png in Resources */,
 				8D8890A516BD8DAB003FA187 /* BirthdayPartySceneSelector.png in Resources */,
 				8D8890A616BD8DAB003FA187 /* Book.png in Resources */,
+				8F13962B19540ADC00539895 /* Pencil_Syll_3_b_Tanu.caf in Resources */,
+				8F13963519540CF200539895 /* Orange_Syll_3_a_Tanu.caf in Resources */,
 				2054BD1C18364B9300DFFC44 /* Balloon_Syll_2_b_Tanu.caf in Resources */,
 				8D8890A716BD8DAB003FA187 /* BookPlaceHolder.png in Resources */,
 				209A8969181A0077002FAF7C /* Instabug.bundle in Resources */,
@@ -3142,6 +3212,7 @@
 				8D8890C316BD8DAB003FA187 /* Cake02A.png in Resources */,
 				8D8890C416BD8DAB003FA187 /* Cake03K.png in Resources */,
 				8D8890C516BD8DAB003FA187 /* Cake04E.png in Resources */,
+				8F13964119540EB800539895 /* Happy_Syll_3_d_Tanu.caf in Resources */,
 				2054BD0E18364B9300DFFC44 /* Mug_full_2_Tanu.caf in Resources */,
 				8D8890C616BD8DAB003FA187 /* Candy01C.png in Resources */,
 				8D8890C716BD8DAB003FA187 /* Candy02A.png in Resources */,
@@ -3151,6 +3222,7 @@
 				8D8890CA16BD8DAB003FA187 /* Candy05Y.png in Resources */,
 				8D8890CB16BD8DAB003FA187 /* Chocolate01C.png in Resources */,
 				2054BD2018364B9300DFFC44 /* Birthday_Syll_3_a_Tanu.caf in Resources */,
+				8F13963D19540E7600539895 /* Bucket_Syll_3_a_Tanu.caf in Resources */,
 				8D8890CC16BD8DAB003FA187 /* Chocolate02H.png in Resources */,
 				8D8890CD16BD8DAB003FA187 /* Chocolate03O.png in Resources */,
 				8D8890CE16BD8DAB003FA187 /* Chocolate04C.png in Resources */,
@@ -3184,6 +3256,7 @@
 				49C2C710190DEA550019600C /* fdl-1.3.txt in Resources */,
 				8D8890E116BD8DAB003FA187 /* Table04L.png in Resources */,
 				8D8890E216BD8DAB003FA187 /* Table05E.png in Resources */,
+				8F13962D19540BAA00539895 /* Lollipop_Syll_4_b_Tanu.caf in Resources */,
 				2054BD4D18364B9300DFFC44 /* Onion_Syll_2_b_Tanu.caf in Resources */,
 				2054BD6018364B9300DFFC44 /* Flower_Syll_1_b_Tanu.caf in Resources */,
 				8D8890E316BD8DAB003FA187 /* Table.png in Resources */,
@@ -3207,12 +3280,14 @@
 				8D234A8E16C7422E0040DC14 /* Flower02L.png in Resources */,
 				8D234A8F16C7422E0040DC14 /* Flower03O.png in Resources */,
 				2054BD0D18364B9300DFFC44 /* Bath_full_1_Tanu.caf in Resources */,
+				8F13961F195407D800539895 /* Potty_Syll_3_c_Tanu.caf in Resources */,
 				8D234A9016C7422E0040DC14 /* Flower04W.png in Resources */,
 				8D234A9116C7422E0040DC14 /* Flower05E.png in Resources */,
 				8D234A9216C7422E0040DC14 /* Flower06R.png in Resources */,
 				8D234A9316C7422E0040DC14 /* Girl01G.png in Resources */,
 				8D234A9416C7422E0040DC14 /* Girl02I.png in Resources */,
 				8D234A9516C7422E0040DC14 /* Girl03R.png in Resources */,
+				8F13962F19540CA300539895 /* Apple_Syll_3_c_Tanu.caf in Resources */,
 				8D234A9616C7422E0040DC14 /* Girl04L.png in Resources */,
 				8D234A9816C7422E0040DC14 /* Happy01H.png in Resources */,
 				2054BD1118364B9300DFFC44 /* Potty_Syll_2_c_Tanu.caf in Resources */,
@@ -3265,6 +3340,7 @@
 				8D96535716FF42A200B9E3FB /* Flower.caf in Resources */,
 				8D96535816FF42A200B9E3FB /* Gift.caf in Resources */,
 				8D96535916FF42A200B9E3FB /* Girl.caf in Resources */,
+				8F13963F19540EA700539895 /* Flower_Syll_3_a_Tanu.caf in Resources */,
 				8D96535A16FF42A200B9E3FB /* Grapes.caf in Resources */,
 				8D96535B16FF42A200B9E3FB /* Happy.caf in Resources */,
 				2054BD1718364B9300DFFC44 /* Towel_full_2_Tanu.caf in Resources */,
@@ -3425,8 +3501,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "35F91E3F-9B64-43B5-9917-75D26B41C868";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "35F91E3F-9B64-43B5-9917-75D26B41C868";
+				PROVISIONING_PROFILE = "67128AE1-E695-4802-A10C-49049CBE656B";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "67128AE1-E695-4802-A10C-49049CBE656B";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -3451,8 +3527,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "35F91E3F-9B64-43B5-9917-75D26B41C868";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "35F91E3F-9B64-43B5-9917-75D26B41C868";
+				PROVISIONING_PROFILE = "67128AE1-E695-4802-A10C-49049CBE656B";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "67128AE1-E695-4802-A10C-49049CBE656B";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
@@ -3475,8 +3551,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "35F91E3F-9B64-43B5-9917-75D26B41C868";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "35F91E3F-9B64-43B5-9917-75D26B41C868";
+				PROVISIONING_PROFILE = "67128AE1-E695-4802-A10C-49049CBE656B";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "67128AE1-E695-4802-A10C-49049CBE656B";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -3497,8 +3573,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "35F91E3F-9B64-43B5-9917-75D26B41C868";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "35F91E3F-9B64-43B5-9917-75D26B41C868";
+				PROVISIONING_PROFILE = "67128AE1-E695-4802-A10C-49049CBE656B";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "67128AE1-E695-4802-A10C-49049CBE656B";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -19,9 +19,9 @@
 				<key>title</key>
 				<string>Balloon</string>
 				<key>syllables</key>
-				<string>bal-loon</string>
+				<string>bal-loon-balloon</string>
 				<key>phonetics</key>
-				<string>bah-luwn</string>
+				<string>bah-luwn-bahluwn</string>
 				<key>difficultyDrag</key>
 				<integer>12</integer>
 				<key>difficultySpeak</key>
@@ -118,9 +118,9 @@
 				<key>title</key>
 				<string>Table</string>
 				<key>syllables</key>
-				<string>ta-ble</string>
+				<string>ta-ble-table</string>
 				<key>phonetics</key>
-				<string>tey-bahl</string>
+				<string>tey-bahl-teybahl</string>
 				<key>difficultyDrag</key>
 				<integer>15</integer>
 				<key>difficultySpeak</key>
@@ -266,9 +266,9 @@
 				<key>title</key>
 				<string>Pencil</string>
 				<key>syllables</key>
-				<string>pen-cil</string>
+				<string>pen-cil-pencil</string>
 				<key>phonetics</key>
-				<string>pehn-sahl</string>
+				<string>pehn-sahl-pehnsahl</string>
 				<key>difficultyDrag</key>
 				<integer>12</integer>
 				<key>difficultySpeak</key>
@@ -424,9 +424,9 @@
 				<key>title</key>
 				<string>Candy</string>
 				<key>syllables</key>
-				<string>can-dy</string>
+				<string>can-dy-candy</string>
 				<key>phonetics</key>
-				<string>kaen-diy</string>
+				<string>kaen-diy-kaendiy</string>
 				<key>difficultyDrag</key>
 				<integer>10</integer>
 				<key>difficultySpeak</key>
@@ -572,9 +572,9 @@
 				<key>title</key>
 				<string>Chocolate</string>
 				<key>syllables</key>
-				<string>cho-co-late</string>
+				<string>cho-co-late-chocolate</string>
 				<key>phonetics</key>
-				<string>chao-kow-laht</string>
+				<string>chao-kow-laht-chaokowlaht</string>
 				<key>difficultyDrag</key>
 				<integer>14</integer>
 				<key>difficultySpeak</key>
@@ -834,9 +834,9 @@
 				<key>title</key>
 				<string>Onion</string>
 				<key>syllables</key>
-				<string>o-ni-on</string>
+				<string>o-ni-on-onion</string>
 				<key>phonetics</key>
-				<string>ah-ny-ahn</string>
+				<string>ah-ny-ahn-ahnyahn</string>
 				<key>difficultyDrag</key>
 				<integer>12</integer>
 				<key>difficultySpeak</key>
@@ -972,9 +972,9 @@
 				<key>title</key>
 				<string>Water</string>
 				<key>syllables</key>
-				<string>wa-ter</string>
+				<string>wa-ter-water</string>
 				<key>phonetics</key>
-				<string>wao-ter</string>
+				<string>wao-ter-waoter</string>
 				<key>difficultyDrag</key>
 				<integer>17</integer>
 				<key>difficultySpeak</key>
@@ -1209,9 +1209,9 @@
 				<key>title</key>
 				<string>Potato</string>
 				<key>syllables</key>
-				<string>po-ta-to</string>
+				<string>po-ta-to-potato</string>
 				<key>phonetics</key>
-				<string>pah-tey-tow</string>
+				<string>pah-tey-tow-pahteytow</string>
 				<key>difficultyDrag</key>
 				<integer>10</integer>
 				<key>difficultySpeak</key>
@@ -1313,9 +1313,9 @@
 				<key>title</key>
 				<string>Orange</string>
 				<key>syllables</key>
-				<string>o-range</string>
+				<string>o-range-orange</string>
 				<key>phonetics</key>
-				<string>ao-rahnjh</string>
+				<string>ao-rahnjh-aorahnjh</string>
 				<key>difficultyDrag</key>
 				<integer>12</integer>
 				<key>difficultySpeak</key>
@@ -1402,9 +1402,9 @@
 				<key>title</key>
 				<string>Mango</string>
 				<key>syllables</key>
-				<string>man-go</string>
+				<string>man-go-mango</string>
 				<key>phonetics</key>
-				<string>maeng-gow</string>
+				<string>maeng-gow-maenggow</string>
 				<key>difficultyDrag</key>
 				<integer>10</integer>
 				<key>difficultySpeak</key>
@@ -1570,9 +1570,9 @@
 				<key>title</key>
 				<string>Apple</string>
 				<key>syllables</key>
-				<string>a-pple</string>
+				<string>a-pple-apple</string>
 				<key>phonetics</key>
-				<string>ae-pahl</string>
+				<string>ae-pahl-aepahl</string>
 				<key>difficultyDrag</key>
 				<integer>10</integer>
 				<key>difficultySpeak</key>
@@ -1649,9 +1649,9 @@
 				<key>title</key>
 				<string>Banana</string>
 				<key>syllables</key>
-				<string>ba-na-na</string>
+				<string>ba-na-na-banana</string>
 				<key>phonetics</key>
-				<string>bah-nae-nah</string>
+				<string>bah-nae-nah-bahnaenah</string>
 				<key>difficultyDrag</key>
 				<integer>12</integer>
 				<key>difficultySpeak</key>
@@ -1738,9 +1738,9 @@
 				<key>title</key>
 				<string>Watermelon</string>
 				<key>syllables</key>
-				<string>wa-ter-me-lon</string>
+				<string>wa-ter-me-lon-watermelon</string>
 				<key>phonetics</key>
-				<string>wao-ter-meh-lahn</string>
+				<string>wao-ter-meh-lahn-waotermehlahn</string>
 				<key>difficultyDrag</key>
 				<integer>10</integer>
 				<key>difficultySpeak</key>
@@ -1961,9 +1961,9 @@
 				<key>title</key>
 				<string>Potty</string>
 				<key>syllables</key>
-				<string>po-tty</string>
+				<string>po-tty-potty</string>
 				<key>phonetics</key>
-				<string>paa-tiy</string>
+				<string>paa-tiy-paatiy</string>
 				<key>difficultyDrag</key>
 				<integer>17</integer>
 				<key>difficultySpeak</key>
@@ -2296,9 +2296,9 @@
 				<key>title</key>
 				<string>Shampoo</string>
 				<key>syllables</key>
-				<string>sham-poo</string>
+				<string>sham-poo-shampoo</string>
 				<key>phonetics</key>
-				<string>shaem-puw</string>
+				<string>shaem-puw-shaempuw</string>
 				<key>difficultyDrag</key>
 				<integer>10</integer>
 				<key>difficultySpeak</key>
@@ -2479,9 +2479,9 @@
 				<key>title</key>
 				<string>Happy</string>
 				<key>syllables</key>
-				<string>hap-py</string>
+				<string>hap-py-happy</string>
 				<key>phonetics</key>
-				<string>hhae-piy</string>
+				<string>hhae-piy-hhaepiy</string>
 				<key>difficultyDrag</key>
 				<integer>10</integer>
 				<key>difficultySpeak</key>
@@ -2558,9 +2558,9 @@
 				<key>title</key>
 				<string>Bucket</string>
 				<key>syllables</key>
-				<string>buck-et</string>
+				<string>buck-et-bucket</string>
 				<key>phonetics</key>
-				<string>bahk-aht</string>
+				<string>bahk-aht-bahkaht</string>
 				<key>difficultyDrag</key>
 				<integer>18</integer>
 				<key>difficultySpeak</key>
@@ -2647,9 +2647,9 @@
 				<key>title</key>
 				<string>Flower</string>
 				<key>syllables</key>
-				<string>flow-er</string>
+				<string>flow-er-flower</string>
 				<key>phonetics</key>
-				<string>flaw-er</string>
+				<string>flaw-er-flawer</string>
 				<key>difficultyDrag</key>
 				<integer>10</integer>
 				<key>difficultySpeak</key>
@@ -2805,9 +2805,9 @@
 				<key>title</key>
 				<string>Racket</string>
 				<key>syllables</key>
-				<string>rack-et</string>
+				<string>rack-et-racket</string>
 				<key>phonetics</key>
-				<string>raek-iht</string>
+				<string>raek-iht-raekiht</string>
 				<key>difficultyDrag</key>
 				<integer>12</integer>
 				<key>difficultySpeak</key>

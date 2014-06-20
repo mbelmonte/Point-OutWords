@@ -115,6 +115,10 @@
 	_bannerLabels = [NSMutableArray array];
 	NSArray *syllables = [_bannerText componentsSeparatedByString:@"-"];
 	NSInteger numSyllables = [syllables count];
+    
+    if (numSyllables > 1) {
+        numSyllables--;
+    }
 	
 	for (int i = 0; i < numSyllables; i++) {
 		UILabel *syllable = [[UILabel alloc] initWithFrame:CGRectZero];

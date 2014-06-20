@@ -175,6 +175,8 @@
         [changedUpperCaseSyllables addObject:allString];
     }
     
+    //[changedUpperCaseSyllables addObject:[_object.title uppercaseString]];
+    
     NSLog(@"changedUpperCaseSyllables: %@", changedUpperCaseSyllables);
     
     //end of changing difficulty
@@ -218,6 +220,10 @@
         _banner.bannerFont = avenirBold;
 
 	_banner.bannerText = _object.syllables;
+    
+//    NSString *removeString = [NSString stringWithFormat:@"-%@", [_object.title lowercaseString]];
+//    
+//    [_object.syllables stringByReplacingOccurrencesOfString:removeString withString:@""];
 	
 	[self.view addSubview:_banner];
     
@@ -295,7 +301,10 @@
     
     NSFileManager *fm = [NSFileManager defaultManager];
     NSArray *dirContents = [fm contentsOfDirectoryAtPath:bundleRoot error:nil];
-    NSString * objectName = [_object.syllables stringByReplacingOccurrencesOfString:@"-" withString:@""];
+//    NSString * objectName = [_object.syllables stringByReplacingOccurrencesOfString:@"-" withString:@""];
+    
+    NSString * objectName = [_object.title lowercaseString];
+    
     NSPredicate *fltr;
     if ([_syllables count] == 1) {
         fltr = [NSPredicate predicateWithFormat:@"(self ENDSWITH '.caf') AND (self CONTAINS[c] %@)", objectName];
