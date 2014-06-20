@@ -454,9 +454,11 @@
 {
 	[self playPuzzleCompletedSuccessfullySound];
 	[[EventLogger sharedLogger] logEvent:LogEventCodePuzzleCompleted eventInfo:@{@"status": @"successful"}];
+    
+    [self performSelector:@selector(playObjectTitleSound) withObject:nil afterDelay:0.5];
 	
 	//[self performSelector:@selector(delayedDismissSelf) withObject:nil afterDelay:1];
-    [self performSelector:@selector(promptAndFinish) withObject:nil afterDelay:0.5];
+    [self performSelector:@selector(promptAndFinish) withObject:nil afterDelay:2.5];
 }
 
 - (void) promptAndFinish

@@ -485,9 +485,11 @@
 - (void)presentPuzzleCompletionAnimation
 {
 	[self playPuzzleCompletedSuccessfullySound];
+    
+    [self performSelector:@selector(playObjectTitleSound) withObject:nil afterDelay:0.5];
 	
 	//[self performSelector:@selector(delayedDismissSelf) withObject:nil afterDelay:2.0];
-    [self performSelector:@selector(promptAndFinish) withObject:nil afterDelay:0.5];
+    [self performSelector:@selector(promptAndFinish) withObject:nil afterDelay:2.5];
 }
 
 - (void) promptAndFinish
