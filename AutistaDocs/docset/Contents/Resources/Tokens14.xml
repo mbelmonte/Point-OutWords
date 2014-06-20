@@ -88,38 +88,74 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/InfoViewPageThree/setLogSwitch:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoViewPageThree/setActivitylogSwitch:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>InfoViewPageThree.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) IBOutlet UISwitch *logSwitch</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UISwitch *activitylogSwitch</Declaration>
 			
 			
-			<Anchor>//api/name/logSwitch</Anchor>
+			<Anchor>//api/name/activitylogSwitch</Anchor>
             <NodeRef refid="14"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/InfoViewPageThree/logSwitch</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoViewPageThree/activitylogSwitch</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>InfoViewPageThree.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) IBOutlet UISwitch *logSwitch</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UISwitch *activitylogSwitch</Declaration>
 			
 			
-			<Anchor>//api/name/logSwitch</Anchor>
+			<Anchor>//api/name/activitylogSwitch</Anchor>
             <NodeRef refid="14"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/InfoViewPageThree/logSwitch</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/InfoViewPageThree/activitylogSwitch</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>InfoViewPageThree.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, retain) IBOutlet UISwitch *logSwitch</Declaration>
+			<Declaration>@property (nonatomic, retain) IBOutlet UISwitch *activitylogSwitch</Declaration>
 			
 			
-			<Anchor>//api/name/logSwitch</Anchor>
+			<Anchor>//api/name/activitylogSwitch</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoViewPageThree/setAudiologSwitch:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoViewPageThree.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UISwitch *audiologSwitch</Declaration>
+			
+			
+			<Anchor>//api/name/audiologSwitch</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoViewPageThree/audiologSwitch</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoViewPageThree.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UISwitch *audiologSwitch</Declaration>
+			
+			
+			<Anchor>//api/name/audiologSwitch</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/InfoViewPageThree/audiologSwitch</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoViewPageThree.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UISwitch *audiologSwitch</Declaration>
+			
+			
+			<Anchor>//api/name/audiologSwitch</Anchor>
             <NodeRef refid="14"/>
 		</Token>
 		
