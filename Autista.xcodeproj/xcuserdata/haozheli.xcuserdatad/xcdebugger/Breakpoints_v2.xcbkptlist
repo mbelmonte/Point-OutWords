@@ -186,11 +186,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Autista/Classes/TypePuzzleViewController.m"
-            timestampString = "424887946.640499"
+            timestampString = "424898907.050018"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "848"
-            endingLineNumber = "848"
+            startingLineNumber = "842"
+            endingLineNumber = "842"
             landmarkName = "-addCharacterOnPuzzlePiece"
             landmarkType = "5">
          </BreakpointContent>
@@ -202,11 +202,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Autista/Classes/TypePuzzleViewController.m"
-            timestampString = "424887946.640499"
+            timestampString = "424898907.050018"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "847"
-            endingLineNumber = "847"
+            startingLineNumber = "841"
+            endingLineNumber = "841"
             landmarkName = "-addCharacterOnPuzzlePiece"
             landmarkType = "5">
          </BreakpointContent>
