@@ -506,9 +506,9 @@
                 NSString * objectName = @"Super";
                 if (_autoCompletedPieces > 0)
                     objectName = @"TryAgain";
-                else if ([_object.difficultySpeak doubleValue] < 10)
+                else if ([_object.difficultyDrag doubleValue] < 10)
                     objectName = @"WellDone";
-                else if ([_object.difficultySpeak doubleValue] > 12)
+                else if ([_object.difficultyDrag doubleValue] > 12)
                     objectName = @"Awesome";
                 
                 

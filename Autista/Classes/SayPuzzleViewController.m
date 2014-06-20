@@ -827,8 +827,6 @@
             {
                 
                 NSString * objectName = @"Super";
-                
-                    objectName = @"TryAgain";
                 if ([_object.difficultySpeak doubleValue] < 10)
                     objectName = @"WellDone";
                 else if ([_object.difficultySpeak doubleValue] > 12)

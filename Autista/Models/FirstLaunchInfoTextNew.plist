@@ -32,17 +32,17 @@ Do you want to send activity logs?
 
 Do you want to send audio recordings?</string>
 	</dict>
-    <dict>
+	<dict>
 		<key>title</key>
 		<string>Partners</string>
 		<key>text</key>
 		<string></string>
 		<key>imageName</key>
-		<string>logos2.png</string>
+		<string>logos.png</string>
 		<key>offsetX</key>
 		<integer>-855</integer>
 		<key>offsetY</key>
-		<integer>-520</integer>
+		<integer>-470</integer>
 	</dict>
 	<dict>
 		<key>title</key>
