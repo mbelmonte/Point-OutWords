@@ -794,7 +794,6 @@
                                                 action:@selector(remindAnimation:)];
         
         pan.delegate = self;
-        
         pan.cancelsTouchesInView = NO;
        
         [self.view addGestureRecognizer:pan];
@@ -813,6 +812,7 @@
 
     //add text to pieces...
     [self addCharacterOnPuzzlePiece];
+    
     
 }
 
@@ -848,59 +848,17 @@
         [[_pieces objectAtIndex:i] addSubview: charBackground];
         [[_pieces objectAtIndex:i] addSubview: fontLable];
     }
+    
 }
 
 #pragma mark - pieces Gesture method
 - (void)remindAnimation:(UIGestureRecognizer *)recognizer {
     CGPoint touchPoint = [recognizer locationInView:self.view];
-    
-        
-    if (pathLayer) {
-        
-        [pathLayer removeAllAnimations];
-        [pathLayer removeFromSuperlayer];
-        
+    if (CGRectContainsPoint(_keyboard.frame, touchPoint)) {
+        return;
     }
-    
-    CGPoint finalPoint = [self buttonFromASCIICode:[[_object.title uppercaseString] characterAtIndex:_currentLetterPosition]].layer.position;
-    finalPoint = [self.view convertPoint:finalPoint fromView:self.keyboard];
-    UIBezierPath *path = [UIBezierPath bezierPath];
-//    CGPoint finalPoint = CGPointMake(touchedPiece.finalPoint.x + touchedPiece.frame.size.width/2, touchedPiece.finalPoint.y + touchedPiece.frame.size.height/2);
-    [path moveToPoint:touchPoint];
-    [path addLineToPoint:finalPoint];
-    
-    pathLayer = [CAShapeLayer layer];
-    pathLayer.hidden = NO;
-    pathLayer.frame = self.view.layer.bounds;
-    pathLayer.geometryFlipped = NO;
-    pathLayer.path = path.CGPath;
-    pathLayer.strokeColor = [[UIColor colorWithWhite:1 alpha:0.6] CGColor];
-    pathLayer.fillColor = nil;
-    pathLayer.lineWidth = 9.0f;
-    
-    [self.view.layer addSublayer:pathLayer];
-    
-    CALayer *focusLayer = [CALayer layer];
-    UIImage *foucsImage = [UIImage imageNamed:@"focus.png"];
-    focusLayer.contents = (id)foucsImage.CGImage;
-    focusLayer.frame = CGRectMake(touchPoint.x, touchPoint.y, 25, 25);
-    focusLayer.position = CGPointZero;
-    [pathLayer addSublayer:focusLayer];
-    
-    CABasicAnimation *pathAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
-    pathAnimation.duration = 0.8;
-    pathAnimation.delegate = self;
-    pathAnimation.fromValue = [NSNumber numberWithFloat:0.0f];
-    pathAnimation.toValue = [NSNumber numberWithFloat: 1.0f];
-    [pathLayer addAnimation:pathAnimation forKey:@"strokeEnd"];
-    
-    CAKeyframeAnimation *keyFrameAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
-    keyFrameAnimation.path = path.CGPath;
-    keyFrameAnimation.delegate = self;
-    keyFrameAnimation.duration = 0.8;
-    [focusLayer addAnimation:keyFrameAnimation forKey:@"position"];
-    
-    
+    else{
+        
     for ( UIView *piece in _pieces) {
         
         if (CGRectContainsPoint(piece.frame, touchPoint)) {
@@ -930,6 +888,7 @@
             [[EventLogger sharedLogger] logEvent:LogEventCodeTypeReminder eventInfo:@{@"key": [[_object.title uppercaseString] substringWithRange:NSMakeRange(_currentLetterPosition, 1)]}];
             
             break;
+            }
         }
     }
 }
@@ -1033,6 +992,73 @@
     pathLayer.hidden = YES;
     [pathLayer removeFromSuperlayer];
     
+}
+
+-(void)drawLineAnimationWith:(CGPoint )initalPoint {
+    
+    CGPoint finalPoint = [self buttonFromASCIICode:[[_object.title uppercaseString] characterAtIndex:_currentLetterPosition]].layer.position;
+    finalPoint = [self.view convertPoint:finalPoint fromView:self.keyboard];
+
+    UIBezierPath *path = [UIBezierPath bezierPath];
+    //    CGPoint finalPoint = CGPointMake(touchedPiece.finalPoint.x + touchedPiece.frame.size.width/2, touchedPiece.finalPoint.y + touchedPiece.frame.size.height/2);
+    [path moveToPoint:initalPoint];
+    [path addLineToPoint:finalPoint];
+    
+    pathLayer = [CAShapeLayer layer];
+    pathLayer.hidden = NO;
+    pathLayer.frame = self.view.layer.bounds;
+    pathLayer.geometryFlipped = NO;
+    pathLayer.path = path.CGPath;
+    pathLayer.strokeColor = [[UIColor colorWithWhite:1 alpha:0.6] CGColor];
+    pathLayer.fillColor = nil;
+    pathLayer.lineWidth = 9.0f;
+    
+    [self.view.layer addSublayer:pathLayer];
+    
+    CALayer *focusLayer = [CALayer layer];
+    UIImage *foucsImage = [UIImage imageNamed:@"focus.png"];
+    focusLayer.contents = (id)foucsImage.CGImage;
+    focusLayer.frame = CGRectMake(initalPoint.x, initalPoint.y, 25, 25);
+    focusLayer.position = CGPointZero;
+    [pathLayer addSublayer:focusLayer];
+    
+    CABasicAnimation *pathAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+    pathAnimation.duration = 0.8;
+    pathAnimation.delegate = self;
+    pathAnimation.removedOnCompletion = YES;
+    pathAnimation.fromValue = [NSNumber numberWithFloat:0.0f];
+    pathAnimation.toValue = [NSNumber numberWithFloat: 1.0f];
+    [pathLayer addAnimation:pathAnimation forKey:@"strokeEnd"];
+    
+    CAKeyframeAnimation *keyFrameAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
+    keyFrameAnimation.path = path.CGPath;
+    keyFrameAnimation.delegate = self;
+    keyFrameAnimation.removedOnCompletion = YES;
+    keyFrameAnimation.duration = 0.8;
+    [focusLayer addAnimation:keyFrameAnimation forKey:@"position"];
+    
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    CGPoint touchPoint = [[touches anyObject] locationInView:self.view];
+    if (CGRectContainsPoint(_keyboard.frame, touchPoint)) {
+        return;
+    }
+    else{
+        
+        [pathLayer removeAllAnimations];
+        [pathLayer removeFromSuperlayer];
+        
+        for (UIView *piece in _pieces) {
+            
+            if (CGRectContainsPoint(piece.frame, touchPoint)) {
+                [self drawLineAnimationWith:touchPoint];
+            }
+            
+        }
+        
+    }
 }
 
 @end
