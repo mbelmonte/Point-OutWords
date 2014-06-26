@@ -1263,7 +1263,12 @@
 }
 
 - (IBAction)uploadCancel:(id)sender {
-    [_conn cancel];
+    
+    for (NSURLSessionTask *task in _tasks) {
+       
+        [task cancel];
+        
+    }
     //Show send log button, hide progress bar and cancel button
     _sendLogsButton.hidden = NO;
     _uploadProgressBar.hidden = YES;
@@ -1282,32 +1287,28 @@ didCompleteWithError:(NSError *)error
     if (!error) {
         
         [_tasks removeObject:task];
-        
-        NSString *returnString = [[NSString alloc] initWithData:_responseData encoding:NSUTF8StringEncoding];
-        NSLog(@"%@", returnString);
-        
-        
-        //delete LogData folder, clear Log table
-//        if ([returnString isEqualToString:@"1"]) {
-//            [[EventLogger sharedLogger] removeLogFolder:_logFolderPath];
-//            [[EventLogger sharedLogger] deleteLogData];
-//            _logSizeLabel.text = [NSString stringWithFormat:@"Log size: %u entries", [EventLogger numberOfLogs]];
-//            
-//            if ((int)[EventLogger numberOfLogs] == 0) {
-//                _sendLogsButton.hidden = YES;
-//                _logSizeLabel.hidden = YES;
-//            }
-//            else{
-//                _sendLogsButton.hidden = NO;
-//                _logSizeLabel.hidden = NO;
-//            }
-//        }
-        
+    
         if ([_tasks count] == 0) {
             
             _sendLogsButton.hidden = NO;
             _uploadProgressBar.hidden = YES;
             _uploadCancelBtn.hidden = YES;
+            
+            [[EventLogger sharedLogger] removeLogFolder:_logFolderPath];
+            [[EventLogger sharedLogger] deleteLogData];
+            _logSizeLabel.text = [NSString stringWithFormat:@"Log size: %u entries", [EventLogger numberOfLogs]];
+            
+            if ((int)[EventLogger numberOfLogs] == 0) {
+                _sendLogsButton.hidden = YES;
+                _logSizeLabel.hidden = YES;
+            }
+            else{
+                _sendLogsButton.hidden = NO;
+                _logSizeLabel.hidden = NO;
+            }
+        
+
+        
             
 //needs to delete the files......
             for (NSString *path in subPaths) {
