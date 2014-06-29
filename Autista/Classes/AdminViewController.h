@@ -228,6 +228,8 @@
 @property NSURLSession *_urlSession;
 
 @property NSMutableArray *_tasks;
+
+@property BOOL whetherIsFirstTime;
 /**-----------------------------------------------------------------------------
  * @name Methods handling master-detail like view interaction
  * -----------------------------------------------------------------------------

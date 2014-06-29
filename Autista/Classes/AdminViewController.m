@@ -41,7 +41,7 @@
 
 @implementation AdminViewController
 
-@synthesize recorder,player,recordFilePathArray, praiseFileLabelArray,praiseFileLabelArrayForPlist,iTunesPlayList,defaultPromptArray,allPromptArray, subPaths, _urlSession, _tasks;
+@synthesize recorder,player,recordFilePathArray, praiseFileLabelArray,praiseFileLabelArrayForPlist,iTunesPlayList,defaultPromptArray,allPromptArray, subPaths, _urlSession, _tasks,whetherIsFirstTime;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -363,6 +363,8 @@
 - (IBAction)handleSendLogDataPressed:(id)sender
 {
     //Hide send log button, show progress bar and cancel button
+    whetherIsFirstTime = YES;
+    
     _sendLogsButton.hidden = YES;
     _uploadProgressBar.hidden = NO;
     _uploadCancelBtn.hidden = NO;
@@ -1333,7 +1335,9 @@ didCompleteWithError:(NSError *)error
             
         }
     }
-    else{
+    
+    else if(whetherIsFirstTime == YES){
+        
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No network connection"
                                                         message:@"You must be connected to the internet to upload the logs."
                                                        delegate:self
@@ -1341,8 +1345,15 @@ didCompleteWithError:(NSError *)error
                                               otherButtonTitles:nil];
         [alert setTag:2];
         [alert show];
+        whetherIsFirstTime = NO;
+
+        
+        
     }
+    
 }
+
+
 
 - (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask
     didReceiveData:(NSData *)data
@@ -1354,6 +1365,23 @@ didCompleteWithError:(NSError *)error
     float progress = (float)totalBytesSent / (float)totalBytesExpectedToSend;
     NSLog(@"%f", progress);
     [_uploadProgressBar setProgress:progress];
+}
+
+- (void)URLSession:(NSURLSession *)session didBecomeInvalidWithError:(NSError *)error{
+    
+    if (error && whetherIsFirstTime == YES) {
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No network connection"
+                                                        message:@"You must be connected to the internet to upload the logs."
+                                                       delegate:self
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert setTag:2];
+        [alert show];
+        whetherIsFirstTime = NO;
+
+    }
+    
 }
 
 @end
