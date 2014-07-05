@@ -449,7 +449,7 @@
 	if ([alphabet isEqualToString:@"Z"])
 		alphabet = @"Zee";
 	
-	NSString *alphabetSoundFile = [[NSBundle mainBundle] pathForResource:alphabet ofType:@"aifc"];
+	NSString *alphabetSoundFile = [[NSBundle mainBundle] pathForResource:alphabet ofType:@"caf"];
 	NSURL *url = [NSURL fileURLWithPath:alphabetSoundFile];
 	_alphabetPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
 	_alphabetPlayer.volume = 1.0;

@@ -18,9 +18,6 @@
 		2022B72C17FF04430061D6EE /* AutistaIAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2022B72B17FF04430061D6EE /* AutistaIAPHelper.m */; };
 		2054BD0D18364B9300DFFC44 /* Bath_full_1_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2054BC8218364B9300DFFC44 /* Bath_full_1_Tanu.caf */; };
 		2054BD0E18364B9300DFFC44 /* Mug_full_2_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2054BC8418364B9300DFFC44 /* Mug_full_2_Tanu.caf */; };
-		2054BD0F18364B9300DFFC44 /* Potty_full_2_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2054BC8618364B9300DFFC44 /* Potty_full_2_Tanu.caf */; };
-		2054BD1018364B9300DFFC44 /* Potty_Syll_1_c_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2054BC8718364B9300DFFC44 /* Potty_Syll_1_c_Tanu.caf */; };
-		2054BD1118364B9300DFFC44 /* Potty_Syll_2_c_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2054BC8818364B9300DFFC44 /* Potty_Syll_2_c_Tanu.caf */; };
 		2054BD1218364B9300DFFC44 /* Shampoo_full_2_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2054BC8A18364B9300DFFC44 /* Shampoo_full_2_Tanu.caf */; };
 		2054BD1318364B9300DFFC44 /* Shampoo_Syll_1_b_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2054BC8B18364B9300DFFC44 /* Shampoo_Syll_1_b_Tanu.caf */; };
 		2054BD1418364B9300DFFC44 /* Shampoo_Syll_2_a_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2054BC8C18364B9300DFFC44 /* Shampoo_Syll_2_a_Tanu.caf */; };
@@ -81,7 +78,6 @@
 		2054BD4B18364B9300DFFC44 /* Onion_full_2_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2054BCDF18364B9300DFFC44 /* Onion_full_2_Tanu.caf */; };
 		2054BD4C18364B9300DFFC44 /* Onion_Syll_1_c_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2054BCE018364B9300DFFC44 /* Onion_Syll_1_c_Tanu.caf */; };
 		2054BD4D18364B9300DFFC44 /* Onion_Syll_2_b_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2054BCE118364B9300DFFC44 /* Onion_Syll_2_b_Tanu.caf */; };
-		2054BD4E18364B9300DFFC44 /* Onion_Syll_2_c_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2054BCE218364B9300DFFC44 /* Onion_Syll_2_c_Tanu.caf */; };
 		2054BD4F18364B9300DFFC44 /* Onion_Syll_3_b_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2054BCE318364B9300DFFC44 /* Onion_Syll_3_b_Tanu.caf */; };
 		2054BD5018364B9300DFFC44 /* Plate_full_3_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2054BCE518364B9300DFFC44 /* Plate_full_3_Tanu.caf */; };
 		2054BD5118364B9300DFFC44 /* Potato_full_4_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2054BCE718364B9300DFFC44 /* Potato_full_4_Tanu.caf */; };
@@ -233,41 +229,12 @@
 		8D4BCA8416BA8F1000A34EFD /* KeyClick.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8D4BCA7B16BA8DAE00A34EFD /* KeyClick.caf */; };
 		8D4FB42116096D4B005FD9AD /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D4FB42016096D4B005FD9AD /* CoreImage.framework */; };
 		8D539CAC16E0EE7E005BDB57 /* GuidedModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D539CAB16E0EE7E005BDB57 /* GuidedModeViewController.m */; };
-		8D54C71F16FC4DDA0049AB68 /* A.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 8DD3A57516FC496E00947FD6 /* A.aifc */; };
-		8D54C72016FC4DDA0049AB68 /* B.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 8DD3A57616FC496E00947FD6 /* B.aifc */; };
-		8D54C72116FC4DDA0049AB68 /* C.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 8DD3A57716FC496E00947FD6 /* C.aifc */; };
-		8D54C72216FC4DDA0049AB68 /* D.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 8DD3A57816FC496E00947FD6 /* D.aifc */; };
-		8D54C72316FC4DDA0049AB68 /* E.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 8DD3A57916FC496E00947FD6 /* E.aifc */; };
-		8D54C72416FC4DDA0049AB68 /* F.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 8DD3A57A16FC496E00947FD6 /* F.aifc */; };
-		8D54C72516FC4DDA0049AB68 /* G.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 8DD3A57B16FC496E00947FD6 /* G.aifc */; };
-		8D54C72616FC4DDA0049AB68 /* H.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 8DD3A57C16FC496E00947FD6 /* H.aifc */; };
-		8D54C72716FC4DDA0049AB68 /* I.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 8DD3A57D16FC496E00947FD6 /* I.aifc */; };
-		8D54C72816FC4DDA0049AB68 /* J.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 8DD3A57E16FC496E00947FD6 /* J.aifc */; };
-		8D54C72916FC4DDA0049AB68 /* K.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 8DD3A57F16FC496E00947FD6 /* K.aifc */; };
-		8D54C72A16FC4DDA0049AB68 /* L.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 8DD3A58016FC496E00947FD6 /* L.aifc */; };
-		8D54C72B16FC4DDA0049AB68 /* M.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 8DD3A58116FC496E00947FD6 /* M.aifc */; };
-		8D54C72C16FC4DDA0049AB68 /* N.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 8DD3A58216FC496E00947FD6 /* N.aifc */; };
-		8D54C72D16FC4DDA0049AB68 /* O.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 8DD3A58316FC496E00947FD6 /* O.aifc */; };
-		8D54C72E16FC4DDA0049AB68 /* P.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 8DD3A58416FC496F00947FD6 /* P.aifc */; };
-		8D54C72F16FC4DDA0049AB68 /* Q.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 8DD3A58516FC496F00947FD6 /* Q.aifc */; };
-		8D54C73016FC4DDA0049AB68 /* R.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 8DD3A58616FC496F00947FD6 /* R.aifc */; };
-		8D54C73116FC4DDA0049AB68 /* S.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 8DD3A58716FC496F00947FD6 /* S.aifc */; };
-		8D54C73216FC4DDA0049AB68 /* T.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 8DD3A58816FC496F00947FD6 /* T.aifc */; };
-		8D54C73316FC4DDA0049AB68 /* U.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 8DD3A58916FC496F00947FD6 /* U.aifc */; };
-		8D54C73416FC4DDA0049AB68 /* V.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 8DD3A58A16FC496F00947FD6 /* V.aifc */; };
-		8D54C73516FC4DDA0049AB68 /* W.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 8DD3A58B16FC496F00947FD6 /* W.aifc */; };
-		8D54C73616FC4DDA0049AB68 /* X.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 8DD3A58C16FC496F00947FD6 /* X.aifc */; };
-		8D54C73716FC4DDA0049AB68 /* Y.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 8DD3A58D16FC496F00947FD6 /* Y.aifc */; };
-		8D54C73816FC4DDA0049AB68 /* Zed.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 8DD3A58E16FC496F00947FD6 /* Zed.aifc */; };
-		8D54C73916FC4DDA0049AB68 /* Zee.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 8DD3A58F16FC496F00947FD6 /* Zee.aifc */; };
 		8D54EB0B16B4C1A400C52758 /* Bath.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D54EAFB16B4C1A400C52758 /* Bath.png */; };
 		8D54EB0C16B4C1A400C52758 /* BathPlaceHolder.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D54EAFC16B4C1A400C52758 /* BathPlaceHolder.png */; };
 		8D54EB0D16B4C1A400C52758 /* BathroomBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D54EAFD16B4C1A400C52758 /* BathroomBackground.png */; };
 		8D54EB0E16B4C1A400C52758 /* BathroomScene.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D54EAFE16B4C1A400C52758 /* BathroomScene.png */; };
 		8D54EB0F16B4C1A400C52758 /* Mug.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D54EAFF16B4C1A400C52758 /* Mug.png */; };
 		8D54EB1016B4C1A400C52758 /* MugPlaceHolder.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D54EB0016B4C1A400C52758 /* MugPlaceHolder.png */; };
-		8D54EB1116B4C1A400C52758 /* Potty.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D54EB0116B4C1A400C52758 /* Potty.png */; };
-		8D54EB1216B4C1A400C52758 /* PottyPlaceHolder.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D54EB0216B4C1A400C52758 /* PottyPlaceHolder.png */; };
 		8D54EB1316B4C1A400C52758 /* Shampoo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D54EB0316B4C1A400C52758 /* Shampoo.png */; };
 		8D54EB1416B4C1A400C52758 /* ShampooPlaceHolder.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D54EB0416B4C1A400C52758 /* ShampooPlaceHolder.png */; };
 		8D54EB1516B4C1A400C52758 /* Soap.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D54EB0516B4C1A400C52758 /* Soap.png */; };
@@ -406,8 +373,6 @@
 		8D96536016FF42A200B9E3FB /* Orange.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8D96533A16FF42A200B9E3FB /* Orange.caf */; };
 		8D96536116FF42A200B9E3FB /* Pencil.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8D96533B16FF42A200B9E3FB /* Pencil.caf */; };
 		8D96536216FF42A200B9E3FB /* Potato.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8D96533C16FF42A200B9E3FB /* Potato.caf */; };
-		8D96536316FF42A200B9E3FB /* Potty 2.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8D96533D16FF42A200B9E3FB /* Potty 2.caf */; };
-		8D96536416FF42A200B9E3FB /* Potty.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8D96533E16FF42A200B9E3FB /* Potty.caf */; };
 		8D96536516FF42A200B9E3FB /* Racket.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8D96533F16FF42A200B9E3FB /* Racket.caf */; };
 		8D96536616FF42A200B9E3FB /* Shampoo.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8D96534016FF42A200B9E3FB /* Shampoo.caf */; };
 		8D96536716FF42A200B9E3FB /* Slide.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8D96534116FF42A200B9E3FB /* Slide.caf */; };
@@ -464,11 +429,6 @@
 		8DEA562D16B5B21E00FC88B9 /* Mug01M.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DEA561B16B5B21E00FC88B9 /* Mug01M.png */; };
 		8DEA562E16B5B21E00FC88B9 /* Mug02U.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DEA561C16B5B21E00FC88B9 /* Mug02U.png */; };
 		8DEA562F16B5B21E00FC88B9 /* Mug03G.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DEA561D16B5B21E00FC88B9 /* Mug03G.png */; };
-		8DEA563016B5B21E00FC88B9 /* Potty01P.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DEA561E16B5B21E00FC88B9 /* Potty01P.png */; };
-		8DEA563116B5B21E00FC88B9 /* Potty02O.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DEA561F16B5B21E00FC88B9 /* Potty02O.png */; };
-		8DEA563216B5B21E00FC88B9 /* Potty03T.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DEA562016B5B21E00FC88B9 /* Potty03T.png */; };
-		8DEA563316B5B21E00FC88B9 /* Potty04T.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DEA562116B5B21E00FC88B9 /* Potty04T.png */; };
-		8DEA563416B5B21E00FC88B9 /* Potty05Y.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DEA562216B5B21E00FC88B9 /* Potty05Y.png */; };
 		8DEA563516B5B21E00FC88B9 /* Shampoo01S.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DEA562316B5B21E00FC88B9 /* Shampoo01S.png */; };
 		8DEA563616B5B21E00FC88B9 /* Shampoo02H.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DEA562416B5B21E00FC88B9 /* Shampoo02H.png */; };
 		8DEA563716B5B21E00FC88B9 /* Shampoo03A.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DEA562516B5B21E00FC88B9 /* Shampoo03A.png */; };
@@ -587,7 +547,6 @@
 		8DFAE2F5166322A8004A9752 /* VUMeterTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFAE2F4166322A8004A9752 /* VUMeterTable.m */; };
 		8DFAE2F816632522004A9752 /* VULevelMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFAE2F716632522004A9752 /* VULevelMeter.m */; };
 		8F13961D195406C500539895 /* Shampoo_Syll_3_a_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F13961C195406C500539895 /* Shampoo_Syll_3_a_Tanu.caf */; };
-		8F13961F195407D800539895 /* Potty_Syll_3_c_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F13961E195407D800539895 /* Potty_Syll_3_c_Tanu.caf */; };
 		8F1396211954081000539895 /* Towel_Syll_3_c_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F1396201954081000539895 /* Towel_Syll_3_c_Tanu.caf */; };
 		8F1396231954089B00539895 /* Balloon_Syll_3_b_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F1396221954089B00539895 /* Balloon_Syll_3_b_Tanu.caf */; };
 		8F139625195408B200539895 /* Birthday_Syll_4_a_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F139624195408B200539895 /* Birthday_Syll_4_a_Tanu.caf */; };
@@ -620,6 +579,46 @@
 		8F6B7F7C18F9CB4B006554E3 /* reset-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F6B7F7B18F9CB4B006554E3 /* reset-icon.png */; };
 		8F6B7F7E18F9D102006554E3 /* edit.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F6B7F7D18F9D102006554E3 /* edit.png */; };
 		8F741CF9189F3F5D0048329A /* PuzzleDataWithPhonetics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F741CF8189F3F5D0048329A /* PuzzleDataWithPhonetics.plist */; };
+		8F91D9461967A57D00021A91 /* Toilet.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D9451967A57D00021A91 /* Toilet.caf */; };
+		8F91D9621967A5B600021A91 /* A.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D9471967A5B600021A91 /* A.caf */; };
+		8F91D9631967A5B600021A91 /* B.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D9481967A5B600021A91 /* B.caf */; };
+		8F91D9641967A5B600021A91 /* C.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D9491967A5B600021A91 /* C.caf */; };
+		8F91D9651967A5B600021A91 /* D.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D94A1967A5B600021A91 /* D.caf */; };
+		8F91D9661967A5B600021A91 /* E.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D94B1967A5B600021A91 /* E.caf */; };
+		8F91D9671967A5B600021A91 /* F.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D94C1967A5B600021A91 /* F.caf */; };
+		8F91D9681967A5B600021A91 /* G.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D94D1967A5B600021A91 /* G.caf */; };
+		8F91D9691967A5B600021A91 /* H.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D94E1967A5B600021A91 /* H.caf */; };
+		8F91D96A1967A5B600021A91 /* I.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D94F1967A5B600021A91 /* I.caf */; };
+		8F91D96B1967A5B600021A91 /* J.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D9501967A5B600021A91 /* J.caf */; };
+		8F91D96C1967A5B600021A91 /* K.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D9511967A5B600021A91 /* K.caf */; };
+		8F91D96D1967A5B600021A91 /* L.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D9521967A5B600021A91 /* L.caf */; };
+		8F91D96E1967A5B600021A91 /* M.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D9531967A5B600021A91 /* M.caf */; };
+		8F91D96F1967A5B600021A91 /* N.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D9541967A5B600021A91 /* N.caf */; };
+		8F91D9701967A5B600021A91 /* O.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D9551967A5B600021A91 /* O.caf */; };
+		8F91D9711967A5B600021A91 /* P.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D9561967A5B600021A91 /* P.caf */; };
+		8F91D9721967A5B600021A91 /* Q.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D9571967A5B600021A91 /* Q.caf */; };
+		8F91D9731967A5B600021A91 /* R.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D9581967A5B600021A91 /* R.caf */; };
+		8F91D9741967A5B600021A91 /* S.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D9591967A5B600021A91 /* S.caf */; };
+		8F91D9751967A5B600021A91 /* T.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D95A1967A5B600021A91 /* T.caf */; };
+		8F91D9761967A5B600021A91 /* U.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D95B1967A5B600021A91 /* U.caf */; };
+		8F91D9771967A5B600021A91 /* V.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D95C1967A5B600021A91 /* V.caf */; };
+		8F91D9781967A5B600021A91 /* W.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D95D1967A5B600021A91 /* W.caf */; };
+		8F91D9791967A5B600021A91 /* X.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D95E1967A5B600021A91 /* X.caf */; };
+		8F91D97A1967A5B600021A91 /* Y.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D95F1967A5B600021A91 /* Y.caf */; };
+		8F91D97B1967A5B600021A91 /* Zed.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D9601967A5B600021A91 /* Zed.caf */; };
+		8F91D97C1967A5B600021A91 /* Zee.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D9611967A5B600021A91 /* Zee.caf */; };
+		8F91D97F1967A61100021A91 /* Toilet.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D97D1967A61100021A91 /* Toilet.png */; };
+		8F91D9801967A61100021A91 /* ToiletPlaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D97E1967A61100021A91 /* ToiletPlaceholder.png */; };
+		8F91D9871967A73300021A91 /* Toilet01T.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D9811967A73300021A91 /* Toilet01T.png */; };
+		8F91D9881967A73300021A91 /* Toilet02O.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D9821967A73300021A91 /* Toilet02O.png */; };
+		8F91D9891967A73300021A91 /* Toilet03I.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D9831967A73300021A91 /* Toilet03I.png */; };
+		8F91D98A1967A73300021A91 /* Toilet04L.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D9841967A73300021A91 /* Toilet04L.png */; };
+		8F91D98B1967A73300021A91 /* Toilet05E.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D9851967A73300021A91 /* Toilet05E.png */; };
+		8F91D98C1967A73300021A91 /* Toilet06T.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D9861967A73300021A91 /* Toilet06T.png */; };
+		8F91D99A1967AC5000021A91 /* Toilet_full_2_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D9961967AC5000021A91 /* Toilet_full_2_Tanu.caf */; };
+		8F91D99B1967AC5000021A91 /* Toilet_Syll_1_c_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D9971967AC5000021A91 /* Toilet_Syll_1_c_Tanu.caf */; };
+		8F91D99C1967AC5000021A91 /* Toilet_Syll_2_c_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D9981967AC5000021A91 /* Toilet_Syll_2_c_Tanu.caf */; };
+		8F91D99D1967AC5000021A91 /* Toilet_Syll_3_c_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D9991967AC5000021A91 /* Toilet_Syll_3_c_Tanu.caf */; };
 		8FAF16FC18E8DE15003EC63D /* FirstLaunchInfoTextNew.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FAF16FB18E8DE15003EC63D /* FirstLaunchInfoTextNew.plist */; };
 		8FB6B13F18E8FCEA009CDB74 /* KeyboardButton_hightlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FB6B13E18E8FCEA009CDB74 /* KeyboardButton_hightlighted.png */; };
 /* End PBXBuildFile section */
@@ -638,9 +637,6 @@
 		2022B72B17FF04430061D6EE /* AutistaIAPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AutistaIAPHelper.m; path = Autista/Classes/AutistaIAPHelper.m; sourceTree = SOURCE_ROOT; };
 		2054BC8218364B9300DFFC44 /* Bath_full_1_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bath_full_1_Tanu.caf; sourceTree = "<group>"; };
 		2054BC8418364B9300DFFC44 /* Mug_full_2_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mug_full_2_Tanu.caf; sourceTree = "<group>"; };
-		2054BC8618364B9300DFFC44 /* Potty_full_2_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Potty_full_2_Tanu.caf; sourceTree = "<group>"; };
-		2054BC8718364B9300DFFC44 /* Potty_Syll_1_c_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Potty_Syll_1_c_Tanu.caf; sourceTree = "<group>"; };
-		2054BC8818364B9300DFFC44 /* Potty_Syll_2_c_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Potty_Syll_2_c_Tanu.caf; sourceTree = "<group>"; };
 		2054BC8A18364B9300DFFC44 /* Shampoo_full_2_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Shampoo_full_2_Tanu.caf; sourceTree = "<group>"; };
 		2054BC8B18364B9300DFFC44 /* Shampoo_Syll_1_b_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Shampoo_Syll_1_b_Tanu.caf; sourceTree = "<group>"; };
 		2054BC8C18364B9300DFFC44 /* Shampoo_Syll_2_a_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Shampoo_Syll_2_a_Tanu.caf; sourceTree = "<group>"; };
@@ -701,7 +697,6 @@
 		2054BCDF18364B9300DFFC44 /* Onion_full_2_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Onion_full_2_Tanu.caf; sourceTree = "<group>"; };
 		2054BCE018364B9300DFFC44 /* Onion_Syll_1_c_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Onion_Syll_1_c_Tanu.caf; sourceTree = "<group>"; };
 		2054BCE118364B9300DFFC44 /* Onion_Syll_2_b_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Onion_Syll_2_b_Tanu.caf; sourceTree = "<group>"; };
-		2054BCE218364B9300DFFC44 /* Onion_Syll_2_c_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Onion_Syll_2_c_Tanu.caf; sourceTree = "<group>"; };
 		2054BCE318364B9300DFFC44 /* Onion_Syll_3_b_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Onion_Syll_3_b_Tanu.caf; sourceTree = "<group>"; };
 		2054BCE518364B9300DFFC44 /* Plate_full_3_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Plate_full_3_Tanu.caf; sourceTree = "<group>"; };
 		2054BCE718364B9300DFFC44 /* Potato_full_4_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Potato_full_4_Tanu.caf; sourceTree = "<group>"; };
@@ -867,8 +862,6 @@
 		8D54EAFE16B4C1A400C52758 /* BathroomScene.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BathroomScene.png; sourceTree = "<group>"; };
 		8D54EAFF16B4C1A400C52758 /* Mug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mug.png; sourceTree = "<group>"; };
 		8D54EB0016B4C1A400C52758 /* MugPlaceHolder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MugPlaceHolder.png; sourceTree = "<group>"; };
-		8D54EB0116B4C1A400C52758 /* Potty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Potty.png; sourceTree = "<group>"; };
-		8D54EB0216B4C1A400C52758 /* PottyPlaceHolder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PottyPlaceHolder.png; sourceTree = "<group>"; };
 		8D54EB0316B4C1A400C52758 /* Shampoo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shampoo.png; sourceTree = "<group>"; };
 		8D54EB0416B4C1A400C52758 /* ShampooPlaceHolder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShampooPlaceHolder.png; sourceTree = "<group>"; };
 		8D54EB0516B4C1A400C52758 /* Soap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Soap.png; sourceTree = "<group>"; };
@@ -1041,8 +1034,6 @@
 		8D96533A16FF42A200B9E3FB /* Orange.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Orange.caf; sourceTree = "<group>"; };
 		8D96533B16FF42A200B9E3FB /* Pencil.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pencil.caf; sourceTree = "<group>"; };
 		8D96533C16FF42A200B9E3FB /* Potato.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Potato.caf; sourceTree = "<group>"; };
-		8D96533D16FF42A200B9E3FB /* Potty 2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Potty 2.caf"; sourceTree = "<group>"; };
-		8D96533E16FF42A200B9E3FB /* Potty.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Potty.caf; sourceTree = "<group>"; };
 		8D96533F16FF42A200B9E3FB /* Racket.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Racket.caf; sourceTree = "<group>"; };
 		8D96534016FF42A200B9E3FB /* Shampoo.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Shampoo.caf; sourceTree = "<group>"; };
 		8D96534116FF42A200B9E3FB /* Slide.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Slide.caf; sourceTree = "<group>"; };
@@ -1094,33 +1085,6 @@
 		8DCDF47C16C14FBC00A231F6 /* PieceAutoAdvanced.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = PieceAutoAdvanced.caf; path = Autista/Sounds/PieceAutoAdvanced.caf; sourceTree = "<group>"; };
 		8DCDF47E16C1525200A231F6 /* PuzzleCompletedSuccessfully01.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = PuzzleCompletedSuccessfully01.caf; path = Autista/Sounds/PuzzleCompletedSuccessfully01.caf; sourceTree = "<group>"; };
 		8DCF4BF916FDABC00045901D /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		8DD3A57516FC496E00947FD6 /* A.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = A.aifc; sourceTree = "<group>"; };
-		8DD3A57616FC496E00947FD6 /* B.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = B.aifc; sourceTree = "<group>"; };
-		8DD3A57716FC496E00947FD6 /* C.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = C.aifc; sourceTree = "<group>"; };
-		8DD3A57816FC496E00947FD6 /* D.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = D.aifc; sourceTree = "<group>"; };
-		8DD3A57916FC496E00947FD6 /* E.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = E.aifc; sourceTree = "<group>"; };
-		8DD3A57A16FC496E00947FD6 /* F.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = F.aifc; sourceTree = "<group>"; };
-		8DD3A57B16FC496E00947FD6 /* G.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = G.aifc; sourceTree = "<group>"; };
-		8DD3A57C16FC496E00947FD6 /* H.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = H.aifc; sourceTree = "<group>"; };
-		8DD3A57D16FC496E00947FD6 /* I.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = I.aifc; sourceTree = "<group>"; };
-		8DD3A57E16FC496E00947FD6 /* J.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = J.aifc; sourceTree = "<group>"; };
-		8DD3A57F16FC496E00947FD6 /* K.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = K.aifc; sourceTree = "<group>"; };
-		8DD3A58016FC496E00947FD6 /* L.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = L.aifc; sourceTree = "<group>"; };
-		8DD3A58116FC496E00947FD6 /* M.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = M.aifc; sourceTree = "<group>"; };
-		8DD3A58216FC496E00947FD6 /* N.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = N.aifc; sourceTree = "<group>"; };
-		8DD3A58316FC496E00947FD6 /* O.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = O.aifc; sourceTree = "<group>"; };
-		8DD3A58416FC496F00947FD6 /* P.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = P.aifc; sourceTree = "<group>"; };
-		8DD3A58516FC496F00947FD6 /* Q.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Q.aifc; sourceTree = "<group>"; };
-		8DD3A58616FC496F00947FD6 /* R.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = R.aifc; sourceTree = "<group>"; };
-		8DD3A58716FC496F00947FD6 /* S.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = S.aifc; sourceTree = "<group>"; };
-		8DD3A58816FC496F00947FD6 /* T.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = T.aifc; sourceTree = "<group>"; };
-		8DD3A58916FC496F00947FD6 /* U.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = U.aifc; sourceTree = "<group>"; };
-		8DD3A58A16FC496F00947FD6 /* V.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = V.aifc; sourceTree = "<group>"; };
-		8DD3A58B16FC496F00947FD6 /* W.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = W.aifc; sourceTree = "<group>"; };
-		8DD3A58C16FC496F00947FD6 /* X.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = X.aifc; sourceTree = "<group>"; };
-		8DD3A58D16FC496F00947FD6 /* Y.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Y.aifc; sourceTree = "<group>"; };
-		8DD3A58E16FC496F00947FD6 /* Zed.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zed.aifc; sourceTree = "<group>"; };
-		8DD3A58F16FC496F00947FD6 /* Zee.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zee.aifc; sourceTree = "<group>"; };
 		8DDE5C2A16B0506800713427 /* PuzzleData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PuzzleData.plist; path = Autista/Models/PuzzleData.plist; sourceTree = "<group>"; };
 		8DDE5C4416B11DD400713427 /* Apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Apple.png; sourceTree = "<group>"; };
 		8DDE5C4516B11DD400713427 /* ApplePlaceHolder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ApplePlaceHolder.png; sourceTree = "<group>"; };
@@ -1142,11 +1106,6 @@
 		8DEA561B16B5B21E00FC88B9 /* Mug01M.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Mug01M.png; path = pieces/Mug01M.png; sourceTree = "<group>"; };
 		8DEA561C16B5B21E00FC88B9 /* Mug02U.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Mug02U.png; path = pieces/Mug02U.png; sourceTree = "<group>"; };
 		8DEA561D16B5B21E00FC88B9 /* Mug03G.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Mug03G.png; path = pieces/Mug03G.png; sourceTree = "<group>"; };
-		8DEA561E16B5B21E00FC88B9 /* Potty01P.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Potty01P.png; path = pieces/Potty01P.png; sourceTree = "<group>"; };
-		8DEA561F16B5B21E00FC88B9 /* Potty02O.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Potty02O.png; path = pieces/Potty02O.png; sourceTree = "<group>"; };
-		8DEA562016B5B21E00FC88B9 /* Potty03T.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Potty03T.png; path = pieces/Potty03T.png; sourceTree = "<group>"; };
-		8DEA562116B5B21E00FC88B9 /* Potty04T.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Potty04T.png; path = pieces/Potty04T.png; sourceTree = "<group>"; };
-		8DEA562216B5B21E00FC88B9 /* Potty05Y.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Potty05Y.png; path = pieces/Potty05Y.png; sourceTree = "<group>"; };
 		8DEA562316B5B21E00FC88B9 /* Shampoo01S.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Shampoo01S.png; path = pieces/Shampoo01S.png; sourceTree = "<group>"; };
 		8DEA562416B5B21E00FC88B9 /* Shampoo02H.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Shampoo02H.png; path = pieces/Shampoo02H.png; sourceTree = "<group>"; };
 		8DEA562516B5B21E00FC88B9 /* Shampoo03A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Shampoo03A.png; path = pieces/Shampoo03A.png; sourceTree = "<group>"; };
@@ -1273,7 +1232,6 @@
 		8DFAE2F616632522004A9752 /* VULevelMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VULevelMeter.h; path = Autista/Audio/VULevelMeter.h; sourceTree = "<group>"; };
 		8DFAE2F716632522004A9752 /* VULevelMeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VULevelMeter.m; path = Autista/Audio/VULevelMeter.m; sourceTree = "<group>"; };
 		8F13961C195406C500539895 /* Shampoo_Syll_3_a_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Shampoo_Syll_3_a_Tanu.caf; sourceTree = "<group>"; };
-		8F13961E195407D800539895 /* Potty_Syll_3_c_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Potty_Syll_3_c_Tanu.caf; sourceTree = "<group>"; };
 		8F1396201954081000539895 /* Towel_Syll_3_c_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Towel_Syll_3_c_Tanu.caf; sourceTree = "<group>"; };
 		8F1396221954089B00539895 /* Balloon_Syll_3_b_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Balloon_Syll_3_b_Tanu.caf; sourceTree = "<group>"; };
 		8F139624195408B200539895 /* Birthday_Syll_4_a_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Birthday_Syll_4_a_Tanu.caf; sourceTree = "<group>"; };
@@ -1308,6 +1266,46 @@
 		8F6B7F7B18F9CB4B006554E3 /* reset-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reset-icon.png"; sourceTree = "<group>"; };
 		8F6B7F7D18F9D102006554E3 /* edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit.png; sourceTree = "<group>"; };
 		8F741CF8189F3F5D0048329A /* PuzzleDataWithPhonetics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PuzzleDataWithPhonetics.plist; path = Autista/Models/PuzzleDataWithPhonetics.plist; sourceTree = "<group>"; };
+		8F91D9451967A57D00021A91 /* Toilet.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Toilet.caf; sourceTree = "<group>"; };
+		8F91D9471967A5B600021A91 /* A.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = A.caf; sourceTree = "<group>"; };
+		8F91D9481967A5B600021A91 /* B.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = B.caf; sourceTree = "<group>"; };
+		8F91D9491967A5B600021A91 /* C.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = C.caf; sourceTree = "<group>"; };
+		8F91D94A1967A5B600021A91 /* D.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = D.caf; sourceTree = "<group>"; };
+		8F91D94B1967A5B600021A91 /* E.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = E.caf; sourceTree = "<group>"; };
+		8F91D94C1967A5B600021A91 /* F.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = F.caf; sourceTree = "<group>"; };
+		8F91D94D1967A5B600021A91 /* G.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = G.caf; sourceTree = "<group>"; };
+		8F91D94E1967A5B600021A91 /* H.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = H.caf; sourceTree = "<group>"; };
+		8F91D94F1967A5B600021A91 /* I.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = I.caf; sourceTree = "<group>"; };
+		8F91D9501967A5B600021A91 /* J.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = J.caf; sourceTree = "<group>"; };
+		8F91D9511967A5B600021A91 /* K.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = K.caf; sourceTree = "<group>"; };
+		8F91D9521967A5B600021A91 /* L.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = L.caf; sourceTree = "<group>"; };
+		8F91D9531967A5B600021A91 /* M.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = M.caf; sourceTree = "<group>"; };
+		8F91D9541967A5B600021A91 /* N.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = N.caf; sourceTree = "<group>"; };
+		8F91D9551967A5B600021A91 /* O.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = O.caf; sourceTree = "<group>"; };
+		8F91D9561967A5B600021A91 /* P.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = P.caf; sourceTree = "<group>"; };
+		8F91D9571967A5B600021A91 /* Q.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Q.caf; sourceTree = "<group>"; };
+		8F91D9581967A5B600021A91 /* R.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = R.caf; sourceTree = "<group>"; };
+		8F91D9591967A5B600021A91 /* S.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = S.caf; sourceTree = "<group>"; };
+		8F91D95A1967A5B600021A91 /* T.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = T.caf; sourceTree = "<group>"; };
+		8F91D95B1967A5B600021A91 /* U.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = U.caf; sourceTree = "<group>"; };
+		8F91D95C1967A5B600021A91 /* V.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = V.caf; sourceTree = "<group>"; };
+		8F91D95D1967A5B600021A91 /* W.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = W.caf; sourceTree = "<group>"; };
+		8F91D95E1967A5B600021A91 /* X.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = X.caf; sourceTree = "<group>"; };
+		8F91D95F1967A5B600021A91 /* Y.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Y.caf; sourceTree = "<group>"; };
+		8F91D9601967A5B600021A91 /* Zed.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zed.caf; sourceTree = "<group>"; };
+		8F91D9611967A5B600021A91 /* Zee.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zee.caf; sourceTree = "<group>"; };
+		8F91D97D1967A61100021A91 /* Toilet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Toilet.png; sourceTree = "<group>"; };
+		8F91D97E1967A61100021A91 /* ToiletPlaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToiletPlaceholder.png; sourceTree = "<group>"; };
+		8F91D9811967A73300021A91 /* Toilet01T.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Toilet01T.png; path = pieces/Toilet01T.png; sourceTree = "<group>"; };
+		8F91D9821967A73300021A91 /* Toilet02O.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Toilet02O.png; path = pieces/Toilet02O.png; sourceTree = "<group>"; };
+		8F91D9831967A73300021A91 /* Toilet03I.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Toilet03I.png; path = pieces/Toilet03I.png; sourceTree = "<group>"; };
+		8F91D9841967A73300021A91 /* Toilet04L.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Toilet04L.png; path = pieces/Toilet04L.png; sourceTree = "<group>"; };
+		8F91D9851967A73300021A91 /* Toilet05E.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Toilet05E.png; path = pieces/Toilet05E.png; sourceTree = "<group>"; };
+		8F91D9861967A73300021A91 /* Toilet06T.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Toilet06T.png; path = pieces/Toilet06T.png; sourceTree = "<group>"; };
+		8F91D9961967AC5000021A91 /* Toilet_full_2_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Toilet_full_2_Tanu.caf; sourceTree = "<group>"; };
+		8F91D9971967AC5000021A91 /* Toilet_Syll_1_c_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Toilet_Syll_1_c_Tanu.caf; sourceTree = "<group>"; };
+		8F91D9981967AC5000021A91 /* Toilet_Syll_2_c_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Toilet_Syll_2_c_Tanu.caf; sourceTree = "<group>"; };
+		8F91D9991967AC5000021A91 /* Toilet_Syll_3_c_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Toilet_Syll_3_c_Tanu.caf; sourceTree = "<group>"; };
 		8FAF16FB18E8DE15003EC63D /* FirstLaunchInfoTextNew.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = FirstLaunchInfoTextNew.plist; path = Autista/Models/FirstLaunchInfoTextNew.plist; sourceTree = "<group>"; };
 		8FB1A922189D894C007A483F /* Instabug.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Instabug.framework; sourceTree = "<group>"; };
 		8FB6B13E18E8FCEA009CDB74 /* KeyboardButton_hightlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KeyboardButton_hightlighted.png; sourceTree = "<group>"; };
@@ -1403,9 +1401,9 @@
 		2054BC8018364B9300DFFC44 /* Bathing */ = {
 			isa = PBXGroup;
 			children = (
+				8F91D9951967AC5000021A91 /* Toilet */,
 				2054BC8118364B9300DFFC44 /* Bath */,
 				2054BC8318364B9300DFFC44 /* Mug */,
-				2054BC8518364B9300DFFC44 /* Potty */,
 				2054BC8918364B9300DFFC44 /* Shampoo */,
 				2054BC8D18364B9300DFFC44 /* Soap */,
 				2054BC8F18364B9300DFFC44 /* Tap */,
@@ -1428,17 +1426,6 @@
 				2054BC8418364B9300DFFC44 /* Mug_full_2_Tanu.caf */,
 			);
 			path = Mug;
-			sourceTree = "<group>";
-		};
-		2054BC8518364B9300DFFC44 /* Potty */ = {
-			isa = PBXGroup;
-			children = (
-				2054BC8618364B9300DFFC44 /* Potty_full_2_Tanu.caf */,
-				2054BC8718364B9300DFFC44 /* Potty_Syll_1_c_Tanu.caf */,
-				2054BC8818364B9300DFFC44 /* Potty_Syll_2_c_Tanu.caf */,
-				8F13961E195407D800539895 /* Potty_Syll_3_c_Tanu.caf */,
-			);
-			path = Potty;
 			sourceTree = "<group>";
 		};
 		2054BC8918364B9300DFFC44 /* Shampoo */ = {
@@ -1738,7 +1725,6 @@
 				2054BCDF18364B9300DFFC44 /* Onion_full_2_Tanu.caf */,
 				2054BCE018364B9300DFFC44 /* Onion_Syll_1_c_Tanu.caf */,
 				2054BCE118364B9300DFFC44 /* Onion_Syll_2_b_Tanu.caf */,
-				2054BCE218364B9300DFFC44 /* Onion_Syll_2_c_Tanu.caf */,
 				2054BCE318364B9300DFFC44 /* Onion_Syll_3_b_Tanu.caf */,
 				8F13963819540D9000539895 /* Onion_Syll_4_b_Tanu.caf */,
 			);
@@ -2264,8 +2250,7 @@
 				8D96533A16FF42A200B9E3FB /* Orange.caf */,
 				8D96533B16FF42A200B9E3FB /* Pencil.caf */,
 				8D96533C16FF42A200B9E3FB /* Potato.caf */,
-				8D96533D16FF42A200B9E3FB /* Potty 2.caf */,
-				8D96533E16FF42A200B9E3FB /* Potty.caf */,
+				8F91D9451967A57D00021A91 /* Toilet.caf */,
 				8D96533F16FF42A200B9E3FB /* Racket.caf */,
 				8D96534016FF42A200B9E3FB /* Shampoo.caf */,
 				8D96534116FF42A200B9E3FB /* Slide.caf */,
@@ -2285,33 +2270,33 @@
 		8D98737616FC41BD0041D928 /* Alphabets */ = {
 			isa = PBXGroup;
 			children = (
-				8DD3A57516FC496E00947FD6 /* A.aifc */,
-				8DD3A57616FC496E00947FD6 /* B.aifc */,
-				8DD3A57716FC496E00947FD6 /* C.aifc */,
-				8DD3A57816FC496E00947FD6 /* D.aifc */,
-				8DD3A57916FC496E00947FD6 /* E.aifc */,
-				8DD3A57A16FC496E00947FD6 /* F.aifc */,
-				8DD3A57B16FC496E00947FD6 /* G.aifc */,
-				8DD3A57C16FC496E00947FD6 /* H.aifc */,
-				8DD3A57D16FC496E00947FD6 /* I.aifc */,
-				8DD3A57E16FC496E00947FD6 /* J.aifc */,
-				8DD3A57F16FC496E00947FD6 /* K.aifc */,
-				8DD3A58016FC496E00947FD6 /* L.aifc */,
-				8DD3A58116FC496E00947FD6 /* M.aifc */,
-				8DD3A58216FC496E00947FD6 /* N.aifc */,
-				8DD3A58316FC496E00947FD6 /* O.aifc */,
-				8DD3A58416FC496F00947FD6 /* P.aifc */,
-				8DD3A58516FC496F00947FD6 /* Q.aifc */,
-				8DD3A58616FC496F00947FD6 /* R.aifc */,
-				8DD3A58716FC496F00947FD6 /* S.aifc */,
-				8DD3A58816FC496F00947FD6 /* T.aifc */,
-				8DD3A58916FC496F00947FD6 /* U.aifc */,
-				8DD3A58A16FC496F00947FD6 /* V.aifc */,
-				8DD3A58B16FC496F00947FD6 /* W.aifc */,
-				8DD3A58C16FC496F00947FD6 /* X.aifc */,
-				8DD3A58D16FC496F00947FD6 /* Y.aifc */,
-				8DD3A58E16FC496F00947FD6 /* Zed.aifc */,
-				8DD3A58F16FC496F00947FD6 /* Zee.aifc */,
+				8F91D9471967A5B600021A91 /* A.caf */,
+				8F91D9481967A5B600021A91 /* B.caf */,
+				8F91D9491967A5B600021A91 /* C.caf */,
+				8F91D94A1967A5B600021A91 /* D.caf */,
+				8F91D94B1967A5B600021A91 /* E.caf */,
+				8F91D94C1967A5B600021A91 /* F.caf */,
+				8F91D94D1967A5B600021A91 /* G.caf */,
+				8F91D94E1967A5B600021A91 /* H.caf */,
+				8F91D94F1967A5B600021A91 /* I.caf */,
+				8F91D9501967A5B600021A91 /* J.caf */,
+				8F91D9511967A5B600021A91 /* K.caf */,
+				8F91D9521967A5B600021A91 /* L.caf */,
+				8F91D9531967A5B600021A91 /* M.caf */,
+				8F91D9541967A5B600021A91 /* N.caf */,
+				8F91D9551967A5B600021A91 /* O.caf */,
+				8F91D9561967A5B600021A91 /* P.caf */,
+				8F91D9571967A5B600021A91 /* Q.caf */,
+				8F91D9581967A5B600021A91 /* R.caf */,
+				8F91D9591967A5B600021A91 /* S.caf */,
+				8F91D95A1967A5B600021A91 /* T.caf */,
+				8F91D95B1967A5B600021A91 /* U.caf */,
+				8F91D95C1967A5B600021A91 /* V.caf */,
+				8F91D95D1967A5B600021A91 /* W.caf */,
+				8F91D95E1967A5B600021A91 /* X.caf */,
+				8F91D95F1967A5B600021A91 /* Y.caf */,
+				8F91D9601967A5B600021A91 /* Zed.caf */,
+				8F91D9611967A5B600021A91 /* Zee.caf */,
 			);
 			name = Alphabets;
 			path = Autista/Alphabets;
@@ -2532,8 +2517,8 @@
 				8D54EAFC16B4C1A400C52758 /* BathPlaceHolder.png */,
 				8D54EAFF16B4C1A400C52758 /* Mug.png */,
 				8D54EB0016B4C1A400C52758 /* MugPlaceHolder.png */,
-				8D54EB0116B4C1A400C52758 /* Potty.png */,
-				8D54EB0216B4C1A400C52758 /* PottyPlaceHolder.png */,
+				8F91D97D1967A61100021A91 /* Toilet.png */,
+				8F91D97E1967A61100021A91 /* ToiletPlaceholder.png */,
 				8D54EB0316B4C1A400C52758 /* Shampoo.png */,
 				8D54EB0416B4C1A400C52758 /* ShampooPlaceHolder.png */,
 				8D54EB0516B4C1A400C52758 /* Soap.png */,
@@ -2649,11 +2634,12 @@
 				8DEA561B16B5B21E00FC88B9 /* Mug01M.png */,
 				8DEA561C16B5B21E00FC88B9 /* Mug02U.png */,
 				8DEA561D16B5B21E00FC88B9 /* Mug03G.png */,
-				8DEA561E16B5B21E00FC88B9 /* Potty01P.png */,
-				8DEA561F16B5B21E00FC88B9 /* Potty02O.png */,
-				8DEA562016B5B21E00FC88B9 /* Potty03T.png */,
-				8DEA562116B5B21E00FC88B9 /* Potty04T.png */,
-				8DEA562216B5B21E00FC88B9 /* Potty05Y.png */,
+				8F91D9811967A73300021A91 /* Toilet01T.png */,
+				8F91D9821967A73300021A91 /* Toilet02O.png */,
+				8F91D9831967A73300021A91 /* Toilet03I.png */,
+				8F91D9841967A73300021A91 /* Toilet04L.png */,
+				8F91D9851967A73300021A91 /* Toilet05E.png */,
+				8F91D9861967A73300021A91 /* Toilet06T.png */,
 				8DEA562316B5B21E00FC88B9 /* Shampoo01S.png */,
 				8DEA562416B5B21E00FC88B9 /* Shampoo02H.png */,
 				8DEA562516B5B21E00FC88B9 /* Shampoo03A.png */,
@@ -2770,6 +2756,17 @@
 			name = Sounds;
 			sourceTree = "<group>";
 		};
+		8F91D9951967AC5000021A91 /* Toilet */ = {
+			isa = PBXGroup;
+			children = (
+				8F91D9961967AC5000021A91 /* Toilet_full_2_Tanu.caf */,
+				8F91D9971967AC5000021A91 /* Toilet_Syll_1_c_Tanu.caf */,
+				8F91D9981967AC5000021A91 /* Toilet_Syll_2_c_Tanu.caf */,
+				8F91D9991967AC5000021A91 /* Toilet_Syll_3_c_Tanu.caf */,
+			);
+			path = Toilet;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2835,6 +2832,7 @@
 				20E4A565186FE42800B473C2 /* Icon 76.png in Resources */,
 				20E4A564186FE42000B473C2 /* Icon 152.png in Resources */,
 				20EC798C1837B3B8003EB1FE /* GoodJob.caf in Resources */,
+				8F91D9771967A5B600021A91 /* V.caf in Resources */,
 				20EC798D1837B3B8003EB1FE /* GoodTry.caf in Resources */,
 				20EC798E1837B3B8003EB1FE /* NowLetsSay.caf in Resources */,
 				20EC798F1837B3B8003EB1FE /* TryAgain.caf in Resources */,
@@ -2844,52 +2842,32 @@
 				20EC79931837B3B8003EB1FE /* Say.caf in Resources */,
 				20EC79941837B3B8003EB1FE /* Super.caf in Resources */,
 				20EC79951837B3B8003EB1FE /* Yay.caf in Resources */,
-				8D54C71F16FC4DDA0049AB68 /* A.aifc in Resources */,
+				8F91D9761967A5B600021A91 /* U.caf in Resources */,
 				2054BD2518364B9300DFFC44 /* Chocolate_Syll_2_b_Tanu.caf in Resources */,
-				8D54C72016FC4DDA0049AB68 /* B.aifc in Resources */,
-				8D54C72116FC4DDA0049AB68 /* C.aifc in Resources */,
-				8D54C72216FC4DDA0049AB68 /* D.aifc in Resources */,
-				8D54C72316FC4DDA0049AB68 /* E.aifc in Resources */,
-				8D54C72416FC4DDA0049AB68 /* F.aifc in Resources */,
-				8D54C72516FC4DDA0049AB68 /* G.aifc in Resources */,
-				8D54C72616FC4DDA0049AB68 /* H.aifc in Resources */,
-				8D54C72716FC4DDA0049AB68 /* I.aifc in Resources */,
-				8D54C72816FC4DDA0049AB68 /* J.aifc in Resources */,
-				8D54C72916FC4DDA0049AB68 /* K.aifc in Resources */,
-				8D54C72A16FC4DDA0049AB68 /* L.aifc in Resources */,
 				8F13963119540CB900539895 /* Banana_Syll_4_b_Tanu.caf in Resources */,
-				8D54C72B16FC4DDA0049AB68 /* M.aifc in Resources */,
 				2054BD6618364B9300DFFC44 /* Slide_full_2_Tanu.caf in Resources */,
-				8D54C72C16FC4DDA0049AB68 /* N.aifc in Resources */,
-				8D54C72D16FC4DDA0049AB68 /* O.aifc in Resources */,
-				8D54C72E16FC4DDA0049AB68 /* P.aifc in Resources */,
+				8F91D9781967A5B600021A91 /* W.caf in Resources */,
 				49C2C714190DEA550019600C /* OpenEARS License in Resources */,
-				8D54C72F16FC4DDA0049AB68 /* Q.aifc in Resources */,
 				8F13963919540D9000539895 /* Onion_Syll_4_b_Tanu.caf in Resources */,
 				2054BD6218364B9300DFFC44 /* Happy_full_3_Tanu.caf in Resources */,
-				8D54C73016FC4DDA0049AB68 /* R.aifc in Resources */,
-				8D54C73116FC4DDA0049AB68 /* S.aifc in Resources */,
-				8D54C73216FC4DDA0049AB68 /* T.aifc in Resources */,
 				8F6B7F7E18F9D102006554E3 /* edit.png in Resources */,
-				8D54C73316FC4DDA0049AB68 /* U.aifc in Resources */,
 				2054BD4218364B9300DFFC44 /* Round_full_3_Tanu.caf in Resources */,
-				8D54C73416FC4DDA0049AB68 /* V.aifc in Resources */,
-				8D54C73516FC4DDA0049AB68 /* W.aifc in Resources */,
+				8F91D96C1967A5B600021A91 /* K.caf in Resources */,
 				2054BD4B18364B9300DFFC44 /* Onion_full_2_Tanu.caf in Resources */,
 				2054BD5218364B9300DFFC44 /* Potato_Syll_1_b_Tanu.caf in Resources */,
 				2054BD4918364B9300DFFC44 /* Cup_full_7_Tanu.caf in Resources */,
-				8D54C73616FC4DDA0049AB68 /* X.aifc in Resources */,
 				8F13962919540ABB00539895 /* Table_Syll_3_c_Tanu.caf in Resources */,
+				8F91D96A1967A5B600021A91 /* I.caf in Resources */,
 				2054BD2C18364B9300DFFC44 /* Lollipop_Syll_3_a_Tanu.caf in Resources */,
-				8D54C73716FC4DDA0049AB68 /* Y.aifc in Resources */,
-				8D54C73816FC4DDA0049AB68 /* Zed.aifc in Resources */,
-				8D54C73916FC4DDA0049AB68 /* Zee.aifc in Resources */,
+				8F91D96F1967A5B600021A91 /* N.caf in Resources */,
 				49C2C716190DEA550019600C /* UIDevice-with-UniqueIdentifier-for-iOS-5 License.txt in Resources */,
 				8DA1743716C4E48B008FBCC9 /* Girl.png in Resources */,
 				8DA1743816C4E48F008FBCC9 /* GirlPlaceHolder.png in Resources */,
 				8D4BCA8416BA8F1000A34EFD /* KeyClick.caf in Resources */,
+				8F91D9731967A5B600021A91 /* R.caf in Resources */,
 				8DF5E0AD16B96DD3005D8154 /* BathroomSceneMusic.aifc in Resources */,
 				8DF5E0AE16B96DD3005D8154 /* BirthdaySceneMusic.aifc in Resources */,
+				8F91D9881967A73300021A91 /* Toilet02O.png in Resources */,
 				2054BD1518364B9300DFFC44 /* Soap_full_1_tanu.caf in Resources */,
 				2054BD3118364B9300DFFC44 /* Table_Syll_1_a_Tanu.caf in Resources */,
 				8DA1743216C4CD62008FBCC9 /* PieceReleased.caf in Resources */,
@@ -2899,6 +2877,7 @@
 				8DF5E0B116B96DD3005D8154 /* PlaygroundSceneMusic.aifc in Resources */,
 				8DF5E07D16B95DDB005D8154 /* Apple01A.png in Resources */,
 				8DF5E07E16B95DDB005D8154 /* Apple02P.png in Resources */,
+				8F91D9671967A5B600021A91 /* F.caf in Resources */,
 				8DF5E07F16B95DDB005D8154 /* Apple03P.png in Resources */,
 				8DF5E08016B95DDB005D8154 /* Apple04L.png in Resources */,
 				8DF5E08116B95DDB005D8154 /* Apple05E.png in Resources */,
@@ -2928,7 +2907,9 @@
 				8DF5E09416B95DDB005D8154 /* Orange02R.png in Resources */,
 				8DF5E09516B95DDB005D8154 /* Orange03A.png in Resources */,
 				8DF5E09616B95DDB005D8154 /* Orange04N.png in Resources */,
+				8F91D99B1967AC5000021A91 /* Toilet_Syll_1_c_Tanu.caf in Resources */,
 				2054BD5818364B9300DFFC44 /* Dog_full_2_Tanu.caf in Resources */,
+				8F91D9641967A5B600021A91 /* C.caf in Resources */,
 				8DF5E09716B95DDB005D8154 /* Orange05G.png in Resources */,
 				8DF5E09816B95DDB005D8154 /* Orange06E.png in Resources */,
 				8DF5E09916B95DDB005D8154 /* Watermelon01W.png in Resources */,
@@ -2938,6 +2919,7 @@
 				8DF5E09D16B95DDC005D8154 /* Watermelon05R.png in Resources */,
 				2054BD3718364B9300DFFC44 /* Banana_Syll_1_a_Tanu.caf in Resources */,
 				2054BD5418364B9300DFFC44 /* Potato_Syll_3_a_Tanu.caf in Resources */,
+				8F91D96E1967A5B600021A91 /* M.caf in Resources */,
 				8DF5E09E16B95DDC005D8154 /* Watermelon06M.png in Resources */,
 				8DF5E09F16B95DDC005D8154 /* Watermelon07E.png in Resources */,
 				8DF5E0A016B95DDC005D8154 /* Watermelon08L.png in Resources */,
@@ -2950,6 +2932,7 @@
 				8DF5E02B16B92B21005D8154 /* PieceSelected.caf in Resources */,
 				8DF5E02C16B92B21005D8154 /* CorrectPiecePlaced.caf in Resources */,
 				8DF5E02D16B92B21005D8154 /* PuzzleCompletedSuccessfully02.caf in Resources */,
+				8F91D97A1967A5B600021A91 /* Y.caf in Resources */,
 				8DF5E02E16B92B21005D8154 /* SceneCompletedSuccessfully.caf in Resources */,
 				8DF5E02F16B92B21005D8154 /* WrongKeyPressed.caf in Resources */,
 				8DF5E03016B92B21005D8154 /* WrongPiecePlaced.caf in Resources */,
@@ -2958,7 +2941,9 @@
 				8D35B8B3160611C50003A048 /* Scenes.plist in Resources */,
 				8D89401016324A48006E6873 /* Default-Landscape~ipad.png in Resources */,
 				8DEB603116624F4E000E8290 /* BkgWoodTexture@2x.png in Resources */,
+				8F91D97C1967A5B600021A91 /* Zee.caf in Resources */,
 				8DEB603216624F4E000E8290 /* KeyboardButton.png in Resources */,
+				8F91D99A1967AC5000021A91 /* Toilet_full_2_Tanu.caf in Resources */,
 				8DEB603416625204000E8290 /* BkgWoodTexture.png in Resources */,
 				8DEB604116629581000E8290 /* BtnSceneSelectorHome.png in Resources */,
 				2054BD5E18364B9300DFFC44 /* Bucket_Syll_2_a_Tanu.caf in Resources */,
@@ -2994,13 +2979,13 @@
 				20EC799E1837C22A003EB1FE /* BtnNextHighlighted.png in Resources */,
 				8D54EB0D16B4C1A400C52758 /* BathroomBackground.png in Resources */,
 				2054BD2118364B9300DFFC44 /* Book_full_3_Tanu.caf in Resources */,
+				8F91D9721967A5B600021A91 /* Q.caf in Resources */,
 				8D54EB0E16B4C1A400C52758 /* BathroomScene.png in Resources */,
 				8D54EB0F16B4C1A400C52758 /* Mug.png in Resources */,
 				8D54EB1016B4C1A400C52758 /* MugPlaceHolder.png in Resources */,
-				8D54EB1116B4C1A400C52758 /* Potty.png in Resources */,
-				8D54EB1216B4C1A400C52758 /* PottyPlaceHolder.png in Resources */,
 				2054BD721837332200DFFC44 /* BtnLockHighlighted.png in Resources */,
 				8D54EB1316B4C1A400C52758 /* Shampoo.png in Resources */,
+				8F91D99D1967AC5000021A91 /* Toilet_Syll_3_c_Tanu.caf in Resources */,
 				8D54EB1416B4C1A400C52758 /* ShampooPlaceHolder.png in Resources */,
 				8D54EB1516B4C1A400C52758 /* Soap.png in Resources */,
 				8D54EB1616B4C1A400C52758 /* SoapPlaceHolder.png in Resources */,
@@ -3028,7 +3013,6 @@
 				8D54EB5B16B4C20900C52758 /* Spoon.png in Resources */,
 				2054BD5018364B9300DFFC44 /* Plate_full_3_Tanu.caf in Resources */,
 				8D54EB5C16B4C20900C52758 /* SpoonPlaceHolder.png in Resources */,
-				2054BD0F18364B9300DFFC44 /* Potty_full_2_Tanu.caf in Resources */,
 				8D54EB5D16B4C20900C52758 /* Water.png in Resources */,
 				8D54EB5E16B4C20900C52758 /* WaterPlaceHolder.png in Resources */,
 				8DB9FAA116B529D20030DC4C /* BathroomSceneSelector.png in Resources */,
@@ -3045,13 +3029,9 @@
 				8DEA561916B5A22600FC88B9 /* Settings.bundle in Resources */,
 				8DEA562D16B5B21E00FC88B9 /* Mug01M.png in Resources */,
 				8DEA562E16B5B21E00FC88B9 /* Mug02U.png in Resources */,
+				8F91D9711967A5B600021A91 /* P.caf in Resources */,
 				8DEA562F16B5B21E00FC88B9 /* Mug03G.png in Resources */,
-				8DEA563016B5B21E00FC88B9 /* Potty01P.png in Resources */,
 				2054BD5C18364B9300DFFC44 /* Bucket_full_1_Tanu.caf in Resources */,
-				8DEA563116B5B21E00FC88B9 /* Potty02O.png in Resources */,
-				8DEA563216B5B21E00FC88B9 /* Potty03T.png in Resources */,
-				8DEA563316B5B21E00FC88B9 /* Potty04T.png in Resources */,
-				8DEA563416B5B21E00FC88B9 /* Potty05Y.png in Resources */,
 				8DEA563516B5B21E00FC88B9 /* Shampoo01S.png in Resources */,
 				2054BD4318364B9300DFFC44 /* Watermelon_full_4_Tanu.caf in Resources */,
 				2054BD5718364B9300DFFC44 /* Cow_full_6_Tanu.caf in Resources */,
@@ -3093,7 +3073,6 @@
 				2054BD1618364B9300DFFC44 /* Tap_full_3_Tanu.caf in Resources */,
 				8DF5DFF316B90BD1005D8154 /* Bread05D.png in Resources */,
 				8DF5DFF416B90BD1005D8154 /* Cup01C.png in Resources */,
-				2054BD4E18364B9300DFFC44 /* Onion_Syll_2_c_Tanu.caf in Resources */,
 				2054BD1A18364B9300DFFC44 /* Balloon_full_3_Tanu.caf in Resources */,
 				2054BD6718364B9300DFFC44 /* Tree_full_4_Tanu.caf in Resources */,
 				2054BD2918364B9300DFFC44 /* Lollipop_full_3_Tanu.caf in Resources */,
@@ -3110,6 +3089,7 @@
 				8F13963719540D2600539895 /* Watermelon_Syll_5_c_Tanu.caf in Resources */,
 				8DF5DFFD16B90BD1005D8154 /* Onion03I.png in Resources */,
 				20EC79A11837C22A003EB1FE /* BtnPrevNormal.png in Resources */,
+				8F91D98B1967A73300021A91 /* Toilet05E.png in Resources */,
 				8DF5DFFE16B90BD1005D8154 /* Onion04O.png in Resources */,
 				2054BD6318364B9300DFFC44 /* Happy_Syll_1_b_Tanu.caf in Resources */,
 				2054BD4618364B9300DFFC44 /* Watermelon_Syll_3_a_Tanu.caf in Resources */,
@@ -3126,10 +3106,12 @@
 				8DF5E00516B90BD1005D8154 /* Potato06O.png in Resources */,
 				2054BD6418364B9300DFFC44 /* Happy_Syll_2_d_Tanu.caf in Resources */,
 				8DF5E00616B90BD1005D8154 /* Spoon01S.png in Resources */,
+				8F91D97F1967A61100021A91 /* Toilet.png in Resources */,
 				8DF5E00716B90BD1005D8154 /* Spoon02P.png in Resources */,
-				2054BD1018364B9300DFFC44 /* Potty_Syll_1_c_Tanu.caf in Resources */,
 				8DF5E00816B90BD1005D8154 /* Spoon03O.png in Resources */,
 				8F139625195408B200539895 /* Birthday_Syll_4_a_Tanu.caf in Resources */,
+				8F91D9621967A5B600021A91 /* A.caf in Resources */,
+				8F91D9741967A5B600021A91 /* S.caf in Resources */,
 				2054BD2818364B9300DFFC44 /* Knife_full_1_Tanu.caf in Resources */,
 				8DF5E00916B90BD1005D8154 /* Spoon04O.png in Resources */,
 				49C2C717190DEA550019600C /* ZipArchive License.txt in Resources */,
@@ -3142,6 +3124,7 @@
 				2054BD3318364B9300DFFC44 /* Apple_full_1_Tanu.caf in Resources */,
 				8DF5E00E16B90BD1005D8154 /* Water04E.png in Resources */,
 				8DF5E00F16B90BD1005D8154 /* Water05R.png in Resources */,
+				8F91D98C1967A73300021A91 /* Toilet06T.png in Resources */,
 				2054BD4C18364B9300DFFC44 /* Onion_Syll_1_c_Tanu.caf in Resources */,
 				8D4BCA6616BA6A5E00A34EFD /* Ball.png in Resources */,
 				8D4BCA6716BA6A5E00A34EFD /* BallPlaceHolder.png in Resources */,
@@ -3151,6 +3134,7 @@
 				8D4BCA6B16BA6A5E00A34EFD /* Flower.png in Resources */,
 				2054BD1218364B9300DFFC44 /* Shampoo_full_2_Tanu.caf in Resources */,
 				8D4BCA6C16BA6A5E00A34EFD /* FlowerPlaceHolder.png in Resources */,
+				8F91D99C1967AC5000021A91 /* Toilet_Syll_2_c_Tanu.caf in Resources */,
 				8D4BCA6F16BA6A5E00A34EFD /* PlaygroundScene.png in Resources */,
 				8D4BCA7016BA6A5E00A34EFD /* Racket.png in Resources */,
 				8D4BCA7116BA6A5E00A34EFD /* RacketPlaceHolder.png in Resources */,
@@ -3178,6 +3162,8 @@
 				209A8969181A0077002FAF7C /* Instabug.bundle in Resources */,
 				8D8890A816BD8DAB003FA187 /* Boy.png in Resources */,
 				8D8890A916BD8DAB003FA187 /* BoyPlaceHolder.png in Resources */,
+				8F91D9681967A5B600021A91 /* G.caf in Resources */,
+				8F91D9651967A5B600021A91 /* D.caf in Resources */,
 				8D8890AA16BD8DAB003FA187 /* Cake.png in Resources */,
 				2054BD2D18364B9300DFFC44 /* Pencil_full_2_Tanu.caf in Resources */,
 				2054BD5518364B9300DFFC44 /* Spoon_full_3_Tanu.caf in Resources */,
@@ -3189,10 +3175,12 @@
 				8D8890B016BD8DAB003FA187 /* GiftPlaceHolder.png in Resources */,
 				8F383EF918E7802600627901 /* itunes_icon.png in Resources */,
 				8D8890B216BD8DAB003FA187 /* Pencil.png in Resources */,
+				8F91D96D1967A5B600021A91 /* L.caf in Resources */,
 				8D8890B316BD8DAB003FA187 /* PencilPlaceHolder.png in Resources */,
 				8D8890B416BD8DAB003FA187 /* Balloon01B.png in Resources */,
 				2054BD5118364B9300DFFC44 /* Potato_full_4_Tanu.caf in Resources */,
 				8D8890B516BD8DAB003FA187 /* Balloon02A.png in Resources */,
+				8F91D9661967A5B600021A91 /* E.caf in Resources */,
 				8D8890B616BD8DAB003FA187 /* Balloon03L.png in Resources */,
 				2054BD2418364B9300DFFC44 /* Chocolate_Syll_1_a_Tanu.caf in Resources */,
 				8D8890B716BD8DAB003FA187 /* Balloon04L.png in Resources */,
@@ -3280,7 +3268,6 @@
 				8D234A8E16C7422E0040DC14 /* Flower02L.png in Resources */,
 				8D234A8F16C7422E0040DC14 /* Flower03O.png in Resources */,
 				2054BD0D18364B9300DFFC44 /* Bath_full_1_Tanu.caf in Resources */,
-				8F13961F195407D800539895 /* Potty_Syll_3_c_Tanu.caf in Resources */,
 				8D234A9016C7422E0040DC14 /* Flower04W.png in Resources */,
 				8D234A9116C7422E0040DC14 /* Flower05E.png in Resources */,
 				8D234A9216C7422E0040DC14 /* Flower06R.png in Resources */,
@@ -3290,16 +3277,17 @@
 				8F13962F19540CA300539895 /* Apple_Syll_3_c_Tanu.caf in Resources */,
 				8D234A9616C7422E0040DC14 /* Girl04L.png in Resources */,
 				8D234A9816C7422E0040DC14 /* Happy01H.png in Resources */,
-				2054BD1118364B9300DFFC44 /* Potty_Syll_2_c_Tanu.caf in Resources */,
 				8F383EF318E77FB600627901 /* PraisePrefs.plist in Resources */,
 				8D234A9916C7422E0040DC14 /* Happy02A.png in Resources */,
 				8D234A9A16C7422E0040DC14 /* Happy03P.png in Resources */,
+				8F91D9701967A5B600021A91 /* O.caf in Resources */,
 				2054BD711837332200DFFC44 /* BtnFeedback.png in Resources */,
 				8D234A9B16C7422E0040DC14 /* Happy04P.png in Resources */,
 				8D234A9C16C7422E0040DC14 /* Happy05Y.png in Resources */,
 				2054BD6118364B9300DFFC44 /* Flower_Syll_2_a_Tanu.caf in Resources */,
 				8D234A9D16C7422E0040DC14 /* Racket01R.png in Resources */,
 				8D234A9E16C7422E0040DC14 /* Racket02A.png in Resources */,
+				8F91D9751967A5B600021A91 /* T.caf in Resources */,
 				2054BD2218364B9300DFFC44 /* Cake_full_3_Tanu.caf in Resources */,
 				8D234A9F16C7422E0040DC14 /* Racket03C.png in Resources */,
 				8D234AA016C7422E0040DC14 /* Racket04K.png in Resources */,
@@ -3313,8 +3301,10 @@
 				8D234AA616C7422E0040DC14 /* Slide04D.png in Resources */,
 				2054BD3818364B9300DFFC44 /* Banana_Syll_2_b_Tanu.caf in Resources */,
 				8D234AA716C7422E0040DC14 /* Slide05E.png in Resources */,
+				8F91D96B1967A5B600021A91 /* J.caf in Resources */,
 				8D234AA816C7422E0040DC14 /* Tree01T.png in Resources */,
 				2054BD5D18364B9300DFFC44 /* Bucket_Syll_1_c_Tanu.caf in Resources */,
+				8F91D9631967A5B600021A91 /* B.caf in Resources */,
 				8D234AA916C7422E0040DC14 /* Tree02R.png in Resources */,
 				8D234AAA16C7422E0040DC14 /* Tree03E.png in Resources */,
 				8D234AAB16C7422E0040DC14 /* Tree04E.png in Resources */,
@@ -3333,18 +3323,24 @@
 				8D96535216FF42A200B9E3FB /* Bucket.caf in Resources */,
 				8D96535316FF42A200B9E3FB /* Cake.caf in Resources */,
 				2054BD1918364B9300DFFC44 /* Towel_Syll_2_c_Tanu.caf in Resources */,
+				8F91D9871967A73300021A91 /* Toilet01T.png in Resources */,
+				8F91D9691967A5B600021A91 /* H.caf in Resources */,
 				8D96535416FF42A200B9E3FB /* Candy.caf in Resources */,
+				8F91D9801967A61100021A91 /* ToiletPlaceholder.png in Resources */,
 				8D96535516FF42A200B9E3FB /* Chocolate.caf in Resources */,
 				8D96535616FF42A200B9E3FB /* Cup.caf in Resources */,
 				2007A46B183A702300F7A541 /* logos.png in Resources */,
 				8D96535716FF42A200B9E3FB /* Flower.caf in Resources */,
 				8D96535816FF42A200B9E3FB /* Gift.caf in Resources */,
 				8D96535916FF42A200B9E3FB /* Girl.caf in Resources */,
+				8F91D98A1967A73300021A91 /* Toilet04L.png in Resources */,
 				8F13963F19540EA700539895 /* Flower_Syll_3_a_Tanu.caf in Resources */,
 				8D96535A16FF42A200B9E3FB /* Grapes.caf in Resources */,
 				8D96535B16FF42A200B9E3FB /* Happy.caf in Resources */,
+				8F91D97B1967A5B600021A91 /* Zed.caf in Resources */,
 				2054BD1718364B9300DFFC44 /* Towel_full_2_Tanu.caf in Resources */,
 				8D96535C16FF42A200B9E3FB /* Mango.caf in Resources */,
+				8F91D9791967A5B600021A91 /* X.caf in Resources */,
 				8D96535D16FF42A200B9E3FB /* Milk.caf in Resources */,
 				8D96535E16FF42A200B9E3FB /* Mug.caf in Resources */,
 				2054BD3B18364B9300DFFC44 /* Mango_full_3_Tanu.caf in Resources */,
@@ -3352,9 +3348,8 @@
 				8D96536016FF42A200B9E3FB /* Orange.caf in Resources */,
 				8D96536116FF42A200B9E3FB /* Pencil.caf in Resources */,
 				2054BD4518364B9300DFFC44 /* Watermelon_Syll_2_c_Tanu.caf in Resources */,
+				8F91D9461967A57D00021A91 /* Toilet.caf in Resources */,
 				8D96536216FF42A200B9E3FB /* Potato.caf in Resources */,
-				8D96536316FF42A200B9E3FB /* Potty 2.caf in Resources */,
-				8D96536416FF42A200B9E3FB /* Potty.caf in Resources */,
 				2054BD4A18364B9300DFFC44 /* Milk_full_3_Tanu.caf in Resources */,
 				2054BD1F18364B9300DFFC44 /* Birthday_Syll_2_c_Tanu.caf in Resources */,
 				8D96536516FF42A200B9E3FB /* Racket.caf in Resources */,
@@ -3366,6 +3361,7 @@
 				8D96536B16FF42A200B9E3FB /* Tap.caf in Resources */,
 				8FB6B13F18E8FCEA009CDB74 /* KeyboardButton_hightlighted.png in Resources */,
 				00766404189D8880009FE8DE /* AcousticModelEnglish.bundle in Resources */,
+				8F91D9891967A73300021A91 /* Toilet03I.png in Resources */,
 				8D96536C16FF42A200B9E3FB /* Towel.caf in Resources */,
 				8D96536D16FF42A200B9E3FB /* Tree.caf in Resources */,
 				49EFC70518FA457D0012B667 /* Localizable.strings in Resources */,

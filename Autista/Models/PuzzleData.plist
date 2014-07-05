@@ -1913,9 +1913,11 @@
 			</dict>
 			<dict>
 				<key>title</key>
-				<string>Potty</string>
+				<string>Toilet</string>
 				<key>syllables</key>
-				<string>po-tty</string>
+				<string>toi-let-toilet</string>
+				<key>phonetics</key>
+				<string>toy-laht-toylaht</string>
 				<key>difficultyDrag</key>
 				<integer>17</integer>
 				<key>difficultySpeak</key>
@@ -1923,9 +1925,9 @@
 				<key>difficultyType</key>
 				<integer>12</integer>
 				<key>placeholderImage</key>
-				<string>PottyPlaceHolder.png</string>
+				<string>ToiletPlaceHolder.png</string>
 				<key>completedImage</key>
-				<string>Potty.png</string>
+				<string>Toilet.png</string>
 				<key>offsetX</key>
 				<integer>747</integer>
 				<key>offsetY</key>
@@ -1938,9 +1940,9 @@
 				<array>
 					<dict>
 						<key>label</key>
-						<string>P</string>
+						<string>T</string>
 						<key>imageName</key>
-						<string>Potty01P.png</string>
+						<string>Toilet01T.png</string>
 						<key>offsetX</key>
 						<integer>0</integer>
 						<key>offsetY</key>
@@ -1950,7 +1952,7 @@
 						<key>label</key>
 						<string>O</string>
 						<key>imageName</key>
-						<string>Potty02O.png</string>
+						<string>Toilet02O.png</string>
 						<key>offsetX</key>
 						<integer>11</integer>
 						<key>offsetY</key>
@@ -1958,9 +1960,19 @@
 					</dict>
 					<dict>
 						<key>label</key>
-						<string>T</string>
+						<string>I</string>
 						<key>imageName</key>
-						<string>Potty03T.png</string>
+						<string>Toilet03I.png</string>
+						<key>offsetX</key>
+						<integer>145</integer>
+						<key>offsetY</key>
+						<integer>37</integer>
+					</dict>
+					<dict>
+						<key>label</key>
+						<string>L</string>
+						<key>imageName</key>
+						<string>Toilet04L.png</string>
 						<key>offsetX</key>
 						<integer>9</integer>
 						<key>offsetY</key>
@@ -1968,9 +1980,9 @@
 					</dict>
 					<dict>
 						<key>label</key>
-						<string>T</string>
+						<string>E</string>
 						<key>imageName</key>
-						<string>Potty04T.png</string>
+						<string>Toilet05E.png</string>
 						<key>offsetX</key>
 						<integer>31</integer>
 						<key>offsetY</key>
@@ -1978,9 +1990,9 @@
 					</dict>
 					<dict>
 						<key>label</key>
-						<string>Y</string>
+						<string>T</string>
 						<key>imageName</key>
-						<string>Potty05Y.png</string>
+						<string>Toilet06T.png</string>
 						<key>offsetX</key>
 						<integer>70</integer>
 						<key>offsetY</key>
