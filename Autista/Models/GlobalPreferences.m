@@ -194,7 +194,7 @@
 	_dragPuzzleFrequency = 50;
 	_typePuzzleFrequency = 50;
 	_speakPuzzleFrequency = 0;
-    _sayModeDifficulty = 20;
+    _sayModeDifficulty = 0;
     self.whetherRecordVoice = 0;
     self.whetherRecordActivity = 0;
     

@@ -169,7 +169,7 @@
         }
     }
     
-    while ([changedUpperCaseSyllables count] > 20-_prefs.sayModeDifficulty) {
+    while ([changedUpperCaseSyllables count] > _prefs.sayModeDifficulty) {
         [changedUpperCaseSyllables removeLastObject];
     }
     
