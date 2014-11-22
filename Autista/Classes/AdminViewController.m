@@ -647,7 +647,7 @@
             
             if (granted != YES) {
                 
-                UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Microphone Access Denied" message:@"Autista requires access to your device's Microphone.\n\nPlease enable Microphone access for this app in Settings / Privacy / Microphone" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+                UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Microphone Access Denied" message:@"Autista requires access to your device's Microphone.\n\nPlease enable Microphone access for this app in iOS\'s System Settings> Privacy> Microphone." delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
                 
                 [alert show];
                 
