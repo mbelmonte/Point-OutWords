@@ -142,13 +142,9 @@
     
 	[self dismissViewControllerAnimated:YES completion:nil];
     
-    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryRecord error:nil];
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
     
-    [[AVAudioSession sharedInstance] requestRecordPermission:^(BOOL granted) {
-        
-        
-        
-    }];
+    [[AVAudioSession sharedInstance] requestRecordPermission:^(BOOL granted) {}];
     
 }
 
