@@ -337,7 +337,7 @@
         fltr = [NSPredicate predicateWithFormat:@"(self ENDSWITH '.caf') AND (self CONTAINS[c] %@)", objectName];
     }
     else {
-        fltr = [NSPredicate predicateWithFormat:@"(self ENDSWITH '.caf') AND (self CONTAINS[c] %@) AND (self CONTAINS[c] 'Syll')", objectName];
+        fltr = [NSPredicate predicateWithFormat:@"(self ENDSWITH '.caf') AND (self CONTAINS[c] %@) AND (self CONTAINS[c] 'Syll')", [NSString stringWithFormat:@"%@_", objectName]];
     }
     NSArray *onlyWAVs = [dirContents filteredArrayUsingPredicate:fltr];
     //NSLog(@"directoryContents ====== %@",onlyWAVs);

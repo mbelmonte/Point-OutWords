@@ -620,6 +620,10 @@
 		8F91D99C1967AC5000021A91 /* Toilet_Syll_2_c_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D9981967AC5000021A91 /* Toilet_Syll_2_c_Tanu.caf */; };
 		8F91D99D1967AC5000021A91 /* Toilet_Syll_3_c_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F91D9991967AC5000021A91 /* Toilet_Syll_3_c_Tanu.caf */; };
 		8FAF16FC18E8DE15003EC63D /* FirstLaunchInfoTextNew.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FAF16FB18E8DE15003EC63D /* FirstLaunchInfoTextNew.plist */; };
+		8FB4C26A1A21439300FFEC76 /* Water_full_2_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4C2661A21439300FFEC76 /* Water_full_2_Tanu.caf */; };
+		8FB4C26B1A21439300FFEC76 /* Water_Syll_1_a_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4C2671A21439300FFEC76 /* Water_Syll_1_a_Tanu.caf */; };
+		8FB4C26C1A21439300FFEC76 /* Water_Syll_2_c_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4C2681A21439300FFEC76 /* Water_Syll_2_c_Tanu.caf */; };
+		8FB4C26D1A21439300FFEC76 /* Water_Syll_3_c_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4C2691A21439300FFEC76 /* Water_Syll_3_c_Tanu.caf */; };
 		8FB6B13F18E8FCEA009CDB74 /* KeyboardButton_hightlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FB6B13E18E8FCEA009CDB74 /* KeyboardButton_hightlighted.png */; };
 /* End PBXBuildFile section */
 
@@ -1308,6 +1312,10 @@
 		8F91D9991967AC5000021A91 /* Toilet_Syll_3_c_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Toilet_Syll_3_c_Tanu.caf; sourceTree = "<group>"; };
 		8FAF16FB18E8DE15003EC63D /* FirstLaunchInfoTextNew.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = FirstLaunchInfoTextNew.plist; path = Autista/Models/FirstLaunchInfoTextNew.plist; sourceTree = "<group>"; };
 		8FB1A922189D894C007A483F /* Instabug.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Instabug.framework; sourceTree = "<group>"; };
+		8FB4C2661A21439300FFEC76 /* Water_full_2_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Water_full_2_Tanu.caf; sourceTree = "<group>"; };
+		8FB4C2671A21439300FFEC76 /* Water_Syll_1_a_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Water_Syll_1_a_Tanu.caf; sourceTree = "<group>"; };
+		8FB4C2681A21439300FFEC76 /* Water_Syll_2_c_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Water_Syll_2_c_Tanu.caf; sourceTree = "<group>"; };
+		8FB4C2691A21439300FFEC76 /* Water_Syll_3_c_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Water_Syll_3_c_Tanu.caf; sourceTree = "<group>"; };
 		8FB6B13E18E8FCEA009CDB74 /* KeyboardButton_hightlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KeyboardButton_hightlighted.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1684,6 +1692,7 @@
 		2054BCD718364B9300DFFC44 /* Kitchen */ = {
 			isa = PBXGroup;
 			children = (
+				8FB4C2651A21439300FFEC76 /* Water */,
 				2054BCD818364B9300DFFC44 /* Bread */,
 				2054BCDA18364B9300DFFC44 /* Cup */,
 				2054BCDC18364B9300DFFC44 /* Milk */,
@@ -2767,6 +2776,17 @@
 			path = Toilet;
 			sourceTree = "<group>";
 		};
+		8FB4C2651A21439300FFEC76 /* Water */ = {
+			isa = PBXGroup;
+			children = (
+				8FB4C2661A21439300FFEC76 /* Water_full_2_Tanu.caf */,
+				8FB4C2671A21439300FFEC76 /* Water_Syll_1_a_Tanu.caf */,
+				8FB4C2681A21439300FFEC76 /* Water_Syll_2_c_Tanu.caf */,
+				8FB4C2691A21439300FFEC76 /* Water_Syll_3_c_Tanu.caf */,
+			);
+			path = Water;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -3153,6 +3173,7 @@
 				8D8890A116BD8DAB003FA187 /* BalloonPlaceHolder.png in Resources */,
 				8D8890A316BD8DAB003FA187 /* BirthdayPartyBackground.png in Resources */,
 				8D8890A416BD8DAB003FA187 /* BirthdayPartyScene.png in Resources */,
+				8FB4C26C1A21439300FFEC76 /* Water_Syll_2_c_Tanu.caf in Resources */,
 				8D8890A516BD8DAB003FA187 /* BirthdayPartySceneSelector.png in Resources */,
 				8D8890A616BD8DAB003FA187 /* Book.png in Resources */,
 				8F13962B19540ADC00539895 /* Pencil_Syll_3_b_Tanu.caf in Resources */,
@@ -3176,12 +3197,14 @@
 				8F383EF918E7802600627901 /* itunes_icon.png in Resources */,
 				8D8890B216BD8DAB003FA187 /* Pencil.png in Resources */,
 				8F91D96D1967A5B600021A91 /* L.caf in Resources */,
+				8FB4C26B1A21439300FFEC76 /* Water_Syll_1_a_Tanu.caf in Resources */,
 				8D8890B316BD8DAB003FA187 /* PencilPlaceHolder.png in Resources */,
 				8D8890B416BD8DAB003FA187 /* Balloon01B.png in Resources */,
 				2054BD5118364B9300DFFC44 /* Potato_full_4_Tanu.caf in Resources */,
 				8D8890B516BD8DAB003FA187 /* Balloon02A.png in Resources */,
 				8F91D9661967A5B600021A91 /* E.caf in Resources */,
 				8D8890B616BD8DAB003FA187 /* Balloon03L.png in Resources */,
+				8FB4C26D1A21439300FFEC76 /* Water_Syll_3_c_Tanu.caf in Resources */,
 				2054BD2418364B9300DFFC44 /* Chocolate_Syll_1_a_Tanu.caf in Resources */,
 				8D8890B716BD8DAB003FA187 /* Balloon04L.png in Resources */,
 				8D8890B816BD8DAB003FA187 /* Balloon05O.png in Resources */,
@@ -3278,6 +3301,7 @@
 				8D234A9616C7422E0040DC14 /* Girl04L.png in Resources */,
 				8D234A9816C7422E0040DC14 /* Happy01H.png in Resources */,
 				8F383EF318E77FB600627901 /* PraisePrefs.plist in Resources */,
+				8FB4C26A1A21439300FFEC76 /* Water_full_2_Tanu.caf in Resources */,
 				8D234A9916C7422E0040DC14 /* Happy02A.png in Resources */,
 				8D234A9A16C7422E0040DC14 /* Happy03P.png in Resources */,
 				8F91D9701967A5B600021A91 /* O.caf in Resources */,

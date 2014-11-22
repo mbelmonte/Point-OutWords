@@ -1971,7 +1971,7 @@
 				<key>difficultyType</key>
 				<integer>12</integer>
 				<key>placeholderImage</key>
-				<string>ToiletPlaceHolder.png</string>
+				<string>ToiletPlaceholder.png</string>
 				<key>completedImage</key>
 				<string>Toilet.png</string>
 				<key>offsetX</key>
