@@ -638,6 +638,25 @@
 	CGFloat slider2Value = slider2.value;
 	CGFloat slider3Value = slider3.value;
 	
+    
+    if (slider3Value > 0) {
+        
+        [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
+        
+        [[AVAudioSession sharedInstance] requestRecordPermission:^(BOOL granted) {
+            
+            if (granted != YES) {
+                
+                UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Microphone Access Denied" message:@"Autista requires access to your device's Microphone.\n\nPlease enable Microphone access for this app in Settings / Privacy / Microphone" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+                
+                [alert show];
+                
+            }
+            
+        }];
+        
+    }
+    
 	CGFloat slider1ValueComplement = slider2Value + slider3Value;
 	CGFloat prevSlider1Value = 100 - (slider1ValueComplement);
 	CGFloat delta = slider1Value - prevSlider1Value;
@@ -788,6 +807,9 @@
 }
 
 - (IBAction)handleAllowToRecord:(id)sender {
+    
+    
+    
 }
 
 
