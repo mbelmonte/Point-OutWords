@@ -24,6 +24,7 @@
 #import "InfoViewPageThree.h"
 #import "GlobalPreferences.h"
 #import <AudioToolbox/AudioToolbox.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface FirstLaunchViewController ()
 
@@ -140,6 +141,15 @@
     AudioServicesPlaySystemSound(0x450);
     
 	[self dismissViewControllerAnimated:YES completion:nil];
+    
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
+    
+    [[AVAudioSession sharedInstance] requestRecordPermission:^(BOOL granted) {
+            
+            
+            
+        }];
+    
 }
 
 #pragma mark - ScrollViewDelegate Methods
