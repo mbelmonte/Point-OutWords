@@ -14,7 +14,7 @@
 		<string>https://github.com/guoanhong/Autista.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Autista.xcodeproj/project.xcworkspace</string>
+	<string>Autista.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>6F6C2F148E812DEA99C663CE4C345EB5B8E95989</key>

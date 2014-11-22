@@ -56,5 +56,13 @@ Do you want to send audio recordings?</string>
 		<key>offsetY</key>
 		<integer>10</integer>
 	</dict>
+    <dict>
+        <key>title</key>
+        <string>Other things to know!</string>
+        <key>text</key>
+        <string>If you or your child have trouble pointing with one finger, you can go to iOS&apos;s System Settings> General> Multitasking gestures and turn them off.
+            
+When you click the below GET STARTED button, we will ask for permission for using the microphone for Speak Mode. Please click ALLOW to continue. Thanks!</string>
+        </dict>
 </array>
 </plist>
