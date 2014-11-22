@@ -191,9 +191,9 @@
     _ampThresh = 4; //log10 (4) ~ .6 - currentd efault for high threshold
     _snapDistance = 100;
     _selectDistance = 50;
-	_dragPuzzleFrequency = 60;
-	_typePuzzleFrequency = 20;
-	_speakPuzzleFrequency = 20;
+	_dragPuzzleFrequency = 50;
+	_typePuzzleFrequency = 50;
+	_speakPuzzleFrequency = 0;
     _sayModeDifficulty = 20;
     self.whetherRecordVoice = 0;
     self.whetherRecordActivity = 0;
