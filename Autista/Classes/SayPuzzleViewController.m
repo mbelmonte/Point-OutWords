@@ -91,6 +91,7 @@
 	_prefs = [GlobalPreferences sharedGlobalPreferences];
 	_launchedInGuidedMode = _prefs.guidedModeEnabled;
     _backButtonPressed = NO;
+    _passButtonPressed = NO;
     sayNa.hidden = YES;
     syllLabel.hidden = YES;
     
@@ -984,6 +985,10 @@
 		state = PuzzleStateAutoCompleted;
 		status = @"unsuccessful";
 	}
+    else if (_passButtonPressed) {
+        state = PuzzleStatePartiallyCompleted;
+        status = @"partial";
+    }
 	else {
 		state = PuzzleStateCompleted;
 		status = @"successful";
@@ -1067,6 +1072,7 @@
 - (void)passPuzzlePiece{
     [self advanceToNextSyllable];
     [[EventLogger sharedLogger] logEvent:LogEventCodePieceSkipped eventInfo:@{@"skippedPiece": @""}];
+    _passButtonPressed = YES;
 }
 
 //- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation

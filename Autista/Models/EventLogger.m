@@ -540,7 +540,7 @@
 	NSData *newLine = [@"\r\n" dataUsingEncoding:NSUTF8StringEncoding];
 	
 	NSString *userInfo = [@"User Info\r\n" stringByAppendingFormat:@"Gender: %@\r\nDate of Birth: %@\r\n\r\n", _currentUser.gender, _currentUser.dob];
-	NSString *legends = @"Absolute Time,Time Since Lauch,App Settings,App State,Event Title,Event Info\r\n";
+	NSString *legends = @"Absolute Time,Time Since Lauch,Event Title,Event Info,App State,App Settings\r\n";
 	
 	[fileHandle writeData:[userInfo dataUsingEncoding:NSUTF8StringEncoding]];
 	[fileHandle writeData:[legends dataUsingEncoding:NSUTF8StringEncoding]];
@@ -555,19 +555,19 @@
         [fileHandle writeData:wrapper];
 		[fileHandle writeData:separator];
         [fileHandle writeData:wrapper];
-		[fileHandle writeData:[log.appSettings dataUsingEncoding:NSUTF8StringEncoding]];
-        [fileHandle writeData:wrapper];
-		[fileHandle writeData:separator];
-        [fileHandle writeData:wrapper];
-		[fileHandle writeData:[log.appState dataUsingEncoding:NSUTF8StringEncoding]];
-        [fileHandle writeData:wrapper];
-		[fileHandle writeData:separator];
-        [fileHandle writeData:wrapper];
 		[fileHandle writeData:[log.event.title dataUsingEncoding:NSUTF8StringEncoding]];
         [fileHandle writeData:wrapper];
 		[fileHandle writeData:separator];
         [fileHandle writeData:wrapper];
-		[fileHandle writeData:[log.eventInfo dataUsingEncoding:NSUTF8StringEncoding]];
+		[fileHandle writeData:[[log.eventInfo stringByReplacingOccurrencesOfString:@"\"" withString:@"\'"] dataUsingEncoding:NSUTF8StringEncoding]];
+        [fileHandle writeData:wrapper];
+        [fileHandle writeData:separator];
+        [fileHandle writeData:wrapper];
+        [fileHandle writeData:[log.appState dataUsingEncoding:NSUTF8StringEncoding]];
+        [fileHandle writeData:wrapper];
+        [fileHandle writeData:separator];
+        [fileHandle writeData:wrapper];
+        [fileHandle writeData:[[log.appSettings stringByReplacingOccurrencesOfString:@"\"" withString:@"\'"] dataUsingEncoding:NSUTF8StringEncoding]];
         [fileHandle writeData:wrapper];
 		[fileHandle writeData:newLine];
 	}

@@ -43,6 +43,7 @@
 	GlobalPreferences *_prefs;
 	BOOL _launchedInGuidedMode;
 	BOOL _backButtonPressed;
+    BOOL _passButtonPressed;
     
     AVAudioSession *audioSession;
 	AVAudioRecorder *recorder;
