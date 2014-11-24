@@ -1313,9 +1313,9 @@
 				<key>title</key>
 				<string>Orange</string>
 				<key>syllables</key>
-				<string>o-range-orange</string>
+				<string>or-ange-orange</string>
 				<key>phonetics</key>
-				<string>ao-rahnjh-aorahnjh</string>
+				<string>aor-ahnjh-aorahnjh</string>
 				<key>difficultyDrag</key>
 				<integer>12</integer>
 				<key>difficultySpeak</key>
@@ -2489,7 +2489,7 @@
 				<key>title</key>
 				<string>Happy</string>
 				<key>syllables</key>
-				<string>hap-py-happy</string>
+				<string>ha-ppy-happy</string>
 				<key>phonetics</key>
 				<string>hhae-piy-hhaepiy</string>
 				<key>difficultyDrag</key>
@@ -2568,9 +2568,9 @@
 				<key>title</key>
 				<string>Bucket</string>
 				<key>syllables</key>
-				<string>buck-et-bucket</string>
+				<string>bu-cket-bucket</string>
 				<key>phonetics</key>
-				<string>bahk-aht-bahkaht</string>
+				<string>bah-kaht-bahkaht</string>
 				<key>difficultyDrag</key>
 				<integer>18</integer>
 				<key>difficultySpeak</key>
