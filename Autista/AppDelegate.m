@@ -67,6 +67,9 @@
 	}
 	
 	[[EventLogger sharedLogger] logEvent:LogEventCodeAppLaunched eventInfo:nil];
+    
+    //Backup solution: keep screen awake
+    //[[UIApplication sharedApplication] setIdleTimerDisabled:YES];
 	
 	return YES;
 }
@@ -75,15 +78,14 @@
 {
 	// Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
 	// Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    [[EventLogger sharedLogger] logEvent:LogEventCodeAppExited eventInfo:nil];
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
 	// Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
 	// If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-	
-	[[EventLogger sharedLogger] logEvent:LogEventCodeAppExited eventInfo:nil];
-	
+
 	[self saveState];
 }
 
@@ -156,9 +158,9 @@
              // Replace this implementation with code to handle the error appropriately.
              // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
             //TFLog(@"Unresolved error %@, %@", error, [error userInfo]);
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Unexpected Behavior" message:[error localizedDescription] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-            //[alert addButtonWithTitle:@"Ok"];
-            [alert show];
+//            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Unexpected Behavior" message:[error localizedDescription] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+//            //[alert addButtonWithTitle:@"Ok"];
+//            [alert show];
             //abort();
         } 
     }
@@ -214,9 +216,9 @@
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
     if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&error]) {
         //TFLog(@"Unresolved error %@, %@", error, [error userInfo]);
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Unexpected Behavior" message:[error localizedDescription] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-        //[alert addButtonWithTitle:@"Ok"];
-        [alert show];
+//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Unexpected Behavior" message:[error localizedDescription] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+//        //[alert addButtonWithTitle:@"Ok"];
+//        [alert show];
         //abort();
     }    
     
