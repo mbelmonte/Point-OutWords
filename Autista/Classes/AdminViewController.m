@@ -33,7 +33,11 @@
 #import "../ZipArchive/ZipArchive.h"
 #import "UIDevice+IdentifierAddition.h"
 
+#define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+#define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
 #define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
 
 #define DOCUMENTS_FOLDER [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]
 @interface AdminViewController ()<AVAudioRecorderDelegate, NSURLConnectionDelegate>
@@ -454,7 +458,15 @@
         uint64_t bytesTotalForThisFile = [[[NSFileManager defaultManager] attributesOfItemAtPath:[[_logFolderPath stringByAppendingString:@"/" ] stringByAppendingString:subPath] error:NULL] fileSize];
         
         //Get UDID
-        NSString *uniqueIDHash = [[UIDevice currentDevice] uniqueGlobalDeviceIdentifier];
+        NSString *uniqueIDHash;
+        if (SYSTEM_VERSION_LESS_THAN(@"7.0")) {
+            uniqueIDHash = [[UIDevice currentDevice] uniqueGlobalDeviceIdentifier]; // save for later.
+        }
+        
+        if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")) {
+            uniqueIDHash = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+            NSLog(@"iOS 7");
+        }
         
         //Get current timestamp
 //        NSTimeInterval timeStamp = [[NSDate date] timeIntervalSince1970];

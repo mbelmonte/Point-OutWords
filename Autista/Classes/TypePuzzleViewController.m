@@ -110,7 +110,7 @@
             }
             //            [accelerometerLabel performSelectorOnMainThread:@selector(setText:)
             //                                                 withObject:labelText waitUntilDone:NO];
-            [[EventLogger sharedLogger] logEvent:LogEventCodeTypeAccelerometer eventInfo:@{@"X": [NSString stringWithFormat:@"%+.2f\n", accelerometerData.acceleration.x], @"Y": [NSString stringWithFormat:@"%+.2f\n", accelerometerData.acceleration.y], @"Z": [NSString stringWithFormat:@"%+.2f\n", accelerometerData.acceleration.z]}];
+            [[EventLogger sharedLogger] logEvent:LogEventCodeTypeAccelerometer eventInfo:@{@"X": [NSString stringWithFormat:@"%+.2f", accelerometerData.acceleration.x], @"Y": [NSString stringWithFormat:@"%+.2f", accelerometerData.acceleration.y], @"Z": [NSString stringWithFormat:@"%+.2f", accelerometerData.acceleration.z]}];
             //[self.accelerometerDataArray addObject:accelerometerData];
             NSLog(@"%@", labelText);
         }]; }
