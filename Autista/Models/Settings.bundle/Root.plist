@@ -10,7 +10,7 @@
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 			<key>FooterText</key>
-			<string>Name is never sent out. Please enter date of birth in this format: yyyy-mm-dd</string>
+			<string>Please enter your username and gender. Please enter date of birth in this format: yyyy-mm-dd</string>
 		</dict>
 		<dict>
 			<key>AutocapitalizationType</key>
@@ -26,7 +26,7 @@
 			<key>KeyboardType</key>
 			<string>Alphabet</string>
 			<key>Title</key>
-			<string>Fullname</string>
+			<string>Username</string>
 			<key>Type</key>
 			<string>PSTextFieldSpecifier</string>
 		</dict>

@@ -539,7 +539,7 @@
 	NSData *separator = [@"," dataUsingEncoding:NSUTF8StringEncoding];
 	NSData *newLine = [@"\r\n" dataUsingEncoding:NSUTF8StringEncoding];
 	
-	NSString *userInfo = [@"User Info\r\n" stringByAppendingFormat:@"Gender: %@\r\nDate of Birth: %@\r\n\r\n", _currentUser.gender, _currentUser.dob];
+	NSString *userInfo = [@"User Info\r\n" stringByAppendingFormat:@"Name: %@\r\nGender: %@\r\nDate of Birth: %@\r\n\r\n", _currentUser.fullname, _currentUser.gender, _currentUser.dob];
 	NSString *legends = @"Absolute Time,Time Since Lauch,Event Title,Event Info,App State,App Settings\r\n";
 	
 	[fileHandle writeData:[userInfo dataUsingEncoding:NSUTF8StringEncoding]];
