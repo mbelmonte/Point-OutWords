@@ -564,6 +564,14 @@
 		8F13963D19540E7600539895 /* Bucket_Syll_3_a_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F13963C19540E7600539895 /* Bucket_Syll_3_a_Tanu.caf */; };
 		8F13963F19540EA700539895 /* Flower_Syll_3_a_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F13963E19540EA700539895 /* Flower_Syll_3_a_Tanu.caf */; };
 		8F13964119540EB800539895 /* Happy_Syll_3_d_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F13964019540EB800539895 /* Happy_Syll_3_d_Tanu.caf */; };
+		8F3082731A3E1E3F00A09E92 /* Racket_full_3_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F30826F1A3E1E3F00A09E92 /* Racket_full_3_Tanu.caf */; };
+		8F3082741A3E1E3F00A09E92 /* Racket_Syll_1_a_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F3082701A3E1E3F00A09E92 /* Racket_Syll_1_a_Tanu.caf */; };
+		8F3082751A3E1E3F00A09E92 /* Racket_Syll_2_b_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F3082711A3E1E3F00A09E92 /* Racket_Syll_2_b_Tanu.caf */; };
+		8F3082761A3E1E3F00A09E92 /* Racket_Syll_3_b_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F3082721A3E1E3F00A09E92 /* Racket_Syll_3_b_Tanu.caf */; };
+		8F30827C1A3E1E5200A09E92 /* Candy_full_3_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F3082781A3E1E5200A09E92 /* Candy_full_3_Tanu.caf */; };
+		8F30827D1A3E1E5200A09E92 /* Candy_Syll_1_a_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F3082791A3E1E5200A09E92 /* Candy_Syll_1_a_Tanu.caf */; };
+		8F30827E1A3E1E5200A09E92 /* Candy_Syll_2_b_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F30827A1A3E1E5200A09E92 /* Candy_Syll_2_b_Tanu.caf */; };
+		8F30827F1A3E1E5200A09E92 /* Candy_Syll_3_b_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F30827B1A3E1E5200A09E92 /* Candy_Syll_3_b_Tanu.caf */; };
 		8F383EF318E77FB600627901 /* PraisePrefs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F383EF218E77FB600627901 /* PraisePrefs.plist */; };
 		8F383EF918E7802600627901 /* itunes_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F383EF418E7802600627901 /* itunes_icon.png */; };
 		8F383EFA18E7802600627901 /* play_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F383EF518E7802600627901 /* play_icon.png */; };
@@ -1253,6 +1261,14 @@
 		8F13963C19540E7600539895 /* Bucket_Syll_3_a_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bucket_Syll_3_a_Tanu.caf; sourceTree = "<group>"; };
 		8F13963E19540EA700539895 /* Flower_Syll_3_a_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Flower_Syll_3_a_Tanu.caf; sourceTree = "<group>"; };
 		8F13964019540EB800539895 /* Happy_Syll_3_d_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Happy_Syll_3_d_Tanu.caf; sourceTree = "<group>"; };
+		8F30826F1A3E1E3F00A09E92 /* Racket_full_3_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Racket_full_3_Tanu.caf; sourceTree = "<group>"; };
+		8F3082701A3E1E3F00A09E92 /* Racket_Syll_1_a_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Racket_Syll_1_a_Tanu.caf; sourceTree = "<group>"; };
+		8F3082711A3E1E3F00A09E92 /* Racket_Syll_2_b_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Racket_Syll_2_b_Tanu.caf; sourceTree = "<group>"; };
+		8F3082721A3E1E3F00A09E92 /* Racket_Syll_3_b_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Racket_Syll_3_b_Tanu.caf; sourceTree = "<group>"; };
+		8F3082781A3E1E5200A09E92 /* Candy_full_3_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Candy_full_3_Tanu.caf; sourceTree = "<group>"; };
+		8F3082791A3E1E5200A09E92 /* Candy_Syll_1_a_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Candy_Syll_1_a_Tanu.caf; sourceTree = "<group>"; };
+		8F30827A1A3E1E5200A09E92 /* Candy_Syll_2_b_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Candy_Syll_2_b_Tanu.caf; sourceTree = "<group>"; };
+		8F30827B1A3E1E5200A09E92 /* Candy_Syll_3_b_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Candy_Syll_3_b_Tanu.caf; sourceTree = "<group>"; };
 		8F383EF218E77FB600627901 /* PraisePrefs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PraisePrefs.plist; path = ../Autista/Models/PraisePrefs.plist; sourceTree = "<group>"; };
 		8F383EF418E7802600627901 /* itunes_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itunes_icon.png; sourceTree = "<group>"; };
 		8F383EF518E7802600627901 /* play_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_icon.png; sourceTree = "<group>"; };
@@ -1477,6 +1493,7 @@
 		2054BC9518364B9300DFFC44 /* Birthday Party */ = {
 			isa = PBXGroup;
 			children = (
+				8F3082771A3E1E5200A09E92 /* Candy */,
 				2054BC9618364B9300DFFC44 /* Balloon */,
 				2054BC9A18364B9300DFFC44 /* Birthday Boy */,
 				2054BC9F18364B9300DFFC44 /* Book */,
@@ -1805,6 +1822,7 @@
 		2054BCF418364B9300DFFC44 /* Playground Park */ = {
 			isa = PBXGroup;
 			children = (
+				8F30826E1A3E1E3F00A09E92 /* Racket */,
 				2054BCF518364B9300DFFC44 /* Ball */,
 				2054BCF718364B9300DFFC44 /* Bat */,
 				2054BCF918364B9300DFFC44 /* Boy */,
@@ -2765,6 +2783,28 @@
 			name = Sounds;
 			sourceTree = "<group>";
 		};
+		8F30826E1A3E1E3F00A09E92 /* Racket */ = {
+			isa = PBXGroup;
+			children = (
+				8F30826F1A3E1E3F00A09E92 /* Racket_full_3_Tanu.caf */,
+				8F3082701A3E1E3F00A09E92 /* Racket_Syll_1_a_Tanu.caf */,
+				8F3082711A3E1E3F00A09E92 /* Racket_Syll_2_b_Tanu.caf */,
+				8F3082721A3E1E3F00A09E92 /* Racket_Syll_3_b_Tanu.caf */,
+			);
+			path = Racket;
+			sourceTree = "<group>";
+		};
+		8F3082771A3E1E5200A09E92 /* Candy */ = {
+			isa = PBXGroup;
+			children = (
+				8F3082781A3E1E5200A09E92 /* Candy_full_3_Tanu.caf */,
+				8F3082791A3E1E5200A09E92 /* Candy_Syll_1_a_Tanu.caf */,
+				8F30827A1A3E1E5200A09E92 /* Candy_Syll_2_b_Tanu.caf */,
+				8F30827B1A3E1E5200A09E92 /* Candy_Syll_3_b_Tanu.caf */,
+			);
+			path = Candy;
+			sourceTree = "<group>";
+		};
 		8F91D9951967AC5000021A91 /* Toilet */ = {
 			isa = PBXGroup;
 			children = (
@@ -2933,6 +2973,7 @@
 				8DF5E09716B95DDB005D8154 /* Orange05G.png in Resources */,
 				8DF5E09816B95DDB005D8154 /* Orange06E.png in Resources */,
 				8DF5E09916B95DDB005D8154 /* Watermelon01W.png in Resources */,
+				8F30827D1A3E1E5200A09E92 /* Candy_Syll_1_a_Tanu.caf in Resources */,
 				8DF5E09A16B95DDB005D8154 /* Watermelon02A.png in Resources */,
 				8DF5E09B16B95DDB005D8154 /* Watermelon03T.png in Resources */,
 				8DF5E09C16B95DDC005D8154 /* Watermelon04E.png in Resources */,
@@ -3004,6 +3045,7 @@
 				8D54EB0F16B4C1A400C52758 /* Mug.png in Resources */,
 				8D54EB1016B4C1A400C52758 /* MugPlaceHolder.png in Resources */,
 				2054BD721837332200DFFC44 /* BtnLockHighlighted.png in Resources */,
+				8F30827E1A3E1E5200A09E92 /* Candy_Syll_2_b_Tanu.caf in Resources */,
 				8D54EB1316B4C1A400C52758 /* Shampoo.png in Resources */,
 				8F91D99D1967AC5000021A91 /* Toilet_Syll_3_c_Tanu.caf in Resources */,
 				8D54EB1416B4C1A400C52758 /* ShampooPlaceHolder.png in Resources */,
@@ -3037,6 +3079,7 @@
 				8D54EB5E16B4C20900C52758 /* WaterPlaceHolder.png in Resources */,
 				8DB9FAA116B529D20030DC4C /* BathroomSceneSelector.png in Resources */,
 				8F1396211954081000539895 /* Towel_Syll_3_c_Tanu.caf in Resources */,
+				8F3082761A3E1E3F00A09E92 /* Racket_Syll_3_b_Tanu.caf in Resources */,
 				8F383EFA18E7802600627901 /* play_icon.png in Resources */,
 				2054BD2A18364B9300DFFC44 /* Lollipop_Syll_1_a_Tanu.caf in Resources */,
 				8DB9FAA516B52A010030DC4C /* KitchenSceneSelector.png in Resources */,
@@ -3146,6 +3189,7 @@
 				8DF5E00F16B90BD1005D8154 /* Water05R.png in Resources */,
 				8F91D98C1967A73300021A91 /* Toilet06T.png in Resources */,
 				2054BD4C18364B9300DFFC44 /* Onion_Syll_1_c_Tanu.caf in Resources */,
+				8F30827F1A3E1E5200A09E92 /* Candy_Syll_3_b_Tanu.caf in Resources */,
 				8D4BCA6616BA6A5E00A34EFD /* Ball.png in Resources */,
 				8D4BCA6716BA6A5E00A34EFD /* BallPlaceHolder.png in Resources */,
 				8D4BCA6816BA6A5E00A34EFD /* HappyPlaceHolder.png in Resources */,
@@ -3243,6 +3287,7 @@
 				8D8890D116BD8DAB003FA187 /* Chocolate07A.png in Resources */,
 				8D8890D216BD8DAB003FA187 /* Chocolate08T.png in Resources */,
 				2054BD3D18364B9300DFFC44 /* Mango_Syll_2_b_Tanu.caf in Resources */,
+				8F3082751A3E1E3F00A09E92 /* Racket_Syll_2_b_Tanu.caf in Resources */,
 				8D8890D316BD8DAB003FA187 /* Chocolate09E.png in Resources */,
 				8D8890D416BD8DAB003FA187 /* Gift01G.png in Resources */,
 				2054BD3618364B9300DFFC44 /* Banana_full_3_Tanu.caf in Resources */,
@@ -3262,12 +3307,14 @@
 				8D8890DE16BD8DAB003FA187 /* Table01T.png in Resources */,
 				49C2C712190DEA550019600C /* minizip License in Resources */,
 				2054BD2F18364B9300DFFC44 /* Pencil_Syll_2_b_Tanu.caf in Resources */,
+				8F3082741A3E1E3F00A09E92 /* Racket_Syll_1_a_Tanu.caf in Resources */,
 				8D8890DF16BD8DAB003FA187 /* Table02A.png in Resources */,
 				8D8890E016BD8DAB003FA187 /* Table03B.png in Resources */,
 				49C2C710190DEA550019600C /* fdl-1.3.txt in Resources */,
 				8D8890E116BD8DAB003FA187 /* Table04L.png in Resources */,
 				8D8890E216BD8DAB003FA187 /* Table05E.png in Resources */,
 				8F13962D19540BAA00539895 /* Lollipop_Syll_4_b_Tanu.caf in Resources */,
+				8F3082731A3E1E3F00A09E92 /* Racket_full_3_Tanu.caf in Resources */,
 				2054BD4D18364B9300DFFC44 /* Onion_Syll_2_b_Tanu.caf in Resources */,
 				2054BD6018364B9300DFFC44 /* Flower_Syll_1_b_Tanu.caf in Resources */,
 				8D8890E316BD8DAB003FA187 /* Table.png in Resources */,
@@ -3340,6 +3387,7 @@
 				8D96534D16FF42A200B9E3FB /* Banana.caf in Resources */,
 				206BF212181964BF008E1F43 /* Button-Highlighted.png in Resources */,
 				8F4F1EEE18F9DF84000ECE1C /* logos2.png in Resources */,
+				8F30827C1A3E1E5200A09E92 /* Candy_full_3_Tanu.caf in Resources */,
 				8D96534E16FF42A200B9E3FB /* Bath.caf in Resources */,
 				8D96534F16FF42A200B9E3FB /* Book.caf in Resources */,
 				8D96535016FF42A200B9E3FB /* Boy.caf in Resources */,
@@ -3521,8 +3569,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "43692650-cb6b-43e4-92b6-533394402845";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "43692650-cb6b-43e4-92b6-533394402845";
+				PROVISIONING_PROFILE = "09939a6b-4017-4e8a-a936-58777f933b87";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "09939a6b-4017-4e8a-a936-58777f933b87";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -3547,8 +3595,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "43692650-cb6b-43e4-92b6-533394402845";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "43692650-cb6b-43e4-92b6-533394402845";
+				PROVISIONING_PROFILE = "09939a6b-4017-4e8a-a936-58777f933b87";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "09939a6b-4017-4e8a-a936-58777f933b87";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
@@ -3572,7 +3620,7 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "43692650-cb6b-43e4-92b6-533394402845";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "09939a6b-4017-4e8a-a936-58777f933b87";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -3594,7 +3642,7 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "43692650-cb6b-43e4-92b6-533394402845";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "09939a6b-4017-4e8a-a936-58777f933b87";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
