@@ -124,6 +124,8 @@
 
 @property (strong, nonatomic) CMMotionManager *motionManager;
 
+
+@property NSMutableArray *animationPathLayerArray;
 /**-----------------------------------------------------------------------------
  * @name Handling admin panel interations
  * -----------------------------------------------------------------------------

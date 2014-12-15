@@ -42,7 +42,7 @@
 
 @implementation TypePuzzleViewController
 @synthesize myPlayer = _myPlayer;
-@synthesize motionManager, pathLayer;
+@synthesize motionManager, pathLayer, animationPathLayerArray;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -92,6 +92,9 @@
 	[self performSelector:@selector(initializePuzzleState) withObject:nil afterDelay:0.3];
 	
 	[[EventLogger sharedLogger] logEvent:LogEventCodePuzzlePresented eventInfo:@{@"Mode": @"Type"}];
+    
+    animationPathLayerArray = [NSMutableArray array];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -330,6 +333,39 @@
 	return button;
 }
 
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    CGPoint touchPoint = [[touches anyObject] locationInView:self.view];
+    if (CGRectContainsPoint(_keyboard.frame, touchPoint)) {
+        
+        //add method here......
+        
+        
+        return;
+    }
+    else{
+        
+        for (CAShapeLayer *layer in  animationPathLayerArray) {
+            
+            [layer removeAllAnimations];
+            layer.hidden = YES;
+            [layer removeFromSuperlayer];
+            
+        }
+        
+        for (UIView *piece in _pieces) {
+            
+            if (CGRectContainsPoint(piece.frame, touchPoint)) {
+                [self drawLineAnimationWith:touchPoint];
+            }
+            
+        }
+        
+    }
+}
+
+
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
     UITouch * touch = [[event allTouches] anyObject];
@@ -341,10 +377,17 @@
 	UIButton *expectedButton = [self buttonFromASCIICode:[title characterAtIndex:_currentLetterPosition]];
     
     NSLog(@"%f, %f, %f, %f", expectedButton.frame.origin.x, expectedButton.frame.origin.y, expectedButton.frame.size.height, expectedButton.frame.size.width);
-    NSLog(@"%f - %f", point.x, point.y);
+    NSLog(@"%f, %f", point.x, point.y);
+    
+    NSLog(@" the touch location is %f, %f", touchLocation.x, touchLocation.y);
     
     if (CGRectContainsPoint(expectedButton.frame, point)) {
         [expectedButton sendActionsForControlEvents:UIControlEventTouchUpInside];
+    }
+    else if(CGRectContainsPoint(expectedButton.frame, touchLocation)){
+        
+        [expectedButton sendActionsForControlEvents:UIControlEventTouchUpInside];
+
     }
 }
 
@@ -988,9 +1031,13 @@
 #pragma mark animation delegate method
 - (void)animationDidStop:(CAAnimation *)theAnimation finished:(BOOL)flag{
     
-    [pathLayer removeAllAnimations];
-    pathLayer.hidden = YES;
-    [pathLayer removeFromSuperlayer];
+    for (CAShapeLayer *layer in  animationPathLayerArray) {
+
+        [layer removeAllAnimations];
+        layer.hidden = YES;
+        [layer removeFromSuperlayer];
+
+    }
     
 }
 
@@ -1025,10 +1072,13 @@
     CABasicAnimation *pathAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
     pathAnimation.duration = 0.8;
     pathAnimation.delegate = self;
+    
     pathAnimation.removedOnCompletion = YES;
     pathAnimation.fromValue = [NSNumber numberWithFloat:0.0f];
     pathAnimation.toValue = [NSNumber numberWithFloat: 1.0f];
     [pathLayer addAnimation:pathAnimation forKey:@"strokeEnd"];
+    
+    [animationPathLayerArray addObject:pathLayer];
     
     CAKeyframeAnimation *keyFrameAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
     keyFrameAnimation.path = path.CGPath;
@@ -1038,27 +1088,4 @@
     [focusLayer addAnimation:keyFrameAnimation forKey:@"position"];
     
 }
-
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-{
-    CGPoint touchPoint = [[touches anyObject] locationInView:self.view];
-    if (CGRectContainsPoint(_keyboard.frame, touchPoint)) {
-        return;
-    }
-    else{
-        
-        [pathLayer removeAllAnimations];
-        [pathLayer removeFromSuperlayer];
-        
-        for (UIView *piece in _pieces) {
-            
-            if (CGRectContainsPoint(piece.frame, touchPoint)) {
-                [self drawLineAnimationWith:touchPoint];
-            }
-            
-        }
-        
-    }
-}
-
 @end
