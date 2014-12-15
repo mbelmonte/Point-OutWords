@@ -95,6 +95,8 @@
     
     animationPathLayerArray = [NSMutableArray array];
     
+    [self setupTouchEventGesture];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -353,14 +355,16 @@
             [layer removeFromSuperlayer];
             
         }
-        
+        /*
         for (UIView *piece in _pieces) {
             
             if (CGRectContainsPoint(piece.frame, touchPoint)) {
                 [self drawLineAnimationWith:touchPoint];
             }
             
-        }
+        }*/
+        [self drawLineAnimationWith:touchPoint];
+        
         
     }
 }
@@ -901,10 +905,10 @@
         return;
     }
     else{
-        
+    
     for ( UIView *piece in _pieces) {
         
-        if (CGRectContainsPoint(piece.frame, touchPoint)) {
+        //if (CGRectContainsPoint(piece.frame, touchPoint)) {
             
             [((UIButton *)[self buttonFromASCIICode:[[_object.title uppercaseString] characterAtIndex:_currentLetterPosition]]) setBackgroundImage: [UIImage imageNamed:@"KeyboardButton_hightlighted"] forState:UIControlStateNormal];
             
@@ -931,8 +935,11 @@
             [[EventLogger sharedLogger] logEvent:LogEventCodeTypeReminder eventInfo:@{@"key": [[_object.title uppercaseString] substringWithRange:NSMakeRange(_currentLetterPosition, 1)]}];
             
             break;
-            }
+            //}
         }
+        
+        
+        
     }
 }
 
@@ -1088,4 +1095,39 @@
     [focusLayer addAnimation:keyFrameAnimation forKey:@"position"];
     
 }
+
+-(void)setupTouchEventGesture{
+    
+    UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(handlePanGestureRecognized:)];
+    [self.keyboard addGestureRecognizer:panGesture];
+    
+    
+}
+
+-(void)handlePanGestureRecognized:(UIGestureRecognizer *)recognizer{
+    
+    if (recognizer.state == UIGestureRecognizerStateEnded) {
+        
+        CGPoint touchLocation = [recognizer locationInView:self.keyboard];
+        
+        NSString *title = [_object.title uppercaseString];
+        UIButton *expectedButton = [self buttonFromASCIICode:[title characterAtIndex:_currentLetterPosition]];
+        
+        NSLog(@"%f, %f, %f, %f", expectedButton.frame.origin.x, expectedButton.frame.origin.y, expectedButton.frame.size.height, expectedButton.frame.size.width);
+        
+        NSLog(@" the touch location is %f, %f", touchLocation.x, touchLocation.y);
+        
+        if(CGRectContainsPoint(expectedButton.frame, touchLocation)){
+            
+            [expectedButton sendActionsForControlEvents:UIControlEventTouchUpInside];
+            
+        }
+        
+        
+    }
+    
+    
+}
+
+
 @end
