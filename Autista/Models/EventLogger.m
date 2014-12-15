@@ -29,6 +29,9 @@
 #import "SBJson.h"
 #import "NSObject+SBJson.h"
 
+#include <ifaddrs.h>
+#include <arpa/inet.h>
+
 @implementation EventLogger
 
 + (id)sharedLogger
@@ -538,11 +541,15 @@
     NSData *wrapper = [@"\"" dataUsingEncoding:NSUTF8StringEncoding];
 	NSData *separator = [@"," dataUsingEncoding:NSUTF8StringEncoding];
 	NSData *newLine = [@"\r\n" dataUsingEncoding:NSUTF8StringEncoding];
+    
+    NSString *ipAddress = [@"IP Address: " stringByAppendingFormat:@"%@\r\n", [self getIPAddress]];
 	
 	NSString *userInfo = [@"User Info\r\n" stringByAppendingFormat:@"Name: %@\r\nGender: %@\r\nDate of Birth: %@\r\n\r\n", _currentUser.fullname, _currentUser.gender, _currentUser.dob];
+    
 	NSString *legends = @"Absolute Time,Time Since Lauch,Event Title,Event Info,App State,App Settings\r\n";
 	
-	[fileHandle writeData:[userInfo dataUsingEncoding:NSUTF8StringEncoding]];
+    [fileHandle writeData:[ipAddress dataUsingEncoding:NSUTF8StringEncoding]];
+    [fileHandle writeData:[userInfo dataUsingEncoding:NSUTF8StringEncoding]];
 	[fileHandle writeData:[legends dataUsingEncoding:NSUTF8StringEncoding]];
 	
 	for (Log *log in logs) {
@@ -579,6 +586,37 @@
     NSLog(@"%@", [[NSString alloc] initWithData:logData encoding:NSUTF8StringEncoding]);
 		
 	return logData;
+}
+
+- (NSString *)getIPAddress {
+    
+    NSString *address = @"error";
+    struct ifaddrs *interfaces = NULL;
+    struct ifaddrs *temp_addr = NULL;
+    int success = 0;
+    // retrieve the current interfaces - returns 0 on success
+    success = getifaddrs(&interfaces);
+    if (success == 0) {
+        // Loop through linked list of interfaces
+        temp_addr = interfaces;
+        while(temp_addr != NULL) {
+            if(temp_addr->ifa_addr->sa_family == AF_INET) {
+                // Check if interface is en0 which is the wifi connection on the iPhone
+                if([[NSString stringWithUTF8String:temp_addr->ifa_name] isEqualToString:@"en0"]) {
+                    // Get NSString from C String
+                    address = [NSString stringWithUTF8String:inet_ntoa(((struct sockaddr_in *)temp_addr->ifa_addr)->sin_addr)];
+                    
+                }
+                
+            }
+            
+            temp_addr = temp_addr->ifa_next;
+        }
+    }
+    // Free memory
+    freeifaddrs(interfaces);
+    return address;
+    
 }
 
 - (void)removeLogFolder:(NSString *)documentsDirectory
