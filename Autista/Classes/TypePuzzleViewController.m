@@ -115,7 +115,7 @@
             //            [accelerometerLabel performSelectorOnMainThread:@selector(setText:)
             //                                                 withObject:labelText waitUntilDone:NO];
             //[self.accelerometerDataArray addObject:accelerometerData];
-            NSLog(@"%@", labelText);
+            //NSLog(@"%@", labelText);
         }]; }
     else {
         //accelerometerLabel.text = @"This device has no accelerometer.";

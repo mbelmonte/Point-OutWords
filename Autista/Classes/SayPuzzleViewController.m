@@ -270,7 +270,7 @@
             //            [accelerometerLabel performSelectorOnMainThread:@selector(setText:)
             //                                                 withObject:labelText waitUntilDone:NO];
             //[self.accelerometerDataArray addObject:accelerometerData];
-            NSLog(@"%@", labelText);
+            //NSLog(@"%@", labelText);
         }]; }
     else {
         //accelerometerLabel.text = @"This device has no accelerometer.";
@@ -791,8 +791,10 @@
 	waitingForSilence = YES;
 //	[levelTimer invalidate];
 //	timeOutTimer = [NSTimer scheduledTimerWithTimeInterval: 2 target: self selector: @selector(timeoutTimerCallback:) userInfo: nil repeats: NO];
+    
+    NSLog(@"Current Syllable Index: %d", _currentSyllable);
 	
-	if (_currentSyllable == [_syllables count]){
+	if (_currentSyllable > [_syllables count] || _currentSyllable == [_syllables count]){
         [pocketsphinxController stopListening];
         _recognizerFeedback.text = NSLocalizedString(@"Finished", nil);
 		[self presentPuzzleCompletionAnimation];
@@ -1114,7 +1116,7 @@
 - (void) pocketsphinxDidReceiveHypothesis:(NSString *)hypothesis recognitionScore:(NSString *)recognitionScore utteranceID:(NSString *)utteranceID {
 	NSLog(@"The received hypothesis is %@ with a score of %@ and an ID of %@", hypothesis, recognitionScore, utteranceID);
     
-    NSLog(@"%@", globalHypothesis);
+    //NSLog(@"%@", globalHypothesis);
     
     globalHypothesis = [[hypothesis componentsSeparatedByString:@" "] objectAtIndex:0];
     
@@ -1135,7 +1137,7 @@
 }
 
 - (void) pocketsphinxDidStartListening {
-	NSLog(@"Pocketsphinx is now listening. %d", _currentSyllable);
+	NSLog(@"Pocketsphinx is now listening.");
     
     if (_notFirstOne == 1) {
         _recognizerFeedback.text = NSLocalizedString(@"Speak Now", nil);
