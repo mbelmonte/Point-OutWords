@@ -1,10 +1,12 @@
-/*
- Localizable.strings
- Autista
- 
- Created by Haozhe Li on 4/12/14.
- Copyright (c) 2014 Shashwat Parhi. All rights reserved.
- */
+//
+//   Localizable.strings
+//   Autista
+//   Copyright (C) 2014 The Groden Center, Inc.
+// 
+//   This Source Code Form is subject to the terms of the Mozilla Public
+//   License, v. 2.0. If a copy of the MPL was not distributed with this
+//   file, You can obtain one at http://mozilla.org/MPL/2.0/.
+// 
 
 /**-----------------------------------------------------------------------------
  * @name In Say Puzzle View

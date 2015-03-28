@@ -147,7 +147,6 @@
 		49C2C6E8190C303E0019600C /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 49C2C6E1190C303D0019600C /* zip.c */; };
 		49C2C70F190DEA550019600C /* CC BY-SA 3.0 Unported License in Resources */ = {isa = PBXBuildFile; fileRef = 49C2C706190DEA550019600C /* CC BY-SA 3.0 Unported License */; };
 		49C2C710190DEA550019600C /* fdl-1.3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 49C2C707190DEA550019600C /* fdl-1.3.txt */; };
-		49C2C711190DEA550019600C /* gpl.txt in Resources */ = {isa = PBXBuildFile; fileRef = 49C2C708190DEA550019600C /* gpl.txt */; };
 		49C2C712190DEA550019600C /* minizip License in Resources */ = {isa = PBXBuildFile; fileRef = 49C2C709190DEA550019600C /* minizip License */; };
 		49C2C713190DEA550019600C /* minizip license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 49C2C70A190DEA550019600C /* minizip license.txt */; };
 		49C2C714190DEA550019600C /* OpenEARS License in Resources */ = {isa = PBXBuildFile; fileRef = 49C2C70B190DEA550019600C /* OpenEARS License */; };
@@ -564,6 +563,7 @@
 		8F13963D19540E7600539895 /* Bucket_Syll_3_a_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F13963C19540E7600539895 /* Bucket_Syll_3_a_Tanu.caf */; };
 		8F13963F19540EA700539895 /* Flower_Syll_3_a_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F13963E19540EA700539895 /* Flower_Syll_3_a_Tanu.caf */; };
 		8F13964119540EB800539895 /* Happy_Syll_3_d_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F13964019540EB800539895 /* Happy_Syll_3_d_Tanu.caf */; };
+		8F24ACBC1AC730BE009B2CC7 /* mpl.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8F24ACBB1AC730BE009B2CC7 /* mpl.txt */; };
 		8F3082731A3E1E3F00A09E92 /* Racket_full_3_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F30826F1A3E1E3F00A09E92 /* Racket_full_3_Tanu.caf */; };
 		8F3082741A3E1E3F00A09E92 /* Racket_Syll_1_a_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F3082701A3E1E3F00A09E92 /* Racket_Syll_1_a_Tanu.caf */; };
 		8F3082751A3E1E3F00A09E92 /* Racket_Syll_2_b_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8F3082711A3E1E3F00A09E92 /* Racket_Syll_2_b_Tanu.caf */; };
@@ -645,8 +645,8 @@
 		2007A4681839DFCB00F7A541 /* BtnBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BtnBack.png; sourceTree = "<group>"; };
 		2007A46A183A702300F7A541 /* logos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logos.png; sourceTree = "<group>"; };
 		2022B72817FEA7090061D6EE /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		2022B72A17FF04430061D6EE /* AutistaIAPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutistaIAPHelper.h; path = Autista/Classes/AutistaIAPHelper.h; sourceTree = SOURCE_ROOT; };
-		2022B72B17FF04430061D6EE /* AutistaIAPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AutistaIAPHelper.m; path = Autista/Classes/AutistaIAPHelper.m; sourceTree = SOURCE_ROOT; };
+		2022B72A17FF04430061D6EE /* AutistaIAPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = AutistaIAPHelper.h; path = Autista/Classes/AutistaIAPHelper.h; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		2022B72B17FF04430061D6EE /* AutistaIAPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = AutistaIAPHelper.m; path = Autista/Classes/AutistaIAPHelper.m; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		2054BC8218364B9300DFFC44 /* Bath_full_1_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bath_full_1_Tanu.caf; sourceTree = "<group>"; };
 		2054BC8418364B9300DFFC44 /* Mug_full_2_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mug_full_2_Tanu.caf; sourceTree = "<group>"; };
 		2054BC8A18364B9300DFFC44 /* Shampoo_full_2_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Shampoo_full_2_Tanu.caf; sourceTree = "<group>"; };
@@ -787,7 +787,6 @@
 		49C2C6E2190C303E0019600C /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zip.h; path = Autista/ZipArchive/minizip/zip.h; sourceTree = "<group>"; };
 		49C2C706190DEA550019600C /* CC BY-SA 3.0 Unported License */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "CC BY-SA 3.0 Unported License"; path = "Licenses/CC BY-SA 3.0 Unported License"; sourceTree = "<group>"; };
 		49C2C707190DEA550019600C /* fdl-1.3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "fdl-1.3.txt"; path = "Licenses/fdl-1.3.txt"; sourceTree = "<group>"; };
-		49C2C708190DEA550019600C /* gpl.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = gpl.txt; path = Licenses/gpl.txt; sourceTree = "<group>"; };
 		49C2C709190DEA550019600C /* minizip License */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "minizip License"; path = "Licenses/minizip License"; sourceTree = "<group>"; };
 		49C2C70A190DEA550019600C /* minizip license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "minizip license.txt"; path = "Licenses/minizip license.txt"; sourceTree = "<group>"; };
 		49C2C70B190DEA550019600C /* OpenEARS License */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "OpenEARS License"; path = "Licenses/OpenEARS License"; sourceTree = "<group>"; };
@@ -866,8 +865,8 @@
 		8D4BCA7816BA761300A34EFD /* Happy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Happy.png; sourceTree = "<group>"; };
 		8D4BCA7B16BA8DAE00A34EFD /* KeyClick.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = KeyClick.caf; path = Autista/Sounds/KeyClick.caf; sourceTree = "<group>"; };
 		8D4FB42016096D4B005FD9AD /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
-		8D539CAA16E0EE7E005BDB57 /* GuidedModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GuidedModeViewController.h; path = Autista/Classes/GuidedModeViewController.h; sourceTree = "<group>"; };
-		8D539CAB16E0EE7E005BDB57 /* GuidedModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GuidedModeViewController.m; path = Autista/Classes/GuidedModeViewController.m; sourceTree = "<group>"; };
+		8D539CAA16E0EE7E005BDB57 /* GuidedModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = GuidedModeViewController.h; path = Autista/Classes/GuidedModeViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		8D539CAB16E0EE7E005BDB57 /* GuidedModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = GuidedModeViewController.m; path = Autista/Classes/GuidedModeViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		8D54EAFB16B4C1A400C52758 /* Bath.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bath.png; sourceTree = "<group>"; };
 		8D54EAFC16B4C1A400C52758 /* BathPlaceHolder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BathPlaceHolder.png; sourceTree = "<group>"; };
 		8D54EAFD16B4C1A400C52758 /* BathroomBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BathroomBackground.png; sourceTree = "<group>"; };
@@ -898,8 +897,8 @@
 		8D54EB4C16B4C20900C52758 /* SpoonPlaceHolder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SpoonPlaceHolder.png; sourceTree = "<group>"; };
 		8D54EB4D16B4C20900C52758 /* Water.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Water.png; sourceTree = "<group>"; };
 		8D54EB4E16B4C20900C52758 /* WaterPlaceHolder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WaterPlaceHolder.png; sourceTree = "<group>"; };
-		8D54EB7416B4EB1E00C52758 /* GlobalPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlobalPreferences.h; path = Autista/Models/GlobalPreferences.h; sourceTree = "<group>"; };
-		8D54EB7516B4EB1E00C52758 /* GlobalPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GlobalPreferences.m; path = Autista/Models/GlobalPreferences.m; sourceTree = "<group>"; };
+		8D54EB7416B4EB1E00C52758 /* GlobalPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = GlobalPreferences.h; path = Autista/Models/GlobalPreferences.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		8D54EB7516B4EB1E00C52758 /* GlobalPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = GlobalPreferences.m; path = Autista/Models/GlobalPreferences.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		8D54EBAE16B5107200C52758 /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Log.h; path = Autista/Models/Log.h; sourceTree = "<group>"; };
 		8D54EBAF16B5107200C52758 /* Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Log.m; path = Autista/Models/Log.m; sourceTree = "<group>"; };
 		8D54EBB116B5107300C52758 /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Scene.h; path = Autista/Models/Scene.h; sourceTree = "<group>"; };
@@ -908,12 +907,12 @@
 		8D54EBB516B5107300C52758 /* Piece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Piece.m; path = Autista/Models/Piece.m; sourceTree = "<group>"; };
 		8D54EBB716B5107300C52758 /* PuzzleObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PuzzleObject.h; path = Autista/Models/PuzzleObject.h; sourceTree = "<group>"; };
 		8D54EBB816B5107300C52758 /* PuzzleObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PuzzleObject.m; path = Autista/Models/PuzzleObject.m; sourceTree = "<group>"; };
-		8D54EBBD16B5107300C52758 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Event.h; path = Autista/Models/Event.h; sourceTree = "<group>"; };
-		8D54EBBE16B5107300C52758 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Event.m; path = Autista/Models/Event.m; sourceTree = "<group>"; };
+		8D54EBBD16B5107300C52758 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = Event.h; path = Autista/Models/Event.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		8D54EBBE16B5107300C52758 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = Event.m; path = Autista/Models/Event.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		8D5C9D7916B80E2300B2D2D7 /* TypeBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TypeBanner.h; path = Autista/Classes/TypeBanner.h; sourceTree = "<group>"; };
 		8D5C9D7A16B80E2300B2D2D7 /* TypeBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TypeBanner.m; path = Autista/Classes/TypeBanner.m; sourceTree = "<group>"; };
-		8D6D265A16E737CB00D4C429 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = Classes/RootViewController.h; sourceTree = "<group>"; };
-		8D6D265B16E737CB00D4C429 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = Classes/RootViewController.m; sourceTree = "<group>"; };
+		8D6D265A16E737CB00D4C429 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = RootViewController.h; path = Classes/RootViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		8D6D265B16E737CB00D4C429 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = RootViewController.m; path = Classes/RootViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		8D77A0351666FD9200E62FC6 /* GLLevelMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLLevelMeter.h; path = Autista/Audio/GLLevelMeter.h; sourceTree = "<group>"; };
 		8D77A0361666FD9200E62FC6 /* GLLevelMeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GLLevelMeter.m; path = Autista/Audio/GLLevelMeter.m; sourceTree = "<group>"; };
 		8D77A0371666FD9200E62FC6 /* LevelMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelMeter.h; path = Autista/Audio/LevelMeter.h; sourceTree = "<group>"; };
@@ -1017,7 +1016,7 @@
 		8D893DEC1634D86300E2A64A /* TypePuzzleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TypePuzzleViewController.m; path = Autista/Classes/TypePuzzleViewController.m; sourceTree = "<group>"; };
 		8D89400D163242F0006E6873 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		8D89400F16324A48006E6873 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
-		8D89401116326E67006E6873 /* TouchPuzzleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TouchPuzzleViewController.h; path = Autista/Classes/TouchPuzzleViewController.h; sourceTree = "<group>"; };
+		8D89401116326E67006E6873 /* TouchPuzzleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = TouchPuzzleViewController.h; path = Autista/Classes/TouchPuzzleViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		8D89401216326E67006E6873 /* TouchPuzzleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TouchPuzzleViewController.m; path = Autista/Classes/TouchPuzzleViewController.m; sourceTree = "<group>"; };
 		8D89401C1632B573006E6873 /* PuzzlePieceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PuzzlePieceView.h; path = Autista/Classes/PuzzlePieceView.h; sourceTree = "<group>"; };
 		8D89401D1632B573006E6873 /* PuzzlePieceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PuzzlePieceView.m; path = Autista/Classes/PuzzlePieceView.m; sourceTree = "<group>"; };
@@ -1071,29 +1070,29 @@
 		8DA3DD231604C6E20031950A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8DA3DD251604C6E20031950A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../Autista/main.m; sourceTree = "<group>"; };
 		8DA3DD271604C6E20031950A /* Autista-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Autista-Prefix.pch"; path = "../Autista/Autista-Prefix.pch"; sourceTree = "<group>"; };
-		8DA3DD281604C6E20031950A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8DA3DD291604C6E20031950A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8DA3DD281604C6E20031950A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		8DA3DD291604C6E20031950A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		8DA3DD321604C6E20031950A /* Autista.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Autista.xcdatamodel; sourceTree = "<group>"; };
 		8DA3DD3A1604C6E20031950A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		8DA3DD431604C6E20031950A /* AutistaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AutistaTests-Info.plist"; sourceTree = "<group>"; };
 		8DA3DD451604C6E20031950A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8DA3DD471604C6E30031950A /* AutistaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutistaTests.h; sourceTree = "<group>"; };
-		8DA3DD481604C6E30031950A /* AutistaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutistaTests.m; sourceTree = "<group>"; };
-		8DA3DD531604C8050031950A /* SceneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneViewController.h; path = Autista/Classes/SceneViewController.h; sourceTree = "<group>"; };
-		8DA3DD541604C8050031950A /* SceneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SceneViewController.m; path = Autista/Classes/SceneViewController.m; sourceTree = "<group>"; };
+		8DA3DD471604C6E30031950A /* AutistaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AutistaTests.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		8DA3DD481604C6E30031950A /* AutistaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AutistaTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		8DA3DD531604C8050031950A /* SceneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = SceneViewController.h; path = Autista/Classes/SceneViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		8DA3DD541604C8050031950A /* SceneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = SceneViewController.m; path = Autista/Classes/SceneViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		8DA3DD581604C96C0031950A /* Autista.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Autista.storyboard; path = Autista/Autista.storyboard; sourceTree = "<group>"; };
-		8DA69A7616B539EB00CB7A79 /* FirstLaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstLaunchViewController.h; path = Autista/Classes/FirstLaunchViewController.h; sourceTree = "<group>"; };
-		8DA69A7716B539EB00CB7A79 /* FirstLaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstLaunchViewController.m; path = Autista/Classes/FirstLaunchViewController.m; sourceTree = "<group>"; };
-		8DA69A7916B53E6300CB7A79 /* InfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InfoView.h; path = Autista/Classes/InfoView.h; sourceTree = "<group>"; };
-		8DA69A7A16B53E6300CB7A79 /* InfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfoView.m; path = Autista/Classes/InfoView.m; sourceTree = "<group>"; };
+		8DA69A7616B539EB00CB7A79 /* FirstLaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = FirstLaunchViewController.h; path = Autista/Classes/FirstLaunchViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		8DA69A7716B539EB00CB7A79 /* FirstLaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = FirstLaunchViewController.m; path = Autista/Classes/FirstLaunchViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		8DA69A7916B53E6300CB7A79 /* InfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = InfoView.h; path = Autista/Classes/InfoView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		8DA69A7A16B53E6300CB7A79 /* InfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = InfoView.m; path = Autista/Classes/InfoView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		8DA69A7C16B541B300CB7A79 /* FirstLaunchInfoText.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = FirstLaunchInfoText.plist; path = Autista/Models/FirstLaunchInfoText.plist; sourceTree = "<group>"; };
 		8DB9FAA016B529D20030DC4C /* BathroomSceneSelector.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BathroomSceneSelector.png; sourceTree = "<group>"; };
 		8DB9FAA416B52A010030DC4C /* KitchenSceneSelector.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KitchenSceneSelector.png; sourceTree = "<group>"; };
 		8DB9FAA616B52A100030DC4C /* PicnicSceneSelector.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PicnicSceneSelector.png; sourceTree = "<group>"; };
 		8DBBE35616D65FD0001F8DB0 /* PuzzleStateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PuzzleStateView.h; path = Autista/Classes/PuzzleStateView.h; sourceTree = "<group>"; };
 		8DBBE35716D65FD0001F8DB0 /* PuzzleStateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PuzzleStateView.m; path = Autista/Classes/PuzzleStateView.m; sourceTree = "<group>"; };
-		8DCCB2D716D496D2006B11A4 /* Attempt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Attempt.h; path = Autista/Models/Attempt.h; sourceTree = "<group>"; };
-		8DCCB2D816D496D2006B11A4 /* Attempt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Attempt.m; path = Autista/Models/Attempt.m; sourceTree = "<group>"; };
+		8DCCB2D716D496D2006B11A4 /* Attempt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = Attempt.h; path = Autista/Models/Attempt.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		8DCCB2D816D496D2006B11A4 /* Attempt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = Attempt.m; path = Autista/Models/Attempt.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		8DCDF47C16C14FBC00A231F6 /* PieceAutoAdvanced.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = PieceAutoAdvanced.caf; path = Autista/Sounds/PieceAutoAdvanced.caf; sourceTree = "<group>"; };
 		8DCDF47E16C1525200A231F6 /* PuzzleCompletedSuccessfully01.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = PuzzleCompletedSuccessfully01.caf; path = Autista/Sounds/PuzzleCompletedSuccessfully01.caf; sourceTree = "<group>"; };
 		8DCF4BF916FDABC00045901D /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -1129,15 +1128,15 @@
 		8DEA562B16B5B21E00FC88B9 /* Tap02A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Tap02A.png; path = pieces/Tap02A.png; sourceTree = "<group>"; };
 		8DEA562C16B5B21E00FC88B9 /* Tap03P.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Tap03P.png; path = pieces/Tap03P.png; sourceTree = "<group>"; };
 		8DEAC43316B5713C000C0AB5 /* InfoViewAdminAccess.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InfoViewAdminAccess.png; sourceTree = "<group>"; };
-		8DEB602916624EB0000E8290 /* SceneSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneSelectorViewController.h; path = Autista/Classes/SceneSelectorViewController.h; sourceTree = "<group>"; };
-		8DEB602A16624EB0000E8290 /* SceneSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SceneSelectorViewController.m; path = Autista/Classes/SceneSelectorViewController.m; sourceTree = "<group>"; };
+		8DEB602916624EB0000E8290 /* SceneSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = SceneSelectorViewController.h; path = Autista/Classes/SceneSelectorViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		8DEB602A16624EB0000E8290 /* SceneSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = SceneSelectorViewController.m; path = Autista/Classes/SceneSelectorViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		8DEB602F16624F4E000E8290 /* BkgWoodTexture@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BkgWoodTexture@2x.png"; sourceTree = "<group>"; };
 		8DEB603016624F4E000E8290 /* KeyboardButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KeyboardButton.png; sourceTree = "<group>"; };
 		8DEB603316625204000E8290 /* BkgWoodTexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BkgWoodTexture.png; sourceTree = "<group>"; };
 		8DEB604016629581000E8290 /* BtnSceneSelectorHome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BtnSceneSelectorHome.png; sourceTree = "<group>"; };
 		8DEB6042166299D7000E8290 /* BtnAdminOverlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BtnAdminOverlay.png; sourceTree = "<group>"; };
-		8DEB60451662A54C000E8290 /* AdminViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdminViewController.h; path = Autista/Classes/AdminViewController.h; sourceTree = "<group>"; };
-		8DEB60461662A54C000E8290 /* AdminViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AdminViewController.m; path = Autista/Classes/AdminViewController.m; sourceTree = "<group>"; };
+		8DEB60451662A54C000E8290 /* AdminViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = AdminViewController.h; path = Autista/Classes/AdminViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		8DEB60461662A54C000E8290 /* AdminViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = AdminViewController.m; path = Autista/Classes/AdminViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		8DEB60551662B068000E8290 /* BtnAudioLevelOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BtnAudioLevelOn.png; sourceTree = "<group>"; };
 		8DEB60591662B0E8000E8290 /* BtnAudioLevelOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BtnAudioLevelOff.png; sourceTree = "<group>"; };
 		8DEB605B1662B25C000E8290 /* BtnCloseAdminOverlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BtnCloseAdminOverlay.png; sourceTree = "<group>"; };
@@ -1237,8 +1236,8 @@
 		8DF5E0A516B96B56005D8154 /* KitchenSceneMusic.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; name = KitchenSceneMusic.aifc; path = Autista/Sounds/KitchenSceneMusic.aifc; sourceTree = "<group>"; };
 		8DF5E0A616B96B57005D8154 /* PicnicSceneMusic.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; name = PicnicSceneMusic.aifc; path = Autista/Sounds/PicnicSceneMusic.aifc; sourceTree = "<group>"; };
 		8DF5E0A716B96B57005D8154 /* PlaygroundSceneMusic.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; name = PlaygroundSceneMusic.aifc; path = Autista/Sounds/PlaygroundSceneMusic.aifc; sourceTree = "<group>"; };
-		8DF5E0B216B983F1005D8154 /* AVAudioPlayer+Fade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AVAudioPlayer+Fade.h"; path = "Autista/Categories/AVAudioPlayer+Fade.h"; sourceTree = "<group>"; };
-		8DF5E0B316B983F1005D8154 /* AVAudioPlayer+Fade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AVAudioPlayer+Fade.m"; path = "Autista/Categories/AVAudioPlayer+Fade.m"; sourceTree = "<group>"; };
+		8DF5E0B216B983F1005D8154 /* AVAudioPlayer+Fade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = "AVAudioPlayer+Fade.h"; path = "Autista/Categories/AVAudioPlayer+Fade.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		8DF5E0B316B983F1005D8154 /* AVAudioPlayer+Fade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = "AVAudioPlayer+Fade.m"; path = "Autista/Categories/AVAudioPlayer+Fade.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		8DFAE2F3166322A8004A9752 /* VUMeterTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VUMeterTable.h; path = Autista/Audio/VUMeterTable.h; sourceTree = "<group>"; };
 		8DFAE2F4166322A8004A9752 /* VUMeterTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VUMeterTable.m; path = Autista/Audio/VUMeterTable.m; sourceTree = "<group>"; };
 		8DFAE2F616632522004A9752 /* VULevelMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VULevelMeter.h; path = Autista/Audio/VULevelMeter.h; sourceTree = "<group>"; };
@@ -1261,6 +1260,7 @@
 		8F13963C19540E7600539895 /* Bucket_Syll_3_a_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bucket_Syll_3_a_Tanu.caf; sourceTree = "<group>"; };
 		8F13963E19540EA700539895 /* Flower_Syll_3_a_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Flower_Syll_3_a_Tanu.caf; sourceTree = "<group>"; };
 		8F13964019540EB800539895 /* Happy_Syll_3_d_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Happy_Syll_3_d_Tanu.caf; sourceTree = "<group>"; };
+		8F24ACBB1AC730BE009B2CC7 /* mpl.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = mpl.txt; path = Licenses/mpl.txt; sourceTree = "<group>"; };
 		8F30826F1A3E1E3F00A09E92 /* Racket_full_3_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Racket_full_3_Tanu.caf; sourceTree = "<group>"; };
 		8F3082701A3E1E3F00A09E92 /* Racket_Syll_1_a_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Racket_Syll_1_a_Tanu.caf; sourceTree = "<group>"; };
 		8F3082711A3E1E3F00A09E92 /* Racket_Syll_2_b_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Racket_Syll_2_b_Tanu.caf; sourceTree = "<group>"; };
@@ -1950,7 +1950,7 @@
 			children = (
 				49C2C706190DEA550019600C /* CC BY-SA 3.0 Unported License */,
 				49C2C707190DEA550019600C /* fdl-1.3.txt */,
-				49C2C708190DEA550019600C /* gpl.txt */,
+				8F24ACBB1AC730BE009B2CC7 /* mpl.txt */,
 				49C2C709190DEA550019600C /* minizip License */,
 				49C2C70A190DEA550019600C /* minizip license.txt */,
 				49C2C70B190DEA550019600C /* OpenEARS License */,
@@ -3058,7 +3058,6 @@
 				8D54EB1A16B4C1A400C52758 /* TowelPlaceHolder.png in Resources */,
 				8D54EB4F16B4C20900C52758 /* Bread.png in Resources */,
 				8D54EB5016B4C20900C52758 /* BreadPlaceHolder.png in Resources */,
-				49C2C711190DEA550019600C /* gpl.txt in Resources */,
 				8D54EB5116B4C20900C52758 /* Cup.png in Resources */,
 				8D54EB5216B4C20900C52758 /* CupPlaceHolder.png in Resources */,
 				2054BD3418364B9300DFFC44 /* Apple_Syll_1_b_Tanu.caf in Resources */,
@@ -3081,6 +3080,7 @@
 				8F1396211954081000539895 /* Towel_Syll_3_c_Tanu.caf in Resources */,
 				8F3082761A3E1E3F00A09E92 /* Racket_Syll_3_b_Tanu.caf in Resources */,
 				8F383EFA18E7802600627901 /* play_icon.png in Resources */,
+				8F24ACBC1AC730BE009B2CC7 /* mpl.txt in Resources */,
 				2054BD2A18364B9300DFFC44 /* Lollipop_Syll_1_a_Tanu.caf in Resources */,
 				8DB9FAA516B52A010030DC4C /* KitchenSceneSelector.png in Resources */,
 				8DB9FAA716B52A100030DC4C /* PicnicSceneSelector.png in Resources */,
