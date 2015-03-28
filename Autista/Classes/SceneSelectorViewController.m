@@ -69,8 +69,8 @@
     ratio = 0.75; // ratio for resizing
 	CGSize size = self.view.bounds.size;										// coordinates are flipped at this point
 	CGFloat temp = size.width;
-	size.width = size.height;
-	size.height = temp;
+//	size.width = size.height;
+//	size.height = temp;
     
     //CGFloat initialOffset = size.width *(1-ratio) / 2;
     //CGFloat gap = initialOffset / 2;
