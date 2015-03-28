@@ -461,12 +461,12 @@
         
         //Get current timestamp
 //        NSTimeInterval timeStamp = [[NSDate date] timeIntervalSince1970];
-        //int unixtime = [[NSNumber numberWithDouble: [[NSDate date] timeIntervalSince1970]] integerValue];
+        int unixtime = [[NSNumber numberWithDouble: [[NSDate date] timeIntervalSince1970]] integerValue];
 //        NSString * timestamp = [NSString stringWithFormat:@"%f",[[NSDate date] timeIntervalSince1970]] ;
         
-        NSNumber *absoluteTime = [NSNumber numberWithDouble:[[NSDate date] timeIntervalSinceReferenceDate]*1000];
+//        NSNumber *absoluteTime = [NSNumber numberWithDouble:[[NSDate date] timeIntervalSinceReferenceDate]*1000];
         
-        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://www.autismcollaborative.org/autista/upload.php?udid=%@&timestamp=%d", uniqueIDHash, [absoluteTime intValue]]];
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://www.autismcollaborative.org/autista/upload.php?udid=%@&timestamp=%i", uniqueIDHash, unixtime]];
         NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
         NSString *boundary = @"---------------------------14737809831466499882746641449";
         NSString *contentType = [NSString stringWithFormat:@"multipart/form-data; boundary=%@",boundary];
