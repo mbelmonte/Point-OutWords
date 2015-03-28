@@ -9,8 +9,6 @@
 			<string>User Info</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
-			<key>FooterText</key>
-			<string>Please enter your username and gender. Please enter date of birth in this format: yyyy-mm-dd</string>
 		</dict>
 		<dict>
 			<key>AutocapitalizationType</key>
@@ -26,7 +24,7 @@
 			<key>KeyboardType</key>
 			<string>Alphabet</string>
 			<key>Title</key>
-			<string>Username</string>
+			<string>Username (DO NOT use your real name!)</string>
 			<key>Type</key>
 			<string>PSTextFieldSpecifier</string>
 		</dict>
@@ -54,7 +52,7 @@
 			<key>Type</key>
 			<string>PSTextFieldSpecifier</string>
 			<key>Title</key>
-			<string>Birth Date</string>
+			<string>Birth Date (enter in this format: yyyy-mm-dd)</string>
 			<key>KeyboardType</key>
 			<string>NumberPad</string>
 			<key>Key</key>
