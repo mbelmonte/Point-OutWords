@@ -247,6 +247,8 @@
         currentFrame.origin.y = 112;
         ((UIView *)[self.sideBarViewArray objectAtIndex:i]).frame = currentFrame;
     }
+    
+    self.taskNameLabel.alpha = 0;
 }
 
 -(void)updatePromptViewWith:(int)controlIndex
@@ -379,7 +381,7 @@
     _logFolderPath = [NSString stringWithFormat:@"%@/LogData",[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]];
     
     
-    NSArray *audioPaths = [fileManager contentsOfDirectoryAtPath:_logFolderPath error:&error];
+    NSArray *files = [fileManager contentsOfDirectoryAtPath:_logFolderPath error:&error];
     
     if ([fileManager fileExistsAtPath:_logFolderPath isDirectory:&isDir] && isDir){
         subPaths = [fileManager subpathsAtPath:_logFolderPath];
@@ -437,17 +439,12 @@
     
     
     _tasks = [NSMutableArray new];
-    
     NSURLSessionConfiguration *conf = [NSURLSessionConfiguration defaultSessionConfiguration];
-    
     conf.allowsCellularAccess = NO;
     
     _urlSession = [NSURLSession sessionWithConfiguration:conf delegate:self delegateQueue:[NSOperationQueue mainQueue]];
-    
     for (NSString *subPath in subPaths) {
-        
         NSMutableData *uploadData = [[NSMutableData alloc] initWithContentsOfFile:[[_logFolderPath stringByAppendingString:@"/" ] stringByAppendingString:subPath] options:nil error:&error];
-        
         NSURL *path= [NSURL fileURLWithPath:[[_logFolderPath stringByAppendingString:@"/" ] stringByAppendingString:subPath]];
         uint64_t bytesTotalForThisFile = [[[NSFileManager defaultManager] attributesOfItemAtPath:[[_logFolderPath stringByAppendingString:@"/" ] stringByAppendingString:subPath] error:NULL] fileSize];
         
@@ -474,25 +471,21 @@
         NSString *contentDisposition = [NSString stringWithFormat:@"Content-Disposition: form-data; name=\"fileUpload\"; filename=\"%@\"\r\n",subPath];
         
         [request setHTTPMethod:@"POST"];
-        
         [request addValue:contentType forHTTPHeaderField:@"Content-Type"];
         [request addValue:[NSString stringWithFormat:@"%llu", bytesTotalForThisFile] forHTTPHeaderField:@"Content-Length"];
-        
         NSMutableData *body =[NSMutableData data];
         [body appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
         [body appendData:[contentDisposition dataUsingEncoding:NSUTF8StringEncoding]];
         [body appendData:[@"Content-Type:multipart/form-data\r\n\r\n" dataUsingEncoding:NSUTF8StringEncoding]];
         [body appendData:[NSData dataWithData:uploadData]];
         [body appendData:[[NSString stringWithFormat:@"\r\n--%@--\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
-        
         [request setHTTPBody:body];
 
         NSURLSessionTask *task = [_urlSession uploadTaskWithRequest:request fromData:body];
-
         [_tasks addObject:task];
-        
         [task resume];
-        
+        self.taskNameLabel.alpha = 1;
+        self.taskNameLabel.text = [subPaths objectAtIndex:0];
     }
 
 }
@@ -1145,8 +1138,7 @@
         [[NSFileManager defaultManager]copyItemAtPath: [[NSBundle mainBundle] pathForResource:@"PraisePrefs" ofType:@"plist"] toPath:plistPath error: &newError];
 
 	}
-    
-    
+
 	// create NSData from dictionary
     NSData *plistFile = [NSPropertyListSerialization dataFromPropertyList:plistDict format:NSPropertyListXMLFormat_v1_0 errorDescription:&error];
 	
@@ -1315,11 +1307,14 @@ didCompleteWithError:(NSError *)error
     
     //[[NSFileManager defaultManager] removeItemAtURL:_logFolderPath error:NULL];
     if (!error) {
-        
+        if ([_tasks indexOfObject:task]<[subPaths count]-1) {
+            self.taskNameLabel.text = [subPaths objectAtIndex:([_tasks indexOfObject:task]+1)];
+            NSLog(@"%@",self.taskNameLabel.text);
+        }
         [_tasks removeObject:task];
     
         if ([_tasks count] == 0) {
-            
+            self.taskNameLabel.alpha = 0;
             _sendLogsButton.hidden = NO;
             _uploadProgressBar.hidden = YES;
             _uploadCancelBtn.hidden = YES;
@@ -1381,8 +1376,6 @@ didCompleteWithError:(NSError *)error
     
 }
 
-
-
 - (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask
     didReceiveData:(NSData *)data
 {
@@ -1391,14 +1384,14 @@ didCompleteWithError:(NSError *)error
 
 -(void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didSendBodyData:(int64_t)bytesSent totalBytesSent:(int64_t)totalBytesSent totalBytesExpectedToSend:(int64_t)totalBytesExpectedToSend{
     float progress = (float)totalBytesSent / (float)totalBytesExpectedToSend;
-    NSLog(@"%f", progress);
+    NSLog(@"the progress is %f", progress);
+    self.taskNameLabel.text = [NSString stringWithFormat:@"self.taskNameLabel.text %.0f%%",progress*100];
     [_uploadProgressBar setProgress:progress];
 }
 
 - (void)URLSession:(NSURLSession *)session didBecomeInvalidWithError:(NSError *)error{
     
     if (error && whetherIsFirstTime == YES) {
-        
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No network connection"
                                                         message:@"You must be connected to the internet to upload the logs."
                                                        delegate:self
@@ -1407,9 +1400,7 @@ didCompleteWithError:(NSError *)error
         [alert setTag:2];
         [alert show];
         whetherIsFirstTime = NO;
-
     }
-    
 }
 
 @end

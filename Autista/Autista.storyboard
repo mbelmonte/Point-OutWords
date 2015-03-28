@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="pYk-1W-eWE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="pYk-1W-eWE">
     <dependencies>
         <deployment version="1296" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
         <!--Root View Controller-->
@@ -1397,6 +1397,13 @@
                                             <action selector="editPromptSource:" destination="55P-Rz-YyG" eventType="touchUpInside" id="zpj-pj-MX7"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="task name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5Jr-kc-KTL">
+                                        <rect key="frame" x="333" y="458" width="348" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 <userDefinedRuntimeAttributes>
@@ -1746,6 +1753,7 @@
                         <outlet property="super_descLabel" destination="YBK-Aa-zb0" id="lst-IW-p5J"/>
                         <outlet property="super_fileLabel" destination="G8V-Yy-Ymn" id="qUH-FT-S9d"/>
                         <outlet property="super_itunes_Btn_Play" destination="XEK-XJ-ap0" id="w0C-ov-Gws"/>
+                        <outlet property="taskNameLabel" destination="5Jr-kc-KTL" id="482-U3-rlP"/>
                         <outlet property="try_Btn_Default" destination="mNX-Oa-lHK" id="JkK-8V-VAC"/>
                         <outlet property="try_Btn_Play" destination="knq-o8-acH" id="uzP-pE-G44"/>
                         <outlet property="try_Btn_Record" destination="oYp-gL-EeS" id="vlt-fL-o2W"/>

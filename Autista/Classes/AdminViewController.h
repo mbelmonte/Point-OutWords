@@ -224,6 +224,9 @@
 @property NSMutableArray *_tasks;
 
 @property BOOL whetherIsFirstTime;
+
+@property (weak, nonatomic) IBOutlet UILabel *taskNameLabel;
+
 /**-----------------------------------------------------------------------------
  * @name Methods handling master-detail like view interaction
  * -----------------------------------------------------------------------------
