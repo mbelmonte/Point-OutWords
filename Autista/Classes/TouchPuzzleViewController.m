@@ -317,6 +317,10 @@
 {
 	CGPoint initialTouchPoint = [gesture locationInView:self.view];
 	PuzzlePieceView *touchedPiece = [self hitTest:initialTouchPoint];
+    
+    [[EventLogger sharedLogger] logEvent:LogEventCodeTouchBegan eventInfo:@{@"X": [NSString stringWithFormat:@"%+.1f", initialTouchPoint.x], @"Y": [NSString stringWithFormat:@"%+.1f", initialTouchPoint.y]}];
+    
+    [[EventLogger sharedLogger] logEvent:LogEventCodeTouchEnded eventInfo:@{@"X": [NSString stringWithFormat:@"%+.1f", initialTouchPoint.x], @"Y": [NSString stringWithFormat:@"%+.1f", initialTouchPoint.y]}];
         
     if (_prefs.selectDistance != 0){
         CGRect currentRect=touchedPiece.frame;
@@ -337,6 +341,7 @@
 		NSNumber *locationY = [NSNumber numberWithFloat:initialTouchPoint.y];
 		
 		[[EventLogger sharedLogger] logEvent:LogEventCodePieceTapped eventInfo:@{@"Piece": touchedPiece.title,  @"X": locationX, @"Y": locationY}];
+        NSLog(@"Touch Tapped");
 	}
 }
 
@@ -344,6 +349,9 @@
 {
 	if (gesture.state == UIGestureRecognizerStateBegan) {
 		CGPoint initialTouchPoint = [gesture locationOfTouch:0 inView:self.view];
+        
+        [[EventLogger sharedLogger] logEvent:LogEventCodeTouchBegan eventInfo:@{@"X": [NSString stringWithFormat:@"%+.1f", initialTouchPoint.x], @"Y": [NSString stringWithFormat:@"%+.1f", initialTouchPoint.y]}];
+        
 		_draggedPiece = [self hitTest:initialTouchPoint];
 		
 		if (_draggedPiece == nil)
@@ -381,8 +389,14 @@
 		NSNumber *locationY = [NSNumber numberWithFloat:initialTouchPoint.y];
 		
 		[[EventLogger sharedLogger] logEvent:LogEventCodePieceDragBegan eventInfo:@{@"Piece": _draggedPiece.title,  @"X": locationX, @"Y": locationY}];
+        NSLog(@"Touch Dragged");
 	}
     else if (gesture.state == UIGestureRecognizerStateChanged) {
+        CGPoint touchLocation = [gesture locationInView:self.view];
+        
+        [[EventLogger sharedLogger] logEvent:LogEventCodeTouchMoved eventInfo:@{@"X": [NSString stringWithFormat:@"%+.1f", touchLocation.x], @"Y": [NSString stringWithFormat:@"%+.1f", touchLocation.y]}];
+        NSLog(@"Touch Moved");
+        
 		if (_draggedPiece != nil) {
 			CGPoint newLocation = [gesture locationOfTouch:0 inView:self.view];
 			CGRect frame = _draggedPiece.frame;
@@ -418,6 +432,12 @@
 		if (_draggedPiece != nil) {
 			[self snapPieceToFinalPosition:_draggedPiece];
 		}
+        
+        CGPoint touchLocation = [gesture locationInView:self.view];
+        
+        [[EventLogger sharedLogger] logEvent:LogEventCodeTouchEnded eventInfo:@{@"X": [NSString stringWithFormat:@"%+.1f", touchLocation.x], @"Y": [NSString stringWithFormat:@"%+.1f", touchLocation.y]}];
+        NSLog(@"Touch Ended");
+
 	}
 }
 

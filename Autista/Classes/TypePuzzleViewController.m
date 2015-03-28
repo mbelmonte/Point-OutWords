@@ -333,6 +333,8 @@
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     CGPoint touchPoint = [[touches anyObject] locationInView:self.view];
+    [[EventLogger sharedLogger] logEvent:LogEventCodeTouchBegan eventInfo:@{@"X": [NSString stringWithFormat:@"%+.1f", touchPoint.x], @"Y": [NSString stringWithFormat:@"%+.1f", touchPoint.y]}];
+    NSLog(@"Touch Began");
     if (CGRectContainsPoint(_keyboard.frame, touchPoint)) {
         
         //add method here......
@@ -413,6 +415,7 @@
 		
 		[self playCorrectKeyPressedSound];
 		
+        [[EventLogger sharedLogger] logEvent:LogEventCodeKeyPressed eventInfo:@{@"key": @"correct"}];
 		[[EventLogger sharedLogger] logEvent:LogEventCodeKeyReleased eventInfo:@{@"key": @"correct"}];
 	}
 	else if (_loopDetectorCount > 3) {
@@ -422,11 +425,14 @@
 		_loopDetectorCount = 0;
 		_autoCompletedPieces++;
 		
+        [[EventLogger sharedLogger] logEvent:LogEventCodeKeyPressed eventInfo:@{@"key": @"autoAdvanced"}];
 		[[EventLogger sharedLogger] logEvent:LogEventCodeKeyReleased eventInfo:@{@"key": @"autoAdvanced"}];
 	}
 	else {
 		[self playWrongKeyPressedSound];
 		_loopDetectorCount++;
+        
+        [[EventLogger sharedLogger] logEvent:LogEventCodeKeyPressed eventInfo:@{@"key": @"wrong"}];
 		[[EventLogger sharedLogger] logEvent:LogEventCodeKeyReleased eventInfo:@{@"key": @"wrong"}];
 		
 		return;												// without doing the animations
@@ -1093,14 +1099,15 @@
 -(void)setupTouchEventGesture{
     
     UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(handlePanGestureRecognized:)];
-    [self.keyboard addGestureRecognizer:panGesture];
-    
-    
+    [self.view addGestureRecognizer:panGesture];
 }
 
 -(void)handlePanGestureRecognized:(UIGestureRecognizer *)recognizer{
     
     if (recognizer.state == UIGestureRecognizerStateEnded) {
+        CGPoint touchViewLocation = [recognizer locationInView:self.view];
+        [[EventLogger sharedLogger] logEvent:LogEventCodeTouchEnded eventInfo:@{@"X": [NSString stringWithFormat:@"%+.1f", touchViewLocation.x], @"Y": [NSString stringWithFormat:@"%+.1f", touchViewLocation.y]}];
+        NSLog(@"Touch Ended");
         
         CGPoint touchLocation = [recognizer locationInView:self.keyboard];
         
@@ -1116,11 +1123,13 @@
             [expectedButton sendActionsForControlEvents:UIControlEventTouchUpInside];
             
         }
-        
-        
     }
-    
-    
+    else if (recognizer.state == UIGestureRecognizerStateChanged) {
+        CGPoint touchLocation = [recognizer locationInView:self.view];
+        
+        [[EventLogger sharedLogger] logEvent:LogEventCodeTouchMoved eventInfo:@{@"X": [NSString stringWithFormat:@"%+.1f", touchLocation.x], @"Y": [NSString stringWithFormat:@"%+.1f", touchLocation.y]}];
+        NSLog(@"Touch Moved");
+    }
 }
 
 
