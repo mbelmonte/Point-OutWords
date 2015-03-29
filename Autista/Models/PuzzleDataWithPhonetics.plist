@@ -120,7 +120,7 @@
 				<key>syllables</key>
 				<string>ta-ble-table</string>
 				<key>phonetics</key>
-				<string>tay-bahl-teybahl</string>
+				<string>tei-bahl-teybahl</string>
 				<key>difficultyDrag</key>
 				<integer>15</integer>
 				<key>difficultySpeak</key>
@@ -1211,7 +1211,7 @@
 				<key>syllables</key>
 				<string>po-ta-to-potato</string>
 				<key>phonetics</key>
-				<string>pah-tay-tow-pahteytow</string>
+				<string>pah-tei-tow-pahteytow</string>
 				<key>difficultyDrag</key>
 				<integer>10</integer>
 				<key>difficultySpeak</key>

@@ -3623,8 +3623,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "c2c9a7df-c07c-4e3a-9bd8-16e1ce05dd18";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "c2c9a7df-c07c-4e3a-9bd8-16e1ce05dd18";
+				PROVISIONING_PROFILE = "ca8088b4-7848-4e1e-9dc6-cf3300f6bbb0";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "ca8088b4-7848-4e1e-9dc6-cf3300f6bbb0";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -3645,8 +3645,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "c2c9a7df-c07c-4e3a-9bd8-16e1ce05dd18";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "c2c9a7df-c07c-4e3a-9bd8-16e1ce05dd18";
+				PROVISIONING_PROFILE = "ca8088b4-7848-4e1e-9dc6-cf3300f6bbb0";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "ca8088b4-7848-4e1e-9dc6-cf3300f6bbb0";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
