@@ -633,6 +633,7 @@
 		8FB4C26C1A21439300FFEC76 /* Water_Syll_2_c_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4C2681A21439300FFEC76 /* Water_Syll_2_c_Tanu.caf */; };
 		8FB4C26D1A21439300FFEC76 /* Water_Syll_3_c_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4C2691A21439300FFEC76 /* Water_Syll_3_c_Tanu.caf */; };
 		8FB6B13F18E8FCEA009CDB74 /* KeyboardButton_hightlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FB6B13E18E8FCEA009CDB74 /* KeyboardButton_hightlighted.png */; };
+		8FEFF5581AC7C01B001A95F9 /* PuzzleDataWithPhonetics_Old.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FEFF5571AC7C01B001A95F9 /* PuzzleDataWithPhonetics_Old.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1333,6 +1334,7 @@
 		8FB4C2681A21439300FFEC76 /* Water_Syll_2_c_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Water_Syll_2_c_Tanu.caf; sourceTree = "<group>"; };
 		8FB4C2691A21439300FFEC76 /* Water_Syll_3_c_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Water_Syll_3_c_Tanu.caf; sourceTree = "<group>"; };
 		8FB6B13E18E8FCEA009CDB74 /* KeyboardButton_hightlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KeyboardButton_hightlighted.png; sourceTree = "<group>"; };
+		8FEFF5571AC7C01B001A95F9 /* PuzzleDataWithPhonetics_Old.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PuzzleDataWithPhonetics_Old.plist; path = Autista/Models/PuzzleDataWithPhonetics_Old.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2470,6 +2472,7 @@
 				8DA3DD311604C6E20031950A /* Autista.xcdatamodeld */,
 				8DDE5C2A16B0506800713427 /* PuzzleData.plist */,
 				8F741CF8189F3F5D0048329A /* PuzzleDataWithPhonetics.plist */,
+				8FEFF5571AC7C01B001A95F9 /* PuzzleDataWithPhonetics_Old.plist */,
 				8D8890E516BD8EAD003FA187 /* EventList.plist */,
 				8DA69A7C16B541B300CB7A79 /* FirstLaunchInfoText.plist */,
 				8FAF16FB18E8DE15003EC63D /* FirstLaunchInfoTextNew.plist */,
@@ -3347,6 +3350,7 @@
 				8F13962F19540CA300539895 /* Apple_Syll_3_c_Tanu.caf in Resources */,
 				8D234A9616C7422E0040DC14 /* Girl04L.png in Resources */,
 				8D234A9816C7422E0040DC14 /* Happy01H.png in Resources */,
+				8FEFF5581AC7C01B001A95F9 /* PuzzleDataWithPhonetics_Old.plist in Resources */,
 				8F383EF318E77FB600627901 /* PraisePrefs.plist in Resources */,
 				8FB4C26A1A21439300FFEC76 /* Water_full_2_Tanu.caf in Resources */,
 				8D234A9916C7422E0040DC14 /* Happy02A.png in Resources */,

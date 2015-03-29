@@ -120,7 +120,7 @@
 				<key>syllables</key>
 				<string>ta-ble-table</string>
 				<key>phonetics</key>
-				<string>tay-bahl-teybahl</string>
+				<string>tey-bahl-teybahl</string>
 				<key>difficultyDrag</key>
 				<integer>15</integer>
 				<key>difficultySpeak</key>
@@ -836,7 +836,7 @@
 				<key>syllables</key>
 				<string>o-ni-on-onion</string>
 				<key>phonetics</key>
-				<string>ah-nee-ahn-ahnyahn</string>
+				<string>ah-ny-ahn-ahnyahn</string>
 				<key>difficultyDrag</key>
 				<integer>12</integer>
 				<key>difficultySpeak</key>
@@ -1211,7 +1211,7 @@
 				<key>syllables</key>
 				<string>po-ta-to-potato</string>
 				<key>phonetics</key>
-				<string>pah-tay-tow-pahteytow</string>
+				<string>pah-tey-tow-pahteytow</string>
 				<key>difficultyDrag</key>
 				<integer>10</integer>
 				<key>difficultySpeak</key>
@@ -1884,7 +1884,7 @@
 				<key>syllables</key>
 				<string>tow-el-towel</string>
 				<key>phonetics</key>
-				<string>tao-ahl-tawahl</string>
+				<string>taw-ahl-tawahl</string>
 				<key>difficultyDrag</key>
 				<integer>15</integer>
 				<key>difficultySpeak</key>
@@ -2491,7 +2491,7 @@
 				<key>syllables</key>
 				<string>ha-ppy-happy</string>
 				<key>phonetics</key>
-				<string>hhae-pee-hhaepiy</string>
+				<string>hhae-piy-hhaepiy</string>
 				<key>difficultyDrag</key>
 				<integer>10</integer>
 				<key>difficultySpeak</key>
@@ -2659,7 +2659,7 @@
 				<key>syllables</key>
 				<string>flow-er-flower</string>
 				<key>phonetics</key>
-				<string>flout-er-flawer</string>
+				<string>flaw-er-flawer</string>
 				<key>difficultyDrag</key>
 				<integer>10</integer>
 				<key>difficultySpeak</key>
