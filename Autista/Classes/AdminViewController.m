@@ -386,7 +386,7 @@
     if ([fileManager fileExistsAtPath:_logFolderPath isDirectory:&isDir] && isDir){
         subPaths = [fileManager subpathsAtPath:_logFolderPath];
     }
-    
+    subPaths = [[subPaths reverseObjectEnumerator] allObjects];
     NSLog(@"there are %@ in the path", subPaths);
  /*
     NSString *archivePath = [_logFolderPath stringByAppendingString:@".zip"];
@@ -485,10 +485,11 @@
 
         NSURLSessionTask *task = [_urlSession uploadTaskWithRequest:request fromData:body];
         [_tasks addObject:task];
-        [task resume];
-        self.taskNameLabel.alpha = 1;
-        self.taskNameLabel.text = [subPaths objectAtIndex:0];
     }
+    
+    [[_tasks firstObject] resume];
+    self.taskNameLabel.alpha = 1;
+    self.taskNameLabel.text = [subPaths objectAtIndex:0];
 
 }
 
@@ -1086,8 +1087,6 @@
         ((UILabel *)[self.praiseFileLabelArray objectAtIndex:self.currentSelection]).text = @"";
         [self dismissModalViewControllerAnimated: YES];
     }
-    
-    
 }
 
 - (void) mediaPickerDidCancel: (MPMediaPickerController *) mediaPicker {
@@ -1105,13 +1104,9 @@
     if (![[NSFileManager defaultManager] fileExistsAtPath:plistPath])
 	{
 		// if not in documents, get property list from main bundle
-
         [[NSFileManager defaultManager]copyItemAtPath: [[NSBundle mainBundle] pathForResource:@"PraisePrefs" ofType:@"plist"] toPath:plistPath error: nil];
-
 	}
-    
-    
-    
+
     NSData *plistXML = [[NSFileManager defaultManager] contentsAtPath:plistPath];
 	NSString *errorDesc = nil;
 	NSPropertyListFormat format;
@@ -1135,12 +1130,10 @@
     if (![[NSFileManager defaultManager] fileExistsAtPath:plistPath])
 	{
 		// if not in documents, get property list from main bundle
-		
         NSError *newError = nil;
         [[NSFileManager defaultManager]copyItemAtPath: [[NSBundle mainBundle] pathForResource:@"PraisePrefs" ofType:@"plist"] toPath:plistPath error: &newError];
 
 	}
-
 	// create NSData from dictionary
     NSData *plistFile = [NSPropertyListSerialization dataFromPropertyList:plistDict format:NSPropertyListXMLFormat_v1_0 errorDescription:&error];
 	
@@ -1313,9 +1306,17 @@ didCompleteWithError:(NSError *)error
             self.taskNameLabel.text = [subPaths objectAtIndex:([_tasks indexOfObject:task]+1)];
             NSLog(@"%@",self.taskNameLabel.text);
         }
+        
+        NSString *path = [subPaths objectAtIndex:[_tasks indexOfObject:task]];
+        NSString *fullPath = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingString:[NSString stringWithFormat:@"/LogData/%@",path]];
+        NSLog(@"previously, there are %@ in the directory",[[NSFileManager defaultManager] contentsOfDirectoryAtPath:[[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingString:@"/LogData"] error:nil]);
+        [[NSFileManager defaultManager] removeItemAtPath:fullPath error:NULL];
+        NSLog(@"after, there are %@ in the directory",[[NSFileManager defaultManager] contentsOfDirectoryAtPath:[[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]stringByAppendingString:@"/LogData"] error:nil]);
         [_tasks removeObject:task];
-    
-        if ([_tasks count] == 0) {
+        [subPaths removeObject:path];
+        if ([_tasks count]>0) {
+            [[_tasks firstObject] resume];
+        }else {
             self.taskNameLabel.alpha = 0;
             _sendLogsButton.hidden = NO;
             _uploadProgressBar.hidden = YES;
@@ -1333,34 +1334,26 @@ didCompleteWithError:(NSError *)error
                 _sendLogsButton.hidden = NO;
                 _logSizeLabel.hidden = NO;
             }
-        
-
-        
-            
 //needs to delete the files......
-            for (NSString *path in subPaths) {
-                
-                NSString *fullPath = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingString:[NSString stringWithFormat:@"/LogData/%@",path]];
-                
-                NSLog(@"previously, there are %@ in the directory",[[NSFileManager defaultManager] contentsOfDirectoryAtPath:[[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingString:@"/LogData"] error:nil]);
-                
-                [[NSFileManager defaultManager] removeItemAtPath:fullPath error:NULL];
-                
-               NSLog(@"after, there are %@ in the directory",[[NSFileManager defaultManager] contentsOfDirectoryAtPath:[[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]stringByAppendingString:@"/LogData"] error:nil]);
-                
-            }
-
-        
+//            for (NSString *path in subPaths) {
+//                
+//                NSString *fullPath = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingString:[NSString stringWithFormat:@"/LogData/%@",path]];
+//                
+//                NSLog(@"previously, there are %@ in the directory",[[NSFileManager defaultManager] contentsOfDirectoryAtPath:[[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingString:@"/LogData"] error:nil]);
+//                
+//                [[NSFileManager defaultManager] removeItemAtPath:fullPath error:NULL];
+//                
+//               NSLog(@"after, there are %@ in the directory",[[NSFileManager defaultManager] contentsOfDirectoryAtPath:[[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]stringByAppendingString:@"/LogData"] error:nil]);
+//                
+//            }
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Upload Successful"
                                                         message:@"Thanks for your contribution! Enjoy!"
                                                        delegate:nil
                                               cancelButtonTitle:@"OK"
                                               otherButtonTitles:nil];
             [alert show];
-            
         }
     }
-    
     else if(whetherIsFirstTime == YES){
         
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No network connection"
@@ -1371,11 +1364,7 @@ didCompleteWithError:(NSError *)error
         [alert setTag:2];
         [alert show];
         whetherIsFirstTime = NO;
-
-        
-        
     }
-    
 }
 
 - (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask
@@ -1387,7 +1376,7 @@ didCompleteWithError:(NSError *)error
 -(void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didSendBodyData:(int64_t)bytesSent totalBytesSent:(int64_t)totalBytesSent totalBytesExpectedToSend:(int64_t)totalBytesExpectedToSend{
     float progress = (float)totalBytesSent / (float)totalBytesExpectedToSend;
     NSLog(@"the progress is %f", progress);
-    self.taskNameLabel.text = [NSString stringWithFormat:@"self.taskNameLabel.text %.0f%%",progress*100];
+    self.taskNameLabel.text = [NSString stringWithFormat:@"%@ %.0f%%",[subPaths objectAtIndex:[_tasks indexOfObject:task]],progress*100];
     [_uploadProgressBar setProgress:progress];
 }
 
