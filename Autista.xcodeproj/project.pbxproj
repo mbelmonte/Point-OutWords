@@ -147,7 +147,7 @@
 		49C2C6E8190C303E0019600C /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 49C2C6E1190C303D0019600C /* zip.c */; };
 		49C2C70F190DEA550019600C /* CC BY-SA 3.0 Unported License in Resources */ = {isa = PBXBuildFile; fileRef = 49C2C706190DEA550019600C /* CC BY-SA 3.0 Unported License */; };
 		49C2C710190DEA550019600C /* fdl-1.3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 49C2C707190DEA550019600C /* fdl-1.3.txt */; };
-		49C2C712190DEA550019600C /* minizip License in Resources */ = {isa = PBXBuildFile; fileRef = 49C2C709190DEA550019600C /* minizip License */; };
+		49C2C712190DEA550019600C /* ZipArchive in Resources */ = {isa = PBXBuildFile; fileRef = 49C2C709190DEA550019600C /* ZipArchive */; };
 		49C2C713190DEA550019600C /* minizip license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 49C2C70A190DEA550019600C /* minizip license.txt */; };
 		49C2C714190DEA550019600C /* OpenEARS License in Resources */ = {isa = PBXBuildFile; fileRef = 49C2C70B190DEA550019600C /* OpenEARS License */; };
 		49C2C715190DEA550019600C /* SBJSON License in Resources */ = {isa = PBXBuildFile; fileRef = 49C2C70C190DEA550019600C /* SBJSON License */; };
@@ -634,6 +634,7 @@
 		8FB4C26D1A21439300FFEC76 /* Water_Syll_3_c_Tanu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4C2691A21439300FFEC76 /* Water_Syll_3_c_Tanu.caf */; };
 		8FB6B13F18E8FCEA009CDB74 /* KeyboardButton_hightlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FB6B13E18E8FCEA009CDB74 /* KeyboardButton_hightlighted.png */; };
 		8FEFF5581AC7C01B001A95F9 /* PuzzleDataWithPhonetics_Old.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FEFF5571AC7C01B001A95F9 /* PuzzleDataWithPhonetics_Old.plist */; };
+		DFCFCD841CC1484900D29F95 /* OpenEarsDistribution in Resources */ = {isa = PBXBuildFile; fileRef = DFCFCD831CC1484900D29F95 /* OpenEarsDistribution */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -788,7 +789,7 @@
 		49C2C6E2190C303E0019600C /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zip.h; path = Autista/ZipArchive/minizip/zip.h; sourceTree = "<group>"; };
 		49C2C706190DEA550019600C /* CC BY-SA 3.0 Unported License */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "CC BY-SA 3.0 Unported License"; path = "Licenses/CC BY-SA 3.0 Unported License"; sourceTree = "<group>"; };
 		49C2C707190DEA550019600C /* fdl-1.3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "fdl-1.3.txt"; path = "Licenses/fdl-1.3.txt"; sourceTree = "<group>"; };
-		49C2C709190DEA550019600C /* minizip License */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "minizip License"; path = "Licenses/minizip License"; sourceTree = "<group>"; };
+		49C2C709190DEA550019600C /* ZipArchive */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; name = ZipArchive; path = /Users/cmp3cookb/Documents/Autista/Autista/ZipArchive/ZipArchive; sourceTree = "<absolute>"; };
 		49C2C70A190DEA550019600C /* minizip license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "minizip license.txt"; path = "Licenses/minizip license.txt"; sourceTree = "<group>"; };
 		49C2C70B190DEA550019600C /* OpenEARS License */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "OpenEARS License"; path = "Licenses/OpenEARS License"; sourceTree = "<group>"; };
 		49C2C70C190DEA550019600C /* SBJSON License */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "SBJSON License"; path = "Licenses/SBJSON License"; sourceTree = "<group>"; };
@@ -1335,6 +1336,7 @@
 		8FB4C2691A21439300FFEC76 /* Water_Syll_3_c_Tanu.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Water_Syll_3_c_Tanu.caf; sourceTree = "<group>"; };
 		8FB6B13E18E8FCEA009CDB74 /* KeyboardButton_hightlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KeyboardButton_hightlighted.png; sourceTree = "<group>"; };
 		8FEFF5571AC7C01B001A95F9 /* PuzzleDataWithPhonetics_Old.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PuzzleDataWithPhonetics_Old.plist; path = Autista/Models/PuzzleDataWithPhonetics_Old.plist; sourceTree = "<group>"; };
+		DFCFCD831CC1484900D29F95 /* OpenEarsDistribution */ = {isa = PBXFileReference; lastKnownFileType = folder; name = OpenEarsDistribution; path = ../../OpenEarsDistribution; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1375,6 +1377,7 @@
 		007663FF189D8880009FE8DE /* OpenEars */ = {
 			isa = PBXGroup;
 			children = (
+				DFCFCD831CC1484900D29F95 /* OpenEarsDistribution */,
 				00766400189D8880009FE8DE /* AcousticModelEnglish.bundle */,
 				00766401189D8880009FE8DE /* AcousticModelSpanish.bundle */,
 				00766402189D8880009FE8DE /* OpenEars.framework */,
@@ -1953,7 +1956,7 @@
 				49C2C706190DEA550019600C /* CC BY-SA 3.0 Unported License */,
 				49C2C707190DEA550019600C /* fdl-1.3.txt */,
 				8F24ACBB1AC730BE009B2CC7 /* mpl.txt */,
-				49C2C709190DEA550019600C /* minizip License */,
+				49C2C709190DEA550019600C /* ZipArchive */,
 				49C2C70A190DEA550019600C /* minizip license.txt */,
 				49C2C70B190DEA550019600C /* OpenEARS License */,
 				49C2C70C190DEA550019600C /* SBJSON License */,
@@ -2857,7 +2860,7 @@
 		8DA3DD0A1604C6E20031950A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Shashwat Parhi";
 				TargetAttributes = {
 					8DA3DD121604C6E20031950A = {
@@ -3262,6 +3265,7 @@
 				8D8890BC16BD8DAB003FA187 /* Book02O.png in Resources */,
 				8D8890BD16BD8DAB003FA187 /* Book03O.png in Resources */,
 				8D8890BE16BD8DAB003FA187 /* Book04K.png in Resources */,
+				DFCFCD841CC1484900D29F95 /* OpenEarsDistribution in Resources */,
 				8D8890BF16BD8DAB003FA187 /* Boy01B.png in Resources */,
 				8D8890C016BD8DAB003FA187 /* Boy02O.png in Resources */,
 				8D8890C116BD8DAB003FA187 /* Boy03Y.png in Resources */,
@@ -3308,7 +3312,7 @@
 				8D8890DC16BD8DAB003FA187 /* Pencil05I.png in Resources */,
 				8D8890DD16BD8DAB003FA187 /* Pencil06L.png in Resources */,
 				8D8890DE16BD8DAB003FA187 /* Table01T.png in Resources */,
-				49C2C712190DEA550019600C /* minizip License in Resources */,
+				49C2C712190DEA550019600C /* ZipArchive in Resources */,
 				2054BD2F18364B9300DFFC44 /* Pencil_Syll_2_b_Tanu.caf in Resources */,
 				8F3082741A3E1E3F00A09E92 /* Racket_Syll_1_a_Tanu.caf in Resources */,
 				8D8890DF16BD8DAB003FA187 /* Table02A.png in Resources */,
@@ -3557,9 +3561,11 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Matthew Belmonte (LLD75X66LG)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Matthew Belmonte (LLD75X66LG)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Matthew Belmonte (BAQDE8A28B)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Matthew Belmonte (BAQDE8A28B)";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -3573,8 +3579,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "ca8088b4-7848-4e1e-9dc6-cf3300f6bbb0";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "ca8088b4-7848-4e1e-9dc6-cf3300f6bbb0";
+				PROVISIONING_PROFILE = "98f00f2d-3815-495e-b6bb-6b47effd0e81";
+				"PROVISIONING_PROFILE[sdk=*]" = "98f00f2d-3815-495e-b6bb-6b47effd0e81";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -3589,9 +3595,10 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Matthew Belmonte (LLD75X66LG)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Matthew Belmonte (LLD75X66LG)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Matthew Belmonte (BAQDE8A28B)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Matthew Belmonte (BAQDE8A28B)";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -3599,8 +3606,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "ca8088b4-7848-4e1e-9dc6-cf3300f6bbb0";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "ca8088b4-7848-4e1e-9dc6-cf3300f6bbb0";
+				PROVISIONING_PROFILE = "98f00f2d-3815-495e-b6bb-6b47effd0e81";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "98f00f2d-3815-495e-b6bb-6b47effd0e81";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
@@ -3610,21 +3617,24 @@
 		8DA3DD4D1604C6E30031950A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Matthew Belmonte (LLD75X66LG)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Matthew Belmonte (LLD75X66LG)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/",
 					"$(SRCROOT)/Framework",
+					"$(PROJECT_DIR)/Framework",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Autista/Autista-Prefix.pch";
 				INFOPLIST_FILE = "Autista/Autista-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.autismcollaborative.autistagameNTU;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ca8088b4-7848-4e1e-9dc6-cf3300f6bbb0";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "ca8088b4-7848-4e1e-9dc6-cf3300f6bbb0";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -3632,21 +3642,24 @@
 		8DA3DD4E1604C6E30031950A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Matthew Belmonte (LLD75X66LG)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Matthew Belmonte (LLD75X66LG)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/",
 					"$(SRCROOT)/Framework",
+					"$(PROJECT_DIR)/Framework",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Autista/Autista-Prefix.pch";
 				INFOPLIST_FILE = "Autista/Autista-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.autismcollaborative.autistagameNTU;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ca8088b4-7848-4e1e-9dc6-cf3300f6bbb0";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "ca8088b4-7848-4e1e-9dc6-cf3300f6bbb0";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

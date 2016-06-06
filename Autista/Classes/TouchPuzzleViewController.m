@@ -344,16 +344,17 @@
         NSLog(@"Touch Tapped");
 	}
 }
-
+int32_t touchcount=0; //!!csl change
 - (void)handlePanGesture:(UIPanGestureRecognizer *)gesture
 {
-	if (gesture.state == UIGestureRecognizerStateBegan) {
+    
+    if (gesture.state == UIGestureRecognizerStateBegan) {
 		CGPoint initialTouchPoint = [gesture locationOfTouch:0 inView:self.view];
         
         [[EventLogger sharedLogger] logEvent:LogEventCodeTouchBegan eventInfo:@{@"X": [NSString stringWithFormat:@"%+.1f", initialTouchPoint.x], @"Y": [NSString stringWithFormat:@"%+.1f", initialTouchPoint.y]}];
         
 		_draggedPiece = [self hitTest:initialTouchPoint];
-		
+        touchcount=0;
 		if (_draggedPiece == nil)
 			return;
 		
@@ -390,12 +391,17 @@
 		
 		[[EventLogger sharedLogger] logEvent:LogEventCodePieceDragBegan eventInfo:@{@"Piece": _draggedPiece.title,  @"X": locationX, @"Y": locationY}];
         NSLog(@"Touch Dragged");
+        
 	}
     else if (gesture.state == UIGestureRecognizerStateChanged) {
         CGPoint touchLocation = [gesture locationInView:self.view];
-        
+        if (touchcount>=10)
+        {
         [[EventLogger sharedLogger] logEvent:LogEventCodeTouchMoved eventInfo:@{@"X": [NSString stringWithFormat:@"%+.1f", touchLocation.x], @"Y": [NSString stringWithFormat:@"%+.1f", touchLocation.y]}];
         NSLog(@"Touch Moved");
+            touchcount=0;
+        }
+        touchcount++;
         
 		if (_draggedPiece != nil) {
 			CGPoint newLocation = [gesture locationOfTouch:0 inView:self.view];
