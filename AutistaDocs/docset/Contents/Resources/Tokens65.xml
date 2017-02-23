@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/tests.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/tests</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>tests.h</DeclaredIn>
+            
+			
+			<NodeRef refid="65"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/tests/setUp</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>tests.m</DeclaredIn>
+			
+			<Declaration>- (void)setUp</Declaration>
+			
+			
+			<Anchor>//api/name/setUp</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/tests/tearDown</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>tests.m</DeclaredIn>
+			
+			<Declaration>- (void)tearDown</Declaration>
+			
+			
+			<Anchor>//api/name/tearDown</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/tests/testExpandNormalZipFile</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>tests.m</DeclaredIn>
+			
+			<Declaration>- (void)testExpandNormalZipFile</Declaration>
+			
+			
+			<Anchor>//api/name/testExpandNormalZipFile</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/tests/testExpandPasswordZipFileCorrectly</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>tests.m</DeclaredIn>
+			
+			<Declaration>- (void)testExpandPasswordZipFileCorrectly</Declaration>
+			
+			
+			<Anchor>//api/name/testExpandPasswordZipFileCorrectly</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/tests/testExpandPasswordZipFileWithWrongPassword</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>tests.m</DeclaredIn>
+			
+			<Declaration>- (void)testExpandPasswordZipFileWithWrongPassword</Declaration>
+			
+			
+			<Anchor>//api/name/testExpandPasswordZipFileWithWrongPassword</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/tests/ErrorMessage:</TokenIdentifier>
+			<Abstract type="html">Delegate method to be notified of errors
+    
+    ZipArchive calls this selector on the delegate when errors are encountered.
+    </Abstract>
+			<DeclaredIn>tests.m</DeclaredIn>
+			
+			<Declaration>- (void)ErrorMessage:(NSString *)msg</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>msg</Name>
+					<Abstract type="html">a string describing the error.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">void</Abstract></ReturnValue>
+			<Anchor>//api/name/ErrorMessage:</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/tests/tempDir</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>tests.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)tempDir</Declaration>
+			
+			
+			<Anchor>//api/name/tempDir</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/tests/createRandomFiles:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>tests.m</DeclaredIn>
+			
+			<Declaration>- (NSArray *)createRandomFiles:(int)count</Declaration>
+			
+			
+			<Anchor>//api/name/createRandomFiles:</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/tests/createZipArchiveWithFiles:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>tests.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)createZipArchiveWithFiles:(NSArray *)files</Declaration>
+			
+			
+			<Anchor>//api/name/createZipArchiveWithFiles:</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/tests/createZipArchiveWithFiles:andPassword:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>tests.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)createZipArchiveWithFiles:(NSArray *)files andPassword:(NSString *)password</Declaration>
+			
+			
+			<Anchor>//api/name/createZipArchiveWithFiles:andPassword:</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

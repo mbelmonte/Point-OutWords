@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/InfoViewPageOne.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/InfoViewPageOne</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoViewPageOne.h</DeclaredIn>
+            
+			
+			<NodeRef refid="13"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoViewPageOne/setTitleLabel:</TokenIdentifier>
+			<Abstract type="html">@name Properties
+-----------------------------------------------------------------------------</Abstract>
+			<DeclaredIn>InfoViewPageOne.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *titleLabel</Declaration>
+			
+			
+			<Anchor>//api/name/titleLabel</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoViewPageOne/titleLabel</TokenIdentifier>
+			<Abstract type="html">@name Properties
+-----------------------------------------------------------------------------</Abstract>
+			<DeclaredIn>InfoViewPageOne.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *titleLabel</Declaration>
+			
+			
+			<Anchor>//api/name/titleLabel</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/InfoViewPageOne/titleLabel</TokenIdentifier>
+			<Abstract type="html">@name Properties
+-----------------------------------------------------------------------------</Abstract>
+			<DeclaredIn>InfoViewPageOne.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *titleLabel</Declaration>
+			
+			
+			<Anchor>//api/name/titleLabel</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoViewPageOne/setTextView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoViewPageOne.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UITextView *textView</Declaration>
+			
+			
+			<Anchor>//api/name/textView</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoViewPageOne/textView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoViewPageOne.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UITextView *textView</Declaration>
+			
+			
+			<Anchor>//api/name/textView</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/InfoViewPageOne/textView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoViewPageOne.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UITextView *textView</Declaration>
+			
+			
+			<Anchor>//api/name/textView</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoViewPageOne/layoutSubviews</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoViewPageOne.h</DeclaredIn>
+			
+			<Declaration>- (void)layoutSubviews</Declaration>
+			
+			
+			<Anchor>//api/name/layoutSubviews</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoViewPageOne/initWithFrame:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoViewPageOne.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithFrame:(CGRect)frame</Declaration>
+			
+			
+			<Anchor>//api/name/initWithFrame:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

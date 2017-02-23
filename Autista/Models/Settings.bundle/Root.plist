@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Title</key>
+			<string>User Info</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>AutocapitalizationType</key>
+			<string>Sentences</string>
+			<key>AutocorrectionType</key>
+			<string>No</string>
+			<key>DefaultValue</key>
+			<string></string>
+			<key>IsSecure</key>
+			<false/>
+			<key>Key</key>
+			<string>name_preference</string>
+			<key>KeyboardType</key>
+			<string>Alphabet</string>
+			<key>Title</key>
+			<string>Username (DO NOT use your real name!)</string>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Gender</string>
+			<key>Key</key>
+			<string>gender_preference</string>
+			<key>DefaultValue</key>
+			<string>0</string>
+			<key>Titles</key>
+			<array>
+				<string>Male</string>
+				<string>Female</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<integer>1</integer>
+				<integer>2</integer>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string>Birth Date (enter in this format: yyyy-mm-dd)</string>
+			<key>KeyboardType</key>
+			<string>NumberPad</string>
+			<key>Key</key>
+			<string>dob_preference</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Logs</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<false/>
+			<key>Key</key>
+			<string>sendData_preference</string>
+			<key>Title</key>
+			<string>Send Anonymous Data</string>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<false/>
+			<key>Key</key>
+			<string>reset_userdata</string>
+			<key>Title</key>
+			<string>Reset All User Data</string>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+		</dict>
+	</array>
+	<key>StringsTable</key>
+	<string>Root</string>
+	<key>Title</key>
+	<dict>
+		<key>Title</key>
+		<string>User Info</string>
+		<key>Type</key>
+		<string>PSGroupSpecifier</string>
+	</dict>
+</dict>
+</plist>

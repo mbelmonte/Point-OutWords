@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSFileManager+ZipArchive.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSFileManager(ZipArchive)</TokenIdentifier>
+			<Abstract type="html">//  ZipArchive.m
+//
+//
+//  Created by aish on 08-9-11.
+//  acsolu@gmail.com
+//  Copyright 2008  Inc. All rights reserved.
+//</Abstract>
+			<DeclaredIn>ZipArchive.m</DeclaredIn>
+            
+			
+			<NodeRef refid="68"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSFileManager/_attributesOfItemAtPath:followingSymLinks:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ZipArchive.m</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)_attributesOfItemAtPath:(NSString *)path followingSymLinks:(BOOL)followingSymLinks error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/_attributesOfItemAtPath:followingSymLinks:error:</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SBJsonStreamParserAccumulator.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SBJsonStreamParserAccumulator</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SBJsonStreamParserAccumulator.h</DeclaredIn>
+            
+			
+			<NodeRef refid="25"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserAccumulator/setValue:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SBJsonStreamParserAccumulator.h</DeclaredIn>
+			
+			<Declaration>@property (copy) id value</Declaration>
+			
+			
+			<Anchor>//api/name/value</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserAccumulator/value</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SBJsonStreamParserAccumulator.h</DeclaredIn>
+			
+			<Declaration>@property (copy) id value</Declaration>
+			
+			
+			<Anchor>//api/name/value</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SBJsonStreamParserAccumulator/value</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SBJsonStreamParserAccumulator.h</DeclaredIn>
+			
+			<Declaration>@property (copy) id value</Declaration>
+			
+			
+			<Anchor>//api/name/value</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserAccumulator/parser:foundArray:</TokenIdentifier>
+			<Abstract type="html">Called if a JSON array is found</Abstract>
+			<DeclaredIn>SBJsonStreamParserAccumulator.m</DeclaredIn>
+			
+			<Declaration>- (void)parser:(SBJsonStreamParser *)parser foundArray:(NSArray *)array</Declaration>
+			
+			
+			<Anchor>//api/name/parser:foundArray:</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamParserAccumulator/parser:foundObject:</TokenIdentifier>
+			<Abstract type="html">Called when a JSON object is found</Abstract>
+			<DeclaredIn>SBJsonStreamParserAccumulator.m</DeclaredIn>
+			
+			<Declaration>- (void)parser:(SBJsonStreamParser *)parser foundObject:(NSDictionary *)dict</Declaration>
+			
+			
+			<Anchor>//api/name/parser:foundObject:</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

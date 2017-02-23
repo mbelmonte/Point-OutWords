@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>A U T I S T A</string>
+		<key>text</key>
+		<string>Autista™  is designed to help children improve their verbal and fine motor skills and is especially useful for children with developmental delays. The app involves completing puzzles using a variety of activities like dragging pieces, typing out words and pronouncing syllables.</string>
+		<key>imageName</key>
+		<string>mrglogo.png</string>
+		<key>offsetX</key>
+		<integer>-568</integer>
+		<key>offsetY</key>
+		<integer>-700</integer>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Behind the scenes</string>
+		<key>text</key>
+		<string>The more Autista is used, the more it learns and adapts to your child&apos;s specific needs. For example, the app can detect repetitive behavior and advance gameplay accordingly.
+
+The app also logs all user interactions and analyses this information to provide a better learning experience for your child.</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>You can help</string>
+		<key>text</key>
+		<string>Information logged by the app can prove invaluable to research in the field of Autism. You can help us by enabling Send Anonymous Data in iPad Settings. Below are the partners responsible for this app.</string>
+		<key>imageName</key>
+		<string>logos.png</string>
+		<key>offsetX</key>
+		<integer>-855</integer>
+		<key>offsetY</key>
+		<integer>-280</integer>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Special LONG PRESS Buttons!</string>
+		<key>text</key>
+		<string>You can completely customize the app for your child, by holding down on the Admin Button for about 3 sec. Similarly there is a Back button which works only on Long Press. Obviously, we want to make it hard for kids to access them.</string>
+		<key>imageName</key>
+		<string>InfoViewAdminAccess.png</string>
+		<key>offsetX</key>
+		<integer>-150</integer>
+		<key>offsetY</key>
+		<integer>0</integer>
+	</dict>
+</array>
+</plist>

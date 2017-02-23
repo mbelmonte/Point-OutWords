@@ -1,0 +1,4382 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>AdminViewController Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Autista </a></h1>
+				<a id="developerHome" href="../index.html">The Groden Center, Inc.</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">AdminViewController Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/_tasks">&nbsp;&nbsp;&nbsp;&nbsp;_tasks</option>
+	
+	<option value="//api/name/_urlSession">&nbsp;&nbsp;&nbsp;&nbsp;_urlSession</option>
+	
+	<option value="//api/name/adjustDragFrequency">&nbsp;&nbsp;&nbsp;&nbsp;adjustDragFrequency</option>
+	
+	<option value="//api/name/adjustSpeakFrequency">&nbsp;&nbsp;&nbsp;&nbsp;adjustSpeakFrequency</option>
+	
+	<option value="//api/name/adjustTypeFrequency">&nbsp;&nbsp;&nbsp;&nbsp;adjustTypeFrequency</option>
+	
+	<option value="//api/name/allPromptArray">&nbsp;&nbsp;&nbsp;&nbsp;allPromptArray</option>
+	
+	<option value="//api/name/ampThresh">&nbsp;&nbsp;&nbsp;&nbsp;ampThresh</option>
+	
+	<option value="//api/name/applicationDocumentsDirectory">&nbsp;&nbsp;&nbsp;&nbsp;applicationDocumentsDirectory</option>
+	
+	<option value="//api/name/awesome_Btn_Default">&nbsp;&nbsp;&nbsp;&nbsp;awesome_Btn_Default</option>
+	
+	<option value="//api/name/awesome_Btn_Play">&nbsp;&nbsp;&nbsp;&nbsp;awesome_Btn_Play</option>
+	
+	<option value="//api/name/awesome_Btn_Record">&nbsp;&nbsp;&nbsp;&nbsp;awesome_Btn_Record</option>
+	
+	<option value="//api/name/awesome_descLabel">&nbsp;&nbsp;&nbsp;&nbsp;awesome_descLabel</option>
+	
+	<option value="//api/name/awesome_fileLabel">&nbsp;&nbsp;&nbsp;&nbsp;awesome_fileLabel</option>
+	
+	<option value="//api/name/awesome_itunes_Btn_Play">&nbsp;&nbsp;&nbsp;&nbsp;awesome_itunes_Btn_Play</option>
+	
+	<option value="//api/name/backgroundMusicLabel">&nbsp;&nbsp;&nbsp;&nbsp;backgroundMusicLabel</option>
+	
+	<option value="//api/name/backgroundMusicSwitch">&nbsp;&nbsp;&nbsp;&nbsp;backgroundMusicSwitch</option>
+	
+	<option value="//api/name/changeTypeScaleSignificancy">&nbsp;&nbsp;&nbsp;&nbsp;changeTypeScaleSignificancy</option>
+	
+	<option value="//api/name/closeOverlayButton">&nbsp;&nbsp;&nbsp;&nbsp;closeOverlayButton</option>
+	
+	<option value="//api/name/conn">&nbsp;&nbsp;&nbsp;&nbsp;conn</option>
+	
+	<option value="//api/name/currentSelection">&nbsp;&nbsp;&nbsp;&nbsp;currentSelection</option>
+	
+	<option value="//api/name/defaultPlayBtnArray">&nbsp;&nbsp;&nbsp;&nbsp;defaultPlayBtnArray</option>
+	
+	<option value="//api/name/defaultPromptArray">&nbsp;&nbsp;&nbsp;&nbsp;defaultPromptArray</option>
+	
+	<option value="//api/name/defaultView">&nbsp;&nbsp;&nbsp;&nbsp;defaultView</option>
+	
+	<option value="//api/name/generalLabel">&nbsp;&nbsp;&nbsp;&nbsp;generalLabel</option>
+	
+	<option value="//api/name/generalPointLabel">&nbsp;&nbsp;&nbsp;&nbsp;generalPointLabel</option>
+	
+	<option value="//api/name/generalSlidersInfoLabel">&nbsp;&nbsp;&nbsp;&nbsp;generalSlidersInfoLabel</option>
+	
+	<option value="//api/name/generalSpeakLabel">&nbsp;&nbsp;&nbsp;&nbsp;generalSpeakLabel</option>
+	
+	<option value="//api/name/generalTypeLabel">&nbsp;&nbsp;&nbsp;&nbsp;generalTypeLabel</option>
+	
+	<option value="//api/name/generalView">&nbsp;&nbsp;&nbsp;&nbsp;generalView</option>
+	
+	<option value="//api/name/guidedModeInfoLabel">&nbsp;&nbsp;&nbsp;&nbsp;guidedModeInfoLabel</option>
+	
+	<option value="//api/name/guidedModeSwitch">&nbsp;&nbsp;&nbsp;&nbsp;guidedModeSwitch</option>
+	
+	<option value="//api/name/highlightKeySwitch">&nbsp;&nbsp;&nbsp;&nbsp;highlightKeySwitch</option>
+	
+	<option value="//api/name/iTunesPlayList">&nbsp;&nbsp;&nbsp;&nbsp;iTunesPlayList</option>
+	
+	<option value="//api/name/indicator">&nbsp;&nbsp;&nbsp;&nbsp;indicator</option>
+	
+	<option value="//api/name/isEdited">&nbsp;&nbsp;&nbsp;&nbsp;isEdited</option>
+	
+	<option value="//api/name/itunesPlayBtnArray">&nbsp;&nbsp;&nbsp;&nbsp;itunesPlayBtnArray</option>
+	
+	<option value="//api/name/itunesView">&nbsp;&nbsp;&nbsp;&nbsp;itunesView</option>
+	
+	<option value="//api/name/itunes_Btn">&nbsp;&nbsp;&nbsp;&nbsp;itunes_Btn</option>
+	
+	<option value="//api/name/keyHighlightingInfoLabel">&nbsp;&nbsp;&nbsp;&nbsp;keyHighlightingInfoLabel</option>
+	
+	<option value="//api/name/logFolderPath">&nbsp;&nbsp;&nbsp;&nbsp;logFolderPath</option>
+	
+	<option value="//api/name/logSizeLabel">&nbsp;&nbsp;&nbsp;&nbsp;logSizeLabel</option>
+	
+	<option value="//api/name/myPlayer">&nbsp;&nbsp;&nbsp;&nbsp;myPlayer</option>
+	
+	<option value="//api/name/player">&nbsp;&nbsp;&nbsp;&nbsp;player</option>
+	
+	<option value="//api/name/pointModeLabel">&nbsp;&nbsp;&nbsp;&nbsp;pointModeLabel</option>
+	
+	<option value="//api/name/pointModeSelectingDistanceLabel">&nbsp;&nbsp;&nbsp;&nbsp;pointModeSelectingDistanceLabel</option>
+	
+	<option value="//api/name/pointModeSelectingDistanceSliderInfoLabel">&nbsp;&nbsp;&nbsp;&nbsp;pointModeSelectingDistanceSliderInfoLabel</option>
+	
+	<option value="//api/name/pointModeSnapBackInfoLabel">&nbsp;&nbsp;&nbsp;&nbsp;pointModeSnapBackInfoLabel</option>
+	
+	<option value="//api/name/pointModeSnapBackLabel">&nbsp;&nbsp;&nbsp;&nbsp;pointModeSnapBackLabel</option>
+	
+	<option value="//api/name/pointModeSnappingDistanceLabel">&nbsp;&nbsp;&nbsp;&nbsp;pointModeSnappingDistanceLabel</option>
+	
+	<option value="//api/name/pointModeSnappingDistanceSliderInfoLabel">&nbsp;&nbsp;&nbsp;&nbsp;pointModeSnappingDistanceSliderInfoLabel</option>
+	
+	<option value="//api/name/pointModeView">&nbsp;&nbsp;&nbsp;&nbsp;pointModeView</option>
+	
+	<option value="//api/name/praiseFileLabelArray">&nbsp;&nbsp;&nbsp;&nbsp;praiseFileLabelArray</option>
+	
+	<option value="//api/name/praiseFileLabelArrayForPlist">&nbsp;&nbsp;&nbsp;&nbsp;praiseFileLabelArrayForPlist</option>
+	
+	<option value="//api/name/praisePromptEasyLabel">&nbsp;&nbsp;&nbsp;&nbsp;praisePromptEasyLabel</option>
+	
+	<option value="//api/name/praisePromptHardLabel">&nbsp;&nbsp;&nbsp;&nbsp;praisePromptHardLabel</option>
+	
+	<option value="//api/name/praisePromptInfoLabel">&nbsp;&nbsp;&nbsp;&nbsp;praisePromptInfoLabel</option>
+	
+	<option value="//api/name/praisePromptLabel">&nbsp;&nbsp;&nbsp;&nbsp;praisePromptLabel</option>
+	
+	<option value="//api/name/praisePromptMediumLabel">&nbsp;&nbsp;&nbsp;&nbsp;praisePromptMediumLabel</option>
+	
+	<option value="//api/name/praisePromptSwitch">&nbsp;&nbsp;&nbsp;&nbsp;praisePromptSwitch</option>
+	
+	<option value="//api/name/praisePromptTryAgainLabel">&nbsp;&nbsp;&nbsp;&nbsp;praisePromptTryAgainLabel</option>
+	
+	<option value="//api/name/previousTime">&nbsp;&nbsp;&nbsp;&nbsp;previousTime</option>
+	
+	<option value="//api/name/progressCircleView">&nbsp;&nbsp;&nbsp;&nbsp;progressCircleView</option>
+	
+	<option value="//api/name/promptSourceEdit_Btn">&nbsp;&nbsp;&nbsp;&nbsp;promptSourceEdit_Btn</option>
+	
+	<option value="//api/name/promptSourceSegment">&nbsp;&nbsp;&nbsp;&nbsp;promptSourceSegment</option>
+	
+	<option value="//api/name/promptSourceSelectionView">&nbsp;&nbsp;&nbsp;&nbsp;promptSourceSelectionView</option>
+	
+	<option value="//api/name/recordBtnArray">&nbsp;&nbsp;&nbsp;&nbsp;recordBtnArray</option>
+	
+	<option value="//api/name/recordFilePathArray">&nbsp;&nbsp;&nbsp;&nbsp;recordFilePathArray</option>
+	
+	<option value="//api/name/recordPlayBtnArray">&nbsp;&nbsp;&nbsp;&nbsp;recordPlayBtnArray</option>
+	
+	<option value="//api/name/recordView">&nbsp;&nbsp;&nbsp;&nbsp;recordView</option>
+	
+	<option value="//api/name/recorder">&nbsp;&nbsp;&nbsp;&nbsp;recorder</option>
+	
+	<option value="//api/name/resetAppButton">&nbsp;&nbsp;&nbsp;&nbsp;resetAppButton</option>
+	
+	<option value="//api/name/resetSlidersButton">&nbsp;&nbsp;&nbsp;&nbsp;resetSlidersButton</option>
+	
+	<option value="//api/name/responseData">&nbsp;&nbsp;&nbsp;&nbsp;responseData</option>
+	
+	<option value="//api/name/restoreButton">&nbsp;&nbsp;&nbsp;&nbsp;restoreButton</option>
+	
+	<option value="//api/name/sayModeDifficulty">&nbsp;&nbsp;&nbsp;&nbsp;sayModeDifficulty</option>
+	
+	<option value="//api/name/sayModeView">&nbsp;&nbsp;&nbsp;&nbsp;sayModeView</option>
+	
+	<option value="//api/name/scene">&nbsp;&nbsp;&nbsp;&nbsp;scene</option>
+	
+	<option value="//api/name/selectDistance">&nbsp;&nbsp;&nbsp;&nbsp;selectDistance</option>
+	
+	<option value="//api/name/sendLogsButton">&nbsp;&nbsp;&nbsp;&nbsp;sendLogsButton</option>
+	
+	<option value="//api/name/sideBarViewArray">&nbsp;&nbsp;&nbsp;&nbsp;sideBarViewArray</option>
+	
+	<option value="//api/name/snapBackInfoLabel">&nbsp;&nbsp;&nbsp;&nbsp;snapBackInfoLabel</option>
+	
+	<option value="//api/name/snapDistance">&nbsp;&nbsp;&nbsp;&nbsp;snapDistance</option>
+	
+	<option value="//api/name/snapbackSwitch">&nbsp;&nbsp;&nbsp;&nbsp;snapbackSwitch</option>
+	
+	<option value="//api/name/speakModeLabel">&nbsp;&nbsp;&nbsp;&nbsp;speakModeLabel</option>
+	
+	<option value="//api/name/speakModeSpeechLoudnessLabel">&nbsp;&nbsp;&nbsp;&nbsp;speakModeSpeechLoudnessLabel</option>
+	
+	<option value="//api/name/speakModeToleranceLabel">&nbsp;&nbsp;&nbsp;&nbsp;speakModeToleranceLabel</option>
+	
+	<option value="//api/name/subPaths">&nbsp;&nbsp;&nbsp;&nbsp;subPaths</option>
+	
+	<option value="//api/name/super_Btn_Default">&nbsp;&nbsp;&nbsp;&nbsp;super_Btn_Default</option>
+	
+	<option value="//api/name/super_Btn_Play">&nbsp;&nbsp;&nbsp;&nbsp;super_Btn_Play</option>
+	
+	<option value="//api/name/super_Btn_Record">&nbsp;&nbsp;&nbsp;&nbsp;super_Btn_Record</option>
+	
+	<option value="//api/name/super_descLabel">&nbsp;&nbsp;&nbsp;&nbsp;super_descLabel</option>
+	
+	<option value="//api/name/super_fileLabel">&nbsp;&nbsp;&nbsp;&nbsp;super_fileLabel</option>
+	
+	<option value="//api/name/super_itunes_Btn_Play">&nbsp;&nbsp;&nbsp;&nbsp;super_itunes_Btn_Play</option>
+	
+	<option value="//api/name/timer">&nbsp;&nbsp;&nbsp;&nbsp;timer</option>
+	
+	<option value="//api/name/try_Btn_Default">&nbsp;&nbsp;&nbsp;&nbsp;try_Btn_Default</option>
+	
+	<option value="//api/name/try_Btn_Play">&nbsp;&nbsp;&nbsp;&nbsp;try_Btn_Play</option>
+	
+	<option value="//api/name/try_Btn_Record">&nbsp;&nbsp;&nbsp;&nbsp;try_Btn_Record</option>
+	
+	<option value="//api/name/try_fileLabel">&nbsp;&nbsp;&nbsp;&nbsp;try_fileLabel</option>
+	
+	<option value="//api/name/try_itunes_Btn_Play">&nbsp;&nbsp;&nbsp;&nbsp;try_itunes_Btn_Play</option>
+	
+	<option value="//api/name/tryagain_descLabel">&nbsp;&nbsp;&nbsp;&nbsp;tryagain_descLabel</option>
+	
+	<option value="//api/name/typeModeView">&nbsp;&nbsp;&nbsp;&nbsp;typeModeView</option>
+	
+	<option value="//api/name/uploadCancelBtn">&nbsp;&nbsp;&nbsp;&nbsp;uploadCancelBtn</option>
+	
+	<option value="//api/name/uploadProgressBar">&nbsp;&nbsp;&nbsp;&nbsp;uploadProgressBar</option>
+	
+	<option value="//api/name/welldone_Btn_Default">&nbsp;&nbsp;&nbsp;&nbsp;welldone_Btn_Default</option>
+	
+	<option value="//api/name/welldone_Btn_Play">&nbsp;&nbsp;&nbsp;&nbsp;welldone_Btn_Play</option>
+	
+	<option value="//api/name/welldone_Btn_Record">&nbsp;&nbsp;&nbsp;&nbsp;welldone_Btn_Record</option>
+	
+	<option value="//api/name/welldone_descLabel">&nbsp;&nbsp;&nbsp;&nbsp;welldone_descLabel</option>
+	
+	<option value="//api/name/welldone_fileLabel">&nbsp;&nbsp;&nbsp;&nbsp;welldone_fileLabel</option>
+	
+	<option value="//api/name/welldone_itunes_Btn_Play">&nbsp;&nbsp;&nbsp;&nbsp;welldone_itunes_Btn_Play</option>
+	
+	<option value="//api/name/whetherAllowRecord_Switch">&nbsp;&nbsp;&nbsp;&nbsp;whetherAllowRecord_Switch</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/URLSession:dataTask:didReceiveData:">&nbsp;&nbsp;&nbsp;&nbsp;- URLSession:dataTask:didReceiveData:</option>
+	
+	<option value="//api/name/URLSession:task:didCompleteWithError:">&nbsp;&nbsp;&nbsp;&nbsp;- URLSession:task:didCompleteWithError:</option>
+	
+	<option value="//api/name/URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:">&nbsp;&nbsp;&nbsp;&nbsp;- URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:</option>
+	
+	<option value="//api/name/alertView:clickedButtonAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- alertView:clickedButtonAtIndex:</option>
+	
+	<option value="//api/name/audioRecorderDidFinishRecording:successfully:">&nbsp;&nbsp;&nbsp;&nbsp;- audioRecorderDidFinishRecording:successfully:</option>
+	
+	<option value="//api/name/chosePromptSoure:">&nbsp;&nbsp;&nbsp;&nbsp;- chosePromptSoure:</option>
+	
+	<option value="//api/name/connection:didFailWithError:">&nbsp;&nbsp;&nbsp;&nbsp;- connection:didFailWithError:</option>
+	
+	<option value="//api/name/connection:didReceiveData:">&nbsp;&nbsp;&nbsp;&nbsp;- connection:didReceiveData:</option>
+	
+	<option value="//api/name/connection:didReceiveResponse:">&nbsp;&nbsp;&nbsp;&nbsp;- connection:didReceiveResponse:</option>
+	
+	<option value="//api/name/connection:didSendBodyData:totalBytesWritten:totalBytesExpectedToWrite:">&nbsp;&nbsp;&nbsp;&nbsp;- connection:didSendBodyData:totalBytesWritten:totalBytesExpectedToWrite:</option>
+	
+	<option value="//api/name/connection:willCacheResponse:">&nbsp;&nbsp;&nbsp;&nbsp;- connection:willCacheResponse:</option>
+	
+	<option value="//api/name/connectionDidFinishLoading:">&nbsp;&nbsp;&nbsp;&nbsp;- connectionDidFinishLoading:</option>
+	
+	<option value="//api/name/createPlistForPraisePrefs">&nbsp;&nbsp;&nbsp;&nbsp;- createPlistForPraisePrefs</option>
+	
+	<option value="//api/name/detailViewSwitch:">&nbsp;&nbsp;&nbsp;&nbsp;- detailViewSwitch:</option>
+	
+	<option value="//api/name/didReceiveMemoryWarning">&nbsp;&nbsp;&nbsp;&nbsp;- didReceiveMemoryWarning</option>
+	
+	<option value="//api/name/editPromptSource:">&nbsp;&nbsp;&nbsp;&nbsp;- editPromptSource:</option>
+	
+	<option value="//api/name/handleAllowToRecord:">&nbsp;&nbsp;&nbsp;&nbsp;- handleAllowToRecord:</option>
+	
+	<option value="//api/name/handleAmpThreshChanged:">&nbsp;&nbsp;&nbsp;&nbsp;- handleAmpThreshChanged:</option>
+	
+	<option value="//api/name/handleBGMusicChanged:">&nbsp;&nbsp;&nbsp;&nbsp;- handleBGMusicChanged:</option>
+	
+	<option value="//api/name/handleCloseOverlayPressed:">&nbsp;&nbsp;&nbsp;&nbsp;- handleCloseOverlayPressed:</option>
+	
+	<option value="//api/name/handleResetAppPressed:">&nbsp;&nbsp;&nbsp;&nbsp;- handleResetAppPressed:</option>
+	
+	<option value="//api/name/handleResetSlidersPressed:">&nbsp;&nbsp;&nbsp;&nbsp;- handleResetSlidersPressed:</option>
+	
+	<option value="//api/name/handleSendLogDataPressed:">&nbsp;&nbsp;&nbsp;&nbsp;- handleSendLogDataPressed:</option>
+	
+	<option value="//api/name/handleSideBarPressed:">&nbsp;&nbsp;&nbsp;&nbsp;- handleSideBarPressed:</option>
+	
+	<option value="//api/name/handleSliderChangedValue:">&nbsp;&nbsp;&nbsp;&nbsp;- handleSliderChangedValue:</option>
+	
+	<option value="//api/name/initWithNibName:bundle:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithNibName:bundle:</option>
+	
+	<option value="//api/name/itunesSelection:">&nbsp;&nbsp;&nbsp;&nbsp;- itunesSelection:</option>
+	
+	<option value="//api/name/mailComposeController:didFinishWithResult:error:">&nbsp;&nbsp;&nbsp;&nbsp;- mailComposeController:didFinishWithResult:error:</option>
+	
+	<option value="//api/name/mediaPicker:didPickMediaItems:">&nbsp;&nbsp;&nbsp;&nbsp;- mediaPicker:didPickMediaItems:</option>
+	
+	<option value="//api/name/mediaPickerDidCancel:">&nbsp;&nbsp;&nbsp;&nbsp;- mediaPickerDidCancel:</option>
+	
+	<option value="//api/name/moveSpaceForSelectionViewWith:">&nbsp;&nbsp;&nbsp;&nbsp;- moveSpaceForSelectionViewWith:</option>
+	
+	<option value="//api/name/playDefaultPrompt:">&nbsp;&nbsp;&nbsp;&nbsp;- playDefaultPrompt:</option>
+	
+	<option value="//api/name/playItunes:">&nbsp;&nbsp;&nbsp;&nbsp;- playItunes:</option>
+	
+	<option value="//api/name/playRecordedPrompt:">&nbsp;&nbsp;&nbsp;&nbsp;- playRecordedPrompt:</option>
+	
+	<option value="//api/name/puzzleStatesForPuzzle:">&nbsp;&nbsp;&nbsp;&nbsp;- puzzleStatesForPuzzle:</option>
+	
+	<option value="//api/name/recordPrompt:">&nbsp;&nbsp;&nbsp;&nbsp;- recordPrompt:</option>
+	
+	<option value="//api/name/restoreTapped:">&nbsp;&nbsp;&nbsp;&nbsp;- restoreTapped:</option>
+	
+	<option value="//api/name/savePraiseIntoPlist:">&nbsp;&nbsp;&nbsp;&nbsp;- savePraiseIntoPlist:</option>
+	
+	<option value="//api/name/shouldAutorotate">&nbsp;&nbsp;&nbsp;&nbsp;- shouldAutorotate</option>
+	
+	<option value="//api/name/startRecordingWith:">&nbsp;&nbsp;&nbsp;&nbsp;- startRecordingWith:</option>
+	
+	<option value="//api/name/updatePlayPorgressCircleWith:With:">&nbsp;&nbsp;&nbsp;&nbsp;- updatePlayPorgressCircleWith:With:</option>
+	
+	<option value="//api/name/updatePromptViewWith:">&nbsp;&nbsp;&nbsp;&nbsp;- updatePromptViewWith:</option>
+	
+	<option value="//api/name/updateTime:">&nbsp;&nbsp;&nbsp;&nbsp;- updateTime:</option>
+	
+	<option value="//api/name/uploadCancel:">&nbsp;&nbsp;&nbsp;&nbsp;- uploadCancel:</option>
+	
+	<option value="//api/name/viewDidLoad">&nbsp;&nbsp;&nbsp;&nbsp;- viewDidLoad</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Properties for three view groups of different modes">Properties for three view groups of different modes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Properties to set praise prompts">Properties to set praise prompts</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Properties UI elements">Properties UI elements</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Methods handling master-detail like view interaction">Methods handling master-detail like view interaction</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Methods handling changes in user preferences">Methods handling changes in user preferences</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Handling praise prompt modifications">Handling praise prompt modifications</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_UI Elements, properties and methods for Log uploading">UI Elements, properties and methods for Log uploading</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/_tasks">_tasks</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/_urlSession">_urlSession</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/adjustDragFrequency">adjustDragFrequency</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/adjustSpeakFrequency">adjustSpeakFrequency</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/adjustTypeFrequency">adjustTypeFrequency</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/allPromptArray">allPromptArray</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/ampThresh">ampThresh</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/applicationDocumentsDirectory">applicationDocumentsDirectory</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/awesome_Btn_Default">awesome_Btn_Default</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/awesome_Btn_Play">awesome_Btn_Play</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/awesome_Btn_Record">awesome_Btn_Record</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/awesome_descLabel">awesome_descLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/awesome_fileLabel">awesome_fileLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/awesome_itunes_Btn_Play">awesome_itunes_Btn_Play</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/backgroundMusicLabel">backgroundMusicLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/backgroundMusicSwitch">backgroundMusicSwitch</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/changeTypeScaleSignificancy">changeTypeScaleSignificancy</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/closeOverlayButton">closeOverlayButton</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/conn">conn</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/currentSelection">currentSelection</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defaultPlayBtnArray">defaultPlayBtnArray</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defaultPromptArray">defaultPromptArray</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defaultView">defaultView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/generalLabel">generalLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/generalPointLabel">generalPointLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/generalSlidersInfoLabel">generalSlidersInfoLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/generalSpeakLabel">generalSpeakLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/generalTypeLabel">generalTypeLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/generalView">generalView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/guidedModeInfoLabel">guidedModeInfoLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/guidedModeSwitch">guidedModeSwitch</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/highlightKeySwitch">highlightKeySwitch</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/iTunesPlayList">iTunesPlayList</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/indicator">indicator</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isEdited">isEdited</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/itunesPlayBtnArray">itunesPlayBtnArray</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/itunesView">itunesView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/itunes_Btn">itunes_Btn</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/keyHighlightingInfoLabel">keyHighlightingInfoLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logFolderPath">logFolderPath</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logSizeLabel">logSizeLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/myPlayer">myPlayer</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/player">player</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pointModeLabel">pointModeLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pointModeSelectingDistanceLabel">pointModeSelectingDistanceLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pointModeSelectingDistanceSliderInfoLabel">pointModeSelectingDistanceSliderInfoLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pointModeSnapBackInfoLabel">pointModeSnapBackInfoLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pointModeSnapBackLabel">pointModeSnapBackLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pointModeSnappingDistanceLabel">pointModeSnappingDistanceLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pointModeSnappingDistanceSliderInfoLabel">pointModeSnappingDistanceSliderInfoLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pointModeView">pointModeView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/praiseFileLabelArray">praiseFileLabelArray</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/praiseFileLabelArrayForPlist">praiseFileLabelArrayForPlist</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/praisePromptEasyLabel">praisePromptEasyLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/praisePromptHardLabel">praisePromptHardLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/praisePromptInfoLabel">praisePromptInfoLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/praisePromptLabel">praisePromptLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/praisePromptMediumLabel">praisePromptMediumLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/praisePromptSwitch">praisePromptSwitch</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/praisePromptTryAgainLabel">praisePromptTryAgainLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/previousTime">previousTime</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/progressCircleView">progressCircleView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/promptSourceEdit_Btn">promptSourceEdit_Btn</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/promptSourceSegment">promptSourceSegment</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/promptSourceSelectionView">promptSourceSelectionView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/recordBtnArray">recordBtnArray</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/recordFilePathArray">recordFilePathArray</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/recordPlayBtnArray">recordPlayBtnArray</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/recordView">recordView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/recorder">recorder</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resetAppButton">resetAppButton</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resetSlidersButton">resetSlidersButton</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/responseData">responseData</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/restoreButton">restoreButton</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sayModeDifficulty">sayModeDifficulty</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sayModeView">sayModeView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/scene">scene</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/selectDistance">selectDistance</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sendLogsButton">sendLogsButton</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sideBarViewArray">sideBarViewArray</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/snapBackInfoLabel">snapBackInfoLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/snapDistance">snapDistance</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/snapbackSwitch">snapbackSwitch</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/speakModeLabel">speakModeLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/speakModeSpeechLoudnessLabel">speakModeSpeechLoudnessLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/speakModeToleranceLabel">speakModeToleranceLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/subPaths">subPaths</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/super_Btn_Default">super_Btn_Default</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/super_Btn_Play">super_Btn_Play</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/super_Btn_Record">super_Btn_Record</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/super_descLabel">super_descLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/super_fileLabel">super_fileLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/super_itunes_Btn_Play">super_itunes_Btn_Play</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/timer">timer</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/try_Btn_Default">try_Btn_Default</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/try_Btn_Play">try_Btn_Play</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/try_Btn_Record">try_Btn_Record</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/try_fileLabel">try_fileLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/try_itunes_Btn_Play">try_itunes_Btn_Play</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tryagain_descLabel">tryagain_descLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/typeModeView">typeModeView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uploadCancelBtn">uploadCancelBtn</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uploadProgressBar">uploadProgressBar</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/welldone_Btn_Default">welldone_Btn_Default</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/welldone_Btn_Play">welldone_Btn_Play</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/welldone_Btn_Record">welldone_Btn_Record</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/welldone_descLabel">welldone_descLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/welldone_fileLabel">welldone_fileLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/welldone_itunes_Btn_Play">welldone_itunes_Btn_Play</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/whetherAllowRecord_Switch">whetherAllowRecord_Switch</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/URLSession:dataTask:didReceiveData:">URLSession:dataTask:didReceiveData:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/URLSession:task:didCompleteWithError:">URLSession:task:didCompleteWithError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:">URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/alertView:clickedButtonAtIndex:">alertView:clickedButtonAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/audioRecorderDidFinishRecording:successfully:">audioRecorderDidFinishRecording:successfully:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/chosePromptSoure:">chosePromptSoure:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connection:didFailWithError:">connection:didFailWithError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connection:didReceiveData:">connection:didReceiveData:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connection:didReceiveResponse:">connection:didReceiveResponse:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connection:didSendBodyData:totalBytesWritten:totalBytesExpectedToWrite:">connection:didSendBodyData:totalBytesWritten:totalBytesExpectedToWrite:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connection:willCacheResponse:">connection:willCacheResponse:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connectionDidFinishLoading:">connectionDidFinishLoading:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createPlistForPraisePrefs">createPlistForPraisePrefs</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/detailViewSwitch:">detailViewSwitch:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didReceiveMemoryWarning">didReceiveMemoryWarning</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/editPromptSource:">editPromptSource:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleAllowToRecord:">handleAllowToRecord:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleAmpThreshChanged:">handleAmpThreshChanged:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleBGMusicChanged:">handleBGMusicChanged:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleCloseOverlayPressed:">handleCloseOverlayPressed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleResetAppPressed:">handleResetAppPressed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleResetSlidersPressed:">handleResetSlidersPressed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleSendLogDataPressed:">handleSendLogDataPressed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleSideBarPressed:">handleSideBarPressed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleSliderChangedValue:">handleSliderChangedValue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithNibName:bundle:">initWithNibName:bundle:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/itunesSelection:">itunesSelection:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mailComposeController:didFinishWithResult:error:">mailComposeController:didFinishWithResult:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mediaPicker:didPickMediaItems:">mediaPicker:didPickMediaItems:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mediaPickerDidCancel:">mediaPickerDidCancel:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/moveSpaceForSelectionViewWith:">moveSpaceForSelectionViewWith:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playDefaultPrompt:">playDefaultPrompt:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playItunes:">playItunes:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playRecordedPrompt:">playRecordedPrompt:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/puzzleStatesForPuzzle:">puzzleStatesForPuzzle:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/recordPrompt:">recordPrompt:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/restoreTapped:">restoreTapped:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/savePraiseIntoPlist:">savePraiseIntoPlist:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldAutorotate">shouldAutorotate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startRecordingWith:">startRecordingWith:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updatePlayPorgressCircleWith:With:">updatePlayPorgressCircleWith:With:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updatePromptViewWith:">updatePromptViewWith:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateTime:">updateTime:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uploadCancel:">uploadCancel:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewDidLoad">viewDidLoad</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="AdminViewController Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">AdminViewController Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">UIViewController</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">MFMailComposeViewControllerDelegate<br />MPMediaPickerControllerDelegate<br />UIAlertViewDelegate<br />UIPickerViewDataSource<br />UIPickerViewDelegate</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">AdminViewController.h<br />AdminViewController.m</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>View controller for admin view</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Properties for three view groups of different modes" name="task_Properties for three view groups of different modes"></a>
+						<h3 class="subsubtitle task-title">Properties for three view groups of different modes</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pointModeView">&nbsp;&nbsp;pointModeView</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sayModeView">&nbsp;&nbsp;sayModeView</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/promptSourceSelectionView">&nbsp;&nbsp;promptSourceSelectionView</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Properties to set praise prompts" name="task_Properties to set praise prompts"></a>
+						<h3 class="subsubtitle task-title">Properties to set praise prompts</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/recordFilePathArray">&nbsp;&nbsp;recordFilePathArray</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/recorder">&nbsp;&nbsp;recorder</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/player">&nbsp;&nbsp;player</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/praiseFileLabelArray">&nbsp;&nbsp;praiseFileLabelArray</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/myPlayer">&nbsp;&nbsp;myPlayer</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/praiseFileLabelArrayForPlist">&nbsp;&nbsp;praiseFileLabelArrayForPlist</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/iTunesPlayList">&nbsp;&nbsp;iTunesPlayList</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/defaultPromptArray">&nbsp;&nbsp;defaultPromptArray</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/allPromptArray">&nbsp;&nbsp;allPromptArray</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/currentSelection">&nbsp;&nbsp;currentSelection</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isEdited">&nbsp;&nbsp;isEdited</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/defaultPlayBtnArray">&nbsp;&nbsp;defaultPlayBtnArray</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/recordPlayBtnArray">&nbsp;&nbsp;recordPlayBtnArray</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/itunesPlayBtnArray">&nbsp;&nbsp;itunesPlayBtnArray</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/recordBtnArray">&nbsp;&nbsp;recordBtnArray</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/indicator">&nbsp;&nbsp;indicator</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/previousTime">&nbsp;&nbsp;previousTime</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Properties UI elements" name="task_Properties UI elements"></a>
+						<h3 class="subsubtitle task-title">Properties UI elements</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/backgroundMusicSwitch">&nbsp;&nbsp;backgroundMusicSwitch</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/guidedModeSwitch">&nbsp;&nbsp;guidedModeSwitch</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/snapbackSwitch">&nbsp;&nbsp;snapbackSwitch</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/highlightKeySwitch">&nbsp;&nbsp;highlightKeySwitch</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/restoreButton">&nbsp;&nbsp;restoreButton</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/closeOverlayButton">&nbsp;&nbsp;closeOverlayButton</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resetSlidersButton">&nbsp;&nbsp;resetSlidersButton</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resetAppButton">&nbsp;&nbsp;resetAppButton</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sendLogsButton">&nbsp;&nbsp;sendLogsButton</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/snapDistance">&nbsp;&nbsp;snapDistance</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/selectDistance">&nbsp;&nbsp;selectDistance</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/ampThresh">&nbsp;&nbsp;ampThresh</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/adjustDragFrequency">&nbsp;&nbsp;adjustDragFrequency</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/adjustTypeFrequency">&nbsp;&nbsp;adjustTypeFrequency</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/adjustSpeakFrequency">&nbsp;&nbsp;adjustSpeakFrequency</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sayModeDifficulty">&nbsp;&nbsp;sayModeDifficulty</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/guidedModeInfoLabel">&nbsp;&nbsp;guidedModeInfoLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/snapBackInfoLabel">&nbsp;&nbsp;snapBackInfoLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/keyHighlightingInfoLabel">&nbsp;&nbsp;keyHighlightingInfoLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/generalSlidersInfoLabel">&nbsp;&nbsp;generalSlidersInfoLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logSizeLabel">&nbsp;&nbsp;logSizeLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/praisePromptSwitch">&nbsp;&nbsp;praisePromptSwitch</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/promptSourceSegment">&nbsp;&nbsp;promptSourceSegment</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/awesome_Btn_Default">&nbsp;&nbsp;awesome_Btn_Default</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/super_Btn_Default">&nbsp;&nbsp;super_Btn_Default</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/welldone_Btn_Default">&nbsp;&nbsp;welldone_Btn_Default</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/try_Btn_Default">&nbsp;&nbsp;try_Btn_Default</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/super_Btn_Record">&nbsp;&nbsp;super_Btn_Record</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/awesome_Btn_Record">&nbsp;&nbsp;awesome_Btn_Record</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/welldone_Btn_Record">&nbsp;&nbsp;welldone_Btn_Record</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/try_Btn_Record">&nbsp;&nbsp;try_Btn_Record</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/super_Btn_Play">&nbsp;&nbsp;super_Btn_Play</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/awesome_Btn_Play">&nbsp;&nbsp;awesome_Btn_Play</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/welldone_Btn_Play">&nbsp;&nbsp;welldone_Btn_Play</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/try_Btn_Play">&nbsp;&nbsp;try_Btn_Play</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/super_itunes_Btn_Play">&nbsp;&nbsp;super_itunes_Btn_Play</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/awesome_itunes_Btn_Play">&nbsp;&nbsp;awesome_itunes_Btn_Play</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/welldone_itunes_Btn_Play">&nbsp;&nbsp;welldone_itunes_Btn_Play</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/try_itunes_Btn_Play">&nbsp;&nbsp;try_itunes_Btn_Play</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/itunes_Btn">&nbsp;&nbsp;itunes_Btn</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/super_fileLabel">&nbsp;&nbsp;super_fileLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/awesome_fileLabel">&nbsp;&nbsp;awesome_fileLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/welldone_fileLabel">&nbsp;&nbsp;welldone_fileLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/try_fileLabel">&nbsp;&nbsp;try_fileLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/promptSourceEdit_Btn">&nbsp;&nbsp;promptSourceEdit_Btn</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/scene">&nbsp;&nbsp;scene</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/defaultView">&nbsp;&nbsp;defaultView</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/recordView">&nbsp;&nbsp;recordView</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/itunesView">&nbsp;&nbsp;itunesView</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/super_descLabel">&nbsp;&nbsp;super_descLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/awesome_descLabel">&nbsp;&nbsp;awesome_descLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/welldone_descLabel">&nbsp;&nbsp;welldone_descLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tryagain_descLabel">&nbsp;&nbsp;tryagain_descLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/whetherAllowRecord_Switch">&nbsp;&nbsp;whetherAllowRecord_Switch</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/changeTypeScaleSignificancy">&nbsp;&nbsp;changeTypeScaleSignificancy</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sideBarViewArray">&nbsp;&nbsp;sideBarViewArray</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/generalLabel">&nbsp;&nbsp;generalLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/generalPointLabel">&nbsp;&nbsp;generalPointLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/generalSpeakLabel">&nbsp;&nbsp;generalSpeakLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/generalTypeLabel">&nbsp;&nbsp;generalTypeLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pointModeLabel">&nbsp;&nbsp;pointModeLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pointModeSelectingDistanceLabel">&nbsp;&nbsp;pointModeSelectingDistanceLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pointModeSelectingDistanceSliderInfoLabel">&nbsp;&nbsp;pointModeSelectingDistanceSliderInfoLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pointModeSnapBackLabel">&nbsp;&nbsp;pointModeSnapBackLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pointModeSnapBackInfoLabel">&nbsp;&nbsp;pointModeSnapBackInfoLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pointModeSnappingDistanceLabel">&nbsp;&nbsp;pointModeSnappingDistanceLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pointModeSnappingDistanceSliderInfoLabel">&nbsp;&nbsp;pointModeSnappingDistanceSliderInfoLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/speakModeLabel">&nbsp;&nbsp;speakModeLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/speakModeSpeechLoudnessLabel">&nbsp;&nbsp;speakModeSpeechLoudnessLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/speakModeToleranceLabel">&nbsp;&nbsp;speakModeToleranceLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/backgroundMusicLabel">&nbsp;&nbsp;backgroundMusicLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/praisePromptLabel">&nbsp;&nbsp;praisePromptLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/praisePromptInfoLabel">&nbsp;&nbsp;praisePromptInfoLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/praisePromptHardLabel">&nbsp;&nbsp;praisePromptHardLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/praisePromptMediumLabel">&nbsp;&nbsp;praisePromptMediumLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/praisePromptEasyLabel">&nbsp;&nbsp;praisePromptEasyLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/praisePromptTryAgainLabel">&nbsp;&nbsp;praisePromptTryAgainLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/applicationDocumentsDirectory">&nbsp;&nbsp;applicationDocumentsDirectory</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/generalView">&nbsp;&nbsp;generalView</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/typeModeView">&nbsp;&nbsp;typeModeView</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/progressCircleView">&nbsp;&nbsp;progressCircleView</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/timer">&nbsp;&nbsp;timer</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/subPaths">&nbsp;&nbsp;subPaths</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/_urlSession">&nbsp;&nbsp;_urlSession</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/_tasks">&nbsp;&nbsp;_tasks</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Methods handling master-detail like view interaction" name="task_Methods handling master-detail like view interaction"></a>
+						<h3 class="subsubtitle task-title">Methods handling master-detail like view interaction</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/detailViewSwitch:">&ndash;&nbsp;detailViewSwitch:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/handleSideBarPressed:">&ndash;&nbsp;handleSideBarPressed:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Methods handling changes in user preferences" name="task_Methods handling changes in user preferences"></a>
+						<h3 class="subsubtitle task-title">Methods handling changes in user preferences</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/restoreTapped:">&ndash;&nbsp;restoreTapped:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/handleSendLogDataPressed:">&ndash;&nbsp;handleSendLogDataPressed:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/handleCloseOverlayPressed:">&ndash;&nbsp;handleCloseOverlayPressed:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/handleSliderChangedValue:">&ndash;&nbsp;handleSliderChangedValue:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/handleAmpThreshChanged:">&ndash;&nbsp;handleAmpThreshChanged:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/handleBGMusicChanged:">&ndash;&nbsp;handleBGMusicChanged:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/handleResetSlidersPressed:">&ndash;&nbsp;handleResetSlidersPressed:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/handleResetAppPressed:">&ndash;&nbsp;handleResetAppPressed:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/puzzleStatesForPuzzle:">&ndash;&nbsp;puzzleStatesForPuzzle:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mailComposeController:didFinishWithResult:error:">&ndash;&nbsp;mailComposeController:didFinishWithResult:error:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/alertView:clickedButtonAtIndex:">&ndash;&nbsp;alertView:clickedButtonAtIndex:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Handling praise prompt modifications" name="task_Handling praise prompt modifications"></a>
+						<h3 class="subsubtitle task-title">Handling praise prompt modifications</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createPlistForPraisePrefs">&ndash;&nbsp;createPlistForPraisePrefs</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/savePraiseIntoPlist:">&ndash;&nbsp;savePraiseIntoPlist:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updatePromptViewWith:">&ndash;&nbsp;updatePromptViewWith:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/moveSpaceForSelectionViewWith:">&ndash;&nbsp;moveSpaceForSelectionViewWith:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/editPromptSource:">&ndash;&nbsp;editPromptSource:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/chosePromptSoure:">&ndash;&nbsp;chosePromptSoure:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playDefaultPrompt:">&ndash;&nbsp;playDefaultPrompt:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/recordPrompt:">&ndash;&nbsp;recordPrompt:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playRecordedPrompt:">&ndash;&nbsp;playRecordedPrompt:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startRecordingWith:">&ndash;&nbsp;startRecordingWith:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/audioRecorderDidFinishRecording:successfully:">&ndash;&nbsp;audioRecorderDidFinishRecording:successfully:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playItunes:">&ndash;&nbsp;playItunes:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/itunesSelection:">&ndash;&nbsp;itunesSelection:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mediaPickerDidCancel:">&ndash;&nbsp;mediaPickerDidCancel:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mediaPicker:didPickMediaItems:">&ndash;&nbsp;mediaPicker:didPickMediaItems:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/handleAllowToRecord:">&ndash;&nbsp;handleAllowToRecord:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="UI Elements, properties and methods for Log uploading" name="task_UI Elements, properties and methods for Log uploading"></a>
+						<h3 class="subsubtitle task-title">UI Elements, properties and methods for Log uploading</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/uploadProgressBar">&nbsp;&nbsp;uploadProgressBar</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/uploadCancelBtn">&nbsp;&nbsp;uploadCancelBtn</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/conn">&nbsp;&nbsp;conn</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logFolderPath">&nbsp;&nbsp;logFolderPath</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/responseData">&nbsp;&nbsp;responseData</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/uploadCancel:">&ndash;&nbsp;uploadCancel:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connection:didReceiveResponse:">&ndash;&nbsp;connection:didReceiveResponse:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connection:didReceiveData:">&ndash;&nbsp;connection:didReceiveData:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connection:willCacheResponse:">&ndash;&nbsp;connection:willCacheResponse:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connectionDidFinishLoading:">&ndash;&nbsp;connectionDidFinishLoading:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connection:didFailWithError:">&ndash;&nbsp;connection:didFailWithError:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connection:didSendBodyData:totalBytesWritten:totalBytesExpectedToWrite:">&ndash;&nbsp;connection:didSendBodyData:totalBytesWritten:totalBytesExpectedToWrite:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithNibName:bundle:">&ndash;&nbsp;initWithNibName:bundle:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewDidLoad">&ndash;&nbsp;viewDidLoad</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shouldAutorotate">&ndash;&nbsp;shouldAutorotate</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didReceiveMemoryWarning">&ndash;&nbsp;didReceiveMemoryWarning</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updatePlayPorgressCircleWith:With:">&ndash;&nbsp;updatePlayPorgressCircleWith:With:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updateTime:">&ndash;&nbsp;updateTime:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/URLSession:task:didCompleteWithError:">&ndash;&nbsp;URLSession:task:didCompleteWithError:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/URLSession:dataTask:didReceiveData:">&ndash;&nbsp;URLSession:dataTask:didReceiveData:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:">&ndash;&nbsp;URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/_tasks" title="_tasks"></a>
+	<h3 class="subsubtitle method-title">_tasks</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property NSMutableArray *_tasks</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/_urlSession" title="_urlSession"></a>
+	<h3 class="subsubtitle method-title">_urlSession</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property NSURLSession *_urlSession</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/adjustDragFrequency" title="adjustDragFrequency"></a>
+	<h3 class="subsubtitle method-title">adjustDragFrequency</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) IBOutlet UISlider *adjustDragFrequency</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/adjustSpeakFrequency" title="adjustSpeakFrequency"></a>
+	<h3 class="subsubtitle method-title">adjustSpeakFrequency</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) IBOutlet UISlider *adjustSpeakFrequency</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/adjustTypeFrequency" title="adjustTypeFrequency"></a>
+	<h3 class="subsubtitle method-title">adjustTypeFrequency</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) IBOutlet UISlider *adjustTypeFrequency</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/allPromptArray" title="allPromptArray"></a>
+	<h3 class="subsubtitle method-title">allPromptArray</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property NSMutableArray *allPromptArray</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/ampThresh" title="ampThresh"></a>
+	<h3 class="subsubtitle method-title">ampThresh</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) IBOutlet UISlider *ampThresh</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/applicationDocumentsDirectory" title="applicationDocumentsDirectory"></a>
+	<h3 class="subsubtitle method-title">applicationDocumentsDirectory</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) NSString *applicationDocumentsDirectory</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/awesome_Btn_Default" title="awesome_Btn_Default"></a>
+	<h3 class="subsubtitle method-title">awesome_Btn_Default</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) IBOutlet UIButton *awesome_Btn_Default</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/awesome_Btn_Play" title="awesome_Btn_Play"></a>
+	<h3 class="subsubtitle method-title">awesome_Btn_Play</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UIButton *awesome_Btn_Play</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/awesome_Btn_Record" title="awesome_Btn_Record"></a>
+	<h3 class="subsubtitle method-title">awesome_Btn_Record</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UIButton *awesome_Btn_Record</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/awesome_descLabel" title="awesome_descLabel"></a>
+	<h3 class="subsubtitle method-title">awesome_descLabel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UILabel *awesome_descLabel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/awesome_fileLabel" title="awesome_fileLabel"></a>
+	<h3 class="subsubtitle method-title">awesome_fileLabel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UILabel *awesome_fileLabel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/awesome_itunes_Btn_Play" title="awesome_itunes_Btn_Play"></a>
+	<h3 class="subsubtitle method-title">awesome_itunes_Btn_Play</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UIButton *awesome_itunes_Btn_Play</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/backgroundMusicLabel" title="backgroundMusicLabel"></a>
+	<h3 class="subsubtitle method-title">backgroundMusicLabel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UILabel *backgroundMusicLabel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/backgroundMusicSwitch" title="backgroundMusicSwitch"></a>
+	<h3 class="subsubtitle method-title">backgroundMusicSwitch</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) IBOutlet UISwitch *backgroundMusicSwitch</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdminViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/changeTypeScaleSignificancy" title="changeTypeScaleSignificancy"></a>
+	<h3 class="subsubtitle method-title">changeTypeScaleSignificancy</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UISlider *changeTypeScaleSignificancy</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/closeOverlayButton" title="closeOverlayButton"></a>
+	<h3 class="subsubtitle method-title">closeOverlayButton</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) IBOutlet UIButton *closeOverlayButton</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/conn" title="conn"></a>
+	<h3 class="subsubtitle method-title">conn</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Property to store the connection status</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property NSURLConnection *conn</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdminViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/currentSelection" title="currentSelection"></a>
+	<h3 class="subsubtitle method-title">currentSelection</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property int currentSelection</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/defaultPlayBtnArray" title="defaultPlayBtnArray"></a>
+	<h3 class="subsubtitle method-title">defaultPlayBtnArray</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property NSArray *defaultPlayBtnArray</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/defaultPromptArray" title="defaultPromptArray"></a>
+	<h3 class="subsubtitle method-title">defaultPromptArray</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property NSMutableArray *defaultPromptArray</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/defaultView" title="defaultView"></a>
+	<h3 class="subsubtitle method-title">defaultView</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) IBOutlet UIView *defaultView</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/generalLabel" title="generalLabel"></a>
+	<h3 class="subsubtitle method-title">generalLabel</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<h2>@name Properties UI element labels</h2>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UILabel *generalLabel</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdminViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/generalPointLabel" title="generalPointLabel"></a>
+	<h3 class="subsubtitle method-title">generalPointLabel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UILabel *generalPointLabel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/generalSlidersInfoLabel" title="generalSlidersInfoLabel"></a>
+	<h3 class="subsubtitle method-title">generalSlidersInfoLabel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) IBOutlet UILabel *generalSlidersInfoLabel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/generalSpeakLabel" title="generalSpeakLabel"></a>
+	<h3 class="subsubtitle method-title">generalSpeakLabel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UILabel *generalSpeakLabel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/generalTypeLabel" title="generalTypeLabel"></a>
+	<h3 class="subsubtitle method-title">generalTypeLabel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UILabel *generalTypeLabel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/generalView" title="generalView"></a>
+	<h3 class="subsubtitle method-title">generalView</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UIView *generalView</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/guidedModeInfoLabel" title="guidedModeInfoLabel"></a>
+	<h3 class="subsubtitle method-title">guidedModeInfoLabel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) IBOutlet UILabel *guidedModeInfoLabel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/guidedModeSwitch" title="guidedModeSwitch"></a>
+	<h3 class="subsubtitle method-title">guidedModeSwitch</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) IBOutlet UISwitch *guidedModeSwitch</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/highlightKeySwitch" title="highlightKeySwitch"></a>
+	<h3 class="subsubtitle method-title">highlightKeySwitch</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) IBOutlet UISwitch *highlightKeySwitch</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/iTunesPlayList" title="iTunesPlayList"></a>
+	<h3 class="subsubtitle method-title">iTunesPlayList</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property NSMutableArray *iTunesPlayList</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/indicator" title="indicator"></a>
+	<h3 class="subsubtitle method-title">indicator</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property UIActivityIndicatorView *indicator</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isEdited" title="isEdited"></a>
+	<h3 class="subsubtitle method-title">isEdited</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property BOOL isEdited</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/itunesPlayBtnArray" title="itunesPlayBtnArray"></a>
+	<h3 class="subsubtitle method-title">itunesPlayBtnArray</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property NSArray *itunesPlayBtnArray</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/itunesView" title="itunesView"></a>
+	<h3 class="subsubtitle method-title">itunesView</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UIView *itunesView</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/itunes_Btn" title="itunes_Btn"></a>
+	<h3 class="subsubtitle method-title">itunes_Btn</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UIButton *itunes_Btn</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/keyHighlightingInfoLabel" title="keyHighlightingInfoLabel"></a>
+	<h3 class="subsubtitle method-title">keyHighlightingInfoLabel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) IBOutlet UILabel *keyHighlightingInfoLabel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/logFolderPath" title="logFolderPath"></a>
+	<h3 class="subsubtitle method-title">logFolderPath</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Folder path for log data</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property NSString *logFolderPath</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdminViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/logSizeLabel" title="logSizeLabel"></a>
+	<h3 class="subsubtitle method-title">logSizeLabel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) IBOutlet UILabel *logSizeLabel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/myPlayer" title="myPlayer"></a>
+	<h3 class="subsubtitle method-title">myPlayer</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property MPMusicPlayerController *myPlayer</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/player" title="player"></a>
+	<h3 class="subsubtitle method-title">player</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property AVAudioPlayer *player</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pointModeLabel" title="pointModeLabel"></a>
+	<h3 class="subsubtitle method-title">pointModeLabel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UILabel *pointModeLabel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pointModeSelectingDistanceLabel" title="pointModeSelectingDistanceLabel"></a>
+	<h3 class="subsubtitle method-title">pointModeSelectingDistanceLabel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UILabel *pointModeSelectingDistanceLabel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pointModeSelectingDistanceSliderInfoLabel" title="pointModeSelectingDistanceSliderInfoLabel"></a>
+	<h3 class="subsubtitle method-title">pointModeSelectingDistanceSliderInfoLabel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UILabel *pointModeSelectingDistanceSliderInfoLabel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pointModeSnapBackInfoLabel" title="pointModeSnapBackInfoLabel"></a>
+	<h3 class="subsubtitle method-title">pointModeSnapBackInfoLabel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UILabel *pointModeSnapBackInfoLabel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pointModeSnapBackLabel" title="pointModeSnapBackLabel"></a>
+	<h3 class="subsubtitle method-title">pointModeSnapBackLabel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UILabel *pointModeSnapBackLabel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pointModeSnappingDistanceLabel" title="pointModeSnappingDistanceLabel"></a>
+	<h3 class="subsubtitle method-title">pointModeSnappingDistanceLabel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UILabel *pointModeSnappingDistanceLabel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pointModeSnappingDistanceSliderInfoLabel" title="pointModeSnappingDistanceSliderInfoLabel"></a>
+	<h3 class="subsubtitle method-title">pointModeSnappingDistanceSliderInfoLabel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UILabel *pointModeSnappingDistanceSliderInfoLabel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pointModeView" title="pointModeView"></a>
+	<h3 class="subsubtitle method-title">pointModeView</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>create two views for transforming animation</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UIView *pointModeView</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdminViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/praiseFileLabelArray" title="praiseFileLabelArray"></a>
+	<h3 class="subsubtitle method-title">praiseFileLabelArray</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property NSMutableArray *praiseFileLabelArray</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/praiseFileLabelArrayForPlist" title="praiseFileLabelArrayForPlist"></a>
+	<h3 class="subsubtitle method-title">praiseFileLabelArrayForPlist</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property NSMutableArray *praiseFileLabelArrayForPlist</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/praisePromptEasyLabel" title="praisePromptEasyLabel"></a>
+	<h3 class="subsubtitle method-title">praisePromptEasyLabel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UILabel *praisePromptEasyLabel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/praisePromptHardLabel" title="praisePromptHardLabel"></a>
+	<h3 class="subsubtitle method-title">praisePromptHardLabel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UILabel *praisePromptHardLabel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/praisePromptInfoLabel" title="praisePromptInfoLabel"></a>
+	<h3 class="subsubtitle method-title">praisePromptInfoLabel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UILabel *praisePromptInfoLabel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/praisePromptLabel" title="praisePromptLabel"></a>
+	<h3 class="subsubtitle method-title">praisePromptLabel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UILabel *praisePromptLabel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/praisePromptMediumLabel" title="praisePromptMediumLabel"></a>
+	<h3 class="subsubtitle method-title">praisePromptMediumLabel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UILabel *praisePromptMediumLabel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/praisePromptSwitch" title="praisePromptSwitch"></a>
+	<h3 class="subsubtitle method-title">praisePromptSwitch</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) IBOutlet UISwitch *praisePromptSwitch</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/praisePromptTryAgainLabel" title="praisePromptTryAgainLabel"></a>
+	<h3 class="subsubtitle method-title">praisePromptTryAgainLabel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UILabel *praisePromptTryAgainLabel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/previousTime" title="previousTime"></a>
+	<h3 class="subsubtitle method-title">previousTime</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property long previousTime</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/progressCircleView" title="progressCircleView"></a>
+	<h3 class="subsubtitle method-title">progressCircleView</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property ProgressView *progressCircleView</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/promptSourceEdit_Btn" title="promptSourceEdit_Btn"></a>
+	<h3 class="subsubtitle method-title">promptSourceEdit_Btn</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UIButton *promptSourceEdit_Btn</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/promptSourceSegment" title="promptSourceSegment"></a>
+	<h3 class="subsubtitle method-title">promptSourceSegment</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UISegmentedControl *promptSourceSegment</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/promptSourceSelectionView" title="promptSourceSelectionView"></a>
+	<h3 class="subsubtitle method-title">promptSourceSelectionView</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UIView *promptSourceSelectionView</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/recordBtnArray" title="recordBtnArray"></a>
+	<h3 class="subsubtitle method-title">recordBtnArray</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property NSArray *recordBtnArray</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/recordFilePathArray" title="recordFilePathArray"></a>
+	<h3 class="subsubtitle method-title">recordFilePathArray</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>&lt;#Description#></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property NSMutableArray *recordFilePathArray</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdminViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/recordPlayBtnArray" title="recordPlayBtnArray"></a>
+	<h3 class="subsubtitle method-title">recordPlayBtnArray</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property NSArray *recordPlayBtnArray</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/recordView" title="recordView"></a>
+	<h3 class="subsubtitle method-title">recordView</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UIView *recordView</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/recorder" title="recorder"></a>
+	<h3 class="subsubtitle method-title">recorder</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property AVAudioRecorder *recorder</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resetAppButton" title="resetAppButton"></a>
+	<h3 class="subsubtitle method-title">resetAppButton</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UIButton *resetAppButton</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resetSlidersButton" title="resetSlidersButton"></a>
+	<h3 class="subsubtitle method-title">resetSlidersButton</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) IBOutlet UIButton *resetSlidersButton</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/responseData" title="responseData"></a>
+	<h3 class="subsubtitle method-title">responseData</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Property to store response from server</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property NSMutableData *responseData</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdminViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/restoreButton" title="restoreButton"></a>
+	<h3 class="subsubtitle method-title">restoreButton</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) IBOutlet UIButton *restoreButton</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sayModeDifficulty" title="sayModeDifficulty"></a>
+	<h3 class="subsubtitle method-title">sayModeDifficulty</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) IBOutlet UISlider *sayModeDifficulty</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sayModeView" title="sayModeView"></a>
+	<h3 class="subsubtitle method-title">sayModeView</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UIView *sayModeView</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/scene" title="scene"></a>
+	<h3 class="subsubtitle method-title">scene</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) Scene *scene</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/selectDistance" title="selectDistance"></a>
+	<h3 class="subsubtitle method-title">selectDistance</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) IBOutlet UISlider *selectDistance</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sendLogsButton" title="sendLogsButton"></a>
+	<h3 class="subsubtitle method-title">sendLogsButton</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) IBOutlet UIButton *sendLogsButton</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sideBarViewArray" title="sideBarViewArray"></a>
+	<h3 class="subsubtitle method-title">sideBarViewArray</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property NSMutableArray *sideBarViewArray</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/snapBackInfoLabel" title="snapBackInfoLabel"></a>
+	<h3 class="subsubtitle method-title">snapBackInfoLabel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) IBOutlet UILabel *snapBackInfoLabel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/snapDistance" title="snapDistance"></a>
+	<h3 class="subsubtitle method-title">snapDistance</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) IBOutlet UISlider *snapDistance</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/snapbackSwitch" title="snapbackSwitch"></a>
+	<h3 class="subsubtitle method-title">snapbackSwitch</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) IBOutlet UISwitch *snapbackSwitch</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/speakModeLabel" title="speakModeLabel"></a>
+	<h3 class="subsubtitle method-title">speakModeLabel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UILabel *speakModeLabel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/speakModeSpeechLoudnessLabel" title="speakModeSpeechLoudnessLabel"></a>
+	<h3 class="subsubtitle method-title">speakModeSpeechLoudnessLabel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UILabel *speakModeSpeechLoudnessLabel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/speakModeToleranceLabel" title="speakModeToleranceLabel"></a>
+	<h3 class="subsubtitle method-title">speakModeToleranceLabel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UILabel *speakModeToleranceLabel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/subPaths" title="subPaths"></a>
+	<h3 class="subsubtitle method-title">subPaths</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property NSMutableArray *subPaths</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/super_Btn_Default" title="super_Btn_Default"></a>
+	<h3 class="subsubtitle method-title">super_Btn_Default</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) IBOutlet UIButton *super_Btn_Default</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/super_Btn_Play" title="super_Btn_Play"></a>
+	<h3 class="subsubtitle method-title">super_Btn_Play</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UIButton *super_Btn_Play</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/super_Btn_Record" title="super_Btn_Record"></a>
+	<h3 class="subsubtitle method-title">super_Btn_Record</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UIButton *super_Btn_Record</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/super_descLabel" title="super_descLabel"></a>
+	<h3 class="subsubtitle method-title">super_descLabel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UILabel *super_descLabel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/super_fileLabel" title="super_fileLabel"></a>
+	<h3 class="subsubtitle method-title">super_fileLabel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UILabel *super_fileLabel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/super_itunes_Btn_Play" title="super_itunes_Btn_Play"></a>
+	<h3 class="subsubtitle method-title">super_itunes_Btn_Play</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UIButton *super_itunes_Btn_Play</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/timer" title="timer"></a>
+	<h3 class="subsubtitle method-title">timer</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property NSTimer *timer</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/try_Btn_Default" title="try_Btn_Default"></a>
+	<h3 class="subsubtitle method-title">try_Btn_Default</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) IBOutlet UIButton *try_Btn_Default</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/try_Btn_Play" title="try_Btn_Play"></a>
+	<h3 class="subsubtitle method-title">try_Btn_Play</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UIButton *try_Btn_Play</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/try_Btn_Record" title="try_Btn_Record"></a>
+	<h3 class="subsubtitle method-title">try_Btn_Record</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UIButton *try_Btn_Record</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/try_fileLabel" title="try_fileLabel"></a>
+	<h3 class="subsubtitle method-title">try_fileLabel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UILabel *try_fileLabel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/try_itunes_Btn_Play" title="try_itunes_Btn_Play"></a>
+	<h3 class="subsubtitle method-title">try_itunes_Btn_Play</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UIButton *try_itunes_Btn_Play</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tryagain_descLabel" title="tryagain_descLabel"></a>
+	<h3 class="subsubtitle method-title">tryagain_descLabel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UILabel *tryagain_descLabel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/typeModeView" title="typeModeView"></a>
+	<h3 class="subsubtitle method-title">typeModeView</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UIView *typeModeView</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/uploadCancelBtn" title="uploadCancelBtn"></a>
+	<h3 class="subsubtitle method-title">uploadCancelBtn</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) IBOutlet UIButton *uploadCancelBtn</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/uploadProgressBar" title="uploadProgressBar"></a>
+	<h3 class="subsubtitle method-title">uploadProgressBar</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) IBOutlet UIProgressView *uploadProgressBar</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdminViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/welldone_Btn_Default" title="welldone_Btn_Default"></a>
+	<h3 class="subsubtitle method-title">welldone_Btn_Default</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) IBOutlet UIButton *welldone_Btn_Default</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/welldone_Btn_Play" title="welldone_Btn_Play"></a>
+	<h3 class="subsubtitle method-title">welldone_Btn_Play</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UIButton *welldone_Btn_Play</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/welldone_Btn_Record" title="welldone_Btn_Record"></a>
+	<h3 class="subsubtitle method-title">welldone_Btn_Record</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UIButton *welldone_Btn_Record</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/welldone_descLabel" title="welldone_descLabel"></a>
+	<h3 class="subsubtitle method-title">welldone_descLabel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UILabel *welldone_descLabel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/welldone_fileLabel" title="welldone_fileLabel"></a>
+	<h3 class="subsubtitle method-title">welldone_fileLabel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UILabel *welldone_fileLabel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/welldone_itunes_Btn_Play" title="welldone_itunes_Btn_Play"></a>
+	<h3 class="subsubtitle method-title">welldone_itunes_Btn_Play</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UIButton *welldone_itunes_Btn_Play</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/whetherAllowRecord_Switch" title="whetherAllowRecord_Switch"></a>
+	<h3 class="subsubtitle method-title">whetherAllowRecord_Switch</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UISwitch *whetherAllowRecord_Switch</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/URLSession:dataTask:didReceiveData:" title="URLSession:dataTask:didReceiveData:"></a>
+	<h3 class="subsubtitle method-title">URLSession:dataTask:didReceiveData:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)URLSession:(NSURLSession *)<em>session</em> dataTask:(NSURLSessionDataTask *)<em>dataTask</em> didReceiveData:(NSData *)<em>data</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/URLSession:task:didCompleteWithError:" title="URLSession:task:didCompleteWithError:"></a>
+	<h3 class="subsubtitle method-title">URLSession:task:didCompleteWithError:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)URLSession:(NSURLSession *)<em>session</em> task:(NSURLSessionTask *)<em>task</em> didCompleteWithError:(NSError *)<em>error</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:" title="URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:"></a>
+	<h3 class="subsubtitle method-title">URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)URLSession:(NSURLSession *)<em>session</em> task:(NSURLSessionTask *)<em>task</em> didSendBodyData:(int64_t)<em>bytesSent</em> totalBytesSent:(int64_t)<em>totalBytesSent</em> totalBytesExpectedToSend:(int64_t)<em>totalBytesExpectedToSend</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/alertView:clickedButtonAtIndex:" title="alertView:clickedButtonAtIndex:"></a>
+	<h3 class="subsubtitle method-title">alertView:clickedButtonAtIndex:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)alertView:(UIAlertView *)<em>alertView</em> clickedButtonAtIndex:(NSInteger)<em>buttonIndex</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/audioRecorderDidFinishRecording:successfully:" title="audioRecorderDidFinishRecording:successfully:"></a>
+	<h3 class="subsubtitle method-title">audioRecorderDidFinishRecording:successfully:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Voice recording callback function, display the play button after a praise prompt is recorded</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)audioRecorderDidFinishRecording:(AVAudioRecorder *)<em>aRecorder</em> successfully:(BOOL)<em>flag</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdminViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/chosePromptSoure:" title="chosePromptSoure:"></a>
+	<h3 class="subsubtitle method-title">chosePromptSoure:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Switch between three control segments, calls <a href="#//api/name/updatePromptViewWith:">updatePromptViewWith:</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)chosePromptSoure:(id)<em>sender</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdminViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connection:didFailWithError:" title="connection:didFailWithError:"></a>
+	<h3 class="subsubtitle method-title">connection:didFailWithError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Delegate method to alert error message when log upload failed</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)connection:(NSURLConnection *)<em>connection</em> didFailWithError:(NSError *)<em>error</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdminViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connection:didReceiveData:" title="connection:didReceiveData:"></a>
+	<h3 class="subsubtitle method-title">connection:didReceiveData:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)connection:(NSURLConnection *)<em>connection</em> didReceiveData:(NSData *)<em>data</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connection:didReceiveResponse:" title="connection:didReceiveResponse:"></a>
+	<h3 class="subsubtitle method-title">connection:didReceiveResponse:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)connection:(NSURLConnection *)<em>connection</em> didReceiveResponse:(NSURLResponse *)<em>response</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connection:didSendBodyData:totalBytesWritten:totalBytesExpectedToWrite:" title="connection:didSendBodyData:totalBytesWritten:totalBytesExpectedToWrite:"></a>
+	<h3 class="subsubtitle method-title">connection:didSendBodyData:totalBytesWritten:totalBytesExpectedToWrite:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Delegate method to calculate progress of file upload, and to update the progress bar accordingly</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)connection:(NSURLConnection *)<em>connection</em> didSendBodyData:(NSInteger)<em>bytesWritten</em> totalBytesWritten:(NSInteger)<em>totalBytesWritten</em> totalBytesExpectedToWrite:(NSInteger)<em>totalBytesExpectedToWrite</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdminViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connection:willCacheResponse:" title="connection:willCacheResponse:"></a>
+	<h3 class="subsubtitle method-title">connection:willCacheResponse:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSCachedURLResponse *)connection:(NSURLConnection *)<em>connection</em> willCacheResponse:(NSCachedURLResponse *)<em>cachedResponse</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connectionDidFinishLoading:" title="connectionDidFinishLoading:"></a>
+	<h3 class="subsubtitle method-title">connectionDidFinishLoading:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Delegate method to hide upload button when log upload succeeded</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)connectionDidFinishLoading:(NSURLConnection *)<em>connection</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdminViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createPlistForPraisePrefs" title="createPlistForPraisePrefs"></a>
+	<h3 class="subsubtitle method-title">createPlistForPraisePrefs</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Load praise preferences from plist file /Supporting Files/PraisePrefs.plist, create one if none exist</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)createPlistForPraisePrefs</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>dictionary for prainse prompt preferences</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdminViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/detailViewSwitch:" title="detailViewSwitch:"></a>
+	<h3 class="subsubtitle method-title">detailViewSwitch:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Switch detail view</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)detailViewSwitch:(int)<em>index</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdminViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didReceiveMemoryWarning" title="didReceiveMemoryWarning"></a>
+	<h3 class="subsubtitle method-title">didReceiveMemoryWarning</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)didReceiveMemoryWarning</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/editPromptSource:" title="editPromptSource:"></a>
+	<h3 class="subsubtitle method-title">editPromptSource:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Edit button to display editing view</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)editPromptSource:(id)<em>sender</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdminViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handleAllowToRecord:" title="handleAllowToRecord:"></a>
+	<h3 class="subsubtitle method-title">handleAllowToRecord:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)handleAllowToRecord:(id)<em>sender</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handleAmpThreshChanged:" title="handleAmpThreshChanged:"></a>
+	<h3 class="subsubtitle method-title">handleAmpThreshChanged:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)handleAmpThreshChanged:(id)<em>sender</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handleBGMusicChanged:" title="handleBGMusicChanged:"></a>
+	<h3 class="subsubtitle method-title">handleBGMusicChanged:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)handleBGMusicChanged:(id)<em>sender</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handleCloseOverlayPressed:" title="handleCloseOverlayPressed:"></a>
+	<h3 class="subsubtitle method-title">handleCloseOverlayPressed:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)handleCloseOverlayPressed:(id)<em>sender</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handleResetAppPressed:" title="handleResetAppPressed:"></a>
+	<h3 class="subsubtitle method-title">handleResetAppPressed:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)handleResetAppPressed:(id)<em>sender</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handleResetSlidersPressed:" title="handleResetSlidersPressed:"></a>
+	<h3 class="subsubtitle method-title">handleResetSlidersPressed:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)handleResetSlidersPressed:(id)<em>sender</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handleSendLogDataPressed:" title="handleSendLogDataPressed:"></a>
+	<h3 class="subsubtitle method-title">handleSendLogDataPressed:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)handleSendLogDataPressed:(id)<em>sender</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handleSideBarPressed:" title="handleSideBarPressed:"></a>
+	<h3 class="subsubtitle method-title">handleSideBarPressed:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)handleSideBarPressed:(id)<em>sender</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handleSliderChangedValue:" title="handleSliderChangedValue:"></a>
+	<h3 class="subsubtitle method-title">handleSliderChangedValue:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)handleSliderChangedValue:(id)<em>sender</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithNibName:bundle:" title="initWithNibName:bundle:"></a>
+	<h3 class="subsubtitle method-title">initWithNibName:bundle:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithNibName:(NSString *)<em>nibNameOrNil</em> bundle:(NSBundle *)<em>nibBundleOrNil</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/itunesSelection:" title="itunesSelection:"></a>
+	<h3 class="subsubtitle method-title">itunesSelection:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Select an iTunes song, open up a MPMediaPickerController</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)itunesSelection:(id)<em>sender</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>&lt;#sender description#></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdminViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mailComposeController:didFinishWithResult:error:" title="mailComposeController:didFinishWithResult:error:"></a>
+	<h3 class="subsubtitle method-title">mailComposeController:didFinishWithResult:error:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)mailComposeController:(MFMailComposeViewController *)<em>controller</em> didFinishWithResult:(MFMailComposeResult)<em>result</em> error:(NSError *)<em>error</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mediaPicker:didPickMediaItems:" title="mediaPicker:didPickMediaItems:"></a>
+	<h3 class="subsubtitle method-title">mediaPicker:didPickMediaItems:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Call back function after a song is selected, disabling selecting multiple songs and songs longer than 3s.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)mediaPicker:(MPMediaPickerController *)<em>mediaPicker</em> didPickMediaItems:(MPMediaItemCollection *)<em>collection</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdminViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mediaPickerDidCancel:" title="mediaPickerDidCancel:"></a>
+	<h3 class="subsubtitle method-title">mediaPickerDidCancel:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Dismiss the MPMediaPickerController</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)mediaPickerDidCancel:(MPMediaPickerController *)<em>mediaPicker</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>mediaPicker</em></dt>
+			<dd><p>&lt;#mediaPicker description#></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdminViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/moveSpaceForSelectionViewWith:" title="moveSpaceForSelectionViewWith:"></a>
+	<h3 class="subsubtitle method-title">moveSpaceForSelectionViewWith:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Move Say Mode View group down to make space for praise prompt view</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)moveSpaceForSelectionViewWith:(float)<em>space</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>space</em></dt>
+			<dd><p>&lt;#space description#></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdminViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playDefaultPrompt:" title="playDefaultPrompt:"></a>
+	<h3 class="subsubtitle method-title">playDefaultPrompt:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Playback user default praise prompt</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)playDefaultPrompt:(id)<em>sender</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdminViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playItunes:" title="playItunes:"></a>
+	<h3 class="subsubtitle method-title">playItunes:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Play a selected iTunes song</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)playItunes:(id)<em>sender</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdminViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playRecordedPrompt:" title="playRecordedPrompt:"></a>
+	<h3 class="subsubtitle method-title">playRecordedPrompt:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Playback user recorded praise prompt</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)playRecordedPrompt:(id)<em>sender</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdminViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/puzzleStatesForPuzzle:" title="puzzleStatesForPuzzle:"></a>
+	<h3 class="subsubtitle method-title">puzzleStatesForPuzzle:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)puzzleStatesForPuzzle:(PuzzleObject *)<em>object</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/recordPrompt:" title="recordPrompt:"></a>
+	<h3 class="subsubtitle method-title">recordPrompt:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Allow user to record phases for praise prompt</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)recordPrompt:(id)<em>sender</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdminViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/restoreTapped:" title="restoreTapped:"></a>
+	<h3 class="subsubtitle method-title">restoreTapped:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Unused</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)restoreTapped:(id)<em>sender</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdminViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/savePraiseIntoPlist:" title="savePraiseIntoPlist:"></a>
+	<h3 class="subsubtitle method-title">savePraiseIntoPlist:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Save praise prompt preferences to plist file</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)savePraiseIntoPlist:(NSDictionary *)<em>plistDict</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>plistDict</em></dt>
+			<dd><p>the location for praise prompt plist file</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdminViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/shouldAutorotate" title="shouldAutorotate"></a>
+	<h3 class="subsubtitle method-title">shouldAutorotate</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)shouldAutorotate</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startRecordingWith:" title="startRecordingWith:"></a>
+	<h3 class="subsubtitle method-title">startRecordingWith:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called by <a href="#//api/name/recordPrompt:">recordPrompt:</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)startRecordingWith:(int)<em>index</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>index</em></dt>
+			<dd><p>index for which praise prompt user is recording</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdminViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updatePlayPorgressCircleWith:With:" title="updatePlayPorgressCircleWith:With:"></a>
+	<h3 class="subsubtitle method-title">updatePlayPorgressCircleWith:With:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)updatePlayPorgressCircleWith:(int)<em>index</em> With:(NSArray *)<em>currentPlayButtonArray</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updatePromptViewWith:" title="updatePromptViewWith:"></a>
+	<h3 class="subsubtitle method-title">updatePromptViewWith:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Switch between three control segments for praise prompt control ui element</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)updatePromptViewWith:(int)<em>controlIndex</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>index</em></dt>
+			<dd><p>for control segments 0 defause 1 record 2 iTunes</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdminViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updateTime:" title="updateTime:"></a>
+	<h3 class="subsubtitle method-title">updateTime:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)updateTime:(NSTimer *)<em>timer</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/uploadCancel:" title="uploadCancel:"></a>
+	<h3 class="subsubtitle method-title">uploadCancel:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Cancel log uploading</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)uploadCancel:(id)<em>sender</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AdminViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/viewDidLoad" title="viewDidLoad"></a>
+	<h3 class="subsubtitle method-title">viewDidLoad</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)viewDidLoad</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 The Groden Center, Inc.. All rights reserved. (Last updated: 2014-06-19)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

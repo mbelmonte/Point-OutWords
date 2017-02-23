@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ProgressView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ProgressView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ProgressView.h</DeclaredIn>
+            
+			
+			<NodeRef refid="18"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ProgressView/setCurrentProgress:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ProgressView.h</DeclaredIn>
+			
+			<Declaration>@property float currentProgress</Declaration>
+			
+			
+			<Anchor>//api/name/currentProgress</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ProgressView/currentProgress</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ProgressView.h</DeclaredIn>
+			
+			<Declaration>@property float currentProgress</Declaration>
+			
+			
+			<Anchor>//api/name/currentProgress</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ProgressView/currentProgress</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ProgressView.h</DeclaredIn>
+			
+			<Declaration>@property float currentProgress</Declaration>
+			
+			
+			<Anchor>//api/name/currentProgress</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ProgressView/initWithFrame:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ProgressView.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithFrame:(CGRect)frame</Declaration>
+			
+			
+			<Anchor>//api/name/initWithFrame:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ProgressView/drawRect:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ProgressView.m</DeclaredIn>
+			
+			<Declaration>- (void)drawRect:(CGRect)rect</Declaration>
+			
+			
+			<Anchor>//api/name/drawRect:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

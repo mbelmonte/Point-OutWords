@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/GlobalPreferences.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/GlobalPreferences</TokenIdentifier>
+			<Abstract type="html">Store global accessible seetings</Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+            
+			
+			<NodeRef refid="9"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/setPrefsVersion:</TokenIdentifier>
+			<Abstract type="html">App version stored in prefs</Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *prefsVersion</Declaration>
+			
+			
+			<Anchor>//api/name/prefsVersion</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/prefsVersion</TokenIdentifier>
+			<Abstract type="html">App version stored in prefs</Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *prefsVersion</Declaration>
+			
+			
+			<Anchor>//api/name/prefsVersion</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GlobalPreferences/prefsVersion</TokenIdentifier>
+			<Abstract type="html">App version stored in prefs</Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *prefsVersion</Declaration>
+			
+			
+			<Anchor>//api/name/prefsVersion</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/setBetaTesting:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL betaTesting</Declaration>
+			
+			
+			<Anchor>//api/name/betaTesting</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/betaTesting</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL betaTesting</Declaration>
+			
+			
+			<Anchor>//api/name/betaTesting</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GlobalPreferences/betaTesting</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL betaTesting</Declaration>
+			
+			
+			<Anchor>//api/name/betaTesting</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/setBackgroundMusicEnabled:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL backgroundMusicEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundMusicEnabled</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/backgroundMusicEnabled</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL backgroundMusicEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundMusicEnabled</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GlobalPreferences/backgroundMusicEnabled</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL backgroundMusicEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundMusicEnabled</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/setGuidedModeEnabled:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL guidedModeEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/guidedModeEnabled</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/guidedModeEnabled</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL guidedModeEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/guidedModeEnabled</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GlobalPreferences/guidedModeEnabled</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL guidedModeEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/guidedModeEnabled</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/setSnapBackEnabled:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL snapBackEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/snapBackEnabled</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/snapBackEnabled</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL snapBackEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/snapBackEnabled</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GlobalPreferences/snapBackEnabled</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL snapBackEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/snapBackEnabled</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/setPraisePromptEnabled:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL praisePromptEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/praisePromptEnabled</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/praisePromptEnabled</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL praisePromptEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/praisePromptEnabled</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GlobalPreferences/praisePromptEnabled</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL praisePromptEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/praisePromptEnabled</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/setKeyHighlightingEnabled:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL keyHighlightingEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/keyHighlightingEnabled</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/keyHighlightingEnabled</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL keyHighlightingEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/keyHighlightingEnabled</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GlobalPreferences/keyHighlightingEnabled</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL keyHighlightingEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/keyHighlightingEnabled</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/setAudioLevelsVisible:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL audioLevelsVisible</Declaration>
+			
+			
+			<Anchor>//api/name/audioLevelsVisible</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/audioLevelsVisible</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL audioLevelsVisible</Declaration>
+			
+			
+			<Anchor>//api/name/audioLevelsVisible</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GlobalPreferences/audioLevelsVisible</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL audioLevelsVisible</Declaration>
+			
+			
+			<Anchor>//api/name/audioLevelsVisible</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/setSceneCompletionStatusVisible:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL sceneCompletionStatusVisible</Declaration>
+			
+			
+			<Anchor>//api/name/sceneCompletionStatusVisible</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/sceneCompletionStatusVisible</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL sceneCompletionStatusVisible</Declaration>
+			
+			
+			<Anchor>//api/name/sceneCompletionStatusVisible</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GlobalPreferences/sceneCompletionStatusVisible</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL sceneCompletionStatusVisible</Declaration>
+			
+			
+			<Anchor>//api/name/sceneCompletionStatusVisible</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/setSendAnonymousData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL sendAnonymousData</Declaration>
+			
+			
+			<Anchor>//api/name/sendAnonymousData</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/sendAnonymousData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL sendAnonymousData</Declaration>
+			
+			
+			<Anchor>//api/name/sendAnonymousData</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GlobalPreferences/sendAnonymousData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL sendAnonymousData</Declaration>
+			
+			
+			<Anchor>//api/name/sendAnonymousData</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/setSnapDistance:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat snapDistance</Declaration>
+			
+			
+			<Anchor>//api/name/snapDistance</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/snapDistance</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat snapDistance</Declaration>
+			
+			
+			<Anchor>//api/name/snapDistance</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GlobalPreferences/snapDistance</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat snapDistance</Declaration>
+			
+			
+			<Anchor>//api/name/snapDistance</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/setSelectDistance:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat selectDistance</Declaration>
+			
+			
+			<Anchor>//api/name/selectDistance</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/selectDistance</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat selectDistance</Declaration>
+			
+			
+			<Anchor>//api/name/selectDistance</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GlobalPreferences/selectDistance</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat selectDistance</Declaration>
+			
+			
+			<Anchor>//api/name/selectDistance</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/setAmpThresh:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat ampThresh</Declaration>
+			
+			
+			<Anchor>//api/name/ampThresh</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/ampThresh</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat ampThresh</Declaration>
+			
+			
+			<Anchor>//api/name/ampThresh</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GlobalPreferences/ampThresh</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat ampThresh</Declaration>
+			
+			
+			<Anchor>//api/name/ampThresh</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/setDragPuzzleFrequency:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat dragPuzzleFrequency</Declaration>
+			
+			
+			<Anchor>//api/name/dragPuzzleFrequency</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/dragPuzzleFrequency</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat dragPuzzleFrequency</Declaration>
+			
+			
+			<Anchor>//api/name/dragPuzzleFrequency</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GlobalPreferences/dragPuzzleFrequency</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat dragPuzzleFrequency</Declaration>
+			
+			
+			<Anchor>//api/name/dragPuzzleFrequency</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/setTypePuzzleFrequency:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat typePuzzleFrequency</Declaration>
+			
+			
+			<Anchor>//api/name/typePuzzleFrequency</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/typePuzzleFrequency</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat typePuzzleFrequency</Declaration>
+			
+			
+			<Anchor>//api/name/typePuzzleFrequency</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GlobalPreferences/typePuzzleFrequency</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat typePuzzleFrequency</Declaration>
+			
+			
+			<Anchor>//api/name/typePuzzleFrequency</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/setSpeakPuzzleFrequency:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat speakPuzzleFrequency</Declaration>
+			
+			
+			<Anchor>//api/name/speakPuzzleFrequency</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/speakPuzzleFrequency</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat speakPuzzleFrequency</Declaration>
+			
+			
+			<Anchor>//api/name/speakPuzzleFrequency</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GlobalPreferences/speakPuzzleFrequency</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat speakPuzzleFrequency</Declaration>
+			
+			
+			<Anchor>//api/name/speakPuzzleFrequency</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/setSayModeDifficulty:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat sayModeDifficulty</Declaration>
+			
+			
+			<Anchor>//api/name/sayModeDifficulty</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/sayModeDifficulty</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat sayModeDifficulty</Declaration>
+			
+			
+			<Anchor>//api/name/sayModeDifficulty</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GlobalPreferences/sayModeDifficulty</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat sayModeDifficulty</Declaration>
+			
+			
+			<Anchor>//api/name/sayModeDifficulty</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/setTypeSignificancy:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat typeSignificancy</Declaration>
+			
+			
+			<Anchor>//api/name/typeSignificancy</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/typeSignificancy</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat typeSignificancy</Declaration>
+			
+			
+			<Anchor>//api/name/typeSignificancy</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GlobalPreferences/typeSignificancy</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat typeSignificancy</Declaration>
+			
+			
+			<Anchor>//api/name/typeSignificancy</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/setWhetherRecordVoice:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger *whetherRecordVoice</Declaration>
+			
+			
+			<Anchor>//api/name/whetherRecordVoice</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/whetherRecordVoice</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger *whetherRecordVoice</Declaration>
+			
+			
+			<Anchor>//api/name/whetherRecordVoice</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GlobalPreferences/whetherRecordVoice</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger *whetherRecordVoice</Declaration>
+			
+			
+			<Anchor>//api/name/whetherRecordVoice</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/setWhetherRecordActivity:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger *whetherRecordActivity</Declaration>
+			
+			
+			<Anchor>//api/name/whetherRecordActivity</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/whetherRecordActivity</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger *whetherRecordActivity</Declaration>
+			
+			
+			<Anchor>//api/name/whetherRecordActivity</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GlobalPreferences/whetherRecordActivity</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger *whetherRecordActivity</Declaration>
+			
+			
+			<Anchor>//api/name/whetherRecordActivity</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GlobalPreferences/sharedGlobalPreferences</TokenIdentifier>
+			<Abstract type="html">Set up shared instance of global preferences</Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>+ (GlobalPreferences *)sharedGlobalPreferences</Declaration>
+			
+			<ReturnValue><Abstract type="html">sharedObject</Abstract></ReturnValue>
+			<Anchor>//api/name/sharedGlobalPreferences</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/saveState</TokenIdentifier>
+			<Abstract type="html">Save current preferences state</Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>- (void)saveState</Declaration>
+			
+			
+			<Anchor>//api/name/saveState</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/forgetState</TokenIdentifier>
+			<Abstract type="html">Forget all preferences state</Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>- (void)forgetState</Declaration>
+			
+			
+			<Anchor>//api/name/forgetState</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/restoreFromSavedState</TokenIdentifier>
+			<Abstract type="html">Restore preferences from saved state</Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>- (void)restoreFromSavedState</Declaration>
+			
+			
+			<Anchor>//api/name/restoreFromSavedState</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/resetToFactoryDefaults</TokenIdentifier>
+			<Abstract type="html">Reset preferences to factory defaults</Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>- (void)resetToFactoryDefaults</Declaration>
+			
+			
+			<Anchor>//api/name/resetToFactoryDefaults</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/packagedSettings</TokenIdentifier>
+			<Abstract type="html">Save all preferences to a dictionary</Abstract>
+			<DeclaredIn>GlobalPreferences.h</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)packagedSettings</Declaration>
+			
+			<ReturnValue><Abstract type="html">settingsDict</Abstract></ReturnValue>
+			<Anchor>//api/name/packagedSettings</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GlobalPreferences/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GlobalPreferences.m</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

@@ -1,0 +1,90 @@
+//
+//   Localizable.strings
+//   Autista
+//   Copyright (C) 2014 The Groden Center, Inc.
+// 
+//   This Source Code Form is subject to the terms of the Mozilla Public
+//   License, v. 2.0. If a copy of the MPL was not distributed with this
+//   file, You can obtain one at http://mozilla.org/MPL/2.0/.
+// 
+
+/**-----------------------------------------------------------------------------
+ * @name In Say Puzzle View
+ * -----------------------------------------------------------------------------
+ */
+
+"Pass" = "Pass";
+"Finish" = "Finish";
+"Please Wait..." = "Please Wait...";
+"Speak Now" = "Speak Now";
+/**-----------------------------------------------------------------------------
+ * @name In Admin View
+ * -----------------------------------------------------------------------------
+ */
+
+
+//General app setting labels
+"General" = "General";
+"Point" = "Point";
+"Speak" = "Speak";
+"Type" = "Type";
+"Change how often each type of puzzle appears." = "Change how often each type of puzzle appears.";
+
+//Point mode setting labels
+"Point Mode" = "Point Mode";
+"Selecting Distance" = "Selecting Distance";
+"Snap Back" = "Snap Back";
+"Snapping Distance" = "Snapping Distance";
+"In Point Mode, choose how far away from a puzzle piece a finger has to land so as to grab that piece." = "In Point Mode, choose how far away from a puzzle piece a finger has to land so as to grab that piece.";
+"In Point Mode, choose whether puzzle pieces return to their original position if placed incorrectly." = "In Point Mode, choose whether puzzle pieces return to their original position if placed incorrectly.";
+"In Point Mode, choose how close to its correct position a puzzle piece must be dragged in order to snap into place." = "In Point Mode, choose how close to its correct position a puzzle piece must be dragged in order to snap into place.";
+
+//Speak mode setting labels
+"Speak Mode" = "Speak Mode";
+"Speech Loudness" = "Speech Loudness";
+"Tolerance" = "Tolerance";
+
+"Background Music" = "Background Music";
+"Praise Prompt" = "Praise Prompt";
+"Hard" = "Hard";
+"Medium" = "Medium";
+"Easy" = "Easy";
+"Try Again" = "Try Again";
+
+//Button Labels
+
+"Reset App" = "Reset App";
+"Reset Sliders" = "Reset Sliders";
+"Send Log Data" = "Send Log Data";
+
+//Labels for Praise Prompt
+"Choose whether the app provides a verbal praise prompt, such as 'Super' or 'You are awesome', on completion of a puzzle." = "Choose whether the app provides a verbal praise prompt, such as 'Super' or 'You are awesome', on completion of a puzzle.";
+
+"A praise prompt to encourage the child once a hard puzzle is completed." = "A praise prompt to encourage the child once a hard puzzle is completed.";
+
+"A praise prompt to encourage the child once a medium puzzle is completed." = "A praise prompt to encourage the child once a medium puzzle is completed.";
+
+"A praise prompt to encourage the child once a easy puzzle is completed." = "A praise prompt to encourage the child once a easy puzzle is completed.";
+
+"A praise prompt to encourage the child once a puzzle is not completed." = "A praise prompt to encourage the child once a puzzle is not completed.";
+
+"Record a praise prompt to encourage the child once a hard puzzle is completed. (Less than 2 seconds)" = "Record a praise prompt to encourage the child once a hard puzzle is completed. (Less than 2 seconds)";
+
+"Record a praise prompt to encourage the child once a medium puzzle is completed. (Less than 2 seconds)" = "Record a praise prompt to encourage the child once a medium puzzle is completed. (Less than 2 seconds)";
+
+"Record a praise prompt to encourage the child once a easy puzzle is completed (Less than 2 seconds)." = "Record a praise prompt to encourage the child once a easy puzzle is completed (Less than 2 seconds).";
+
+"Record a praise prompt to encourage the child once a puzzle is not completed (Less than 2 seconds)." = "Record a praise prompt to encourage the child once a puzzle is not completed (Less than 2 seconds).";
+
+"Select a praise prompt to encourage the child once a hard puzzle is completed. (Less than 2 seconds)" = "Select a praise prompt to encourage the child once a hard puzzle is completed. (Less than 2 seconds)";
+
+"Select a praise prompt to encourage the child once a medium puzzle is completed. (Less than 2 seconds)" = "Select a praise prompt to encourage the child once a medium puzzle is completed. (Less than 2 seconds)";
+
+"Select a praise prompt to encourage the child once a easy puzzle is completed (Less than 2 seconds)." = "Select a praise prompt to encourage the child once a easy puzzle is completed (Less than 2 seconds).";
+
+"Select a praise prompt to encourage the child once a puzzle is not completed (Less than 2 seconds)." = "Select a praise prompt to encourage the child once a puzzle is not completed (Less than 2 seconds).";
+
+//Labels for log
+
+"Log size: %u entries" = "Log size: %u entries";
+"Logs emptied" = "Logs emptied";

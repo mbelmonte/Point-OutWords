@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AppDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AppDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.h</DeclaredIn>
+            
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AppDelegate/setWindow:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIWindow *window</Declaration>
+			
+			
+			<Anchor>//api/name/window</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AppDelegate/window</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIWindow *window</Declaration>
+			
+			
+			<Anchor>//api/name/window</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AppDelegate/window</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIWindow *window</Declaration>
+			
+			
+			<Anchor>//api/name/window</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AppDelegate/setManagedObjectContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext</Declaration>
+			
+			
+			<Anchor>//api/name/managedObjectContext</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AppDelegate/managedObjectContext</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext</Declaration>
+			
+			
+			<Anchor>//api/name/managedObjectContext</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AppDelegate/managedObjectContext</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext</Declaration>
+			
+			
+			<Anchor>//api/name/managedObjectContext</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AppDelegate/setManagedObjectModel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel</Declaration>
+			
+			
+			<Anchor>//api/name/managedObjectModel</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AppDelegate/managedObjectModel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel</Declaration>
+			
+			
+			<Anchor>//api/name/managedObjectModel</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AppDelegate/managedObjectModel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel</Declaration>
+			
+			
+			<Anchor>//api/name/managedObjectModel</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AppDelegate/setPersistentStoreCoordinator:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator</Declaration>
+			
+			
+			<Anchor>//api/name/persistentStoreCoordinator</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AppDelegate/persistentStoreCoordinator</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator</Declaration>
+			
+			
+			<Anchor>//api/name/persistentStoreCoordinator</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AppDelegate/persistentStoreCoordinator</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator</Declaration>
+			
+			
+			<Anchor>//api/name/persistentStoreCoordinator</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AppDelegate/setRunState:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) AppRunState runState</Declaration>
+			
+			
+			<Anchor>//api/name/runState</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AppDelegate/runState</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) AppRunState runState</Declaration>
+			
+			
+			<Anchor>//api/name/runState</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AppDelegate/runState</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) AppRunState runState</Declaration>
+			
+			
+			<Anchor>//api/name/runState</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AppDelegate/setCurrentUser:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) User *currentUser</Declaration>
+			
+			
+			<Anchor>//api/name/currentUser</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AppDelegate/currentUser</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) User *currentUser</Declaration>
+			
+			
+			<Anchor>//api/name/currentUser</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AppDelegate/currentUser</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) User *currentUser</Declaration>
+			
+			
+			<Anchor>//api/name/currentUser</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AppDelegate/setPrefs:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) GlobalPreferences *prefs</Declaration>
+			
+			
+			<Anchor>//api/name/prefs</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AppDelegate/prefs</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) GlobalPreferences *prefs</Declaration>
+			
+			
+			<Anchor>//api/name/prefs</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AppDelegate/prefs</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) GlobalPreferences *prefs</Declaration>
+			
+			
+			<Anchor>//api/name/prefs</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AppDelegate/setAppVersion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic, retain) NSString *appVersion</Declaration>
+			
+			
+			<Anchor>//api/name/appVersion</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AppDelegate/appVersion</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic, retain) NSString *appVersion</Declaration>
+			
+			
+			<Anchor>//api/name/appVersion</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AppDelegate/appVersion</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic, retain) NSString *appVersion</Declaration>
+			
+			
+			<Anchor>//api/name/appVersion</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AppDelegate/saveState</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)saveState</Declaration>
+			
+			
+			<Anchor>//api/name/saveState</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AppDelegate/saveContext</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)saveContext</Declaration>
+			
+			
+			<Anchor>//api/name/saveContext</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AppDelegate/newManagedObjectWithEntity:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.h</DeclaredIn>
+			
+			<Declaration>- (id)newManagedObjectWithEntity:(NSString *)entity</Declaration>
+			
+			
+			<Anchor>//api/name/newManagedObjectWithEntity:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AppDelegate/applicationDocumentsDirectory</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.h</DeclaredIn>
+			
+			<Declaration>- (NSURL *)applicationDocumentsDirectory</Declaration>
+			
+			
+			<Anchor>//api/name/applicationDocumentsDirectory</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AppDelegate/application:didFinishLaunchingWithOptions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions</Declaration>
+			
+			
+			<Anchor>//api/name/application:didFinishLaunchingWithOptions:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AppDelegate/applicationWillResignActive:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.m</DeclaredIn>
+			
+			<Declaration>- (void)applicationWillResignActive:(UIApplication *)application</Declaration>
+			
+			
+			<Anchor>//api/name/applicationWillResignActive:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AppDelegate/applicationDidEnterBackground:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.m</DeclaredIn>
+			
+			<Declaration>- (void)applicationDidEnterBackground:(UIApplication *)application</Declaration>
+			
+			
+			<Anchor>//api/name/applicationDidEnterBackground:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AppDelegate/applicationWillEnterForeground:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.m</DeclaredIn>
+			
+			<Declaration>- (void)applicationWillEnterForeground:(UIApplication *)application</Declaration>
+			
+			
+			<Anchor>//api/name/applicationWillEnterForeground:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AppDelegate/applicationDidBecomeActive:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.m</DeclaredIn>
+			
+			<Declaration>- (void)applicationDidBecomeActive:(UIApplication *)application</Declaration>
+			
+			
+			<Anchor>//api/name/applicationDidBecomeActive:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AppDelegate/applicationWillTerminate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.m</DeclaredIn>
+			
+			<Declaration>- (void)applicationWillTerminate:(UIApplication *)application</Declaration>
+			
+			
+			<Anchor>//api/name/applicationWillTerminate:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AppDelegate/fetchCurrentUser</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.m</DeclaredIn>
+			
+			<Declaration>- (void)fetchCurrentUser</Declaration>
+			
+			
+			<Anchor>//api/name/fetchCurrentUser</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AppDelegate/primeCoreDataStoreWithData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.m</DeclaredIn>
+			
+			<Declaration>- (void)primeCoreDataStoreWithData</Declaration>
+			
+			
+			<Anchor>//api/name/primeCoreDataStoreWithData</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AppDelegate/createUser</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppDelegate.m</DeclaredIn>
+			
+			<Declaration>- (void)createUser</Declaration>
+			
+			
+			<Anchor>//api/name/createUser</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

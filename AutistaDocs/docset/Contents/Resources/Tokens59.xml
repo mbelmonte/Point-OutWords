@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TypeBanner.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TypeBanner</TokenIdentifier>
+			<Abstract type="html">The banner on the top part of the screen in type mode, it is used to show the progress of the puzzle</Abstract>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
+            
+			
+			<NodeRef refid="59"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypeBanner/setBannerText:</TokenIdentifier>
+			<Abstract type="html">Text on the banner</Abstract>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *bannerText</Declaration>
+			
+			
+			<Anchor>//api/name/bannerText</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypeBanner/bannerText</TokenIdentifier>
+			<Abstract type="html">Text on the banner</Abstract>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *bannerText</Declaration>
+			
+			
+			<Anchor>//api/name/bannerText</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TypeBanner/bannerText</TokenIdentifier>
+			<Abstract type="html">Text on the banner</Abstract>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *bannerText</Declaration>
+			
+			
+			<Anchor>//api/name/bannerText</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypeBanner/setBannerFont:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) UIFont *bannerFont</Declaration>
+			
+			
+			<Anchor>//api/name/bannerFont</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypeBanner/bannerFont</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) UIFont *bannerFont</Declaration>
+			
+			
+			<Anchor>//api/name/bannerFont</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TypeBanner/bannerFont</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) UIFont *bannerFont</Declaration>
+			
+			
+			<Anchor>//api/name/bannerFont</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypeBanner/setHighlightMode:</TokenIdentifier>
+			<Abstract type="html">Highlight the banner.
+It interpret bannerText as syllables or as independent characters.</Abstract>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BannerHighlightMode highlightMode</Declaration>
+			
+			
+			<Anchor>//api/name/highlightMode</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypeBanner/highlightMode</TokenIdentifier>
+			<Abstract type="html">Highlight the banner.
+It interpret bannerText as syllables or as independent characters.</Abstract>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BannerHighlightMode highlightMode</Declaration>
+			
+			
+			<Anchor>//api/name/highlightMode</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TypeBanner/highlightMode</TokenIdentifier>
+			<Abstract type="html">Highlight the banner.
+It interpret bannerText as syllables or as independent characters.</Abstract>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BannerHighlightMode highlightMode</Declaration>
+			
+			
+			<Anchor>//api/name/highlightMode</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypeBanner/setHighlightColor:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) UIColor *highlightColor</Declaration>
+			
+			
+			<Anchor>//api/name/highlightColor</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypeBanner/highlightColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) UIColor *highlightColor</Declaration>
+			
+			
+			<Anchor>//api/name/highlightColor</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TypeBanner/highlightColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) UIColor *highlightColor</Declaration>
+			
+			
+			<Anchor>//api/name/highlightColor</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypeBanner/setCompletedColor:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) UIColor *completedColor</Declaration>
+			
+			
+			<Anchor>//api/name/completedColor</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypeBanner/completedColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) UIColor *completedColor</Declaration>
+			
+			
+			<Anchor>//api/name/completedColor</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TypeBanner/completedColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) UIColor *completedColor</Declaration>
+			
+			
+			<Anchor>//api/name/completedColor</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypeBanner/setBannerText:</TokenIdentifier>
+			<Abstract type="html">Set the text on the banner</Abstract>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
+			
+			<Declaration>- (void)setBannerText:(NSString *)bannerText</Declaration>
+			
+			
+			<Anchor>//api/name/setBannerText:</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypeBanner/initializeBannerlabelsWithCharacters</TokenIdentifier>
+			<Abstract type="html">Set banner label with characters</Abstract>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
+			
+			<Declaration>- (void)initializeBannerlabelsWithCharacters</Declaration>
+			
+			
+			<Anchor>//api/name/initializeBannerlabelsWithCharacters</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypeBanner/initializeBannerLabelsWithSyllables</TokenIdentifier>
+			<Abstract type="html">Set banner label with syllables</Abstract>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
+			
+			<Declaration>- (void)initializeBannerLabelsWithSyllables</Declaration>
+			
+			
+			<Anchor>//api/name/initializeBannerLabelsWithSyllables</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypeBanner/setBannerFont:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
+			
+			<Declaration>- (void)setBannerFont:(UIFont *)bannerFont</Declaration>
+			
+			
+			<Anchor>//api/name/setBannerFont:</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypeBanner/highlightLabelAtPosition:</TokenIdentifier>
+			<Abstract type="html">Automatically colors labels before pos using completedColor</Abstract>
+			<DeclaredIn>TypeBanner.h</DeclaredIn>
+			
+			<Declaration>- (void)highlightLabelAtPosition:(NSInteger)pos</Declaration>
+			
+			
+			<Anchor>//api/name/highlightLabelAtPosition:</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypeBanner/initWithFrame:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypeBanner.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithFrame:(CGRect)frame</Declaration>
+			
+			
+			<Anchor>//api/name/initWithFrame:</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TypeBanner/layoutSubviews</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TypeBanner.m</DeclaredIn>
+			
+			<Declaration>- (void)layoutSubviews</Declaration>
+			
+			
+			<Anchor>//api/name/layoutSubviews</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

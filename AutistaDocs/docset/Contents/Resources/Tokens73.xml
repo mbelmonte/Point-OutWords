@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/UIDevice+IdentifierAddition.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/UIDevice(IdentifierAddition)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIDevice+IdentifierAddition.h</DeclaredIn>
+            
+			
+			<NodeRef refid="73"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIDevice/uniqueDeviceIdentifier</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIDevice+IdentifierAddition.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)uniqueDeviceIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/uniqueDeviceIdentifier</Anchor>
+            <NodeRef refid="73"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIDevice/uniqueGlobalDeviceIdentifier</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIDevice+IdentifierAddition.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)uniqueGlobalDeviceIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/uniqueGlobalDeviceIdentifier</Anchor>
+            <NodeRef refid="73"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIDevice/macaddress</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIDevice+IdentifierAddition.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)macaddress</Declaration>
+			
+			
+			<Anchor>//api/name/macaddress</Anchor>
+            <NodeRef refid="73"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

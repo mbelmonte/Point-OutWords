@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Scenes</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>Picnic</string>
+			<key>scenebackground</key>
+			<string>SceneBackground.png</string>
+			<key>puzzlebackground</key>
+			<string>PuzzleBackground.png</string>
+			<key>objects</key>
+			<array>
+				<dict>
+					<key>title</key>
+					<string>Banana</string>
+					<key>syllables</key>
+					<string>ba-na-na</string>
+					<key>image</key>
+					<string>Banana.png</string>
+				</dict>
+				<dict>
+					<key>title</key>
+					<string>Grapes</string>
+					<key>syllables</key>
+					<string>grapes</string>
+					<key>image</key>
+					<string>Grapes.png</string>
+				</dict>
+				<dict>
+					<key>title</key>
+					<string>Orange</string>
+					<key>syllables</key>
+					<string>o-range</string>
+					<key>image</key>
+					<string>Orange.png</string>
+				</dict>
+				<dict>
+					<key>title</key>
+					<string>Watermelon</string>
+					<key>syllables</key>
+					<string>wa-ter-mel-on</string>
+					<key>image</key>
+					<string>Watermelon.png</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

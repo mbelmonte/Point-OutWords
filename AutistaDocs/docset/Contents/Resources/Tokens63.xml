@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/VUMeterTable.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/VUMeterTable</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VUMeterTable.h</DeclaredIn>
+            
+			
+			<NodeRef refid="63"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VUMeterTable/initWithMinDecibels:tableSize:responseCurve:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VUMeterTable.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithMinDecibels:(CGFloat)minDecibels tableSize:(NSInteger)size responseCurve:(CGFloat)root</Declaration>
+			
+			
+			<Anchor>//api/name/initWithMinDecibels:tableSize:responseCurve:</Anchor>
+            <NodeRef refid="63"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VUMeterTable/valueAt:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VUMeterTable.h</DeclaredIn>
+			
+			<Declaration>- (CGFloat)valueAt:(CGFloat)decibels</Declaration>
+			
+			
+			<Anchor>//api/name/valueAt:</Anchor>
+            <NodeRef refid="63"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

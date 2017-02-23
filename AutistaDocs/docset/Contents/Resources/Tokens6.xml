@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/EventLogger.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/EventLogger</TokenIdentifier>
+			<Abstract type="html">Events logging</Abstract>
+			<DeclaredIn>EventLogger.h</DeclaredIn>
+            
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/EventLogger/sharedLogger</TokenIdentifier>
+			<Abstract type="html">Set up shared instance of Logger</Abstract>
+			<DeclaredIn>EventLogger.h</DeclaredIn>
+			
+			<Declaration>+ (id)sharedLogger</Declaration>
+			
+			<ReturnValue><Abstract type="html">sharedObject</Abstract></ReturnValue>
+			<Anchor>//api/name/sharedLogger</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/EventLogger/numberOfLogs</TokenIdentifier>
+			<Abstract type="html">Get count of Log entries</Abstract>
+			<DeclaredIn>EventLogger.h</DeclaredIn>
+			
+			<Declaration>+ (NSInteger)numberOfLogs</Declaration>
+			
+			<ReturnValue><Abstract type="html">logs count</Abstract></ReturnValue>
+			<Anchor>//api/name/numberOfLogs</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventLogger/loadEvents</TokenIdentifier>
+			<Abstract type="html">Load events from Core Data</Abstract>
+			<DeclaredIn>EventLogger.h</DeclaredIn>
+			
+			<Declaration>- (void)loadEvents</Declaration>
+			
+			
+			<Anchor>//api/name/loadEvents</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventLogger/archiveMonthOldLogData</TokenIdentifier>
+			<Abstract type="html">Load month old log data in background</Abstract>
+			<DeclaredIn>EventLogger.h</DeclaredIn>
+			
+			<Declaration>- (void)archiveMonthOldLogData</Declaration>
+			
+			
+			<Anchor>//api/name/archiveMonthOldLogData</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventLogger/logEvent:eventInfo:</TokenIdentifier>
+			<Abstract type="html">Log a event to Core Data</Abstract>
+			<DeclaredIn>EventLogger.h</DeclaredIn>
+			
+			<Declaration>- (void)logEvent:(LogEventCode)eventCode eventInfo:(NSDictionary *)eventInfo</Declaration>
+			
+			
+			<Anchor>//api/name/logEvent:eventInfo:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventLogger/logAccelerometer:eventInfo:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventLogger.h</DeclaredIn>
+			
+			<Declaration>- (void)logAccelerometer:(LogEventCode)eventCode eventInfo:(NSDictionary *)eventInfo</Declaration>
+			
+			
+			<Anchor>//api/name/logAccelerometer:eventInfo:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventLogger/getEventIndexWithCode:</TokenIdentifier>
+			<Abstract type="html">Fetch event index from Core Data using event code</Abstract>
+			<DeclaredIn>EventLogger.h</DeclaredIn>
+			
+			<Declaration>- (NSInteger)getEventIndexWithCode:(LogEventCode)eventCode</Declaration>
+			
+			
+			<Anchor>//api/name/getEventIndexWithCode:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventLogger/logAttemptForPuzzle:inMode:state:</TokenIdentifier>
+			<Abstract type="html">Log attempt information for puzzle</Abstract>
+			<DeclaredIn>EventLogger.h</DeclaredIn>
+			
+			<Declaration>- (void)logAttemptForPuzzle:(PuzzleObject *)puzzleObject inMode:(PuzzleMode)mode state:(PuzzleState)state</Declaration>
+			
+			
+			<Anchor>//api/name/logAttemptForPuzzle:inMode:state:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventLogger/getScoresFromAttempsForUser:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventLogger.h</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)getScoresFromAttempsForUser:(User *)user</Declaration>
+			
+			
+			<Anchor>//api/name/getScoresFromAttempsForUser:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventLogger/logData</TokenIdentifier>
+			<Abstract type="html">Function to log data</Abstract>
+			<DeclaredIn>EventLogger.h</DeclaredIn>
+			
+			<Declaration>- (NSData *)logData</Declaration>
+			
+			
+			<Anchor>//api/name/logData</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventLogger/removeLogFolder:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventLogger.h</DeclaredIn>
+			
+			<Declaration>- (void)removeLogFolder:(NSString *)documentsDirectory</Declaration>
+			
+			
+			<Anchor>//api/name/removeLogFolder:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventLogger/deleteLogData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventLogger.h</DeclaredIn>
+			
+			<Declaration>- (void)deleteLogData</Declaration>
+			
+			
+			<Anchor>//api/name/deleteLogData</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventLogger/deleteAllUserData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventLogger.h</DeclaredIn>
+			
+			<Declaration>- (void)deleteAllUserData</Declaration>
+			
+			
+			<Anchor>//api/name/deleteAllUserData</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventLogger/deleteAttempts</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventLogger.h</DeclaredIn>
+			
+			<Declaration>- (void)deleteAttempts</Declaration>
+			
+			
+			<Anchor>//api/name/deleteAttempts</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventLogger/suggestModeForPuzzle:</TokenIdentifier>
+			<Abstract type="html">Randomization process for modes for a specific puzzle</Abstract>
+			<DeclaredIn>EventLogger.h</DeclaredIn>
+			
+			<Declaration>- (PuzzleMode)suggestModeForPuzzle:(PuzzleObject *)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>object</Name>
+					<Abstract type="html">Puzzle Object</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">suggested mode</Abstract></ReturnValue>
+			<Anchor>//api/name/suggestModeForPuzzle:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventLogger/suggestPuzzle</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventLogger.h</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)suggestPuzzle</Declaration>
+			
+			
+			<Anchor>//api/name/suggestPuzzle</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EventLogger/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EventLogger.m</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

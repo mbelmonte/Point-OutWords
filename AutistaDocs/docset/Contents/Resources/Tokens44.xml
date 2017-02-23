@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SBJsonStreamWriterStateComplete.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SBJsonStreamWriterStateComplete</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SBJsonStreamWriterState.h</DeclaredIn>
+            
+			
+			<NodeRef refid="44"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SBJsonStreamWriterStateComplete/isInvalidState:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SBJsonStreamWriterState.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)isInvalidState:(SBJsonStreamWriter *)writer</Declaration>
+			
+			
+			<Anchor>//api/name/isInvalidState:</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

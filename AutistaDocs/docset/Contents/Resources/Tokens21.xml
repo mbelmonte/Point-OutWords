@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PuzzleStateView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PuzzleStateView</TokenIdentifier>
+			<Abstract type="html">The view controller showing the acomplishing status of all puzzles in a scene.
+The status for all three modes are displayed.
+A green dot denote completion.</Abstract>
+			<DeclaredIn>PuzzleStateView.h</DeclaredIn>
+            
+			
+			<NodeRef refid="21"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PuzzleStateView/setImageView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PuzzleStateView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UIImageView *imageView</Declaration>
+			
+			
+			<Anchor>//api/name/imageView</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PuzzleStateView/imageView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PuzzleStateView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UIImageView *imageView</Declaration>
+			
+			
+			<Anchor>//api/name/imageView</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PuzzleStateView/imageView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PuzzleStateView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UIImageView *imageView</Declaration>
+			
+			
+			<Anchor>//api/name/imageView</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PuzzleStateView/setDragState:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PuzzleStateView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PuzzleState *dragState</Declaration>
+			
+			
+			<Anchor>//api/name/dragState</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PuzzleStateView/dragState</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PuzzleStateView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PuzzleState *dragState</Declaration>
+			
+			
+			<Anchor>//api/name/dragState</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PuzzleStateView/dragState</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PuzzleStateView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PuzzleState *dragState</Declaration>
+			
+			
+			<Anchor>//api/name/dragState</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PuzzleStateView/setTypeState:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PuzzleStateView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PuzzleState *typeState</Declaration>
+			
+			
+			<Anchor>//api/name/typeState</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PuzzleStateView/typeState</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PuzzleStateView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PuzzleState *typeState</Declaration>
+			
+			
+			<Anchor>//api/name/typeState</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PuzzleStateView/typeState</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PuzzleStateView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PuzzleState *typeState</Declaration>
+			
+			
+			<Anchor>//api/name/typeState</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PuzzleStateView/setSayState:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PuzzleStateView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PuzzleState *sayState</Declaration>
+			
+			
+			<Anchor>//api/name/sayState</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PuzzleStateView/sayState</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PuzzleStateView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PuzzleState *sayState</Declaration>
+			
+			
+			<Anchor>//api/name/sayState</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PuzzleStateView/sayState</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PuzzleStateView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PuzzleState *sayState</Declaration>
+			
+			
+			<Anchor>//api/name/sayState</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PuzzleStateView/drawRect:</TokenIdentifier>
+			<Abstract type="html">Layout UI components</Abstract>
+			<DeclaredIn>PuzzleStateView.h</DeclaredIn>
+			
+			<Declaration>- (void)drawRect:(CGRect)rect</Declaration>
+			
+			
+			<Anchor>//api/name/drawRect:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PuzzleStateView/colorFromState:</TokenIdentifier>
+			<Abstract type="html">Choose a color for the puzzle&apos;s completion status in a mode</Abstract>
+			<DeclaredIn>PuzzleStateView.h</DeclaredIn>
+			
+			<Declaration>- (UIColor *)colorFromState:(PuzzleState)state</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>state</Name>
+					<Abstract type="html">puzzle completion status</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">color</Abstract></ReturnValue>
+			<Anchor>//api/name/colorFromState:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PuzzleStateView/setImageView:</TokenIdentifier>
+			<Abstract type="html">Setup the image view</Abstract>
+			<DeclaredIn>PuzzleStateView.h</DeclaredIn>
+			
+			<Declaration>- (void)setImageView:(UIImageView *)imageView</Declaration>
+			
+			
+			<Anchor>//api/name/setImageView:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PuzzleStateView/initWithFrame:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PuzzleStateView.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithFrame:(CGRect)frame</Declaration>
+			
+			
+			<Anchor>//api/name/initWithFrame:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

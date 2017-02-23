@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/Log.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/Log</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Log.h</DeclaredIn>
+            
+			
+			<NodeRef refid="16"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Log/setAbsoluteTime:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Log.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *absoluteTime</Declaration>
+			
+			
+			<Anchor>//api/name/absoluteTime</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Log/absoluteTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Log.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *absoluteTime</Declaration>
+			
+			
+			<Anchor>//api/name/absoluteTime</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Log/absoluteTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Log.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *absoluteTime</Declaration>
+			
+			
+			<Anchor>//api/name/absoluteTime</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Log/setAppState:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Log.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *appState</Declaration>
+			
+			
+			<Anchor>//api/name/appState</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Log/appState</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Log.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *appState</Declaration>
+			
+			
+			<Anchor>//api/name/appState</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Log/appState</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Log.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *appState</Declaration>
+			
+			
+			<Anchor>//api/name/appState</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Log/setTimeSinceLaunch:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Log.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *timeSinceLaunch</Declaration>
+			
+			
+			<Anchor>//api/name/timeSinceLaunch</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Log/timeSinceLaunch</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Log.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *timeSinceLaunch</Declaration>
+			
+			
+			<Anchor>//api/name/timeSinceLaunch</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Log/timeSinceLaunch</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Log.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *timeSinceLaunch</Declaration>
+			
+			
+			<Anchor>//api/name/timeSinceLaunch</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Log/setEventInfo:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Log.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *eventInfo</Declaration>
+			
+			
+			<Anchor>//api/name/eventInfo</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Log/eventInfo</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Log.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *eventInfo</Declaration>
+			
+			
+			<Anchor>//api/name/eventInfo</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Log/eventInfo</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Log.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *eventInfo</Declaration>
+			
+			
+			<Anchor>//api/name/eventInfo</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Log/setAppSettings:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Log.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *appSettings</Declaration>
+			
+			
+			<Anchor>//api/name/appSettings</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Log/appSettings</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Log.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *appSettings</Declaration>
+			
+			
+			<Anchor>//api/name/appSettings</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Log/appSettings</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Log.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *appSettings</Declaration>
+			
+			
+			<Anchor>//api/name/appSettings</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Log/setEvent:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Log.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) Event *event</Declaration>
+			
+			
+			<Anchor>//api/name/event</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Log/event</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Log.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) Event *event</Declaration>
+			
+			
+			<Anchor>//api/name/event</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Log/event</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Log.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) Event *event</Declaration>
+			
+			
+			<Anchor>//api/name/event</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Log/setUser:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Log.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) User *user</Declaration>
+			
+			
+			<Anchor>//api/name/user</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Log/user</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Log.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) User *user</Declaration>
+			
+			
+			<Anchor>//api/name/user</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Log/user</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Log.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) User *user</Declaration>
+			
+			
+			<Anchor>//api/name/user</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

@@ -1,0 +1,4550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AdminViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AdminViewController</TokenIdentifier>
+			<Abstract type="html">View controller for admin view</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setPointModeView:</TokenIdentifier>
+			<Abstract type="html">create two views for transforming animation</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *pointModeView</Declaration>
+			
+			
+			<Anchor>//api/name/pointModeView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/pointModeView</TokenIdentifier>
+			<Abstract type="html">create two views for transforming animation</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *pointModeView</Declaration>
+			
+			
+			<Anchor>//api/name/pointModeView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/pointModeView</TokenIdentifier>
+			<Abstract type="html">create two views for transforming animation</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *pointModeView</Declaration>
+			
+			
+			<Anchor>//api/name/pointModeView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setSayModeView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *sayModeView</Declaration>
+			
+			
+			<Anchor>//api/name/sayModeView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/sayModeView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *sayModeView</Declaration>
+			
+			
+			<Anchor>//api/name/sayModeView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/sayModeView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *sayModeView</Declaration>
+			
+			
+			<Anchor>//api/name/sayModeView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setPromptSourceSelectionView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *promptSourceSelectionView</Declaration>
+			
+			
+			<Anchor>//api/name/promptSourceSelectionView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/promptSourceSelectionView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *promptSourceSelectionView</Declaration>
+			
+			
+			<Anchor>//api/name/promptSourceSelectionView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/promptSourceSelectionView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *promptSourceSelectionView</Declaration>
+			
+			
+			<Anchor>//api/name/promptSourceSelectionView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setRecordFilePathArray:</TokenIdentifier>
+			<Abstract type="html">&lt;#Description#&gt;</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *recordFilePathArray</Declaration>
+			
+			
+			<Anchor>//api/name/recordFilePathArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/recordFilePathArray</TokenIdentifier>
+			<Abstract type="html">&lt;#Description#&gt;</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *recordFilePathArray</Declaration>
+			
+			
+			<Anchor>//api/name/recordFilePathArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/recordFilePathArray</TokenIdentifier>
+			<Abstract type="html">&lt;#Description#&gt;</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *recordFilePathArray</Declaration>
+			
+			
+			<Anchor>//api/name/recordFilePathArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setRecorder:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property AVAudioRecorder *recorder</Declaration>
+			
+			
+			<Anchor>//api/name/recorder</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/recorder</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property AVAudioRecorder *recorder</Declaration>
+			
+			
+			<Anchor>//api/name/recorder</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/recorder</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property AVAudioRecorder *recorder</Declaration>
+			
+			
+			<Anchor>//api/name/recorder</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setPlayer:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property AVAudioPlayer *player</Declaration>
+			
+			
+			<Anchor>//api/name/player</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/player</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property AVAudioPlayer *player</Declaration>
+			
+			
+			<Anchor>//api/name/player</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/player</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property AVAudioPlayer *player</Declaration>
+			
+			
+			<Anchor>//api/name/player</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setPraiseFileLabelArray:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *praiseFileLabelArray</Declaration>
+			
+			
+			<Anchor>//api/name/praiseFileLabelArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/praiseFileLabelArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *praiseFileLabelArray</Declaration>
+			
+			
+			<Anchor>//api/name/praiseFileLabelArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/praiseFileLabelArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *praiseFileLabelArray</Declaration>
+			
+			
+			<Anchor>//api/name/praiseFileLabelArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setMyPlayer:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property MPMusicPlayerController *myPlayer</Declaration>
+			
+			
+			<Anchor>//api/name/myPlayer</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/myPlayer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property MPMusicPlayerController *myPlayer</Declaration>
+			
+			
+			<Anchor>//api/name/myPlayer</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/myPlayer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property MPMusicPlayerController *myPlayer</Declaration>
+			
+			
+			<Anchor>//api/name/myPlayer</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setPraiseFileLabelArrayForPlist:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *praiseFileLabelArrayForPlist</Declaration>
+			
+			
+			<Anchor>//api/name/praiseFileLabelArrayForPlist</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/praiseFileLabelArrayForPlist</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *praiseFileLabelArrayForPlist</Declaration>
+			
+			
+			<Anchor>//api/name/praiseFileLabelArrayForPlist</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/praiseFileLabelArrayForPlist</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *praiseFileLabelArrayForPlist</Declaration>
+			
+			
+			<Anchor>//api/name/praiseFileLabelArrayForPlist</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setITunesPlayList:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *iTunesPlayList</Declaration>
+			
+			
+			<Anchor>//api/name/iTunesPlayList</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/iTunesPlayList</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *iTunesPlayList</Declaration>
+			
+			
+			<Anchor>//api/name/iTunesPlayList</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/iTunesPlayList</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *iTunesPlayList</Declaration>
+			
+			
+			<Anchor>//api/name/iTunesPlayList</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setDefaultPromptArray:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *defaultPromptArray</Declaration>
+			
+			
+			<Anchor>//api/name/defaultPromptArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/defaultPromptArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *defaultPromptArray</Declaration>
+			
+			
+			<Anchor>//api/name/defaultPromptArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/defaultPromptArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *defaultPromptArray</Declaration>
+			
+			
+			<Anchor>//api/name/defaultPromptArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setAllPromptArray:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *allPromptArray</Declaration>
+			
+			
+			<Anchor>//api/name/allPromptArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/allPromptArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *allPromptArray</Declaration>
+			
+			
+			<Anchor>//api/name/allPromptArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/allPromptArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *allPromptArray</Declaration>
+			
+			
+			<Anchor>//api/name/allPromptArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setCurrentSelection:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property int currentSelection</Declaration>
+			
+			
+			<Anchor>//api/name/currentSelection</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/currentSelection</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property int currentSelection</Declaration>
+			
+			
+			<Anchor>//api/name/currentSelection</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/currentSelection</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property int currentSelection</Declaration>
+			
+			
+			<Anchor>//api/name/currentSelection</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setIsEdited:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property BOOL isEdited</Declaration>
+			
+			
+			<Anchor>//api/name/isEdited</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/isEdited</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property BOOL isEdited</Declaration>
+			
+			
+			<Anchor>//api/name/isEdited</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/isEdited</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property BOOL isEdited</Declaration>
+			
+			
+			<Anchor>//api/name/isEdited</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setDefaultPlayBtnArray:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSArray *defaultPlayBtnArray</Declaration>
+			
+			
+			<Anchor>//api/name/defaultPlayBtnArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/defaultPlayBtnArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSArray *defaultPlayBtnArray</Declaration>
+			
+			
+			<Anchor>//api/name/defaultPlayBtnArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/defaultPlayBtnArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSArray *defaultPlayBtnArray</Declaration>
+			
+			
+			<Anchor>//api/name/defaultPlayBtnArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setRecordPlayBtnArray:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSArray *recordPlayBtnArray</Declaration>
+			
+			
+			<Anchor>//api/name/recordPlayBtnArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/recordPlayBtnArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSArray *recordPlayBtnArray</Declaration>
+			
+			
+			<Anchor>//api/name/recordPlayBtnArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/recordPlayBtnArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSArray *recordPlayBtnArray</Declaration>
+			
+			
+			<Anchor>//api/name/recordPlayBtnArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setItunesPlayBtnArray:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSArray *itunesPlayBtnArray</Declaration>
+			
+			
+			<Anchor>//api/name/itunesPlayBtnArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/itunesPlayBtnArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSArray *itunesPlayBtnArray</Declaration>
+			
+			
+			<Anchor>//api/name/itunesPlayBtnArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/itunesPlayBtnArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSArray *itunesPlayBtnArray</Declaration>
+			
+			
+			<Anchor>//api/name/itunesPlayBtnArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setRecordBtnArray:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSArray *recordBtnArray</Declaration>
+			
+			
+			<Anchor>//api/name/recordBtnArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/recordBtnArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSArray *recordBtnArray</Declaration>
+			
+			
+			<Anchor>//api/name/recordBtnArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/recordBtnArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSArray *recordBtnArray</Declaration>
+			
+			
+			<Anchor>//api/name/recordBtnArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setIndicator:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property UIActivityIndicatorView *indicator</Declaration>
+			
+			
+			<Anchor>//api/name/indicator</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/indicator</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property UIActivityIndicatorView *indicator</Declaration>
+			
+			
+			<Anchor>//api/name/indicator</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/indicator</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property UIActivityIndicatorView *indicator</Declaration>
+			
+			
+			<Anchor>//api/name/indicator</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setPreviousTime:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property long previousTime</Declaration>
+			
+			
+			<Anchor>//api/name/previousTime</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/previousTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property long previousTime</Declaration>
+			
+			
+			<Anchor>//api/name/previousTime</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/previousTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property long previousTime</Declaration>
+			
+			
+			<Anchor>//api/name/previousTime</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setBackgroundMusicSwitch:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UISwitch *backgroundMusicSwitch</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundMusicSwitch</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/backgroundMusicSwitch</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UISwitch *backgroundMusicSwitch</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundMusicSwitch</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/backgroundMusicSwitch</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UISwitch *backgroundMusicSwitch</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundMusicSwitch</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setGuidedModeSwitch:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UISwitch *guidedModeSwitch</Declaration>
+			
+			
+			<Anchor>//api/name/guidedModeSwitch</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/guidedModeSwitch</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UISwitch *guidedModeSwitch</Declaration>
+			
+			
+			<Anchor>//api/name/guidedModeSwitch</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/guidedModeSwitch</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UISwitch *guidedModeSwitch</Declaration>
+			
+			
+			<Anchor>//api/name/guidedModeSwitch</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setSnapbackSwitch:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UISwitch *snapbackSwitch</Declaration>
+			
+			
+			<Anchor>//api/name/snapbackSwitch</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/snapbackSwitch</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UISwitch *snapbackSwitch</Declaration>
+			
+			
+			<Anchor>//api/name/snapbackSwitch</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/snapbackSwitch</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UISwitch *snapbackSwitch</Declaration>
+			
+			
+			<Anchor>//api/name/snapbackSwitch</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setHighlightKeySwitch:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UISwitch *highlightKeySwitch</Declaration>
+			
+			
+			<Anchor>//api/name/highlightKeySwitch</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/highlightKeySwitch</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UISwitch *highlightKeySwitch</Declaration>
+			
+			
+			<Anchor>//api/name/highlightKeySwitch</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/highlightKeySwitch</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UISwitch *highlightKeySwitch</Declaration>
+			
+			
+			<Anchor>//api/name/highlightKeySwitch</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setRestoreButton:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UIButton *restoreButton</Declaration>
+			
+			
+			<Anchor>//api/name/restoreButton</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/restoreButton</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UIButton *restoreButton</Declaration>
+			
+			
+			<Anchor>//api/name/restoreButton</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/restoreButton</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UIButton *restoreButton</Declaration>
+			
+			
+			<Anchor>//api/name/restoreButton</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setCloseOverlayButton:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UIButton *closeOverlayButton</Declaration>
+			
+			
+			<Anchor>//api/name/closeOverlayButton</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/closeOverlayButton</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UIButton *closeOverlayButton</Declaration>
+			
+			
+			<Anchor>//api/name/closeOverlayButton</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/closeOverlayButton</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UIButton *closeOverlayButton</Declaration>
+			
+			
+			<Anchor>//api/name/closeOverlayButton</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setResetSlidersButton:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UIButton *resetSlidersButton</Declaration>
+			
+			
+			<Anchor>//api/name/resetSlidersButton</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/resetSlidersButton</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UIButton *resetSlidersButton</Declaration>
+			
+			
+			<Anchor>//api/name/resetSlidersButton</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/resetSlidersButton</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UIButton *resetSlidersButton</Declaration>
+			
+			
+			<Anchor>//api/name/resetSlidersButton</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setResetAppButton:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *resetAppButton</Declaration>
+			
+			
+			<Anchor>//api/name/resetAppButton</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/resetAppButton</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *resetAppButton</Declaration>
+			
+			
+			<Anchor>//api/name/resetAppButton</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/resetAppButton</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *resetAppButton</Declaration>
+			
+			
+			<Anchor>//api/name/resetAppButton</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setSendLogsButton:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UIButton *sendLogsButton</Declaration>
+			
+			
+			<Anchor>//api/name/sendLogsButton</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/sendLogsButton</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UIButton *sendLogsButton</Declaration>
+			
+			
+			<Anchor>//api/name/sendLogsButton</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/sendLogsButton</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UIButton *sendLogsButton</Declaration>
+			
+			
+			<Anchor>//api/name/sendLogsButton</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setSnapDistance:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UISlider *snapDistance</Declaration>
+			
+			
+			<Anchor>//api/name/snapDistance</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/snapDistance</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UISlider *snapDistance</Declaration>
+			
+			
+			<Anchor>//api/name/snapDistance</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/snapDistance</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UISlider *snapDistance</Declaration>
+			
+			
+			<Anchor>//api/name/snapDistance</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setSelectDistance:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UISlider *selectDistance</Declaration>
+			
+			
+			<Anchor>//api/name/selectDistance</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/selectDistance</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UISlider *selectDistance</Declaration>
+			
+			
+			<Anchor>//api/name/selectDistance</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/selectDistance</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UISlider *selectDistance</Declaration>
+			
+			
+			<Anchor>//api/name/selectDistance</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setAmpThresh:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UISlider *ampThresh</Declaration>
+			
+			
+			<Anchor>//api/name/ampThresh</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/ampThresh</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UISlider *ampThresh</Declaration>
+			
+			
+			<Anchor>//api/name/ampThresh</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/ampThresh</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UISlider *ampThresh</Declaration>
+			
+			
+			<Anchor>//api/name/ampThresh</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setAdjustDragFrequency:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UISlider *adjustDragFrequency</Declaration>
+			
+			
+			<Anchor>//api/name/adjustDragFrequency</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/adjustDragFrequency</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UISlider *adjustDragFrequency</Declaration>
+			
+			
+			<Anchor>//api/name/adjustDragFrequency</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/adjustDragFrequency</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UISlider *adjustDragFrequency</Declaration>
+			
+			
+			<Anchor>//api/name/adjustDragFrequency</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setAdjustTypeFrequency:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UISlider *adjustTypeFrequency</Declaration>
+			
+			
+			<Anchor>//api/name/adjustTypeFrequency</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/adjustTypeFrequency</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UISlider *adjustTypeFrequency</Declaration>
+			
+			
+			<Anchor>//api/name/adjustTypeFrequency</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/adjustTypeFrequency</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UISlider *adjustTypeFrequency</Declaration>
+			
+			
+			<Anchor>//api/name/adjustTypeFrequency</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setAdjustSpeakFrequency:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UISlider *adjustSpeakFrequency</Declaration>
+			
+			
+			<Anchor>//api/name/adjustSpeakFrequency</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/adjustSpeakFrequency</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UISlider *adjustSpeakFrequency</Declaration>
+			
+			
+			<Anchor>//api/name/adjustSpeakFrequency</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/adjustSpeakFrequency</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UISlider *adjustSpeakFrequency</Declaration>
+			
+			
+			<Anchor>//api/name/adjustSpeakFrequency</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setSayModeDifficulty:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UISlider *sayModeDifficulty</Declaration>
+			
+			
+			<Anchor>//api/name/sayModeDifficulty</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/sayModeDifficulty</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UISlider *sayModeDifficulty</Declaration>
+			
+			
+			<Anchor>//api/name/sayModeDifficulty</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/sayModeDifficulty</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UISlider *sayModeDifficulty</Declaration>
+			
+			
+			<Anchor>//api/name/sayModeDifficulty</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setGuidedModeInfoLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UILabel *guidedModeInfoLabel</Declaration>
+			
+			
+			<Anchor>//api/name/guidedModeInfoLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/guidedModeInfoLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UILabel *guidedModeInfoLabel</Declaration>
+			
+			
+			<Anchor>//api/name/guidedModeInfoLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/guidedModeInfoLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UILabel *guidedModeInfoLabel</Declaration>
+			
+			
+			<Anchor>//api/name/guidedModeInfoLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setSnapBackInfoLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UILabel *snapBackInfoLabel</Declaration>
+			
+			
+			<Anchor>//api/name/snapBackInfoLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/snapBackInfoLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UILabel *snapBackInfoLabel</Declaration>
+			
+			
+			<Anchor>//api/name/snapBackInfoLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/snapBackInfoLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UILabel *snapBackInfoLabel</Declaration>
+			
+			
+			<Anchor>//api/name/snapBackInfoLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setKeyHighlightingInfoLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UILabel *keyHighlightingInfoLabel</Declaration>
+			
+			
+			<Anchor>//api/name/keyHighlightingInfoLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/keyHighlightingInfoLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UILabel *keyHighlightingInfoLabel</Declaration>
+			
+			
+			<Anchor>//api/name/keyHighlightingInfoLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/keyHighlightingInfoLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UILabel *keyHighlightingInfoLabel</Declaration>
+			
+			
+			<Anchor>//api/name/keyHighlightingInfoLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setGeneralSlidersInfoLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UILabel *generalSlidersInfoLabel</Declaration>
+			
+			
+			<Anchor>//api/name/generalSlidersInfoLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/generalSlidersInfoLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UILabel *generalSlidersInfoLabel</Declaration>
+			
+			
+			<Anchor>//api/name/generalSlidersInfoLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/generalSlidersInfoLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UILabel *generalSlidersInfoLabel</Declaration>
+			
+			
+			<Anchor>//api/name/generalSlidersInfoLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setLogSizeLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UILabel *logSizeLabel</Declaration>
+			
+			
+			<Anchor>//api/name/logSizeLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/logSizeLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UILabel *logSizeLabel</Declaration>
+			
+			
+			<Anchor>//api/name/logSizeLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/logSizeLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UILabel *logSizeLabel</Declaration>
+			
+			
+			<Anchor>//api/name/logSizeLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setPraisePromptSwitch:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UISwitch *praisePromptSwitch</Declaration>
+			
+			
+			<Anchor>//api/name/praisePromptSwitch</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/praisePromptSwitch</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UISwitch *praisePromptSwitch</Declaration>
+			
+			
+			<Anchor>//api/name/praisePromptSwitch</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/praisePromptSwitch</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) IBOutlet UISwitch *praisePromptSwitch</Declaration>
+			
+			
+			<Anchor>//api/name/praisePromptSwitch</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setPromptSourceSegment:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UISegmentedControl *promptSourceSegment</Declaration>
+			
+			
+			<Anchor>//api/name/promptSourceSegment</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/promptSourceSegment</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UISegmentedControl *promptSourceSegment</Declaration>
+			
+			
+			<Anchor>//api/name/promptSourceSegment</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/promptSourceSegment</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UISegmentedControl *promptSourceSegment</Declaration>
+			
+			
+			<Anchor>//api/name/promptSourceSegment</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setAwesome_Btn_Default:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *awesome_Btn_Default</Declaration>
+			
+			
+			<Anchor>//api/name/awesome_Btn_Default</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/awesome_Btn_Default</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *awesome_Btn_Default</Declaration>
+			
+			
+			<Anchor>//api/name/awesome_Btn_Default</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/awesome_Btn_Default</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *awesome_Btn_Default</Declaration>
+			
+			
+			<Anchor>//api/name/awesome_Btn_Default</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setSuper_Btn_Default:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *super_Btn_Default</Declaration>
+			
+			
+			<Anchor>//api/name/super_Btn_Default</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/super_Btn_Default</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *super_Btn_Default</Declaration>
+			
+			
+			<Anchor>//api/name/super_Btn_Default</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/super_Btn_Default</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *super_Btn_Default</Declaration>
+			
+			
+			<Anchor>//api/name/super_Btn_Default</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setWelldone_Btn_Default:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *welldone_Btn_Default</Declaration>
+			
+			
+			<Anchor>//api/name/welldone_Btn_Default</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/welldone_Btn_Default</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *welldone_Btn_Default</Declaration>
+			
+			
+			<Anchor>//api/name/welldone_Btn_Default</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/welldone_Btn_Default</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *welldone_Btn_Default</Declaration>
+			
+			
+			<Anchor>//api/name/welldone_Btn_Default</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setTry_Btn_Default:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *try_Btn_Default</Declaration>
+			
+			
+			<Anchor>//api/name/try_Btn_Default</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/try_Btn_Default</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *try_Btn_Default</Declaration>
+			
+			
+			<Anchor>//api/name/try_Btn_Default</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/try_Btn_Default</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *try_Btn_Default</Declaration>
+			
+			
+			<Anchor>//api/name/try_Btn_Default</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setSuper_Btn_Record:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *super_Btn_Record</Declaration>
+			
+			
+			<Anchor>//api/name/super_Btn_Record</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/super_Btn_Record</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *super_Btn_Record</Declaration>
+			
+			
+			<Anchor>//api/name/super_Btn_Record</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/super_Btn_Record</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *super_Btn_Record</Declaration>
+			
+			
+			<Anchor>//api/name/super_Btn_Record</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setAwesome_Btn_Record:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *awesome_Btn_Record</Declaration>
+			
+			
+			<Anchor>//api/name/awesome_Btn_Record</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/awesome_Btn_Record</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *awesome_Btn_Record</Declaration>
+			
+			
+			<Anchor>//api/name/awesome_Btn_Record</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/awesome_Btn_Record</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *awesome_Btn_Record</Declaration>
+			
+			
+			<Anchor>//api/name/awesome_Btn_Record</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setWelldone_Btn_Record:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *welldone_Btn_Record</Declaration>
+			
+			
+			<Anchor>//api/name/welldone_Btn_Record</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/welldone_Btn_Record</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *welldone_Btn_Record</Declaration>
+			
+			
+			<Anchor>//api/name/welldone_Btn_Record</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/welldone_Btn_Record</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *welldone_Btn_Record</Declaration>
+			
+			
+			<Anchor>//api/name/welldone_Btn_Record</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setTry_Btn_Record:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *try_Btn_Record</Declaration>
+			
+			
+			<Anchor>//api/name/try_Btn_Record</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/try_Btn_Record</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *try_Btn_Record</Declaration>
+			
+			
+			<Anchor>//api/name/try_Btn_Record</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/try_Btn_Record</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *try_Btn_Record</Declaration>
+			
+			
+			<Anchor>//api/name/try_Btn_Record</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setSuper_Btn_Play:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *super_Btn_Play</Declaration>
+			
+			
+			<Anchor>//api/name/super_Btn_Play</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/super_Btn_Play</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *super_Btn_Play</Declaration>
+			
+			
+			<Anchor>//api/name/super_Btn_Play</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/super_Btn_Play</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *super_Btn_Play</Declaration>
+			
+			
+			<Anchor>//api/name/super_Btn_Play</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setAwesome_Btn_Play:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *awesome_Btn_Play</Declaration>
+			
+			
+			<Anchor>//api/name/awesome_Btn_Play</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/awesome_Btn_Play</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *awesome_Btn_Play</Declaration>
+			
+			
+			<Anchor>//api/name/awesome_Btn_Play</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/awesome_Btn_Play</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *awesome_Btn_Play</Declaration>
+			
+			
+			<Anchor>//api/name/awesome_Btn_Play</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setWelldone_Btn_Play:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *welldone_Btn_Play</Declaration>
+			
+			
+			<Anchor>//api/name/welldone_Btn_Play</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/welldone_Btn_Play</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *welldone_Btn_Play</Declaration>
+			
+			
+			<Anchor>//api/name/welldone_Btn_Play</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/welldone_Btn_Play</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *welldone_Btn_Play</Declaration>
+			
+			
+			<Anchor>//api/name/welldone_Btn_Play</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setTry_Btn_Play:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *try_Btn_Play</Declaration>
+			
+			
+			<Anchor>//api/name/try_Btn_Play</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/try_Btn_Play</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *try_Btn_Play</Declaration>
+			
+			
+			<Anchor>//api/name/try_Btn_Play</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/try_Btn_Play</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *try_Btn_Play</Declaration>
+			
+			
+			<Anchor>//api/name/try_Btn_Play</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setSuper_itunes_Btn_Play:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *super_itunes_Btn_Play</Declaration>
+			
+			
+			<Anchor>//api/name/super_itunes_Btn_Play</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/super_itunes_Btn_Play</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *super_itunes_Btn_Play</Declaration>
+			
+			
+			<Anchor>//api/name/super_itunes_Btn_Play</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/super_itunes_Btn_Play</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *super_itunes_Btn_Play</Declaration>
+			
+			
+			<Anchor>//api/name/super_itunes_Btn_Play</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setAwesome_itunes_Btn_Play:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *awesome_itunes_Btn_Play</Declaration>
+			
+			
+			<Anchor>//api/name/awesome_itunes_Btn_Play</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/awesome_itunes_Btn_Play</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *awesome_itunes_Btn_Play</Declaration>
+			
+			
+			<Anchor>//api/name/awesome_itunes_Btn_Play</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/awesome_itunes_Btn_Play</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *awesome_itunes_Btn_Play</Declaration>
+			
+			
+			<Anchor>//api/name/awesome_itunes_Btn_Play</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setWelldone_itunes_Btn_Play:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *welldone_itunes_Btn_Play</Declaration>
+			
+			
+			<Anchor>//api/name/welldone_itunes_Btn_Play</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/welldone_itunes_Btn_Play</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *welldone_itunes_Btn_Play</Declaration>
+			
+			
+			<Anchor>//api/name/welldone_itunes_Btn_Play</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/welldone_itunes_Btn_Play</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *welldone_itunes_Btn_Play</Declaration>
+			
+			
+			<Anchor>//api/name/welldone_itunes_Btn_Play</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setTry_itunes_Btn_Play:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *try_itunes_Btn_Play</Declaration>
+			
+			
+			<Anchor>//api/name/try_itunes_Btn_Play</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/try_itunes_Btn_Play</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *try_itunes_Btn_Play</Declaration>
+			
+			
+			<Anchor>//api/name/try_itunes_Btn_Play</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/try_itunes_Btn_Play</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *try_itunes_Btn_Play</Declaration>
+			
+			
+			<Anchor>//api/name/try_itunes_Btn_Play</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setItunes_Btn:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *itunes_Btn</Declaration>
+			
+			
+			<Anchor>//api/name/itunes_Btn</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/itunes_Btn</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *itunes_Btn</Declaration>
+			
+			
+			<Anchor>//api/name/itunes_Btn</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/itunes_Btn</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *itunes_Btn</Declaration>
+			
+			
+			<Anchor>//api/name/itunes_Btn</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setSuper_fileLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *super_fileLabel</Declaration>
+			
+			
+			<Anchor>//api/name/super_fileLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/super_fileLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *super_fileLabel</Declaration>
+			
+			
+			<Anchor>//api/name/super_fileLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/super_fileLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *super_fileLabel</Declaration>
+			
+			
+			<Anchor>//api/name/super_fileLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setAwesome_fileLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *awesome_fileLabel</Declaration>
+			
+			
+			<Anchor>//api/name/awesome_fileLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/awesome_fileLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *awesome_fileLabel</Declaration>
+			
+			
+			<Anchor>//api/name/awesome_fileLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/awesome_fileLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *awesome_fileLabel</Declaration>
+			
+			
+			<Anchor>//api/name/awesome_fileLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setWelldone_fileLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *welldone_fileLabel</Declaration>
+			
+			
+			<Anchor>//api/name/welldone_fileLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/welldone_fileLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *welldone_fileLabel</Declaration>
+			
+			
+			<Anchor>//api/name/welldone_fileLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/welldone_fileLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *welldone_fileLabel</Declaration>
+			
+			
+			<Anchor>//api/name/welldone_fileLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setTry_fileLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *try_fileLabel</Declaration>
+			
+			
+			<Anchor>//api/name/try_fileLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/try_fileLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *try_fileLabel</Declaration>
+			
+			
+			<Anchor>//api/name/try_fileLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/try_fileLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *try_fileLabel</Declaration>
+			
+			
+			<Anchor>//api/name/try_fileLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setPromptSourceEdit_Btn:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *promptSourceEdit_Btn</Declaration>
+			
+			
+			<Anchor>//api/name/promptSourceEdit_Btn</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/promptSourceEdit_Btn</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *promptSourceEdit_Btn</Declaration>
+			
+			
+			<Anchor>//api/name/promptSourceEdit_Btn</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/promptSourceEdit_Btn</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *promptSourceEdit_Btn</Declaration>
+			
+			
+			<Anchor>//api/name/promptSourceEdit_Btn</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setScene:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) Scene *scene</Declaration>
+			
+			
+			<Anchor>//api/name/scene</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/scene</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) Scene *scene</Declaration>
+			
+			
+			<Anchor>//api/name/scene</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/scene</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) Scene *scene</Declaration>
+			
+			
+			<Anchor>//api/name/scene</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setDefaultView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIView *defaultView</Declaration>
+			
+			
+			<Anchor>//api/name/defaultView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/defaultView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIView *defaultView</Declaration>
+			
+			
+			<Anchor>//api/name/defaultView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/defaultView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIView *defaultView</Declaration>
+			
+			
+			<Anchor>//api/name/defaultView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setRecordView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *recordView</Declaration>
+			
+			
+			<Anchor>//api/name/recordView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/recordView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *recordView</Declaration>
+			
+			
+			<Anchor>//api/name/recordView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/recordView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *recordView</Declaration>
+			
+			
+			<Anchor>//api/name/recordView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setItunesView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *itunesView</Declaration>
+			
+			
+			<Anchor>//api/name/itunesView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/itunesView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *itunesView</Declaration>
+			
+			
+			<Anchor>//api/name/itunesView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/itunesView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *itunesView</Declaration>
+			
+			
+			<Anchor>//api/name/itunesView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setSuper_descLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *super_descLabel</Declaration>
+			
+			
+			<Anchor>//api/name/super_descLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/super_descLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *super_descLabel</Declaration>
+			
+			
+			<Anchor>//api/name/super_descLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/super_descLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *super_descLabel</Declaration>
+			
+			
+			<Anchor>//api/name/super_descLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setAwesome_descLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *awesome_descLabel</Declaration>
+			
+			
+			<Anchor>//api/name/awesome_descLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/awesome_descLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *awesome_descLabel</Declaration>
+			
+			
+			<Anchor>//api/name/awesome_descLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/awesome_descLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *awesome_descLabel</Declaration>
+			
+			
+			<Anchor>//api/name/awesome_descLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setWelldone_descLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *welldone_descLabel</Declaration>
+			
+			
+			<Anchor>//api/name/welldone_descLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/welldone_descLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *welldone_descLabel</Declaration>
+			
+			
+			<Anchor>//api/name/welldone_descLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/welldone_descLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *welldone_descLabel</Declaration>
+			
+			
+			<Anchor>//api/name/welldone_descLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setTryagain_descLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *tryagain_descLabel</Declaration>
+			
+			
+			<Anchor>//api/name/tryagain_descLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/tryagain_descLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *tryagain_descLabel</Declaration>
+			
+			
+			<Anchor>//api/name/tryagain_descLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/tryagain_descLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *tryagain_descLabel</Declaration>
+			
+			
+			<Anchor>//api/name/tryagain_descLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setWhetherAllowRecord_Switch:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UISwitch *whetherAllowRecord_Switch</Declaration>
+			
+			
+			<Anchor>//api/name/whetherAllowRecord_Switch</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/whetherAllowRecord_Switch</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UISwitch *whetherAllowRecord_Switch</Declaration>
+			
+			
+			<Anchor>//api/name/whetherAllowRecord_Switch</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/whetherAllowRecord_Switch</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UISwitch *whetherAllowRecord_Switch</Declaration>
+			
+			
+			<Anchor>//api/name/whetherAllowRecord_Switch</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setChangeTypeScaleSignificancy:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UISlider *changeTypeScaleSignificancy</Declaration>
+			
+			
+			<Anchor>//api/name/changeTypeScaleSignificancy</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/changeTypeScaleSignificancy</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UISlider *changeTypeScaleSignificancy</Declaration>
+			
+			
+			<Anchor>//api/name/changeTypeScaleSignificancy</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/changeTypeScaleSignificancy</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UISlider *changeTypeScaleSignificancy</Declaration>
+			
+			
+			<Anchor>//api/name/changeTypeScaleSignificancy</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setSideBarViewArray:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *sideBarViewArray</Declaration>
+			
+			
+			<Anchor>//api/name/sideBarViewArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/sideBarViewArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *sideBarViewArray</Declaration>
+			
+			
+			<Anchor>//api/name/sideBarViewArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/sideBarViewArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *sideBarViewArray</Declaration>
+			
+			
+			<Anchor>//api/name/sideBarViewArray</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setGeneralLabel:</TokenIdentifier>
+			<Abstract type="html">@name Properties UI element labels
+-----------------------------------------------------------------------------</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *generalLabel</Declaration>
+			
+			
+			<Anchor>//api/name/generalLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/generalLabel</TokenIdentifier>
+			<Abstract type="html">@name Properties UI element labels
+-----------------------------------------------------------------------------</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *generalLabel</Declaration>
+			
+			
+			<Anchor>//api/name/generalLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/generalLabel</TokenIdentifier>
+			<Abstract type="html">@name Properties UI element labels
+-----------------------------------------------------------------------------</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *generalLabel</Declaration>
+			
+			
+			<Anchor>//api/name/generalLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setGeneralPointLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *generalPointLabel</Declaration>
+			
+			
+			<Anchor>//api/name/generalPointLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/generalPointLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *generalPointLabel</Declaration>
+			
+			
+			<Anchor>//api/name/generalPointLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/generalPointLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *generalPointLabel</Declaration>
+			
+			
+			<Anchor>//api/name/generalPointLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setGeneralSpeakLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *generalSpeakLabel</Declaration>
+			
+			
+			<Anchor>//api/name/generalSpeakLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/generalSpeakLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *generalSpeakLabel</Declaration>
+			
+			
+			<Anchor>//api/name/generalSpeakLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/generalSpeakLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *generalSpeakLabel</Declaration>
+			
+			
+			<Anchor>//api/name/generalSpeakLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setGeneralTypeLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *generalTypeLabel</Declaration>
+			
+			
+			<Anchor>//api/name/generalTypeLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/generalTypeLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *generalTypeLabel</Declaration>
+			
+			
+			<Anchor>//api/name/generalTypeLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/generalTypeLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *generalTypeLabel</Declaration>
+			
+			
+			<Anchor>//api/name/generalTypeLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setPointModeLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *pointModeLabel</Declaration>
+			
+			
+			<Anchor>//api/name/pointModeLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/pointModeLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *pointModeLabel</Declaration>
+			
+			
+			<Anchor>//api/name/pointModeLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/pointModeLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *pointModeLabel</Declaration>
+			
+			
+			<Anchor>//api/name/pointModeLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setPointModeSelectingDistanceLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *pointModeSelectingDistanceLabel</Declaration>
+			
+			
+			<Anchor>//api/name/pointModeSelectingDistanceLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/pointModeSelectingDistanceLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *pointModeSelectingDistanceLabel</Declaration>
+			
+			
+			<Anchor>//api/name/pointModeSelectingDistanceLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/pointModeSelectingDistanceLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *pointModeSelectingDistanceLabel</Declaration>
+			
+			
+			<Anchor>//api/name/pointModeSelectingDistanceLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setPointModeSelectingDistanceSliderInfoLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *pointModeSelectingDistanceSliderInfoLabel</Declaration>
+			
+			
+			<Anchor>//api/name/pointModeSelectingDistanceSliderInfoLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/pointModeSelectingDistanceSliderInfoLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *pointModeSelectingDistanceSliderInfoLabel</Declaration>
+			
+			
+			<Anchor>//api/name/pointModeSelectingDistanceSliderInfoLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/pointModeSelectingDistanceSliderInfoLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *pointModeSelectingDistanceSliderInfoLabel</Declaration>
+			
+			
+			<Anchor>//api/name/pointModeSelectingDistanceSliderInfoLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setPointModeSnapBackLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *pointModeSnapBackLabel</Declaration>
+			
+			
+			<Anchor>//api/name/pointModeSnapBackLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/pointModeSnapBackLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *pointModeSnapBackLabel</Declaration>
+			
+			
+			<Anchor>//api/name/pointModeSnapBackLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/pointModeSnapBackLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *pointModeSnapBackLabel</Declaration>
+			
+			
+			<Anchor>//api/name/pointModeSnapBackLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setPointModeSnapBackInfoLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *pointModeSnapBackInfoLabel</Declaration>
+			
+			
+			<Anchor>//api/name/pointModeSnapBackInfoLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/pointModeSnapBackInfoLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *pointModeSnapBackInfoLabel</Declaration>
+			
+			
+			<Anchor>//api/name/pointModeSnapBackInfoLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/pointModeSnapBackInfoLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *pointModeSnapBackInfoLabel</Declaration>
+			
+			
+			<Anchor>//api/name/pointModeSnapBackInfoLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setPointModeSnappingDistanceLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *pointModeSnappingDistanceLabel</Declaration>
+			
+			
+			<Anchor>//api/name/pointModeSnappingDistanceLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/pointModeSnappingDistanceLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *pointModeSnappingDistanceLabel</Declaration>
+			
+			
+			<Anchor>//api/name/pointModeSnappingDistanceLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/pointModeSnappingDistanceLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *pointModeSnappingDistanceLabel</Declaration>
+			
+			
+			<Anchor>//api/name/pointModeSnappingDistanceLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setPointModeSnappingDistanceSliderInfoLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *pointModeSnappingDistanceSliderInfoLabel</Declaration>
+			
+			
+			<Anchor>//api/name/pointModeSnappingDistanceSliderInfoLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/pointModeSnappingDistanceSliderInfoLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *pointModeSnappingDistanceSliderInfoLabel</Declaration>
+			
+			
+			<Anchor>//api/name/pointModeSnappingDistanceSliderInfoLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/pointModeSnappingDistanceSliderInfoLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *pointModeSnappingDistanceSliderInfoLabel</Declaration>
+			
+			
+			<Anchor>//api/name/pointModeSnappingDistanceSliderInfoLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setSpeakModeLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *speakModeLabel</Declaration>
+			
+			
+			<Anchor>//api/name/speakModeLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/speakModeLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *speakModeLabel</Declaration>
+			
+			
+			<Anchor>//api/name/speakModeLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/speakModeLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *speakModeLabel</Declaration>
+			
+			
+			<Anchor>//api/name/speakModeLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setSpeakModeSpeechLoudnessLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *speakModeSpeechLoudnessLabel</Declaration>
+			
+			
+			<Anchor>//api/name/speakModeSpeechLoudnessLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/speakModeSpeechLoudnessLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *speakModeSpeechLoudnessLabel</Declaration>
+			
+			
+			<Anchor>//api/name/speakModeSpeechLoudnessLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/speakModeSpeechLoudnessLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *speakModeSpeechLoudnessLabel</Declaration>
+			
+			
+			<Anchor>//api/name/speakModeSpeechLoudnessLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setSpeakModeToleranceLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *speakModeToleranceLabel</Declaration>
+			
+			
+			<Anchor>//api/name/speakModeToleranceLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/speakModeToleranceLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *speakModeToleranceLabel</Declaration>
+			
+			
+			<Anchor>//api/name/speakModeToleranceLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/speakModeToleranceLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *speakModeToleranceLabel</Declaration>
+			
+			
+			<Anchor>//api/name/speakModeToleranceLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setBackgroundMusicLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *backgroundMusicLabel</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundMusicLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/backgroundMusicLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *backgroundMusicLabel</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundMusicLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/backgroundMusicLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *backgroundMusicLabel</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundMusicLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setPraisePromptLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *praisePromptLabel</Declaration>
+			
+			
+			<Anchor>//api/name/praisePromptLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/praisePromptLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *praisePromptLabel</Declaration>
+			
+			
+			<Anchor>//api/name/praisePromptLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/praisePromptLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *praisePromptLabel</Declaration>
+			
+			
+			<Anchor>//api/name/praisePromptLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setPraisePromptInfoLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *praisePromptInfoLabel</Declaration>
+			
+			
+			<Anchor>//api/name/praisePromptInfoLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/praisePromptInfoLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *praisePromptInfoLabel</Declaration>
+			
+			
+			<Anchor>//api/name/praisePromptInfoLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/praisePromptInfoLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *praisePromptInfoLabel</Declaration>
+			
+			
+			<Anchor>//api/name/praisePromptInfoLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setPraisePromptHardLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *praisePromptHardLabel</Declaration>
+			
+			
+			<Anchor>//api/name/praisePromptHardLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/praisePromptHardLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *praisePromptHardLabel</Declaration>
+			
+			
+			<Anchor>//api/name/praisePromptHardLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/praisePromptHardLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *praisePromptHardLabel</Declaration>
+			
+			
+			<Anchor>//api/name/praisePromptHardLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setPraisePromptMediumLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *praisePromptMediumLabel</Declaration>
+			
+			
+			<Anchor>//api/name/praisePromptMediumLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/praisePromptMediumLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *praisePromptMediumLabel</Declaration>
+			
+			
+			<Anchor>//api/name/praisePromptMediumLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/praisePromptMediumLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *praisePromptMediumLabel</Declaration>
+			
+			
+			<Anchor>//api/name/praisePromptMediumLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setPraisePromptEasyLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *praisePromptEasyLabel</Declaration>
+			
+			
+			<Anchor>//api/name/praisePromptEasyLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/praisePromptEasyLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *praisePromptEasyLabel</Declaration>
+			
+			
+			<Anchor>//api/name/praisePromptEasyLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/praisePromptEasyLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *praisePromptEasyLabel</Declaration>
+			
+			
+			<Anchor>//api/name/praisePromptEasyLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setPraisePromptTryAgainLabel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *praisePromptTryAgainLabel</Declaration>
+			
+			
+			<Anchor>//api/name/praisePromptTryAgainLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/praisePromptTryAgainLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *praisePromptTryAgainLabel</Declaration>
+			
+			
+			<Anchor>//api/name/praisePromptTryAgainLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/praisePromptTryAgainLabel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *praisePromptTryAgainLabel</Declaration>
+			
+			
+			<Anchor>//api/name/praisePromptTryAgainLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setApplicationDocumentsDirectory:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) NSString *applicationDocumentsDirectory</Declaration>
+			
+			
+			<Anchor>//api/name/applicationDocumentsDirectory</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/applicationDocumentsDirectory</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) NSString *applicationDocumentsDirectory</Declaration>
+			
+			
+			<Anchor>//api/name/applicationDocumentsDirectory</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/applicationDocumentsDirectory</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) NSString *applicationDocumentsDirectory</Declaration>
+			
+			
+			<Anchor>//api/name/applicationDocumentsDirectory</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setGeneralView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *generalView</Declaration>
+			
+			
+			<Anchor>//api/name/generalView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/generalView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *generalView</Declaration>
+			
+			
+			<Anchor>//api/name/generalView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/generalView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *generalView</Declaration>
+			
+			
+			<Anchor>//api/name/generalView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setTypeModeView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *typeModeView</Declaration>
+			
+			
+			<Anchor>//api/name/typeModeView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/typeModeView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *typeModeView</Declaration>
+			
+			
+			<Anchor>//api/name/typeModeView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/typeModeView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *typeModeView</Declaration>
+			
+			
+			<Anchor>//api/name/typeModeView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setProgressCircleView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property ProgressView *progressCircleView</Declaration>
+			
+			
+			<Anchor>//api/name/progressCircleView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/progressCircleView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property ProgressView *progressCircleView</Declaration>
+			
+			
+			<Anchor>//api/name/progressCircleView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/progressCircleView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property ProgressView *progressCircleView</Declaration>
+			
+			
+			<Anchor>//api/name/progressCircleView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setTimer:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSTimer *timer</Declaration>
+			
+			
+			<Anchor>//api/name/timer</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/timer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSTimer *timer</Declaration>
+			
+			
+			<Anchor>//api/name/timer</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/timer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSTimer *timer</Declaration>
+			
+			
+			<Anchor>//api/name/timer</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setSubPaths:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *subPaths</Declaration>
+			
+			
+			<Anchor>//api/name/subPaths</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/subPaths</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *subPaths</Declaration>
+			
+			
+			<Anchor>//api/name/subPaths</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/subPaths</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *subPaths</Declaration>
+			
+			
+			<Anchor>//api/name/subPaths</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/set_urlSession:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSURLSession *_urlSession</Declaration>
+			
+			
+			<Anchor>//api/name/_urlSession</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/_urlSession</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSURLSession *_urlSession</Declaration>
+			
+			
+			<Anchor>//api/name/_urlSession</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/_urlSession</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSURLSession *_urlSession</Declaration>
+			
+			
+			<Anchor>//api/name/_urlSession</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/set_tasks:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *_tasks</Declaration>
+			
+			
+			<Anchor>//api/name/_tasks</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/_tasks</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *_tasks</Declaration>
+			
+			
+			<Anchor>//api/name/_tasks</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/_tasks</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *_tasks</Declaration>
+			
+			
+			<Anchor>//api/name/_tasks</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/detailViewSwitch:</TokenIdentifier>
+			<Abstract type="html">Switch detail view</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)detailViewSwitch:(int)index</Declaration>
+			
+			
+			<Anchor>//api/name/detailViewSwitch:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/handleSideBarPressed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)handleSideBarPressed:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/handleSideBarPressed:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/restoreTapped:</TokenIdentifier>
+			<Abstract type="html">Unused</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)restoreTapped:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/restoreTapped:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/handleSendLogDataPressed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)handleSendLogDataPressed:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/handleSendLogDataPressed:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/handleCloseOverlayPressed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)handleCloseOverlayPressed:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/handleCloseOverlayPressed:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/handleSliderChangedValue:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)handleSliderChangedValue:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/handleSliderChangedValue:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/handleAmpThreshChanged:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)handleAmpThreshChanged:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/handleAmpThreshChanged:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/handleBGMusicChanged:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)handleBGMusicChanged:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/handleBGMusicChanged:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/handleResetSlidersPressed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)handleResetSlidersPressed:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/handleResetSlidersPressed:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/handleResetAppPressed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)handleResetAppPressed:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/handleResetAppPressed:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/puzzleStatesForPuzzle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)puzzleStatesForPuzzle:(PuzzleObject *)object</Declaration>
+			
+			
+			<Anchor>//api/name/puzzleStatesForPuzzle:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/mailComposeController:didFinishWithResult:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error</Declaration>
+			
+			
+			<Anchor>//api/name/mailComposeController:didFinishWithResult:error:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/alertView:clickedButtonAtIndex:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex</Declaration>
+			
+			
+			<Anchor>//api/name/alertView:clickedButtonAtIndex:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/createPlistForPraisePrefs</TokenIdentifier>
+			<Abstract type="html">Load praise preferences from plist file /Supporting Files/PraisePrefs.plist, create one if none exist</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)createPlistForPraisePrefs</Declaration>
+			
+			<ReturnValue><Abstract type="html">dictionary for prainse prompt preferences</Abstract></ReturnValue>
+			<Anchor>//api/name/createPlistForPraisePrefs</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/savePraiseIntoPlist:</TokenIdentifier>
+			<Abstract type="html">Save praise prompt preferences to plist file</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)savePraiseIntoPlist:(NSDictionary *)plistDict</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>plistDict</Name>
+					<Abstract type="html">the location for praise prompt plist file</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/savePraiseIntoPlist:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/updatePromptViewWith:</TokenIdentifier>
+			<Abstract type="html">Switch between three control segments for praise prompt control ui element</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)updatePromptViewWith:(int)controlIndex</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>index</Name>
+					<Abstract type="html">for control segments 0 defause 1 record 2 iTunes</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/updatePromptViewWith:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/moveSpaceForSelectionViewWith:</TokenIdentifier>
+			<Abstract type="html">Move Say Mode View group down to make space for praise prompt view</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)moveSpaceForSelectionViewWith:(float)space</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>space</Name>
+					<Abstract type="html">&lt;#space description#&gt;</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/moveSpaceForSelectionViewWith:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/editPromptSource:</TokenIdentifier>
+			<Abstract type="html">Edit button to display editing view</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)editPromptSource:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/editPromptSource:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/chosePromptSoure:</TokenIdentifier>
+			<Abstract type="html">Switch between three control segments, calls updatePromptViewWith:</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)chosePromptSoure:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/chosePromptSoure:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/playDefaultPrompt:</TokenIdentifier>
+			<Abstract type="html">Playback user default praise prompt</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)playDefaultPrompt:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/playDefaultPrompt:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/recordPrompt:</TokenIdentifier>
+			<Abstract type="html">Allow user to record phases for praise prompt</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)recordPrompt:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/recordPrompt:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/playRecordedPrompt:</TokenIdentifier>
+			<Abstract type="html">Playback user recorded praise prompt</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)playRecordedPrompt:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/playRecordedPrompt:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/startRecordingWith:</TokenIdentifier>
+			<Abstract type="html">Called by recordPrompt:</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)startRecordingWith:(int)index</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>index</Name>
+					<Abstract type="html">index for which praise prompt user is recording</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/startRecordingWith:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/audioRecorderDidFinishRecording:successfully:</TokenIdentifier>
+			<Abstract type="html">Voice recording callback function, display the play button after a praise prompt is recorded</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)audioRecorderDidFinishRecording:(AVAudioRecorder *)aRecorder successfully:(BOOL)flag</Declaration>
+			
+			
+			<Anchor>//api/name/audioRecorderDidFinishRecording:successfully:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/playItunes:</TokenIdentifier>
+			<Abstract type="html">Play a selected iTunes song</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)playItunes:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/playItunes:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/itunesSelection:</TokenIdentifier>
+			<Abstract type="html">Select an iTunes song, open up a MPMediaPickerController</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)itunesSelection:(id)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">&lt;#sender description#&gt;</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/itunesSelection:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/mediaPickerDidCancel:</TokenIdentifier>
+			<Abstract type="html">Dismiss the MPMediaPickerController</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)mediaPickerDidCancel:(MPMediaPickerController *)mediaPicker</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>mediaPicker</Name>
+					<Abstract type="html">&lt;#mediaPicker description#&gt;</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/mediaPickerDidCancel:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/mediaPicker:didPickMediaItems:</TokenIdentifier>
+			<Abstract type="html">Call back function after a song is selected, disabling selecting multiple songs and songs longer than 3s.</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)mediaPicker:(MPMediaPickerController *)mediaPicker didPickMediaItems:(MPMediaItemCollection *)collection</Declaration>
+			
+			
+			<Anchor>//api/name/mediaPicker:didPickMediaItems:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/handleAllowToRecord:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)handleAllowToRecord:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/handleAllowToRecord:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setUploadProgressBar:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIProgressView *uploadProgressBar</Declaration>
+			
+			
+			<Anchor>//api/name/uploadProgressBar</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/uploadProgressBar</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIProgressView *uploadProgressBar</Declaration>
+			
+			
+			<Anchor>//api/name/uploadProgressBar</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/uploadProgressBar</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIProgressView *uploadProgressBar</Declaration>
+			
+			
+			<Anchor>//api/name/uploadProgressBar</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setUploadCancelBtn:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *uploadCancelBtn</Declaration>
+			
+			
+			<Anchor>//api/name/uploadCancelBtn</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/uploadCancelBtn</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *uploadCancelBtn</Declaration>
+			
+			
+			<Anchor>//api/name/uploadCancelBtn</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/uploadCancelBtn</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) IBOutlet UIButton *uploadCancelBtn</Declaration>
+			
+			
+			<Anchor>//api/name/uploadCancelBtn</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setConn:</TokenIdentifier>
+			<Abstract type="html">Property to store the connection status</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSURLConnection *conn</Declaration>
+			
+			
+			<Anchor>//api/name/conn</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/conn</TokenIdentifier>
+			<Abstract type="html">Property to store the connection status</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSURLConnection *conn</Declaration>
+			
+			
+			<Anchor>//api/name/conn</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/conn</TokenIdentifier>
+			<Abstract type="html">Property to store the connection status</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSURLConnection *conn</Declaration>
+			
+			
+			<Anchor>//api/name/conn</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setLogFolderPath:</TokenIdentifier>
+			<Abstract type="html">Folder path for log data</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSString *logFolderPath</Declaration>
+			
+			
+			<Anchor>//api/name/logFolderPath</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/logFolderPath</TokenIdentifier>
+			<Abstract type="html">Folder path for log data</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSString *logFolderPath</Declaration>
+			
+			
+			<Anchor>//api/name/logFolderPath</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/logFolderPath</TokenIdentifier>
+			<Abstract type="html">Folder path for log data</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSString *logFolderPath</Declaration>
+			
+			
+			<Anchor>//api/name/logFolderPath</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/setResponseData:</TokenIdentifier>
+			<Abstract type="html">Property to store response from server</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableData *responseData</Declaration>
+			
+			
+			<Anchor>//api/name/responseData</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/responseData</TokenIdentifier>
+			<Abstract type="html">Property to store response from server</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableData *responseData</Declaration>
+			
+			
+			<Anchor>//api/name/responseData</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AdminViewController/responseData</TokenIdentifier>
+			<Abstract type="html">Property to store response from server</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableData *responseData</Declaration>
+			
+			
+			<Anchor>//api/name/responseData</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/uploadCancel:</TokenIdentifier>
+			<Abstract type="html">Cancel log uploading</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)uploadCancel:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/uploadCancel:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/connection:didReceiveResponse:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response</Declaration>
+			
+			
+			<Anchor>//api/name/connection:didReceiveResponse:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/connection:didReceiveData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data</Declaration>
+			
+			
+			<Anchor>//api/name/connection:didReceiveData:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/connection:willCacheResponse:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (NSCachedURLResponse *)connection:(NSURLConnection *)connection willCacheResponse:(NSCachedURLResponse *)cachedResponse</Declaration>
+			
+			
+			<Anchor>//api/name/connection:willCacheResponse:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/connectionDidFinishLoading:</TokenIdentifier>
+			<Abstract type="html">Delegate method to hide upload button when log upload succeeded</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)connectionDidFinishLoading:(NSURLConnection *)connection</Declaration>
+			
+			
+			<Anchor>//api/name/connectionDidFinishLoading:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/connection:didFailWithError:</TokenIdentifier>
+			<Abstract type="html">Delegate method to alert error message when log upload failed</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error</Declaration>
+			
+			
+			<Anchor>//api/name/connection:didFailWithError:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/connection:didSendBodyData:totalBytesWritten:totalBytesExpectedToWrite:</TokenIdentifier>
+			<Abstract type="html">Delegate method to calculate progress of file upload, and to update the progress bar accordingly</Abstract>
+			<DeclaredIn>AdminViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)connection:(NSURLConnection *)connection didSendBodyData:(NSInteger)bytesWritten totalBytesWritten:(NSInteger)totalBytesWritten totalBytesExpectedToWrite:(NSInteger)totalBytesExpectedToWrite</Declaration>
+			
+			
+			<Anchor>//api/name/connection:didSendBodyData:totalBytesWritten:totalBytesExpectedToWrite:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/initWithNibName:bundle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil</Declaration>
+			
+			
+			<Anchor>//api/name/initWithNibName:bundle:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/viewDidLoad</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewDidLoad</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidLoad</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/shouldAutorotate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)shouldAutorotate</Declaration>
+			
+			
+			<Anchor>//api/name/shouldAutorotate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/didReceiveMemoryWarning</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)didReceiveMemoryWarning</Declaration>
+			
+			
+			<Anchor>//api/name/didReceiveMemoryWarning</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/updatePlayPorgressCircleWith:With:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)updatePlayPorgressCircleWith:(int)index With:(NSArray *)currentPlayButtonArray</Declaration>
+			
+			
+			<Anchor>//api/name/updatePlayPorgressCircleWith:With:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/updateTime:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)updateTime:(NSTimer *)timer</Declaration>
+			
+			
+			<Anchor>//api/name/updateTime:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/URLSession:task:didCompleteWithError:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(NSError *)error</Declaration>
+			
+			
+			<Anchor>//api/name/URLSession:task:didCompleteWithError:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/URLSession:dataTask:didReceiveData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveData:(NSData *)data</Declaration>
+			
+			
+			<Anchor>//api/name/URLSession:dataTask:didReceiveData:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AdminViewController/URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AdminViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didSendBodyData:(int64_t)bytesSent totalBytesSent:(int64_t)totalBytesSent totalBytesExpectedToSend:(int64_t)totalBytesExpectedToSend</Declaration>
+			
+			
+			<Anchor>//api/name/URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/VULevelMeter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/VULevelMeter</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="62"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/setRefreshHz:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat refreshHz</Declaration>
+			
+			
+			<Anchor>//api/name/refreshHz</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/refreshHz</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat refreshHz</Declaration>
+			
+			
+			<Anchor>//api/name/refreshHz</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VULevelMeter/refreshHz</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat refreshHz</Declaration>
+			
+			
+			<Anchor>//api/name/refreshHz</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/setShowsPeaks:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL showsPeaks</Declaration>
+			
+			
+			<Anchor>//api/name/showsPeaks</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/showsPeaks</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL showsPeaks</Declaration>
+			
+			
+			<Anchor>//api/name/showsPeaks</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VULevelMeter/showsPeaks</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL showsPeaks</Declaration>
+			
+			
+			<Anchor>//api/name/showsPeaks</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/setVertical:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL vertical</Declaration>
+			
+			
+			<Anchor>//api/name/vertical</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/vertical</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL vertical</Declaration>
+			
+			
+			<Anchor>//api/name/vertical</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VULevelMeter/vertical</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL vertical</Declaration>
+			
+			
+			<Anchor>//api/name/vertical</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/setUseGL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL useGL</Declaration>
+			
+			
+			<Anchor>//api/name/useGL</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/useGL</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL useGL</Declaration>
+			
+			
+			<Anchor>//api/name/useGL</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VULevelMeter/useGL</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL useGL</Declaration>
+			
+			
+			<Anchor>//api/name/useGL</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/setMuteOn:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL muteOn</Declaration>
+			
+			
+			<Anchor>//api/name/muteOn</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/muteOn</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL muteOn</Declaration>
+			
+			
+			<Anchor>//api/name/muteOn</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VULevelMeter/muteOn</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL muteOn</Declaration>
+			
+			
+			<Anchor>//api/name/muteOn</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/refreshWithValue:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			
+			<Declaration>- (void)refreshWithValue:(CGFloat)newValue</Declaration>
+			
+			
+			<Anchor>//api/name/refreshWithValue:</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/setBorderColor:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			
+			<Declaration>- (void)setBorderColor:(UIColor *)borderColor</Declaration>
+			
+			
+			<Anchor>//api/name/setBorderColor:</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/setBackgroundColor:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VULevelMeter.h</DeclaredIn>
+			
+			<Declaration>- (void)setBackgroundColor:(UIColor *)backgroundColor</Declaration>
+			
+			
+			<Anchor>//api/name/setBackgroundColor:</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/initWithFrame:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VULevelMeter.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithFrame:(CGRect)frame</Declaration>
+			
+			
+			<Anchor>//api/name/initWithFrame:</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/initWithCoder:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VULevelMeter.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithCoder:(NSCoder *)coder</Declaration>
+			
+			
+			<Anchor>//api/name/initWithCoder:</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/layoutSubLevelMeters</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VULevelMeter.m</DeclaredIn>
+			
+			<Declaration>- (void)layoutSubLevelMeters</Declaration>
+			
+			
+			<Anchor>//api/name/layoutSubLevelMeters</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/touchesBegan:withEvent:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VULevelMeter.m</DeclaredIn>
+			
+			<Declaration>- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event</Declaration>
+			
+			
+			<Anchor>//api/name/touchesBegan:withEvent:</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/touchesEnded:withEvent:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VULevelMeter.m</DeclaredIn>
+			
+			<Declaration>- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event</Declaration>
+			
+			
+			<Anchor>//api/name/touchesEnded:withEvent:</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VULevelMeter/touchesCancelled:withEvent:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VULevelMeter.m</DeclaredIn>
+			
+			<Declaration>- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event</Declaration>
+			
+			
+			<Anchor>//api/name/touchesCancelled:withEvent:</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

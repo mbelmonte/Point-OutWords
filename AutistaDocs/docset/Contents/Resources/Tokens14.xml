@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/InfoViewPageThree.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/InfoViewPageThree</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoViewPageThree.h</DeclaredIn>
+            
+			
+			<NodeRef refid="14"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoViewPageThree/setTitleLabel:</TokenIdentifier>
+			<Abstract type="html">@name Properties
+-----------------------------------------------------------------------------</Abstract>
+			<DeclaredIn>InfoViewPageThree.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *titleLabel</Declaration>
+			
+			
+			<Anchor>//api/name/titleLabel</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoViewPageThree/titleLabel</TokenIdentifier>
+			<Abstract type="html">@name Properties
+-----------------------------------------------------------------------------</Abstract>
+			<DeclaredIn>InfoViewPageThree.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *titleLabel</Declaration>
+			
+			
+			<Anchor>//api/name/titleLabel</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/InfoViewPageThree/titleLabel</TokenIdentifier>
+			<Abstract type="html">@name Properties
+-----------------------------------------------------------------------------</Abstract>
+			<DeclaredIn>InfoViewPageThree.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UILabel *titleLabel</Declaration>
+			
+			
+			<Anchor>//api/name/titleLabel</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoViewPageThree/setTextView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoViewPageThree.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UITextView *textView</Declaration>
+			
+			
+			<Anchor>//api/name/textView</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoViewPageThree/textView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoViewPageThree.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UITextView *textView</Declaration>
+			
+			
+			<Anchor>//api/name/textView</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/InfoViewPageThree/textView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoViewPageThree.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UITextView *textView</Declaration>
+			
+			
+			<Anchor>//api/name/textView</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoViewPageThree/setActivitylogSwitch:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoViewPageThree.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UISwitch *activitylogSwitch</Declaration>
+			
+			
+			<Anchor>//api/name/activitylogSwitch</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoViewPageThree/activitylogSwitch</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoViewPageThree.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UISwitch *activitylogSwitch</Declaration>
+			
+			
+			<Anchor>//api/name/activitylogSwitch</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/InfoViewPageThree/activitylogSwitch</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoViewPageThree.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UISwitch *activitylogSwitch</Declaration>
+			
+			
+			<Anchor>//api/name/activitylogSwitch</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoViewPageThree/setAudiologSwitch:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoViewPageThree.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UISwitch *audiologSwitch</Declaration>
+			
+			
+			<Anchor>//api/name/audiologSwitch</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoViewPageThree/audiologSwitch</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoViewPageThree.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UISwitch *audiologSwitch</Declaration>
+			
+			
+			<Anchor>//api/name/audiologSwitch</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/InfoViewPageThree/audiologSwitch</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoViewPageThree.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UISwitch *audiologSwitch</Declaration>
+			
+			
+			<Anchor>//api/name/audiologSwitch</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoViewPageThree/setPrefs:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoViewPageThree.h</DeclaredIn>
+			
+			<Declaration>@property GlobalPreferences *prefs</Declaration>
+			
+			
+			<Anchor>//api/name/prefs</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoViewPageThree/prefs</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoViewPageThree.h</DeclaredIn>
+			
+			<Declaration>@property GlobalPreferences *prefs</Declaration>
+			
+			
+			<Anchor>//api/name/prefs</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/InfoViewPageThree/prefs</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoViewPageThree.h</DeclaredIn>
+			
+			<Declaration>@property GlobalPreferences *prefs</Declaration>
+			
+			
+			<Anchor>//api/name/prefs</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoViewPageThree/setImageView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoViewPageThree.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIImageView *imageView</Declaration>
+			
+			
+			<Anchor>//api/name/imageView</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoViewPageThree/imageView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoViewPageThree.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIImageView *imageView</Declaration>
+			
+			
+			<Anchor>//api/name/imageView</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/InfoViewPageThree/imageView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoViewPageThree.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIImageView *imageView</Declaration>
+			
+			
+			<Anchor>//api/name/imageView</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoViewPageThree/layoutSubviews</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoViewPageThree.h</DeclaredIn>
+			
+			<Declaration>- (void)layoutSubviews</Declaration>
+			
+			
+			<Anchor>//api/name/layoutSubviews</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoViewPageThree/setImageView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoViewPageThree.h</DeclaredIn>
+			
+			<Declaration>- (void)setImageView:(UIImageView *)imageView</Declaration>
+			
+			
+			<Anchor>//api/name/setImageView:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoViewPageThree/flip:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoViewPageThree.h</DeclaredIn>
+			
+			<Declaration>- (IBAction)flip:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/flip:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/InfoViewPageThree/initWithFrame:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>InfoViewPageThree.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithFrame:(CGRect)frame</Declaration>
+			
+			
+			<Anchor>//api/name/initWithFrame:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

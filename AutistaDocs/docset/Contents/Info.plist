@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleIdentifier</key>
+	<string>org.autismcollaborative.autista.Autista</string>
+	<key>CFBundleName</key>
+	<string>Autista Documentation</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	
+	
+	
+	
+	<key>DocSetFeedName</key>
+	<string>Autista Documentation</string>
+	
+	<key>DocSetMinimumXcodeVersion</key>
+	<string>3.0</string>
+	
+	<key>DashDocSetFamily</key>
+	<string>appledoc</string>
+	<key>DocSetPublisherIdentifier</key>
+	<string>org.autismcollaborative.autista.documentation</string>
+	<key>DocSetPublisherName</key>
+	<string>The Groden Center, Inc.</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2014 The Groden Center, Inc.. Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.3 or any later version published by the Free Software Foundation; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts..</string>
+</dict>
+</plist>

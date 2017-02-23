@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2A684C35A8145D863A38E96195EABA6758D37080",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2A684C35A8145D863A38E96195EABA6758D37080" : 0,
+    "6F6C2F148E812DEA99C663CE4C345EB5B8E95989" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8F8D4176-0C93-4E1B-A631-6342332A20E6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2A684C35A8145D863A38E96195EABA6758D37080" : "Autista-master1\/",
+    "6F6C2F148E812DEA99C663CE4C345EB5B8E95989" : "Autista"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Autista",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Autista.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/javad_ak\/autista.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2A684C35A8145D863A38E96195EABA6758D37080"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/guoanhong\/Autista.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6F6C2F148E812DEA99C663CE4C345EB5B8E95989"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RootViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RootViewController</TokenIdentifier>
+			<Abstract type="html">RootViewController is the entering point of the app. It leads a user to the next ViewController based on conditions:</Abstract>
+			<DeclaredIn>RootViewController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="22"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RootViewController/initWithNibName:bundle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RootViewController.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil</Declaration>
+			
+			
+			<Anchor>//api/name/initWithNibName:bundle:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RootViewController/viewDidAppear:</TokenIdentifier>
+			<Abstract type="html">Lead a user to next view based on conditions</Abstract>
+			<DeclaredIn>RootViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)viewDidAppear:(BOOL)animated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">true if animation is enabled</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/viewDidAppear:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RootViewController/didReceiveMemoryWarning</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RootViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)didReceiveMemoryWarning</Declaration>
+			
+			
+			<Anchor>//api/name/didReceiveMemoryWarning</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RootViewController/shouldAutorotate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RootViewController.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)shouldAutorotate</Declaration>
+			
+			
+			<Anchor>//api/name/shouldAutorotate</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSObject+NSObject_SBJsonWriting.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSObject(NSObject_SBJsonWriting)</TokenIdentifier>
+			<Abstract type="html">Adds JSON generation to NSObject</Abstract>
+			<DeclaredIn>NSObject+SBJson.h</DeclaredIn>
+            
+			
+			<NodeRef refid="69"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSObject/JSONRepresentation</TokenIdentifier>
+			<Abstract type="html">Encodes the receiver into a JSON string</Abstract>
+			<DeclaredIn>NSObject+SBJson.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)JSONRepresentation</Declaration>
+			
+			<ReturnValue><Abstract type="html">the receiver encoded in JSON, or nil on error.</Abstract></ReturnValue>
+			<Anchor>//api/name/JSONRepresentation</Anchor>
+            <NodeRef refid="69"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>
