@@ -4,9 +4,9 @@
 <array>
 	<dict>
 		<key>title</key>
-		<string>A U T I S T A</string>
+		<string>Point OutWords</string>
 		<key>text</key>
-		<string>Autista™  is designed to help children improve their verbal and fine motor skills and is especially useful for children with developmental delays. The app involves completing puzzles using a variety of activities like dragging pieces, typing out words and pronouncing syllables.</string>
+		<string>Point OutWords™  is designed to help children improve their verbal and fine motor skills and is especially useful for children with developmental delays. The app involves completing puzzles using a variety of activities like dragging pieces, typing out words and pronouncing syllables.</string>
 		<key>imageName</key>
 		<string>mrglogo.png</string>
 		<key>offsetX</key>
@@ -18,7 +18,7 @@
 		<key>title</key>
 		<string>Behind the scenes</string>
 		<key>text</key>
-		<string>The more Autista is used, the more it learns and adapts to your child&apos;s specific needs. For example, the app can detect repetitive behavior and advance gameplay accordingly.
+		<string>The more Point OutWords is used, the more it learns and adapts to your child&apos;s specific needs. For example, the app can detect repetitive behavior and advance gameplay accordingly.
 
 The app also logs all user interactions and analyses this information to provide a better learning experience for your child.</string>
 	</dict>

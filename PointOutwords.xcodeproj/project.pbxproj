@@ -2872,7 +2872,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8DA3DD0D1604C6E20031950A /* Build configuration list for PBXProject "Autista" */;
+			buildConfigurationList = 8DA3DD0D1604C6E20031950A /* Build configuration list for PBXProject "PointOutwords" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -3665,7 +3665,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8DA3DD0D1604C6E20031950A /* Build configuration list for PBXProject "Autista" */ = {
+		8DA3DD0D1604C6E20031950A /* Build configuration list for PBXProject "PointOutwords" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8DA3DD4A1604C6E30031950A /* Debug */,

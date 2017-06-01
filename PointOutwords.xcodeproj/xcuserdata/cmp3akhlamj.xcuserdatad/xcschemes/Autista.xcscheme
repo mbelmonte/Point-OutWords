@@ -35,7 +35,7 @@
             BlueprintIdentifier = "8DA3DD121604C6E20031950A"
             BuildableName = "Point OutWords.app"
             BlueprintName = "Autista"
-            ReferencedContainer = "container:Autista.xcodeproj">
+            ReferencedContainer = "container:PointOutwords.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -58,7 +58,7 @@
             BlueprintIdentifier = "8DA3DD121604C6E20031950A"
             BuildableName = "Point OutWords.app"
             BlueprintName = "Autista"
-            ReferencedContainer = "container:Autista.xcodeproj">
+            ReferencedContainer = "container:PointOutwords.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>

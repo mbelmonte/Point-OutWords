@@ -28,11 +28,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Autista/Classes/TypePuzzleViewController.m"
-            timestampString = "502680698.257223"
+            timestampString = "518047888.153768"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "942"
-            endingLineNumber = "942"
+            startingLineNumber = "955"
+            endingLineNumber = "955"
             landmarkName = "-remindAnimation:"
             landmarkType = "5">
          </BreakpointContent>

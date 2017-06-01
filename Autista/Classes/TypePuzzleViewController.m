@@ -351,7 +351,7 @@
     if(_currentLetterPosition>-1 && !_keyboard.isHidden){ // checks if the keyboard is initiated to prevent null exceptions
         NSString *title = [_object.title uppercaseString];
         UIButton *expectedButton = [self buttonFromASCIICode:[title characterAtIndex:_currentLetterPosition]];
-        CGFloat newDistance = sqrtf(pow((expectedButton.center.x-touchPoint.x), 2)+pow((expectedButton.center.y-touchPoint.y), 2));
+        CGFloat newDistance = sqrtf(pow((expectedButton.center.x-touchPoint.x), 2)+pow((expectedButton.center.y + [[UIScreen mainScreen] bounds].size.height - _keyboard.frame.size.height-touchPoint.y), 2));
         [[EventLogger sharedLogger] logEvent:LogEventCodeTouchBegan eventInfo:@{@"X": [NSString stringWithFormat:@"%+.1f", touchPoint.x], @"Y": [NSString stringWithFormat:@"%+.1f", touchPoint.y],@"distance to correct key":[NSString stringWithFormat:@"%+.1f", newDistance]}];
     }
     // -------------------------------------------------------------------
@@ -403,6 +403,19 @@
     NSString *title = [_object.title uppercaseString];
 	UIButton *expectedButton = [self buttonFromASCIICode:[title characterAtIndex:_currentLetterPosition]];
     
+    
+    // added by Javad 01-06-2017 to return the distance to the correct key
+    CGPoint touchPoint = [[touches anyObject] locationInView:self.view];
+    if(_currentLetterPosition>-1 && !_keyboard.isHidden){ // checks if the keyboard is initiated to prevent null exceptions
+        NSString *title = [_object.title uppercaseString];
+        UIButton *expectedButton = [self buttonFromASCIICode:[title characterAtIndex:_currentLetterPosition]];
+        CGFloat newDistance = sqrtf(pow((expectedButton.center.x-touchPoint.x), 2)+pow((expectedButton.center.y + [[UIScreen mainScreen] bounds].size.height- _keyboard.frame.size.height-touchPoint.y), 2));
+        [[EventLogger sharedLogger] logEvent:LogEventCodeTouchEnded eventInfo:@{@"X": [NSString stringWithFormat:@"%+.1f", touchPoint.x], @"Y": [NSString stringWithFormat:@"%+.1f", touchPoint.y],@"distance to correct key":[NSString stringWithFormat:@"%+.1f", newDistance]}];
+    }
+    // -------------------------------------------------------------------
+        
+        
+        
     NSLog(@"%f, %f, %f, %f", expectedButton.frame.origin.x, expectedButton.frame.origin.y, expectedButton.frame.size.height, expectedButton.frame.size.width);
     NSLog(@"%f, %f", point.x, point.y);
     
@@ -443,7 +456,6 @@
 	if (sender == expectedButton) {
 		frame.origin = piece.finalPoint;
         [self playCorrectKeyPressedSound];
-        
         //NSLog(@" the key location is %f, %f",expectedButton.center.y + [[UIScreen mainScreen] bounds].size.height - _keyboard.frame.size.height, expectedButton.center.x);
         [[EventLogger sharedLogger] logEvent:LogEventCodeKeyPressed eventInfo:@{@"key": @"correct", @"letter":[[_object.title uppercaseString] substringWithRange:NSMakeRange(_currentLetterPosition, 1)],@"key x": [NSString stringWithFormat: @"%.2f", expectedButton.center.x], @" key y": [NSString stringWithFormat: @"%.2f", expectedButton.center.y + [[UIScreen mainScreen] bounds].size.height - _keyboard.frame.size.height]}]; // modified by Javad to log the pressed key - 18-10-2016  - 24-10-2016 added center of key coordinates
         [[EventLogger sharedLogger] logEvent:LogEventCodeKeyReleased eventInfo:@{@"key": @"correct", @"letter":[[_object.title uppercaseString] substringWithRange:NSMakeRange(_currentLetterPosition, 1)],@"key x": [NSString stringWithFormat: @"%.2f", expectedButton.center.x], @"key y": [NSString stringWithFormat: @"%.2f", expectedButton.center.y + [[UIScreen mainScreen] bounds].size.height - _keyboard.frame.size.height]}]; // modified by Javad to log the released key - 18-10-2016  - 24-10-2016 added center of key coordinates

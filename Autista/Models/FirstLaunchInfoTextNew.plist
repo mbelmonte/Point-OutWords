@@ -4,9 +4,9 @@
 <array>
 	<dict>
 		<key>title</key>
-		<string>A U T I S T A</string>
+		<string>Point OutWords</string>
 		<key>text</key>
-		<string>Autista™  is designed to help autistic children with speech difficulties develop manual motor and oral motor skills, building an ability to communicate by pointing or speaking.  Autista bootstraps new skills by beginning from activities at which autistic children excel and that they enjoy -- assembling puzzles, for instance -- and harnessing this motivation to approach new challenges.
+		<string>Point OutWords  is designed to help autistic children with speech difficulties develop manual motor and oral motor skills, building an ability to communicate by pointing or speaking. Point OutWords bootstraps new skills by beginning from activities at which autistic children excel and that they enjoy -- assembling puzzles, for instance -- and harnessing this motivation to approach new challenges.
 
 Children begin by learning to point and to drag puzzle pieces in Point Mode.  In addition to developing these basic motor skills, they become accustomed to the idea that objects consist of sequences of parts.
 
@@ -18,7 +18,7 @@ In Speak Mode, children practise pronouncing syllables in sequence. Each syllabl
 		<key>title</key>
 		<string>Behind the scenes</string>
 		<key>text</key>
-		<string>The more Autista is used, the more it learns and adapts to your child&apos;s specific needs. For example, the app can detect repetitive behaviour and advance gameplay accordingly.
+		<string>The more Point OutWords is used, the more it learns and adapts to your child&apos;s specific needs. For example, the app can detect repetitive behaviour and advance gameplay accordingly.
 
 The app also logs all user interactions, allowing researchers or therapists to analyse these data to help provide a better learning experience for your child.</string>
 	</dict>
@@ -56,13 +56,13 @@ Do you want to send audio recordings?                       NO               YES
 		<key>offsetY</key>
 		<integer>10</integer>
 	</dict>
-    <dict>
-        <key>title</key>
-        <string>Other things to know!</string>
-        <key>text</key>
-        <string>For users who have trouble pointing with just one finger and who instead use the whole hand, please switch off your iPad&apos;s Multitasking Gestures in System Settings->General.
+	<dict>
+		<key>title</key>
+		<string>Other things to know!</string>
+		<key>text</key>
+		<string>For users who have trouble pointing with just one finger and who instead use the whole hand, please switch off your iPad&apos;s Multitasking Gestures in System Settings-&gt;General.
             
-When you click the GET STARTED button below, you'll be asked for permission to use your iPad&apos;s microphone.  The microphone is used only during Speak Mode, and your voice will not be recorded unless you've given permission.</string>
-        </dict>
+When you click the GET STARTED button below, you&apos;ll be asked for permission to use your iPad&apos;s microphone.  The microphone is used only during Speak Mode, and your voice will not be recorded unless you&apos;ve given permission.</string>
+	</dict>
 </array>
 </plist>
