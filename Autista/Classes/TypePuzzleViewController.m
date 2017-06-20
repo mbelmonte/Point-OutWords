@@ -361,8 +361,6 @@
     if (CGRectContainsPoint(_keyboard.frame, touchPoint)) {
         
         //add method here......
-        
-        
         return;
     }
     else{
@@ -447,18 +445,20 @@
     if(_currentLetterPosition>-1){
 	NSString *title = [_object.title uppercaseString];
 	UIButton *expectedButton = [self buttonFromASCIICode:[title characterAtIndex:_currentLetterPosition]];
-    
+    //CGPoint touchViewLocation = [sender locationInView:self.view];
 	PuzzlePieceView *piece = [_pieces objectAtIndex:_currentLetterPosition];
 	CGRect frame = piece.frame;
-	
+        
+	UIButton *thisbutton = (UIButton *)sender; // added by Javad - 20-6-2017
+        
     if (_puzzleComplete) return;
     
 	if (sender == expectedButton) {
 		frame.origin = piece.finalPoint;
         [self playCorrectKeyPressedSound];
         //NSLog(@" the key location is %f, %f",expectedButton.center.y + [[UIScreen mainScreen] bounds].size.height - _keyboard.frame.size.height, expectedButton.center.x);
-        [[EventLogger sharedLogger] logEvent:LogEventCodeKeyPressed eventInfo:@{@"key": @"correct", @"letter":[[_object.title uppercaseString] substringWithRange:NSMakeRange(_currentLetterPosition, 1)],@"key x": [NSString stringWithFormat: @"%.2f", expectedButton.center.x], @" key y": [NSString stringWithFormat: @"%.2f", expectedButton.center.y + [[UIScreen mainScreen] bounds].size.height - _keyboard.frame.size.height]}]; // modified by Javad to log the pressed key - 18-10-2016  - 24-10-2016 added center of key coordinates
-        [[EventLogger sharedLogger] logEvent:LogEventCodeKeyReleased eventInfo:@{@"key": @"correct", @"letter":[[_object.title uppercaseString] substringWithRange:NSMakeRange(_currentLetterPosition, 1)],@"key x": [NSString stringWithFormat: @"%.2f", expectedButton.center.x], @"key y": [NSString stringWithFormat: @"%.2f", expectedButton.center.y + [[UIScreen mainScreen] bounds].size.height - _keyboard.frame.size.height]}]; // modified by Javad to log the released key - 18-10-2016  - 24-10-2016 added center of key coordinates
+        [[EventLogger sharedLogger] logEvent:LogEventCodeKeyPressed eventInfo:@{@"key": @"correct", @"letter":[[_object.title uppercaseString] substringWithRange:NSMakeRange(_currentLetterPosition, 1)],@"key centre x": [NSString stringWithFormat: @"%.2f", expectedButton.center.x], @" key centre y": [NSString stringWithFormat: @"%.2f", expectedButton.center.y + [[UIScreen mainScreen] bounds].size.height - _keyboard.frame.size.height]}]; // modified by Javad to log the pressed key - 18-10-2016  - 24-10-2016 added center of key coordinates
+        [[EventLogger sharedLogger] logEvent:LogEventCodeKeyReleased eventInfo:@{@"key": @"correct", @"letter":[[_object.title uppercaseString] substringWithRange:NSMakeRange(_currentLetterPosition, 1)],@"key centre x": [NSString stringWithFormat: @"%.2f", expectedButton.center.x], @"key centre y": [NSString stringWithFormat: @"%.2f", expectedButton.center.y + [[UIScreen mainScreen] bounds].size.height - _keyboard.frame.size.height]}]; // modified by Javad to log the released key - 18-10-2016  - 24-10-2016 added center of key coordinates
 
 	}
 	else if (_loopDetectorCount > 3) {
@@ -475,14 +475,18 @@
 		[self playWrongKeyPressedSound];
 		_loopDetectorCount++;
         
-        [[EventLogger sharedLogger] logEvent:LogEventCodeKeyPressed eventInfo:@{@"key": @"wrong"}];
-		[[EventLogger sharedLogger] logEvent:LogEventCodeKeyReleased eventInfo:@{@"key": @"wrong"}];
+         CGFloat newDistance = sqrtf(pow((expectedButton.center.x-thisbutton.center.x), 2)+pow(((expectedButton.center.y + [[UIScreen mainScreen] bounds].size.height- _keyboard.frame.size.height) - (thisbutton.center.y+ [[UIScreen mainScreen] bounds].size.height- _keyboard.frame.size.height)), 2)); // added by Javad - 20-6-2017
+         [[EventLogger sharedLogger] logEvent:LogEventCodeTouchBegan eventInfo:@{@"X": [NSString stringWithFormat:@"%+.1f", thisbutton.center.x], @"Y": [NSString stringWithFormat:@"%+.1f", thisbutton.center.x],@"distance to correct key":[NSString stringWithFormat:@"%+.1f", newDistance]}];
+        
+
+        [[EventLogger sharedLogger] logEvent:LogEventCodeKeyPressed eventInfo:@{@"key": @"wrong", @"letter":thisbutton.titleLabel.text, @"key centre x": [NSString stringWithFormat: @"%.2f", thisbutton.center.x], @" key centre y": [NSString stringWithFormat: @"%.2f", thisbutton.center.y + [[UIScreen mainScreen] bounds].size.height - _keyboard.frame.size.height],@"distance to correct key":[NSString stringWithFormat:@"%+.1f", newDistance]}]; // changed by Javad - 20-6-2017
+		[[EventLogger sharedLogger] logEvent:LogEventCodeKeyReleased eventInfo:@{@"key": @"wrong", @"letter":thisbutton.titleLabel.text, @"key centre x": [NSString stringWithFormat: @"%.2f", thisbutton.center.x], @" key centre y": [NSString stringWithFormat: @"%.2f", thisbutton.center.y + [[UIScreen mainScreen] bounds].size.height - _keyboard.frame.size.height],@"distance to correct key":[NSString stringWithFormat:@"%+.1f", newDistance]}]; // changed by Javad - 20-6-2017
 		
 		return;												// without doing the animations
 	}
 	
 	self.view.userInteractionEnabled = NO;
-	
+        
 	[UIView animateWithDuration:0.5
 						  delay:0
 						options:UIViewAnimationOptionCurveEaseInOut | UIViewAnimationOptionAllowUserInteraction
