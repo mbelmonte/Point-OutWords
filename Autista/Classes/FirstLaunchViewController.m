@@ -66,7 +66,7 @@
             [_scrollView addSubview:infoViewPageOne]; // adds the subview to the main scrollView in the First Launch View.
             // -------------------------------------------------------------------------------------------------
         }
-        else if (i == 2){ // for the third item in pList
+        else if (i == 3){ // for the third item in pList // changed by Javad from 2 to 3 when License agreement added as a new page/screen
             NSDictionary *pageDict = [pages objectAtIndex:i]; // creates a key value pair (a dictionary) for the infromation kept in the pList.
             // This part of the code creates subViews and adds them to the main scrollView in Firts Launch View.
             InfoViewPageThree *infoViewPageThree = [[InfoViewPageThree alloc] initWithFrame:self.view.bounds]; // creates a class of InfoViewPageOne.m
