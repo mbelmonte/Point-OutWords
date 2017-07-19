@@ -1,4 +1,4 @@
-Autista
+Point OutWords (TM)
 =======
 
 iPad software for communicative skills development in non-verbal or minimally verbal persons with autism
