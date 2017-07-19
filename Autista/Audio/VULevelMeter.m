@@ -192,7 +192,7 @@
 		_updateTimer = [NSTimer
 						scheduledTimerWithTimeInterval:_refreshHz
 						target:self
-						selector:@selector(_refresh)
+						selector:@selector(_refresh1)
 						userInfo:nil
 						repeats:YES
 						];
