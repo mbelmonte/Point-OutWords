@@ -70,10 +70,14 @@
 		[_objects addObject:button];
 	}
 }
-
+- (UIRectEdge)preferredScreenEdgesDeferringSystemGestures
+{
+    return UIRectEdgeAll;
+}
 - (void)viewDidAppear:(BOOL)animated
 {
 	[super viewDidAppear:animated];
+    [self setNeedsUpdateOfScreenEdgesDeferringSystemGestures];
     _sayIndex = -1;
     //RD
     //can optimize by only checking for the object which u have come back from to this view & only if its successful and its count earlier was 0
@@ -229,6 +233,7 @@
 {
 	TouchPuzzleViewController *puzzleVC = [self.storyboard instantiateViewControllerWithIdentifier:@"TouchPuzzleViewController"];
 	puzzleVC.object = object;
+    puzzleVC.modalPresentationStyle = UIModalPresentationFullScreen;
 	[puzzleVC setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
 	[self presentViewController:puzzleVC animated:YES completion:nil];
 }
@@ -237,6 +242,7 @@
 {
 	TypePuzzleViewController *puzzleVC = [self.storyboard instantiateViewControllerWithIdentifier:@"TypePuzzleViewController"];
 	puzzleVC.object = object;
+    puzzleVC.modalPresentationStyle = UIModalPresentationFullScreen;
 	[puzzleVC setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
 	[self presentViewController:puzzleVC animated:YES completion:nil];
 }
@@ -245,6 +251,7 @@
 {
 	SayPuzzleViewController *puzzleVC = [self.storyboard instantiateViewControllerWithIdentifier:@"SayPuzzleViewController"];
 	puzzleVC.object = object;
+    puzzleVC.modalPresentationStyle = UIModalPresentationFullScreen;
 	[puzzleVC setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
 	[self presentViewController:puzzleVC animated:YES completion:nil];
 }
@@ -276,6 +283,7 @@
     AdminViewController *_adminVC = [self.storyboard instantiateViewControllerWithIdentifier:@"AdminViewController"];
     //_adminVC = [self.storyboard instantiateViewControllerWithIdentifier:@"AdminViewController"];
 	_adminVC.scene = _scene;
+    _adminVC.modalPresentationStyle = UIModalPresentationFullScreen;
 	[self presentViewController:_adminVC animated:YES completion:nil];
 }
 
@@ -357,6 +365,7 @@
     //[TestFlight passCheckpoint:@"Info button Tapped"];
     
     UIViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"FirstLaunchViewController"];
+    vc.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentViewController:vc animated:NO completion:nil];
 }
 

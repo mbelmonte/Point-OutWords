@@ -1053,6 +1053,7 @@
 	[_adminOverlayTimer invalidate];
 	
 	_adminVC = [self.storyboard instantiateViewControllerWithIdentifier:@"AdminViewController"];
+    _adminVC.modalPresentationStyle = UIModalPresentationFullScreen;
 	[self presentViewController:_adminVC animated:YES completion:nil];
 }
 

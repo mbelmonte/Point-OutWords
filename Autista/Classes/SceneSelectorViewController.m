@@ -22,7 +22,7 @@
 #import "Scene.h"
 #import "EventLogger.h"
 #import "GlobalPreferences.h"
-#import "AutistaIAPHelper.h"
+//#import "AutistaIAPHelper.h"
 #import <StoreKit/StoreKit.h>
 #import <Instabug/Instabug.h>
 
@@ -63,7 +63,7 @@
     }
     //[[AutistaIAPHelper sharedInstance] restoreCompletedTransactions];
     
-	activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleLarge];
     
 	NSInteger numScenes = [_scenes count];
     ratio = 0.75; // ratio for resizing
@@ -144,6 +144,11 @@
     //NSLog(@"Added activity monitor to scrollview and now starting animation at coordinates : %f, %f", size.width / 2, size.height / 2);
 }
 
+- (UIRectEdge)preferredScreenEdgesDeferringSystemGestures
+{
+    return UIRectEdgeAll;
+}
+
 - (void)viewDidAppear:(BOOL)animated
 {
 	[super viewDidAppear:animated];
@@ -178,46 +183,46 @@
 }
 
 - (void)reload {
-    _products = nil;
-    [[AutistaIAPHelper sharedInstance] requestProductsWithCompletionHandler:^(BOOL success, NSArray *products) {
-        if (success) {
-            _products = products;
-
-            //RD: enable lockButtons here - if disabled logic followed
-            //RD: dealloc lockbutton etc / remove their targets n selectors on removing from view too?
-            NSInteger numScenes = [_scenes count];
-            //RD: i=1 hardcoed again .. shud be assciative array based (as to which scene is free)
-//            if ([[AutistaIAPHelper sharedInstance] productPurchased:@"com.madratgames.testautista.unlockall"]) {
-                self.unlockAllButton.hidden=YES;
-                self.unlockAllButton.userInteractionEnabled=NO;
-
-                for (int i = 1; i < numScenes; i++) {
-                    //NSLog(@"In reload in unlockall removig lock from scene : %d", i);
-                    UIView *v = [_scrollView viewWithTag:(i+numScenes)];
-                    [v removeFromSuperview];
-                }
-//            }
-//            else {
-//                NSInteger unlockedScenes=0;
-//                NSInteger numScenes = [_scenes count];
+//    _products = nil;
+//    [[AutistaIAPHelper sharedInstance] requestProductsWithCompletionHandler:^(BOOL success, NSArray *products) {
+//        if (success) {
+//            _products = products;
+//
+//            //RD: enable lockButtons here - if disabled logic followed
+//            //RD: dealloc lockbutton etc / remove their targets n selectors on removing from view too?
+//            NSInteger numScenes = [_scenes count];
+//            //RD: i=1 hardcoed again .. shud be assciative array based (as to which scene is free)
+////            if ([[AutistaIAPHelper sharedInstance] productPurchased:@"com.madratgames.testautista.unlockall"]) {
+//                self.unlockAllButton.hidden=YES;
+//                self.unlockAllButton.userInteractionEnabled=NO;
 //
 //                for (int i = 1; i < numScenes; i++) {
-//                    SKProduct * product = (SKProduct *) _products[i-1];
-//                    
-//                    if ([[AutistaIAPHelper sharedInstance] productPurchased:product.productIdentifier]) {
-//                        //NSLog(@"In reload .. removing lock for scene : %d", i);
-//                        UIView *v = [_scrollView viewWithTag:(i+numScenes)];
-//                        [v removeFromSuperview];
-//                        unlockedScenes++;
-//                    }
+//                    //NSLog(@"In reload in unlockall removig lock from scene : %d", i);
+//                    UIView *v = [_scrollView viewWithTag:(i+numScenes)];
+//                    [v removeFromSuperview];
 //                }
-//                if (unlockedScenes > numScenes-3) {
-//                    self.unlockAllButton.hidden=YES;
-//                    self.unlockAllButton.userInteractionEnabled=NO;
-//                }
-            }
-//        }
-    }];
+////            }
+////            else {
+////                NSInteger unlockedScenes=0;
+////                NSInteger numScenes = [_scenes count];
+////
+////                for (int i = 1; i < numScenes; i++) {
+////                    SKProduct * product = (SKProduct *) _products[i-1];
+////                    
+////                    if ([[AutistaIAPHelper sharedInstance] productPurchased:product.productIdentifier]) {
+////                        //NSLog(@"In reload .. removing lock for scene : %d", i);
+////                        UIView *v = [_scrollView viewWithTag:(i+numScenes)];
+////                        [v removeFromSuperview];
+////                        unlockedScenes++;
+////                    }
+////                }
+////                if (unlockedScenes > numScenes-3) {
+////                    self.unlockAllButton.hidden=YES;
+////                    self.unlockAllButton.userInteractionEnabled=NO;
+////                }
+//            }
+////        }
+//    }];
 }
 
 - (void)initializeMusicPlayback:(NSString *)audioFilename
@@ -287,6 +292,8 @@
     //[TestFlight passCheckpoint:@"Info button Tapped"];
 
     UIViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"FirstLaunchViewController"];
+    vc.modalPresentationStyle = UIModalPresentationPopover;
+    
     [self presentViewController:vc animated:NO completion:nil];
 }
 
@@ -327,6 +334,7 @@
 					 }
 					 completion:^(BOOL finished) {
 						 SceneViewController *sceneVC = [self.storyboard instantiateViewControllerWithIdentifier:@"SceneViewController"];
+        sceneVC.modalPresentationStyle = UIModalPresentationFullScreen;
 						 _selectedScene = [_scenes objectAtIndex:index];
 						 sceneVC.scene = _selectedScene;
 						 
@@ -348,8 +356,8 @@
         _lockedSceneButton = (UIButton *)sender;
         NSInteger numScenes = [_scenes count];
 
-        SKProduct *product = _products[(_lockedSceneButton.tag - numScenes) - 1];
-        [[AutistaIAPHelper sharedInstance] buyProduct:product];
+//        SKProduct *product = _products[(_lockedSceneButton.tag - numScenes) - 1];
+//        [[AutistaIAPHelper sharedInstance] buyProduct:product];
 
         //NSLog(@"Buying %@...", product.productIdentifier);
         /*dispatch_queue_t queue = dispatch_get_global_queue(0,0);
@@ -374,28 +382,28 @@
     }
 }
 
-- (IBAction)handleUnlockAllTapped:(id)sender {
-    AudioServicesPlaySystemSound(0x450);
-    if (_products) {
-        [activityIndicator startAnimating];
-        
-        NSInteger numScenes = [_scenes count];
-        SKProduct * product = (SKProduct *) _products[numScenes-1];
-        [[AutistaIAPHelper sharedInstance] buyProduct:product];
-    }
-    //RD
-    else {
-        [self reload];
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Purchase list not ready." message:@"Please try after a few minutes! If problem persists, check your connection or restart the app." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-        //[alert addButtonWithTitle:@"OK"];
-        [alert show];
-    }
-}
+//- (IBAction)handleUnlockAllTapped:(id)sender {
+//    AudioServicesPlaySystemSound(0x450);
+//    if (_products) {
+//        [activityIndicator startAnimating];
+//        
+//        NSInteger numScenes = [_scenes count];
+//        SKProduct * product = (SKProduct *) _products[numScenes-1];
+//        [[AutistaIAPHelper sharedInstance] buyProduct:product];
+//    }
+//    //RD
+//    else {
+//        [self reload];
+//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Purchase list not ready." message:@"Please try after a few minutes! If problem persists, check your connection or restart the app." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+//        //[alert addButtonWithTitle:@"OK"];
+//        [alert show];
+//    }
+//}
 
 
 //RD
 - (void)viewWillAppear:(BOOL)animated {
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(productPurchased:) name:IAPHelperProductPurchasedNotification object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(productPurchased:) name:IAPHelperProductPurchasedNotification object:nil];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -621,15 +629,15 @@
     return UIInterfaceOrientationMaskLandscape;
 }
 
-//- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
-//{
-//	return (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft);
-//}
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+{
+	return (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft);
+}
 
-//- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
-//{
-//    return UIInterfaceOrientationLandscapeRight;
-//}
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+{
+    return UIInterfaceOrientationLandscapeRight;
+}
 
 -(BOOL)shouldAutorotate
 {

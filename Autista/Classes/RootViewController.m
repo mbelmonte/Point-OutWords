@@ -54,6 +54,9 @@
 	else initialViewControllerIdentifier = @"SceneSelectorViewController";
 
 	UIViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:initialViewControllerIdentifier];
+    
+    // Needed to make it not show up as a popover or a sheet.
+    vc.modalPresentationStyle = UIModalPresentationFullScreen;
 	
 	[self presentViewController:vc animated:NO completion:nil];
 }
