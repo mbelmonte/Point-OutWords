@@ -21,7 +21,7 @@
 #import "EventLogger.h"
 #import "GlobalPreferences.h"
 #import "AppDelegate.h"
-#import "AutistaIAPHelper.h"
+//#import "AutistaIAPHelper.h"
 #import <AVFoundation/AVFoundation.h>
 
 #import "../ZipArchive/ZipArchive.h"
@@ -677,7 +677,7 @@
     //NSLog(@"Tapped Restore button");
     //[TestFlight passCheckpoint:@"Restore button Tapped"];
 
-    [[AutistaIAPHelper sharedInstance] restoreCompletedTransactions];
+//    [[AutistaIAPHelper sharedInstance] restoreCompletedTransactions];
 }
 
 - (IBAction)handleResetSlidersPressed:(id)sender

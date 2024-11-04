@@ -19,7 +19,7 @@
 #import "Piece.h"
 #import "Event.h"
 #import "EventLogger.h"
-#import "AutistaIAPHelper.h"
+//#import "AutistaIAPHelper.h"
 #import <AdSupport/AdSupport.h>
 #import <Instabug/Instabug.h>
 
@@ -39,7 +39,7 @@
    
     [Instabug KickOffWithToken:@"d0e8d2627d6e13ca2d1371fc175c479a" CaptureSource:InstabugCaptureSourceUIKit FeedbackEvent:InstabugFeedbackEventNone IsTrackingLocation:NO]; // Uses InstaBug SDK to create an in-app debugging interface for the users of this app
     
-    [AutistaIAPHelper sharedInstance]; // IAP is an In App Purchase mechanism set by Apple
+//    [AutistaIAPHelper sharedInstance]; // IAP is an In App Purchase mechanism set by Apple
     
 	_appVersion = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]; // gets the current app version from the bundle in Autista-Info.plist pList 
 	_prefs = [GlobalPreferences sharedGlobalPreferences];
